@@ -1047,15 +1047,21 @@ Add default styles for the Byline component. In the **ui.frontend** project unde
         }
     }
     ```
+   
+8. Open the file `main.scss` in the **ui.frontend** project under `/src/main/webpack/site` and add the following line in the `/* Components */` section:
 
-8. Build and compile the `ui.frontend` module using NPM:
+    ```css
+    @import '../components/content/byline/scss/byline.scss';
+    ```
+
+9. Build and compile the `ui.frontend` module using NPM:
 
      ```shell
     $ cd ~/code/aem-guides-wknd/ui.frontend
     $ npm run dev
     ```
 
-9. Build and deploy the `ui.apps` project, which will transitively include the `ui.frontend` project, to a local AEM instance using Maven:
+10. Build and deploy the `ui.apps` project, which will transitively include the `ui.frontend` project, to a local AEM instance using Maven:
 
     ```shell
     $ cd ~/code/aem-guides-wknd/ui.apps

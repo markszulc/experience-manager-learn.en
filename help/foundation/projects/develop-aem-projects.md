@@ -1,20 +1,17 @@
 ---
-title: Develop AEM Projects
-seo-title: Develop Projects in AEM
+title: Develop Projects in AEM
 description: A development tutorial illustrating how to develop for AEM Projects.  In this tutorial we will create a custom Project template that can be used to create new Projects within AEM for managing content authoring workflows and tasks.
-seo-description: Learn how to create a custom project template to be used with AEM Projects.
 version: 6.3, 6.4, 6.5
 feature: projects, workflow
 topics: collaboration, development, governance
 activity: develop
 audience: developer, implementer, administrator
 doc-type: tutorial
-uuid: 6490b694-84b1-4a50-adab-cd14c16918f7
 ---
 
 # Develop Projects in AEM
 
-This is a development tutorial illustrating how to develop for AEM Projects.  In this tutorial we will create a custom Project template that can be used to create new Projects within AEM for managing content authoring workflows and tasks.
+This is a development tutorial illustrating how to develop for [!DNL AEM Projects].  In this tutorial we will create a custom Project template that can be used to create new Projects within AEM for managing content authoring workflows and tasks.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16904/?quality=12)
 
@@ -22,7 +19,7 @@ This is a development tutorial illustrating how to develop for AEM Projects.  In
 
 ## Introduction {#introduction}
 
-[AEM Projects](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html) is a feature of AEM designed to make it easier to manage and group all of the workflows and tasks associated with content creation as part of an AEM Sites or Assets implementation.
+[[!DNL AEM Projects]](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html) is a feature of AEM designed to make it easier to manage and group all of the workflows and tasks associated with content creation as part of an AEM Sites or Assets implementation.
 
 AEM Projects comes with several [OOTB project templates](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#ProjectTemplates). When creating a new project, authors can choose from these available templates. Large AEM implementations with unique business requirements will want to create custom Project templates, tailored to meet their needs. By creating a custom Project template developers can configure the project dashboard, hook into custom workflows, and create additional business roles for a project. We will take a look at the structure of a Project Template and create a sample one.
 

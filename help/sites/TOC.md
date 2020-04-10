@@ -7,17 +7,24 @@ sub-product: sites
 
 + [Overview](overview.md)
 + Page Authoring {#page-authoring}
-  + [Using the AEM UI](page-authoring/touch-ui-feature-video-use.md)
+  + [Page Authoring in AEM Sites](page-authoring/page-authoring-overview-feature-video-use.md)
+  + [Concepts of AEM Sites authoring](page-authoring/aem-sites-authoring-overview.md)
+  + [Basic Navigation and Handling in AEM Sites](page-authoring/basic-handling-sites-feature-video-use.md)
+  + [Content Hierarchy in AEM Sites](page-authoring/content-hierarchy-feature-video-use.md)
   + [Creating a new Page](page-authoring/creating-page-feature-video-use.md)
   + [Using the Page Editor](page-authoring/page-editor-feature-video-use.md)
-  + [Publishing pages](page-authoring/publication-management-feature-video-use.md)
-  + [Understanding Page Properties](page-authoring/page-properties-feature-video-understand.md)
   + [Understanding Responsive Layout](page-authoring/responsive-layout-feature-video-understand.md)
+  + [Page Tagging in AEM Sites](page-authoring/page-tagging-feature-video-use.md)
+  + [Page Versioning](page-authoring/page-versioning-feature-video-use.md)
+  + [Comparing page versions](page-authoring/page-diff-feature-video-use.md)
+  + [Understanding Page Properties](page-authoring/page-properties-feature-video-understand.md)
+  + [Basic Page operations](page-authoring/page-operations-feature-video-use.md)
+  + [Publishing pages](page-authoring/publication-management-feature-video-use.md)
   + [Using Editable Page Templates](page-authoring/template-editor-feature-video-use.md)
   + [Using the Style System](page-authoring/style-system-feature-video-use.md)
-  + [Comparing page versions](page-authoring/page-diff-feature-video-use.md)
   + [Using Timewarp](page-authoring/timewarp-feature-video-use.md)
 + Components {#components}
+  + [Component Development](components/component-development.md)
   + [Understanding Core Components](components/core-components-feature-video-understand.md)
   + [Using the Components Console](components/components-console-feature-video-use.md)
 + Content Fragments {#content-fragments}
@@ -31,6 +38,7 @@ sub-product: sites
   + [Setup Social Posting with Experience Fragments](experience-fragments/experience-fragments-social-technical-video-setup.md)
   + [Understand Content Fragments vs. Experience Fragments](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
 + Developing {#developing}
+  + [AEM Project Archetype](developing/aem-project-archetype.md)
   + [Getting Started with AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
   + [Getting Started with AEM Headless](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)
   + [Getting Started with AEM's SPA Editor](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)

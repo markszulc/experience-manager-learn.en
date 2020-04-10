@@ -2,14 +2,11 @@
 title: Extending Page Properties in AEM Sites
 seo-title: Extending Page Properties in AEM Sites
 description: Customizing the metadata fields for the Page Properties is a common requirement in any Sites implementation. This video details the most effective way to accomplish this using features of the Sling Resource Merger.
-seo-description: Customizing the metadata fields for the Page Properties is a common requirement in any Sites implementation. This video details the most effective way to accomplish this using features of the Sling Resource Merger.
 topics: development
 audience: developer
 doc-type: technical-video
 activity: develop
 version: 6.4, 6.5
-uuid: 276a89df-9a2c-42ab-837d-81a057943c7e
-discoiquuid: 8846da11-a6f7-40f2-a134-b72af31aaead
 ---
 
 # Extending Page Properties {#extending-page-properties-in-aem-sites}

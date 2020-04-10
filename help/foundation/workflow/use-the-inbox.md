@@ -1,16 +1,12 @@
 ---
-title: Use the Inbox
-seo-title: Use the Inbox in AEM
+title: Use the Inbox in AEM
 description: AEM's inbox facilitates greater collaboration and visibility into tasks and workflow.
-seo-description: AEM's inbox facilitates greater collaboration and visibility into tasks and workflow.
 version: 6.3, 6.4, 6.5
 feature: inbox
 topics: collaboration, governance
 activity:  use
 audience: author, analyst
 doc-type: feature-video
-uuid: 92d31862-d8c6-471a-a432-5ac899db08f9
-discoiquuid: b99075de-bd1b-4690-bb57-55eddb0c76da
 ---
 
 # Using the Inbox in AEM
@@ -28,5 +24,5 @@ This videos covers highlights of AEM's Inbox.
 * Workflow info console
 * Ad-hoc task creation
 * Task and workitem visibility
-* Inbox and Omnisearch integration
-* Inbox and AEM Projects integration
+* [!DNL Inbox] and [!DNL Omnisearch] integration
+* [!DNL Inbox] and [!DNL AEM Projects] integration

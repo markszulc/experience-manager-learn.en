@@ -82,7 +82,7 @@ A consolidated view into the authentication (and occasionally authorization) mec
                 <td>✔</td>
             </tr>
             <tr>
-                <td><a href="http://sling.apache.org/documentation/the-sling-engine/authentication/authentication-authenticationhandler/openid-authenticationhandler.html" target="_blank">OpenID</a></td>
+                <td><a href="https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-authenticationhandler/openid-authenticationhandler.html" target="_blank">OpenID</a></td>
                 <td>⁕</td>
                 <td>⁕</td>
                 <td>*</td>

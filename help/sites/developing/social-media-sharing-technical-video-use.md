@@ -1,16 +1,12 @@
 ---
 title: Using Social Media Sharing in AEM Sites
-seo-title: Using Social Media Sharing in AEM Sites
 description: Explore setting up and using the Social Media Sharing component.
-seo-description: Explore setting up and using the Social Media Sharing component.
 feature: core-components
 topics: integrations
 audience: developer, implementer
 doc-type: technical-video
 activity: setup
 version: 6.3, 6.4, 6.5
-uuid: 4ea7c552-e872-48cd-90c5-1f1e144e475b
-discoiquuid: 0c57a8c6-4a55-4bcb-886f-5f47a5ace6c1
 ---
 
 # Using Social Media Sharing {#using-social-media-sharing-in-aem-sites}

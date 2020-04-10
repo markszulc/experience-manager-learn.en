@@ -14,6 +14,8 @@ kt: 3290
 
 This tutorial walks through setting up a local development environment for Adobe Experience Manager (AEM) using the AEM as a Cloud Service SDK. Included are the development tooling required to develop, build and compile AEM Projects, as well as local run times allowing developers to quickly validate new features locally before deploying them to AEM as a Cloud Service via Adobe Cloud Manager.
 
+>[!VIDEO](https://video.tv.adobe.com/v/32565/?quality=12&learn=on)
+
 ![AEM as a Cloud Service Local Development Environment Technology Stack](./assets/overview/aem-sdk-technology-stack.png)
 
 The local development environment for AEM can be broken up into three logical groups:
@@ -29,9 +31,9 @@ This tutorial walks through how to install and set up the highlighted items in t
 This tutorial established the location of the AEM as a Cloud Service SDK artifacts and AEM Project code as follows:
 
 + `~/aem-sdk` is a organizational folder containing the various tools provided by the AEM as a Cloud Service SDK
-+ `~/aem-sdk/author` contains the AEM Author Service
-+ `~/aem-sdk/publish` contains the AEM Publish Service
-+ `~/aem-sdk/dispatcher` contains the Dispatcher Tools
++ `~/aem-sdk/author` contains the [!DNL AEM Author Service]
++ `~/aem-sdk/publish` contains the [!DNL AEM Publish Service]
++ `~/aem-sdk/dispatcher` contains the [!DNL Dispatcher] Tools
 + `~/code/<project name>` contains the custom AEM Project source code
 
 Note that `~` is shorthand for the User's Directory. In Windows, this is the equivalent of `%HOMEPATH%`;
@@ -42,34 +44,34 @@ The AEM project is the custom code base containing the code, configuration and c
 
 This section of the tutorial shows how to:
 
-+ Install Java
-+ Install Node.js (and npm)
-+ Install Maven
-+ Install Git
++ Install [!DNL Java]
++ Install [!DNL Node.js] (and npm)
++ Install [!DNL Maven]
++ Install [!DNL Git]
 
 [Set up Development Tools for AEM Projects](./development-tools.md)
 
 ## Local AEM Runtime
 
-The AEM as a Cloud Service SDK provides a QuickStart Jar that runs a local version of AEM. The QuickStart Jar can be used to run either the AEM Author Service or AEM Publish Service locally. Note that while the QuickStart Jar provides a local development experience, not all features available in AEM as a Cloud Service are included in the QuickStart Jar.
+The AEM as a Cloud Service SDK provides a [!DNL QuickStart Jar] that runs a local version of AEM. The [!DNL QuickStart Jar] can be used to run either the AEM Author Service or AEM Publish Service locally. Note that while the [!DNL QuickStart Jar] provides a local development experience, not all features available in AEM as a Cloud Service are included in the [!DNL QuickStart Jar].
 
 This section of the tutorial shows how to:
 
-+ Install Java
++ Install [!DNL Java]
 + Download the AEM SDK
-+ Run the AEM Author Service
-+ Run the AEM Publish Service
++ Run the [!DNL AEM Author Service]
++ Run the [!DNL AEM Publish Service]
 
 [Set up the Local AEM runtime](./aem-runtime.md)
 
-## Local Dispatcher Runtime
+## Local [!DNL Dispatcher] Runtime
 
-AEM as a Cloud Service SDK's Dispatcher Tools provides everything required to set up the local Dispatcher runtime. Dispatcher Tools are Docker-based and provides command line tools to transpile Apache HTTP Web Server and Dispatcher configuration files into a compatible formats and deploy them to Dispatcher running in the Docker container.
+AEM as a Cloud Service SDK's [!DNL Dispatcher] Tools provides everything required to set up the local [!DNL Dispatcher] runtime. [!DNL Dispatcher] Tools are [!DNL Docker]-based and provides command line tools to transpile [!DNL Apache HTTP] Web Server and [!DNL Dispatcher] configuration files into a compatible formats and deploy them to [!DNL Dispatcher] running in the [!DNL Docker] container.
 
 This section of the tutorial shows how to:
 
 + Download the AEM SDK
-+ Install Dispatcher Tools
-+ Run the local Dispatcher runtime
++ Install [!DNL Dispatcher] Tools
++ Run the local [!DNL Dispatcher] runtime
 
-[Set up the Local Dispatcher Runtime](./dispatcher-tools.md)
+[Set up the Local [!DNL Dispatcher] Runtime](./dispatcher-tools.md)

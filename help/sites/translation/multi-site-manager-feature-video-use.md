@@ -15,7 +15,7 @@ discoiquuid: a0dc581e-300f-45ef-916a-1cbac0429899
 
 # Using Multi-Site Manager {#using-multi-site-manager-with-aem-sites}
 
- Live Copy Overview and Blueprint Configuration Manager are Touch UI Enabled interfaces for working with Multi Site Manager feature of Adobe Experience Manager Sites.
+[!UICONTROL Live Copy Overview] and [!UICONTROL Blueprint Configuration Manager] are AEM Author interfaces for working with Multi Site Manager feature of Adobe Experience Manager Sites.
 
 ## Live Copy Overview {#live-copy-overview}
 

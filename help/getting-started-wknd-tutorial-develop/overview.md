@@ -43,8 +43,8 @@ To make this tutorial closer to a real-world scenario Adobe's talented UX design
 
 Download the XD UI kits:
 
+* [AEM Core Component UI Kit](assets/overview/AEM-CoreComponents-UI-Kit.xd)
 * [WKND UI Kit](assets/overview/AEM_UI-kit_WKND.xd)
-* [Generic UI Kit](assets/overview/AEM_UI-kit_Wireframe.xd)
 
 The name WKND is fitting because we expect a developer to take the better part of a ***weekend*** to complete the tutorial.
 

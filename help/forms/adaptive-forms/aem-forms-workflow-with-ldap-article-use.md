@@ -65,7 +65,7 @@ Please read this article to implement your own [  ParticipantChooser .](https://
 To test this on your system(For Adobe Employees you can use this sample out of the box)
 
 * [Download and deploy the setvalue bundle](https://forms.enablementadobe.com/content/DemoServerBundles/SetValueApp.core-1.0-SNAPSHOT.jar). This is the custom OSGI bundle for setting the manager's property.
-* [Download and Install the DevelopingWithServiceUserBundle](http://forms.enablementadobe.com/content/DemoServerBundles/DevelopingWithServiceUser.core-1.0-SNAPSHOT.jar)
+* [Download and Install the DevelopingWithServiceUserBundle](https://forms.enablementadobe.com/content/DemoServerBundles/DevelopingWithServiceUser.core-1.0-SNAPSHOT.jar)
 * [Import the Assets associated with this article into AEM using the package manager](assets/aem-forms-ldap.zip).Included as part of this package are LDAP configuration files, workflow, and an adaptive form.
 * Configure AEM with your LDAP using appropriate LDAP credentials.
 * Login to AEM using your LDAP credentials.

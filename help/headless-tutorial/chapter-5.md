@@ -1,8 +1,6 @@
 ---
 title: Chapter 5 - Authoring Content Services Pages
-seo-title: Getting Started with AEM Headless - Chapter 5 - Authoring Content Services Pages
 description: Chapter 5 of the AEM Headless tutorial covers creating the Pages from the Templates defined in Chapter 4. These pages will act as the JSON HTTP end-points.
-seo-description: Chapter 5 of the AEM Headless tutorial covers creating the Pages from the Templates defined in Chapter 4. These pages will act as the JSON HTTP end-points.
 ---
 
 # Chapter 5 - Authoring Content Services Pages
@@ -15,7 +13,7 @@ Chapter 5 of the AEM Headless tutorial covers creating the Page from the Templat
 
 ## Creating the Event API Page
 
-1. Navigate to **AEM > Sites > WKND Mobile > English > API**.
+1. Navigate to **[!UICONTROL AEM] > [!UICONTROL Sites] > [!DNL WKND Mobile] > [!DNL English] > [!DNL API]**.
 1. **Tap the label the API page**, then tap the **Create** button in the top action bar and create a new Events API page under the API page.
     1. Tap **Create** in the top action bar
     1. Select **Events API** template

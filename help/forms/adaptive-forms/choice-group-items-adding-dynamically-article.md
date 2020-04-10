@@ -91,7 +91,7 @@ The submitted data is as follows
 
 * [Download the assets](assets/usingthevisualeditor.zip)
 * Install Tomcat if you do not have it already. [Instructions to install tomcat are available here](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
-* [Deploy SampleRest.war file in Tomcat](http://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)
+* [Deploy SampleRest.war file in Tomcat](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)
 * [Open Forms And Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Click on "Create | File Upload" and upload the file you downloaded in the previous step
 * [Preview the forms](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)

@@ -12,17 +12,21 @@ Adobe Experience Manager Assets is a digital asset management tool on AEM Platfo
 
 ## What's New
 
-* **[Use Brand Portal Asset Sourcing (Video)](./brand-portal/brand-portal-feature-video-use.md#asset-sourcing)**
+* **[Using Assets Collections (Video)](./search-and-discovery/collections.md)** 
+    <br>
+     *Explore how Collections in AEM Assets provide new ways to organize and discover assets*
+
+* **[Using Review Task (Video)](./collaboration/review-task.md)**
+    <br>
+     *Use the Review Task workflow to quickly and easily approve (or reject) assets*
+
+* **[Using Brand Portal Asset Sourcing (Video)](./sharing/brand-portal.md#asset-sourcing)**
     <br>
     *Learn about how 3rd parties can upload assets to Brand Portal and sync them back to Experience Manager Author*
 
-* **[Using Adobe Asset Link (Video)](./creative-cloud/adobe-asset-link-feature-video-use.md)**
+* **[Using Adobe Asset Link (Video)](./creative-workflows/adobe-asset-link.md)**
     <br>
     *Learn about how designers and creative users can collaborate using their favorite Adobe Creative Cloud desktop applications*
-
-* **[Using Connected Assets (Video)](./deployment/connected-assets-feature-video-use.md)**
-    <br>
-    *Learn how AEM Sites author can seamlessly access digital assets hosted on a different instance of AEM*
 
 * **[Using Dynamic Media Smart Crop (Video)](./dynamic-media/smart-crop-feature-video-use.md)**
     <br>
@@ -32,21 +36,34 @@ Adobe Experience Manager Assets is a digital asset management tool on AEM Platfo
 
 <table>
 <td>
-   <a href="./analytics/asset-insights-launch-tutorial-setup.md">
-   <img alt="AEM Assets Insights" src="./analytics/assets/asset-insights-cover.png"/>
+   <a href="./creative-workflows/aem-desktop-app.md">
+   <img alt="Enhanced Smart Tags" src="./assets/overview/desktop-app.png" />
    </a>
    <div>
-      <a href="./analytics/asset-insights-launch-tutorial-setup.md">
+      <a href="./creative-workflows/aem-desktop-app.md">
+      <strong>Using AEM Desktop App</strong>
+      </a>
+   </div>
+   <p>
+      <em>Access assets in AEM directly from the desktop</em>
+   </p>
+</td>
+<td>
+   <a href="./advanced/asset-insights-launch-tutorial.md">
+   <img alt="AEM Assets Insights" src="./assets/overview/asset-insights.png"/>
+   </a>
+   <div>
+      <a href="./advanced/asset-insights-launch-tutorial.md">
       <strong>Using AEM Asset Insights with Launch</strong>
       </a>
    </div>
    <p>
-      <em>Gain insights into how AEM Assets are used</em>
+      <em>Gain insights into how assets are used</em>
    <p>
 </td>
 <td>
    <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-   <img alt="Dynamic Media Overview" src="./dynamic-media/assets/dynamic-media-overiew.png" />
+   <img alt="Dynamic Media Overview" src="./assets/overview/dynamic-media.png" />
    </a>
    <div>
       <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
@@ -56,19 +73,6 @@ Adobe Experience Manager Assets is a digital asset management tool on AEM Platfo
    <p>
       <em>Manage and access media content using Dynamic Media</em>
    <p>
-</td>
-<td>
-   <a href="./metadata/enhanced-smart-tags-feature-video-use.md">
-   <img alt="Enhanced Smart Tags" src="./metadata/assets/enhanced-smart-tags.png" />
-   </a>
-   <div>
-      <a href="./metadata/enhanced-smart-tags-feature-video-use.md">
-      <strong>Using Enhanced Smart Tags</strong>
-      </a>
-   </div>
-   <p>
-      <em>Enhance asset search using Smart Tags</em>
-   </p>
 </td>
 </table>
 

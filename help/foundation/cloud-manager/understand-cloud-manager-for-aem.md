@@ -1,8 +1,6 @@
 ---
 title: Understand Adobe Cloud Manager
-description: Adobe Managed Services' (AMS) Adobe Cloud Manager provides a simple, yet robust solution that allows easy management, introspect and self-service of AEM environments.
-seo-title: Understand Adobe Cloud Manager
-seo-description: Adobe Managed Services' (AMS) Adobe Cloud Manager provides a simple, yet robust solution that allows easy management, introspect and self-service of AEM environments.
+description: Adobe Cloud Manager provides a simple, yet robust solution that allows easy management, introspect and self-service of AEM environments.
 sub-product: cloud-manager, foundation
 feature: pipelines, programs, projects, quality-gates, reports
 topics: best-practices, cicd, development, operations, governance
@@ -13,11 +11,11 @@ audience: developer, implementer, administrator, architect
 
 # Understand Adobe Cloud Manager
 
-Adobe Managed Services' (AMS) Adobe Cloud Manager provides a simple, yet robust solution that allows easy management, introspect and self-service of AEM environments.
+Adobe Cloud Manager provides a simple, yet robust solution that allows easy management, introspect and self-service of AEM environments.
 
 ## Cloud Manager Overview
 
-This video series explores the key features of  Cloud Manager's for AEM including:
+This video series explores the key features of Cloud Manager's for AEM including:
 
 * [Programs](#programs)
 * [Environments](#environments)
@@ -36,7 +34,7 @@ For a complete overview, please review the [Cloud Manager User Guide](https://do
 
 ## Environments {#environments}
 
-[Cloud Manager Environments](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html) are composed of AEM Author, AEM Publish and Dispatcher instances. Different environments support roles and can be engaged using different CICD Pipelines (described below). Cloud Manager environments typically have one Production environment and one Stage environment.
+[Cloud Manager Environments](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html) are composed of AEM Author, AEM Publish and Dispatcher instances. Different environments support roles and can be engaged using different CI/CD Pipelines (described below). Cloud Manager environments typically have one Production environment and one Stage environment.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318/?quality=12)
 
@@ -74,7 +72,7 @@ The [CI/CD Production Pipeline](https://docs.adobe.com/content/help/en/experienc
 
 ## Activity {#activity}
 
-Cloud Manager provides a consolidated view into a Program's activity, listing all CI/CD Pipeline executions, both production and non-production, allowing visibility into the past and present activity, and any activity's Details can be reviewed.
+Cloud Manager provides a consolidated view into a Program's activity, listing all CI/CD Pipeline executions, both production and non-production, allowing visibility into the past and present activity, and any activity's details can be reviewed.
 
 Cloud Manager also integrates at a per-user level with [Adobe Experience Cloud Notifications](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/notifications.html), providing a omnipresent view into events and actions of interest.
 
