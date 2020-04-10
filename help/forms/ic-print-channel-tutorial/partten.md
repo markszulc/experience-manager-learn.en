@@ -45,13 +45,7 @@ For more details on the ECMA script for generating documents, [refer to this art
 
 To generate print channel document using the watched folder mechanism, please follow the steps below:
 
-* [Create a service user named data as mentioned in this document](/help/forms/adaptive-forms/service-user-tutorial-develop.md)
-* Make sure this system user has read permissions on the following node. To give the permissions [login to user admin](https://helpx.adobe.com/useradmin) and search for the system user "data" and give the read permissions on the following node by tabbing to the permissions tab.
-
-
-    * /content/dam/formsanddocuments
-    * /content/dam/formsanddocuments-fdm
-    * /content/forms/af
+* [Follow the steps mentioned in this document](/help/forms/adaptive-forms/service-user-tutorial-develop.md)
 
 * Login to crx and navigate to /etc/fd/watchfolder/scripts/PrintPDF.ecma
 

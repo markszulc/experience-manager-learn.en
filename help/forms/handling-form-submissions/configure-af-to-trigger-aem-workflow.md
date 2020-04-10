@@ -14,5 +14,6 @@ version: 6.4,6.5
 
 # Configuring Adaptive Form to trigger AEM Workflow
 
+
 >[!VIDEO](https://video.tv.adobe.com/v/28316?quality=9)
 

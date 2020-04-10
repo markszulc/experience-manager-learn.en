@@ -49,12 +49,16 @@ Line 12-13: Forward the request to the servlet
 
 To test this capability on your server
 
-* [Import and install the assets related to this article using package manager.](assets/launchagentui.zip)
-*Login to crx and navigate to the /apps/AEMForms/openprintchannel/POST.jsp. Make sure the string passed to FormFieldRequestParameter is valid documentId.(Line 19).
+* [Import and install the assets related to this article using package manager.](assets/launch-agent-ui-assets.zip)
+* [Login to configMgr](http://localhost:4502/system/console/configMgr)
+* Search for _Adobe Granite CSRF Filter_
+* Add _/content/getprintchannel_ in the Excluded Paths
+* Save your changes. 
+* [Open POST.jsp](http://localhost:4502/apps/AEMForms/openprintchannel/POST.jsp). Make sure the string passed to FormFieldRequestParameter is valid documentId.(Line 19).
 * [Open the webpage](http://localhost:4502/content/OpenPrintChannel.html) and enter accountnumber and submit the form.
 * Agent UI interface should open with the data pre-populated specific to the accountnumber entered in the form.
 
 >[!NOTE]
 >
->Make sure your Form Data Model's Get operation's input parameter is bound to Request Attribute called "accountnumber" for this to work. If you change the name of the bindingvalue to any other name, make sure the change is reflected on line 25 of the POST.jsp mentioned in second bullet point above.
+>Make sure your Form Data Model's Get operation's input parameter is bound to Request Attribute called "accountnumber" for this to work. If you change the name of the bindingvalue to any other name, make sure the change is reflected on line 25 of the POST.jsp
 
