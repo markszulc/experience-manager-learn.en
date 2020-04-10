@@ -106,7 +106,7 @@ The next series of steps will take place using a UNIX based command line  termin
      -DoptionAemVersion=6.5.0 \
      -DoptionDispatcherConfig=none \
      -DoptionIncludeErrorHandler=n \
-     -DoptionIncludeExaples=y \
+     -DoptionIncludeExamples=y \
      -DoptionIncludeFrontendModule=y \
      -DpackageGroup=wknd \
      -DsiteName="WKND Site"

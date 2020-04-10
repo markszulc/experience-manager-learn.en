@@ -1,8 +1,6 @@
 ---
-title: Chapter 7 - Consuming AEM Content Services from a Mobile App
-seo-title: Getting Started with AEM Headless - Chapter 7 - Consuming AEM Content Services from a Mobile App
+title: Getting Started with AEM Headless - Chapter 7 - Consuming AEM Content Services from a Mobile App
 description: Chapter 7 of the tutorial runs up the Android Mobile App to consume authored content from AEM Content Services.
-seo-description: Chapter 7 of the tutorial runs up the Android Mobile App to consume authored content from AEM Content Services.
 ---
 
 # Chapter 7 - Consuming AEM Content Services from a Mobile App
@@ -11,7 +9,7 @@ Chapter 7 of the tutorial uses a native Android Mobile App to consume content fr
 
 ## The Android Mobile App
 
-This tutorial uses a **simple native Android Mobile App** to consume and display FAQ content exposed by AEM Content Services.
+This tutorial uses a **simple native Android Mobile App** to consume and display Event content exposed by AEM Content Services.
 
 The use of [Android](https://developer.android.com/) is largely unimportant, and the consuming mobile app could be written in any framework for any mobile platform, for example iOS.
 
@@ -23,8 +21,8 @@ Android is used for tutorial due to the ability to run an Android Emulator on Wi
 
 ![Mobile App to Content Services Mapping](assets/chapter-7/content-services-mapping.png)
 
-1. The **logo** as defined by the Events API page's **Image component**.
-1. The **tag line** as defined on the Events API page's **Text component**.
+1. The **logo** as defined by the [!DNL Events API] page's **Image component**.
+1. The **tag line** as defined on the [!DNL Events API] page's **Text component**.
 1. This **Event list** is derived from the serialization of the Event Content Fragments, exposed via the configured **Content Fragment List component**.
 
 ## Mobile App demonstration
@@ -33,16 +31,16 @@ Android is used for tutorial due to the ability to run an Android Emulator on Wi
 
 ### Configuring the Mobile App for non-localhost use
 
-If AEM Publish is not being run on **http://localhost:4503** the host and port can be updated in the Mobile App's Settings to point to the property AEM Publish host/port.
+If AEM Publish is not being run on **http://localhost:4503** the host and port can be updated in the Mobile App's [!DNL Settings] to point to the property AEM Publish host/port.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28344/?quality=12)
 
 ## Running the Mobile App locally
 
 1. Download and install the [Android Studio](https://developer.android.com/studio/install) to install the Android Emulator.
-1. **Download** the Android APK file [GitHub > Assets >  wknd-mobile.x.x.xapk](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
+1. **Download** the Android [!DNL APK] file [GitHub > Assets >  wknd-mobile.x.x.xapk](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
 1. Open **Android Studio**
-    * On the initial launch of Android Studio, a prompt to install the Android SDK will present. Accept the defaults and finish the installation.
+    * On the initial launch of Android Studio, a prompt to install the [!DNL Android SDK] will present. Accept the defaults and finish the installation.
 1. Open Android Studio and select **Profile or Debug APK**
 1. Select the APK file (**wknd-mobile.x.x.x.apk**) downloaded in Step 2 and click **OK**
    * If prompted to **Create a New Folder**, or **Use Existing**, select **Use Existing**.
@@ -61,8 +59,8 @@ If AEM Publish is not being run on **http://localhost:4503** the host and port c
 1. Close the **AVD Manager** window.
 1. In the top menu bar select **wknd-mobile.x.x.x** from the **Run/Edit Configurations** drop down.
 1. Tap the **Run** button next to the selected **Run/Edit Configuration**
-1. In the pop-up, select the newly created **Pixel 2 API 29** virtual device and tap **OK**
-1. If the WKND Mobile app doesn't immediately load, find and tap on the **WKND** icon from the Android home screen in the emulator.
+1. In the pop-up, select the newly created **[!DNL Pixel 2 API 29]** virtual device and tap **OK**
+1. If the [!DNL WKND Mobile] app doesn't immediately load, find and tap on the **[!DNL WKND]** icon from the Android home screen in the emulator.
     * If the emulator launches but the emulator's screen remains black, tap the **power** button in the emulator's tools window next to the emulator window.
     * To scroll within the virtual device, click-and-hold and drag.
     * To refresh the content from AEM, pull down from the top until the Refresh icon 
@@ -80,7 +78,7 @@ Because the Editable Template of the Events API (`/content/wknd-mobile/en/api/ev
 
 ### High-level Code Flow
 
-1. Opening the WKND Mobile App invokes a `HTTP GET` request to the AEM Publish at `/content/wknd-mobile/en/api/events.model.json` to collect the content to populate the Mobile App's UI.
+1. Opening the [!DNL WKND Mobile] App invokes a `HTTP GET` request to the AEM Publish at `/content/wknd-mobile/en/api/events.model.json` to collect the content to populate the Mobile App's UI.
 2. Upon receiving the content from AEM, each of the three view elements of the Mobile App, the **logo, tag line and event list**, are initialized with the content from AEM.
     * To bind to the AEM content to the Mobile App's view element, the JSON representing each AEM component, is object mapped to a Java POJO, which in turn is bound to the Android View element.
         * Image Component JSON &rarr; Logo POJO &rarr; Logo ImageView
@@ -90,7 +88,7 @@ Because the Editable Template of the Events API (`/content/wknd-mobile/en/api/ev
 
 #### Invoking the AEM Content Services End-point
 
-The following is a distillation of the code in the Mobile App's MainActivity responsible for invoking AEM Content Services to collect the content that drives the Mobile App experience.
+The following is a distillation of the code in the Mobile App's `MainActivity` responsible for invoking AEM Content Services to collect the content that drives the Mobile App experience.
 
 ```
 protected void onCreate(Bundle savedInstanceState) {
@@ -121,13 +119,13 @@ private void initApp(final List<ViewBinder> viewBinders) {
 }
 ```
 
-`onCreate(..)` is the initialization hook for the Mobile App, and registers the 3 custom ViewBinders responsible for parsing the JSON and binding the values to the View elements.
+`onCreate(..)` is the initialization hook for the Mobile App, and registers the 3 custom `ViewBinders` responsible for parsing the JSON and binding the values to the `View` elements.
 
-`initApp(...)` is then called which makes the HTTP GET request to the AEM Content Services end-point on AEM Publish to collect the content. Upon receiving a valid JSON Response, the JSON response is passed to each ViewBinder which is responsible for parsing the JSON and binding it to the mobile View elements.
+`initApp(...)` is then called which makes the HTTP GET request to the AEM Content Services end-point on AEM Publish to collect the content. Upon receiving a valid JSON Response, the JSON response is passed to each `ViewBinder` which is responsible for parsing the JSON and binding it to the mobile `View` elements.
 
 #### Parsing the JSON Response
 
-Next we'll look at the LogoViewBinder, which is simple, but highlights several important considerations.
+Next we'll look at the `LogoViewBinder`, which is simple, but highlights several important considerations.
 
 ```
 public class LogoViewBinder implements ViewBinder {
@@ -149,9 +147,9 @@ public class LogoViewBinder implements ViewBinder {
 
 The first line of `bind(...)` navigates down the JSON Response via the keys **:items &rarr; root &rarr; :items** which represents the AEM Layout Container the components were added to.
 
-From here a check is made for a key named **image**, which represents the Image component (again, it is important this node name &rarr; JSON key is stable). If this object exists, it read and mapped to the [custom Image POJO](#image-pojo) via the Jackson ObjectMapper library. The Image POJO is explored below.
+From here a check is made for a key named **image**, which represents the Image component (again, it is important this node name &rarr; JSON key is stable). If this object exists, it read and mapped to the [custom Image POJO](#image-pojo) via the Jackson `ObjectMapper` library. The Image POJO is explored below.
 
-Finally, the logo's src is loaded into the Android ImageView using the Glide helper library.
+Finally, the logo's `src` is loaded into the Android ImageView using the [!DNL Glide] helper library.
 
 Notice that we must provide the AEM schema, host and port (via `aemHost`) to the AEM Publish instance as AEM Content Services will only provide the JCR path (ie. `/content/dam/wknd-mobile/images/wknd-logo.png`) to the referenced content.
 
@@ -182,8 +180,8 @@ Now that you have an understanding of how AEM Content Services can drive native 
 
 After each step, pull-to-refresh the Mobile App and verify the update to the mobile experience.
 
-1. Create and publish **new Event Content Fragment**
-1. Unpublish an **existing Event Content Fragment**
+1. Create and publish **new [!DNL Event] Content Fragment**
+1. Unpublish an **existing [!DNL Event] Content Fragment**
 1. Publish an update to the **Tag Line**
 
 ## Congratulations
@@ -194,7 +192,7 @@ To learn more about AEM Content Services and AEM as a Headless CMS, visit Adobe'
 
 * [Using Content Fragments](../sites/content-fragments/understand-content-fragments-and-experience-fragments.md)
 * [AEM WCM Core Components User Guide](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [AEM WCM Core Components Component Library](http://opensource.adobe.com/aem-core-wcm-components/library.html)
+* [AEM WCM Core Components Component Library](https://opensource.adobe.com/aem-core-wcm-components/library.html)
 * [AEM WCM Core Components GitHub Project](https://github.com/adobe/aem-core-wcm-components)
 * [AEM WCM Core Components - Ask the Expert](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
 * [Code Sample of Component Exporter](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/bundle/src/main/java/com/adobe/acs/samples/models/SampleComponentExporter.java)

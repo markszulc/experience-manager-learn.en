@@ -159,7 +159,7 @@ String params = arg2.get("PROCESS_ARGS","string").toString();
 To test this on your server, please follow the following steps:
 
 * [Configure the Day CQ Mail Service.](https://helpx.adobe.com/experience-manager/6-5/communities/using/email.html) This is needed to send email with the document generated as an attachment.
-* [Deploy the Developing with Service User Bundle](http://forms.enablementadobe.com/content/DemoServerBundles/DevelopingWithServiceUser.core-1.0-SNAPSHOT.jar)
+* [Deploy the Developing with Service User Bundle](https://forms.enablementadobe.com/content/DemoServerBundles/DevelopingWithServiceUser.core-1.0-SNAPSHOT.jar)
 * Make sure you have added the following entry in the Apache Sling Service User Mapper Service Configuration
 * **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
 * [Download and unzip the assets related to this article on to your file system](assets/prefillservice.zip)

@@ -1,16 +1,12 @@
 ---
 title: Understand Reasons to Upgrade
-seo-title: Understand Reasons to Upgrade AEM
 description: A high-level breakdown of key features for customers considering upgrading to the latest version of Adobe Experience Manager.
-seo-description: A high-level breakdown of key features for customers considering upgrading to the latest version of Adobe Experience Manager.
 version: 6.5
 sub-product: assets, cloud-manager, commerce, content-services, dynamic-media, forms, foundation, screens, sites
 topics: best-practices, upgrade
 audience: all
 activity: understand
 doc-type: article
-uuid: fc08e630-e9ab-4d32-811d-14e6c437cde3
-discoiquuid: 78610491-568f-4f4b-bbae-1d6acbf81591
 ---
 
 # Understanding Reasons to Upgrade
@@ -444,7 +440,7 @@ Below is a matrix of key Sites features offered by AEM. Some of these features w
     </thead>
     <tbody>
         <tr>
-            <td><strong><a href="http://helpx.adobe.com/experience-manager/kt/sites/using/page-editor-feature-video-use.html" target="_blank">Touch Optimized Page Authoring</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/page-editor-feature-video-use.html" target="_blank">Touch Optimized Page Authoring</a>:</strong>
             Allows editors to leverage tablets and computers with touch screens.</td>
             <td></td>
             <td>✔</td>
@@ -455,7 +451,7 @@ Below is a matrix of key Sites features offered by AEM. Some of these features w
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="http://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/responsive-layout.html" target="_blank">Responsive Site Authoring</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/responsive-layout.html" target="_blank">Responsive Site Authoring</a>:</strong>
                 The layout mode allows editors to resize components based on device widths for responsive sites.</td>
             <td></td>
             <td></td>
@@ -466,7 +462,7 @@ Below is a matrix of key Sites features offered by AEM. Some of these features w
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="http://helpx.adobe.com/experience-manager/kt/sites/using/template-editor-feature-video-use.html" target="_blank">Editable Templates</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/template-editor-feature-video-use.html" target="_blank">Editable Templates</a>:</strong>
             Allow specialized authors to create and edit page templates.</td>
             <td></td>
             <td></td>
@@ -477,7 +473,7 @@ Below is a matrix of key Sites features offered by AEM. Some of these features w
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="http://helpx.adobe.com/experience-manager/core-components/user-guide.html" target="_blank">Core Components</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/core-components/user-guide.html" target="_blank">Core Components</a>:</strong>
             Accelerate site development. Available on GitHub for frequent release schedule and flexibility.</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -488,7 +484,7 @@ Below is a matrix of key Sites features offered by AEM. Some of these features w
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="http://helpx.adobe.com/experience-manager/6-5/sites/developing/using/spa-overview.html" target="_blank">SPA Editor</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/spa-overview.html" target="_blank">SPA Editor</a>:</strong>
             Create authorable, enaging web experiences using Single-Page Application (SPA) frameworks built on React or     Angular.</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -499,7 +495,7 @@ Below is a matrix of key Sites features offered by AEM. Some of these features w
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="http://helpx.adobe.com/experience-manager/6-5/release-notes/style-system-fp.html" target="_blank">Style System</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/release-notes/style-system-fp.html" target="_blank">Style System</a>:</strong>
             Increase AEM component re-use by defining their visual appearance using the in-context style system.</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -510,7 +506,7 @@ Below is a matrix of key Sites features offered by AEM. Some of these features w
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="http://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html" target="_blank">Multi-Site Manager (MSM)</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html" target="_blank">Multi-Site Manager (MSM)</a>:</strong>
             Manage multiple websites that share common content (i.e multi-lingual, multiple brands).</td>
             <td>✔</td>
             <td>✔</td>
@@ -521,7 +517,7 @@ Below is a matrix of key Sites features offered by AEM. Some of these features w
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="http://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html" target="_blank">Content Translation</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html" target="_blank">Content Translation</a>:</strong>
             Plug and play framework integrates with industry leading 3rd party translation services.</td>
             <td></td>
             <td></td>
@@ -532,7 +528,7 @@ Below is a matrix of key Sites features offered by AEM. Some of these features w
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="http://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub.html" target="_blank">ContextHub</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub.html" target="_blank">ContextHub</a>:</strong>
             Next generation client context framework for personalization of content.</td>
             <td></td>
             <td>✔</td>
@@ -543,7 +539,7 @@ Below is a matrix of key Sites features offered by AEM. Some of these features w
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="http://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/launches.html" target="_blank">Launches</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/launches.html" target="_blank">Launches</a>:</strong>
             Develop content for a future release without disrupting day-to-day authoring.</td>
             <td>✔</td>
             <td>✔</td>
@@ -554,7 +550,7 @@ Below is a matrix of key Sites features offered by AEM. Some of these features w
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="http://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-understand.html" target="_blank">Content Fragments</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-understand.html" target="_blank">Content Fragments</a>:</strong>
             Create and curate editorial content de-coupled from the presentation for easy reuse.</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -565,7 +561,7 @@ Below is a matrix of key Sites features offered by AEM. Some of these features w
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="http://helpx.adobe.com/experience-manager/kt/sites/using/experience-fragments-feature-video-use.html" target="_blank">Experience Fragments</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/experience-fragments-feature-video-use.html" target="_blank">Experience Fragments</a>:</strong>
             Create reusable experiences and variations optimized for desktop, mobile, and social channels.</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -576,7 +572,7 @@ Below is a matrix of key Sites features offered by AEM. Some of these features w
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="http://helpx.adobe.com/experience-manager/6-5/release-notes/content-services-fragments-featurepack.html" target="_blank">Content Services</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/release-notes/content-services-fragments-featurepack.html" target="_blank">Content Services</a>:</strong>
             Export content from AEM as JSON for consumption across devices and applications.</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -598,7 +594,7 @@ Below is a matrix of key Sites features offered by AEM. Some of these features w
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="http://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/content-targeting-touch.html" target="_blank">Adobe Target Integration</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/content-targeting-touch.html" target="_blank">Adobe Target Integration</a>:</strong>
             Step-by-step wizard to create targeted experiences, create reusable offer libraries.</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -609,7 +605,7 @@ Below is a matrix of key Sites features offered by AEM. Some of these features w
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="http://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaign.html" target="_blank">Adobe Campaign Integration</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaign.html" target="_blank">Adobe Campaign Integration</a>:</strong>
             Easy integration with next-generation email campaign solution.</td>
             <td>&nbsp;</td>
             <td>✔</td>
@@ -620,7 +616,7 @@ Below is a matrix of key Sites features offered by AEM. Some of these features w
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="http://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html" target="_blank">Adobe Launch Integration</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/using/aem_launch_adobeio_integration.html" target="_blank">Adobe Launch Integration</a>:</strong>
             Integrate with Adobe's next-generation tag management cloud service.</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -631,7 +627,7 @@ Below is a matrix of key Sites features offered by AEM. Some of these features w
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="http://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/aem-screens-introduction.html" target="_blank">Screens</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/aem-screens-introduction.html" target="_blank">Screens</a>:</strong>
             Manage experiences for digital signage and kiosks.</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -642,7 +638,7 @@ Below is a matrix of key Sites features offered by AEM. Some of these features w
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="http://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ecommerce.html" target="_blank">eCommerce</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ecommerce.html" target="_blank">eCommerce</a>:</strong>
             Deliver branded, personalized shopping experiences across web, mobile, and social touchpoints.
             </td>
             <td>✔</td>
@@ -654,7 +650,7 @@ Below is a matrix of key Sites features offered by AEM. Some of these features w
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="http://helpx.adobe.com/experience-manager/6-5/communities/using/overview.html" target="_blank">Communities</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/overview.html" target="_blank">Communities</a>:</strong>
             Forums, threaded comments, event calendars, and many other features allow deep engagement with site visitors.</td>
             <td>✔</td>
             <td>✔</td>

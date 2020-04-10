@@ -1,21 +1,25 @@
 ---
 title: Understanding Core Components
-seo-title: Understanding Core Components
-description: AEM 6.3 replaces the foundational components with a new set of core components.  Adobe Product Management provides an overview of the new core components and covers the details of the open source license. 
-seo-description: AEM 6.3 replaces the foundational components with a new set of core components.  Adobe Product Management provides an overview of the new core components and covers the details of the open source license. 
+description: AEM Core Components are a standard set components to be used with Adobe Experience Manager. Built with Adobe's best practices and standards, Core Components provide a baseline set of functionality for any Sites implementation. 
 feature: core-components
 topics: authoring
 audience: all
 activity: use
 doc-type: feature-video
-version: 6.3, 6.4, 6.5
-uuid: 77594d57-9613-4793-a5d9-1aae50b1207e
-discoiquuid: 07feffa1-c32b-4e36-b852-42b7d44a22c5
+version: 6.3, 6.4, 6.5, cloud-service
+kt: 4676
 ---
 
 # Understanding Core Components{#understanding-core-components}
 
-AEM 6.3 replaces the foundational components with a new set of core components.  Adobe Product Management provides an overview of the new core components and covers the details of the open source license.
+AEM Core Components are a standard set components to be used with Adobe Experience Manager. Built with Adobe's best practices and standards, Core Components provide a baseline set of functionality for any Sites implementation.
 
->[!VIDEO](https://video.tv.adobe.com/v/18926/?quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/18926/?quality=12)
+
+## Additional Resources {#additional-resources}
+
+* [GitHub Project](https://github.com/adobe/aem-core-wcm-components)
+* [Core Component Examples](https://www.aemcomponents.dev/)
+* [Core Component Documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+
 

@@ -10,9 +10,9 @@ audience: architect, developer
 doc-type: technical-video
 ---
 
-# Set up Sling Dynamic Include
+# Set up [!DNL Sling Dynamic Include]
 
-A video walk-through of installing and using Apache Sling Dynamic Include with [AEM Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) running on Apache HTTP Web Server.
+A video walk-through of installing and using [!DNL Apache Sling Dynamic Include] with [AEM Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) running on [!DNL Apache HTTP Web Server].
 
 >[!VIDEO](https://video.tv.adobe.com/v/17040/?quality=12)
 
@@ -20,8 +20,8 @@ A video walk-through of installing and using Apache Sling Dynamic Include with [
 >
 > Ensure the latest version of AEM Dispatcher is installed locally.
 
-1. Download and install the [Sling Dynamic Include bundle](https://sling.apache.org/downloads.cgi).
-1. Configure Sling Dynamic Include via the OSGi Configuration Factory at **http://&lt;host&gt;:&lt;port&gt;/system/console/configMgr/org.apache.sling.dynamicinclude.Configuration**.
+1. Download and install the [[!DNL Sling Dynamic Include] bundle](https://sling.apache.org/downloads.cgi).
+1. Configure [!DNL Sling Dynamic Include] via the [!DNL OSGi Configuration Factory] at **http://&lt;host&gt;:&lt;port&gt;/system/console/configMgr/org.apache.sling.dynamicinclude.Configuration**.
 
    Or, to add to an AEM code-base, create the appropriate **sling:OsgiConfig** node at:
 
@@ -47,7 +47,7 @@ A video walk-through of installing and using Apache Sling Dynamic Include with [
    -->
    ```
 
-1. (Optional) Repeat the last step to allow for components on [locked (initial) content of editable templates](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html) to be served via SDI as well. The reason for the additional configuration is that locked content of editable templates is served from `/conf` instead of `/content`.
+1. (Optional) Repeat the last step to allow for components on [locked (initial) content of editable templates](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html) to be served via [!DNL SDI] as well. The reason for the additional configuration is that locked content of editable templates is served from `/conf` instead of `/content`.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -71,7 +71,7 @@ A video walk-through of installing and using Apache Sling Dynamic Include with [
    -->
    ```
 
-1. Update Apache HTTPD Web server's `httpd.conf` file to enable the Include Module.
+1. Update [!DNL Apache HTTPD Web server]'s `httpd.conf` file to enable the [!DNL Include] module.
 
    ```shell
    $ sudo vi .../httpd.conf
@@ -81,7 +81,7 @@ A video walk-through of installing and using Apache Sling Dynamic Include with [
    LoadModule include_module libexec/apache2/mod_include.so
    ```
 
-1. Update the vhost file to respect include directives.
+1. Update the [!DNL vhost] file to respect include directives.
 
    ```shell
    $ sudo vi .../vhosts/aem-publish.local.conf
@@ -133,7 +133,7 @@ A video walk-through of installing and using Apache Sling Dynamic Include with [
    }
    ```
 
-1. Always restart Apache HTTPD Web Server after making changes to HTTPD configuration files or the `dispatcher.any`.
+1. Always restart [!DNL Apache HTTP Web Server] after making changes to its configuration files or the `dispatcher.any`.
 
    ```shell
    $ sudo apachectl restart
@@ -141,7 +141,7 @@ A video walk-through of installing and using Apache Sling Dynamic Include with [
 
 >[!NOTE]
 >
->If you are using Sling Dynamic Includes for serving Edge-Side Includes, then make sure to cache relevant [response headers in the dispatcher cache](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders). Possible headers include the following:
+>If you are using [!DNL Sling Dynamic Includes] for serving edge-side includes (ESI), then make sure to cache relevant [response headers in the dispatcher cache](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders). Possible headers include the following:
 >
 >* "Cache-Control"
 >* "Content-Disposition"

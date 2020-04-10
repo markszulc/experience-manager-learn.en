@@ -9,14 +9,14 @@ audience: author, marketer
 doc-type: feature-video
 activity: understand
 version: 6.3, 6.4, 6.5
-kt: 3308
+kt: 4321
 ---
 
 # Understanding Page Properties {#understanding-page-properties-aem-sites}
 
 The following video introduces the page properties associated with a page in Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/28743/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/32192?quality=12)
 
 In this video, the following page property elements are covered:
 
@@ -52,6 +52,6 @@ In this video, the following page property elements are covered:
 
 ## Additional Resources {#additional-resources}
 
-* [Editing Page Properties Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-page-properties.html)
-* [Editing Page Content Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html)
-* [Sites Authoring User Guide](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html?topic=/experience-manager/6-5/sites/authoring/morehelp/page-authoring.ug.js)
+* [Editing Page Properties Documentation](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-page-properties.html)
+* [Editing Page Content Documentation](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-content.html)
+* [Sites Authoring User Guide](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/home.html?topic=/experience-manager/6-5/sites/authoring/morehelp/page-authoring.ug.js)

@@ -1,15 +1,11 @@
 ---
 title: Developing Resource Statuses in AEM Sites
-seo-title: Developing Resource Statuses in AEM Sites
 description: Adobe Experience Manager's Resource Status API's, is a pluggable framework for exposing status messaging in AEM's various editor Web UIs. 
-seo-description: Adobe Experience Manager's Resource Status API's, is a pluggable framework for exposing status messaging in AEM's various editor Web UIs. 
 topics: development
 audience: developer
 doc-type: tutorial
 activity: develop
 version: 6.3, 6.4, 6.5
-uuid: 2834761c-eaae-409d-9fff-43b5aadcd8e8
-discoiquuid: c5606cc5-ae45-4db2-93b5-165866e49bba
 ---
 
 # Developing Resource Statuses {#developing-resource-statuses-in-aem-sites}
@@ -39,7 +35,7 @@ When developing custom Resource Statuses, the develop work is comprised of:
 
     ![resource status architecture](assets/sample-editor-resource-status-application-architecture.png)
 
-3. The status resource provided as part of the Page, Experience Fragment and Template editors is given a type via the resources "statusType" property.
+3. The status resource provided as part of the Page, Experience Fragment and Template editors is given a type via the resources "[!DNL statusType]" property.
 
     * Page editor: `editor`
     * Experience Fragment editor: `editor`

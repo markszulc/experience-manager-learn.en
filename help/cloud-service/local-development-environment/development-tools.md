@@ -7,7 +7,7 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 3290
+kt: 4267
 ---
  
 # Set up Development Tools for AEM Projects

@@ -71,8 +71,8 @@ There are two options for exposing Content Fragment as JSON to support a 3rd par
 ## Additional Resources {#additional-resources}
 
 * [Authoring Content Fragments](content-fragments-feature-video-use.md)
-* [AEM Core WCM Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [AEM Core WCM Content Fragment Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+* [AEM WCM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [AEM WCM Core Content Fragment Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
 
 To download and install the package below on an AEM 6.4+ instance for the final state from the video series:  
 **[aem_demo_fluid-experiencescontent-fragments-100.zip](assets/aem_demo_fluid-experiencescontent-fragments-100.zip)**

@@ -23,7 +23,7 @@ Smart Translation Search allows the use of non-English search terms to resolve t
 >Smart Translation Search must be set up on each AEM instance that requires it.
 
 1. Download and install the Oak Search Machine Translation OSGi bundle
-    * [Download the Oak Search Machine Translation OSGi bundle](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.apache.jackrabbit%22%20AND%20a%3A%22oak-search-mt%22) that corresponds to AEM's Oak version.
+    * [Download the Oak Search Machine Translation OSGi bundle](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.apache.jackrabbit%22%20AND%20a%3A%22oak-search-mt%22) that corresponds to AEM's Oak version.
     * Install the downloaded Oak Search Machine Translation OSGi bundle into AEM via [ `/system/console/bundles`](http://localhost:4502/system/console/bundles).
 
 2. Download and update the Apache Joshua language packs
@@ -123,7 +123,7 @@ Under `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predicatedTags`
 
 ## Additional Resources{#additional-resources}
 
-* [Apache Oak Search Machine Translation OSGi bundle](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.apache.jackrabbit%22%20AND%20a%3A%22oak-search-mt%22)
+* [Apache Oak Search Machine Translation OSGi bundle](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.apache.jackrabbit%22%20AND%20a%3A%22oak-search-mt%22)
 * [Apache Joshua Language Packs](https://cwiki.apache.org/confluence/display/JOSHUA/Language+Packs)
 * [AEM Smart Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html)
 * [Best Practices for Querying and Indexing](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/best-practices-for-queries-and-indexing.html)

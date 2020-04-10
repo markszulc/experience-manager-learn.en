@@ -10,7 +10,7 @@ doc-type: feature-video
 activity: use
 version: 6.3, 6.4, 6.5
 uuid: e096a08b-528d-48c7-93fb-73b10c0a9259
-discoiquuid: 5e07ccac-0e94-4352-9848-d5ae9a293288
+kt: 4632
 ---
 
 # Using the Page Difference Feature {#using-page-difference-with-aem-sites}
@@ -19,7 +19,7 @@ AEM Sites' page difference capabilities show provides a quick, color-coded view 
 
 ## Comparing page versions {#comparing-page-versions}
 
->[!VIDEO](https://video.tv.adobe.com/v/17745/?quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/32152?quality=9)
 
 **HTML changes**
 
@@ -40,4 +40,4 @@ Page Difference feature can be also used to identify the difference between blue
 
 ## Additional Resources {#additional-resources}
 
-* [Page Diff Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/page-diff.html)
+* [Page Diff Documentation](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/page-diff.html)

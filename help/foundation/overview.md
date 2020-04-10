@@ -3,18 +3,17 @@ title: AEM Foundation Videos and Tutorials
 seo-title: AEM Foundation Videos and Tutorials
 description: A collection of videos and tutorials for Adobe Experience Manager Foundation. 
 seo-description: A collection of videos and tutorials for Adobe Experience Manager Foundation
-products: SG_EXPERIENCEMANAGER/6.5
 ---
 
 # Overview {#overview}
 
-Adobe Experience Manager Foundation provides a common set of capabilities available to users of AEM Sites, Assets and Forms.
+Adobe Experience Manager provides a common set of capabilities available to users of AEM Sites, ![DNL Assets] and ![DNL Forms].
 
 ## What's New
 
 * **[Use Workflow Management in AEM (Video)](./workflow/use-workflow-management.md)**
     <br>
-    *AEM provides visibility into running workflows, and eases management of Workflow definitions.*
+    *AEM provides visibility into running workflows, and eases management of [!DNL Workflow] definitions.*
 
 * **[Understand Cloud Manager for AEM (Video)](./cloud-manager/understand-cloud-manager-for-aem.md)**  
     <br>
@@ -22,7 +21,7 @@ Adobe Experience Manager Foundation provides a common set of capabilities availa
 
 * **[Set up public and private keys for use with Adobe I/O (Tutorial)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**  
     <br>
-    *Learn how keys and keystores are generated using openssl that work with AEM and Adobe I/O.*
+    *Learn how keys and keystores are generated using [!DNL openssl] that work with AEM and Adobe I/O.*
 
 * **[Use the Cloud Manager CI/CD Pipeline (Video)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**  
     <br>

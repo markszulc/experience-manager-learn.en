@@ -1,13 +1,11 @@
 ---
 title: Getting Started with AEM Headless
-seo-title: Getting Started with AEM Headless
 description: An end-to-end tutorial illustrating how to build-out and expose content using AEM Headless.
-seo-description: An end-to-end tutorial illustrating how to build-out and expose content using AEM Headless.
 ---
 
 # Getting Started with AEM Headless
 
-An end-to-end tutorial illustrating how to build-out and expose content using AEM and consumed by a native  mobile app, in a headless CMS scenario.
+An end-to-end tutorial illustrating how to build-out and expose content using AEM and consumed by a native mobile app, in a headless CMS scenario.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28315/?quality=12)
 

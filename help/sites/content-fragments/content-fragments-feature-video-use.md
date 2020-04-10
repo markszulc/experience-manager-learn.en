@@ -1,8 +1,6 @@
 ---
 title: Authoring Content Fragments in AEM
-seo-title: Authoring Content Fragments in AEM
 description: Content Fragments are a content abstraction in AEM that allows text-based content to be authored and managed independently of the channels it supports. 
-seo-description: Content Fragments are a content abstraction in AEM that allows text-based content to be authored and managed independently of the channels it supports.
 sub-product: content-services
 feature: content-fragments
 topics: authoring, content-architecture
@@ -10,8 +8,6 @@ audience: all
 doc-type: feature-video
 activity: use
 version: 6.3, 6.4, 6.5
-uuid: 045473d2-5abe-4414-b91c-d369f3069ead
-discoiquuid: 912e0c41-83cf-49f7-b515-09519b6718c1
 ---
 
 # Authoring Content Fragments {#authoring-content-fragments}
@@ -36,13 +32,13 @@ This video series covers the authoring life-cycle of Content Fragments in AEM. D
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12)
 
-AEM Content Fragments Models, the data schemas of Content Fragments, must be enabled via AEM's Configuration Browser, which allows Content Fragment Models to be defined on a per configuration basis.
+AEM Content Fragments Models, the data schemas of Content Fragments, must be enabled via AEM's [!UICONTROL Configuration Browser], which allows Content Fragment Models to be defined on a per configuration basis.
 
 ## Creating Content Fragments {#creating-content-fragments}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22451/?quality=12)
 
-AEM Configurations must be applied to AEM Assets folder hierarchies to allow their Content Fragment Models to be created as Content Fragments. Content Fragments support a rich form-based authoring experience allowing content to be modeled as a collection of elements.
+AEM configurations are applied to AEM Assets folder hierarchies to allow their Content Fragment Models to be created as Content Fragments. Content Fragments support a rich form-based authoring experience allowing content to be modeled as a collection of elements.
 
 Content Fragments can have multiple variants, each variant addressing a different use-case (thought, not necessarily channel) for the content.
 
@@ -73,8 +69,8 @@ Learn about [delivering Content Fragments](content-fragments-delivery-feature-vi
 ## Additional Resources {#additional-resources}
 
 * [Delivering Content Fragments](content-fragments-delivery-feature-video-use.md)
-* [AEM Core WCM Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [AEM Core WCM Content Fragment Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+* [AEM WCM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [AEM WCM Core Content Fragment Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
 
 To download and install the package below on an AEM 6.4+ instance for the final state from the video series:
 

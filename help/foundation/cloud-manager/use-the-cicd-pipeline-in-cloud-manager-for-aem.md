@@ -1,21 +1,17 @@
 ---
 title: Use the CI/CD Pipeline in Adobe Cloud Manager
-seo-title: Use the CI/CD Pipeline in Adobe Cloud Manager
-description: Adobe Managed Services' (AMS) Adobe Cloud Manager provides a simple, yet flexible self-service CI/CD  Pipeline that allows AEM project teams to quickly, safely and consistently deploy code to all AEM environments hosted in AMS. This video series explores setting up and executing Cloud Manager's CI/CD Pipeline in both failure and success scenarios.
-seo-description: Adobe Managed Services' (AMS) Adobe Cloud Manager provides a simple, yet flexible self-service CI/CD  Pipeline that allows AEM project teams to quickly, safely and consistently deploy code to all AEM environments hosted in AMS. This video series explores setting up and executing Cloud Manager's CI/CD Pipeline in both failure and success scenarios.
+description: Adobe Cloud Manager provides a simple, yet flexible self-service CI/CD  Pipeline that allows AEM project teams to quickly, safely and consistently deploy code to all AEM environments hosted in AMS. This video series explores setting up and executing Cloud Manager's CI/CD Pipeline in both failure and success scenarios.
 sub-product: cloud-manager, foundation
 feature: pipelines, quality-gates
 topics: cicd, performance, best-practices, development, governance
 doc-type: feature-video
 activity: understand
 audience: all
-uuid: fbb99f0a-5d58-4cdf-b9e8-6b56e84d8665
-discoiquuid: 7b525c29-c387-4f63-aca7-b9e966779b39
 ---
 
 # Use the CI/CD Pipeline in Adobe Cloud Manager
 
-Adobe Managed Services' (AMS) Adobe Cloud Manager provides a simple, yet flexible self-service CI/CD  Pipeline that allows AEM project teams to quickly, safely and consistently deploy code to all AEM environments hosted in AMS. This video series explores setting up and executing Cloud Manager's CI/CD Pipeline in both failure and success scenarios.
+Adobe Cloud Manager provides a simple, yet flexible self-service CI/CD  Pipeline that allows AEM project teams to quickly, safely and consistently deploy code to all AEM environments hosted in AMS. This video series explores setting up and executing Cloud Manager's CI/CD Pipeline in both failure and success scenarios.
 
 ## Introduction
 
@@ -35,21 +31,21 @@ This video explores setting up the Pipeline for the Program in Cloud Manager.
 
 ## A failing pipeline execution
 
-This video explores the execution of the CI/CD Pipeline using code that fails Cloud Manager's required quality checks, using the **yellow** repository branch.
+This video explores the execution of the CI/CD Pipeline using code that fails Cloud Manager's required quality checks, using the **[!DNL yellow]** repository branch.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23084/?quality=12)
 
 ## A successful pipeline execution
 
-This video explores the successful execution of the CI/CD Pipeline using code that passes Cloud Manager's required quality checks, using the **master** repository branch.
+This video explores the successful execution of the CI/CD Pipeline using code that passes Cloud Manager's required quality checks, using the **[!DNL master]** repository branch.
 
-This video also touches on the Activity console in Cloud Manager, which allows re-entrance into active execution, or reviewing completed pipeline executions.
+This video also touches on the [!UICONTROL Activity] console in Cloud Manager, which allows re-entrance into active executions, or review of completed or failed executions.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23085/?quality=12)
 
 ## Supporting materials
 
 * [Cloud Manager User Guide](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html)
-* [Download code scanning SonarQube rules](https://helpx.adobe.com/experience-manager/cloud-manager/using/understand-your-test-results.html#CodeQualityTesting)
+* [Download code scanning [!DNL SonarQube] rules](https://helpx.adobe.com/experience-manager/cloud-manager/using/understand-your-test-results.html#CodeQualityTesting)
   * *XLSX available at the bottom of the linked section*
-* [SonarQube Java rules index](https://rules.sonarsource.com/java/)
+* [[!DNL SonarQube] Java rules index](https://rules.sonarsource.com/java/)
