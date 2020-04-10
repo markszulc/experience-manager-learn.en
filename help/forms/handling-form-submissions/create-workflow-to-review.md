@@ -54,4 +54,17 @@ If the form is based on Form Data Model the submitted data is in JSON format and
 * Click on _Sync_ to generate the runtime model of the workflow.
 Your workflow model is now ready and can be associated with Adaptive Form's submit action.
 
+## Configuring Adaptive Form to trigger AEM Workflow
+
+* Open Adaptive Form in edit mode.
+* Open the content explorer
+![Content explorer](assets/af-workflow-submission.PNG)
+* Select Form Container node and open its configuration properties
+![Submission](assets/af-workflow-submission1.PNG)
+* Expand the Submission panel
+* Set the form's submit action as specified in the above screen shot.
+_Please make sure you make a note of the value specified in the Data File Path field. This value must match the value you specify in the pre-populate section of the Assign Task component of your workflow._
+
+Now when you fill your Adaptive Form and submit the form, the workflow associated with submit action of the form will be triggered.
+
 
