@@ -1,7 +1,6 @@
 ---
 title: Creating AEM Workflow
-seo-title: Configuring Adaptive Form to trigger AEM Workflow
-description: Creating AEM Workflow to review submitted data.
+description: Creating AEM Workflow model using AEM Forms workflow components to review submitted data.
 sub-product: forms
 feature: workflow
 topics: integrations
@@ -9,6 +8,7 @@ audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
+KT:4855
 ---
 
 # Creating workflow to review submitted data
@@ -65,6 +65,6 @@ Your workflow model is now ready and can be associated with Adaptive Form's subm
 * Set the form's submit action as specified in the above screen shot.
 _Please make sure you make a note of the value specified in the Data File Path field. This value must match the value you specify in the pre-populate section of the Assign Task component of your workflow._
 
-Now when you fill your Adaptive Form and submit the form, the workflow associated with submit action of the form will be triggered.
+Now when you fill and submit your Adaptive Form, the workflow associated with submit action of the form will be triggered.
 
 
