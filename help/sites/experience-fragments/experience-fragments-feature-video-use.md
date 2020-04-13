@@ -1,8 +1,6 @@
 ---
 title: Using AEM Experience Fragments
-seo-title: Using Adobe Experience Manager Experience Fragments
 description: Experience Fragments allows content authors to reuse content across channels including Sites pages and 3rd party systems.
-seo-description: Experience Fragments, a feature of Adobe Experience Manager (AEM), allows content authors to reuse content across channels including Sites pages and 3rd party systems.
 sub-product: sites, content-services
 feature: experience-fragments
 topics: authoring, content-architecture
@@ -10,13 +8,11 @@ audience: all
 doc-type: feature-video
 activity: use
 version: 6.3, 6.4, 6.5
-uuid: 0922d3e7-e839-4214-8b96-21495f688ed3
-discoiquuid: 27a28286-552f-493b-868c-e7d27302f583
 ---
 
 # Using Experience Fragments{#using-aem-experience-fragments}
 
-Experience Fragments is a feature of Adobe Experience Manager or AEM, first introduced in AEM 6.3. Experience Fragments allows content authors to reuse content across channels including Sites pages and 3rd party systems.
+Experience Fragments are a feature of Adobe Experience Manager (AEM), first introduced in AEM 6.3. Experience Fragments allows content authors to reuse content across channels including Sites pages and 3rd party systems.
 
 ## Experience Fragments Overview
 
@@ -28,7 +24,7 @@ With Experience Fragments marketers can:
 
 * Reuse an experience across channels (both owned channels and 3rd party touch-points)
 * Create variations of an experience for specific use-cases
-* Keep variations in sync with the use of Live-Copy
+* Keep variations in sync with the use of Live  Copy
 * Social Post experiences to Facebook and Pinterest out of the box
 
 ## Building Blocks with Experience Fragments

@@ -1,8 +1,6 @@
 ---
 title: Developing with the AEM SPA Editor - Hello World Tutorial
-seo-title: Developing with the AEM SPA Editor - Hello World Tutorial
 description: AEM's SPA Editor provides support for in-context editing of a Single Page Application or SPA. This tutorial is an introduction to SPA development to be used with AEM's SPA Editor JS SDK. The tutorial will extend the We.Retail Journal app by adding a custom Hello World component. Users can complete the tutorial using React or Angular frameworks.
-seo-description: AEM's SPA Editor provides support for in-context editing of a Single Page Application or SPA. This tutorial is an introduction to SPA development to be used with AEM's SPA Editor JS SDK. The tutorial will extend the We.Retail Journal app by adding a custom Hello World component. Users can complete the tutorial using React or Angular frameworks.
 sub-product: sites, content-services
 feature: spa-editor
 topics: development, single-page-applications
@@ -10,8 +8,6 @@ audience: developer
 doc-type: tutorial
 activity: use
 version: 6.3, 6.4, 6.5
-uuid: 540447ad-b153-4cb0-99af-ab4dfcf3c0dd
-discoiquuid: d3c0c252-c376-4d27-8c09-053925c247f3
 ---
 
 # Developing with the AEM SPA Editor - Hello World Tutorial{#developing-with-the-aem-spa-editor-hello-world-tutorial}
@@ -78,7 +74,7 @@ Popular frameworks [React JS](https://reactjs.org/) and [Angular](https://angula
 SPA development has one foot in AEM development, and the other out. The goal is to allow SPA development to occur independently, and (mostly) agnostic to AEM.
 
 * SPA projects can operate independently of the AEM project during front-end development.
-* Front-end build tools and technologies like Webpack, NPM, Grunt and Gulp continue to be used.
+* Front-end build tools and technologies like Webpack, NPM, [!DNL Grunt] and [!DNL Gulp]continue to be used.
 * To build for AEM, the SPA project is compiled and automatically included in the AEM project.
 * Standard AEM Packages used to deploy the SPA into AEM.
 
@@ -86,7 +82,7 @@ SPA development has one foot in AEM development, and the other out. The goal is 
 
 *SPA development has one foot in AEM development, and the other out - allowing SPA development to occur independently, and (mostly) agnostic to AEM.*
 
-The goal of this tutorial is to extend the We.Retail  Journal App with a new component. Start by downloading the source code for the We.Retail Journal app and deploying to a local AEM.
+The goal of this tutorial is to extend the We.Retail Journal App with a new component. Start by downloading the source code for the We.Retail Journal app and deploying to a local AEM.
 
 1. **Download** the latest [We.Retail Journal Code from GitHub](https://github.com/adobe/aem-sample-we-retail-journal).
 
@@ -109,11 +105,11 @@ The goal of this tutorial is to extend the We.Retail  Journal App with a new com
    The project contains the following maven modules:
 
     * `all`: Embeds and installs the entire project in a single package.
-    * `bundles`: Contains two OSGi bundles: commons and core that contain Sling Models and other Java code.
-    * `ui.apps`: contains the /apps parts of the project, ie JS&CSS clientlibs, components, runmode specific configs.
+    * `bundles`: Contains two OSGi bundles: commons and core that contain [!DNL Sling Models] and other Java code.
+    * `ui.apps`: contains the /apps parts of the project, ie JS & CSS clientlibs, components, runmode specific configs.
     * `ui.content`: contains structural content and configurations (`/content`, `/conf`)
     * `react-app`: We.Retail Journal React application. This is both a Maven module and a webpack project.
-    * `angular-app`: We.Retail Journal Angular application. This is both a Maven module and a webpack project.
+    * `angular-app`: We.Retail Journal Angular application. This is both a [!DNL Maven] module and a webpack project.
 
 3. Open a new terminal window and run the following command to build and deploy the entire app to a local AEM instance running on [http://localhost:4502](http://localhost:4502).
 
@@ -130,7 +126,7 @@ The goal of this tutorial is to extend the We.Retail  Journal App with a new com
 
     >[!CAUTION]
     >
-    > If you recieve an error during the build, [ensure your maven settings.xml file includes Adobe's nexus repository](https://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html).
+    > If you recieve an error during the build, [ensure your Maven settings.xml file includes Adobe's Maven artifact repository](https://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html).
 
 4. Navigate to:
 
@@ -139,11 +135,11 @@ The goal of this tutorial is to extend the We.Retail  Journal App with a new com
 
    The We.Retail Journal App should be displayed within the AEM Sites editor.
 
-5. In Edit mode, select a component to edit and make an update to the content.
+5. In [!UICONTROL Edit] mode, select a component to edit and make an update to the content.
 
    ![Edit a component](assets/spa-editor-helloworld-tutorial-use/editcontent.png)
 
-6. Select the Page Properties Icon to open the Page Properties Menu. Select Edit Template to open the page's template.
+6. Select the [!UICONTROL Page Properties] icon to open the [!UICONTROL Page Properties]. Select [!UICONTROL Edit Template] to open the page's template.
 
     ![Page properties menu](assets/spa-editor-helloworld-tutorial-use/page-properties.png)
 
@@ -151,7 +147,7 @@ The goal of this tutorial is to extend the We.Retail  Journal App with a new com
 
     >[!NOTE]
     >
-    > Only AEM 6.5 and AEM 6.4 + **Service Pack 5** support Editable templates.
+    > Only AEM 6.5 and AEM 6.4 + **Service Pack 5** support Editable Templates.
 
 ## Development Overview {#development-overview}
 
@@ -169,9 +165,9 @@ SPA development iterations occur independently of AEM. When the SPA is ready to 
 
 An AEM component will be created first. The AEM component is responsible for rendering the JSON properties that are read by the React component. The AEM component is also responsible for providing a dialog for any editable properties of the component.
 
-Using Eclipse, or other IDE, import the We.Retail Journal Maven project.
+Using [!DNL Eclipse], or other [!DNL IDE], import the We.Retail Journal Maven project.
 
-1. Update the reactor **pom.xml** to remove the apache rat plugin. This plugin checks each file to ensure that there is a License header. For our purposes we don't need to be concerned with this functionality.
+1. Update the reactor **pom.xml** to remove the [!DNL Apache Rat] plugin. This plugin checks each file to ensure that there is a License header. For our purposes we don't need to be concerned with this functionality.
 
    In **aem-sample-we-retail-journal/pom.xml** remove **apache-rate-plugin**:
 
@@ -215,12 +211,12 @@ Using Eclipse, or other IDE, import the We.Retail Journal Maven project.
 
     >[!NOTE]
     >
-    > To illustrate the Editable Templates feature we have purposely set the `componentGroup="Custom Components"`. In a real-world project, it is best to minimize the number of component groups, so a better group would be "We.Retail Journal" to match the other content components.
+    > To illustrate the Editable Templates feature we have purposely set the `componentGroup="Custom Components"`. In a real-world project, it is best to minimize the number of component groups, so a better group would be "[DNL We.Retail Journal]" to match the other content components.
     >
     > Only AEM 6.5 and AEM 6.4 + **Service Pack 5** support Editable templates.
 
 4. Next a dialog will be created to allow for a custom message to be configured for the **Hello World** component. Beneath `/apps/we-retail-journal/components/helloworld` add a node name **cq:dialog** of **nt:unstructured**.
-5. The **cq:dialog** will display a single textfield that persists text to a property named **message**. Beneath the newly created **cq:dialog** add the following nodes and properties, represented in XML below (`helloworld/_cq_dialog/.content.xml`) :
+5. The **cq:dialog** will display a single textfield that persists text to a property named **[!DNL message]**. Beneath the newly created **cq:dialog** add the following nodes and properties, represented in XML below (`helloworld/_cq_dialog/.content.xml`) :
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -296,7 +292,7 @@ Using Eclipse, or other IDE, import the We.Retail Journal Maven project.
    $ mvn -PautoInstallPackage clean install
    ```
 
-   In [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/we-retail-journal/global/components/helloworld) validate the component has been deployed by inspecting the folder under `/apps/we-retail-journal/components:`
+   In [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/apps/we-retail-journal/global/components/helloworld) validate the component has been deployed by inspecting the folder under `/apps/we-retail-journal/components:`
 
    ![Deployed component structure in CRXDE Lite](assets/spa-editor-helloworld-tutorial-use/updated-component-withdialogs.png)
 
@@ -304,13 +300,13 @@ Using Eclipse, or other IDE, import the We.Retail Journal Maven project.
 
 **Persona: AEM Developer**
 
-Next a Sling Model is created to back the Hello World component. In a traditional WCM use case the Sling Model implements any business logic and a server-side rendering script (HTL) will make a call to the Sling Model. This keeps the rendering script relatively simple.
+Next a [!DNL Sling Model] is created to back the [!DNL Hello World] component. In a traditional WCM use case the [!DNL Sling Model] implements any business logic and a server-side rendering script (HTL) will make a call to the [!DNL Sling Model]. This keeps the rendering script relatively simple.
 
-Sling Models are also used in the SPA use case to implement server-side business logic. The difference is that in the SPA use case, the Sling Model exposes it's methods as serialized JSON.
+[!DNL Sling Models] are also used in the SPA use case to implement server-side business logic. The difference is that in the [!DNL SPA] use case, the [!DNL Sling Models] exposes it's methods as serialized JSON.
 
 >[!NOTE]
 >
->As a best practice, developers should look to use [AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) when possible. Among other features, Core Components provide Sling Models with JSON output that is "SPA-ready", allowing developers to focus more on front-end presentation.
+>As a best practice, developers should look to use [AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) when possible. Among other features, Core Components provide [!DNL Sling Models] with JSON output that is "SPA-ready", allowing developers to focus more on front-end presentation.
 
 1. In the editor of your choice, open the **we-retail-journal-commons** project ( `<src>/aem-sample-we-retail-journal/bundles/commons`).
 2. In the package `com.adobe.cq.sample.spa.commons.impl.models`:
@@ -319,7 +315,7 @@ Sling Models are also used in the SPA use case to implement server-side business
 
    ![New Java Class Wizard](assets/spa-editor-helloworld-tutorial-use/fig5.png)
 
-   The ComponentExporter interface must be implemented in order for the Sling Model to be compatible with AEM Content Services.
+   The `ComponentExporter` interface must be implemented in order for the [!DNL Sling Model] to be compatible with AEM Content Services.
 
    ```java
     package com.adobe.cq.sample.spa.commons.impl.models;
@@ -336,7 +332,7 @@ Sling Models are also used in the SPA use case to implement server-side business
 
    ```
 
-3. Add a static variable named `RESOURCE_TYPE` to identify the HelloWorld component's resource type:
+3. Add a static variable named `RESOURCE_TYPE` to identify the [!DNL HelloWorld] component's resource type:
 
    ```java
     ...
@@ -348,7 +344,7 @@ Sling Models are also used in the SPA use case to implement server-side business
     }
    ```
 
-4. Add the OSGi annotations for `@Model` and `@Exporter`. The `@Model` annotation will register the class as a Sling Model. The `@Exporter` annotation will expose the methods as serialized JSON using the Jackson Exporter framework.
+4. Add the OSGi annotations for `@Model` and `@Exporter`. The `@Model` annotation will register the class as a [!DNL Sling Model]. The `@Exporter` annotation will expose the methods as serialized JSON using the [!DNL Jackson Exporter] framework.
 
    ```java
    import org.apache.sling.api.SlingHttpServletRequest;
@@ -372,7 +368,7 @@ Sling Models are also used in the SPA use case to implement server-side business
 
    ```
 
-5. Implement the method `getDisplayMessage()` to return the  jcr  property message. Use the Sling Model annotation of `@ValueMapValue` to make it easy to retrieve the property message stored beneath the component. The `@Optional` annotation is important since when the component is first added to the page,  `message`  will not be populated.
+5. Implement the method `getDisplayMessage()` to return the  JCR property `message`. Use the [!DNL Sling Model] annotation of `@ValueMapValue` to make it easy to retrieve the property `message` stored beneath the component. The `@Optional` annotation is important since when the component is first added to the page,  `message`  will not be populated.
 
    As part of the business logic, a string, "**Hello**", will be prepended to the message.
 
@@ -403,11 +399,11 @@ Sling Models are also used in the SPA use case to implement server-side business
 
     >[!NOTE]
     >
-    > The method name `getDisplayMessage` is important. When the Sling Model is serialized with the Jackson exporter it will be exposed as a JSON property: `displayMessage`. The Jackson exporter will serialize and expose all `getter` methods that do not take a parameter (unless explicitly marked to ignore). Later in the React/Angular app we will read this property value and display it as part of the application.
+    > The method name `getDisplayMessage` is important. When the [!DNL Sling Model] is serialized with the [!DNL Jackson Exporter] it will be exposed as a JSON property: `displayMessage`. The [!DNL Jackson Exporter] will serialize and expose all `getter` methods that do not take a parameter (unless explicitly marked to ignore). Later in the React / Angular app we will read this property value and display it as part of the application.
 
-    The method `getExportedType` is also important. The value of the component `resourceType` will be used to "map" the JSON data to the front-end component (Angular/React). We will explore this in the next section.
+    The method `getExportedType` is also important. The value of the component `resourceType` will be used to "map" the JSON data to the front-end component (Angular / React). We will explore this in the next section.
 
-6. Implement the method `getExportedType()` to return the resource type of the  helloworld  component.
+6. Implement the method `getExportedType()` to return the resource type of the `HelloWorld` component.
 
    ```java
     @Override
@@ -418,16 +414,16 @@ Sling Models are also used in the SPA use case to implement server-side business
 
    The full code for [**HelloWorld.java** can be found here.](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/spa-helloworld-guide/src/bundles/commons/HelloWorld.java)
 
-7. Deploy the code to AEM using Maven:
+7. Deploy the code to AEM using Apache Maven:
 
    ```shell
    $ cd <src>/sample-we-retail-spa-content/bundles/commons
    $ mvn -PautoInstallPackage clean install
    ```
 
-   Verify the deployment and registration of the Sling Model by navigating to [Status `>` Sling Models](http://localhost:4502/system/console/status-slingmodels) in the OSGi Console.
+   Verify the deployment and registration of the [!DNL Sling Model] by navigating to [[!UICONTROL Status] &gt; [!UICONTROL Sling Models]](http://localhost:4502/system/console/status-slingmodels) in the OSGi console.
 
-   You should see that the HelloWorld Model is bound to the  helloworld  resource type and that it is registered as a Sling Model Exporter Servlet:
+   You should see that the `HelloWorld` Sling Model is bound to the `we-retail-journal/components/helloworld` Sling resource type and that it is registered as a [!DNL Sling Model Exporter Servlet]:
 
    ```shell
    com.adobe.cq.sample.spa.commons.impl.models.HelloWorld - we-retail-journal/components/helloworld
@@ -449,7 +445,7 @@ Next, the React component will be created. Open the **react-app** module ( `<src
    ![react component file structure](assets/spa-editor-helloworld-tutorial-use/react-components.png)
 
 2. Add a new file beneath the components folder named `HelloWorld.js`.
-3. Open `HelloWorld.js`. Add an import statement to import the React component library. Add a second import statement to import the `MapTo` helper provided by Adobe. The MapTo helper provides a mapping of the React component to the AEM component's JSON.
+3. Open `HelloWorld.js`. Add an import statement to import the React component library. Add a second import statement to import the `MapTo` helper provided by Adobe. The `MapTo` helper provides a mapping of the React component to the AEM component's JSON.
 
    ```js
 
@@ -458,7 +454,7 @@ Next, the React component will be created. Open the **react-app** module ( `<src
 
    ```
 
-4. Beneath the imports create a new class named `HelloWorld` that extends the React `Component` interface. Add the required `render()` method to the HelloWorld class.
+4. Beneath the imports create a new class named `HelloWorld` that extends the React `Component` interface. Add the required `render()` method to the `HelloWorld` class.
 
    ```js
    import React, {Component} from 'react';
@@ -472,11 +468,11 @@ Next, the React component will be created. Open the **react-app** module ( `<src
    }
    ```
 
-5. The `MapTo` helper automatically includes an object named `cqModel` as part of the React component's props. The `cqModel` includes all properties exposed by the Sling Model.
+5. The `MapTo` helper automatically includes an object named `cqModel` as part of the React component's props. The `cqModel` includes all properties exposed by the [!DNL Sling Model].
 
-   Remember that the Sling Model created earlier contains a method `getDisplayMessage()`. `getDisplayMessage()` is translated as a JSON key named `displayMessage` when outputted.
+   Remember the [!DNL Sling Model] created earlier contains a method `getDisplayMessage()`. `getDisplayMessage()` is translated as a JSON key named `displayMessage` when output.
 
-   Implement the `render()` method to output an `h1` tag that contains the value of displayMessage. [JSX](https://reactjs.org/docs/introducing-jsx.html), a syntax extension to JavaScript, is used to return the final markup of the component.
+   Implement the `render()` method to output an `h1` tag that contains the value of `displayMessage`. [JSX](https://reactjs.org/docs/introducing-jsx.html), a syntax extension to JavaScript, is used to return the final markup of the component.
 
    ```js
    ...
@@ -518,7 +514,7 @@ Next, the React component will be created. Open the **react-app** module ( `<src
    ...
    ```
 
-7. At the end of the file, call the `MapTo` helper, passing the `HelloWorld` class and the `HelloWorldEditConfig`. This will map the React Component to the AEM component based on the AEM Component's resource type: ` we-retail-journal/components/  helloworld`.
+7. At the end of the file, call the `MapTo` helper, passing the `HelloWorld` class and the `HelloWorldEditConfig`. This will map the React Component to the AEM component based on the AEM Component's resource type: `we-retail-journal/components/helloworld`.
 
    ```js
    MapTo('we-retail-journal/components/helloworld')(HelloWorld, HelloWorldEditConfig);
@@ -538,7 +534,7 @@ Next, the React component will be created. Open the **react-app** module ( `<src
    ...
    ```
 
-9. In the  `components`  folder create a new file named `HelloWorld.css` as a sibling of `HelloWorld.js.` Populate the file with the following to create some basic styling for the HelloWorld component:
+9. In the  `components`  folder create a new file named `HelloWorld.css` as a sibling of `HelloWorld.js.` Populate the file with the following to create some basic styling for the `HelloWorld` component:
 
    ```css
    /* HelloWorld.css to style HelloWorld component */
@@ -562,7 +558,7 @@ Next, the React component will be created. Open the **react-app** module ( `<src
     ...
     ```
 
-11. Deploy the code to AEM using Maven:
+11. Deploy the code to AEM using Apache Maven:
 
     ```shell
 
@@ -575,7 +571,7 @@ Next, the React component will be created. Open the **react-app** module ( `<src
 
     >[!NOTE]
     >
-    > **app.js** is the bundled React app. The code is no longer human readable. The npm run build command has triggered an optimized build that outputs compiled javascript that can be interpreted by modern browsers.
+    > **app.js** is the bundled React app. The code is no longer human readable. The `npm run build` command has triggered an optimized build that outputs compiled JavaScript that can be interpreted by modern browsers.
 
 
 ## Create Angular Component {#angular-component}
@@ -586,9 +582,9 @@ Next, the React component will be created. Open the **react-app** module ( `<src
 >
 > Feel free to skip this section if you are only interested in React development.
 
-Next, the Angular component will be created. Open the **angular-app** module ( `<src>/aem-sample-we-retail-journal/angular-app`) using the editor of your choice.
+Next, the Angular component will be created. Open the **angular-app** module (`<src>/aem-sample-we-retail-journal/angular-app`) using the editor of your choice.
 
-1. Inside the `angular-app` folder navigate to its src folder. Expand the components folder to view the existing Angular component files.
+1. Inside the `angular-app` folder navigate to its `src` folder. Expand the components folder to view the existing Angular component files.
 
    ![Angular file structure](assets/spa-editor-helloworld-tutorial-use/angular-file-structure.png)
 
@@ -607,7 +603,7 @@ Next, the Angular component will be created. Open the **angular-app** module ( `
 
    ```
 
-3. Open `helloworld.component.ts`. Add an import statement to import the Angular Component and Input classes. Create a new component, pointing the `styleUrls` and `templateUrl` to `helloworld.component.css` and `helloworld.component.html`. Lastly export the class `HelloWorldComponent` with the expected input of `displayMessage`.
+3. Open `helloworld.component.ts`. Add an import statement to import the Angular `Component` and `Input` classes. Create a new component, pointing the `styleUrls` and `templateUrl` to `helloworld.component.css` and `helloworld.component.html`. Lastly export the class `HelloWorldComponent` with the expected input of `displayMessage`.
 
    ```js
    //helloworld.component.ts
@@ -629,9 +625,9 @@ Next, the Angular component will be created. Open the **angular-app** module ( `
 
     >[!NOTE]
     >
-    > If you recall the Sling Model created earlier, there was a method **getDisplayMessage()**. The serialized JSON of this method will be **displayMessage**, which we are now reading in the Angular app.
+    > If you recall the [!DNL Sling Model] created earlier, there was a method **getDisplayMessage()**. The serialized JSON of this method will be **displayMessage**, which we are now reading in the Angular app.
 
-4. Open `helloworld.component.html` to include an h1 tag that will print the `displayMessage` property:
+4. Open `helloworld.component.html` to include an `h1` tag that will print the `displayMessage` property:
 
    ```html
 
@@ -771,7 +767,7 @@ Next, the Angular component will be created. Open the **angular-app** module ( `
 
     >[!NOTE]
     >
-    > **main.js** is the bundled Angular app. The code is no longer human readable. The npm run build command has triggered an optimized build that outputs compiled javascript that can be interpreted by modern browsers.
+    > **main.js** is the bundled Angular app. The code is no longer human readable. The npm run build command has triggered an optimized build that outputs compiled JavaScript that can be interpreted by modern browsers.
 
 ## Updating the Template {#template-update}
 
@@ -780,15 +776,15 @@ Next, the Angular component will be created. Open the **angular-app** module ( `
     * (Angular) [http://localhost:4502/editor.html/conf/we-retail-journal/angular/settings/wcm/templates/we-retail-angular-weather-template/structure.html](http://localhost:4502/editor.html/conf/we-retail-journal/angular/settings/wcm/templates/we-retail-angular-weather-template/structure.html)
     * (React) [http://localhost:4502/editor.html/conf/we-retail-journal/react/settings/wcm/templates/we-retail-react-weather-template/structure.html](http://localhost:4502/editor.html/conf/we-retail-journal/react/settings/wcm/templates/we-retail-react-weather-template/structure.html)
 
-2. Select the main Layout Container and select the Policy icon to open its policy:
+2. Select the main [!UICONTROL Layout Container] and select the [!UICONTROL Policy] icon to open its policy:
 
     ![Select layout policy](assets/spa-editor-helloworld-tutorial-use/select-page-policy.png)
 
-    Under **Properties** > **Allowed Components**, perform a search for **"Custom Components"**. You should see the **Hello World** component, select it. Save your changes by clicking the checkbox in the upper-right-hand corner.
+    Under **[!UICONTROL Properties]** > **[!UICONTROL Allowed Components]**, perform a search for **[!DNL Custom Components]**. You should see the **[!DNL Hello World]** component, select it. Save your changes by clicking the checkbox in the upper-right-hand corner.
 
     ![Layout Container policy configuration](assets/spa-editor-helloworld-tutorial-use/layoutcontainer-update.png)
 
-3. After saving, you should see the **HelloWorld** component as an allowed component in the Layout Container.
+3. After saving, you should see the **[!DNL HelloWorld]** component as an allowed component in the [!UICONTROL Layout Container].
 
     ![Allowed components updated](assets/spa-editor-helloworld-tutorial-use/allowed-components.png)
 
@@ -796,9 +792,9 @@ Next, the Angular component will be created. Open the **angular-app** module ( `
     >
     > Only AEM 6.5 and AEM 6.4.5 supports the Editable Template feature of the SPA Editor. If using AEM 6.4, you will need to manually configure the policy for Allowed Components via CRXDE Lite: `/conf/we-retail-journal/react/settings/wcm/policies/wcm/foundation/components/responsivegrid/default` or `/conf/we-retail-journal/angular/settings/wcm/policies/wcm/foundation/components/responsivegrid/default`
 
-    CRXDE-Lite showing the updated policy configurations for Allowed Components in the Layout Container:
+    CRXDE Lite showing the updated policy configurations for [!UICONTROL Allowed Components] in the [!UICONTROL Layout Container]:
 
-    ![CRXDE-Lite showing the updated policy configurations for Allowed Components in the Layout Container.](assets/spa-editor-helloworld-tutorial-use/editable-template-policy.png)
+    ![CRXDE Lite showing the updated policy configurations for Allowed Components in the Layout Container](assets/spa-editor-helloworld-tutorial-use/editable-template-policy.png)
 
 ## Putting it all together {#putting-together}
 
@@ -807,7 +803,7 @@ Next, the Angular component will be created. Open the **angular-app** module ( `
     * [http://localhost:4502/editor.html/content/we-retail-journal/react/en/home.html](http://localhost:4502/editor.html/content/we-retail-journal/react/en/home.html)
     * [http://localhost:4502/editor.html/content/we-retail-journal/angular/en/home.html](http://localhost:4502/editor.html/content/we-retail-journal/angular/en/home.html)
 
-2. Find the **Hello World** component and drag and drop the **Hello World** component on to the page.
+2. Find the **[!DNL Hello World]** component and drag and drop the **[!DNL Hello World]** component on to the page.
 
    ![hello world drag + drop](assets/spa-editor-helloworld-tutorial-use/fig7.png)
 
@@ -819,38 +815,40 @@ Next, the Angular component will be created. Open the **angular-app** module ( `
 
    ![rendered component](assets/spa-editor-helloworld-tutorial-use/fig11.png)
 
-   Note that the string "Hello " is always prepended to the message. This is a result of the logic in the `HelloWorld.java` Sling Model.
+   Note that the string "Hello " is always prepended to the message. This is a result of the logic in the `HelloWorld.java` [!DNL Sling Model].
 
 ## Next Steps {#next-steps}
 
 [Completed Solution for HelloWorld component](assets/spa-editor-helloworld-tutorial-use/aem-sample-we-retail-journal-HelloWorldSolution.zip)
 
-* Full source code for [We.Retail Journal on GitHub](https://github.com/adobe/aem-sample-we-retail-journal)
-* Check out a more in-depth tutorial on developing React with [Getting Started with the AEM SPA Editor - WKND Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)
+* Full source code for [[!DNL We.Retail Journal] on GitHub](https://github.com/adobe/aem-sample-we-retail-journal)
+* Check out a more in-depth tutorial on developing React with [[!DNL Getting Started with the AEM SPA Editor - WKND Tutorial]](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)
 
 ## Troubleshooting {#troubleshooting}
 
 ### Unable to build project in Eclipse {#unable-to-build-project-in-eclipse}
 
-**Error:** An error when importing the We.Retail  Journal project into Eclipse for unrecognized goal executions: "*Execution  npm  install, Execution  npm  run build, Execution default-analyze-classes*".
+**Error:** An error when importing the [!DNL We.Retail Journal] project into Eclipse for unrecognized goal executions: 
+
+`Execution npm install, Execution npm run build, Execution default-analyze-classes*`
 
 ![eclipse error wizard](assets/spa-editor-helloworld-tutorial-use/fig9.png)
 
 **Resolution**: Click Finish to resolve these later. This should not prevent the completion of the tutorial.
 
-**Error**: The React module, react-app, does not build successfully during a Maven build.
+**Error**: The React module, `react-app`, does not build successfully during a Maven build.
 
-**Resolution:** Try deleting the `node_modules` folder beneath the **react-app**. Re-run the maven command `mvn  clean install -PautoInstallSinglePackage` from the root of the project.
+**Resolution:** Try deleting the `node_modules` folder beneath the **react-app**. Re-run the Apache Maven command `mvn  clean install -PautoInstallSinglePackage` from the root of the project.
 
 ### Unsatisfied dependencies in AEM {#unsatisfied-dependencies-in-aem}
 
 ![Package manager dependency error](assets/spa-editor-helloworld-tutorial-use/we-retail-journal-package-dependency.png)
 
-If an AEM dependency is not satisfied, in either the **AEM Package Manager** or in the **AEM Web Console** (Felix Console), this indicates that SPA Editor Feature is not available.
+If an AEM dependency is not satisfied, in either the **[!UICONTROL AEM Package Manager]** or in the **[!UICONTROL AEM Web Console]** (Felix Console), this indicates that SPA Editor Feature is not available.
 
 ### Component doesn't display
 
-**Error**: Even after a successful deployment and verifying that the compiled versions of React/Angular apps have the updated helloworld component my component is not displayed when I drag it on to the page. I can see the component in the AEM UI.
+**Error**: Even after a successful deployment and verifying that the compiled versions of React/Angular apps have the updated `helloworld` component my component is not displayed when I drag it on to the page. I can see the component in the AEM UI.
 
 **Resolution**: Clear your Browser's history/cache and/or open a new browser or use incognito mode. If that doesn't work, invalidate the client library cache on the local AEM instance. AEM attempts to cache large clientlibraries in order to be efficient. Sometimes manually invalidating the cache is needed to fix issues where out-dated code is cached.
 

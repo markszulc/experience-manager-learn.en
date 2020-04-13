@@ -1,32 +1,29 @@
 ---
-title: Use the System Overview Dashboard
-seo-title: Use the System Overview Dashboard in AEM
+title: Use the System Overview Dashboard in AEM
 description: In previous versions of AEM administrators needed to look at several locations in order to get a full picture of the AEM instance. The System Overview aims to solve this by providing a high level view of the configuration, hardware, and health of the AEM instance all from a single dashboard.
-seo-description: In previous versions of AEM administrators needed to look at several locations in order to get a full picture of the AEM instance. The System Overview aims to solve this by providing a high level view of the configuration, hardware, and health of the AEM instance all from a single dashboard.
 version: 6.4, 6.5
 feature: 
 topics: administration, operations, monitoring
 activity: use
 audience: administrator, architect, developer, implementer
 doc-type: technical-video
-uuid: bfdd5079-5329-46ac-8d10-a416c8d5afd4
 contentOwner: dgordon
 ---
 
 # Use the System Overview Dashboard
 
-Adobe Experience Manager's (AEM) System Overview provides a high level view of the configuration, hardware, and health of the AEM instance all from a single dashboard.
+Adobe Experience Manager's (AEM) [!UICONTROL System Overview] provides a high level view of the configuration, hardware, and health of the AEM instance all from a single dashboard.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21340?quality=12)
 
-1. The System Overview can be accessed from: **AEM Start** &gt; **Tools** &gt; **Operations** &gt; **System Overview**
+1. The System Overview can be accessed from: **AEM Start** &gt; **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL System Overview]**
 
-   Directly at **&lt;server-host&gt;/libs/granite/operations/content/systemoverview.html**
+   Directly at **[!DNL &lt;server-host&gt;/libs/granite/operations/content/systemoverview.html]**
 
-1. The information from the System Overview can be exported by clicking the download button. The information is also exposed via the following REST endpoint:
-1. Below is a sample output of the JSON that is exported from the System Overview:
+1. The information from the [!UICONTROL System Overview] can be exported by clicking the [!UICONTROL Download] button. The information is also exposed via the following [!DNL REST] endpoint:
+1. Below is a sample output of the JSON that is exported from the [!UICONTROL System Overview]:
 
-   ```shell
+   ```json
    {
        "Health Checks": {
            "1 Critical": "System Maintenance",

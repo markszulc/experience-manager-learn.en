@@ -1,8 +1,6 @@
 ---
 title: Understand Content Fragments and Experience Fragments
 description: Adobe Experience Manager's Content Fragments and Experience Fragments may seem similar on the surface, but each play key roles in different use cases. Learn how Content Fragments and Experience Fragments are similar, different, and when and how to use each.
-seo-title: Understand Content Fragments and Experience Fragments
-seo-description: Adobe Experience Manager's Content Fragments and Experience Fragments may seem similar on the surface, but each play key roles in different use cases. Learn how Content Fragments and Experience Fragments are similar, different, and when and how to use each.
 sub-product: assets, sites, content services
 feature: content fragments, experience fragments
 topics: headless
@@ -10,8 +8,6 @@ version: 6.3, 6.4, 6.5
 doc-type: article
 activity: understand
 audience: all
-uuid: ccfaaeff-bf9b-46b2-907f-9610684b60b5
-discoiquuid: 8c91f939-f061-40b2-9521-66f22ec74786
 ---
  
 # Understand Content Fragments and Experience Fragments
@@ -146,7 +142,7 @@ The following diagram illustrates the overall architecture for AEM Content Fragm
   + Using Content Fragments on **AEM Sites** (or AEM Screens) via the AEM WCM Core Components' Content Fragment component.
   + Embedding a Content Fragment in an **Experience Fragment** via the AEM WCM Core Components' Content Fragment component, for use in any Experience Fragment use case.
   + Exposing a Content Fragment variations content as JSON via **AEM Content Services** and API Pages for read-only use cases.
-  + Directly exposing Content Fragment content (all variations) as JSON via direct calls to AEM Assets via the **AEM HTTP Assets API** for CRUD use cases.
+  + Directly exposing Content Fragment content (all variations) as JSON via direct calls to AEM Assets via the **AEM Assets HTTP API** for CRUD use cases.
 
 ## Experience Fragments architecture
 

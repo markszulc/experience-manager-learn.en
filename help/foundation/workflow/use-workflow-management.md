@@ -21,12 +21,12 @@ The following aspects of Workflow management, introduced in AEM 6.5, are explore
 + Enable Workflow metadata under list view settings.
 + Easy navigation to workflow timeline from list view
 + Copy and paste an existing OOTB workflow to customize or override the default functionality
-+ Perform a quick publish for Workflow Models and Launchers
-+ Manage publication for Workflow Models and Launchers.
++ Perform a quick publish for [!DNL Workflow Models] and [!DNL Launchers]
++ Manage publication for [!DNL Workflow Models] and [!DNL Launchers].
 + Notify users with a warning tooltip,  when trying to edit an OOTB Workflow Model or Launcher.
 + Ability to revery changes made to an OOTB Workflow Model or Launchers.
 
-This video uses Workflow models to demonstrate this set of capabilities, however they are also applicable to AEM Launchers.
+This video uses [!DNL Workflow models] to demonstrate this set of capabilities, however they are also applicable to [!DNL AEM Launchers].
 
 
  >[!NOTE]

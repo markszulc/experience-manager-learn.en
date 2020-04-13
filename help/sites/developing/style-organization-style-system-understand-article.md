@@ -1,16 +1,12 @@
 ---
 title: Understanding Style System Best Practices with AEM Sites
-seo-title: Understanding Style System Best Practices with Adobe Experience Manager, AEM Sites
 description: A detailed article explaining the best practices when it comes to implementing the Style System with Adobe Experience Manager Sites.
-seo-description: A detailed article explaining the best practices when it comes to implementing the Style System with Adobe Experience Manager Sites. 
 feature: style-system
 topics: development, components, front-end-development
 audience: developer
 doc-type: article
 activity: understand
 version: 6.4, 6.5
-uuid: 53cf77c7-c34c-4f72-94dd-ebf28c2e4990
-discoiquuid: fc23b78f-4499-4de1-9b6d-efc7521be3b2
 ---
 
 # Understanding Style System Best Practices{#understanding-style-organization-with-the-aem-style-system}
@@ -48,7 +44,7 @@ This allows Style options to be labeled in a vocabulary clear and understood by 
 
 A component must have the options to be colored with the brand's **primary** and **secondary** colors, however, the AEM authors know the colors as **green** and **yellow**, rather than the the design language of primary and secondary.
 
-The AEM Style System can expose these coloring Display styles using author-friendly labels **Green** and **Yellow**, while allowing the CSS developers to use semantic naming of `.cmp-component--primary-color`and `.cmp-component--secondary` -colorto define the actual style implementation in CSS.
+The AEM Style System can expose these coloring Display styles using author-friendly labels **Green** and **Yellow**, while allowing the CSS developers to use semantic naming of `.cmp-component--primary-color` and `.cmp-component--secondary-color` to define the actual style implementation in CSS.
 
 The Style name of **Green** is mapped to `.cmp-component--primary-color`, and **Yelow** to `.cmp-component--secondary-color`.
 
@@ -62,11 +58,11 @@ This will explore how Style names (exposed to authors) and how the backing CSS c
 
 ### Teaser component styles configuration {#component-styles-configuration}
 
-The following image shows the Styles configuration for the Teaser component for the variations discussed in the use case.
+The following image shows the [!UICONTROL Styles] configuration for the Teaser component for the variations discussed in the use case.
 
-The Style Group names, Layout, and Display, by happenstance match to the general concepts of Display styles and Layout styles used to conceptually categorize types of styles in this article.
+The [!UICONTROL Style Group] names, Layout, and Display, by happenstance match to the general concepts of Display styles and Layout styles used to conceptually categorize types of styles in this article.
 
-The Style Group names and the number of Style Groups should be tailored to the component use case and project-specific component styling conventions.
+The [!UICONTROL Style Group] names and the number of [!UICONTROL Style Groups] should be tailored to the component use case and project-specific component styling conventions.
 
 For example, the **Display** style group name could have been named **Colors**.
 
@@ -74,7 +70,7 @@ For example, the **Display** style group name could have been named **Colors**.
 
 ### Style selection menu {#style-selection-menu}
 
-The image below displays the Style menu authors interact with to select the appropriate styles for the component. Note the Style Group names, as well as the Style names, are all exposed to the author.
+The image below displays the [!UICONTROL Style] menu authors interact with to select the appropriate styles for the component. Note the [!UICONTROL Style Grpi] names, as well as the Style names, are all exposed to the author.
 
 ![Style drop down menu](assets/style-menu.png) 
 
@@ -271,6 +267,6 @@ CSS for coloring the text of the **Hero** layout style with the primary (green) 
 
 * [Style System Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html)
 * [Creating AEM Client libraries](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
-* [BEM (Block Element Modifier) documentation website](http://getbem.com/)
-* [LESS Documentation website](http://lesscss.org/)
+* [BEM (Block Element Modifier) documentation website](https://getbem.com/)
+* [LESS Documentation website](https://lesscss.org/)
 * [jQuery website](https://jquery.com/)

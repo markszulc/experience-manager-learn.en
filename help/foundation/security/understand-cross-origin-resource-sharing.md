@@ -1,8 +1,6 @@
 ---
-title: Understand Cross-Origin Resource Sharing (CORS)
-seo-title: Understand Cross-Origin Resource Sharing (CORS) with AEM
+title: Understand Cross-Origin Resource Sharing (CORS) with AEM
 description: Adobe Experience Manager's Cross-Origin Resource Sharing (CORS) facilitates non-AEM web properties to make client-side calls to AEM, both authenticated and unauthenticated, to fetch content or directly interact with AEM.
-seo-description: Adobe Experience Manager's Cross-Origin Resource Sharing (CORS) facilitates non-AEM web properties to make client-side calls to AEM, both authenticated and unauthenticated, to fetch content or directly interact with AEM.
 version: 6.3, 6,4, 6.5
 sub-product: foundation, content-services, sites
 feature:  
@@ -10,13 +8,11 @@ topics: security, development, content-delivery
 activity: understand
 audience: architect, developer
 doc-type: article
-uuid: 9db96b62-7e8c-438f-8207-9f71d2ae9447
-discoiquuid: bc2d75ee-3cfe-48c3-a985-af545e7103b1
 ---
 
-# Understand Cross-Origin Resource Sharing (CORS)
+# Understand Cross-Origin Resource Sharing ([!DNL CORS])
 
-Adobe Experience Manager's Cross-Origin Resource Sharing (CORS) facilitates non-AEM web properties to make client-side calls to AEM, both authenticated and unauthenticated, to fetch content or directly interact with AEM.
+Adobe Experience Manager's Cross-Origin Resource Sharing ([!DNL CORS]) facilitates non-AEM web properties to make client-side calls to AEM, both authenticated and unauthenticated, to fetch content or directly interact with AEM.
 
 ## Adobe Granite Cross-Origin Resource Sharing Policy OSGi configuration
 
@@ -26,7 +22,7 @@ CORS configurations are managed as OSGi configuration factories in AEM, with eac
 
 ![Adobe Granite Cross-Origin Resource Sharing Policy OSGi configuration](./assets/understand-cross-origin-resource-sharing/cors-osgi-config.png)
 
-Adobe Granite Cross-Origin Resource Sharing Policy (`com.adobe.granite.cors.impl.CORSPolicyImpl`)
+[!DNL Adobe Granite Cross-Origin Resource Sharing Policy] (`com.adobe.granite.cors.impl.CORSPolicyImpl`)
 
 ### Policy selection
 
@@ -35,55 +31,55 @@ A policy is selected by comparing the
 * `Allowed Origin` with the `Origin` request header
 * and `Allowed Paths` with the request path.
 
-The first policy matching these values will be used. If none is found, any CORS request will be denied.
+The first policy matching these values will be used. If none is found, any [!DNL CORS] request will be denied.
 
-If no policy is configured at all, CORS requests will also not be answered as the handler will be disabled and thus effectively denied - as long as no other module of the server responds to CORS.
+If no policy is configured at all, [!DNL CORS] requests will also not be answered as the handler will be disabled and thus effectively denied - as long as no other module of the server responds to [!DNL CORS].
 
 ### Policy properties
 
-#### Allowed Origins
+#### [!UICONTROL Allowed Origins]
 
 * `"alloworigin" <origin> | *`
 * List of `origin` parameters specifying URIs that may access the resource. For requests without credentials, the server may specify &#42; as a wildcard, thereby allowing any origin to access the resource. *It is absolutely not recommended to use `Allow-Origin: *` in production since it allows every foreign (i.e. attacker) website to make requests that without CORS are strictly prohibited by browsers.*
 
-#### Allowed Origins (Regexp)
+#### [!UICONTROL Allowed Origins (Regexp)]
 
 * `"alloworiginregexp" <regexp>`
 * List of `regexp` regular expressions specifying URIs that may access the resource. *Regular expressions can lead to unintended matches if not carefully built, allowing an attacker to use a custom domain name that would also match the policy.* It is generally recommended to have separate policies for each specific origin hostname, using `alloworigin`, even if that means repeated configuration of the other policy properties. Different origins tend to have different life-cycles and requirements, thus benefitting from clear separation.
 
-#### Allowed Paths
+#### [!UICONTROL Allowed Paths]
 
 * `"allowedpaths" <regexp>`
 * List of `regexp` regular expressions specifying resource paths for which the policy applies.
 
-#### Exposed Headers
+#### [!UICONTROL Exposed Headers]
 
 * `"exposedheaders" <header>`
 * List of header parameters indicating request headers that browsers are allowed to access.
 
-#### Maximum Age
+#### [!UICONTROL Maximum Age]
 
 * `"maxage" <seconds>`
 * A `seconds` parameter indicating how long the results of a pre-flight request can be cached.
 
-#### Supported Headers
+#### [!UICONTROL Supported Headers]
 
 * `"supportedheaders" <header>`
 * List of `header` parameters indicating which HTTP headers can be used when making the actual request.
 
-#### Allowed Methods
+#### [!UICONTROL Allowed Methods]
 
 * `"supportedmethods"`
 * List of method parameters indicating which HTTP methods can be used when making the actual request.
 
-#### Supports Credentials
+#### [!UICONTROL Supports Credentials]
 
 * `"supportscredentials" <boolean>`
 * A `boolean` indicating whether or not the response to the request can be exposed to the browser. When used as part of a response to a pre-flight request, this indicates whether or not the actual request can be made using credentials.
 
 ### Example configurations
 
-Site 1 is a basic, anonymously accessible, read-only scenario where content is consumed via GET requests:
+Site 1 is a basic, anonymously accessible, read-only scenario where content is consumed via [!DNL GET requests:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -121,9 +117,9 @@ Access-Control-Request-Method,Access-Control-Request-Headers,Authorization,CSRF-
 
 ## Dispatcher caching concerns and configuration {#dispatcher-caching-concerns-and-configuration}
 
-Starting with Dispatcher 4.1.1+ response headers can be cached. This makes it possible to cache CORS headers along w the CORS-requested resources, as long as the request is anonymous.
+Starting with Dispatcher 4.1.1+ response headers can be cached. This makes it possible to cache [!DNL CORS] headers along w the [!DNL CORS]-requested resources, as long as the request is anonymous.
 
-Generally, the same considerations for caching content at Dispatcher can be applied to caching CORS response headers at dispatcher. The following table defines when CORS headers (and thus CORS requests) can be cached.
+Generally, the same considerations for caching content at Dispatcher can be applied to caching CORS response headers at dispatcher. The following table defines when [!DNL CORS] headers (and thus [!DNL CORS] requests) can be cached.
 
 | Cacheable | Environment | Authentication Status | Explanation |
 |-----------|-------------|-----------------------|-------------|
@@ -156,15 +152,15 @@ It is likely clearing the cache entirely will be required to ensure the headers 
 
 Logging is available under `com.adobe.granite.cors`:
 
-* enable `DEBUG` to see details about why a CORS request was denied
+* enable `DEBUG` to see details about why a [!DNL CORS] request was denied
 * enable `TRACE` to see details about all requests going through the CORS handler
 
 ### Tips:
 
 * Manually recreate XHR requests using curl, but make sure to copy all headers and details, as each one can make a difference; some browser consoles allow to copy the curl command
 * Verify if request was denied by the CORS handler and not by the authentication, CSRF token filter, dispatcher filters, or other security layers
-  * If CORS handler responds with 200, but `Access-Control-Allow-Origin` header is absent on the response, review the logs for denials under DEBUG in `com.adobe.granite.cors`
-* If dispatcher caching of CORS requests is enabled
+  * If CORS handler responds with 200, but `Access-Control-Allow-Origin` header is absent on the response, review the logs for denials under [!DNL DEBUG] in `com.adobe.granite.cors`
+* If dispatcher caching of [!DNL CORS] requests is enabled
   * Ensure the `/headers` configuration is applied to `dispatcher.any` and the web server is successfully restarted
   * Ensure the cache was properly cleared after any OSGi or dispatcher.any configuration changes.
 * if required, check presence of authentication credentials on the request.

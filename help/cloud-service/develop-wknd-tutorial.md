@@ -23,3 +23,17 @@ The goal for this multi-part tutorial is to teach a developer who is new to AEM 
 The tutorial is designed to work with **AEM as a Cloud Service** and is backwards compatible with **AEM 6.5+** and **AEM 6.4.2+**.
 
 **[View the tutorial here!](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)**
+
+## Deploying WKND to AEM as a Cloud Service{#deploying-wknd-to-aem-as-a-cloud-service}
+
+After completing the WKND tutorial, watch video below for an overview of how to deploy the WKND project to AEM as a Cloud Service.
+
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=12)
+
+The video shows how the WKND Site project can be:
+
+1. Sourced from a 3rd party Git repository, in this case Github.com, but could be any Git repository
+2. Pushed to an upstream Adobe Cloud Manager Git repository registered with an AEM as a Cloud Service Program
+3. Deployed via Cloud Manager pipelines to AEM as a Cloud Service environments
+
+For a complete overview of how to deploy AEM project to AEM as a Cloud service, watch the video series on how to [integrate Git with Adobe Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).

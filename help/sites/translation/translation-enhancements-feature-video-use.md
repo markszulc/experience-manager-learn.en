@@ -1,16 +1,12 @@
 ---
 title: Translation Enhancements in AEM
-seo-title: Translation Enhancements in AEM
 description: AEM's robust translation framework allows AEM content to be seamlessly translated by supported Translation vendors. Learn about the latest enhancements.
-seo-description: AEM's robust translation framework allows AEM content to be seamlessly translated by supported Translation vendors. Learn about the latest enhancements.
 feature: multi-site-manager, language-copy
 topics: localization, authoring, content-architecture
 audience: author, marketer, developer
 doc-type: feature-video
 activity: use
 version: 6.3, 6.4, 6.5
-uuid: ad3c8210-0eff-4a01-8d26-4b35be161377
-discoiquuid: 2039effd-628f-4df6-a1c6-a33092518273
 ---
 
 # Translation Enhancements with Multi-Site Manager {#translation-enhancements}
@@ -23,11 +19,11 @@ AEM's robust translation framework allows AEM content to be seamlessly translate
 
 AEM 6.5 translation enhancements includes:
 
-**Auto-approve translation jobs**: The approval flag in the translation job is a binary property. It does not drive or integrate with out-of-the-box review and approval workflows. To keep the number of steps in a translation job minimal,  It is by default set to "automatically approve" in Advanced Properties of a Translation Project. If your organization requires approval for a translation job, you can uncheck the "automatically approve" option in Advanced Properties of a Translation Project.
+**Auto-approve translation jobs**: The approval flag in the translation job is a binary property. It does not drive or integrate with out-of-the-box review and approval workflows. To keep the number of steps in a translation job minimal,  It is by default set to "automatically approve" in [!UICONTROL Advanced Properties] of a Translation Project. If your organization requires approval for a translation job, you can uncheck the "automatically approve" option in [!UICONTROL Advanced Properties] of a Translation Project.
 
 **Automatically delete translation launches**: Rather than manually deleting translation launches in Launches Admin after the fact, it is now possible to automatically delete translation launches after they were promoted.
 
-**Export Translation objects in JSON format**: AEM 6.4 and earlier versions support XML and XLIFF formats of translations objects. You can now configure the export format to JSON format using your systems console Config Manager. Look for Translation Platform Configuration, and then you can select the export format as JSON.
+**Export Translation objects in JSON format**: AEM 6.4 and earlier versions support XML and XLIFF formats of translations objects. You can now configure the export format to JSON format using your systems console [!UICONTROL Config Manager]. Look for [!UICONTROL Translation Platform Configuration], and then you can select the export format as JSON.
 
 **Update translated AEM content in Translation Memory (TMS)**: local author who does not have access to AEM can make updates to translated content, that was already ingested back into AEM, directly in the TM (Translation Memory, in TMS), and to update the translations in AEM by resending translation job from TMS to AEM
 

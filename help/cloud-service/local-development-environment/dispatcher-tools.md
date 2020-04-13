@@ -8,7 +8,7 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 4043
+kt: 4679
 ---
 
 # Set up Local Dispatcher Tools
@@ -45,7 +45,7 @@ The AEM as a Cloud Service SDK, or AEM SDK, contains the Dispatcher Tools used t
 
 If the AEM as a Cloud Service SDK has already been downloaded to [setup the local AEM runtime](./aem-runtime.md), it does not need to be re-downloaded.
 
-1. Log in to [downloads.experiencecloud.adobe.com](http://downloads.experiencecloud.adobe.com/) with your Adobe ID
+1. Log in to [downloads.experiencecloud.adobe.com](https://downloads.experiencecloud.adobe.com/) with your Adobe ID
       + Note that your Adobe Organization __must__ be provisioned for AEM as a Cloud Service to download the AEM as a Cloud Service SDK.
 1. Navigate to the __AEM as a Cloud Service__ tab
 1. Sort by __Published Date__ in __Descending__ order
@@ -261,7 +261,7 @@ AH00016: Configuration Failed
 
 ## Additional Resources
 
-+ [Download AEM SDK](http://downloads.experiencecloud.adobe.com/)
++ [Download AEM SDK](https://downloads.experiencecloud.adobe.com/)
 + [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/)
 + [Download Docker](https://www.docker.com/)
 + [Download the AEM Reference Website (WKND)](https://github.com/adobe/aem-guides-wknd/releases)

@@ -21,4 +21,4 @@ Timewarp is a feature of Adobe Experience Manager Sites that provides authors wi
 
 ## Additional Resources {#additional-resources}
 
-* [Working with Page Versions - Timewarp](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/working-with-page-versions.html#Timewarp)
+* [Working with Page Versions - Timewarp](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/working-with-page-versions.html#Timewarp)

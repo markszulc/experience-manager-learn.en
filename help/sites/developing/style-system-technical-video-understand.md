@@ -1,21 +1,17 @@
 ---
 title: Understanding how to code for the AEM Style System
-seo-title: Understanding how to code for the AEM Style System
 description: In this video we'll take a look at the anatomy of the CSS (or LESS) and JavaScript used to style Adobe Experience Manage's Core Title Component using the Style System, as well as how these styles are applied to the HTML and DOM.
-seo-description: In this video we'll take a look at the anatomy of the CSS (or LESS) and JavaScript used to style Adobe Experience Manage's Core Title Component using the Style System, as well as how these styles are applied to the HTML and DOM.
 feature: style-system
 topics: development, components, front-end-development
 audience: developer, implementer
 doc-type: technical-video
 activity: understand
 version: 6.4, 6.5
-uuid: 997650e9-2a36-45f2-80b4-83219f430804
-discoiquuid: b0a8be1a-a8fe-4316-bd72-320334951519
 ---
 
 # Understanding how to code for the Style System{#understanding-how-to-code-for-the-aem-style-system}
 
-In this video we'll take a look at the anatomy of the CSS (or LESS) and JavaScript used to style Experience Manage's Core Title Component using the Style System, as well as how these styles are applied to the HTML and DOM.
+In this video we'll take a look at the anatomy of the CSS (or [!DNL LESS]) and JavaScript used to style Experience Manage's Core Title Component using the Style System, as well as how these styles are applied to the HTML and DOM.
 
 >[!NOTE]
 >
@@ -33,11 +29,11 @@ The provided AEM Package (**technical-review.sites.style-system-1.0.0.zip**) ins
 
 ### The CSS {#the-css}
 
-The following is the LESS definition for the example style found at:
+The following is the [!DNL LESS] definition for the example style found at:
 
 * `/apps/enablement/sites/style-system/clientlib-example/components/titles/styles/example.less`
 
-For those that prefer CSS, below this code snippet is the CSS this LESS compiles into.
+For those that prefer CSS, below this code snippet is the CSS this [!DNL LESS] compiles into.
 
 ```css
 
@@ -67,7 +63,7 @@ For those that prefer CSS, below this code snippet is the CSS this LESS compiles
 
 ```
 
-The above LESS is compiled natively by Experience Manager to the following CSS.
+The above [!DNL LESS] is compiled natively by Experience Manager to the following CSS.
 
 ```css
 
@@ -100,7 +96,7 @@ The following JavaScript collects and injects the current page's last modified d
 
 The use of jQuery is optional, as well as the naming conventions used.
 
-The following is the LESS definition for the example style found at:
+The following is the [!DNL LESS] definition for the example style found at:
 
 * `/apps/enablement/sites/style-system/clientlib-example/components/titles/styles/js/title.js`
 
@@ -198,7 +194,7 @@ jQuery(function ($) {
 >
 >All other tenants of [BEM](https://en.bem.info/) should be aligned with.
 
-* Use preprocessors such as [LESS](http://lesscss.org/) (supported by AEM natively) or [SCSS](https://sass-lang.com/) (requires custom build system) to allow for clear CSS definition, and re-usability.
+* Use preprocessors such as [LESS](https://lesscss.org/) (supported by AEM natively) or [SCSS](https://sass-lang.com/) (requires custom build system) to allow for clear CSS definition, and re-usability.
 
 * Keep selector weight/specificity uniform; This helps to avoid and resolve difficult-to-identify CSS cascade conflicts.
 * Organize each style into a discrete file.
@@ -266,6 +262,6 @@ The best practices defined in this section pertain to "style-JavaScript", or Jav
 
 * [Style System Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html)
 * [Creating AEM Client libraries](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
-* [BEM (Block Element Modifier) documentation website](http://getbem.com/)
-* [LESS Documentation website](http://lesscss.org/)
+* [BEM (Block Element Modifier) documentation website](https://getbem.com/)
+* [LESS Documentation website](https://lesscss.org/)
 * [jQuery website](https://jquery.com/)
