@@ -19,6 +19,7 @@ index: y
   + [Part 5 - Configuring assets panel- Accordion Layout](creating-your-first-adaptive-form/part5.md)
   + [Part 6 - Using custom functions and code editor](creating-your-first-adaptive-form/part6.md)
 + Handling Form Submissions {#handling-af-form-submissions}
+  + [Creating a Review Workflow](handling-form-submissions/create-workflow-to-review.md)
   + [Invoking AEM Workflow](handling-form-submissions/invoking-aem-workflow-on-form-submission-article-use.md)
   + [Displaying Thank You Page](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
   + [Submitting to External End point](handling-form-submissions/submitting-adaptive-forms-to-external-server-article-use.md)
@@ -68,6 +69,8 @@ index: y
   + [Pre-Populating HTML5 Forms](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
   + [Form Data Model with Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
   + [Adding Items Dynamically to Choice Component](adaptive-forms/choice-group-items-adding-dynamically-article.md)
++ HTML5 Forms{#htm5-forms}
+  + [Create your first HTML5 Form](html5-forms/creating-mobile-form.md)
 + Variables in AEM Workflow{#variables-aem-workflow}
   + [Introduction - Variables in Workflow](variables-aem-workflow/introduction.md)
   + [XML Variables](variables-aem-workflow/part1.md)
