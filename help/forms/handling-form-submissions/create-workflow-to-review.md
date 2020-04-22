@@ -8,7 +8,7 @@ audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
-KT:4855
+KT: 4855
 ---
 
 # Creating workflow to review submitted data
