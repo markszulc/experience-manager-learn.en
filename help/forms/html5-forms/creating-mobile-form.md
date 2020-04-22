@@ -16,8 +16,7 @@ HTML5 forms is a new capability in Adobe Experience Manager 6.0 (AEM 6.0) softwa
 
 ## Create your first HTML5 form
 
-* [Download sample xdp](assets/change-of-address.xdp)
-* [Download sample data](assets/change-of-address.xml)
+* [Download and extract the contents of zip file](assets/assets.zip). The zip file contains xdp and data file
 * [Navigate to Forms and Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Click on Create->File Upload
 * Select the xdp template downloaded earlier to upload.
