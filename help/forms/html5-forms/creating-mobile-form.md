@@ -36,10 +36,10 @@ The xdp can be previewed in HTML5 format or PDF format. To preview the xdp in HT
 
 To preview the xdp in HTML5 format with data file please follow the following steps:
 
- * Gently click on the newly uploaded xdp and click _Preview->Preview with Data_. Browse and select the data file and click on _Preview_.
- * You should see template rendered in HTML5 format pre filled with the data
+* Gently click on the newly uploaded xdp and click _Preview->Preview with Data_. Browse and select the data file and click on _Preview_.
+* You should see template rendered in HTML5 format pre filled with the data
 
- ## Explore Advanced Properties of xdp template
+## Explore Advanced Properties of xdp template
 
  The advanced properties of the xdp template allow you to specify publish date, submit handler, render profile for your form, prefill service etc. To view the advanced properties of the template gently click on the xdp and click _properties -> Advanced_. Here you will find a number of properties. Some of these properties are covered here.
  **Submit URL** - This is the URL which will handle your HTML5 form submission. We will cover this in the next lesson. If a submit URL is not specified here the default submit handler is invoked which returns the form data to the browser.
