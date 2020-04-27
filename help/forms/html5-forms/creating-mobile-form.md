@@ -25,7 +25,7 @@ HTML5 forms is a new capability in Adobe Experience Manager that offers renderin
 
 The xdp can be previewed in HTML5 format or PDF format. To preview the xdp in HTML5 format, please follow the following steps
 
-* Gently click on the newly uploaded xdp and click _Preview->Preview as HTML_. You should see the xdp rendered as HTML5
+* Tap on the newly uploaded xdp and click _Preview -> Preview as HTML_. You should see the xdp rendered as HTML5
 
 >[!NOTE]
 >When you select _Preview as PDF_ option the rendered PDF will not be displayed in the browser because AEM Forms render dynamic pdf's which require Acrobat plugin.You will have to download the PDF and open it using Adobe Acrobat/Reader to view
