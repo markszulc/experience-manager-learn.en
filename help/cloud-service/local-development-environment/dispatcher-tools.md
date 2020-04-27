@@ -30,14 +30,10 @@ Note that `~` is used as shorthand for the User's Directory. In Windows, this is
 
 ## Prerequisites
 
->[!WARNING]
->
-> Windows users: Local Dispatcher Tools (v2.0.20) is incompatible with Windows. Please contact [Adobe Support](https://daycare.day.com/home.html) to receive updates on Windows compatibility.
-
 1. Windows users must use Windows 10 Professional
 1. Install [Experience Manager Publish QuickStart](./aem-runtime.md) on the local develop machine.
    + Optionally, install the  latest [AEM reference web site](https://github.com/adobe/aem-guides-wknd/releases) on the local AEM Publish service. This web site is used in this tutorial to visualize a working Dispatcher.
-1. Install and start the latest version of [Docker](https://www.docker.com/) (v18.03+) on the local development machine.
+1. Install and start the latest version of [Docker](https://www.docker.com/) (Docker Desktop 2.2.0.5+ / Docker Engine v19.03.9+) on the local development machine.
 
 ## Download the Dispatcher Tools (as part of the AEM SDK)
 
@@ -51,6 +47,7 @@ If the AEM as a Cloud Service SDK has already been downloaded to [setup the loca
 1. Sort by __Published Date__ in __Descending__ order
 1. Click on the latest __AEM SDK__ result row
 1. Review and accept the EULA, and tap the __Download__ button
+1. Ensure AEM SDK's Dispatcher Tools v2.0.21+ is used
 
 ## Extract the Dispatcher Tools from the AEM SDK zip
 
@@ -60,7 +57,7 @@ If the AEM as a Cloud Service SDK has already been downloaded to [setup the loca
 
 The version of Dispatcher Tools is different from that of the AEM SDK. Ensure the version of Dispatcher Tools is provided via the AEM SDK version matching the AEM as a Cloud Service version.
 
-1. Unzip the downloaded `aem-sdk-XXX.zip` file
+1. Unzip the downloaded `aem-sdk-xxx.zip` file
 1. Unpack the Dispatcher Tools into `~/aem-sdk/dispatcher`
    + Windows: Unzip `aem-sdk-dispatcher-tools-x.x.x-windows.zip` into `C:\Users\<My User>\aem-sdk\dispatcher` (creating missing folders as needed)
    + macOS / Linux: Execute the accompanying shell script `aem-sdk-dispatcher-tools-x.x.x-unix.sh` to unpack the Dispatcher Tools
@@ -104,7 +101,7 @@ Once validated, the transpiled configurations are used run Dispatcher locally in
   + Windows: `bin\docker_run <deployment-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
   + macOS / Linux: `./bin/docker_run.sh <deployment-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
 
-The `aem-publish-host` can be set to `host.docker.internal`, a special DNS name Docker 18.03+ provides in the container that resolves to the host machine's IP. If he `host.docker.internal` does not resolve, please see the [troubleshooting](#troubleshooting-host-docker-internal) section below.
+The `aem-publish-host` can be set to `host.docker.internal`, a special DNS name Docker provides in the container that resolves to the host machine's IP. If he `host.docker.internal` does not resolve, please see the [troubleshooting](#troubleshooting-host-docker-internal) section below.
 
 For example to start the Dispatcher Docker container using the default configuration files provided by the Dispatcher Tools:
 
