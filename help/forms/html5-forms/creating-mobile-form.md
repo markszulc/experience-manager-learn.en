@@ -19,7 +19,7 @@ HTML5 forms is a new capability in Adobe Experience Manager that offers renderin
 1. [Download and extract the contents of zip file](assets/assets.zip). The zip file contains xdp and data file
 2. [Navigate to Forms and Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 3. Click on Create -> File Upload
-4. Select the xdp template downloaded earlier to upload.
+4. Select the xdp template downloaded in step 2
 
 ## Preview as HTML
 
