@@ -61,7 +61,7 @@ In most cases, planning for a new website starts with mockups and static designs
 
 >[!VIDEO](https://video.tv.adobe.com/v/30214/?quality=12)
 
-Download the [WKND Article Design File](assets/pages-templates/wknd-article-design.xd).
+Download the [WKND Article Design File](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd).
 
 ## Create a Header and Footer with Experience Fragments {#experience-fragments}
 
