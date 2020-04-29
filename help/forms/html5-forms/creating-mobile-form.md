@@ -41,7 +41,10 @@ To preview the xdp in HTML5 format with data file please follow the following st
 ## Explore Advanced Properties of xdp template
 
  The advanced properties of the xdp template allow you to specify publish date, submit handler, render profile for your form, prefill service etc. To view the advanced properties of the template tap on the xdp and click _properties -> Advanced_. Here you will find a number of properties. Some of these properties are covered here.
+ 
  **Submit URL** - This is the URL which will handle your HTML5 form submission. We will cover this in the next lesson. If a submit URL is not specified here the default submit handler is invoked which returns the form data to the browser.
+ 
  **HTML Render Profile** - HTML5 forms have the notion of Profiles which are exposed as REST Endpoints to enable Mobile Rendering of Form Templates. Majority of times the default render profile should be sufficient to render the form. If the default render profile does not meet your needs, a [custom profile](https://docs.adobe.com/content/help/en/experience-manager-64/forms/html5-forms/custom-profile.html) can be created and associated with the form.
+
 **Prefill Service** - Prefill service is typically used to populate your form with data fetched from a backend data source.
 
