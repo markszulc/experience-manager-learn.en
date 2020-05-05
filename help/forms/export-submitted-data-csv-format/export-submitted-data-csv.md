@@ -152,7 +152,7 @@ public StringBuilder getCSVFile(String formName)
         {
             if(rs.isFirst())
             {
-	            sb = csvUtils.writeLine(getHeaderValues(rs.getString(1)),sb);
+                sb = csvUtils.writeLine(getHeaderValues(rs.getString(1)),sb);
             }
     sb = csvUtils.writeLine(getRowValues(rs.getString(1)),sb);
     log.debug("$$$$The current strng buffer is "+sb.toString());
@@ -303,6 +303,7 @@ protected void doGet(SlingHttpServletRequest request,SlingHttpServletResponse re
 }
 
 ```
+
 ### Deploy on your server
 
 * Import the [SQL file](assets/formsubmissions.sql) into MySQL server using MySQL Workbench. This creates schema called aemformstutorial and table called formsubmissions with some sample data
