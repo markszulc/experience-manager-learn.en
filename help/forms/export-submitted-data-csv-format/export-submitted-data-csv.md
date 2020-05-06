@@ -78,58 +78,55 @@ private DataSource dataSource;
 
 private List<String> getRowValues(String row)
 {
-List<String>rowValues = new ArrayList<String>();
-//API to obtain DOM Document instance
-DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-DocumentBuilder builder = null;
-try
-{
-builder = factory.newDocumentBuilder();
-Document doc = builder.parse(new InputSource(new StringReader(row)));
-XPathFactory xpf = XPathFactory.newInstance();
-XPath xpath = xpf.newXPath();
-Node dataNode = (Node) xpath.evaluate("//afData/afUnboundData/data", doc, XPathConstants.NODE);
-NodeList dataElements = dataNode.getChildNodes();
-for(int i=0;i<dataElements.getLength();i++)
-{
-    log.debug("The name of the node is"+dataElements.item(i).getNodeName()+" the node value is "+dataElements.item(i).getTextContent());
-    rowValues.add(i,dataElements.item(i).getTextContent());
+    List<String>rowValues = new ArrayList<String>();
+    //API to obtain DOM Document instance
+    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+    DocumentBuilder builder = null;
+    try
+        {
+            builder = factory.newDocumentBuilder();
+            Document doc = builder.parse(new InputSource(new StringReader(row)));
+            XPathFactory xpf = XPathFactory.newInstance();
+            XPath xpath = xpf.newXPath();
+            Node dataNode = (Node) xpath.evaluate("//afData/afUnboundData/data", doc, XPathConstants.NODE);
+            NodeList dataElements = dataNode.getChildNodes();
+            for(int i=0;i<dataElements.getLength();i++)
+                {
+                    log.debug("The name of the node is"+dataElements.item(i).getNodeName()+" the node value is "+dataElements.item(i).getTextContent());
+                    rowValues.add(i,dataElements.item(i).getTextContent());
+                }
+            return rowValues;
+        }
+    catch(Exception e)  
+        {
+            log.debug(e.getMessage());
+        }
+    return null;
 }
-return rowValues;
-}
-catch(Exception e)
-{
-log.debug(e.getMessage());
-}
-return null;
-}
-
-
 private List<String> getHeaderValues(String row)
 {
-DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-List<String>rowValues = new ArrayList<String>();
-DocumentBuilder builder = null;
-try
-{
-//Create DocumentBuilder with default configuration
-builder = factory.newDocumentBuilder();
-Document doc = builder.parse(new InputSource(new StringReader(row)));
-XPathFactory xpf = XPathFactory.newInstance();
-XPath xpath = xpf.newXPath();
-Node dataNode = (Node) xpath.evaluate("//afData/afUnboundData/data", doc, XPathConstants.NODE);
-NodeList dataElements = dataNode.getChildNodes();
-for(int i=0;i<dataElements.getLength();i++)
-{
-
-    rowValues.add(i,dataElements.item(i).getNodeName());
-}
-return rowValues;
-}
-catch(Exception e)
-{
-log.debug(e.getMessage());
-}
+    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+    List<String>rowValues = new ArrayList<String>();
+    DocumentBuilder builder = null;
+    try 
+        {
+            //Create DocumentBuilder with default configuration
+            builder = factory.newDocumentBuilder();
+            Document doc = builder.parse(new InputSource(new StringReader(row)));
+            XPathFactory xpf = XPathFactory.newInstance();
+            XPath xpath = xpf.newXPath();
+            Node dataNode = (Node) xpath.evaluate("//afData/afUnboundData/data", doc, XPathConstants.NODE);
+            NodeList dataElements = dataNode.getChildNodes();
+            for(int i=0;i<dataElements.getLength();i++)
+            {
+                    rowValues.add(i,dataElements.item(i).getNodeName());
+            }
+        return rowValues;
+        }
+        catch(Exception e)
+        {
+            log.debug(e.getMessage());
+        }
 return null;
 
 }
