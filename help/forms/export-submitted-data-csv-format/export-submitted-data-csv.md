@@ -92,8 +92,8 @@ Node dataNode = (Node) xpath.evaluate("//afData/afUnboundData/data", doc, XPathC
 NodeList dataElements = dataNode.getChildNodes();
 for(int i=0;i<dataElements.getLength();i++)
 {
-log.debug("The name of the node is"+dataElements.item(i).getNodeName()+" the node value is "+dataElements.item(i).getTextContent());
-rowValues.add(i,dataElements.item(i).getTextContent());
+    log.debug("The name of the node is"+dataElements.item(i).getNodeName()+" the node value is "+dataElements.item(i).getTextContent());
+    rowValues.add(i,dataElements.item(i).getTextContent());
 }
 return rowValues;
 }
@@ -122,7 +122,7 @@ NodeList dataElements = dataNode.getChildNodes();
 for(int i=0;i<dataElements.getLength();i++)
 {
 
-rowValues.add(i,dataElements.item(i).getNodeName());
+    rowValues.add(i,dataElements.item(i).getNodeName());
 }
 return rowValues;
 }
@@ -141,29 +141,35 @@ public StringBuilder getCSVFile(String formName)
     String selectStatement ="SELECT "+config.getFORM_DATA_COLUMN()+" FROM aemformstutorial."+config.getTABLE_NAME()+" where "+config.getFORM_NAME_COLUMN()+"='"+formName+"'"+"";
     log.debug("The select statment is "+selectStatement);
     Connection con = getConnection();
+    Statement st = null;
+    ResultSet rs = null;
     CSVUtils csvUtils = new CSVUtils();
     try
     {
-        Statement st = con.createStatement();
-        ResultSet rs = st.executeQuery(selectStatement);
+        st = con.createStatement();
+        rs = st.executeQuery(selectStatement);
         log.debug("Got Result Set in getCSVFile");
         StringBuilder sb = new StringBuilder();
         while(rs.next())
         {
             if(rs.isFirst())
             {
-                sb = csvUtils.writeLine(getHeaderValues(rs.getString(1)),sb);
-            }
-    sb = csvUtils.writeLine(getRowValues(rs.getString(1)),sb);
-    log.debug("$$$$The current strng buffer is "+sb.toString());
+            sb = csvUtils.writeLine(getHeaderValues(rs.getString(1)),sb);
+        }
+        sb = csvUtils.writeLine(getRowValues(rs.getString(1)),sb);
+        log.debug("$$$$The current strng buffer is "+sb.toString());
     }
-    st.close();
-    con.close();
-    return sb;
-    }
+
+return sb;
+}
 catch(Exception e)
 {
     log.debug(e.getMessage());
+}
+finally {
+    try { rs.close(); } catch (Exception e) { /* ignored */ }
+    try { st.close(); } catch (Exception e) { /* ignored */ }
+    try { con.close(); } catch (Exception e) { /* ignored */ }
 }
 
 return null;
@@ -173,13 +179,11 @@ private Connection getConnection()
  {
     log.debug("Getting Connection ");
     Connection con = null;
-    try
-         {
+    try {
             con = dataSource.getConnection();
             log.debug("got connection");
             return con;
-        } 
-        catch (Exception e)
+        } catch (Exception e)
          {
             log.debug("not able to get connection ");
             log.debug(e.getMessage());
@@ -196,7 +200,7 @@ public void inserFormData(String formData)
     String tableName = config.getTABLE_NAME();
     String insertStatement = "Insert into aemformstutorial."+tableName+"("+formDataColumn+","+formNameColumn+") VALUES(?,?)"; 
     log.debug("The insert statment is"+insertStatement);
-    Connection c = getConnection();
+    Connection con = getConnection();
     PreparedStatement pstmt = null;
     try
          {
@@ -210,31 +214,35 @@ public void inserFormData(String formData)
             String formName = paths[paths.length-1];
             log.debug("The form name submiited is"+formName);
             pstmt = null;
-            pstmt = c.prepareStatement(insertStatement);
+            pstmt = con.prepareStatement(insertStatement);
             pstmt.setString(1,formData);
             pstmt.setString(2,formName);
             log.debug("Executing the insert statment  " + pstmt.execute());
-            c.commit();
-            pstmt.close();
-            c.close();
+            con.commit();
+        } catch (SQLException e)
+        {
+            log.debug(e.getMessage());
+        } catch (ParserConfigurationException e)
+        {
+            log.debug(e.getMessage());
+        } catch (SAXException e) {
+            log.debug(e.getMessage());
+        } catch (IOException e) {
+            log.debug(e.getMessage());
+        } catch (XPathExpressionException e) {
+            log.debug(e.getMessage());
         }
-         catch (SQLException e)
-            {
-                log.debug(e.getMessage());
-            } catch (ParserConfigurationException e)
-            {
-                log.debug(e.getMessage());
-            } catch (SAXException e) {
-                log.debug(e.getMessage());
-            } catch (IOException e) {
-                log.debug(e.getMessage());
-            } catch (XPathExpressionException e) {
-                log.debug(e.getMessage());
-            }
+        finally {
+            try { pstmt.close(); } catch (Exception e) { /* ignored */ }
+            try { con.close(); } catch (Exception e) { /* ignored */ }
+
+
+    }
 }
 
 
 }
+
 
 ```
 
