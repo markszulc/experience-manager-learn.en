@@ -23,7 +23,7 @@ As you can see the name of the schema is aemformstutorial.Inside this schema is 
 The table name and the two column names are exposed as OSGI configuration properties as shown in the screen shot below:
 ![osgi-configuration](assets/configuration.PNG)
 The code will read these values and construct the appropriate SQL query to execute. For example the following query will be executed based on the above values
-**SELECT formdata FROM aemformstutorial.formsubmissions where formname=**timeoffrequestform**
+**SELECT formdata FROM aemformstutorial.formsubmissions where formname=timeoffrequestform**
 In the above query the name of the form(timeoffrequestform) will be passed as request parameter to the servlet.
 
 ## **Create OSGI Service**
@@ -244,7 +244,7 @@ public void inserFormData(String formData)
 
 ```
 
-## Configuration Service
+## **Configuration Service**
 
 We have exposed the following three properties as OSGI configuration properties. The SQL query is constructed by reading these values at run time.
 
