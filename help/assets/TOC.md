@@ -81,7 +81,4 @@ team: TM
 
 + Deployment{#deployment}
   + [Multi-tenancy and Concurrent Development](deployment/multitenancy-concurrent-article-understand.md)
-  
-+ 3D Assets{#3d}
-  + [3D Assets](3d/3d-assets-feature-video-use.md)
-  + [Configuring 3D in AEM Assets](3d/3d-assets-technical-video-setup.md)
+

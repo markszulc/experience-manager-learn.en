@@ -11,7 +11,11 @@ doc-type: code
 
 # Developing OAuth Scopes
 
-Adobe Experience Manager's extensible [!DNL OAuth scopes] allow for access control for resources from a client application that is authorized by an end user. The diagram below illustrates the request flow in the context of AEM.
+Adobe Experience Manager's extensible OAuth scopes allow for access control for resources from a client application that is authorized by an end user. The diagram below illustrates the request flow in the context of AEM.
+
+![Oauth Scopes Flow](./assets/oauth-code-sample-develop/oauth-scopes-flow.png)
+
+AEM provides three scopes:
 
 * Profile
 * Offline access
