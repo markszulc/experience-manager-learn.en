@@ -11,7 +11,7 @@ audience: developer
 kt: 4679
 ---
 
-# Set up Local Dispatcher Tools
+# Set up local Dispatcher Tools
 
 Adobe Experience Manager (AEM)'s Dispatcher is a Apache HTTP Web server module that provides a security and performance layer between the CDN and AEM Publish tier. Dispatcher is an integral part of the overall Experience Manager architecture and should be part of local development set up.
 
