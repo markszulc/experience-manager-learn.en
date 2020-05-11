@@ -7,7 +7,7 @@ audience: developer
 doc-type: article
 activity: implement
 ---
-# Introduction
+## Introduction
 
 Customers typically want to export the submitted form data in CSV format. This article will highlight the steps needed to export the form data in CSV format. This article assumes the form submissions are stored in RDBMS table. The following screenshot details the minimum table structure required to store the form submissions.
 >[!NOTE] 
@@ -24,9 +24,9 @@ The table name and the two column names are exposed as OSGI configuration proper
 ![osgi-configuration](assets/configuration.PNG)
 The code will read these values and construct the appropriate SQL query to execute. For example the following query will be executed based on the above values
 **SELECT formdata FROM aemformstutorial.formsubmissions where formname=**timeoffrequestform**
-In the above query the name of the form(timeoffrequestform) will be passed as  request parameter to the servlet.
+In the above query the name of the form(timeoffrequestform) will be passed as request parameter to the servlet.
 
-## Create OSGI Service
+## **Create OSGI Service**
 
 The following OSGI service was created to export the submitted data in CSV format.
 
@@ -34,7 +34,8 @@ The following OSGI service was created to export the submitted data in CSV forma
 
 * Line 89: This is the entry point to the service.The method getCSVFile takes in formName as input parameter and fetches the submitted data pertaining to the given form name.
 
->![NOTE]The code assumes you have defined connection pooled DataSource called "aemformstutorial" in Felix Web Console.The code also assumes that you have a schema in the database called aemformstutorial
+>[!NOTE]
+The code assumes you have defined connection pooled DataSource called "aemformstutorial" in Felix Web Console.The code also assumes that you have a schema in the database called aemformstutorial
 
 ``` java{.line-numbers}
 package com.aemforms.storeandexport.core;
@@ -268,7 +269,7 @@ String formNameColumn() default "formname";
 
 ```
 
-## Servlet
+## **Servlet**
 
 The following is the servlet code which invokes the getCSVFile method of the service. The service returns StringBuffer object which is then streamed back to the calling application
 
@@ -309,7 +310,7 @@ protected void doGet(SlingHttpServletRequest request,SlingHttpServletResponse re
 
 ```
 
-### Deploy on your server
+### **Deploy on your server**
 
 * Import the [SQL file](assets/formsubmissions.sql) into MySQL server using MySQL Workbench. This creates schema called aemformstutorial and table called formsubmissions with some sample data
 * Deploy [OSGI Bundle](assets/store-export.jar) using the felix web console
