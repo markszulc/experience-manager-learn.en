@@ -7,7 +7,7 @@ audience: developer
 doc-type: article
 activity: implement
 ---
-## Introduction
+# Introduction
 
 Customers typically want to export the submitted form data in CSV format. This article will highlight the steps needed to export the form data in CSV format. This article assumes the form submissions are stored in RDBMS table. The following screenshot details the minimum table structure required to store the form submissions.
 >[!NOTE] 
