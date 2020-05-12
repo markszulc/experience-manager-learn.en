@@ -8,6 +8,13 @@ team: TM
 
 + [Overview](overview.md)
 
++ Configuring{#configuring}
+  + [Baseline folders](configuring/baseline-folders.md)
+  + [Tagging](configuring/tagging.md)
+  + [Metadata schemas](configuring/metadata-schemas.md)
+  + [Metadata profiles](configuring/metadata-profiles.md)
+  + [Metadata folder schemas](configuring/metadata-folder-schemas.md)
+
 + Authoring{#authoring}
   + [Navigation](./authoring/navigation.md)
   + [Basic Operations](./authoring/basic-operations.md)
