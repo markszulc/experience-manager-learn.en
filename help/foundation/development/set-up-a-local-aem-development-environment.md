@@ -32,7 +32,7 @@ It is also *critical* test code against a local ***Publish*** instance. The ***P
 ### Steps
 
 1. Ensure [Java](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html) is installed.
-    * Prefer [[!DNL Java JDK 11]](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14) for AEM 6.5+
+    * Prefer [Java JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14) for AEM 6.5+
     * [Java JDK 8](https://www.oracle.com/technetwork/java/javase/downloads/index.html#JDK8) for AEM versions prior to AEM 6.5
 2. Get a copy of the [AEM QuickStart Jar and a [!DNL license.properties]](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingtheSoftware).
 3. Create a folder structure on your computer like the following:
@@ -78,9 +78,9 @@ All AEM projects should be built off the latest version of the **[!DNL AEM Proje
 
 ### Steps
 
-1. Download [[!DNL Apache Maven]](https://maven.apache.org/download.cgi)
-2. Install [!DNL[Apache Maven]](https://maven.apache.org/install.html) and ensure that the installation has been added to your command-line `PATH`.
-    * [!DNL macOS] users can install Maven using [[!DNL Homebrew]](https://brew.sh/)
+1. Download [Apache Maven](https://maven.apache.org/download.cgi)
+2. Install [Apache Maven](https://maven.apache.org/install.html) and ensure that the installation has been added to your command-line `PATH`.
+    * [!DNL macOS] users can install Maven using [Homebrew](https://brew.sh/)
 3. Verify that **[!DNL Maven]** is installed by opening a new command line terminal and executing the following:
 
    ```shell
@@ -220,16 +220,16 @@ The **[IntelliJ IDEA](https://www.jetbrains.com/idea/)** is a powerful IDE for p
 
 ### [!DNL Visual Studio Code]
 
-**[Visual Studio Code](https://code.visualstudio.com/)** has quickly become a favorite tool for ***front-end developers*** with enhanced JavaScript support, [!DNL Intellisense], and browser debugging support. **[!DNL Visual Studio Code]** is open source, free, with many powerful extensions. [!DNL Visual Studio Code] can be set up to integrate with AEM with the help of an Adobe tool, **[[!DNL repo]](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code).** There are also several community-supported extensions that can be installed to integrate with AEM.
+**[Visual Studio Code](https://code.visualstudio.com/)** has quickly become a favorite tool for ***front-end developers*** with enhanced JavaScript support, [!DNL Intellisense], and browser debugging support. **[!DNL Visual Studio Code]** is open source, free, with many powerful extensions. [!DNL Visual Studio Code] can be set up to integrate with AEM with the help of an Adobe tool, **[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code).** There are also several community-supported extensions that can be installed to integrate with AEM.
 
 [!DNL Visual Studio Code] is a great choice for front-end developers who will primarily be writing CSS/LESS and JavaScript code to create AEM client libraries. This tool may not be the best choice for new AEM developers since node definitions (dialogs, components) will all need to edited in raw XML. There are several Java extensions available for ![DNL Visual Studio Code], however if primarily doing Java development [!DNL Eclipse IDE] or [!DNL IntelliJ] may be preferred.
 
 #### Important links
 
 * [**Download**](https://code.visualstudio.com/Download) **Visual Studio Code**
-* **[[!DNL repo]](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)** - FTP-like tool for JCR content
-* **[[!DNL aemfed]](https://aemfed.io/)** - Speed up your AEM front-end workflow
-* **[[!DNL AEM Sync]](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** - Community supported&#42; extension for Visual Studio Code
+* **[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)** - FTP-like tool for JCR content
+* **[aemfed](https://aemfed.io/)** - Speed up your AEM front-end workflow
+* **[AEM Sync](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** - Community supported&#42; extension for Visual Studio Code
 
 >[!VIDEO](https://video.tv.adobe.com/v/25907?quality=12&learn=on)
 
@@ -242,7 +242,7 @@ The **[IntelliJ IDEA](https://www.jetbrains.com/idea/)** is a powerful IDE for p
 
 ### [!DNL CRXDE Lite]
 
-[[!DNL CRXDE Lite]](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/developing-with-crxde-lite.html) is a browser-based view of the AEM repository. [!DNL CRXDE Lite] is embedded in AEM and allows a developer to perform standard development tasks like editing files, defining components, dialogs, and templates. [!DNL CRXDE Lite] is ***not*** intended to be a full development environment but is very effective as a debugging tool. [!DNL CRXDE Lite] is useful when extending or simply understanding product code outside of your code base. [!DNL CRXDE Lite] provides a powerful view of the repository and a way to effectively test and manage permissions.
+[CRXDE Lite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/developing-with-crxde-lite.html) is a browser-based view of the AEM repository. [!DNL CRXDE Lite] is embedded in AEM and allows a developer to perform standard development tasks like editing files, defining components, dialogs, and templates. [!DNL CRXDE Lite] is ***not*** intended to be a full development environment but is very effective as a debugging tool. [!DNL CRXDE Lite] is useful when extending or simply understanding product code outside of your code base. [!DNL CRXDE Lite] provides a powerful view of the repository and a way to effectively test and manage permissions.
 
 [!DNL CRXDE Lite] should always be used in conjunction with other IDEs to test and debug code but never as the primary development tool. It has limited syntax support, no auto-complete capabilities and limited integration with source control management systems.
 
@@ -324,10 +324,10 @@ Another commonly encountered issue when developing front-end code is old or outd
 
 With different methods of categories and embeds to include multiple client libraries it can be cumbersome to troubleshoot. AEM exposes several tools to help with this. One of the most important tools is [!UICONTROL Rebuild Client Libraries] which will force AEM to re-compile any LESS files and generate the CSS.
 
-* [[!UICONTROL Dump Libs]](http://localhost:4502/libs/granite/ui/content/dumplibs.html) - Lists all of the client libraries registered in the AEM instance. &lt;host&gt;/libs/granite/ui/content/dumplibs.html
-* [[!UICONTROL Test Output]](http://localhost:4502/libs/granite/ui/content/dumplibs.test.html) - allows a user to see the expected HTML output of clientlib includes based on category. &lt;host&gt;/libs/granite/ui/content/dumplibs.test.html
-* [[!UICONTROL Libraries Dependencies validation]](http://localhost:4502/libs/granite/ui/content/dumplibs.validate.html) - highlights any dependencies or embedded categories that cannot be found. &lt;host&gt;/libs/granite/ui/content/dumplibs.validate.html
-* [[!UICONTROL Rebuild Client Libraries]](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) - allows a user to force AEM to rebuild all of the client libraries or invalidate the cache of client libraries. This tool is particularly effective when developing with LESS as this can force AEM to re-compile the generated CSS. In general it is more effective to Invalidate Caches and then perform a page refresh versus rebuilding all of the libraries. &lt;host&gt;/libs/granite/ui/content/dumplibs.rebuild.html
+* [Dump Libs](http://localhost:4502/libs/granite/ui/content/dumplibs.html) - Lists all of the client libraries registered in the AEM instance. &lt;host&gt;/libs/granite/ui/content/dumplibs.html
+* [Test Output](http://localhost:4502/libs/granite/ui/content/dumplibs.test.html) - allows a user to see the expected HTML output of clientlib includes based on category. &lt;host&gt;/libs/granite/ui/content/dumplibs.test.html
+* [Libraries Dependencies validation](http://localhost:4502/libs/granite/ui/content/dumplibs.validate.html) - highlights any dependencies or embedded categories that cannot be found. &lt;host&gt;/libs/granite/ui/content/dumplibs.validate.html
+* [Rebuild Client Libraries](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) - allows a user to force AEM to rebuild all of the client libraries or invalidate the cache of client libraries. This tool is particularly effective when developing with LESS as this can force AEM to re-compile the generated CSS. In general it is more effective to Invalidate Caches and then perform a page refresh versus rebuilding all of the libraries. &lt;host&gt;/libs/granite/ui/content/dumplibs.rebuild.html
 
 ![Debugging Clientlibs](assets/set-up-a-local-aem-development-environment/debugging-clientlibs.png)
 
