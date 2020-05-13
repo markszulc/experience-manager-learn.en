@@ -47,8 +47,8 @@ The sample bundle uses alias called "ares" to certify the documents. So please m
 
 ## Testing the sample on your local system
 
-* Download and install [Custom Document Services Bundle](https://forms.enablementadobe.com/content/DemoServerBundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* Download and install [Developing with Service User Bundle](https://forms.enablementadobe.com/content/DemoServerBundles/DevelopingWithServiceUser.core-1.0-SNAPSHOT.jar)
+* Download and install [Custom Document Services Bundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* Download and install [Developing with Service User Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [Make sure you have added the following entry in the Apache Sling Service User Mapper Service](http://localhost:4502/system/console/configMgr) 
 **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** as shown in the screenshot below
 ![User-Mapper](assets/user-mapper-service.PNG)

@@ -38,9 +38,9 @@ tagManager.setTags(metadata, tagArray, true);
 ```
 
 To get this sample working on your system,Please follow the steps listed below:
-* [Deploy the Developingwithserviceuser bundle](https://forms.enablementadobe.com/content/DemoServerBundles/DevelopingWithServiceUser.core-1.0-SNAPSHOT.jar)
+* [Deploy the Developingwithserviceuser bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Download and deploy the setvalue bundle](https://forms.enablementadobe.com/content/DemoServerBundles/SetValueApp.core-1.0-SNAPSHOT.jar). This is the custom OSGI bundle which sets the tags from the submitted form data.
+* [Download and deploy the setvalue bundle](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). This is the custom OSGI bundle which sets the tags from the submitted form data.
 
 * [Download the Sample Adaptive Form](assets/tag-and-store-in-dam-assets.zip)
 

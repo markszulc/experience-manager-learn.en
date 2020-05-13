@@ -24,8 +24,8 @@ Organizations have a wide variety of forms. Some of these forms are created in M
 ### The following are required to get this capability working on your system
 
 * Download and deploy the bundles using the [Felix Web Console](http://localhost:4502/system/console/bundles)
-* [DocumentServicesBundle](https://forms.enablementadobe.com/content/DemoServerBundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* [DevelopingWithServiceUser](https://forms.enablementadobe.com/content/DemoServerBundles/DevelopingWithServiceUser.core-1.0-SNAPSHOT.jar)
+* [DocumentServicesBundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* [DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [AcroFormsToAEMFormsBundle](https://forms.enablementadobe.com/content/DemoServerBundles/AcroFormToAEMForm.core-1.0-SNAPSHOT.jar)
 * [Download and import this package into AEM](assets/acro-form-aem-form.zip). This package contains the sample workflow and html page to create XSD from acroform
 * Open the [configMgr](http://localhost:4502/system/console/configMgr)

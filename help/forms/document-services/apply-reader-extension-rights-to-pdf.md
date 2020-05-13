@@ -186,7 +186,7 @@ try {
 ```
 
 To test this on your local server, please follow the following steps:
-1. [Download and Install the DevelopingWithServiceUser Bundle](https://forms.enablementadobe.com/content/DemoServerBundles/DevelopingWithServiceUser.core-1.0-SNAPSHOT.jar)
+1. [Download and Install the DevelopingWithServiceUser Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [Download and install the ares.ares.core-ares Bundle](assets/ares.ares.core-ares.jar). This has the custom service and the servlet to apply usage rights and stream the pdf back
 1. [Import the client libs and custom submit](assets/applyaresdemo.zip)
 1. [Import the Adaptive Form](assets/applyaresform.zip)

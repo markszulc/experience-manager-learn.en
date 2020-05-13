@@ -48,7 +48,7 @@ Line 7: Generate Interactive PDF using the renderPDFForm service operation of Fo
 Line 11: Returns the generated interactive pdf to the calling application
 
 **To test the sample package on your system**
-1. [Download and install the DocumentServices Sample Bundle using the Felix Web Console](https://forms.enablementadobe.com/content/DemoServerBundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+1. [Download and install the DocumentServices Sample Bundle using the Felix Web Console](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [Download and install the package using the AEM package manager](assets/downloadinteractivepdffrommobileform.zip)
 
 

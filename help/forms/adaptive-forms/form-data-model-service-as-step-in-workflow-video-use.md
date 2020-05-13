@@ -23,7 +23,7 @@ Starting with AEM Forms 6.4, we now have the ability to use Form Data Model as p
 >[!VIDEO](https://video.tv.adobe.com/v/21719/?quality=9&learn=on)
 
 To test this capability on your server, follow the below instructions
-* [Download and deploy the setvalue bundle](https://forms.enablementadobe.com/content/DemoServerBundles/SetValueApp.core-1.0-SNAPSHOT.jar). This is the custom OSGI bundle which sets metadata properties.
+* [Download and deploy the setvalue bundle](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). This is the custom OSGI bundle which sets metadata properties.
 >![NOTE]In AEM Forms 6.5 and above this capability is available out of the box as [describe here](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
 
 * Setup tomcat with SampleRest.war file as described [here](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html).The war file deployed in Tomcat has the code to return the applicant's credit score. The credit score is random number between 200 and 800
