@@ -13,8 +13,6 @@ audience: developer
 
 Learn how multiple views in the SPA can be supported by mapping to AEM Pages with the SPA Editor SDK. Dynamic navigation is implemented using React Router and added to an existing Header component.
 
-![Navigation implemented](assets/navigation-routing/final-navigation-implemented.gif)
-
 ## Objective
 
 1. Understand the SPA model routing options available when using the SPA Editor.
@@ -24,6 +22,8 @@ Learn how multiple views in the SPA can be supported by mapping to AEM Pages wit
 ## What you will build
 
 This chapter will add a navigation menu to an existing `Header` component. The navigation menu will be driven by the AEM page hierarchy and will make use of the JSON model provided by the [Navigation Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html).
+
+![Navigation implemented](assets/navigation-routing/final-navigation-implemented.gif)
 
 ## Prerequisites
 
@@ -58,7 +58,7 @@ In previous chapters, the `Header` component was added as a pure React component
 
 >[!NOTE]
 >
-> Several CSS and JavaScript updates have already been made to the code base to start this chapter. To accelerate the tutorial and focus on core concepts, not **all** of the code changes will be discussed. You can view the detailed changes [here](#).
+> Several CSS and JavaScript updates have already been made to the code base to start this chapter. To accelerate the tutorial and focus on core concepts, not **all** of the code changes will be discussed. You can view the detailed changes [here](#TODOADDLINK).
 
 1. In the IDE of your choice open the SPA starter project for this chapter.
 2. Beneath the `ui.frontend` module inspect the file `Header.js` at: `ui.frontend/src/components/Header/Header.js`.
