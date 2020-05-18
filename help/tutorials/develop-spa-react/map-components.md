@@ -87,7 +87,7 @@ Let's see how the component works.
     $ npm start
     ```
 
-    The `ui.frontend` module is currently set up to use the [mock JSON model](./integrate-spa#mock-json).
+    The `ui.frontend` module is currently set up to use the [mock JSON model](./integrate-spa.md#mock-json).
 
 2. You should see a new browser window open to [http://localhost:3000/content/wknd-spa-react/us/en/home.html](http://localhost:3000/content/wknd-spa-react/us/en/home.html)
 
