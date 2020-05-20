@@ -24,7 +24,7 @@ String line = null;
 java.io.InputStreamReader isReader = new java.io.InputStreamReader(request.getInputStream(), "UTF-8");
 java.io.BufferedReader reader = new java.io.BufferedReader(isReader);
 while ((line = reader.readLine()) != null) {
-	stringBuffer.append(line);
+    stringBuffer.append(line);
 }
 System.out.println("The submitted form data is " + stringBuffer.toString());
 
