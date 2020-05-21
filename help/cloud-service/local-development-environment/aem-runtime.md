@@ -7,7 +7,7 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 4678
+kt: 4678, 4677
 ---
 
 # Set up local AEM Runtime
@@ -15,6 +15,12 @@ kt: 4678
 Adobe Experience Manager (AEM) can be run locally using the AEM as a Cloud Service SDK's Quickstart Jar. This allows developers to deploy to, and test custom code, configuration and content prior to committing it to source control, and deploying it to a AEM as a Cloud Service environment.
 
  Note that `~` is used as shorthand for the User's Directory. In Windows, this is the equivalent of `%HOMEPATH%`.
+
+>[!VIDEO](https://video.tv.adobe.com/v/32551/?quality=12&learn=on)
+
+>[!NOTE]
+>
+> This video shows  how to install and run a local instance of Adobe Experience Manager in just a few minutes with the AEM SDK's local quickstart. This video shows starting the AEM SDK's local quickstart by double-clicking on the quickstar Jar file, however this will not work in Java 8 is installed on the computer. Alternatively, the AEM SDK's local quickstart can be started from the command line using the `java -jar ...` command as [described on this page](#set-up-local-aem-author-service).
 
 ## Install Java
 
@@ -45,7 +51,7 @@ The AEM as a Cloud Service SDK, or AEM SDK, contains the Quickstart Jar used to 
 
 Note the same Quickstart Jar and license.properties files are used to start _both_ AEM Author and Publish Services.
 
-## Set up local AEM Author service
+## Set up local AEM Author service{#set-up-local-aem-author-service}
 
 The local AEM Author Service provides developers with a local experience digital marketers/content authors will share to create and manage content.  AEM Author Service is designed both as an authoring and preview environment, allowing most validations of feature development can be performed against it, making it a vital element of the local development process.
 
@@ -148,7 +154,6 @@ Changing these may require adjustments to AEM SDK configurations
 ## Stopping an local AEM runtime
 
 In order to stop a local AEM runtime, either AEM Author or Publish service, open the command line window that was used to start the the AEM Runtime, and tap `Ctrl-C`. Wait for AEM to shutdown. When the shutdown process is complete, the command line prompt will be available.
-
 
 ## When to update the Quickstart Jar
 
