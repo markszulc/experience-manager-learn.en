@@ -25,7 +25,7 @@ $ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -jar a
 + `address` specifies the port AEM listens on for remote debug connections and can be changed to any available port on the local development machine.
 + The last parameter (eg. `aem-author-p4502.jar`) is the AEM SKD Quickstart Jar. This can be either the AEM Author service (`aem-author-p4502.jar`) or the AEM Publish service (`aem-publish-p4503.jar`).
 
-### Java IDE set up instructions
+## IDE set up instructions
 
 Most Java IDE's provide support for remote debugging of Java programs, however each IDE's exact set up steps vary. Please review your IDE's remote debugging set up instructions for the exact steps. Typically IDE configurations require:
 
@@ -33,7 +33,7 @@ Most Java IDE's provide support for remote debugging of Java programs, however e
 + The port AEM SDK's local quickstart is listening on for remote debug connection, which is the port specified by the `address` parameter when starting AEM SDK's local quickstart.
 + Occasionally, the Maven project(s) that provide the source code to remote debug must be specified; this is your OSGi bundle maven projects project(s).
 
-#### Set up instructions
+### Set up instructions
 
 + [VS Code Java Remote debugger set up](https://code.visualstudio.com/docs/java/java-debugging)
 + [IntelliJ IDEA Remote debugger set up](https://www.jetbrains.com/help/idea/run-debug-configuration-remote-debug.html)
