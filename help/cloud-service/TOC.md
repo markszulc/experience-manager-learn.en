@@ -19,8 +19,9 @@ team: TM
   + [Development Tools for AEM Projects](./local-development-environment/development-tools.md)
   + [Local AEM Runtime](./local-development-environment/aem-runtime.md)
   + [Local Dispatcher Tools](./local-development-environment/dispatcher-tools.md)
-+ Debugging AEM(#debugging)
-  + [Debugging the AEM SDK local quickstart](./debugging/aem-sdk-local-quickstart/overview.md)
++ Debugging AEM{#debugging}
+  + Debugging the AEM SDK local quickstart{#debugging-aem-sdk-local-quickstart}
+    + [Overview](./debugging/aem-sdk-local-quickstart/overview.md)
     + [Logs](./debugging/aem-sdk-local-quickstart/logs.md)
     + [Remote Debugging](./debugging/aem-sdk-local-quickstart/remote-debugging.md)
     + [OSGi web console](./debugging/aem-sdk-local-quickstart/osgi-web-consoles.md)

@@ -1,6 +1,6 @@
 ---
 title: Debugging AEM SDK’s local quickstart
-description: 
+description: AEM SDK's local quickstart is the primary development environment used by developers, and supports a myriad of ways to debug AEM and deployed applications.
 feature: 
 topics: development
 version: cloud-service
