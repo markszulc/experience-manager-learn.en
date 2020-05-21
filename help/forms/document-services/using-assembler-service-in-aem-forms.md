@@ -104,8 +104,8 @@ To get this capability working on your AEM Server
 
 * Download the [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) to your local system.
 * Upload and install the package using the [package manager](http://localhost:4502/crx/packmgr/index.jsp)
-* Download[Custom Document Services Bundle](https://forms.enablementadobe.com/content/DemoServerBundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* Download [Developing with Service User Bundle](https://forms.enablementadobe.com/content/DemoServerBundles/DevelopingWithServiceUser.core-1.0-SNAPSHOT.jar)
+* Download[Custom Document Services Bundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* Download [Developing with Service User Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * Deploy and start the bundles using the [felix web console](http://localhost:4502/system/console/bundles)
 * Point your browser to [AssemblePdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
 * Drag and Drop a couple of files of PDF files

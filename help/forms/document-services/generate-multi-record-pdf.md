@@ -125,8 +125,8 @@ To test this capability on your server, please follow the below instructions:
 * Specify the appropriate save location(line 9). This save location is used to store the template and the final zip file
 * [Download and extract zip file contents to your file system](assets/mult-records-template-and-xml-file.zip).This zip file contains the template and xml data file.
 * [Point your browser to Felix web console](http://localhost:4502/system/console/bundles)
-* [Deploy DevelopingWithServiceUser Bundle](https://forms.enablementadobe.com/content/DemoServerBundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). 
-* [Deploy Custom AEMFormsDocumentServices Bundle](https://forms.enablementadobe.com/content/DemoServerBundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).Custom bundle which generates the pdf's using the OutputService API
+* [Deploy DevelopingWithServiceUser Bundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). 
+* [Deploy Custom AEMFormsDocumentServices Bundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).Custom bundle which generates the pdf's using the OutputService API
 * [Point your browser to package manager](http://localhost:4502/crx/packmgr/index.jsp)
 * [Import and install the package](assets/generate-multiple-pdf-from-xml.zip). This package contains html page which allows you to drop the template and data files.
 * [Point your browser to MultiRecords.html](http://localhost:4502/content/DocumentServices/Multirecord.html?)

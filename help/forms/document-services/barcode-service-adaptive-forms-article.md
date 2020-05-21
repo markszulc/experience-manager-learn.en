@@ -143,8 +143,8 @@ Line 23 - Call the DocumentServices extractBarCode method to get the JSON object
 To get this running on your system, please follow the following steps
 
 1. [Download BarcodeService.zip](assets/barcodeservice.zip) and import into AEM using the package manager
-1. [Download and install the Custom DocumentServices Bundle](https://forms.enablementadobe.com/content/DemoServerBundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-1. [Download and install the DevelopingWithServiceUser Bundle](https://forms.enablementadobe.com/content/DemoServerBundles/DevelopingWithServiceUser.core-1.0-SNAPSHOT.jar)
+1. [Download and install the Custom DocumentServices Bundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+1. [Download and install the DevelopingWithServiceUser Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
  1. [Download the sample PDF Form](assets/barcode.pdf)
 1. Point your browser to the [sample adaptive form](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
 1. Upload the sample PDF provided

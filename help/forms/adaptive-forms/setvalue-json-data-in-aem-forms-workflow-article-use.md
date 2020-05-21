@@ -37,9 +37,9 @@ Please take a look at the rules set against "Initial Step". Based on the value o
 
 To deploy the assets on your local system:
 
-* [Download and deploy DevelopingWitheServiceUserBundle](https://forms.enablementadobe.com/content/DemoServerBundles/DevelopingWithServiceUser.core-1.0-SNAPSHOT.jar)
+* [Download and deploy DevelopingWitheServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-*[Download and deploy the setvalue bundle](https://forms.enablementadobe.com/content/DemoServerBundles/SetValueApp.core-1.0-SNAPSHOT.jar). This is the custom OSGI bundle which allows you to set the values of an element in the submitted json data.
+*[Download and deploy the setvalue bundle](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). This is the custom OSGI bundle which allows you to set the values of an element in the submitted json data.
 
 * [Download and extract the contents of the zip file](assets/set-value-jsondata.zip)
   * Point your browser to [package manager](http://localhost:4502/crx/packmgr/index.jsp)

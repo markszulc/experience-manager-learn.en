@@ -195,8 +195,8 @@ public class RenderAndReaderExtend extends SlingSafeMethodsServlet {
 ```
 
 To test this on your local server, please follow the following steps
-1. [Download and Install the DevelopingWithServiceUser Bundle](https://forms.enablementadobe.com/content/DemoServerBundles/DevelopingWithServiceUser.core-1.0-SNAPSHOT.jar)
-1. [Download and Install the AEMFormsDocumentServices Bundle](https://forms.enablementadobe.com/content/DemoServerBundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+1. [Download and Install the DevelopingWithServiceUser Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+1. [Download and Install the AEMFormsDocumentServices Bundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [Download and import the assets related to this article into AEM using package manager](assets/renderandextendxdp.zip)
     * This package has sample portal and xdp file
 1. Add Reader Extensions certificate to "fd-service" user

@@ -21,7 +21,7 @@ To get this use case working on your local system, following these steps:
 * [Follow the instructions specified in developing with service user in AEM Forms](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html). Please make sure to create the service user and deploy the bundle on your AEM Author and Publish instance.
 * [Open the osgi configuration ](http://localhost:4503/system/console/configMgr).
 * Search for  **Apache Sling Referrer Filter**. Make sure the Allow Empty checkbox is selected.
-* [Deploy the custom AEMFormDocumentService Bundle](https://forms.enablementadobe.com/content/DemoServerBundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).This bundle needs to be deployed on your AEM Publish instance. This bundle has the code to generate interactive PDF from mobile form.
+* [Deploy the custom AEMFormDocumentService Bundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).This bundle needs to be deployed on your AEM Publish instance. This bundle has the code to generate interactive PDF from mobile form.
 * [Download and Unzip the assets related to this article.](assets/offline-pdf-submission-assets.zip) You will get the following
     * **offline-submission-profile.zip** - This AEM package contains the custom profile that allows you to download the interactive pdf to your local file system. Deploy this package on your AEM Publish instance.
     * **xdp-form-and-workflow.zip** - This AEM package contains XDP, sample workflow,launcher configured on node content/pdfsubmissions. Deploy this package on both your AEM Author and Publish instance.

@@ -30,9 +30,9 @@ The following screenshot shows you how to use process step in [AEM Workflow](htt
 To test this capability on your system, please follow the following steps:
 * [Make sure the process step in the workflow is configure to use the Capture Workflow Comments](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html)
 
-* [Deploy the Developingwithserviceuser bundle](https://forms.enablementadobe.com/content/DemoServerBundles/DevelopingWithServiceUser.core-1.0-SNAPSHOT.jar)
+* [Deploy the Developingwithserviceuser bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Deploy the SetValue bundle](https://forms.enablementadobe.com/content/DemoServerBundles/SetValueApp.core-1.0-SNAPSHOT.jar). This bundle contains the sample code to capture the comments and store it as a metadata property
+* [Deploy the SetValue bundle](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). This bundle contains the sample code to capture the comments and store it as a metadata property
 
 * [Download and unzip the assets related to this article on to your file system](assets/capturecomments.zip) The assets contain workflow model and sample Adaptive Form.
 

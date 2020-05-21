@@ -112,9 +112,9 @@ We then configure the following properties(advanced) of our mobile form in AEM
 
 To test this capability on your own server please follow the following steps:
 
-* [Deploy the AemFormsDocumentServices bundle](https://forms.enablementadobe.com/content/DemoServerBundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* [Deploy the AemFormsDocumentServices bundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 
-* [Deploy the Developing with Service User bundle](https://forms.enablementadobe.com/content/DemoServerBundles/DevelopingWithServiceUser.core-1.0-SNAPSHOT.jar)
+* [Deploy the Developing with Service User bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
 * [Download and install the package associated with this article.](assets/pdf-from-mobile-form-submission.zip)
 
