@@ -18,6 +18,8 @@ HTML5 forms can be submitted to servlet hosted in AEM. The submitted data can be
 
 A simple servlet can be created to handle the HTML5 form submission. The submitted data can then be extracted by using the following code. This [servlet](assets/html5-submit-handler.zip) is made available to you as part of this tutorial. Please install the [servlet](assets/html5-submit-handler.zip) using [package manager](http://localhost:4502/crx/packmgr/index.jsp)
 
+The code from line 9 can be used to invoke J2EE process. Please make sure you have configured [Adobe LiveCycle Client SDK Configuration](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) if you intend to use the code to invoke J2EE process.
+
 ```java{.line-numbers}
 StringBuffer stringBuffer = new StringBuffer();
 String line = null;
@@ -27,6 +29,23 @@ while ((line = reader.readLine()) != null) {
     stringBuffer.append(line);
 }
 System.out.println("The submitted form data is " + stringBuffer.toString());
+/*
+        * java.util.Map params = new java.util.HashMap();
+        * params.put("in",stringBuffer.toString());
+        * com.adobe.livecycle.dsc.clientsdk.ServiceClientFactoryProvider scfp =
+        * sling.getService(com.adobe.livecycle.dsc.clientsdk.
+        * ServiceClientFactoryProvider.class);
+        * com.adobe.idp.dsc.clientsdk.ServiceClientFactory serviceClientFactory =
+        * scfp.getDefaultServiceClientFactory(); com.adobe.idp.dsc.InvocationRequest ir
+        * = serviceClientFactory.createInvocationRequest("Test1/NewProcess1", "invoke",
+        * params, true);
+        * ir.setProperty(com.adobe.livecycle.dsc.clientsdk.InvocationProperties.
+        * INVOKER_TYPE,com.adobe.livecycle.dsc.clientsdk.InvocationProperties.
+        * INVOKER_TYPE_SYSTEM); com.adobe.idp.dsc.InvocationResponse response1 =
+        * serviceClientFactory.getServiceClient().invoke(ir);
+        * System.out.println("The response is "+response1.getInvocationId());
+        */
+
 
 ```
 
