@@ -38,12 +38,3 @@ Most Java IDE's provide support for remote debugging of Java programs, however e
 + [VS Code Java Remote debugger set up](https://code.visualstudio.com/docs/java/java-debugging)
 + [IntelliJ IDEA Remote debugger set up](https://www.jetbrains.com/help/idea/run-debug-configuration-remote-debug.html)
 + [Eclipse Remote debugger set up](https://javapapers.com/core-java/java-remote-debug-with-eclipse/)
-
-For issues with Internal, Adobe-owned Sandboxes:
-* Login to Admin Console (https://adminconsole.adobe.com/) with your Adobe ID
-* Ensure the Adobe Org whose AEM product is misbehaving under is selected
-* Tap the "Support" button in the top bar
-* Tap "Create Case"
-* Tap "Using Experience Cloud" and tap "Create Case"
-* Specify the appropriate "Adobe Experience Manager Cloud XXXX" product
-* Fill out the rest of the form and submit the case
