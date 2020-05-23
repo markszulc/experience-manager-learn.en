@@ -9,7 +9,7 @@ activity: develop
 audience: developer
 ---
 
-# Integrate a SPA
+# Integrate a SPA {#integrate-spa}
 
 Understand how the source code for a Single Page Application (SPA) written in React can be integrated with an Adobe Experience Manager (AEM) Project. Learn to use modern front-end tools, like a webpack dev server, to rapidly develop the SPA against the AEM JSON model API.
 
@@ -24,6 +24,8 @@ Understand how the source code for a Single Page Application (SPA) written in Re
 This chapter will add a simple `Header` component to the SPA. In the process of building out this static `Header` component several approaches to AEM SPA development will be used.
 
 ![New Header in AEM](./assets/integrate-spa/final-header-component.png)
+
+*The SPA is extended to add a static `Header` component*
 
 ## Prerequisites
 
@@ -104,13 +106,15 @@ Next, inspect the `ui.frontend` module to understand the SPA that has been auto-
 
     These are standard build scripts made [available](https://create-react-app.dev/docs/available-scripts) by the Create React App.
 
-    The only difference is the addition of `&& clientlib` to the `build` script. This extra instruction is responsible for copying the compiled SPA into the `ui.apps` project as a client-side library during a build. The npm module [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) is used to facilitate this.
+    The only difference is the addition of `&& clientlib` to the `build` script. This extra instruction is responsible for copying the compiled SPA into the `ui.apps` module as a client-side library during a build.
 
-6. Open the file `ui.frontend/clientlib.config.js`. `clientlib.config.js` is the configuration file used by [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs) to determine where to generate the client library.
+    The npm module [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) is used to facilitate this.
 
-7. Open the file `ui.frontend/pom.xml`. This file transforms the `ui.frontend` folder into a [Maven module](http://maven.apache.org/guides/mini/guide-multiple-modules.html). The `pom.xml` file has been updated to use the [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin) to trigger the commands `npm run test` and `npm run build` during a Maven build, i.e `mvn clean install -PautoInstallSinglePacakge`
+6. Inspect the file `ui.frontend/clientlib.config.js`. `clientlib.config.js` is the configuration file used by [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs) to determine where to generate the client library.
 
-8. Finally open the file `index.js` at `ui.frontend/src/index.js`:
+7. Inspect the file `ui.frontend/pom.xml`. This file transforms the `ui.frontend` folder into a [Maven module](http://maven.apache.org/guides/mini/guide-multiple-modules.html). The `pom.xml` file has been updated to use the [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin) to **test** and **build** the SPA during a Maven build.
+
+8. Inspect the file `index.js` at `ui.frontend/src/index.js`:
 
     ```js
     //ui.frontend/src/index.js
@@ -135,7 +139,7 @@ Next, inspect the `ui.frontend` module to understand the SPA that has been auto-
     });
     ```
 
-    `index.js` is the entrypoint of the SPA. `ModelManager`, provided by the AEM SPA Editor JS SDK, is responsible for calling and injecting the `pageModel` (the JSON content) into the application.
+    `index.js` is the entrypoint of the SPA. `ModelManager` is provided by the AEM SPA Editor JS SDK. It is responsible for calling and injecting the `pageModel` (the JSON content) into the application.
 
 ## Add a Header component {#header-component}
 

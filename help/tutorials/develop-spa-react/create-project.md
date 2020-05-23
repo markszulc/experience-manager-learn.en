@@ -161,6 +161,8 @@ Next, compile, build, and deploy the project code to a local instance of AEM usi
 
     ![WKND SPA Packages](./assets/create-project/package-manager.png)
 
+    *AEM Package Manager*
+
     All of the custom code needed for the project will be bundled into these packages and installed on the AEM runtime.
 
 6. You should also see several packages for `spa.project.core` and `core.wcm.components`. These are dependencies automatically included by the archetype. More information about [AEM Core Components can be found here](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html).
