@@ -24,7 +24,9 @@ Import the [Interactive Communication template](assets/Beneficiaries-confirmatio
 Import the [watched folder configuration](assets/batch-generation-api.zip) This will create a folder called batchAPI in your c drive.
 
 >[!NOTE]
-if you are running AEM Forms on non-windows operating system [change the path](http://localhost:4502/libs/fd/core/WatchfolderUI/content/ConfigureWatchfolder.html?curr_service=_editWatchfolder&name=BatchAPIWatchedFolder&path=c:\batchAPI) to match your operating system
+if you are running AEM Forms on non-windows operating system [open watched folder](http://localhost:4502/libs/fd/core/WatchfolderUI/content/UI.html)
+Select BatchAPIWatchedFolder and click Edit
+Change the path to match your operating system
 
 ![path](assets/watched-folder-batch-api-basic.PNG)
 
