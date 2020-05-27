@@ -73,6 +73,7 @@ index: y
   + [Export Submitted Data](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + HTML5 Forms{#html5-forms}
   + [Create your first HTML5 Form](html5-forms/creating-mobile-form.md)
+  + [Handle HTML5 Form Submission](html5-forms/handle-mobile-form-submission.md)
 + Variables in AEM Workflow{#variables-aem-workflow}
   + [Introduction - Variables in Workflow](variables-aem-workflow/introduction.md)
   + [XML Variables](variables-aem-workflow/part1.md)
