@@ -7,7 +7,7 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 4678
+kt: 4678, 4677
 ---
 
 # Set up local AEM Runtime
@@ -16,11 +16,17 @@ Adobe Experience Manager (AEM) can be run locally using the AEM as a Cloud Servi
 
  Note that `~` is used as shorthand for the User's Directory. In Windows, this is the equivalent of `%HOMEPATH%`.
 
+>[!VIDEO](https://video.tv.adobe.com/v/32551/?quality=12&learn=on)
+
+>[!NOTE]
+>
+> This video shows  how to install and run a local instance of Adobe Experience Manager in just a few minutes with the AEM SDK's local quickstart. This video shows starting the AEM SDK's local quickstart by double-clicking on the quickstart Jar file, however this will not work in Java 8 is installed on the computer. Alternatively, the AEM SDK's local quickstart can be started from the command line using the `java -jar ...` command as [described on this page](#set-up-local-aem-author-service).
+
 ## Install Java
 
 Experience Manager is a Java application, and thus requires the Java SDK to support the development tooling.
 
-1. [Download and install the latest release Java 11 SDK](h[Java SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14))
+1. [Download and install the latest [Java SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14))
 1. Verify Java 11 SDK is installed by running the command:
     + Windows:`java -version`
     + macOS / Linux: `java --version`
@@ -31,7 +37,7 @@ Experience Manager is a Java application, and thus requires the Java SDK to supp
 
 The AEM as a Cloud Service SDK, or AEM SDK, contains the Quickstart Jar used to run AEM Author and Publish locally for development, as well as the compatible version of the Dispatcher Tools.
 
-1. Log in to [downloads.experiencecloud.adobe.com](https://downloads.experiencecloud.adobe.com/) with your Adobe ID
+1. Log in to [https://experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads) with your Adobe ID
       + Note that your Adobe Organization __must__ be provisioned for AEM as a Cloud Service to download the AEM as a Cloud Service SDK.
 1. Navigate to the __AEM as a Cloud Service__ tab
 1. Sort by __Published Date__ in __Descending__ order
@@ -45,7 +51,7 @@ The AEM as a Cloud Service SDK, or AEM SDK, contains the Quickstart Jar used to 
 
 Note the same Quickstart Jar and license.properties files are used to start _both_ AEM Author and Publish Services.
 
-## Set up local AEM Author service
+## Set up local AEM Author service{#set-up-local-aem-author-service}
 
 The local AEM Author Service provides developers with a local experience digital marketers/content authors will share to create and manage content.  AEM Author Service is designed both as an authoring and preview environment, allowing most validations of feature development can be performed against it, making it a vital element of the local development process.
 
@@ -149,7 +155,6 @@ Changing these may require adjustments to AEM SDK configurations
 
 In order to stop a local AEM runtime, either AEM Author or Publish service, open the command line window that was used to start the the AEM Runtime, and tap `Ctrl-C`. Wait for AEM to shutdown. When the shutdown process is complete, the command line prompt will be available.
 
-
 ## When to update the Quickstart Jar
 
 AEM as a Cloud Service releases daily updates, and thus, it is important for local development to be developing against Quickstart Jar version that is "near" to what is deployed to the AEM as Cloud Service environments. It is recommended the local Quickstart Jar used for local development be refreshed at least bi-weekly to match the version of Experience Manager on the Production environment.
@@ -207,7 +212,7 @@ Once Java 11 SDK is installed, verify it is the active version by running the co
 
 ## Additional Resources
 
-+ [Download AEM SDK](https://downloads.experiencecloud.adobe.com/)
++ [Download AEM SDK](https://experience.adobe.com/#/downloads)
 + [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/)
 + [Download Docker](https://www.docker.com/)
 + [Experience Manager Dispatcher Documentation](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)

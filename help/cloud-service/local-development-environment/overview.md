@@ -31,9 +31,9 @@ This tutorial walks through how to install and set up the highlighted items in t
 This tutorial established the location of the AEM as a Cloud Service SDK artifacts and AEM Project code as follows:
 
 + `~/aem-sdk` is a organizational folder containing the various tools provided by the AEM as a Cloud Service SDK
-+ `~/aem-sdk/author` contains the [!DNL AEM Author Service]
-+ `~/aem-sdk/publish` contains the [!DNL AEM Publish Service]
-+ `~/aem-sdk/dispatcher` contains the [!DNL Dispatcher] Tools
++ `~/aem-sdk/author` contains the AEM Author Service
++ `~/aem-sdk/publish` contains the AEM Publish Service
++ `~/aem-sdk/dispatcher` contains the Dispatcher Tools
 + `~/code/<project name>` contains the custom AEM Project source code
 
 Note that `~` is shorthand for the User's Directory. In Windows, this is the equivalent of `%HOMEPATH%`;
@@ -66,7 +66,7 @@ This section of the tutorial shows how to:
 
 ## Local [!DNL Dispatcher] Runtime
 
-AEM as a Cloud Service SDK's [!DNL Dispatcher] Tools provides everything required to set up the local [!DNL Dispatcher] runtime. [!DNL Dispatcher] Tools are [!DNL Docker]-based and provides command line tools to transpile [!DNL Apache HTTP] Web Server and [!DNL Dispatcher] configuration files into a compatible formats and deploy them to [!DNL Dispatcher] running in the [!DNL Docker] container.
+AEM as a Cloud Service SDK's Dispatcher Tools provides everything required to set up the local [!DNL Dispatcher] runtime. [!DNL Dispatcher] Tools are [!DNL Docker]-based and provides command line tools to transpile [!DNL Apache HTTP] Web Server and [!DNL Dispatcher] configuration files into a compatible formats and deploy them to [!DNL Dispatcher] running in the [!DNL Docker] container.
 
 This section of the tutorial shows how to:
 

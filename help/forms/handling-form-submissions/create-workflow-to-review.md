@@ -30,6 +30,7 @@ Workflows are typically used to route submitted data for review and approval. Wo
 
   >[!NOTE]
 If the form is based on Form Data Model the submitted data is in JSON format and in that case you will create a variable of type JSON to hold the submitted data.
+
 ![submitted data variable](assets/submitted-data-variable.PNG)
 
 * Click on the _steps_ icon on the left to list the various workflow components. Drag and drop _Set Variable_ component onto your workflow on the right. Make sure you place the _Set Variable_ component below the Flow Start.
