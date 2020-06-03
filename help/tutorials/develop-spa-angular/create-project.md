@@ -33,7 +33,7 @@ Review the required tooling and instructions for setting up a [local development
 
 ## Create the project
 
-There are several options to create a Maven Multi-module project for AEM. This tutorial uses the [AEM Project Archetype v. **24**](https://github.com/adobe/aem-project-archetype).
+There are several options to create a Maven Multi-module project for AEM. This tutorial uses the [AEM Project Archetype v. 24](https://github.com/adobe/aem-project-archetype).
 
 > [!NOTE]
 > If following this tutorial use version **24** of the archetype. It is a best practice to use the **latest** version of the archetype to generate a new project for a real-world implementation.
@@ -75,7 +75,7 @@ The next series of steps take place using a UNIX based command line  terminal. T
      cd ~/code
     ```
 
-4. Copy and Paste the following into the command line to [generate the SPA-enabled project in batch mode](https://maven.apache.org/archetype/maven-archetype-plugin/examples/generate-batch.html):
+4. Copy and Paste the following into the command line to [generate the SPA-enabled project in batch mode](https://maven.apache.org/archetype/maven-archetype-plugin/examples/generate-batch.html). Replacing `aemVersion` with the version of AEM you are working with: `cloud`, `6.5.0`, `6.4.4`. Below uses `6.5.0`:
 
    ```shell
     mvn -B archetype:generate \
@@ -235,7 +235,7 @@ Next, verify that this is a Single Page Application with the use of your browser
             "text": "<p>A new text component.</p>\r\n",
             "richText": true,
             ":type": "wknd-spa-angular/components/text"
-     },
+    },
     ...
     ```
 
