@@ -10,9 +10,10 @@ doc-type: feature-video
 activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4495
+thumbnail: 31784.jpg
 ---
 
-# AEM Sites Basic Handling {#basic-handling-aem-sites}
+# AEM Sites UI and navigation {#basic-handling-aem-sites}
 
 The following video provides an overview of basic handling when using the AEM author environment. It uses the Sites console as a basis.
 
