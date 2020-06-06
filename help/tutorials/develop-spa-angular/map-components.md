@@ -302,7 +302,7 @@ Before jumping into the SPA code, inspect the JSON model provided by AEM.
 5. Open **image.component.scss** and update it as follows:
 
     ```scss
-    :host-content {
+    :host-context {
         display: block;
     }
 
@@ -313,7 +313,11 @@ Before jumping into the SPA code, inspect the JSON model provided by AEM.
     }
     ```
 
-6. Open **app.module.ts** and add the `ImageComponent` to the `entryComponents` array:
+    >[!NOTE]
+    >
+    > The `:host-context` rule is **critical** for the AEM SPA editor placeholder to function correctly. All SPA components that are intended to be authored in the AEM page editor will need this rule at a minimum.
+
+6. Open `app.module.ts` and add the `ImageComponent` to the `entryComponents` array:
 
     ```js
     entryComponents: [TextComponent, PageComponent, ImageComponent],
@@ -346,7 +350,7 @@ The `ImageComponent` component is only visible in the **webpack dev server**. Ne
     $ mvn clean install -PautoInstallSinglePackage
     ```
 
-2. From the AEM Start screen navigate to **Tools** &gt; **Templates** &gt; **[WKND SPA Angular](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd-spa-angular)**.
+2. From the AEM Start screen navigate to **[!UICONTROL Tools]** &gt; **[!UICONTROL Templates]** &gt; **[WKND SPA Angular](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd-spa-angular)**.
 
     Select and edit the **SPA Page**:
 
