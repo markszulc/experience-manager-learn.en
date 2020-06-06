@@ -7,6 +7,7 @@ doc-type: technical-video
 activity: understand
 version: cloud-service
 kt: 4639
+thumbnail: 32033.jpg
 ---
 
 # Introduction to Author and Publish Tier {#introduction-author-publish}

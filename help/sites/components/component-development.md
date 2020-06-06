@@ -8,6 +8,7 @@ doc-type: technical-video
 activity: develop
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4235
+thumbnail: 32547.jpg
 ---
 
 # Introduction to Component Development

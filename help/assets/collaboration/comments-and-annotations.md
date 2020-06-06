@@ -9,6 +9,7 @@ doc-type: feature-video
 activity: use
 version: cloud-service
 kt: 4541
+thumbnail: 32049.jpg
 ---
 
 # Comments and Annotations

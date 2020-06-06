@@ -7,6 +7,7 @@ doc-type: technical-video
 activity: understand
 version: cloud-service
 kt: 4643
+thumbnail: 32030.jpg
 ---
 
 # Introduction to the [!DNL Java Content Repository] ([!DNL JCR]) {#introduction-jcr}

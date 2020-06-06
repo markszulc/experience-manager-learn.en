@@ -10,10 +10,11 @@ doc-type: feature-video
 activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4243
+thumbnail: 31785.jpg
 ---
 
-# AEM Sites Content Hierarchy {#content-hierarchy}
+# Content structure and hierarchy {#content-hierarchy}
 
-Learn how site pages gets stored within AEM for your organization.
+Learn how to create and organize your organization's site pages in AEM Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31827?quality=12&learn=on)

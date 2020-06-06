@@ -9,6 +9,7 @@ doc-type: feature-video
 activity: use
 version: cloud-service
 kt: 4496
+thumbnail: 32047.jpg
 ---
 
 # Renditions

@@ -9,6 +9,7 @@ doc-type: feature-video
 activity: use
 version: cloud-service
 kt: 4299
+thumbnail: 32044.jpg
 ---
 
 # Basic Operations

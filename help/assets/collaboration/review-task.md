@@ -9,6 +9,7 @@ doc-type: feature-video
 activity: use
 version: cloud-service
 kt: 4670
+thumbnail: 32050.jpg
 ---
 
 # Review Task

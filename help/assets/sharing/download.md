@@ -9,6 +9,7 @@ doc-type: feature-video
 activity: use
 version: cloud-service
 kt: 4300
+thumbnail: 32194.jpg
 ---
 
 # Download

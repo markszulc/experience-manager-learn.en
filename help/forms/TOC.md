@@ -143,6 +143,7 @@ index: y
   + [Using Watched Folder to Generate Print Documents](ic-print-channel-tutorial/partten.md)
   + [Opening Agent UI on Form Submission](ic-print-channel-tutorial/parteleven.md)
 + Interactive Communications {#interactive-communications}
+  + [Using Batch API](interactive-communications/batch-generation-interactive-communications.md)
   + [MultiSeries Charts](interactive-communications/multiseriescharts.md)
   + [Generate Print Channel Documents From Submitted Data](interactive-communications/merge-data-with-ic-template.md)
   + [Using Reducer Functions](interactive-communications/reducer-functions-in-charts-aem-forms-video-use.md)
