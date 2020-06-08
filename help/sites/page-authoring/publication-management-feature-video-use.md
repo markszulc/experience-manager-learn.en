@@ -9,9 +9,10 @@ doc-type: feature-video
 activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4322
+thumbnail: 32193.jpg
 ---
 
-# Publishing Pages {#using-publication-management-with-aem-sites}
+# Publishing pages {#using-publication-management-with-aem-sites}
 
 AEM Sites provides several options for publishing and un-publishing content. This video explores the various methods and their capabilities.
 

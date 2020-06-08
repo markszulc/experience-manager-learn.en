@@ -8,9 +8,10 @@ doc-type: feature-video
 activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4630
+thumbnail: 32151.jpg
 ---
 
-# Creating Page Versions {#creating-page-versions-aem-sites}
+# Creating page versions {#creating-page-versions-aem-sites}
 
 Page versioning helps content authors to track changes associated with a page by creating a page version and provides an option to preview a version, restore a version, and compare a version with the current version of a page.
 

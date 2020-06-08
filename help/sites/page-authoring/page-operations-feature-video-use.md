@@ -9,10 +9,11 @@ audience: author, marketer
 doc-type: feature-video
 activity: use
 version: 6.3, 6.4, 6.5
-kt: 4321
+kt: 4245
+thumbnail: 32147.jpg
 ---
 
-# Basic Page Operations {#basic-page-operations-aem-sites}
+# Basic page operations {#basic-page-operations-aem-sites}
 
 Learn how to perform basic page management operations for a Adobe Experience Manager Sites page.
 
