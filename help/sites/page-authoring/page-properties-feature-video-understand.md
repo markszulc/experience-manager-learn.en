@@ -10,9 +10,10 @@ doc-type: feature-video
 activity: understand
 version: 6.3, 6.4, 6.5
 kt: 4321
+thumbnail: 32192.jpg
 ---
 
-# Understanding Page Properties {#understanding-page-properties-aem-sites}
+# Understanding page properties {#understanding-page-properties-aem-sites}
 
 The following video introduces the page properties associated with a page in Adobe Experience Manager.
 

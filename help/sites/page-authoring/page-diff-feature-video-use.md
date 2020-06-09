@@ -10,10 +10,11 @@ doc-type: feature-video
 activity: use
 version: 6.3, 6.4, 6.5
 uuid: e096a08b-528d-48c7-93fb-73b10c0a9259
-kt: 4632
+kt: 4633
+thumbnail: 32152.jpg
 ---
 
-# Using the Page Difference Feature {#using-page-difference-with-aem-sites}
+# Using the Page Difference feature {#using-page-difference-with-aem-sites}
 
 AEM Sites' page difference capabilities show provides a quick, color-coded view of what content has changed in a page (version, live copy, launches, language copy).
 

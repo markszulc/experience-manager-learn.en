@@ -10,10 +10,11 @@ doc-type: feature-video
 activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4632
+thumbnail: 32150.jpg
 ---
 
-# Using the Page Tagging {#using-page-tagging-with-aem-sites}
+# Tagging pages {#using-page-tagging-with-aem-sites}
 
 Learn how to maintain, and organize your web pages in Adobe Experience Manager by using tagging.
 
->[!VIDEO](https://video.tv.adobe.com/v/32150?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32150?quality=12&learn=on)

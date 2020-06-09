@@ -7,10 +7,10 @@ sub-product: sites
 
 + [Overview](overview.md)
 + Page Authoring {#page-authoring}
-  + [Page Authoring in AEM Sites](page-authoring/page-authoring-overview-feature-video-use.md)
-  + [Concepts of AEM Sites authoring](page-authoring/aem-sites-authoring-overview.md)
+  + [Authoring Overview](page-authoring/aem-sites-authoring-overview.md)
   + [Basic Navigation and Handling in AEM Sites](page-authoring/basic-handling-sites-feature-video-use.md)
   + [Content Hierarchy in AEM Sites](page-authoring/content-hierarchy-feature-video-use.md)
+  + [Page Authoring in AEM Sites](page-authoring/page-authoring-overview-feature-video-use.md)
   + [Creating a new Page](page-authoring/creating-page-feature-video-use.md)
   + [Using the Page Editor](page-authoring/page-editor-feature-video-use.md)
   + [Understanding Responsive Layout](page-authoring/responsive-layout-feature-video-understand.md)
