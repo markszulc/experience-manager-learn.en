@@ -1,6 +1,6 @@
 
 ---
-title: Debugging deployments
+title: Build and deployments
 description: Adobe Cloud Manager facilitates the code build and deployments to AEM as a Cloud Service. Failures may occur during steps in the build process, requiring action to resolve them. This guide walks through understanding common failures in in the deployment, and how to best approach them.
 feature: 
 topics: development
@@ -8,12 +8,14 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 
+kt: 5434
 ---
+
+# Debugging AEM as a Cloud Service build and deployments 
 
 Adobe Cloud Manager facilitates the code build and deployments to AEM as a Cloud Service. Failures may occur during steps in the build process, requiring action to resolve them. This guide walks through understanding common failures in in the deployment, and how to best approach them.
 
-![Cloud manage build pipeline](./assets/deployments/build-pipeline.png)
+![Cloud manage build pipeline](./assets/build-and-deployment/build-pipeline.png)
 
 ## Validation
 
@@ -22,14 +24,14 @@ The validation step simply ensures that basic Cloud Manager configurations are v
 ### The environment is in an invalid state
 
 + __Error message:__ The environment is in an invalid state.
-![The environment is in an invalid state](./assets/deployments/validation__invalid-state.png)
+![The environment is in an invalid state](./assets/build-and-deployment/validation__invalid-state.png)
 + __Cause:__ The pipeline's target environment is in a transitional state at which time it cannot accept new builds. 
 + __Resolution:__ Wait for the state to resolve to a running (or update available) state. If the environment is being deleted, re-create the environment, or choose a different environment to build to.
 
 ### The environment associate with the pipeline cannot be found
 
 + __Error message:__ The environment is marked as deleted.
-![The environment is marked as deleted](./assets/deployments/validation__environment-marked-as-deleted.png)
+![The environment is marked as deleted](./assets/build-and-deployment/validation__environment-marked-as-deleted.png)
 + __Cause:__ The environment the pipeline is configured to use has been deleted. 
     Even if a new environment of the same name is re-created, Cloud Manager will not automatically re-associate the pipeline to that same-named environment.
 + __Resolution:__ Edit the pipeline configuration, and re-select the environment to deploy to.
@@ -37,13 +39,13 @@ The validation step simply ensures that basic Cloud Manager configurations are v
 ### The Git branch associated with the pipeline cannot be found
 
 + __Error message:__ Invalid pipeline: XXXXXX. Reason=Branch=xxxx not found in repository.
-![Invalid pipeline: XXXXXX. Reason=Branch=xxxx not found in repository](./assets/deployments/validation__branch-not-found.png)
+![Invalid pipeline: XXXXXX. Reason=Branch=xxxx not found in repository](./assets/deploymebuild-and-deploymentnts/validation__branch-not-found.png)
 + __Cause:__ The Git branch the pipeline is configured to use has been deleted. 
 + __Resolution:__ Re-create the missing Git branch using the exact same name, or re-configure the pipeline to build from a different, existing branch. 
 
 ## Build & Unit Testing
 
-![Build and Unit Testing](./assets/deployments/build-and-unit-testing.png)
+![Build and Unit Testing](./assets/build-and-deployment/build-and-unit-testing.png)
 
 The Build and Unit Testing phase performs a Maven build (`mvn clean package`) of the project checked out from the pipeline's configured Git branch. 
 
@@ -57,7 +59,7 @@ Errors identified in this phase should be re-producible building the project loc
 
 ## Code Scanning
 
-![Code Scanning](./assets/deployments/code-scanning.png)
+![Code Scanning](./assets/build-and-deployment/code-scanning.png)
 
 Code scanning performs static code analysis using a mix of Java and AEM-specific best practices. 
 
@@ -65,10 +67,9 @@ Code scanning results in a build failure if a Critical Security vulnerabilities 
 
 To resolve code scanning issues, download the report provided by Cloud Manager vai the , and review the offending lines. Note that 
 
-
 ## Build Images
 
-![Build Images](./assets/deployments/build-images.png)
+![Build Images](./assets/build-and-deployment/build-images.png)
 
 Build image is responsible for combining the built code artifacts created in the Build & Unit Testing step with the AEM Release, to form a single deployable artifact.
 
@@ -118,12 +119,16 @@ If the above troubleshooting approaches do not resolve the issue, please create 
 
 The Deploy to step is responsible for taking the code artifact generated in Build Image, starts up new AEM Author and Publish services using it, and upon success, removes any old AEM Author and Publish services. Mutable content packages and indexes are installed and updated in this step as well.
 
+Familiarize yourself with [AEM as a Cloud Service logs](../logs.md) prior to debugging the Deploy to step. The `aemerror` log contains information around the start up and shutdown of pods which may be pertinent to Deploy to issues. Note that the log available via the Download Log button in the Cloud Manager's Deploy to step is not the `aemerror` log, and does not contain detailed information pertaining to your applications start up.
+
+![Deploy to](./assets/build-and-deployment/deploy-to.png)
+
 The three primary reasons why the Deploy to step may fail:
 
 ### The Cloud Manager pipeline holds an old AEM version
 
 + __Cause:__ A Cloud Manager pipeline holds an older version of AEM than what is deployed to the target environment. This may happens when a pipeline is re-used and pointed at a new environment that is running a later version of AEM. This can be identified by checking to see if the environment's AEM version is greater than than pipeline's AEM version.
-![The Cloud Manager pipeline holds an old AEM version](./assets/deployments/deploy-to__pipeline-holds-old-aem-version.png)
+![The Cloud Manager pipeline holds an old AEM version](./assets/build-and-deployment/deploy-to__pipeline-holds-old-aem-version.png)
 + __Resolution:__
     + If the target environment has an Update Available, select Update from the environment's actions, and then re-run the build.
     + If the target environment does not have an Update Available, this means it is running the latest version of AEM. To resolve this, delete the pipeline and re-create it.
@@ -150,7 +155,7 @@ If the above troubleshooting approaches do not resolve the issue, please create 
 
 + [Adobe Admin Console](https://adminconsole.adobe.com) > Support Tab > Create Case
 
-  _If you are a member of multiple Adobe Orgs, ensure the Adobe Org that has failing pipeline is selected in the Adobe Orgs switcher prior to creating the case.
+  _If you are a member of multiple Adobe Orgs, ensure the Adobe Org that has failing pipeline is selected in the Adobe Orgs switcher prior to creating the case._
 
 
 

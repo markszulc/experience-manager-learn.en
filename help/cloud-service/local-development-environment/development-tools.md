@@ -122,50 +122,59 @@ It is recommended that the profile be active by default, otherwise, this profile
 
 _† Adobe Cloud Manager can access other public or locally embedded artifact repositories by including those repository registration in the AEM Project's pom.xml. Using external repositories is discouraged as it introduces a point of failure in the build process that Adobe cannot guarantee._
 
-## Install and set up AIO CLI + Cloud Manager plug-in
+## Set up Adobe I/O CLI with Cloud Manager plugin{#aio-cli}
 
-The [Adobe I/O CLI](https://github.com/adobe/aio-cli), or aio, npm module provides command line access to a variety of Adobe services, [including Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager). 
+The [Adobe I/O CLI](https://github.com/adobe/aio-cli), or `aio`, provides command line access to a variety of Adobe services, [including Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager). The Adobe I/O CLI plays an integral role in development on AEM as a Cloud Service as it provides developers the ability to:
+    
+  + Tail logs from AEM as a Cloud Services services
+  + Manage Cloud Manager pipelines form the CLI
 
-### Install the AIO CLI and Cloud Manager plug-in
+### Install the Adobe I/O CLI with Cloud Manager plugin
 
 1. Ensure [Node.js is installed](#node-js) as the Adobe I/O CLI is an npm module.
   + Run `node --version` to confirm.
 1. Execute `npm install -g @adobe/aio-cli` to install the aio npm module globally.
 1. Execute `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` to install the aio Cloud Manager plug-in.
 
-   
+### Set up the Adobe I/O CLI authentication
 
+In order for the Adobe I/O CLI to communicate with Cloud Manager, a Cloud Manager integration must be created in Adobe I/O Console, and credentials must be obtained to successfully authenticate.
 
-
-
-### Set up the AIO CLI authentication
+>[!VIDEO](https://video.tv.adobe.com/v/35094?quality=12&learn=on)
 
 1. Log in to [console.adobe.io](https://console.adobe.io)
-1. Ensure the Adobe Org your AEM product is associated is active in the Adobe Org switcher
+1. Ensure the Adobe Org Cloud Manager is associated with is active in the Adobe Org switcher
 1. Create a new or open an existing Console Program to associate the Cloud Manager access to. 
-    + _Note that Adobe I/O Console programs are discrete concepts to Cloud Manager programs_
-
-1. If Cloud Manager is already configured under APIs, skip to Step X
-
-1. Tap Add to Project > API
+    + _Note that Adobe I/O Console programs are different concepts to Cloud Manager programs_
+1. Tap "Add to Project" > API
 1. Tap Experience Cloud
 1. Select Cloud Manager and tap Next
 1. Select the option to either:
-    + Generate a new keypair
+    1. Generate a new keypair
         + When generating a new keypair, the keypair will automatically download in a zip file
-    + Upload a public key
+    1. Upload a public key
 1. Tap Next
 1. Select Developer - Cloud Service
 1. Tap Save configured API
 1. Tap Service Account (JWT) under Credentials on the left
+1. Switch the to command line
+1. Unzip and copy the keys from 7.1 to a safe location on your computer
+1. Create a new file named `config.json` using the JSON template provided by the [Cloud Manager plugin for Adobe I/O CLI documentation](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication).
+    + Ensure the comment of `//config.json` is removed. The first line, and character of `config.json` should be `{`.
+1. Update the JSON key values using the values from the Service Account (JWT) console in console.adobe.io (Step 11).
+    1. `client_id`: CLIENT ID
+    2. `client_secret`: CLIENT SECRET
+    3. `jwt_payload`: Generate JWT Tab -> JWT Payload
+        + Note that this does not have surrounding `"`, it is the full JSON object, remove leading and trailing whitespace.
+    4. `token_exchange_url`: Leave as is (`"https://ims-na1.adobelogin.com/ims/exchange/jwt"`)
+1. From the command line, load the `config.json` file into the Adobe I/O CLI
+    + `aio config:set jwt-auth PATH_TO_CONFIG_JSON_FILE --file --json`
+1. From the command line, load your `private.key` file into the Adobe I/O CLI
+    + `aio config:set jwt-auth.jwt_private_key PATH_TO_PRIVATE_KEY_FILE --file`
 
+Now you are ready to begin [executing commands](https://github.com/adobe/aio-cli-plugin-cloudmanager#commands) to Cloud Manager via the Adobe I/O CLI.
 
-
-
-https://github.com/adobe/aio-cli-plugin-cloudmanager
-
-
-## Set up the Development IDE
+## Set up the development IDE
 
 AEM development primarily consists of Java and Front-end (JavaScript, CSS, etc) development and XML management. The following are the most popular IDEs for AEM development.
 

@@ -7,8 +7,10 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 
+kt: 5433
 ---
+
+# Debugging AEM as a Cloud Service with the Developer Console
 
 AEM as a Cloud Service provides a Developer Console for each environment that exposes various details of the running AEM service that are helpful in debugging.
 
@@ -18,7 +20,7 @@ Each AEM as a Cloud Service environment has it's own Developer Console.
 
 To access the Developer Console, the user must be a member of the Adobe Organization's Cloud Manager's "Developer - Cloud Service" Product Profile, managed via the [Adobe Admin Console](https://adminconsole.adobe.com).
 
-[!VIDEO]()
+>[!VIDEO](https://video.tv.adobe.com/v/35093/?quality=12&learn=on)
 
 ## Pod
 
@@ -92,7 +94,6 @@ Sling Job help in debugging by:
 
 + Providing a list of all OSGi services in AEM, along with its providing OSGi bundle, and all OSGi bundles that consume it
 
-
 ## Java Packages
 
 Java Packages allows checking if a Java package, and version, are available for use in AEM as a Cloud Service. This functionality is the same as [AEM SDK's local quickstart's Dependency Finder](http://localhost:4502/system/console/depfinder) at `/system/console/depfinder`.
@@ -110,6 +111,8 @@ Java Packages is used to trouble shoot Bundles not be starting because of unreso
 
 Servlets is used to provide insight as to how AEM resolves a URL to a Java servlet or script (HTL, JSP) that ultimately handles the request. This functionality is the same as [AEM SDK's local quickstart's Sling Servlet Resolver](http://localhost:4502/system/console/servletresolver) at `/system/console/servletresolver`.
 
+![Developer Console - Servlets](./assets/developer-console/servlets.png)
+
 Servlets helps in debugging determining: 
 
 + How a URL is decomposed into its addressable parts (resource, selector, extension).
@@ -119,11 +122,12 @@ Servlets helps in debugging determining:
 
 Queries help provide insights into what and how search queries are executed on AEM. This functionality is the same as  [AEM SDK's local quickstart's Tools > Query Performance ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) console. 
 
-Queries only works when a specific pod is selected, as it opens that pod's Query Performance web console.
+Queries only works when a specific pod is selected, as it opens that pod's Query Performance web console, requiring the developer to have access to log into the AEM service.
+
+![Developer Console - Queries - Explain Query](./assets/developer-console/queries__explain-query.png)
 
 Queries helps in debugging by: 
 
 + Explaining how queries are interpreted, analyzed and executed by Oak. This is very important when tracking why a query is slow, and understanding how it can be sped up.
 + Listing the most popular queries running in AEM, with the ability to Explain them.
 + Listing the slowest queries running in AEM, with the ability to Explain them.
-
