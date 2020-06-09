@@ -7,6 +7,8 @@ topics: development
 version: cloud-service
 activity: develop
 audience: developer
+kt: 4988
+thumbnail: 4988-spa-react.jpg
 ---
 
 # Add navigation and routing {#navigation-routing}

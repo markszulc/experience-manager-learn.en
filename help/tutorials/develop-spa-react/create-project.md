@@ -8,6 +8,8 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
+kt: 413
+thumbnail: 413-spa-react.jpg
 ---
 
 # SPA Editor Project {#spa-editor-project}

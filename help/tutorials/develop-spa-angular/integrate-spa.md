@@ -7,6 +7,8 @@ topics: development
 version: cloud-service
 activity: develop
 audience: developer
+kt: 5310
+thumbnail: 5310-spa-angular.jpg
 ---
 
 # Integrate a SPA {#integrate-spa}

@@ -7,6 +7,8 @@ topics: development
 version: cloud-service
 activity: develop
 audience: developer
+kt: 4853
+thumbnail: 4853-spa-react.jpg
 ---
 
 # Integrate a SPA {#integrate-spa}

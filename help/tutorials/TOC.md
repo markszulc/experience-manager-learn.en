@@ -4,6 +4,7 @@ audience: developer
 user-guide-title: Adobe Experience Manager Tutorials
 index: y
 doc-type: tutorial
+mini-toc-levels: 1
 ---
 
 # AEM Tutorials {#tutorials}

@@ -7,6 +7,8 @@ topics: development
 version: cloud-service
 activity: develop
 audience: developer
+kt: 4854
+thumbnail: 4854-spa-react.jpg
 ---
 
 # Map SPA components to AEM components {#map-components}
@@ -49,9 +51,9 @@ Review the required tooling and instructions for setting up a [local development
 
     If using [AEM 6.x](overview.md#compatibility) add the `classic` profile:
 
-   ```shell
-   $ mvn clean install -PautoInstallSinglePackage -Pclassic
-   ```
+    ```shell
+    $ mvn clean install -PautoInstallSinglePackage -Pclassic
+    ```
 
 You can always view the finished code on [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/React/map-components-solution) or check the code out locally by switching to the branch `React/map-components-solution`.
 

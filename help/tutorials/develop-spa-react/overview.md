@@ -7,9 +7,8 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-KT: 4132
-mini-toc-levels: 1
-index: y
+KT: 4836
+thumbnail: 4836-spa-react.jpg
 ---
 
 # Create your first React SPA in AEM {#introduction}

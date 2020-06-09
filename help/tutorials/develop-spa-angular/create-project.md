@@ -8,6 +8,8 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
+kt: 5309
+thumbnail: 5309-spa-angular.jpg
 ---
 
 # SPA Editor Project {#create-project}

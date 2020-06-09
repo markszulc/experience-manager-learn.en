@@ -7,6 +7,7 @@ topics: development
 version: cloud-service
 activity: develop
 audience: developer
+kt: 5312
 ---
 
 # Add navigation and routing {#navigation-routing}

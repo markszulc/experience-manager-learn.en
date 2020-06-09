@@ -7,6 +7,8 @@ topics: development
 version: cloud-service
 activity: develop
 audience: developer
+kt: 5311
+thumbnail: 5311-spa-angular.jpg
 ---
 
 # Map SPA components to AEM components {#map-components}
