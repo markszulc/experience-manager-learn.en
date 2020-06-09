@@ -26,4 +26,10 @@ team: TM
     + [Remote Debugging](./debugging/aem-sdk-local-quickstart/remote-debugging.md)
     + [OSGi web console](./debugging/aem-sdk-local-quickstart/osgi-web-consoles.md)
     + [Other tools](./debugging/aem-sdk-local-quickstart/other-tools.md)
+  + Debugging AEM as a Cloud Service{#debugging-aem-as-a-cloud-service}
+    + [Overview](./debugging/cloud-service/overview.md)
+    + [Logs](./debugging/cloud-service/logs.md)
+    + [Developer Console](./debugging/cloud-service/developer-console.md)
+    + [Build and Deployment](./debugging/cloud-service/build-and-deployment.md)
+
 + [Getting Started Developing AEM Sites - WKND Tutorial](./develop-wknd-tutorial.md)
