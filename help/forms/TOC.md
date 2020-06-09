@@ -20,11 +20,12 @@ index: y
   + [Part 6 - Using custom functions and code editor](creating-your-first-adaptive-form/part6.md)
 + Handling Form Submissions {#handling-af-form-submissions}
   + [Creating a Review Workflow](handling-form-submissions/create-workflow-to-review.md)
-  + [Invoking AEM Workflow](handling-form-submissions/invoking-aem-workflow-on-form-submission-article-use.md)
+  + [Configuring Adaptive form to trigger workflow](handling-form-submissions/trigger-workflow-on-form-submission.md)
   + [Displaying Thank You Page](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
   + [Submitting to External End point](handling-form-submissions/submitting-adaptive-forms-to-external-server-article-use.md)
   + [Sending Email](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
-  + [Configuring Adaptive Form to trigger AEM Workflow](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
+  + [Configuring Adaptive Form to trigger AEM Workflow - video](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
+  + [PTO AEM Workflow](handling-form-submissions/invoking-aem-workflow-on-form-submission-article-use.md)
 
 + Adaptive Forms {#adaptive-forms}
   + [Installing AEM Forms on Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
@@ -143,6 +144,7 @@ index: y
   + [Using Watched Folder to Generate Print Documents](ic-print-channel-tutorial/partten.md)
   + [Opening Agent UI on Form Submission](ic-print-channel-tutorial/parteleven.md)
 + Interactive Communications {#interactive-communications}
+  + [Using Batch API](interactive-communications/batch-generation-interactive-communications.md)
   + [MultiSeries Charts](interactive-communications/multiseriescharts.md)
   + [Generate Print Channel Documents From Submitted Data](interactive-communications/merge-data-with-ic-template.md)
   + [Using Reducer Functions](interactive-communications/reducer-functions-in-charts-aem-forms-video-use.md)

@@ -49,7 +49,7 @@ Line 12-13: Forward the request to the servlet
 
 To test this capability on your server
 
-* [Import and install the assets related to this article using package manager.](assets/launch-agent-ui-assets.zip)
+* [Import and install the assets related to this article using package manager.](assets/launch-agent-ui.zip)
 * [Login to configMgr](http://localhost:4502/system/console/configMgr)
 * Search for _Adobe Granite CSRF Filter_
 * Add _/content/getprintchannel_ in the Excluded Paths

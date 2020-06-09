@@ -10,13 +10,14 @@ doc-type: feature-video
 activity: use
 version: 6.3, 6.4, 6.5
 kt: 4497
+thumbnail: 31828.jpg
 ---
 
 # Authoring a page {#authoring-page-aem-sites}
 
 Learn how to author a page in Adobe Experience Manager Sites using the Site Editor's UI.
 
->[!VIDEO](https://video.tv.adobe.com/v/31828?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/31828?quality=12&learn=on)
 
 In this video, the following capabilities or features are covered:
 

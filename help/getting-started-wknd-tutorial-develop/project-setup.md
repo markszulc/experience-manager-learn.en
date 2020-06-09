@@ -11,6 +11,7 @@ activity: develop
 audience: developer
 mini-toc-levels: 1
 kt: 3418
+thumbnail: 30152.jpg
 ---
 
 # Project Setup {#project-setup}

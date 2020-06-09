@@ -9,6 +9,7 @@ doc-type: feature-video
 activity: use
 version: cloud-service
 kt: 4540
+thumbnail: 32051.jpg
 ---
 
 # Timeline and Inbox

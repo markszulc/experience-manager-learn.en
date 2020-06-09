@@ -15,53 +15,28 @@ version: 6.3, 6.4, 6.5
 
 # Set up Smart Tags with AEM Assets{#set-up-smart-tags-with-aem-assets}
 
-Provides step by step instructions to configure smart tagging service for AEM Assets.
+Provides step by step instructions to integrate Adobe Experience Manager (AEM) with the Smart Content Service using Adobe I/O.
 
 ## Smart Tags set up {#smart-tags-set-up}
 
->[!VIDEO](https://video.tv.adobe.com/v/17023/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17023/?quality=12&learn=on)
 
 >[!NOTE]
 >
->Contact your Adobe Account Representative for more information on how to gain access to Smart Tags.
+> To setup Smart Content Service, you need to have
+An Adobe ID account with administrator privileges for the organization with Smart Content Service enabled.
 
-### Here are the key tasks involved in configuring the Smart Tagging cloud service:
+The video details out the following key tasks that are required to configure the Smart Content Service.
 
-* [Creating UPD integration](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-smart-tagging.html#CreatingUDPIntegration)
-* [Configuring AEM instance](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-smart-tagging.html#ConfigureAssetsSmartTaggingCloudService)
-* Enabling the AEM Smart Tag Assets feature flag
-* Configuring the Smart Tagging cloud service in AEM
-* Enable auto-tagging in the Update Asset workflow
+* Create a Smart Content Service configuration in AEM to generate a public key. Obtain public certificate for OAuth integration.
+* Create an integration in Adobe I/O and upload the generated public key.
+* Configure your AEM instance using the API key and other credentials from Adobe I/O.
+* Optionally, enable auto-tagging on asset upload.
 
-[Optional Settings](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-smart-tagging.html#OptionalSettings)
+Before you can use the Smart Content Service, ensure the following to create an integration on Adobe I/O:
 
-* Configuring the DAM Similarity Search service
-* Configure Periodic tagging
-
->[!NOTE]
->
->You require system administrator rights in the Marketing Cloud organization to be able to create UDP integration.
-
-## Showing Smart Tags scores for instructional purposes {#showing-smart-tags-scores-for-instructional-purposes}
-
-A short video illustrating how Smart Tags scores can be displayed in AEM for demo, instructional or explanatory purposes. This is not intended for production use cases as explained in the video.
-
->[!VIDEO](https://video.tv.adobe.com/v/17768/?quality=9&learn=on)
-
-This video illustrates how Smart Tags show scores can be enabled to drive conversations around the benefits of Smart Tags and further technical understanding of the effects of confidence scores.
-
-Edit the default metadata schema to create a copy and update the properties
-
-* /conf/global/settings/dam/adminui-extension/metadataschema/default/items/tabs/items/tab1/items/col1/items/autotags@**showConfidenceScore = true**
-* /conf/global/settings/dam/adminui-extension/metadataschema/default/items/tabs/items/tab1/items/col1/items/autotags@**fieldLabel = Smart Tags (Prediction Confidence 0-100)**
-
-Overlay the Manage Tags console to /apps
-
-* /libs/dam/gui/content/assets/managetags/jcr:content/body/items/form/items/wizard/items/moderateStep/items/fixedColumns/items/fixedColumn1/items/autotags@**showConfidenceScore = true**
-
-The following adjustments described above are provided in the attached AEM package that can be installed via [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp).
-
-Download [Smart Tag Score package](assets/aem63-assets-smarttags-showscores-1.0.0.zip)
+* An Adobe ID account that has administrator privileges for the organization
+* The Smart Content Service service is enabled for your organization
 
 ## Additional Resources{#additional-resources}
 

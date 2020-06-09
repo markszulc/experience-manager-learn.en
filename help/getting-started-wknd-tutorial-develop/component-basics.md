@@ -10,6 +10,7 @@ activity: develop
 audience: developer
 mini-toc-levels: 1
 kt: 4081
+thumbnail: 30177.jpg
 ---
 
 # Component Basics {#component-basics}
