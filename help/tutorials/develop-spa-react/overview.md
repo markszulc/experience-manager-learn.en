@@ -24,7 +24,7 @@ Welcome to a multi-part tutorial designed for developers new to the **SPA Editor
 
 The goal for this multi-part tutorial is to teach a developer how to implement a React application to work with the SPA Editor feature of AEM. In a real-world scenario the development activities are broken down by persona, often involving a **Front End developer** and a **Back End developer**. We believe it is beneficial for any developer who will be involved in an AEM SPA Editor project to complete this tutorial.
 
-The tutorial is designed to work with **AEM as a Cloud Service** and is backwards compatible with **AEM 6.5+** and **AEM 6.4.4+**. The SPA is implemented using:
+The tutorial is designed to work with **AEM as a Cloud Service** and is backwards compatible with **AEM 6.5+** and **AEM 6.4.8+**. The SPA is implemented using:
 
 * [Maven AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
 * [AEM SPA Editor](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-walkthrough.html#content-editing-experience-with-spa)
@@ -60,3 +60,42 @@ A local development environment is necessary to complete this tutorial. Screensh
 ## Next Steps {#next-steps}
 
 What are you waiting for?! Start the tutorial by navigating to the [Create a Project](create-project.md) chapter and learn how to generate a SPA Editor enabled project using the AEM Project Archetype.
+
+## Backward compatibility {#compatibility}
+
+The project code for this tutorial was built for AEM as a Cloud Service. In order to make the project code backward compatible for **6.5.x** and **6.4.8+** several modifications have been made to the tutorial's POM files.
+
+The [UberJar](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html#what-is-the-uberjar) v **6.4.8** has been included as a dependency:
+
+```xml
+<!-- Adobe AEM 6.x Dependencies -->
+<dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.4.8</version>
+    <classifier>apis</classifier>
+    <scope>provided</scope>
+</dependency>
+```
+
+An additional Maven profile, named `classic` has been added to modify the build to target AEM 6.x environments:
+
+```xml
+  <!-- AEM 6.x Profile to include Core Components-->
+    <profile>
+        <id>classic</id>
+        <activation>
+            <activeByDefault>false</activeByDefault>
+        </activation>
+        <build>
+        ...
+    </profile>
+```
+
+The `classic` profile is disabled by default. If following the tutorial with AEM 6.x please add the `classic` profile whenever instructed to perform a Maven build, i.e:
+
+```shell
+$ mvn clean install -PautoInstallSinglePackage -Pclassic
+```
+
+When generating a new project for an AEM implementation always use the latest version of the [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) and update the `aemVersion` to target your intended version of AEM.

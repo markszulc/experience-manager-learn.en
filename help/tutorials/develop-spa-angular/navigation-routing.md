@@ -45,6 +45,12 @@ Review the required tooling and instructions for setting up a [local development
     $ mvn clean install -PautoInstallSinglePackage
     ```
 
+    If using [AEM 6.x](overview.md#compatibility) add the `classic` profile:
+
+    ```shell
+    $ mvn clean install -PautoInstallSinglePackage -Pclassic
+    ```
+
 3. Install the finished package for the traditional [WKND reference site](https://github.com/adobe/aem-guides-wknd/releases/latest). The images provided by [WKND reference site](https://github.com/adobe/aem-guides-wknd/releases/latest) will be re-used on the WKND SPA. The package can be installed using [AEM's Package Manager](http://localhost:4502/crx/packmgr/index.jsp).
 
     ![Package Manager install wknd.all](./assets/map-components/package-manager-wknd-all.png)

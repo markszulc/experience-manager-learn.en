@@ -47,6 +47,12 @@ Review the required tooling and instructions for setting up a [local development
     $ mvn clean install -PautoInstallSinglePackage
     ```
 
+    If using [AEM 6.x](overview.md#compatibility) add the `classic` profile:
+
+    ```shell
+    $ mvn clean install -PautoInstallSinglePackage -Pclassic
+    ```
+
 You can always view the finished code on [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/React/integrate-spa-solution) or check the code out locally by switching to the branch `React/integrate-spa-solution`.
 
 ## Integration approach {#integration-approach}
