@@ -46,7 +46,7 @@ Before starting this tutorial, you'll need the following:
 
 *While not required, it is beneficial to have a basic understanding of [developing traditional AEM Sites components](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).*
 
-### Local Development Environment {#local-dev-environment}
+## Local Development Environment {#local-dev-environment}
 
 A local development environment is necessary to complete this tutorial. Screenshots and video are captured using the AEM as a Cloud Service SDK running on a Mac OS environment with [Visual Studio Code](https://code.visualstudio.com/) as the IDE. Commands and code should be independent of the local operating system, unless otherwise noted.
 
@@ -58,7 +58,7 @@ A local development environment is necessary to complete this tutorial. Screensh
 
 ## Next Steps {#next-steps}
 
-What are you waiting for?! Start the tutorial by navigating to the [Create a Project](create-project.md) chapter and learn how to generate a SPA Editor enabled project using the AEM Project Archetype.
+What are you waiting for?! Start the tutorial by navigating to the [SPA Editor Project](create-project.md) chapter and learn how to generate a SPA Editor enabled project using the AEM Project Archetype.
 
 ## Backward compatibility {#compatibility}
 

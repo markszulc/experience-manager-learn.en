@@ -127,7 +127,10 @@ In previous chapters, the `Header` component was added as a pure React component
 
     Under the **Properties**:
 
-    Set the **Navigation Root** to `/content/wknd-spa-react/us/en`. Set the **Exclude Root Levels** to **1**, uncheck **Collect al child pages** and set the **Navigation Structure Depth** to **3**:
+    * Set the **Navigation Root** to `/content/wknd-spa-react/us/en`.
+    * Set the **Exclude Root Levels** to **1**.
+    * Uncheck **Collect all child pages**.
+    * Set the **Navigation Structure Depth** to **3**.
 
     ![Configure Header Policy](assets/navigation-routing/header-policy.png)
 

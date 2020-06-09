@@ -141,7 +141,10 @@ In previous chapters, the `HeaderComponent` component was added as a pure Angula
 
     Under the **[!UICONTROL Properties]**:
 
-    Set the **[!UICONTROL Navigation Root]** to `/content/wknd-spa-angular/us/en`. Set the **[!UICONTROL Exclude Root Levels]** to **1**, uncheck **[!UICONTROL Collect al child pages]** and set the **[!UICONTROL Navigation Structure Depth]** to **3**:
+    * Set the **[!UICONTROL Navigation Root]** to `/content/wknd-spa-angular/us/en`. 
+    * Set the **[!UICONTROL Exclude Root Levels]** to **1**.
+    * Uncheck **[!UICONTROL Collect al child pages]**.
+    * Set the **[!UICONTROL Navigation Structure Depth]** to **3**.
 
     ![Configure Header Policy](assets/navigation-routing/header-policy.png)
 

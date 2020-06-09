@@ -86,7 +86,7 @@ Next, inspect the `ui.frontend` module to understand the SPA that has been auto-
     "react-app-polyfill": "^1.0.5",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0"
+    "react-scripts": "3.4.1"
     ```
 
     The `ui.frontend` is a React application based on the [Create React App](https://create-react-app.dev/) or CRA for short. The `react-scripts` version indicates which version of CRA is used.
@@ -562,48 +562,14 @@ A React best practice is to keep each component modular and self contained. A ge
 
 The changes made to the `Header` are currently only visible through the **webpack-dev-server**. Deploy the updated SPA to AEM to see the changes.
 
-1. Next, update **Node** and **NPM** dependencies to **v13.7.0** and **6.13.0** used by the **frontend-maven-plugin**. Update the parent `pom.xml` file located at the root of the project:
-
-    ```xml
-     ...
-     <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>com.github.eirslett</groupId>
-                    <artifactId>frontend-maven-plugin</artifactId>
-                    <version>1.7.6</version>
-                    <configuration>
-                        <nodeVersion>v13.7.0</nodeVersion>
-                        <npmVersion>6.13.0</npmVersion>
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <id>install node and npm</id>
-                            <goals>
-                                <goal>install-node-and-npm</goal>
-                            </goals>
-                        </execution>
-                        <execution>
-                            <id>npm install</id>
-                            <goals>
-                                <goal>npm</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
-        ...
-    ```
-
-    It is a best practice to keep these dependencies up to date.
-
-2. Navigate to the root of the project (`aem-guides-wknd-spa`) and deploy the project to AEM using Maven:
+1. Navigate to the root of the project (`aem-guides-wknd-spa`) and deploy the project to AEM using Maven:
 
     ```shell
     $ cd ..
     $ mvn clean install -PautoInstallSinglePackage
     ```
 
-3. Navigate to [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). You should see the updated `Header` with logo and styles applied.
+2. Navigate to [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). You should see the updated `Header` with logo and styles applied.
 
     ![Updated Header in AEM](./assets/integrate-spa/final-header-component.png)
 
