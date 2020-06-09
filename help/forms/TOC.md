@@ -20,11 +20,12 @@ index: y
   + [Part 6 - Using custom functions and code editor](creating-your-first-adaptive-form/part6.md)
 + Handling Form Submissions {#handling-af-form-submissions}
   + [Creating a Review Workflow](handling-form-submissions/create-workflow-to-review.md)
-  + [Invoking AEM Workflow](handling-form-submissions/invoking-aem-workflow-on-form-submission-article-use.md)
+  + [Configuring Adaptive form to trigger workflow](handling-form-submissions/trigger-workflow-on-form-submission.md)
   + [Displaying Thank You Page](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
   + [Submitting to External End point](handling-form-submissions/submitting-adaptive-forms-to-external-server-article-use.md)
   + [Sending Email](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
-  + [Configuring Adaptive Form to trigger AEM Workflow](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
+  + [Configuring Adaptive Form to trigger AEM Workflow - video](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
+  + [PTO AEM Workflow](handling-form-submissions/invoking-aem-workflow-on-form-submission-article-use.md)
 
 + Adaptive Forms {#adaptive-forms}
   + [Installing AEM Forms on Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
