@@ -11,7 +11,7 @@ version: 6.4,6.5
 KT: 5407
 thumbnail: kt-5407.jpg
 ---
-## Configuring Adaptive Form to trigger AEM Workflow
+# Configuring Adaptive Form to trigger AEM Workflow
 
 * Download [Adaptive Form](assets/time-off-application.zip) 
 * Browse to [Form And Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
