@@ -8,6 +8,7 @@ doc-type: article
 activity: troubleshoot
 audience: developer
 kt: 3290
+thumbnail: 32565.jpg
 ---
  
 # Local Development Environment Set up

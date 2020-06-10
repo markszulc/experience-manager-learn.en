@@ -9,6 +9,7 @@ doc-type: feature-video
 activity: use
 version: 
 kt: 4905
+thumbnail: 33734.jpg
 ---
 
 # Adobe Asset Link Panel Overview {#adobe-asset-link-panel-overview}

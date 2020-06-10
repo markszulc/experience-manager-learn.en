@@ -9,6 +9,7 @@ doc-type: feature-video
 activity: use
 version: 
 kt : 4913
+thumbnail: 34049.jpg
 ---
 
 # Place Copy {#place-copy}

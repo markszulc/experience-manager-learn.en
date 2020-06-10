@@ -7,6 +7,7 @@ doc-type: technical-video
 activity: understand
 version: cloud-service
 kt: 4642
+thumbnail: 32031.jpg
 ---
 
 # Introduction to [!DNL OSGi] {#introduction-osgi}

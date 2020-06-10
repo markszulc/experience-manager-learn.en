@@ -8,6 +8,7 @@ doc-type: tutorial
 activity: develop
 audience: developer
 kt: 4678, 4677
+thumbnail: 32551.jpg
 ---
 
 # Set up local AEM Runtime

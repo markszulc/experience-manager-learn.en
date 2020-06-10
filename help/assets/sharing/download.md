@@ -16,4 +16,4 @@ thumbnail: 32194.jpg
 
 Learn how to download assets and their renditions to your local machine for use and sharing.
 
->[!VIDEO](https://video.tv.adobe.com/v/32194/?quality=12&learn=on&hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/35090/?quality=12&learn=on&hidetitle=true)

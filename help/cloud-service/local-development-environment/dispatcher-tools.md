@@ -9,6 +9,7 @@ doc-type: tutorial
 activity: develop
 audience: developer
 kt: 4679
+thumbnail: 30603.jpg
 ---
 
 # Set up local Dispatcher Tools

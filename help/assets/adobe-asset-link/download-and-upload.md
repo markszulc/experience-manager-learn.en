@@ -9,6 +9,7 @@ doc-type: feature-video
 activity: use
 version: 
 kt : 4908
+thumbnail: 33885.jpg
 ---
 
 # Download and Upload {#download-and-upload}

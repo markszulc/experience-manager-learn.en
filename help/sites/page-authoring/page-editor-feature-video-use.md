@@ -10,11 +10,12 @@ doc-type: feature-video
 activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4248
+thumbnail: 32011.jpg
 ---
 
 # Using the Page Editor {#using-page-editor-with-aem-sites}
 
-AEM Site's Page Editor is a powerful tool for creating and editing web content. The Page Editor's tools and capabilities are accessed from the Page Editor's UI toolbar. 
+AEM Site's Page Editor is a powerful tool for creating and editing web content. The Page Editor's tools and capabilities are accessed from the Page Editor's UI toolbar.
 
 The following video highlights the top features of the Page Editor.
 

@@ -9,6 +9,7 @@ doc-type: feature-video
 activity: use
 version: 
 kt : 4910
+thumbnail: 33886.jpg
 ---
 
 # Check-In Check-Out {#check-in-check-out}
