@@ -126,8 +126,8 @@ _† Adobe Cloud Manager can access other public or locally embedded artifact re
 
 The [Adobe I/O CLI](https://github.com/adobe/aio-cli), or `aio`, provides command line access to a variety of Adobe services, [including Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager). The Adobe I/O CLI plays an integral role in development on AEM as a Cloud Service as it provides developers the ability to:
     
-  + Tail logs from AEM as a Cloud Services services
-  + Manage Cloud Manager pipelines form the CLI
++ Tail logs from AEM as a Cloud Services services
++ Manage Cloud Manager pipelines form the CLI
 
 ### Install the Adobe I/O CLI with Cloud Manager plugin
 

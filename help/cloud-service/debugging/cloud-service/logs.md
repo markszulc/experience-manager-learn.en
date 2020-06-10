@@ -16,9 +16,10 @@ Logs act as the frontline for debugging AEM applications in AEM as a Cloud Servi
 
 Logs for all pods per environment's service (Author or Publish) are consolidated into single log files. This means all log activity for an environment's service is consolidated into a single log file, even if different pods within that environment's service are generate the log statements.
 
-Pod Ids are provided in each log statement, and allowing filtering or collating of log statements. Pod Id's are in the format of: 
-  + `cm-p<PROGRAM ID>-e<ENVIRONMENT ID>-aem-<author|publish>-<POD NAME>`
-  + Example: `cm-p12345-e56789-aem-author-abcdefabde-98765`
+Pod Ids are provided in each log statement, and allowing filtering or collating of log statements. Pod Id's are in the format of:
+
++ `cm-p<PROGRAM ID>-e<ENVIRONMENT ID>-aem-<author|publish>-<POD NAME>`
++ Example: `cm-p12345-e56789-aem-author-abcdefabde-98765`
 
 ## AEM Author and Publish service logs
 
@@ -128,7 +129,6 @@ Setting the most appropriate log level for each environment type is with AEM as 
 + Apache web server and Dispatcher log levels in the the dispatcher project
 
 ...and thus, require a deployment to change.
-
 
 ### Environment specific variables to set Java log levels
 
