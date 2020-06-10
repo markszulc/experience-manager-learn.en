@@ -38,7 +38,7 @@ The validation step simply ensures that basic Cloud Manager configurations are v
 ### The Git branch associated with the pipeline cannot be found
 
 + __Error message:__ Invalid pipeline: XXXXXX. Reason=Branch=xxxx not found in repository.
-![Invalid pipeline: XXXXXX. Reason=Branch=xxxx not found in repository](./assets/deploymebuild-and-deploymentnts/validation__branch-not-found.png)
+![Invalid pipeline: XXXXXX. Reason=Branch=xxxx not found in repository](./assets/build-and-deployments/validation__branch-not-found.png)
 + __Cause:__ The Git branch the pipeline is configured to use has been deleted. 
 + __Resolution:__ Re-create the missing Git branch using the exact same name, or re-configure the pipeline to build from a different, existing branch. 
 
