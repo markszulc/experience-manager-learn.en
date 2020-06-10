@@ -133,7 +133,7 @@ The [Adobe I/O CLI](https://github.com/adobe/aio-cli), or `aio`, provides comman
 
 1. Ensure [Node.js is installed](#node-js) as the Adobe I/O CLI is an npm module.
   + Run `node --version` to confirm.
-1. Execute `npm install -g @adobe/aio-cli` to install the aio npm module globally.
+1. Execute `npm install -g @adobe/aio-cli` to install the `aio` npm module globally.
 1. Execute `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` to install the aio Cloud Manager plug-in.
 
 ### Set up the Adobe I/O CLI authentication
