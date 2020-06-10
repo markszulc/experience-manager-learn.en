@@ -8,6 +8,7 @@ doc-type: feature-video
 activity: use
 version: cloud-service
 kt: 4312
+thumbnail: 32054.jpg
 ---
 
 # Search{#aem-assets-search}

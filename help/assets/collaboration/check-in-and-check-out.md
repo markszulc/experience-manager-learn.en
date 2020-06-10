@@ -9,6 +9,7 @@ doc-type: feature-video
 activity: use
 version: cloud-service
 kt: 4542
+thumbnail: 32048.jpg
 ---
 
 # Check in and Check out

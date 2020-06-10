@@ -7,6 +7,7 @@ doc-type: tutorial
 activity: develop
 audience: developer
 kt: 4677
+thumbnail: 32551.jpg
 ---
 
 # Using the AEM Quickstart Jar

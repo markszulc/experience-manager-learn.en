@@ -10,6 +10,7 @@ audience: developer
 KT: 4132
 mini-toc-levels: 1
 index: y
+thumbnail: 30476.jpg
 ---
 
 # Getting Started with AEM Sites - WKND Tutorial {#introduction}

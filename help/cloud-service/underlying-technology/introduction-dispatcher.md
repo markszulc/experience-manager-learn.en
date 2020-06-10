@@ -8,6 +8,7 @@ doc-type: technical-video
 activity: understand
 version: cloud-service
 kt: 4644
+thumbnail: 32029.jpg
 ---
 
 # Introduction to [!DNL Dispatcher] {#introduction-dispatcher}

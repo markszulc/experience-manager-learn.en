@@ -9,6 +9,7 @@ doc-type: feature-video
 activity: use
 version: cloud-service
 kt: 4305
+thumbnail: 32046.jpg
 ---
 
 # Navigation

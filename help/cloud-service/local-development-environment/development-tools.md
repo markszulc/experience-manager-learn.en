@@ -8,6 +8,7 @@ doc-type: tutorial
 activity: develop
 audience: developer
 kt: 4267
+thumbnail: 25907.jpg
 ---
  
 # Set up development tools for AEM Projects

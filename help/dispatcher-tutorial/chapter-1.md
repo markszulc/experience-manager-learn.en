@@ -959,7 +959,7 @@ Well – it depends. The sooner the better.
 
 If you have a Web Application Firewall appliance or "WAF" that is designed for Web Security, you absolutely should leverage these capabilities. But you might find out, that the WAF is operated by people with only limited knowledge of your content application and they either filter valid requests or let pass too many harmful requests. Maybe you will find out that the people operating the WAF are assigned to a different department with different shifts and release schedules, communication might not be as tight as with your direct teammates and you don't always get the changes in time, which means that ultimately your development and content velocity suffer.
 
-You might end up with a few general rules or even a blacklist, which your gut feeling says, could be tightened up.
+You might end up with a few general rules or even a blocklist, which your gut feeling says, could be tightened up.
 
 #### Dispatcher- and Publish Filtering
 

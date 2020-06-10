@@ -8,6 +8,7 @@ doc-type: tutorial
 activity: develop
 audience: developer
 kt: 4083
+thumbnail: 30359.jpg
 ---
 
 # Client-Side Libraries and Front-end Workflow {#client-side-libraries}

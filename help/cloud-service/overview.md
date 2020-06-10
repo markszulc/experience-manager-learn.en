@@ -13,6 +13,10 @@ Adobe Experience Manager (AEM) is now available as a Cloud Service. AEM as a Clo
 
 ## What's New
 
+* **[Debugging AEM SDK's local quickstart (Tutorial)](./debugging/aem-sdk-local-quickstart/overview.md)**
+    <br>
+    *Explore the various tools used to debug your application on the AEM as a Cloud Service SDK's local quickstart*
+
 * **[Local Development Environment Set Up (Tutorial)](./local-development-environment/overview.md)**
     <br>
     *Learn how to set up your local development machine for AEM as a Cloud Service development*
@@ -37,9 +41,6 @@ Adobe Experience Manager (AEM) is now available as a Cloud Service. AEM as a Clo
     <br>
     *Adobe Experience Manager as a Cloud Service adjusts the Maven Project structure, clearly separating Code from Content*
 
-* **[Develop a Repository Structure Package (Article)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/repository-structure-package.html)**
-   <br>
-   *Learn about Repository Structure Packages and why they are needed for Adobe Experience Manager as a Cloud Service projects*
 
 ## Staff Picks
 
@@ -71,16 +72,16 @@ Adobe Experience Manager (AEM) is now available as a Cloud Service. AEM as a Clo
       <p>
    </td>
    <td>
-      <a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html">
-      <img alt="Integrating with Git" src="./assets/overview/staff_pick__integrating-with-git-video.png"/>
+      <a href="./debugging/aem-sdk-local-quickstart/overview.md">
+      <img alt="Debugging AEM SDK’s local quickstart" src="./assets/overview/staff-pick__debugging.png"/>
       </a>
       <div>
-         <a href="https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html">
-         <strong>Integrating with Git</strong>
+         <a href="./debugging/aem-sdk-local-quickstart/overview.md">
+         <strong>Debugging AEM SDK’s local quickstart</strong>
          </a>
       </div>
       <p>
-         <em>Deploy your project to AEM as a Cloud Service using Adobe Cloud Manager.</em>
+         <em>Explore tools used to debug your application on the AEM as a Cloud Service SDK's local quickstart.</em>
       <p>
    </td>
 </table>
