@@ -1,4 +1,3 @@
-
 ---
 title: Build and deployments
 description: Adobe Cloud Manager facilitates the code build and deployments to AEM as a Cloud Service. Failures may occur during steps in the build process, requiring action to resolve them. This guide walks through understanding common failures in in the deployment, and how to best approach them.
@@ -79,9 +78,9 @@ While any code build and compilation issues are found during Build & Unit Testin
 
 When multiple OSGi configurations resolve via runmode for the target AEM environment, the Build Image step fails with the error:
 
-    ```
-    [ERROR] Unable to convert content-package [/tmp/packages/enduser.all-1.0-SNAPSHOT.zip]: Configuration ‘com.example.ExampleComponent’ already defined in Feature Model ‘com.example.groupId:example.all:slingosgifeature:xxxxx:X.X’, set the ‘mergeConfigurations’ flag to ‘true’ if you want to merge multiple configurations with same PID
-    ```
+```
+[ERROR] Unable to convert content-package [/tmp/packages/enduser.all-1.0-SNAPSHOT.zip]: Configuration ‘com.example.ExampleComponent’ already defined in Feature Model ‘com.example.groupId:example.all:slingosgifeature:xxxxx:X.X’, set the ‘mergeConfigurations’ flag to ‘true’ if you want to merge multiple configurations with same PID
+```
 
 #### Cause 1
 
@@ -130,8 +129,8 @@ The three primary reasons why the Deploy to step may fail:
 + __Cause:__ A Cloud Manager pipeline holds an older version of AEM than what is deployed to the target environment. This may happens when a pipeline is re-used and pointed at a new environment that is running a later version of AEM. This can be identified by checking to see if the environment's AEM version is greater than than pipeline's AEM version.
 ![The Cloud Manager pipeline holds an old AEM version](./assets/build-and-deployment/deploy-to__pipeline-holds-old-aem-version.png)
 + __Resolution:__
-    + If the target environment has an Update Available, select Update from the environment's actions, and then re-run the build.
-    + If the target environment does not have an Update Available, this means it is running the latest version of AEM. To resolve this, delete the pipeline and re-create it.
+  + If the target environment has an Update Available, select Update from the environment's actions, and then re-run the build.
+  + If the target environment does not have an Update Available, this means it is running the latest version of AEM. To resolve this, delete the pipeline and re-create it.
 
 ### Cloud Manager times out
 
@@ -146,8 +145,8 @@ Most code and configuration violations are caught in earlier in the build, howev
 
 + __Cause:__ Custom code may invoke lengthy operations, such as large queries or content traversals, triggered early on in OSGi bundle or Component life-cycles significantly delaying the start up time of AEM.
 + __Resolution:__ Review the `aemerror` logs for AEM Author and Publish services around the time (log time in GMT) of the failure as shown by the Cloud Manager.
-    1. Review the logs for any ERRORS thrown by the Java classes provided by the custom application. If any issues are found, resolve, push the fixed code, and re-build the pipeline.
-    1. Review the logs for any ERRORS reported by aspects of AEM that you are extending/interacting with in your custom application, and investigate those; these ERRORs may not be directly attributed to Java classes. If any issues are found, resolve, push the fixed code, and re-build the pipeline.
+  1. Review the logs for any ERRORS thrown by the Java classes provided by the custom application. If any issues are found, resolve, push the fixed code, and re-build the pipeline.
+  1. Review the logs for any ERRORS reported by aspects of AEM that you are extending/interacting with in your custom application, and investigate those; these ERRORs may not be directly attributed to Java classes. If any issues are found, resolve, push the fixed code, and re-build the pipeline.
 
 ### Create an Adobe Support case
 
@@ -156,13 +155,3 @@ If the above troubleshooting approaches do not resolve the issue, please create 
 + [Adobe Admin Console](https://adminconsole.adobe.com) > Support Tab > Create Case
 
   _If you are a member of multiple Adobe Orgs, ensure the Adobe Org that has failing pipeline is selected in the Adobe Orgs switcher prior to creating the case._
-
-
-
-
-
-
-
-
-
-
