@@ -131,10 +131,10 @@ The [Adobe I/O CLI](https://github.com/adobe/aio-cli), or `aio`, provides comman
 
 ### Install the Adobe I/O CLI with Cloud Manager plugin
 
-1. Ensure [Node.js is installed](#node-js) as the Adobe I/O CLI is an npm module.
-  + Run `node --version` to confirm.
-1. Execute `npm install -g @adobe/aio-cli` to install the `aio` npm module globally.
-1. Execute `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` to install the aio Cloud Manager plug-in.
+1. Ensure [Node.js is installed](#node-js) as the Adobe I/O CLI is an npm module
+    + Run `node --version` to confirm
+1. Execute `npm install -g @adobe/aio-cli` to install the `aio` npm module globally
+1. Execute `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` to install the aio Cloud Manager plug-in
 
 ### Set up the Adobe I/O CLI authentication
 
@@ -146,13 +146,13 @@ In order for the Adobe I/O CLI to communicate with Cloud Manager, a Cloud Manage
 1. Ensure the Adobe Org Cloud Manager is associated with is active in the Adobe Org switcher
 1. Create a new or open an existing Console Program to associate the Cloud Manager access to. 
     + _Note that Adobe I/O Console programs are different concepts to Cloud Manager programs_
-1. Tap "Add to Project" > API
+1. Tap Add to Project > API
 1. Tap Experience Cloud
 1. Select Cloud Manager and tap Next
 1. Select the option to either:
     1. Generate a new keypair
         + When generating a new keypair, the keypair will automatically download in a zip file
-    1. Upload a public key
+    1. Or upload a public key (you must have the corresponding private key)
 1. Tap Next
 1. Select Developer - Cloud Service
 1. Tap Save configured API
@@ -165,7 +165,7 @@ In order for the Adobe I/O CLI to communicate with Cloud Manager, a Cloud Manage
     1. `client_id`: CLIENT ID
     2. `client_secret`: CLIENT SECRET
     3. `jwt_payload`: Generate JWT Tab -> JWT Payload
-        + Note that this does not have surrounding `"`, it is the full JSON object, remove leading and trailing whitespace.
+        + This value does not have surrounding `"`, it is the full JSON object, remove leading and trailing whitespace.
     4. `token_exchange_url`: Leave as is (`"https://ims-na1.adobelogin.com/ims/exchange/jwt"`)
 1. From the command line, load the `config.json` file into the Adobe I/O CLI
     + `aio config:set jwt-auth PATH_TO_CONFIG_JSON_FILE --file --json`
