@@ -38,7 +38,7 @@ The validation step simply ensures that basic Cloud Manager configurations are v
 ### The Git branch associated with the pipeline cannot be found
 
 + __Error message:__ Invalid pipeline: XXXXXX. Reason=Branch=xxxx not found in repository.
-![Invalid pipeline: XXXXXX. Reason=Branch=xxxx not found in repository](./assets/build-and-deployments/validation__branch-not-found.png)
+![Invalid pipeline: XXXXXX. Reason=Branch=xxxx not found in repository](./assets/build-and-deployment/validation__branch-not-found.png)
 + __Cause:__ The Git branch the pipeline is configured to use has been deleted. 
 + __Resolution:__ Re-create the missing Git branch using the exact same name, or re-configure the pipeline to build from a different, existing branch. 
 
@@ -118,7 +118,7 @@ If the above troubleshooting approaches do not resolve the issue, please create 
 
 The Deploy to step is responsible for taking the code artifact generated in Build Image, starts up new AEM Author and Publish services using it, and upon success, removes any old AEM Author and Publish services. Mutable content packages and indexes are installed and updated in this step as well.
 
-Familiarize yourself with [AEM as a Cloud Service logs](../logs.md) prior to debugging the Deploy to step. The `aemerror` log contains information around the start up and shutdown of pods which may be pertinent to Deploy to issues. Note that the log available via the Download Log button in the Cloud Manager's Deploy to step is not the `aemerror` log, and does not contain detailed information pertaining to your applications start up.
+Familiarize yourself with [AEM as a Cloud Service logs](./logs.md) prior to debugging the Deploy to step. The `aemerror` log contains information around the start up and shutdown of pods which may be pertinent to Deploy to issues. Note that the log available via the Download Log button in the Cloud Manager's Deploy to step is not the `aemerror` log, and does not contain detailed information pertaining to your applications start up.
 
 ![Deploy to](./assets/build-and-deployment/deploy-to.png)
 
