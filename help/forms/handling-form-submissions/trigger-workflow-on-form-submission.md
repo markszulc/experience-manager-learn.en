@@ -1,5 +1,5 @@
 ---
-title: Trigger AEM Workflow
+title: Trigger AEM Workflow on form submission
 description: Configure Adaptive Form to trigger AEM Workflow .
 sub-product: forms
 feature: workflow
