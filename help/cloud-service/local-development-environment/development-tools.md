@@ -143,36 +143,16 @@ In order for the Adobe I/O CLI to communicate with Cloud Manager, a Cloud Manage
 >[!VIDEO](https://video.tv.adobe.com/v/35094?quality=12&learn=on)
 
 1. Log in to [console.adobe.io](https://console.adobe.io)
-1. Ensure the Adobe Org Cloud Manager is associated with is active in the Adobe Org switcher
-1. Create a new or open an existing Console Program to associate the Cloud Manager access to. 
-    + _Note that Adobe I/O Console programs are different concepts to Cloud Manager programs_
-1. Tap Add to Project > API
-1. Tap Experience Cloud
-1. Select Cloud Manager and tap Next
-1. Select the option to either:
-    1. Generate a new keypair
-        + When generating a new keypair, the keypair will automatically download in a zip file
-    1. Or upload a public key (you must have the corresponding private key)
-1. Tap Next
-1. Select Developer - Cloud Service
-1. Tap Save configured API
-1. Tap Service Account (JWT) under Credentials on the left
-1. Switch the to command line
-1. Unzip and copy the keys from 7.1 to a safe location on your computer
-1. Create a new file named `config.json` using the JSON template provided by the [Cloud Manager plugin for Adobe I/O CLI documentation](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication).
-    + Ensure the comment of `//config.json` is removed. The first line, and character of `config.json` should be `{`.
-1. Update the JSON key values using the values from the Service Account (JWT) console in console.adobe.io (Step 11).
-    1. `client_id`: CLIENT ID
-    2. `client_secret`: CLIENT SECRET
-    3. `jwt_payload`: Generate JWT Tab -> JWT Payload
-        + This value does not have surrounding `"`, it is the full JSON object, remove leading and trailing whitespace.
-    4. `token_exchange_url`: Leave as is (`"https://ims-na1.adobelogin.com/ims/exchange/jwt"`)
-1. From the command line, load the `config.json` file into the Adobe I/O CLI
-    + `aio config:set jwt-auth PATH_TO_CONFIG_JSON_FILE --file --json`
-1. From the command line, load your `private.key` file into the Adobe I/O CLI
-    + `aio config:set jwt-auth.jwt_private_key PATH_TO_PRIVATE_KEY_FILE --file`
+1. Create a new or open an existing Program
+    + _Adobe I/O Console programs are different concepts to Cloud Manager programs_
+1. Create a new Cloud Manager API integration with the "Developer - Cloud Service" profile
+1. Obtain the Service Account (JWT) credentials needs to populate Adobe I/O CLI's [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication)
+1. Load the `config.json` file into the Adobe I/O CLI
+    + `$ aio config:set jwt-auth PATH_TO_CONFIG_JSON_FILE --file --json`
+1. Load the `private.key` file into the Adobe I/O CLI
+    + `$ aio config:set jwt-auth.jwt_private_key PATH_TO_PRIVATE_KEY_FILE --file`
 
-Now you are ready to begin [executing commands](https://github.com/adobe/aio-cli-plugin-cloudmanager#commands) to Cloud Manager via the Adobe I/O CLI.
+Begin [executing commands](https://github.com/adobe/aio-cli-plugin-cloudmanager#commands) for Cloud Manager via the Adobe I/O CLI.
 
 ## Set up the development IDE
 

@@ -8,6 +8,7 @@ doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5434
+thumbnail: kt-5424.jpg
 ---
 
 # Debugging AEM as a Cloud Service build and deployments 
@@ -79,7 +80,9 @@ While any code build and compilation issues are found during Build & Unit Testin
 When multiple OSGi configurations resolve via runmode for the target AEM environment, the Build Image step fails with the error:
 
 ```
-[ERROR] Unable to convert content-package [/tmp/packages/enduser.all-1.0-SNAPSHOT.zip]: Configuration ‘com.example.ExampleComponent’ already defined in Feature Model ‘com.example.groupId:example.all:slingosgifeature:xxxxx:X.X’, set the ‘mergeConfigurations’ flag to ‘true’ if you want to merge multiple configurations with same PID
+[ERROR] Unable to convert content-package [/tmp/packages/enduser.all-1.0-SNAPSHOT.zip]: 
+Configuration ‘com.example.ExampleComponent’ already defined in Feature Model ‘com.example.groupId:example.all:slingosgifeature:xxxxx:X.X’, 
+set the ‘mergeConfigurations’ flag to ‘true’ if you want to merge multiple configurations with same PID
 ```
 
 #### Cause 1

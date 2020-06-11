@@ -1,5 +1,5 @@
 ---
-title: Other tools for debugging AEM SDK’s local quickstart
+title: Other tools for debugging AEM SDK
 description: A variety of other tools can aid in debugging the AEM SDK's local quickstart.
 feature: 
 topics: development
@@ -10,7 +10,7 @@ audience: developer
 kt: 5251
 ---
   
-# Other tools for debugging AEM SDK’s local quickstart
+# Other tools for debugging AEM SDK
 
 A variety of other tools can aid in debugging your application on the AEM SDK's local quickstart. 
 

@@ -20,7 +20,7 @@ team: TM
   + [Local AEM Runtime](./local-development-environment/aem-runtime.md)
   + [Local Dispatcher Tools](./local-development-environment/dispatcher-tools.md)
 + Debugging AEM{#debugging}
-  + Debugging the AEM SDK local quickstart{#debugging-aem-sdk-local-quickstart}
+  + Debugging the AEM SDK{#debugging-aem-sdk}
     + [Overview](./debugging/aem-sdk-local-quickstart/overview.md)
     + [Logs](./debugging/aem-sdk-local-quickstart/logs.md)
     + [Remote Debugging](./debugging/aem-sdk-local-quickstart/remote-debugging.md)
@@ -29,7 +29,8 @@ team: TM
   + Debugging AEM as a Cloud Service{#debugging-aem-as-a-cloud-service}
     + [Overview](./debugging/cloud-service/overview.md)
     + [Logs](./debugging/cloud-service/logs.md)
-    + [Developer Console](./debugging/cloud-service/developer-console.md)
     + [Build and Deployment](./debugging/cloud-service/build-and-deployment.md)
+    + [Developer Console](./debugging/cloud-service/developer-console.md)
+    + [CRXDE Lite](./debugging/cloud-service/crxde-lite.md)
 
 + [Getting Started Developing AEM Sites - WKND Tutorial](./develop-wknd-tutorial.md)

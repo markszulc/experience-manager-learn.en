@@ -1,5 +1,5 @@
 ---
-title: Debugging AEM SDK’s local quickstart using the OSGi web console
+title: Debugging AEM SDK using the OSGi web console
 description: The AEM SDK’s local quickstart has an OSGi web console that provides a variety of information and introspections into the local AEM runtime that are useful to understand how your application is recognized by, and functions within AEM.
 feature: 
 topics: development
@@ -10,7 +10,7 @@ audience: developer
 kt: 5265, 5366, 5267
 ---
 
-# Debugging AEM SDK’s local quickstart using the OSGi web console
+# Debugging AEM SDK using the OSGi web console
 
 The AEM SDK’s local quickstart has an OSGi web console that provides a variety of information and introspections into the local AEM runtime that are useful to understand how your application is recognized by, and functions within AEM.
 

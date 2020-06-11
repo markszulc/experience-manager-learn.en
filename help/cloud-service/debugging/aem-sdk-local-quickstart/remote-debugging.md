@@ -1,5 +1,5 @@
 ---
-title: Remote debugging the AEM SDK’s local quickstart
+title: Remote debugging the AEM SDK
 description: The AEM SDK’s local quickstart allows remote Java debugging from your IDE, allowing you to step through live code execution in AEM  to understand the exact execution flow.
 feature: 
 topics: development
@@ -10,7 +10,7 @@ audience: developer
 kt: 5251
 ---
  
-# Remote debugging the AEM SDK’s local quickstart
+# Remote debugging the AEM SDK
 
 >[!VIDEO](https://video.tv.adobe.com/v/34338/?quality=12&learn=on)
 

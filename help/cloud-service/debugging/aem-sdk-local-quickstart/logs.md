@@ -1,5 +1,5 @@
 ---
-title: Debugging AEM SDK’s local quickstart using logs
+title: Debugging AEM SDK using logs
 description: Logs act as the frontline for debugging AEM applications, but are dependent on adequate logging in the deployed AEM application.
 feature: 
 topics: development
@@ -10,7 +10,7 @@ audience: developer
 kt: 5252
 ---
 
-# Debugging AEM SDK’s local quickstart using logs 
+# Debugging AEM SDK using logs 
 
 >[!VIDEO](https://video.tv.adobe.com/v/34334/?quality=12&learn=on)
 

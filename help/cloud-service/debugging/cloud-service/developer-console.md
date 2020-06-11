@@ -8,6 +8,7 @@ doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5433
+thumbnail: kt-5433.jpg
 ---
 
 # Debugging AEM as a Cloud Service with the Developer Console
@@ -18,26 +19,30 @@ Each AEM as a Cloud Service environment has it's own Developer Console.
 
 ## Developer Console access
 
-To access the Developer Console, the user must be a member of the Adobe Organization's Cloud Manager's "Developer - Cloud Service" Product Profile, managed via the [Adobe Admin Console](https://adminconsole.adobe.com).
+To access and use the Developer Console the following permissions must be given to the developer's Adobe ID:
 
->[!VIDEO](https://video.tv.adobe.com/v/35093/?quality=12&learn=on)
++ The developer must be a member of the Cloud Manager Product's __Developer - Cloud Service__ Product Profile.
+    + If this membership does not exist, the developer will not be able to log in to Developer Console.
+ + The developer must be a member of the AEM Author and Publish service's __AEM Administrators__ Product Profile.
+    + If this membership does not exist, the [status](#status) dumps will timeout with a 401 Unauthorized error.   
 
 ## Pod
-
- The Pod selection defines the scope of data that will exposed via the other controls in the Developer console. 
+ 
+AEM as a Cloud Service Author and Publish services are comprised of multiple instances respectively in order to handle traffic variability and rolling updates without downtime. These instances are referred to as Pods. Pod selection in Developer Console defines the scope of data that will exposed via the other controls.
 
 ![Developer Console - Pod](./assets/developer-console/pod.png)
 
-+ A pod is a discrete AEM runtime instance that is part of an AEM Service (Author or Publish)
-+ Only pods that are part of the selected AEM as a Cloud Service environment, are listed that environment's Developer Console's Pod switcher.
-+ At the bottom of the Pod switcher, there are convenience options for selecting Pods by type:
++ A pod is a discrete instance that is part of an AEM Service (Author or Publish)
++ Pods are transient, meaning AEM as a Cloud Service creates and destroys them as need
++ Only pods that are part of the associated AEM as a Cloud Service environment, are listed that environment's Developer Console's Pod switcher.
++ At the bottom of the Pod switcher, convenience options allow for selecting Pods by service type:
     + All Authors
     + All Publishers
     + All Instances
 
 ## Status
 
-The Status provides options for outputting specific AEM runtime state in text or JSON output. The Developer Console provides much of the same information as is available in the AEM SDK's local quickstart's OSGi Web console, with the marked difference that this information is read-only.
+Status provides options for outputting specific AEM runtime state in text or JSON output. The Developer Console provides similar information as the AEM SDK's local quickstart's OSGi Web console, with the marked difference that Developer Console is read-only.
 
 ![Developer Console - Status](./assets/developer-console/status.png)
 
@@ -47,7 +52,7 @@ Bundles lists all OSGi bundles in AEM. This functionality is similar to [AEM SDK
 
 Bundles help in debugging by:
 
-+ Listing all OSGi bundles deployed to AEM
++ Listing all OSGi bundles deployed to AEM as a Service
 + Listing each OSGi bundle's state; including if they are active or not
 + Providing details into unresolved dependencies that cause OSGi bundles from becoming active
 
@@ -55,9 +60,9 @@ Bundles help in debugging by:
 
 Components lists all the OSGi components in AEM. This functionality is similar to [AEM SDK's local quickstart's OSGi Components](http://localhost:4502/system/console/components) at `/system/console/components`.
 
-Component help in debugging by:
+Components help in debugging by:
 
-+ Listing all OSGi components deployed to AEM
++ Listing all OSGi components deployed to AEM as a Cloud Service
 + Providing each OSGi component's state; including if they are active or unsatisfied
 + Providing details into unsatisfied service references may cause OSGi components from becoming active
 + Listing OSGi properties and their values bound to the OSGi component
@@ -69,6 +74,7 @@ Configurations lists all the OSGi component's configurations (OSGi properties an
 Configurations help in debugging by:
 
 + Listing OSGi properties and their values by OSGi component
++ Locating and identifying misconfigured properties 
 
 ### Oak Indexes
 
@@ -76,7 +82,7 @@ Oak Indexes provide a dump of the nodes defined beneath `/oak:index`. Keep in mi
 
 Oak Indexes help in debugging by:
 
-+ Listing all Oak Index definitions to help understand how search queries are executed in AEM. Keep in mind, that modified to AEM indexes are not reflected here. This view is only helpful for indexes that are solely provided by AEM, or solely provided by the custom code.
++ Listing all Oak Index definitions providing insights into how search queries are executed in AEM. Keep in mind, that modified to AEM indexes are not reflected here. This view is only helpful for indexes that are solely provided by AEM, or solely provided by the custom code.
 
 ### OSGi Services
 
@@ -88,11 +94,12 @@ OSGi Services help in debugging by:
 
 ### Sling Jobs
 
-Sling Jobs lists all the OSGi services. This functionality is similar to [AEM SDK's local quickstart's Jobs](http://localhost:4502/system/console/slingevent) at `/system/console/slingevent`.
+Sling Jobs lists all the Sling Jobs queues. This functionality is similar to [AEM SDK's local quickstart's Jobs](http://localhost:4502/system/console/slingevent) at `/system/console/slingevent`.
 
-Sling Job help in debugging by:
+Sling Jobs help in debugging by:
 
-+ Providing a list of all OSGi services in AEM, along with its providing OSGi bundle, and all OSGi bundles that consume it
++ Listing of Sling Job queues and their configurations
++ Providing insights into the number of active, queued and processed Sling jobs, which is helpful for debugging issues with Workflow, Transient Workflow and other work performed by Sling Jobs in AEM.
 
 ## Java Packages
 
