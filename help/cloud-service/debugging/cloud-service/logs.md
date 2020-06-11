@@ -93,7 +93,7 @@ Environment Id Service    Name
 
 ### Tailing logs{#aio-cli-tail-logs}
 
-Adobe I/O CLI provides the ability to [ail logs in real-time from AEM as a Cloud Service using the [tail-logs]((https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagertail-log-environmentid-service-name)) command. Tailing is useful to watching real-time log activity as actions are performed on the AEM as a Cloud Service environment.
+Adobe I/O CLI provides the ability to [ail logs in real-time from AEM as a Cloud Service using the [tail-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagertail-log-environmentid-service-name)) command. Tailing is useful to watching real-time log activity as actions are performed on the AEM as a Cloud Service environment.
 
 ```
 $ aio config:set cloudmanager_programid <PROGRAM ID>
@@ -110,7 +110,7 @@ $ aio cloudmanager:tail-logs 12345 author | grep com.example.MySlingModel
 
 ### Downloading logs{#aio-cli-download-logs}
 
-Adobe I/O CLI provides the ability to download logs from AEM as a Cloud Service using the [download-logs]((https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerdownload-logs-environmentid-service-name-days)) command. This provides the same end result as downloading the logs from the Cloud Manager web UI, with the difference being the `download-logs` command consolidates logs across days, based on the how many days of logs are requested.
+Adobe I/O CLI provides the ability to download logs from AEM as a Cloud Service using the [download-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerdownload-logs-environmentid-service-name-days)) command. This provides the same end result as downloading the logs from the Cloud Manager web UI, with the difference being the `download-logs` command consolidates logs across days, based on the how many days of logs are requested.
 
 ```
 $ aio config:set cloudmanager_programid <PROGRAM ID>
