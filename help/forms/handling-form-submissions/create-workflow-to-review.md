@@ -8,13 +8,18 @@ audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
-KT: 4855
-thumbnail: kt-4855.jpg
+KT: 4271
+thumbnail: kt-4271.jpg
 ---
 
 # Creating workflow to review submitted data
 
 Workflows are typically used to route submitted data for review and approval. Workflows are created using the workflow editor in AEM. The Workflows can be triggered on Adaptive Form submission. The following steps will walk you through the process of creating your first workflow.
+
+## Prerequisite
+
+Please make sure you have a working instance of AEM Forms. Please follow the [installation guide](https://docs.adobe.com/content/help/en/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) to install and configure AEM Forms
+
 
 ## Create Workflow Model
 
