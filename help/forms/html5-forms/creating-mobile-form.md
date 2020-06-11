@@ -7,7 +7,7 @@ audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-KT: 4419
+kt: 4419
 thumbnail: kt-4419.jpg
 ---
 

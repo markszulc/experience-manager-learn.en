@@ -8,7 +8,7 @@ audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
-KT: 4271
+kt: 4271
 thumbnail: kt-4271.jpg
 ---
 

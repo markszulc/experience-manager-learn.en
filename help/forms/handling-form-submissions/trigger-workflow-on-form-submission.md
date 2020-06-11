@@ -8,7 +8,7 @@ audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
-KT: 5407
+kt: 5407
 thumbnail: kt-5407.jpg
 ---
 # Configuring Adaptive Form to trigger AEM Workflow
