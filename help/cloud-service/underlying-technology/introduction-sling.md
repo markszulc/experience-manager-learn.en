@@ -7,6 +7,7 @@ doc-type: technical-video
 activity: understand
 version: cloud-service
 kt: 4641
+thumbnail: 32032.jpg
 ---
 
 # Introduction to [!DNL Sling] {#introduction-sling}

@@ -9,6 +9,7 @@ doc-type: feature-video
 activity: use
 version: 
 kt : 4914
+thumbnail: 34839.jpg
 ---
 
 # Place Linked{#place-linked}

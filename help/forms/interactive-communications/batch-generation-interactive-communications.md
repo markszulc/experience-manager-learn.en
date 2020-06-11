@@ -36,4 +36,24 @@ You can use the Batch API to produce multiple interactive communications from a 
 * Drop the `jsonfile` folder into the input folder of your watched folder. 
 * Once the folder is picked up for processing, check the result folder of your watched folder. You should see 3 PDF files generated
 
+## Batch Generation using REST Requests
 
+You can invoke the [Batch API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) through REST requests. You can expose REST endpoints for other applications to invoke the API to generate documents.
+The sample assets provided exposes REST endpoint for generating Interactive Communication documents. The servlet accepts the following parameters:
+
+* fileName - Location of the data file on the file system.
+* templatePath -  IC template path
+* saveLocation - Location to save the generated documents on the file system
+* channelType - Print,Web or both
+* recordId - JSON path to element to set name of an interactive communication
+
+The following screenshot shows the parameters and its values
+![sample request](assets/generate-ic-batch-servlet.PNG)
+
+## Deploy sample assets on your server
+
+* Import [ICTemplate](assets/ICTemplate.zip) using [package manager](http://localhost:4502/crx/packmgr/index.jsp)
+* Import [Custom Submit handler](assets/BatchAPICustomSubmit.zip) using [package manager](http://localhost:4502/crx/packmgr/index.jsp)
+* Import [Adaptive Form](assets/BatchGenerationAPIAF.zip) using the [Forms and Document interface](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Deploy and start [Custom OSGI bundle](assets/batchgenerationapi.batchgenerationapi.core-1.0-SNAPSHOT.jar) using [Felix web console](http://localhost:4502/system/console/bundles)
+* [Trigger Batch Generation by submitting the form](http://localhost:4502/content/dam/formsanddocuments/batchgenerationapi/jcr:content?wcmmode=disabled)

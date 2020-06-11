@@ -8,12 +8,18 @@ audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
-KT: 4855
+kt: 4271
+thumbnail: kt-4271.jpg
 ---
 
 # Creating workflow to review submitted data
 
 Workflows are typically used to route submitted data for review and approval. Workflows are created using the workflow editor in AEM. The Workflows can be triggered on Adaptive Form submission. The following steps will walk you through the process of creating your first workflow.
+
+## Prerequisite
+
+Please make sure you have a working instance of AEM Forms. Please follow the [installation guide](https://docs.adobe.com/content/help/en/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) to install and configure AEM Forms
+
 
 ## Create Workflow Model
 
@@ -55,17 +61,5 @@ If the form is based on Form Data Model the submitted data is in JSON format and
 * Click on _Sync_ to generate the runtime model of the workflow.
 Your workflow model is now ready and can be associated with Adaptive Form's submit action.
 
-## Configuring Adaptive Form to trigger AEM Workflow
-
-* Open Adaptive Form in edit mode.
-* Open the content explorer
-![Content explorer](assets/af-workflow-submission.PNG)
-* Select Form Container node and open its configuration properties
-![Submission](assets/af-workflow-submission1.PNG)
-* Expand the Submission panel
-* Set the form's submit action as specified in the above screen shot.
-_Please make sure you make a note of the value specified in the Data File Path field. This value must match the value you specify in the pre-populate section of the Assign Task component of your workflow._
-
-Now when you fill and submit your Adaptive Form, the workflow associated with submit action of the form will be triggered.
 
 

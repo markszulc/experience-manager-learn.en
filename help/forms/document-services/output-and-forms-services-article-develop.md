@@ -51,9 +51,9 @@ Line 6 exports the xmlData from the PDF File
 
 
 
-**After you install the package you will have to whitelist the following URLs in Adobe Granite CSRF Filter.**
+**After you install the package you will have to allowlist the following URLs in Adobe Granite CSRF Filter.**
 
-1. Please follow the steps mentioned below to whitelist the paths mentioned above.
+1. Please follow the steps mentioned below to allowlist the paths mentioned above.
 1. [Login to configMgr](http://localhost:4502/system/console/configMgr)
 1. Search for Adobe Granite CSRF Filter
 1. Add the following 3 paths in the excluded sections and save

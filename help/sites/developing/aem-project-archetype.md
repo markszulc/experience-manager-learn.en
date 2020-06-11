@@ -8,6 +8,7 @@ doc-type: technical-video
 activity: understand
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4675
+thumbnail: 32550.jpg
 ---
 
 # [!DNL AEM Project Archetype] {#aem-project-archetype}

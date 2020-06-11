@@ -7,7 +7,8 @@ audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-KT: 4418
+kt: 5269
+thumbnail: kt-5269.jpg
 ---
 
 # Submit Handler

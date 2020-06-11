@@ -9,6 +9,7 @@ doc-type: feature-video
 activity: use
 version: 
 kt : 4906
+thumbnail: 33884.jpg
 ---
 
 # Files and Collections {#files-and-collections}

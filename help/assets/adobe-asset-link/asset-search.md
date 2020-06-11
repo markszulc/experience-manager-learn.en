@@ -9,6 +9,7 @@ doc-type: feature-video
 activity: use
 version: 
 kt : 4917
+thumbnail: 34260.jpg
 ---
 
 # Asset Search {#asset-search}

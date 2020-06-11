@@ -8,6 +8,7 @@ activity: develop
 audience: developer
 kt: 4089
 mini-toc-levels: 1
+thumbnail: 30207.jpg
 ---
 
 # Unit Testing {#unit-testing}

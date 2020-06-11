@@ -10,6 +10,7 @@ activity: develop
 audience: developer
 kt: 4072
 mini-toc-levels: 1
+thumbnail: 30181.jpg
 ---
  
 # Custom Component {#custom-component}

@@ -11,6 +11,7 @@ activity: develop
 audience: developer
 mini-toc-levels: 1
 kt: 4082
+thumbnail: 30214.jpg
 ---
 
 # Pages and Templates {#pages-and-template}

@@ -9,14 +9,15 @@ audience: author, marketer
 doc-type: feature-video
 activity: use
 version: 6.3, 6.4, 6.5, cloud-service
-kt: 4495
+kt: 4242
+thumbnail: 33594.jpg
 ---
 
-# Overview of Authoring in AEM Sites {#concepts-authoring-aem-sites}
+# Authoring overview {#authoring-overview}
 
 The following video provides an overview of basic concepts of authoring in an AEM author environment for AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/31784?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33594?quality=12&learn=on)
 
 ## Additional Resources {#additional-resources}
 

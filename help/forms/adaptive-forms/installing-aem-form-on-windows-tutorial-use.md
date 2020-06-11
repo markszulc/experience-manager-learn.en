@@ -74,7 +74,7 @@ Although we recommend following the [official documentation](https://helpx.adobe
 
     * **Once all the bundles are active(Except the AEMFD Signatures bundle), restart your system to complete the AEM Forms installation**
 
-* Whitelist sun.util.calendar package.
+* Add sun.util.calendar package to the allowlist
 
     * Open feilix web console in your [browser window](http://localhost:4502/system/console/configMgr)
     * Search and open Deserialization Firewall Configuration
