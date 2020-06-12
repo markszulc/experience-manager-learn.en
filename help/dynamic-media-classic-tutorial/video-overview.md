@@ -362,13 +362,13 @@ Because of this, Dynamic Media Classic does not give you a URL to a viewer for m
 
 One important thing to note about published video is that the URL lists the full path to the video, not just the Asset ID. When dealing with images, you call the image by its Asset ID, regardless of the folder structure. However for video, you must specify the folder structure as well. In the URLs above, the video is stored in the path:
 
-![image](assets\video-overview\Mobile-implement-1.png)
+![image](assets\video-overview\Mobile-Implement-1.png)
 
 This can also be expressed as company name/folder path/name of video.
 
 ### Method #1: Browser Playback — HTML5 Code
 
-To embed your MP4 video in a web page, use the HTML5 \&lt;video\&gt; tag.
+To embed your MP4 video in a web page, use the HTML5 video tag.
 
 ![image](assets\video-overview\Browser-playback.png)
 
