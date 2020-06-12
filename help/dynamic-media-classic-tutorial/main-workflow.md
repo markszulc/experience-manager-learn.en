@@ -46,6 +46,7 @@ The default mode is From Desktop, where you browse for files on your local netwo
 The two most important upload options are enabled by default — **Mark for Publish** , which we've discussed earlier, and **Overwrite**. Overwrite means that if the file being uploaded has the same name as a file already in the system, the new file will replace the existing version. If you uncheck this option, the file might not be uploaded.
 
 ### Overwrite Options When Uploading Images
+
 There are four variations of the Overwrite Image option that can be set for your entire company, and they are often misunderstood. In short, either you set the rules such that you want assets that have the same name to be overwritten more frequently, or you want overwrites to occur less frequently (in which case the new image will get renamed with a "-1" or "-2" extension).
 
 * **Overwrite in current folder, same base image name/extension**.
@@ -68,7 +69,7 @@ Learn more about [Job Options](https://docs.adobe.com/content/help/en/dynamic-me
 
 Uploading is the first necessary step in any workflow because Dynamic Media Classic cannot work with any content that is not already in its system. Behind the scenes during upload, the system registers every uploaded asset with the centralized Dynamic Media Classic database, assigns an ID, and copies it to storage. In addition, the system converts image files to a format that allows dynamic resizing and zoom and converts video files to the MP4 web-friendly format.
 
-### Concept: What happens to images when you upload them to Dynamic Media Classic?
+### Concept: Here's what happens to images when you upload them to Dynamic Media Classic
 
 When you upload an image of any type to Dynamic Media Classic, it is converted to a master image format called a Pyramid TIFF, or P-TIFF. A P-TIFF is similar to the format of a layered TIFF bitmap image, except that instead of different layers, the file contains multiple sizes (resolutions) of the same image.
 
@@ -130,8 +131,9 @@ The second example applies what’s known as an “image preset” to the same B
 Once you understand how Dynamic Media Classic URLs are put together, then you understand how to change them programmatically and how to integrate them deeper into your site and backend systems.
 
 ### Concept: Understanding the Caching Delay
+
 Newly uploaded and published assets will be seen right away, whereas updated assets may be subject
-to the 10-hour caching delay. By default, all published assets have a minimum of 10 hours before they expire. We say minimum, because every time the image is viewed, it starts a clock that will not expire until 10 hours have elapsed in which no one has viewed that image. This 10–hour period is the “Time to Live” for an asset. Once the cache expires for that asset, the updated version can be delivered. 
+to the 10-hour caching delay. By default, all published assets have a minimum of 10 hours before they expire. We say minimum, because every time the image is viewed, it starts a clock that will not expire until 10 hours have elapsed in which no one has viewed that image. This 10–hour period is the “Time to Live” for an asset. Once the cache expires for that asset, the updated version can be delivered.
 
 This typically is not an issue unless a mistake occurred, and the image/asset has the same name as the previously published version, but there is a problem with the image. For example, you accidentally uploaded a low resolution version or your art director didn’t approve the image. In this case, you want to recall the original image and replace it with a new version using the same Asset ID.
 
@@ -141,9 +143,8 @@ Learn how to [Manually Clear the Cache for the URLs That Need to Be Updated](htt
 >
 >To avoid issues with caching delay, always work ahead — an evening, a day, two weeks, etc. Build in time for QA/acceptance for internal parties to proof your work before releasing to the public. Even working an evening before allows you to make changes and re-publish that evening. By morning, the 10 hours has elapsed and the cache updates with the correct image.
 
-* Learn more about [Creating a Publishing Job](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job). 
+* Learn more about [Creating a Publishing Job](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
 * Learn more about [Publishing](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html).
-
 
 ## Step 3: Deliver
 

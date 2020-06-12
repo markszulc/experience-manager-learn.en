@@ -38,14 +38,13 @@ Let's learn about the four types of sets you can create in Dynamic Media Classic
 This is the most common type of set. You'll typically use it for alternate views of the same item. It consists of multiple images that you load into the viewer by clicking on the associated thumbnail of that image.
 
 ![image](assets\media-sets\ImageSet1.jpg)
-
 *Example of an Image Set*
 
 The URL for the above Image Set could appear as:
 
 ![image](assets\media-sets\ImageSetURL1.png)
 
-* Learn more about Image Sets with the [Quick Start to Image Sets](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sets/quick-start-image-sets.html). 
+* Learn more about Image Sets with the [Quick Start to Image Sets](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sets/quick-start-image-sets.html).
 * Learn how to [Create an Image Set](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sets/creating-image-set.html#creating-an-image-set).
 
 ### Swatch Set
@@ -57,14 +56,13 @@ The main difference between a Swatch and Image Set is that Swatch Sets use a dif
 Swatch Sets do not colorize images (a common misconception). The images are simply being swapped, exactly as in an Image Set. The mini swatch images could have been authored using Photoshop, each color could have been photographed separately, or the Crop tool in Dynamic Media Classic could have been used to make a swatch out of one of the colored images.
 
 ![image](assets\media-sets\ImageSet2.jpg)
-
 *Example of a Swatch Set*
 
 The URL for the above Swatch Set could appear as:
 
 ![image](assets\media-sets\ImageSet_URL.png)
 
-* Learn more about Swatch Sets with the [Quick Start to Swatch Sets](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html). 
+* Learn more about Swatch Sets with the [Quick Start to Swatch Sets](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html).
 * Learn how to [Create a Swatch Set](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html#creating-a-swatch-set).
 
 ### Spin Set
@@ -74,16 +72,14 @@ This set is typically used to show a 360-degree view of an item.Like Swatch Sets
 Spin Sets can either spin in one direction along a single axis, or if alternately created as a 2D Spin Set — spin on multiple axes. For example, a car can be rotated while all wheels are on the ground, and then can be "flipped" up and rotated on its back wheels as well. For a properly set up 2D Spin Set, the number of images per row for each axis should be the same. In other words, if you are spinning on two axes, you need twice as many images as a single angle spin.
 
 ![image](assets\media-sets\ImageSet3.png)
-
 *Example of a Spin Set*
 
 The URL for the above Spin Set could appear as:
 
 ![image](assets\media-sets\SpinSet.png)
 
-* Learn more about Spin Sets with the [Quick Start to Spin Sets](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html). 
+* Learn more about Spin Sets with the [Quick Start to Spin Sets](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html).
 * Learn how to [Create a Spin Set](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/spin-sets/creating-spin-set.html#creating-a-spin-set).
-
 
 ## Mixed Media Set
 
@@ -123,13 +119,13 @@ Once the presets have been created, the Company Administrator can choose whether
 
 Learn how to [Create a Batch Set Preset](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#creating-a-batch-set-preset).
 
-#### Using Batch Set Presets on Upload
+### Using Batch Set Presets on Upload
 
 Here is how you use Batch Set Presets on upload after they have been created:
 
 1. Click **Upload** and choose either **From Desktop** or **Via FTP**.
 2. Click **Job Options**.
 3. Open the **Batch Set Presets** option, and check or uncheck the preset to use it with the upload.
-4. After the upload is done, look in your folder for the finished sets. 
+4. After the upload is done, look in your folder for the finished sets
 
 Learn more about [Batch Set Presets](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#batch-set-presets).

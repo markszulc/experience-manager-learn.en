@@ -76,7 +76,6 @@ This is a very simple system, and good if you have modest needs. However it is n
 |  | Swatches | AA123\_BLU\_SW.tif | AA123\_BLU\_SW |
 |  | Image Set or Swatch Set |  | AA123 or AA123\_SET | -- |
 
-
 When dealing with set collections, such as Image Sets and Swatch Sets, the set itself must also have a unique name. So in this case, the set could be given the base SKU as its name, or the SKU with a "\_SET"extension.
 
 ### Naming Convention and Automation

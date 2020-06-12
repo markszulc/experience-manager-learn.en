@@ -111,7 +111,7 @@ Before we get started, let's discuss some terms with which you should be familia
 * **Display aspect ratio.** Ratio of width of a video to the height of a video. When the aspect ratio of the video doesn't match the ratio of the player, you may see "black bars," or empty space. Two common aspect ratios used to display video are:
 
   * 4:3 (1.33:1). Used for almost all standard-definition TV broadcast content.
-  *  16:9 (1.78:1). Used for almost all wide-screen, high-definition TV content (HDTV) and movies.
+  * 16:9 (1.78:1). Used for almost all wide-screen, high-definition TV content (HDTV) and movies.
 
 * **Bit rate/data rate.** The amount of data that is encoded to make up a single second of video playback(in kilobits per second).
 
@@ -211,14 +211,13 @@ However if you want to figure it out yourself, you'll need a bit rate calculator
 
 Sometimes you may find you need a special Video Preset that doesn't match the settings of the built-in encoding video presets. This might happen if you have custom video of a specific size, such as a video created from 3D animation software or one that has been cropped from its original size. Perhaps you want to experiment with different bandwidth settings to serve up higher or lower quality video. Whatever the case, you'll need to create a custom Single Encoding Video Preset.
 
-#### Video Preset Workflow
+### Video Preset Workflow
 
 1. Video Presets are located under **Setup > Application Setup > Video Presets**. Here you'll find a list of all the encoding presets available to your company.
 
-  * Every streaming video account has dozens of presets out of the box, and if you create your own custom presets you will see them here as well.
-  * You can filter by type using the drop-down menu. The presets are divided into Computer, Mobile and Tablet.
-
-![image](assets\video-overview\VideoOverview4.jpg) 
+    * Every streaming video account has dozens of presets out of the box, and if you create your own custom presets you will see them here as well.
+    * You can filter by type using the drop-down menu. The presets are divided into Computer, Mobile and Tablet.
+    * ![image](assets\video-overview\VideoOverview4.jpg)
 
 2. The Active column allows you to choose whether you want to display all the presets on upload, or only the ones you choose. If you are in the US, you might want to uncheck the European PAL presets, and if in UK/ EMEA, uncheck the NTSCpresets.
 3. Click the **Add** button to create a custom preset. This opens the Add Video Preset panel. The process here is similar to creating an ImagePreset.
@@ -261,10 +260,10 @@ Learn how to [Publish Your Video](https://docs.adobe.com/content/help/en/dynamic
 
 Once you run a video publish, you will be able to get a URL to access your videos and any off-the-shelf Dynamic Media Classic Viewer Presets in a web browser. However if you customize or create your own Video Viewer Preset, you will still need to run a separate Image Server publish.
 
-* Learn how to [Link a URL to a Mobile Site or a Website](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#linking-a-video-url-to-a-mobile-site-or-a-website). 
+* Learn how to [Link a URL to a Mobile Site or a Website](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#linking-a-video-url-to-a-mobile-site-or-a-website).
 * Learn how to [Embed the Video Viewer on a Web Page](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#embedding-the-video-viewer-on-a-web-page).
 
-You can also deploy your video using a third-party or custom built video player. 
+You can also deploy your video using a third-party or custom built video player.
 
 Learn how to [Deploy Video Using a Third-party Video Player](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#deploying-video-using-a-third-party-video-player).
 
@@ -311,7 +310,7 @@ For more information on that topic, see [Viewing, Adding, and Exporting Metadata
 
  Once the metadata has been populated, you will be able to see it on the Detail View for that video asset. Keywords may also be present, but those are located under the Keywords tab.
 
-* Learn more about [Adding Keywords](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/viewing-adding-exporting-metadata.html#add-or-edit-keywords). 
+* Learn more about [Adding Keywords](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/viewing-adding-exporting-metadata.html#add-or-edit-keywords).
 * Learn more about [Video SEO](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/video-seo-search-engine-optimization.html).
 * Learn about [Settings for Video SEO](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/video-seo-search-engine-optimization.html#choosing-video-seo-settings).
 
@@ -329,7 +328,7 @@ Setting up Video SEO starts with choosing what type of format you want, the gene
 
 Generated files will appear in the root (base) directory of your account.
 
-![image](assets\video-overview\VideoOverview8.jpg) 
+![image](assets\video-overview\VideoOverview8.jpg)
 
 These files must be published, as the Video SEO tool cannot run a publish by itself. As long as they are marked for publish, they will be sent to the publish servers the next time a publish is run.
 

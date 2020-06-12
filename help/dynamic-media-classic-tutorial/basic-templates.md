@@ -12,7 +12,7 @@ audience : all
 activity: use
 ---
 
-# Introduction to Basic Templates - TEST {#basic-templates}
+# Introduction to Basic Templates {#basic-templates}
 
 In Dynamic Media Classic terms, a template is a document that can be changed dynamically via the URL after the template has been published. Dynamic Media Classic offers Basic Templates, image-based templates called from the Image Server and consisting of images and rendered text.
 
@@ -60,7 +60,7 @@ Because Basic Templates are typically designed in Photoshop but deployed via a U
 
 Template projects can be relatively simple or extremely complex depending on the business rules and needs of the application. Basic Templates are called from the Image Server, however due to the flexibility of the Dynamic Media Classic environment, you can even nest templates inside other templates, allowing you to create fairly complex images that can be linked by commonly named variables.
 
-* Learn more about [Template Basics](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/quick-start-template-basics.html). 
+* Learn more about [Template Basics](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/quick-start-template-basics.html).
 * Learn how to create a [Basic Template](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template.html#creating_a_template).
 
 ## Creating a Basic Template
@@ -69,7 +69,7 @@ When working with a Basic Template, you usually follow the workflow steps in the
 
 ![image](assets\basic-templates\Basic_Templates_1.png)
 
-*The Basic Template workflow*
+*The Basic Template workflow.*
 
 1. Design and create your assets. Most users do this in Adobe Photoshop. Design assets at the exact size you need — if it is a 200 pixel image for a thumbnail page, design it at 200 pixels. If you need to zoom on it, design it at a size of about 2000 pixels. Use Photoshop (and/or Illustrator saved as bitmap) to create the assets, and use Dynamic Media Classic to assemble the parts together, manage the layers, and add variables.
 2. After designing graphic assets, upload them to Dynamic Media Classic. Rather than upload individual assets from the PSD, we recommend you upload your entire layered PSD file and have Dynamic Media Classic create a file per layer, by using the **Maintain Layers** option on upload (see below for more details.) *Text Workflow: If creating dynamic text, upload your fonts as well. Dynamic text is variable and controlled via the URL. If your text is static or has only a few short phrases that don’t change — for example, tags that say “New” or “Sale,” rather than “X% Off,” with the X being a variable number — we recommend pre-rendering the text in Photoshop and uploading as rasterized layers as images. It will be easier and you can style the text exactly as you want.*
@@ -91,16 +91,15 @@ Before uploading your Photoshop file to Dynamic Media Classic, simplify the laye
 1. Simplify the layer structure by merging/flattening related layers that need to be turned on/off together into a single layer. For example, the label "NEW" and the blue banner are merged into a single layer so you can show or hide them with a single click.
 
 ![image](assets\basic-templates\Basic_Templates_3.jpg)
-
 2. Some layers types and layer effects are not supported by Dynamic Media Classic or the Image Server and need to be rasterized prior to upload. Otherwise the effects might be ignored, or the layers discarded. Rasterizing a layer means converting if from being editable to being noneditable. To rasterize layer effects or text layers, create an empty layer, select both and merge using **Layers > Merge Layers** or CTRL + E/CMD +E.
 
-  * Dynamic Media Classic cannot group or link layers. All layers in a group or linked set will be converted to separate layers that are no longergrouped/linked.
-  * Layer masks will be converted to transparency on upload.
-  * Adjustment layers are not supported and will be discarded.
-  * Fill layers, such as Solid Color layers, will be rasterized.
-  * Smart Object layers and vector layers will be rasterized into normal images on upload and Smart Filters will be applied andrasterized.
-  * Text layers will also be rasterized unless you use the Extract Text option—see below for more information.
-  * Most layer effects will be ignored and only a few blend modes are supported. If in doubt, add simple effects in Dynamic Media Classic (such as inner or drop shadows, inner or outer glows), or use a blank layer to merge and rasterize the effect in Photoshop.
+* Dynamic Media Classic cannot group or link layers. All layers in a group or linked set will be converted to separate layers that are no longergrouped/linked.
+* Layer masks will be converted to transparency on upload.
+* Adjustment layers are not supported and will be discarded.
+* Fill layers, such as Solid Color layers, will be rasterized.
+* Smart Object layers and vector layers will be rasterized into normal images on upload and Smart Filters will be applied andrasterized.
+* Text layers will also be rasterized unless you use the Extract Text option—see below for more information.
+* Most layer effects will be ignored and only a few blend modes are supported. If in doubt, add simple effects in Dynamic Media Classic (such as inner or drop shadows, inner or outer glows), or use a blank layer to merge and rasterize the effect in Photoshop.
 
 ### Working with Fonts
 
@@ -116,7 +115,7 @@ Be aware that fonts have multiple internal names that are often different from t
 
 ![image](assets\basic-templates\Basic_Templates_4.jpg)
 
-*Metadata tab on the Details page for a font in Dynamic Media Classic*
+*Metadata tab on the Details page for a font in Dynamic Media Classic.*
 
 Dynamic Media Classic uses the filename of this font (ACaslonPro-Semibold) as its Asset ID, however that is not the name used by the template. The template uses the Rich Text Format (RTF) Name, listed at the bottom. RTF is the native "language" of the Image Server text engine.
 
@@ -146,7 +145,8 @@ In the left center is your work area showing a preview of your final template. O
 
 ![image](assets\basic-templates\Basic_Templates_5.jpg)
 
-*Build Template Basics page*
+*Build Template Basics page.*
+
 * **Preview/Work Area.** This is the main window. Here you can move, resize, and rotate layers with your mouse. Layer outlines are shown as dashedlines.
 * **Layers.** This is similar to the Photoshop layers panel. As you add layers to your template, they will appear here. Layers are stacked from top to bottom — the top layer in the Layers panel will be seen above the others below it in the list.
 * **Layer Properties.** Here you can adjust all the properties of a layer using numeric controls. First select a layer, and then adjust its properties.
@@ -156,12 +156,12 @@ In the left center is your work area showing a preview of your final template. O
 
 Here are the workflow steps to start your Basic Template:
 
-1. In Dynamic Media Classic, go to **Build \&gt; Template**  **Basics**. You can either have nothing selected, or start by selecting an image, which will become the first layer of your template.
+1. In Dynamic Media Classic, go to **Build > Template Basics**. You can either have nothing selected, or start by selecting an image, which will become the first layer of your template.
 2. Choose a Size and press **OK**. This size should match the size you designed in Photoshop. The template editor will load.
 3. If you didn't have an image selected in step 1, search for or browse to an image in the asset panel on the left and drag it onto the work area.
 
-  * The image will automatically be resized to fit the size of the canvas. If you plan to swap out your high- resolution images, then you would typically bring in one of your large (2000 px) P-TIFF images and use it as a placeholder.
-  * This should be the bottom-most layer of your template, however you can reorder the layers later.
+   * The image will automatically be resized to fit the size of the canvas. If you plan to swap out your high- resolution images, then you would typically bring in one of your large (2000 px) P-TIFF images and use it as a placeholder.
+   * This should be the bottom-most layer of your template, however you can reorder the layers later.
 
 4. Resize or reposition the layer directly in the work area, or by adjusting the settings in the Layer Propertiespanel.
 5. Drag in additional image layers as needed. Add layers effects if you want as well. See the topic *Adding Layer Effects*,below.
@@ -176,8 +176,7 @@ The Image Server supports a few programmatic layer effects — special effects t
 * **Outer Glow**. Applies a glow effect evenly around all edges of thelayer.
 * **Inner Glow**. Applies a glow effect evenly inside all edges of the layer.
 
-![image](assets\basic-templates\Basic_Templates_6.jpg) 
-
+![image](assets\basic-templates\Basic_Templates_6.jpg)
 *A layer with and without a drop shadow*
 
 To add an effect, click **Add Effect**, and choose an effect from the menu. Like normal layers, you can select an effect in the Layers panel and use the Layer Properties panel to adjust its settings.
@@ -207,21 +206,19 @@ This is the workflow for creating parameters:
 1. Click the **Parameters** button next to the name of the layer for which you want to create parameters. The Parameters screen opens. It lists each property on the layer and its value.
 2. Select the **On** option beside the name of each property you want to make into a parameter. A default parameter name will appear. You can only add parameters to properties that have changed from their default state.
 
-  * For example, if you add a layer and keep it at its default xy position of 0,0, Dynamic Media Classic will not expose a **Position** property. To fix, move the layer at least one pixel. Now Dynamic Media Classic will expose **Position** as a property you canparameterize.
-  * To add a parameter to the show/hide property (which turns the layer on and off ), click the **Show** or **Hide Layer** icon to toggle the layer off (you can turn it back on afterwards if you want). Dynamic Media Classic will now expose a **Hide** property that can beparameterized.
+   * For example, if you add a layer and keep it at its default xy position of 0,0, Dynamic Media Classic will not expose a **Position** property. To fix, move the layer at least one pixel. Now Dynamic Media Classic will expose **Position** as a property you can parameterize.
+   * To add a parameter to the show/hide property (which turns the layer on and off ), click the **Show** or **Hide Layer** icon to toggle the layer off (you can turn it back on afterwards if you want). Dynamic Media Classic will now expose a **Hide** property that can be parameterized.
 
 3. Rename the default parameter names to something that will be easier to identify in the URL. For example, if you want to add a parameter to change the banner layer on top of an image, change the default name of "layer\_2\_src" to"banner."
-4. Press **Close** to exit the Parametersscreen.
+4. Press **Close** to exit the Parameters screen.
 5. Repeat this process for other layers by clicking the **Parameters** button and adding and renaming parameters.
 6. Save your changes when done.
 
 >[!TIP]
 >
 >Rename your parameters to something meaningful, and develop a naming convention to standardize those names. Be sure the naming convention is agreed upon in advance by both the design and development teams.
-
->[!TIP]
 >
->Can't add a paramter because you don't see the property? Just change the property of the layer from its default (by moving, resizing, hiding, etc.) and you should now see that property exposed.
+>Can't add a parameter because you don't see the property? Just change the property of the layer from its default (by moving, resizing, hiding, etc.). You should now see that property exposed.
 
 Learn more about [Template Parameters](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template-parameters.html).
 
@@ -256,7 +253,7 @@ The good news is that Dynamic Media Classic generates the RTF for you. Whenever 
 You can create text layers in a template in Dynamic Media Classic in the following two ways:
 
 1. Text tool in Dynamic Media Classic. We'll discuss this method below. The Template Basics editor has a tool that lets you create a text box, enter text and format the text. Dynamic Media Classic generates the RTF as needed and places it in a separate layer.
-2. Extract Text (on upload). The other method is to create the text layer in Photoshop and save it in the PSD as a normal text layer (instead of rasterizing it as an image layer). You then upload the file to Dynamic Media Classic and use the **Extract**  **Text** option. Dynamic Media Classic will convert each Photoshop text layer to an Image Serving text layer using RTF commands. If you use this method, make sure you first upload your fonts to Dynamic Media Classic, otherwise Dynamic Media Classic will substitute a default font on upload, and there is no easy way to re-substitute the correct font.
+2. Extract Text (on upload). The other method is to create the text layer in Photoshop and save it in the PSD as a normal text layer (instead of rasterizing it as an image layer). You then upload the file to Dynamic Media Classic and use the **Extract Text** option. Dynamic Media Classic will convert each Photoshop text layer to an Image Serving text layer using RTF commands. If you use this method, make sure you first upload your fonts to Dynamic Media Classic, otherwise Dynamic Media Classic will substitute a default font on upload, and there is no easy way to re-substitute the correct font.
 
 ### The Text Editor
 
@@ -264,7 +261,7 @@ You enter text using the Text Editor. The Text Editor is a WYSIWYG interface tha
 
 ![image](assets\basic-templates\Basic_Templates_9.jpg)
 
-*Template Basics Text Editor*
+*Template Basics Text Editor.*
 
 You'll do most of your work in the **Preview** tab, which allows you to enter text and see it displayed as it will look in the template. There is also a **Source** tab, which is used to manually edit the RTF, if necessary.
 
@@ -279,20 +276,20 @@ Here are the workflow steps for adding text inside the Template Basics build pag
 1. Click the **Text** tool button at the top of the buildpage.
 2. Drag out a text box where you want text to appear. The Text Editor window will open in a modal window. In the background,you will see your template, however it is not editable until you finish editing the text.
 3. Type the sample text you want to appear when the template is first loaded. For example, if you are creating a text box for a personalized email image, your text might say "Hi Name. Now is the time to save!" Later you'd add a text parameter to replace Name with a value you send on the URL. Your text will not appear in the template beneath the window until you click **Apply**.
-4. Toformatyourtext,select it by dragging with your mouse and choose a formatting control in the UI.
+4. To format your text,select it by dragging with your mouse and choose a formatting control in the UI.
 
-  * Don't forget to select the text first. Otherwise you won't be able to apply anyformatting.
-  * There are many formatting options. Some of the most common are font (face), font size and font color,as well as left/center/right justification.
-  * To choose a different font, make sure you select the text and open the Font menu. The editor will show a list of all fonts uploaded to Dynamic Media Classic. If a font is also installed on your computer, it will show up in black. If it is not installed on your computer, it will show in red. However, it will still render in the preview window when you click **Apply**. You only need to upload fonts to Dynamic Media Classic to make them available to anyone using Dynamic Media Classic. Once you publish, the Image Server will use those fonts to generate the text — your users do not need to install any fonts to see the text you create because it part of an image.
-  * Unlike Photoshop and Illustrator, the Image Server can align your text vertically in the text box. The default is top alignment. To change this, select your text and choose **Middle** or **Bottom** from the **Vertical Alignment** menu.
-  * If you make the text too large for the box (or your text box is too small), all or part of it will get clipped and disappear. Reduce the font size or make the box larger.
+   * There are many formatting options. Some of the most common are font (face), font size and font color,as well as left/center/right justification.
+   * Don't forget select the text first. Otherwise you won't be able to apply anyformatting.
+   * To choose a different font, make sure you select the text and open the Font menu. The editor will show a list of all fonts uploaded to Dynamic Media Classic. If a font is also installed on your computer, it will show up in black. If it is not installed on your computer, it will show in red. However, it will still render in the preview window when you click **Apply**. You only need to upload fonts to Dynamic Media Classic to make them available to anyone using Dynamic Media Classic. Once you publish, the Image Server will use those fonts to generate the text — your users do not need to install any fonts to see the text you create because it part of an image.
+   * Unlike Photoshop and Illustrator, the Image Server can align your text vertically in the text box. The default is top alignment. To change this, select your text and choose **Middle** or **Bottom** from the **Vertical Alignment** menu.
+   * If you make the text too large for the box (or your text box is too small), all or part of it will get clipped and disappear. Reduce the font size or make the box larger.
 
-5. Click **Apply** to see your changes take effect in the work area window. You must click **Apply** , or else you will lose your edits.
+5. Click **Apply** to see your changes take effect in the work area window. You must click **Apply**, or else you will lose your edits.
 6. When you are finished, click **Close**. If you want to go back to editing mode, double-click on the text layer to re-open the Text Editor.
 
 The text editor will preview exactly how big the font will be if you have the font installed locally on your system.
 
-### Adding Parameters to Text Layers
+### About Adding Parameters to Text Layers
 
 We now follow a similar process for adding text parameters as we did for layer parameters. Text layers can also take layer parameters for size, position, and so on; however, they can take additional parameters that allow you to control any aspect of the RTF.
 
@@ -358,7 +355,7 @@ Unlike Image Presets, which have a dollar sign ($) on each side of the preset na
 
 `$text=46-inch LCD HDTV`
 
-### Incorrect:
+**Incorrect:**
 
 `$text$=46-inch LCD HDTV`
 
@@ -368,4 +365,6 @@ Unlike Image Presets, which have a dollar sign ($) on each side of the preset na
 
 As noted earlier, parameters are used to change the template. If you call the template without parameters, it will revert back to its default settings as designed in the Template Basics authoring tool. If a property does not need to change, you don't need to set a parameter.
 
-![image](assets\basic-templates\Sandals_without_with_parameters.png) 
+![image](assets\basic-templates\Sandals_without_with_parameters.png)
+
+*Examples of a template without setting parameters (above) and with parameters (below).*

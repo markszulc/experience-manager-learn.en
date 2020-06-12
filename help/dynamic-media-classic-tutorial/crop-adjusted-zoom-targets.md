@@ -54,7 +54,7 @@ If you upload an image with too much whitespace (extra canvas) around the main s
 
 Compare these two versions of the same image.
 
-![image](assets\crop-adjusted-zoom-targets\TrimCropping.jpg) 
+![image](assets\crop-adjusted-zoom-targets\TrimCropping.jpg)
 
 The image on the right is made much more prominent by removing the extra space around the product. Trimming can be done one image at a time, using the Crop tool, or run as a batch process as you upload. We recommend running as a batch process if you want all your images to be consistently.
 
@@ -63,10 +63,8 @@ cropped to the boundaries of the main subject. Trim crops to the bounding box �
 >[!NOTE]
 >
 >Trim does not create transparency around the image. For that, you would need to embed a clipping path on the image and use the **Create Mask from Clip Path** upload option.
-
->[!NOTE]
 >
->To restore an image to its original state after you've cropped it when you've used the **Save** option, display the image in the Crop Editor screen and select the **Reset** button.
+>Also, to restore an image to its original state after you've cropped it when you've used the **Save** option, display the image in the Crop Editor screen and select the **Reset** button.
 
 ### *Cropping on Upload*
 
@@ -85,7 +83,6 @@ Although it is not obvious in Dynamic Media Classic, you can also crop purely th
 Whenever you use the Crop tool, you will see URL values in the field at the bottom. You can take those values and apply them directly to an image as URL modifiers.
 
 ![image](assets\crop-adjusted-zoom-targets\Cropping-by-URL.png)
-
 *Crop command modifiers at the bottom of the Crop Editor*
 
 ![image](assets\crop-adjusted-zoom-targets\Uncropped_Cropped.png)
@@ -106,7 +103,7 @@ The crop will now be part of that Image Preset and be applied automatically ever
 
 When you use the Crop tool, you have the option to **Save as Additional View of Master**. When saved, this creates a new kind of Dynamic Media Classic asset — an Adjusted Image. An Adjusted Image, also called a derivative, is a virtual image. It's not actually an image at all; it's a database reference (like an alias or shortcut) to the physical master image.
 
-### Will the Real Image Please Stand Up?
+### Will the Real Image Please Stand Up`?`
 
 Can you tell which is the master, and which is the Adjusted Image?
 
@@ -123,7 +120,6 @@ You typically create Adjusted Images with the Crop tool; however they can also b
 Adjusted Images require a unique Asset ID. When published (you must publish like any other asset), they act as any other image and are called on a URL by their Asset ID. On the Detail page, you can view Adjusted Images associated with a master image under the **Built &amp; Derivatives** tab.
 
 ![image](assets\crop-adjusted-zoom-targets\Derivatives.jpg)
-
 *Adjusted Views for master image ASIAN\_BR\_MAIN*
 
 ## Zoom Targets
@@ -144,7 +140,7 @@ Learn how to [Create Zoom Targets](https://docs.adobe.com/content/help/en/dynami
 
 ![image](assets\crop-adjusted-zoom-targets\Zoom-targets.jpg)
 
-#### Using the Zoom Target Tool
+### Using the Zoom Target Tool
 
 Here is the workflow for creating targets in Dynamic Media Classic.
 
@@ -152,21 +148,21 @@ Here is the workflow for creating targets in Dynamic Media Classic.
 2. The Zoom Target Editor will load. You'll see your image in the middle, some buttons at the top and an empty target panel on the right. In the lower left, you'll see a Viewer Preset selected. The default is "Zoom1-Guided."
 3. Move the red box with your mouse and click to create a new target.
 
-  * The red box is the target area. When a user clicks on that target, it will zoom in to the area inside the box.•
-  * The target size is determined by the view size inside the Viewer Preset. This determines the size of the main zoom image. See *Setting the View Size*, below.
+    * The red box is the target area. When a user clicks on that target, it will zoom in to the area inside the box.
+    * The target size is determined by the view size inside the Viewer Preset. This determines the size of the main zoom image. See *Setting the View Size*, below.
 
 4. You'll see the target you just created turn blue, and on the right you'll see a thumbnail version of that target, as well as the default name"target-0."
 5. To rename your target, click its thumbnail, type a new **Name** , and click **Enter** or **Tab** — if you just click away, your name won't be saved.
 6. While the target is selected, the box will have green dashed lines around it, and you can resize and move it. Drag the corners to resize, or drag the target box to move it.
 
-![image](assets\crop-adjusted-zoom-targets\Zoom-target-green-box.jpg)
+    * This will load the image inside the default Custom zoom viewer. Make sure the Viewer Preset supports Zoom Targets — in general, all standard presets that have the word "-Guided" were designed for use with Zoom Targets. To use the targets, hover over the target thumbnail (or hotspot icon) to see the label, and click on it to see the viewer zoom into that feature.
+    * Just like all other work you do in Dynamic Media Classic, you must publish for your Zoom Targets to be live on the web. If you already are using a viewer that supports targets, they will appear immediately (once the cache has cleared). However if you are not using a ZoomTarget-enabled viewer, they will remain hidden.
+  
+    * ![image](assets\crop-adjusted-zoom-targets\Zoom-target-green-box.jpg)
 
-7. Also, if you need to remove a target, select it by clicking on its thumbnail, and press the **Delete**  **Target** button, press the DELETE key on yourkeyboard.
+7. Also, if you need to remove a target, select it by clicking on its thumbnail, and press the **Delete Target** button, press the DELETE key on your keyboard.
 8. Continue clicking to add new targets,renaming and/or resizing after adding.
 9. When you are done, click the **Save** button, and then **Preview**.
-
-  * This will load the image inside the default Custom zoom viewer. Make sure the Viewer Preset supports Zoom Targets — in general, all standard presets that have the word "-Guided" were designed for use with Zoom Targets. To use the targets, hover over the target thumbnail (or hotspot icon) to see the label, and click on it to see the viewer zoom into that feature.
-  * Just like all other work you do in Dynamic Media Classic, you must publish for your Zoom Targets to be live on the web. If you already are using a viewer that supports targets, they will appear immediately (once the cache has cleared). However if you are not using a ZoomTarget-enabled viewer, they will remain hidden.
 
 ### Setting the View Size in the Zoom Viewer Preset
 

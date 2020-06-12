@@ -30,7 +30,7 @@ Whenever a URL requests an image that is missing, the Image Server generates an 
 
 ![image](assets\valuable-reports\Reports_2.jpg)
 
-*Image Error report*
+*Image Error report.*
 
 ## Conclusion
 
