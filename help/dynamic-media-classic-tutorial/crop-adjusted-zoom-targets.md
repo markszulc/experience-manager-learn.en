@@ -158,7 +158,7 @@ Here is the workflow for creating targets in Dynamic Media Classic.
     * This will load the image inside the default Custom zoom viewer. Make sure the Viewer Preset supports Zoom Targets — in general, all standard presets that have the word "-Guided" were designed for use with Zoom Targets. To use the targets, hover over the target thumbnail (or hotspot icon) to see the label, and click on it to see the viewer zoom into that feature.
     * Just like all other work you do in Dynamic Media Classic, you must publish for your Zoom Targets to be live on the web. If you already are using a viewer that supports targets, they will appear immediately (once the cache has cleared). However if you are not using a ZoomTarget-enabled viewer, they will remain hidden.
   
-    * ![image](assets\crop-adjusted-zoom-targets\Zoom-target-green-box.jpg)
+        ![image](assets\crop-adjusted-zoom-targets\Zoom-target-green-box.jpg)
 
 7. Also, if you need to remove a target, select it by clicking on its thumbnail, and press the **Delete Target** button, press the DELETE key on your keyboard.
 8. Continue clicking to add new targets,renaming and/or resizing after adding.
