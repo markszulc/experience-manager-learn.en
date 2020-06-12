@@ -12,7 +12,7 @@ audience : all
 activity: use
 ---
 
-# Introduction to Basic Templates {#basic-templates}
+# Introduction to Basic Templates - TEST {#basic-templates}
 
 In Dynamic Media Classic terms, a template is a document that can be changed dynamically via the URL after the template has been published. Dynamic Media Classic offers Basic Templates, image-based templates called from the Image Server and consisting of images and rendered text.
 
