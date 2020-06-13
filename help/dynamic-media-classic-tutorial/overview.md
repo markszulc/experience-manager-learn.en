@@ -45,7 +45,7 @@ To discover additional capabilities of the solution, visit the [Documentation fo
 
 The Dynamic Media Classic main UI consists of three major areas: the Global Navigation bar, Asset Library, and Browse Panel/Build Panel.
 
-![image](assets\overview\Overview-DMC-UI-New.png)
+![image](assets/overview/overview-dmc-ui-ew.png)
 *Dynamic Media Classic UI*
 
 **Global Navigation Bar.** Located at the top of your screen, you'll use the buttons on this bar to access key areas and capabilities of the solution. For example, you'll use it to access upload capabilities, open various asset building areas (image set, spin set, etc.), perform important tasks such as setting up Image Presets and Viewer Presets, and publish your assets. From here you can also monitor your jobs, see recent activities, and choose from a variety of help options.
@@ -62,7 +62,7 @@ The Dynamic Media Classic main UI consists of three major areas: the Global Navi
 >
 >Beside each Asset ID is the **Mark for Publish** switch. When the toggle is on (green), that indicates that the asset is marked for publish.
 
-![image](assets\overview\Overview-Mark-for-Publish.png)
+![image](assets/overview/overview-mark-for-publish.png)
 
 >[!TIP]
 >

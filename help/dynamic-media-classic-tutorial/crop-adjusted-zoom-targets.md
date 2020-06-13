@@ -40,7 +40,7 @@ Dynamic Media Classic has a few image editing tools conveniently available in th
 You can access the Crop tool in Dynamic Media Classic from the Details page for an asset or by clicking the **Edit** button. You can use the tool to crop in two ways:
 
 * The default cropping mode in which you drag the handles of the crop window or type values in the Size box. Learn how to [Manually Crop](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
-* Trim. Use this to remove extra whitespace around your image by calculating the number of pixels that do not match your image. Learn how to [Crop by](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image)[Trimming](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
+* Trim. Use this to remove extra whitespace around your image by calculating the number of pixels that do not match your image. Learn how to [Crop by Trimming](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
 
 ### *Manual Cropping*
 
@@ -54,7 +54,7 @@ If you upload an image with too much whitespace (extra canvas) around the main s
 
 Compare these two versions of the same image.
 
-![image](assets\crop-adjusted-zoom-targets\TrimCropping.jpg)
+![image](assets/crop-adjusted-zoom-targets/trim-cropping.jpg)
 
 The image on the right is made much more prominent by removing the extra space around the product. Trimming can be done one image at a time, using the Crop tool, or run as a batch process as you upload. We recommend running as a batch process if you want all your images to be consistently.
 
@@ -82,10 +82,10 @@ Although it is not obvious in Dynamic Media Classic, you can also crop purely th
 
 Whenever you use the Crop tool, you will see URL values in the field at the bottom. You can take those values and apply them directly to an image as URL modifiers.
 
-![image](assets\crop-adjusted-zoom-targets\Cropping-by-URL.png)
+![image](assets/crop-adjusted-zoom-targets/cropping-by-url.png)
 *Crop command modifiers at the bottom of the Crop Editor*
 
-![image](assets\crop-adjusted-zoom-targets\Uncropped_Cropped.png)
+![image](assets/crop-adjusted-zoom-targets/uncropped-cropped.png)
 
 Because the size has to be calculated on a per image basis when you use cropping by trimming, it cannot be automated via the URL. Trim cropping can only be run on upload or by applying it one image at a time.
 
@@ -93,8 +93,7 @@ Because the size has to be calculated on a per image basis when you use cropping
 
 Image Presets have a field where you can add extra Image Serving commands. To add the same crop as above to your Image Preset, edit your preset and paste or type the values in the URL Modifiers field, and then save andpublish.
 
-![image](assets\crop-adjusted-zoom-targets\CroppinginImagePreset.jpg)
-
+![image](assets/crop-adjusted-zoom-targets/cropping-in-image-preset.jpg)
 *Add crop commands (or any command) to the URL Modifiers of the Image Preset.*
 
 The crop will now be part of that Image Preset and be applied automatically every time it is used. Of course, this method depends on all images needing the same crop amount. If your images are not all shot in the same way, this method wouldn't work for you.
@@ -113,20 +112,20 @@ You should not be able to tell without looking in Dynamic Media Classic and seei
 
 An Adjusted Image uses no disk space, since it only exists as a line item in the database. It is also permanently tied to the original asset; if the original is deleted, the Adjusted Image would also be deleted. It can consist of an entire, uncropped image or just part of an image (a crop).
 
-![image](assets\crop-adjusted-zoom-targets\Adjusted_Image.png)
+![image](assets/crop-adjusted-zoom-targets/adjusted-image.png)
 
 You typically create Adjusted Images with the Crop tool; however they can also be created with the other image editors — the Adjust and Sharpen tools.
 
 Adjusted Images require a unique Asset ID. When published (you must publish like any other asset), they act as any other image and are called on a URL by their Asset ID. On the Detail page, you can view Adjusted Images associated with a master image under the **Built &amp; Derivatives** tab.
 
-![image](assets\crop-adjusted-zoom-targets\Derivatives.jpg)
+![image](assets/crop-adjusted-zoom-targets/derivatives.jpg)
 *Adjusted Views for master image ASIAN\_BR\_MAIN*
 
 ## Zoom Targets
 
 Zoom Targets are also found on the **Edit** menu and **Details** page of an image. They allow you to set “hot spots” to highlight specific merchandising features of a zoom image. Instead of creating separate images by cropping a large master, the zoom viewer can serve up the details on top of the image, along with a short label that you create.
 
-![image](assets\crop-adjusted-zoom-targets\Arm-with-watch.jpg)
+![image](assets/crop-adjusted-zoom-targets/arm-with-watch.jpg)
 
 Because Zoom Targets are essentially a merchandising feature and require knowledge of the selling points of a product, they would typically be created by a person in the Merchandising or Product team at acompany.
 
@@ -138,13 +137,13 @@ Another factor in deciding whether to use Zoom Targets is your choice of viewer.
 
 Learn how to [Create Zoom Targets](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html#creating-and-editing-zoom-targets).
 
-![image](assets\crop-adjusted-zoom-targets\Zoom-targets.jpg)
+![image](assets/crop-adjusted-zoom-targets/zoom-targets.jpg)
 
 ### Using the Zoom Target Tool
 
 Here is the workflow for creating targets in Dynamic Media Classic.
 
-1. Browse to your image, click the **Edit** button, and choose **Zoom**** Targets**.
+1. Browse to your image, click the **Edit** button, and choose **Zoom Targets**.
 2. The Zoom Target Editor will load. You'll see your image in the middle, some buttons at the top and an empty target panel on the right. In the lower left, you'll see a Viewer Preset selected. The default is "Zoom1-Guided."
 3. Move the red box with your mouse and click to create a new target.
 
@@ -158,7 +157,7 @@ Here is the workflow for creating targets in Dynamic Media Classic.
     * This will load the image inside the default Custom zoom viewer. Make sure the Viewer Preset supports Zoom Targets — in general, all standard presets that have the word "-Guided" were designed for use with Zoom Targets. To use the targets, hover over the target thumbnail (or hotspot icon) to see the label, and click on it to see the viewer zoom into that feature.
     * Just like all other work you do in Dynamic Media Classic, you must publish for your Zoom Targets to be live on the web. If you already are using a viewer that supports targets, they will appear immediately (once the cache has cleared). However if you are not using a ZoomTarget-enabled viewer, they will remain hidden.
   
-        ![image](assets\crop-adjusted-zoom-targets\zoom-target-green-box.jpg)
+        ![image](assets/crop-adjusted-zoom-targets/zoom-target-green-box.jpg)
 
 7. Also, if you need to remove a target, select it by clicking on its thumbnail, and press the **Delete Target** button, press the DELETE key on your keyboard.
 8. Continue clicking to add new targets,renaming and/or resizing after adding.
@@ -174,7 +173,7 @@ However, by default the view size is blank (set to 0 x 0), because the size of t
 
 When you load the Zoom Target tool, the view size is displayed next to the name of the preset. Compare the view size between the built-in Zoom1-Guided preset, and the custom ZT\_AUTHORING preset.
 
-![image](assets\crop-adjusted-zoom-targets\View-size.jpg)
+![image](assets/crop-adjusted-zoom-targets/view-size.jpg)
 
 You can see the built-in preset has a size of 900 x 550, which means that the target can never get smaller than that rather large size. That’s probably too large — if you have a 2000 pixel image, you can only call out a feature that is a minimum of 900 pixels across. The user can manually zoom further, but you can’t guide them any closer. Setting a view size to 350 x 350 allows targets to zoom in pretty closely or be resized larger. But if you want a larger zoom image in your viewer, you’d need to create a new preset because yours is locked at 350 pixels.
 

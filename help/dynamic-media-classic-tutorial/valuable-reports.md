@@ -20,16 +20,14 @@ In this final chapter, we just want you to know about two valuable reports you m
 
 The Bandwidth &amp; Storage report details how much Image Server bandwidth has been consumed per month and the storage you are taking up on Dynamic Media Classic. Storage is a contracted amount, so it's important to check and ensure you remain under your limit to avoid overage fees.
 
-![image](assets\valuable-reports\Reports_1.jpg)
-
+![image](assets/valuable-reports/reports-1.jpg)
 *The Bandwidth &amp; Storage report shows this account as way over its 30GB storage limit.*
 
 ## Image Errors Report
 
 Whenever a URL requests an image that is missing, the Image Server generates an error. You can set up a default image to appear in these cases, but you still should be aware of the errors. The Image Errors report gives you a list of the 20 most frequent image errors over the past 24 hours with details such as how many times the error has occurred, the image giving the error, and the page with the problem image. If the Response is "DEFAULT," this means that your default image was served instead.
 
-![image](assets\valuable-reports\Reports_2.jpg)
-
+![image](assets/valuable-reports/reports-2.jpg)
 *Image Error report.*
 
 ## Conclusion

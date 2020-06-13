@@ -20,7 +20,7 @@ If you look at the URLs of just about any Dynamic Media Classic customer, you'll
 
 Image Presets shorten the URL, so instead of writing out several Image Serving instructions per request, you can write a single Image Preset. For example, these two URLs produce the same 300 x 300 JPEG image with sharpening, but the second one uses an Image Preset:
 
-![image](assets\image-presets\Image-Preset.png)
+![image](assets/image-presets/image-preset.png)
 
 The true value of Image Presets is that any Company Administrator can update the definition of that Image Preset and affect every image using that format — without changing any web code. You will see the results of any change to an Image Preset after the cache for the URL clears.
 
@@ -46,7 +46,6 @@ We expect that the high resolution images you upload into Dynamic Media Classic 
 >[!TIP]
 >
 >Always sharpen when resizing images! That means that you'll need to add sharpening to every Image Preset (and Viewer Preset, which we'll discuss later).
->[!NOTE]
 >
 >If your images do not look good, chances are it is because they need sharpening or perhaps the quality was poor to begin with.
 
@@ -54,7 +53,7 @@ How much sharpening to add is entirely subjective. Some people like softer image
 
 The following graphic shows three levels of sharpening. From right to left you have no sharpening, just the right amount, and too much.
 
-![image](assets\image-presets\Image_Presets_1.jpg)
+![image](assets/image-presets/image-presets-1.jpg)
 
 Dynamic Media Classic allows for three types of sharpening: Simple Sharpening, Resample Mode, and Unsharp Mask.
 

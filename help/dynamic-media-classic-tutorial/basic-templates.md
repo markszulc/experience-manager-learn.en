@@ -67,8 +67,7 @@ Template projects can be relatively simple or extremely complex depending on the
 
 When working with a Basic Template, you usually follow the workflow steps in the diagram below. Steps marked with dotted lines are optional if you are using dynamic text layers, and are indicated in the instructions below as "Text Workflow." If not using text, follow the main path only.
 
-![image](assets\basic-templates\Basic_Templates_1.png)
-
+![image](assets/basic-templates/basic-templates-1.png)
 *The Basic Template workflow.*
 
 1. Design and create your assets. Most users do this in Adobe Photoshop. Design assets at the exact size you need — if it is a 200 pixel image for a thumbnail page, design it at 200 pixels. If you need to zoom on it, design it at a size of about 2000 pixels. Use Photoshop (and/or Illustrator saved as bitmap) to create the assets, and use Dynamic Media Classic to assemble the parts together, manage the layers, and add variables.
@@ -86,20 +85,19 @@ Before uploading your template assets to Dynamic Media Classic, you will need to
 
 Before uploading your Photoshop file to Dynamic Media Classic, simplify the layers in Photoshop to make it easier to work with and to have greatest compatibility with the Image Server. Your PSD file will often consist of many elements that Dynamic Media Classic does not recognize, and you may also end up with many little pieces that are difficult to manage. Be sure to save a backup of your master PSD in case you need to later edit the original. You will upload the simplified copy, and not the master.
 
-![image](assets\basic-templates\Basic_Templates_2.jpg)
+![image](assets/basic-templates/basic-templates-2.jpg)
 
 1. Simplify the layer structure by merging/flattening related layers that need to be turned on/off together into a single layer. For example, the label "NEW" and the blue banner are merged into a single layer so you can show or hide them with a single click.
-
-![image](assets\basic-templates\Basic_Templates_3.jpg)
+![image](assets/basic-templates/basic-templates-3.jpg)
 2. Some layers types and layer effects are not supported by Dynamic Media Classic or the Image Server and need to be rasterized prior to upload. Otherwise the effects might be ignored, or the layers discarded. Rasterizing a layer means converting if from being editable to being noneditable. To rasterize layer effects or text layers, create an empty layer, select both and merge using **Layers > Merge Layers** or CTRL + E/CMD +E.
 
-* Dynamic Media Classic cannot group or link layers. All layers in a group or linked set will be converted to separate layers that are no longergrouped/linked.
-* Layer masks will be converted to transparency on upload.
-* Adjustment layers are not supported and will be discarded.
-* Fill layers, such as Solid Color layers, will be rasterized.
-* Smart Object layers and vector layers will be rasterized into normal images on upload and Smart Filters will be applied andrasterized.
-* Text layers will also be rasterized unless you use the Extract Text option—see below for more information.
-* Most layer effects will be ignored and only a few blend modes are supported. If in doubt, add simple effects in Dynamic Media Classic (such as inner or drop shadows, inner or outer glows), or use a blank layer to merge and rasterize the effect in Photoshop.
+   * Dynamic Media Classic cannot group or link layers. All layers in a group or linked set will be converted to separate layers that are no longergrouped/linked.
+   * Layer masks will be converted to transparency on upload.
+   * Adjustment layers are not supported and will be discarded.
+   * Fill layers, such as Solid Color layers, will be rasterized.
+   * Smart Object layers and vector layers will be rasterized into normal images on upload and Smart Filters will be applied andrasterized.
+   * Text layers will also be rasterized unless you use the Extract Text option—see below for more information.
+   * Most layer effects will be ignored and only a few blend modes are supported. If in doubt, add simple effects in Dynamic Media Classic (such as inner or drop shadows, inner or outer glows), or use a blank layer to merge and rasterize the effect in Photoshop.
 
 ### Working with Fonts
 
@@ -113,8 +111,7 @@ After fonts are uploaded to Dynamic Media Classic, like any other asset, they mu
 
 Be aware that fonts have multiple internal names that are often different from their external filename. You can see all their different names on the Details page for that asset in Dynamic Media Classic. Here are the names for the font Adobe Caslon Pro Semibold, listed under the Metadata tab in Dynamic Media Classic:
 
-![image](assets\basic-templates\Basic_Templates_4.jpg)
-
+![image](assets/basic-templates/basic-templates-4.jpg)
 *Metadata tab on the Details page for a font in Dynamic Media Classic.*
 
 Dynamic Media Classic uses the filename of this font (ACaslonPro-Semibold) as its Asset ID, however that is not the name used by the template. The template uses the Rich Text Format (RTF) Name, listed at the bottom. RTF is the native "language" of the Image Server text engine.
@@ -143,8 +140,7 @@ Let's first get familiar with the editing interface.
 
 In the left center is your work area showing a preview of your final template. On the right side are the Layers and Layer Properties panels. These areas are where you will be doing the most work.
 
-![image](assets\basic-templates\Basic_Templates_5.jpg)
-
+![image](assets/basic-templates/basic-templates-5.jpg)
 *Build Template Basics page.*
 
 * **Preview/Work Area.** This is the main window. Here you can move, resize, and rotate layers with your mouse. Layer outlines are shown as dashedlines.
@@ -176,7 +172,7 @@ The Image Server supports a few programmatic layer effects — special effects t
 * **Outer Glow**. Applies a glow effect evenly around all edges of thelayer.
 * **Inner Glow**. Applies a glow effect evenly inside all edges of the layer.
 
-![image](assets\basic-templates\Basic_Templates_6.jpg)
+![image](assets/basic-templates/basic-templates-6.jpg)
 *A layer with and without a drop shadow*
 
 To add an effect, click **Add Effect**, and choose an effect from the menu. Like normal layers, you can select an effect in the Layers panel and use the Layer Properties panel to adjust its settings.
@@ -193,7 +189,7 @@ In Dynamic Media Classic terms, a parameter is a variable that can be linked to 
 
 If you don't add a parameter for a property,that property remains hidden in the Dynamic Media Classic database and doesn't show up in the URL.
 
-![image](assets\basic-templates\Parameters.png)
+![image](assets/basic-templates/parameters.png)
 
 Without parameters, your URLs would typically be much longer, especially if you are also using dynamic text. Text adds many dozens of extra characters onto each URL.
 
@@ -259,8 +255,7 @@ You can create text layers in a template in Dynamic Media Classic in the followi
 
 You enter text using the Text Editor. The Text Editor is a WYSIWYG interface that allows you enter and format your text using formatting controls similar to those in Photoshop or Illustrator.
 
-![image](assets\basic-templates\Basic_Templates_9.jpg)
-
+![image](assets/basic-templates/basic-templates-9.jpg)
 *Template Basics Text Editor.*
 
 You'll do most of your work in the **Preview** tab, which allows you to enter text and see it displayed as it will look in the template. There is also a **Source** tab, which is used to manually edit the RTF, if necessary.
@@ -295,11 +290,11 @@ We now follow a similar process for adding text parameters as we did for layer p
 
 Unlike layer parameters, you only select the value you want to change and add a parameter to that rather than add a parameter to the entire property.
 
-![image](assets\basic-templates\Basic_Templates_10.jpg)
+![image](assets/basic-templates/basic-templates-10.jpg)
 
 Sample RTF:
 
-![image](assets\basic-templates\Sample_RTF.png)
+![image](assets/basic-templates/sample-rtf.png)
 
 When examining the RTF, you need to figure out where each setting is that you want to change. In the RTF above, some of it might make some sense and you can see where the formatting comes from.
 
@@ -347,7 +342,7 @@ Learn more about [Publishing Your Template](https://docs.adobe.com/content/help/
 
 A Basic Template has the same essential URL syntax as a normal image call as explained earlier. A template will typically have more modifiers — commands separated by an ampersand (&amp;) — such as parameters with values. However the main difference is that you call to the template as your main image,instead of calling to a static image.
 
-![image](assets\basic-templates\Basic_Templates_11.jpg)
+![image](assets/basic-templates/basic-templates-11.jpg)
 
 Unlike Image Presets, which have a dollar sign ($) on each side of the preset name, parameters have a single dollar sign at the beginning. The placement of those dollar signs is important.
 
@@ -365,6 +360,5 @@ Unlike Image Presets, which have a dollar sign ($) on each side of the preset na
 
 As noted earlier, parameters are used to change the template. If you call the template without parameters, it will revert back to its default settings as designed in the Template Basics authoring tool. If a property does not need to change, you don't need to set a parameter.
 
-![image](assets\basic-templates\Sandals_without_with_parameters.png)
-
+![image](assets/basic-templates/sandals-without-with-parameters.png)
 *Examples of a template without setting parameters (above) and with parameters (below).*

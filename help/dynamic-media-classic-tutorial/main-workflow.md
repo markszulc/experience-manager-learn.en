@@ -16,7 +16,7 @@ activity: use
 
 Dynamic Media supports a Create (and Upload), Author (and Publish), and Deliver workflow process. You start by uploading assets, then doing something with those assets such as building an Image Set, and finally publishing to make them live. The Build step is optional for some workflows. For example, if your goal is to only do dynamic sizing and zoom on images or convert and publish video for streaming, there are no necessary build steps.
 
-![image](assets\main-workflow\Create-Author-Deliver.jpg)
+![image](assets/main-workflow/create-author-deliver.jpg)
 
 The workflow in Dynamic Media Classic solutions consists of three main steps:
 
@@ -37,7 +37,7 @@ You can upload source content in several different ways:
 
 The default mode is From Desktop, where you browse for files on your local network and start the upload.
 
-![image](assets\main-workflow\Upload.jpg)
+![image](assets/main-workflow/upload.jpg)
 
 >[!TIP]
 >
@@ -73,7 +73,7 @@ Uploading is the first necessary step in any workflow because Dynamic Media Clas
 
 When you upload an image of any type to Dynamic Media Classic, it is converted to a master image format called a Pyramid TIFF, or P-TIFF. A P-TIFF is similar to the format of a layered TIFF bitmap image, except that instead of different layers, the file contains multiple sizes (resolutions) of the same image.
 
-![image](assets\main-workflow\Pyramid_P-TIFF.png)
+![image](assets/main-workflow/pyramid-p-tiff.png)
 
 As the image is converted, Dynamic Media Classic takes a "snapshot" of the full size of the image, scales that by half and saves it, scales it by half again and saves it, and so on until it is filled with even multiples of the original size. For example, a 2000 pixel P-TIFF will have 1000, 500, 250, and 125 pixel sizes (and smaller) in the same file. The P-TIFF file is the format of what's called a "master image" in Dynamic Media Classic.
 
@@ -120,7 +120,7 @@ The final product of a Dynamic Media Classic workflow is a URL that points to th
 
 Here is the syntax for the URL of an image with a couple of examples:
 
-![image](assets\main-workflow\DMC_URL.jpg)
+![image](assets/main-workflow/dmc-url.jpg)
 
 In the URL, everything to the left of the question mark is the virtual path to a specific image. Everything  to the right of the question mark is an Image Server modifier, an instruction for how to process the image. When you have multiple modifiers, they are separated by ampersands.
 
@@ -154,7 +154,7 @@ In the Deliver step, you must integrate those URLs into your web site, mobile ap
 
 Example of integrating the Dynamic Media Classic URL for an image into a website:
 
-![image](assets\main-workflow\ExampleURL1.png)
+![image](assets/main-workflow/example-url-1.png)
 
 The URL in red is the only element specific to Dynamic Media Classic.
 
@@ -164,7 +164,7 @@ For more complex solutions such as zoom viewers, or viewers that combine zoom wi
 
 Example of a link (in red) that will open an Image Set in a viewer in a new pop-up window:
 
-![image](assets\main-workflow\ExampleURL2.png)
+![image](assets/main-workflow/example-url-2.png)
 
 >[!IMPORTANT]
 >

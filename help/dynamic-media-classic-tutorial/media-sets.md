@@ -37,12 +37,12 @@ Let's learn about the four types of sets you can create in Dynamic Media Classic
 
 This is the most common type of set. You'll typically use it for alternate views of the same item. It consists of multiple images that you load into the viewer by clicking on the associated thumbnail of that image.
 
-![image](assets\media-sets\ImageSet1.jpg)
+![image](assets/media-sets/image-set-1.jpg)
 *Example of an Image Set*
 
 The URL for the above Image Set could appear as:
 
-![image](assets\media-sets\ImageSetURL1.png)
+![image](assets/media-sets/image-set-url-1.png)
 
 * Learn more about Image Sets with the [Quick Start to Image Sets](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sets/quick-start-image-sets.html).
 * Learn how to [Create an Image Set](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sets/creating-image-set.html#creating-an-image-set).
@@ -55,12 +55,12 @@ The main difference between a Swatch and Image Set is that Swatch Sets use a dif
 
 Swatch Sets do not colorize images (a common misconception). The images are simply being swapped, exactly as in an Image Set. The mini swatch images could have been authored using Photoshop, each color could have been photographed separately, or the Crop tool in Dynamic Media Classic could have been used to make a swatch out of one of the colored images.
 
-![image](assets\media-sets\ImageSet2.jpg)
+![image](assets/media-sets/image-set-2.jpg)
 *Example of a Swatch Set*
 
 The URL for the above Swatch Set could appear as:
 
-![image](assets\media-sets\ImageSet_URL.png)
+![image](assets/media-sets/image-set_url.png)
 
 * Learn more about Swatch Sets with the [Quick Start to Swatch Sets](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html).
 * Learn how to [Create a Swatch Set](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html#creating-a-swatch-set).
@@ -71,12 +71,12 @@ This set is typically used to show a 360-degree view of an item.Like Swatch Sets
 
 Spin Sets can either spin in one direction along a single axis, or if alternately created as a 2D Spin Set — spin on multiple axes. For example, a car can be rotated while all wheels are on the ground, and then can be "flipped" up and rotated on its back wheels as well. For a properly set up 2D Spin Set, the number of images per row for each axis should be the same. In other words, if you are spinning on two axes, you need twice as many images as a single angle spin.
 
-![image](assets\media-sets\ImageSet3.png)
+![image](assets/media-sets/image-set-3.png)
 *Example of a Spin Set*
 
 The URL for the above Spin Set could appear as:
 
-![image](assets\media-sets\SpinSet.png)
+![image](assets/media-sets/spin-set.png)
 
 * Learn more about Spin Sets with the [Quick Start to Spin Sets](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html).
 * Learn how to [Create a Spin Set](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/spin-sets/creating-spin-set.html#creating-a-spin-set).
@@ -85,12 +85,12 @@ The URL for the above Spin Set could appear as:
 
 This is a combination set. It allows you to combine any of the previous sets, as well as add video, into a single viewer. In this workflow, you create any of the component sets first, and then assemble them together into a Mixed Media Set.
 
-![image](assets\media-sets\ImageSet4.png)
+![image](assets/media-sets/image-set-4.png)
 *Example of a Mixed Media Set*
 
 The URL for the above Mixed Media Set could appear as:
 
-![image](assets\media-sets\ImageSetURL1.png)
+![image](assets/media-sets/image-set-url-1.png)
 
 * Learn more about Mixed Media Sets with the [Quick Start to Mixed Media Sets](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html)
 

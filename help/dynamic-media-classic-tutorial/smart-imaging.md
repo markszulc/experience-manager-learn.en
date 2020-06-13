@@ -24,7 +24,7 @@ Learn more about [Smart Imaging](https://docs.adobe.com/content/help/en/experien
 
 Because images constitute the majority of a page's load time, the performance improvement from Smart Imaging can have a profound impact on business KPIs, such as higher conversion, time spent on site, and lower site bounce rate.
 
-![image](assets\smart-imaging\Smart_Imaging_1.png)
+![image](assets/smart-imaging/smart-imaging-1.png)
 
 ## How Smart Imaging Works
 

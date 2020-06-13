@@ -101,7 +101,7 @@ Before we get started, let's discuss some terms with which you should be familia
   * A video player decodes the video according to its codec and then displays a series of images, or frames, on the screen.
   * Common video codecs include H.264, On2 VP6, and H.263.
 
-![image](assets\video-overview\bird-video.png)
+![image](assets/video-overview/bird-video.png)
 
 * **Resolution.** Height and width of the video in pixels.
 
@@ -130,7 +130,7 @@ Hopefully this primer helps you understand the various options involved in using
 
 When working with video in Dynamic Media Classic, you follow a basic workflow that is similar to working with images.
 
-![image](assets\video-overview\VideoOverview2.png)
+![image](assets/video-overview/video-overview-2.png)
 
 1. Start by uploading video files to Dynamic Media Classic. To do this, open the **Tools Menu** at the bottom of the Dynamic Media Classic extension panel, and choose **Upload to Dynamic Media Classic > Files to [folder name]**, or **Upload to Dynamic  Media Classic > Folders to [folder name]**. "Folder name" will be whatever folder you are currently browsing with the extension. Video files can be big, so we recommend using FTP for uploading large files. As part of the upload, choose one or more Video Presets for encoding your videos. Video can be transcoded to MP4 video on upload. See the Video Presets topic below for more information on using and creating encoding presets. Learn about [Uploading and Encoding Videos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html).
 2. Select or select and modify a video Viewer Preset and preview your video. You would either choose a pre-built Viewer Preset or customize your own. If you are targeting mobile users, you don't have to do anything here because mobile platforms do not require a viewer or a preset. Learn more about [Previewing Videos in a Video Viewer](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/previewing-videos-video-viewer.html) and [Adding or Editing a Video Viewer Preset](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/previewing-videos-video-viewer.html#adding-or-editing-a-video-viewer-preset).
@@ -193,7 +193,7 @@ What is its aspect ratio? If you see black bars around the converted video, then
 
 Video Presets determine how your video will be encoded by specifying these settings. If you are unfamiliar with these terms, please review the topic Basic Video Concepts and Terminology, above.
 
-![image](assets\video-overview\VideoOverview3.jpg)
+![image](assets/video-overview/video-overview-3.jpg)
 
 * **Aspect ratio.** Usually standard 4:3 or wide-screen16:9.
 * **Size.** This is the same as the display resolution, and is measured in pixels. This is related to aspect ratio. At a ratio of 16:9, a video will be 432 x 240 pixels, while at 4:3 it will be 320 x 240pixels.
@@ -217,7 +217,7 @@ Sometimes you may find you need a special Video Preset that doesn't match the se
 
     * Every streaming video account has dozens of presets out of the box, and if you create your own custom presets you will see them here as well.
     * You can filter by type using the drop-down menu. The presets are divided into Computer, Mobile and Tablet.
-    * ![image](assets\video-overview\VideoOverview4.jpg)
+  ![image](assets/video-overview/video-overview-4.jpg)
 
 2. The Active column allows you to choose whether you want to display all the presets on upload, or only the ones you choose. If you are in the US, you might want to uncheck the European PAL presets, and if in UK/ EMEA, uncheck the NTSCpresets.
 3. Click the **Add** button to create a custom preset. This opens the Add Video Preset panel. The process here is similar to creating an ImagePreset.
@@ -227,7 +227,7 @@ Sometimes you may find you need a special Video Preset that doesn't match the se
 7. **Playback Device** is where you choose what video file format you want (Computer, Mobile, or Tablet). Remember that Mobile and Tablet produce the same MP4 format. Dynamic Media Classic just needs to know in which category to place the preset; however, the theoretical difference is that Tablet presets are typically for a faster internet connection because all support WiFi.
 8. **Target**  **Data Rate** is something you'll have to figure out for yourself, however you can see a suggested range on the image below. You can alternatively drag the slider to the approximate target bandwidth. For a more precise figure, use a bit rate calculator. There is a bit of trial and error involved.
 
-    ![image](assets\video-overview\VideoOverview5.jpg)
+    ![image](assets/video-overview/video-overview-5.jpg)
 
 9. Set your source file's **Aspect Ratio**. This setting is directly tied to the size, below. If you choose *Custom*, you will have to manually enter both width and height.
 10. If you choose an aspect ratio, then set one value for **Resolution Size** , and Dynamic Media Classic will fill in the other value automatically. However for a custom aspect ratio, fill in both values. Your size should be in line with your data rate. If you set a very low data rate and a large size, you would expect the quality to be poor.
@@ -254,7 +254,7 @@ Learn how to [Add Chapter Markers to Video](https://docs.adobe.com/content/help/
 
 The last step in the Dynamic Media Classic workflow is to publish out your video content. However video has its own publish job, called Video Server publish, found under Advanced.
 
-![image](assets\video-overview\VideoOverview6.jpg)
+![image](assets/video-overview/video-overview-6.jpg)
 
 Learn how to [Publish Your Video](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#publishing-video).
 
@@ -306,7 +306,7 @@ By following this method, you will not have to manually enter this data using Dy
 
 For more information on that topic, see [Viewing, Adding, and Exporting Metadata](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/viewing-adding-exporting-metadata.html).
 
-![image](assets\video-overview\VideoOverview7.jpg)
+![image](assets/video-overview/video-overview-7.jpg)
 
  Once the metadata has been populated, you will be able to see it on the Detail View for that video asset. Keywords may also be present, but those are located under the Keywords tab.
 
@@ -320,25 +320,25 @@ Setting up Video SEO starts with choosing what type of format you want, the gene
 
 1. Go to **Setup > Application Setup > Video SEO > Settings**.
 2. On the **Generation Mode** menu, choose a file format. The default is Off, so to enable it, choose either Video Sitemap, mRSS, orBoth.
-3. Choose whether to generate automatically or manually. For simplicity,we recommend you set it to **Automatic Mode**. If you choose Automatic,then also set the **Mark* for Publish** option, or else the file(s) won't go live.The Sitemap and RSS files are types of an XML document, and must be published like any other asset. Use one of the manual modes if you don't have all the information ready now,or only want to do a one-time generation.
-4. Populate the metadata tags that will be used in the files. This step is not optional. At a minimum, you must include the three fields marked with an asterisk (\*): **Landing**  **Page** , **Title** and **Description**. To use your metadata for these tasks, drag and drop the fields from the Metadata panel on the right into a corresponding field on the form. Dynamic Media Classic will automatically populate the placeholder field with actual data from each video. You do not have to use metadata fields. You could instead type some static text here, but that same text will appear for each video.
+3. Choose whether to generate automatically or manually. For simplicity,we recommend you set it to **Automatic Mode**. If you choose Automatic,then also set the **Mark for Publish** option, or else the file(s) won't go live.The Sitemap and RSS files are types of an XML document, and must be published like any other asset. Use one of the manual modes if you don't have all the information ready now,or only want to do a one-time generation.
+4. Populate the metadata tags that will be used in the files. This step is not optional. At a minimum, you must include the three fields marked with an asterisk (\*): **Landing Page** , **Title** and **Description**. To use your metadata for these tasks, drag and drop the fields from the Metadata panel on the right into a corresponding field on the form. Dynamic Media Classic will automatically populate the placeholder field with actual data from each video. You do not have to use metadata fields. You could instead type some static text here, but that same text will appear for each video.
 5. Once you've entered information in the three required fields, Dynamic Media Classic will enable the **Save** and **Save &amp; Generate** buttons. Click one to save your settings. Use **Save** if you are in Automatic Mode and want to have Dynamic Media Classic generate the files later. Use **Save &amp; Generate** to create the file immediately.
 
 ### Testing and Publishing Your Video Sitemap, mRSS Feed, or Both Files
 
 Generated files will appear in the root (base) directory of your account.
 
-![image](assets\video-overview\VideoOverview8.jpg)
+![image](assets/video-overview/video-overview-8.jpg)
 
 These files must be published, as the Video SEO tool cannot run a publish by itself. As long as they are marked for publish, they will be sent to the publish servers the next time a publish is run.
 
 After publishing, your files will be available using this URL format.
 
-![image](assets\video-overview\Video-URL-format.png)
+![image](assets/video-overview/video-url-format.png)
 
 Example:
 
-![image](assets\video-overview\Video-format-example.png)
+![image](assets/video-overview/video-format-example.png)
 
 ### Submitting to Search Engines
 
@@ -350,7 +350,7 @@ The method for submitting to your search engine will vary, however for Google yo
 
 Dynamic Media Classic provides a report to show you how many videos were successfully included in the files, and more importantly, which were not included due to errors. To access the report, go to **Setup \&gt; Application Setup \&gt; Video SEO \&gt; Report**.
 
-![image](assets\video-overview\VideoOverview9.jpg)
+![image](assets/video-overview/video-overview-9.jpg)
 
 ## Mobile Implementation for MP4 Video
 
@@ -362,7 +362,7 @@ Because of this, Dynamic Media Classic does not give you a URL to a viewer for m
 
 One important thing to note about published video is that the URL lists the full path to the video, not just the Asset ID. When dealing with images, you call the image by its Asset ID, regardless of the folder structure. However for video, you must specify the folder structure as well. In the URLs above, the video is stored in the path:
 
-![image](assets\video-overview\Mobile-Implement-1.png)
+![image](assets/video-overview/mobile-implement-1.png)
 
 This can also be expressed as company name/folder path/name of video.
 
@@ -370,7 +370,7 @@ This can also be expressed as company name/folder path/name of video.
 
 To embed your MP4 video in a web page, use the HTML5 video tag.
 
-![image](assets\video-overview\Browser-playback.png)
+![image](assets/video-overview/browser-playback.png)
 
 This method will work for desktop web as well, however you may run into trouble with browser support — not all desktop web browsers natively support H.264 video, including Firefox.
 
@@ -378,7 +378,7 @@ This method will work for desktop web as well, however you may run into trouble 
 
 Alternatively, you can embed the Dynamic Media Classic MP4 video in your mobile application code. Here is a generic example for iOS using the Media Player framework that is given for illustrative purposes only:
 
-![image](assets\video-overview\App-playback.png)
+![image](assets/video-overview/app-playback.png)
 
 ## Additional Resources
 
