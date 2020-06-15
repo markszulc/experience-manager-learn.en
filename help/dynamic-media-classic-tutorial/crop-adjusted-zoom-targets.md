@@ -56,9 +56,7 @@ Compare these two versions of the same image.
 
 ![image](assets/crop-adjusted-zoom-targets/trim-cropping.jpg)
 
-The image on the right is made much more prominent by removing the extra space around the product. Trimming can be done one image at a time, using the Crop tool, or run as a batch process as you upload. We recommend running as a batch process if you want all your images to be consistently.
-
-cropped to the boundaries of the main subject. Trim crops to the bounding box — the rectangle surrounding the image.
+The image on the right is made much more prominent by removing the extra space around the product. Trimming can be done one image at a time, using the Crop tool, or run as a batch process as you upload. We recommend running as a batch process if you want all your images to be consistently cropped to the boundaries of the main subject. Trim crops to the bounding box — the rectangle surrounding the image.
 
 >[!NOTE]
 >
