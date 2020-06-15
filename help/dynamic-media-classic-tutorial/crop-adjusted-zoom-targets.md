@@ -106,7 +106,7 @@ When you use the Crop tool, you have the option to **Save as Additional View of 
 
 Can you tell which is the master, and which is the Adjusted Image?
 
-![image](assets\crop-adjusted-zoom-targets\real-image-stand-up.png)
+![image](assets/crop-adjusted-zoom-targets/real-image-stand-up.png)
 
 You should not be able to tell without looking in Dynamic Media Classic and seeing the asset type of "Adjusted Image" for SBR \_ MAIN2.
 
