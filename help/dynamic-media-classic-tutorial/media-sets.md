@@ -1,6 +1,6 @@
 ---
 title: Image, Swatch, Spin, and Mixed Media Sets
-description: Image, Swatch, Spin, and Mixed Media Sets
+description: One of the most useful and powerful abilities of Dynamic Media Classic is its support for creating rich media sets like Image, Swatch, Spin, and Mixed Media Sets. Learn what each rich media set is and how to create each type in Dynamic Media Classic. Then learn more about Batch Set Presets, which automate the process of rich media set creation upon upload.
 sub-product: dynamic-media
 feature:
 doc-type: tutorial

@@ -1,6 +1,6 @@
 ---
 title: Video Overview
-description: Video Overview
+description: Dynamic Media Classic comes with automatic conversion of video on upload, video streaming to desktop and mobile devices, and adaptive video sets optimized for playback based on device and bandwidth. Learn more about video in Dynamic Media Classic and get a primer on video concepts and terminology. Then deep dive into learning how to upload and encode video, choose video presets for uploading, add or edit a video preset, preview videos in a video viewer, deploy video to web and mobile sites, add captions and chapter markers to video, and publish video viewers to desktop and mobile users.
 sub-product: dynamic-media
 feature:
 doc-type: tutorial
@@ -24,7 +24,7 @@ By the end of this chapter you will know how to:
 * Preview videos in a video viewer
 * Deploy video to web and mobile sites
 * Add captions and chapter markers to video
-* Customize and publish video viewers for desktop and mobile users.
+* Customize and publish video viewers for desktop and mobile users
 
 >[!NOTE]
 >
@@ -118,7 +118,7 @@ Before we get started, let's discuss some terms with which you should be familia
   * Generally, the lower the bit rate, the more desirable it is for the web because it can be downloaded more quickly. However it can also mean the quality is low because of compression loss.
   * A good codec should balance low bit rate with good quality.
 
-* **Frame rate** **(frames**  **per**  **second,** **or FPS).** The number of frames, or still images, for each second of video. Typically, North American TV (NTSC) is broadcast in 29.97 FPS; European and Asian TV (PAL) is broadcast in 25 FPS; and film (analog and digital) are typically in 24 (23.976)FPS.
+* **Frame rate (frames per second, or FPS).** The number of frames, or still images, for each second of video. Typically, North American TV (NTSC) is broadcast in 29.97 FPS; European and Asian TV (PAL) is broadcast in 25 FPS; and film (analog and digital) are typically in 24 (23.976)FPS.
 
   * To make things more confusing, there are also progressive and interlaced frames. Each progressive frame contains an entire image frame, whereas interlaced frames contain every other row of pixels in an image frame. The frames are then played back very quickly, and appear to blend together. Film uses a progressive scan method, whereas digital video is typically interlaced.
   * In general, it doesn't matter whether your source footage is interlaced or not — Dynamic Media Classic will preserve the scan method in the converted video.
@@ -132,7 +132,7 @@ When working with video in Dynamic Media Classic, you follow a basic workflow th
 
 ![image](assets/video-overview/video-overview-2.png)
 
-1. Start by uploading video files to Dynamic Media Classic. To do this, open the **Tools Menu** at the bottom of the Dynamic Media Classic extension panel, and choose **Upload to Dynamic Media Classic > Files to [folder name]**, or **Upload to Dynamic  Media Classic > Folders to [folder name]**. "Folder name" will be whatever folder you are currently browsing with the extension. Video files can be big, so we recommend using FTP for uploading large files. As part of the upload, choose one or more Video Presets for encoding your videos. Video can be transcoded to MP4 video on upload. See the Video Presets topic below for more information on using and creating encoding presets. Learn about [Uploading and Encoding Videos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html).
+1. Start by uploading video files to Dynamic Media Classic. To do this, open the **Tools Menu** at the bottom of the Dynamic Media Classic extension panel, and choose **Upload to Dynamic Media Classic > Files to [folder name]**, or **Upload to Dynamic Media Classic > Folders to [folder name]**. "Folder name" will be whatever folder you are currently browsing with the extension. Video files can be big, so we recommend using FTP for uploading large files. As part of the upload, choose one or more Video Presets for encoding your videos. Video can be transcoded to MP4 video on upload. See the Video Presets topic below for more information on using and creating encoding presets. Learn about [Uploading and Encoding Videos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html).
 2. Select or select and modify a video Viewer Preset and preview your video. You would either choose a pre-built Viewer Preset or customize your own. If you are targeting mobile users, you don't have to do anything here because mobile platforms do not require a viewer or a preset. Learn more about [Previewing Videos in a Video Viewer](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/previewing-videos-video-viewer.html) and [Adding or Editing a Video Viewer Preset](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/previewing-videos-video-viewer.html#adding-or-editing-a-video-viewer-preset).
 3. Run a Video Publish, get the URL, and integrate.The main difference between this step for the video workflow versus the image workflow is that you will run a special Video Publish instead of (or perhaps as well as) the standard Image Serving publish. Video viewer integration on the desktop works exactly like image viewer integration, however for mobile devices it's even simpler — all you need is the URL to the video itself.
 
@@ -223,9 +223,9 @@ Sometimes you may find you need a special Video Preset that doesn't match the se
 3. Click the **Add** button to create a custom preset. This opens the Add Video Preset panel. The process here is similar to creating an ImagePreset.
 4. First, give it a **Preset Name** to appear in the list of presets. In the example above, this preset is for screen capture tutorial videos.
 5. The **Description** is optional, but it will give your users a tool tip that will describe the purpose of this preset.
-6. The **Encode**** File ****Suffix** will get appended to the end of the name of the video you are creating here.Remember that you'll have a Master Video as well as this encoded video, which is a derivative of the master, and that no two assets in Dynamic Media Classic can have the same Asse tID.
+6. The **Encode File Suffix** will get appended to the end of the name of the video you are creating here.Remember that you'll have a Master Video as well as this encoded video, which is a derivative of the master, and that no two assets in Dynamic Media Classic can have the same Asse tID.
 7. **Playback Device** is where you choose what video file format you want (Computer, Mobile, or Tablet). Remember that Mobile and Tablet produce the same MP4 format. Dynamic Media Classic just needs to know in which category to place the preset; however, the theoretical difference is that Tablet presets are typically for a faster internet connection because all support WiFi.
-8. **Target**  **Data Rate** is something you'll have to figure out for yourself, however you can see a suggested range on the image below. You can alternatively drag the slider to the approximate target bandwidth. For a more precise figure, use a bit rate calculator. There is a bit of trial and error involved.
+8. **Target Data Rate** is something you'll have to figure out for yourself, however you can see a suggested range on the image below. You can alternatively drag the slider to the approximate target bandwidth. For a more precise figure, use a bit rate calculator. There is a bit of trial and error involved.
 
     ![image](assets/video-overview/video-overview-5.jpg)
 
@@ -321,7 +321,7 @@ Setting up Video SEO starts with choosing what type of format you want, the gene
 1. Go to **Setup > Application Setup > Video SEO > Settings**.
 2. On the **Generation Mode** menu, choose a file format. The default is Off, so to enable it, choose either Video Sitemap, mRSS, orBoth.
 3. Choose whether to generate automatically or manually. For simplicity,we recommend you set it to **Automatic Mode**. If you choose Automatic,then also set the **Mark for Publish** option, or else the file(s) won't go live.The Sitemap and RSS files are types of an XML document, and must be published like any other asset. Use one of the manual modes if you don't have all the information ready now,or only want to do a one-time generation.
-4. Populate the metadata tags that will be used in the files. This step is not optional. At a minimum, you must include the three fields marked with an asterisk (\*): **Landing Page** , **Title** and **Description**. To use your metadata for these tasks, drag and drop the fields from the Metadata panel on the right into a corresponding field on the form. Dynamic Media Classic will automatically populate the placeholder field with actual data from each video. You do not have to use metadata fields. You could instead type some static text here, but that same text will appear for each video.
+4. Populate the metadata tags that will be used in the files. This step is not optional. At a minimum, you must include the three fields marked with an asterisk (\*): **Landing Page** , **Title**, and **Description**. To use your metadata for these tasks, drag and drop the fields from the Metadata panel on the right into a corresponding field on the form. Dynamic Media Classic will automatically populate the placeholder field with actual data from each video. You do not have to use metadata fields. You could instead type some static text here, but that same text will appear for each video.
 5. Once you've entered information in the three required fields, Dynamic Media Classic will enable the **Save** and **Save &amp; Generate** buttons. Click one to save your settings. Use **Save** if you are in Automatic Mode and want to have Dynamic Media Classic generate the files later. Use **Save &amp; Generate** to create the file immediately.
 
 ### Testing and Publishing Your Video Sitemap, mRSS Feed, or Both Files
@@ -344,11 +344,11 @@ Example:
 
 The final step of the process is to submit your files and/or URLs to search engines. Dynamic Media Classic cannot do this step for you; however, assuming you submit the URL and not the XML file itself, your feed should be updated the next time your file is generated and a publish occurs.
 
-The method for submitting to your search engine will vary, however for Google you use Google Webmaster Tools. Once there, go to **Site Configuration \&gt; Sitemaps** , and click the **Submit a Sitemap** button. Here you can place the Dynamic Media Classic URL to your SEO file(s).
+The method for submitting to your search engine will vary, however for Google you use Google Webmaster Tools. Once there, go to **Site Configuration > Sitemaps** , and click the **Submit a Sitemap** button. Here you can place the Dynamic Media Classic URL to your SEO file(s).
 
 ### Video SEO Report
 
-Dynamic Media Classic provides a report to show you how many videos were successfully included in the files, and more importantly, which were not included due to errors. To access the report, go to **Setup \&gt; Application Setup \&gt; Video SEO \&gt; Report**.
+Dynamic Media Classic provides a report to show you how many videos were successfully included in the files, and more importantly, which were not included due to errors. To access the report, go to **Setup > Application Setup > Video SEO > Report**.
 
 ![image](assets/video-overview/video-overview-9.jpg)
 

@@ -1,6 +1,6 @@
 ---
-title: Overview of Dynamic Media Classic
-description: Welcome to and Overview of Dynamic Media Classic
+title: Welcome to the Dynamic Media Classic Best Practices Tutorial
+description: Dynamic Media Classic is the hub around which customers create, author, and deliver rich media content. This best practices tutorial has been created to help current and new users of Dynamic Media Classic more fully understand what they can do with this powerful rich media solution from Adobe. In this part of the tutorial, you'll learn what Dynamic Media Classic is and get a brief look at its core capabilities and user interface. 
 sub-product: dynamic-media
 feature:
 doc-type: tutorial

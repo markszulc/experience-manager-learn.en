@@ -1,6 +1,6 @@
 ---
 title: Cropping, Adjusted Images, and Zoom Targets
-description: Cropping, Adjusted Images, and Zoom Targets
+description: The master image of Dynamic Media Classic supports creating separate cropped versions of each image to show off details or for swatches without having to create separate cropped versions of each image. Learn how to crop images in Dynamic Media Classic and save as a new master file or a virtual image, save virtual Adusted Images and use them in place of master assets, and create Zoom Targets on your images to show off highlighted details.
 sub-product: dynamic-media
 feature:
 doc-type: tutorial
@@ -149,7 +149,7 @@ Here is the workflow for creating targets in Dynamic Media Classic.
     * The target size is determined by the view size inside the Viewer Preset. This determines the size of the main zoom image. See *Setting the View Size*, below.
 
 4. You'll see the target you just created turn blue, and on the right you'll see a thumbnail version of that target, as well as the default name"target-0."
-5. To rename your target, click its thumbnail, type a new **Name** , and click **Enter** or **Tab** — if you just click away, your name won't be saved.
+5. To rename your target, click its thumbnail, type a new **Name**, and click **Enter** or **Tab** — if you just click away, your name won't be saved.
 6. While the target is selected, the box will have green dashed lines around it, and you can resize and move it. Drag the corners to resize, or drag the target box to move it.
 
     * This will load the image inside the default Custom zoom viewer. Make sure the Viewer Preset supports Zoom Targets — in general, all standard presets that have the word "-Guided" were designed for use with Zoom Targets. To use the targets, hover over the target thumbnail (or hotspot icon) to see the label, and click on it to see the viewer zoom into that feature.

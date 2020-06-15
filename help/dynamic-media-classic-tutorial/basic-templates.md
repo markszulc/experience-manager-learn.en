@@ -1,6 +1,6 @@
 ---
 title: Introduction to Basic Templates
-description: Introduction to Basic Templates
+description: Learn about Basic Templates in Dynamic Media Classic, image-based templates called from the Image Server and consisting of images and rendered text. A template can be changed dynamically via the URL after the template has been published. You'll learn how to upload a Photoshop PSD to Dynamic Media Classic to use it as the basis of a template. Create a simple merchandising Basic Template consisting of image layers. Add text layers and make them variable through the use of parameters. Construct a template URL and manipulate the image dynamically through the web browser.
 sub-product: dynamic-media
 feature:
 doc-type: tutorial
@@ -23,12 +23,12 @@ Basic Templates can be implemented in many different ways, from simple to comple
 * Basic merchandising. Uses labels like "free shipping" if that product has free shipping. These labels are setup by the merchandise team in Photoshop, and the web uses logic to know when to apply them to the image.
 * Advanced merchandising. Each template has multiple variables and may show more than one option at the same time. Uses a database, inventory and business rules to determine when to show a product as "Just In", on "Clearance," or "Sold Out." Also may use transparency behind the product to show it on different backgrounds, such as in different rooms. The same templates and/or assets may be repurposed on the product detail page to show a larger or zoomable version of the same product on different backgrounds.
 
-It's important to understand that Dynamic Media Classic only provides the visual portion of these templates- based applications. Dynamic Media Classic companies or their integration partners must supply the business rules, the database, and development skills to create the applications. There is no "built-in" template application; designers set up the template in Dynamic Media Classic, and developers use URL calls to change the variables in the template.
+It's important to understand that Dynamic Media Classic only provides the visual portion of these templates-based applications. Dynamic Media Classic companies or their integration partners must supply the business rules, the database, and development skills to create the applications. There is no "built-in" template application; designers set up the template in Dynamic Media Classic, and developers use URL calls to change the variables in the template.
 
 By the end of this chapter you will know how to:
 
 * Upload a Photoshop PSD to Dynamic Media Classic to use it as the basis of a template.
-* Create a simple merchandising Basic Template consisting of imagelayers.
+* Create a simple merchandising Basic Template consisting of image layers.
 * Add text layers and make them variable through the use of parameters.
 * Construct a template URL and manipulate the image dynamically through the web browser.
 
@@ -161,7 +161,7 @@ Here are the workflow steps to start your Basic Template:
 
 4. Resize or reposition the layer directly in the work area, or by adjusting the settings in the Layer Propertiespanel.
 5. Drag in additional image layers as needed. Add layers effects if you want as well. See the topic *Adding Layer Effects*,below.
-6. Click **Save** , choose a location, and give the template a name. You can preview, however at this point your template will look exactly like a flattened Photoshop image —it is not changeable yet.
+6. Click **Save**, choose a location, and give the template a name. You can preview, however at this point your template will look exactly like a flattened Photoshop image — it is not changeable yet.
 
 ### Adding Layer Effects
 

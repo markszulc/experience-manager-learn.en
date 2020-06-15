@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media Classic Main Workflow and Previewing Assets
-description: Dynamic Media Classic Main Workflow and Previewing Assets
+description: Learn about the main workflow in Dynamic Media Classic, which includes the three steps - Create (and Upload), Author (and Publish), and Deliver. Then learn how to preview assets in Dynamic Media Classic.
 sub-product: dynamic-media
 feature:
 doc-type: tutorial
@@ -132,8 +132,7 @@ Once you understand how Dynamic Media Classic URLs are put together, then you un
 
 ### Concept: Understanding the Caching Delay
 
-Newly uploaded and published assets will be seen right away, whereas updated assets may be subject
-to the 10-hour caching delay. By default, all published assets have a minimum of 10 hours before they expire. We say minimum, because every time the image is viewed, it starts a clock that will not expire until 10 hours have elapsed in which no one has viewed that image. This 10–hour period is the “Time to Live” for an asset. Once the cache expires for that asset, the updated version can be delivered.
+Newly uploaded and published assets will be seen right away, whereas updated assets may be subject to the 10-hour caching delay. By default, all published assets have a minimum of 10 hours before they expire. We say minimum, because every time the image is viewed, it starts a clock that will not expire until 10 hours have elapsed in which no one has viewed that image. This 10–hour period is the “Time to Live” for an asset. Once the cache expires for that asset, the updated version can be delivered.
 
 This typically is not an issue unless a mistake occurred, and the image/asset has the same name as the previously published version, but there is a problem with the image. For example, you accidentally uploaded a low resolution version or your art director didn’t approve the image. In this case, you want to recall the original image and replace it with a new version using the same Asset ID.
 

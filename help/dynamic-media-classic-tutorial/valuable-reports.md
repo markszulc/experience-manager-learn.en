@@ -1,6 +1,6 @@
 ---
 title: Valuable Reports for Administrators
-description: Valuable Reports for Administrators
+description: Discover two valuable reports that administrators of Dynamic Media Classic should consider setting up.
 sub-product: dynamic-media, aem assets
 feature:
 doc-type: tutorial

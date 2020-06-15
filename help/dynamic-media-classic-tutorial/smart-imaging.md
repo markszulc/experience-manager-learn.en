@@ -1,6 +1,6 @@
 ---
 title: Smart Imaging
-description: Smart Imaging
+description: Smart Imaging in Dynamic Media Classic enhances image delivery performance by automatically optimizing image format and quality based on client browser capabilities. It does this by leveraging Adobe Sensei AI capabilities and working with existing Image Presets. Learn more about Smart Imaging and how you can use it to offer better customer experiences through faster page loads.
 sub-product: dynamic-media
 feature:
 doc-type: tutorial
