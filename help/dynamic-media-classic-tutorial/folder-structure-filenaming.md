@@ -5,11 +5,8 @@ sub-product: dynamic-media
 feature:
 doc-type: tutorial
 activity: develop
-audience: developer
-topics:
-doc-type:
-audience : all
-activity: use
+topics: development, authoring, configuring, architecture
+audience: all
 ---
 
 # Determine Your Folder Structure and File Naming Convention {#folder-structure-filenaming}
@@ -34,21 +31,21 @@ We want you to consider your folder structure before you start uploading all you
 
 For your folder strategy consider what makes sense to your organization. Here are some common folder naming scenarios:
 
-* Mirror web site or product breakdown. For example, if you sold clothing, you might have folders for Men, Women, and Accessories, and sub folders for Shirts andShoes.
-* SKU or Product ID based strategy. For example, with retailers that have thousands of items, it might make sense to use SKU numbers or product IDs as folder names.
-* Brand strategy. For example, manufacturers who have multiple brands might choose their brand names as top-level folders.
+- Mirror web site or product breakdown. For example, if you sold clothing, you might have folders for Men, Women, and Accessories, and sub folders for Shirts andShoes.
+- SKU or Product ID based strategy. For example, with retailers that have thousands of items, it might make sense to use SKU numbers or product IDs as folder names.
+- Brand strategy. For example, manufacturers who have multiple brands might choose their brand names as top-level folders.
 
 ## File Naming Convention
 
 How you choose to name your files is perhaps the most important early decision you will make regarding Dynamic Media Classic. This is because all assets in Dynamic Media Classic must have unique names, regardless of where they are stored in the account.
 
-All URLs and transactions in Dynamic Media Classic are driven by an Asset ID, which is an asset's unique identifier in the database. When you upload a file, the Asset ID is created by taking the filename and removing the extension. For example, *896649.jpg* gets Asset *ID 896649*.
+All URLs and transactions in Dynamic Media Classic are driven by an Asset ID, which is an asset's unique identifier in the database. When you upload a file, the Asset ID is created by taking the filename and removing the extension. For example, _896649.jpg_ gets Asset _ID 896649_.
 
 Rules regarding Asset IDs:
 
-* No two assets can have the same name within Dynamic Media Classic, regardless of what folder the assets are in.
-* Names are case-sensitive. For example, Chair.jpg, chair.jpg, and CHAIR.jpg would create three different Asset IDs.
-* As a best practice, Asset IDs should not contain blank spaces or symbols. Use of spaces and symbols make implementation more difficult because you will have to URL encode these characters. For example, a space " " becomes"%20."
+- No two assets can have the same name within Dynamic Media Classic, regardless of what folder the assets are in.
+- Names are case-sensitive. For example, Chair.jpg, chair.jpg, and CHAIR.jpg would create three different Asset IDs.
+- As a best practice, Asset IDs should not contain blank spaces or symbols. Use of spaces and symbols make implementation more difficult because you will have to URL encode these characters. For example, a space " " becomes"%20."
 
 Your naming convention is essentially how you integrate with Dynamic Media Classic. You do not typically integrate your back-office systems into Dynamic Media Classic because it is a closed system. It is a passive partner, waiting for instructions in the form of URLs.
 
@@ -60,21 +57,21 @@ Your naming strategy should be flexible for future expansion, so you can avoid h
 
 **No alternate images.** In this scenario, you only have one image per product and no alternate or colored views. You would strictly name each image according to its unique SKU or product ID number. When the page loads, the page template calls to the Asset ID with the same SKU number.
 
-| SKU/PID | Filename | Asset ID |
-| --- | --- | ---|
-| 896649 | 896649.jpg | 896649 |
-| SKU123 | SKU123.png | SKU123 |
+| SKU/PID | Filename   | Asset ID |
+| ------- | ---------- | -------- |
+| 896649  | 896649.jpg | 896649   |
+| SKU123  | SKU123.png | SKU123   |
 
 This is a very simple system, and good if you have modest needs. However it is not very flexible. Just because you have no alternate images today does not mean you won't have those images tomorrow. The next scenario offers more flexibility.
 
-**Using the image, alternate**  **views,**  **colored versions, swatches.** This strategy allows for alternate views and/ or colored views, if you have them. Rather than name the image after only the SKU, you add a modifier such as "\_1" and "\_2" for alternate views, and a color code of "\_RED" or "\_BLU" for colored views. If you have both colored images and alternate views for the same product, perhaps you would add "\_RED\_1" and "\_RED\_2" for the first and second red-colored view. Swatches would be named with the SKU, color code, and an "\_SW"extension.
+**Using the image, alternate** **views,** **colored versions, swatches.** This strategy allows for alternate views and/ or colored views, if you have them. Rather than name the image after only the SKU, you add a modifier such as "\_1" and "\_2" for alternate views, and a color code of "\_RED" or "\_BLU" for colored views. If you have both colored images and alternate views for the same product, perhaps you would add "\_RED_1" and "\_RED_2" for the first and second red-colored view. Swatches would be named with the SKU, color code, and an "\_SW"extension.
 
-| SKU/PID | Category | Filename | Asset ID |
-| --- | --- | --- | --- |
-| AA123 | Alt views | AA123\_1.tif AA123\_2.tif AA123\_3.tif | AA123\_1 AA123\_2 AA123\_3 |
-|  | Colored views | AA123\_BLU.tif AA123\_RED.tif AA123\_BROWN.tif | AA123\_BLU AA123\_RED AA123\_BROWN |
-|  | Swatches | AA123\_BLU\_SW.tif | AA123\_BLU\_SW |
-|  | Image Set or Swatch Set |  | AA123 or AA123\_SET | -- |
+| SKU/PID | Category                | Filename                                    | Asset ID                        |
+| ------- | ----------------------- | ------------------------------------------- | ------------------------------- |
+| AA123   | Alt views               | AA123_1.tif AA123_2.tif AA123_3.tif         | AA123_1 AA123_2 AA123_3         |
+|         | Colored views           | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_RED AA123_BROWN |
+|         | Swatches                | AA123_BLU_SW.tif                            | AA123_BLU_SW                    |
+|         | Image Set or Swatch Set |                                             | AA123 or AA123_SET              | -- |
 
 When dealing with set collections, such as Image Sets and Swatch Sets, the set itself must also have a unique name. So in this case, the set could be given the base SKU as its name, or the SKU with a "\_SET"extension.
 

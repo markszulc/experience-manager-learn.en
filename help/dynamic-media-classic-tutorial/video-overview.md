@@ -2,13 +2,10 @@
 title: Video Overview
 description: Dynamic Media Classic comes with automatic conversion of video on upload, video streaming to desktop and mobile devices, and adaptive video sets optimized for playback based on device and bandwidth. Learn more about video in Dynamic Media Classic and get a primer on video concepts and terminology. Then deep dive into learning how to upload and encode video, choose video presets for uploading, add or edit a video preset, preview videos in a video viewer, deploy video to web and mobile sites, add captions and chapter markers to video, and publish video viewers to desktop and mobile users.
 sub-product: dynamic-media
-feature:
+feature: Viewer Presets
 doc-type: tutorial
-activity: develop
-audience: developer
-topics:
-doc-type:
-audience : all
+topics: development, authoring, configuring, videos, video-profiles
+audience: all
 activity: use
 ---
 
@@ -18,17 +15,17 @@ Dynamic Media Classic comes with automatic conversion of video on upload, video 
 
 By the end of this chapter you will know how to:
 
-* Upload and encode (transcode) video to different sizes and formats
-* Choose among available video presets for uploading
-* Add or edit a video encoding preset
-* Preview videos in a video viewer
-* Deploy video to web and mobile sites
-* Add captions and chapter markers to video
-* Customize and publish video viewers for desktop and mobile users
+- Upload and encode (transcode) video to different sizes and formats
+- Choose among available video presets for uploading
+- Add or edit a video encoding preset
+- Preview videos in a video viewer
+- Deploy video to web and mobile sites
+- Add captions and chapter markers to video
+- Customize and publish video viewers for desktop and mobile users
 
->[!NOTE]
+> [!NOTE]
 >
->All URLs in this chapter are for illustrative purposes only; they are not live links.
+> All URLs in this chapter are for illustrative purposes only; they are not live links.
 
 ## Overview of Dynamic Media Classic Video
 
@@ -54,7 +51,7 @@ If you have a lot of video, you’ll appreciate the ability to manage all your a
 
 ### Video Playback
 
-Similar to the problem of converting video to make it web-friendly and accessible, is the problem of implementing and deploying video to your site.  Choosing whether to purchase a player or build your own, making it compatible for various devices and screens,and then maintaining your players can be a full-time occupation.
+Similar to the problem of converting video to make it web-friendly and accessible, is the problem of implementing and deploying video to your site. Choosing whether to purchase a player or build your own, making it compatible for various devices and screens,and then maintaining your players can be a full-time occupation.
 
 Again, Dynamic Media Classic's approach is to allow you to choose the preset and viewer that fits your needs. You have many different viewer choices and a library of numerous presets available.
 
@@ -64,9 +61,9 @@ Viewer Presets for video are partially configurable depending on the viewer type
 
 Just like all viewers, integration is via a single Dynamic Media Classic URL per viewer or video.
 
->[!NOTE]
+> [!NOTE]
 >
->As a best practice, use Dynamic Media Classic HTML5 Video viewers. The presets used in HTML5 Video viewers are robust video players. By combining into a single player the ability to design the playback components useing HTML5 and CSS, have embedded playback, and use adaptive and progressive streaming depending on the broswer's capability, you extend the reach of your rich media content to the desktop, tablet, and mobile users, and ensure a streamlined video experience.
+> As a best practice, use Dynamic Media Classic HTML5 Video viewers. The presets used in HTML5 Video viewers are robust video players. By combining into a single player the ability to design the playback components useing HTML5 and CSS, have embedded playback, and use adaptive and progressive streaming depending on the broswer's capability, you extend the reach of your rich media content to the desktop, tablet, and mobile users, and ensure a streamlined video experience.
 
 One last note about Dynamic Media Classic video that may apply to some customers: not all companies may have automatic conversion, streaming, or Video Presets enabled for their account. If for some reason you are unable to access the URLs for streaming video, this may be the reason. You will still be able to upload and publish progressively downloaded video and have access to all the video viewers. However, to take advantage of the full Dynamic Media Classic video capabilities, you will want to contact your Account Manager or Sales Manager to get these features enabled.
 
@@ -78,51 +75,51 @@ Learn more about [Video in Dynamic Media Classic](https://docs.adobe.com/content
 
 Before we get started, let's discuss some terms with which you should be familiar in order to work with video. These concepts are not specific to Dynamic Media Classic, and if you are going to be managing video for a professional website, you would do well to get some further education on the subject. We'll recommend some resources at the end of this section.
 
-* **Encoding/transcoding.** Encoding is the process of applying video compression to convert raw, uncompressed video data into a format that makes it easier to work with. Transcoding, while similar, refers to converting from one encoding method to another.
+- **Encoding/transcoding.** Encoding is the process of applying video compression to convert raw, uncompressed video data into a format that makes it easier to work with. Transcoding, while similar, refers to converting from one encoding method to another.
 
-  * Master video files created with video editing software are often too large and not in the proper format for delivery to online destinations. They are typically encoded for quick playback on the desktop and for editing, but not for delivery over the web.
-  * To convert digital video to the proper format and specifications for playback on different screens, video files are transcoded to a smaller, efficient file size optimal for delivery to the web and to mobile devices.
+  - Master video files created with video editing software are often too large and not in the proper format for delivery to online destinations. They are typically encoded for quick playback on the desktop and for editing, but not for delivery over the web.
+  - To convert digital video to the proper format and specifications for playback on different screens, video files are transcoded to a smaller, efficient file size optimal for delivery to the web and to mobile devices.
 
-* **Video compression.** Reducing the quantity of data used to represent digital video images, and is a combination of spatial image compression and temporal motion compensation.
+- **Video compression.** Reducing the quantity of data used to represent digital video images, and is a combination of spatial image compression and temporal motion compensation.
 
-  * Most compression techniques are lossy, which means they throw out data in order to achieve a smaller size.
-  * For example, DV video is compressed relatively little and allows you to easily edit the source footage, however it is much too large to use over the web or even put on a DVD.
+  - Most compression techniques are lossy, which means they throw out data in order to achieve a smaller size.
+  - For example, DV video is compressed relatively little and allows you to easily edit the source footage, however it is much too large to use over the web or even put on a DVD.
 
-* **File formats.** The format is a container, similar to a ZIP file, that determines how files are organized in the video file, but typically not how they are encoded.
+- **File formats.** The format is a container, similar to a ZIP file, that determines how files are organized in the video file, but typically not how they are encoded.
 
-  * Common files formats for source video include Windows Media (WMV), QuickTime (MOV), Microsoft AVI and MPEG, among others. Formats published by Dynamic Media Classic are MP4.
-  * A video file usually contains multiple tracks — a video track (without audio) and one or more audio tracks (without video) — that are interrelated and synchronized.
-  * The video file format determines how these different data tracks and metadata are organized.
+  - Common files formats for source video include Windows Media (WMV), QuickTime (MOV), Microsoft AVI and MPEG, among others. Formats published by Dynamic Media Classic are MP4.
+  - A video file usually contains multiple tracks — a video track (without audio) and one or more audio tracks (without video) — that are interrelated and synchronized.
+  - The video file format determines how these different data tracks and metadata are organized.
 
-* **Codec.** A video codec describes the algorithm by which a video is encoded through the use of compression. Audio is also encoded through an audiocodec.
+- **Codec.** A video codec describes the algorithm by which a video is encoded through the use of compression. Audio is also encoded through an audiocodec.
 
-  * Codecs minimize the amount of information required to play video. Rather than information about each individual frame, only information about the differences between one frame and the next are stored.
-  * Because most videos change little from one frame to the next, codecs allow for high compression rates, which results in smaller file sizes.
-  * A video player decodes the video according to its codec and then displays a series of images, or frames, on the screen.
-  * Common video codecs include H.264, On2 VP6, and H.263.
+  - Codecs minimize the amount of information required to play video. Rather than information about each individual frame, only information about the differences between one frame and the next are stored.
+  - Because most videos change little from one frame to the next, codecs allow for high compression rates, which results in smaller file sizes.
+  - A video player decodes the video according to its codec and then displays a series of images, or frames, on the screen.
+  - Common video codecs include H.264, On2 VP6, and H.263.
 
 ![image](assets/video-overview/bird-video.png)
 
-* **Resolution.** Height and width of the video in pixels.
+- **Resolution.** Height and width of the video in pixels.
 
-  * The size of your source video is determined by your camera and output from your editing software. An HD camera will usually create high resolution 1920 x 1080 video, however to playback smoothly on the web, you would downsample (resize) it to a smaller resolution such as 1280 x 720, or 640 x 480, or smaller.
-  * The resolution has a direct impact on the file size as well as the bandwidth required to play back that video.
+  - The size of your source video is determined by your camera and output from your editing software. An HD camera will usually create high resolution 1920 x 1080 video, however to playback smoothly on the web, you would downsample (resize) it to a smaller resolution such as 1280 x 720, or 640 x 480, or smaller.
+  - The resolution has a direct impact on the file size as well as the bandwidth required to play back that video.
 
-* **Display aspect ratio.** Ratio of width of a video to the height of a video. When the aspect ratio of the video doesn't match the ratio of the player, you may see "black bars," or empty space. Two common aspect ratios used to display video are:
+- **Display aspect ratio.** Ratio of width of a video to the height of a video. When the aspect ratio of the video doesn't match the ratio of the player, you may see "black bars," or empty space. Two common aspect ratios used to display video are:
 
-  * 4:3 (1.33:1). Used for almost all standard-definition TV broadcast content.
-  * 16:9 (1.78:1). Used for almost all wide-screen, high-definition TV content (HDTV) and movies.
+  - 4:3 (1.33:1). Used for almost all standard-definition TV broadcast content.
+  - 16:9 (1.78:1). Used for almost all wide-screen, high-definition TV content (HDTV) and movies.
 
-* **Bit rate/data rate.** The amount of data that is encoded to make up a single second of video playback(in kilobits per second).
+- **Bit rate/data rate.** The amount of data that is encoded to make up a single second of video playback(in kilobits per second).
 
-  * Generally, the lower the bit rate, the more desirable it is for the web because it can be downloaded more quickly. However it can also mean the quality is low because of compression loss.
-  * A good codec should balance low bit rate with good quality.
+  - Generally, the lower the bit rate, the more desirable it is for the web because it can be downloaded more quickly. However it can also mean the quality is low because of compression loss.
+  - A good codec should balance low bit rate with good quality.
 
-* **Frame rate (frames per second, or FPS).** The number of frames, or still images, for each second of video. Typically, North American TV (NTSC) is broadcast in 29.97 FPS; European and Asian TV (PAL) is broadcast in 25 FPS; and film (analog and digital) are typically in 24 (23.976)FPS.
+- **Frame rate (frames per second, or FPS).** The number of frames, or still images, for each second of video. Typically, North American TV (NTSC) is broadcast in 29.97 FPS; European and Asian TV (PAL) is broadcast in 25 FPS; and film (analog and digital) are typically in 24 (23.976)FPS.
 
-  * To make things more confusing, there are also progressive and interlaced frames. Each progressive frame contains an entire image frame, whereas interlaced frames contain every other row of pixels in an image frame. The frames are then played back very quickly, and appear to blend together. Film uses a progressive scan method, whereas digital video is typically interlaced.
-  * In general, it doesn't matter whether your source footage is interlaced or not — Dynamic Media Classic will preserve the scan method in the converted video.
-  * Streaming/Progressive delivery. Video streaming is the sending of media in a continuous stream that can be played as it arrives, while progressively downloaded video is downloaded like any other file from a server and cached locally in your browser.
+  - To make things more confusing, there are also progressive and interlaced frames. Each progressive frame contains an entire image frame, whereas interlaced frames contain every other row of pixels in an image frame. The frames are then played back very quickly, and appear to blend together. Film uses a progressive scan method, whereas digital video is typically interlaced.
+  - In general, it doesn't matter whether your source footage is interlaced or not — Dynamic Media Classic will preserve the scan method in the converted video.
+  - Streaming/Progressive delivery. Video streaming is the sending of media in a continuous stream that can be played as it arrives, while progressively downloaded video is downloaded like any other file from a server and cached locally in your browser.
 
 Hopefully this primer helps you understand the various options involved in using Dynamic Media Classic video.
 
@@ -178,8 +175,8 @@ You may choose either one of many pre-built presets that come with Dynamic Media
 
 On upload, you select a Video Preset by choosing **Video Options** in the Job Options panel. You then choose whether you want to encode for Computer, Mobile, or Tablet.
 
-* Computer is for desktop use. Here you will typically find larger presets (such as HD) that consume more bandwidth.
-* Mobile and Tablet create MP4 video for devices such as iPhones and Android smartphones. The only difference between Mobile and Tablet is that the Tablet presets typically have a higher bandwidth, because they are based on WiFi usage. Mobile presets are optimized for slower 3G usage.
+- Computer is for desktop use. Here you will typically find larger presets (such as HD) that consume more bandwidth.
+- Mobile and Tablet create MP4 video for devices such as iPhones and Android smartphones. The only difference between Mobile and Tablet is that the Tablet presets typically have a higher bandwidth, because they are based on WiFi usage. Mobile presets are optimized for slower 3G usage.
 
 ### Questions to Ask Yourself Before Choosing a Preset
 
@@ -195,11 +192,11 @@ Video Presets determine how your video will be encoded by specifying these setti
 
 ![image](assets/video-overview/video-overview-3.jpg)
 
-* **Aspect ratio.** Usually standard 4:3 or wide-screen16:9.
-* **Size.** This is the same as the display resolution, and is measured in pixels. This is related to aspect ratio. At a ratio of 16:9, a video will be 432 x 240 pixels, while at 4:3 it will be 320 x 240pixels.
-* **FPS.** Standard frame rates are 30, 25 or 24 frames per second (fps), depending on the video standard — NTSC, PAL or Film. This setting doesn't matter, because Dynamic Media Classic will always use the same frame rate as the sourcevideo.
-* **Format.** This is will be MP4.
-* **Bandwidth.** This is the desired connection speed of your targeted user. Do they have a fast internet connection or a slow one? Are they typically using desktop computers or mobile devices? This is also related to resolution (size), because the larger the video, the more bandwidth it requires.
+- **Aspect ratio.** Usually standard 4:3 or wide-screen16:9.
+- **Size.** This is the same as the display resolution, and is measured in pixels. This is related to aspect ratio. At a ratio of 16:9, a video will be 432 x 240 pixels, while at 4:3 it will be 320 x 240pixels.
+- **FPS.** Standard frame rates are 30, 25 or 24 frames per second (fps), depending on the video standard — NTSC, PAL or Film. This setting doesn't matter, because Dynamic Media Classic will always use the same frame rate as the sourcevideo.
+- **Format.** This is will be MP4.
+- **Bandwidth.** This is the desired connection speed of your targeted user. Do they have a fast internet connection or a slow one? Are they typically using desktop computers or mobile devices? This is also related to resolution (size), because the larger the video, the more bandwidth it requires.
 
 ### Determining the Data Rate or "Bit Rate" for Your Video
 
@@ -215,9 +212,9 @@ Sometimes you may find you need a special Video Preset that doesn't match the se
 
 1. Video Presets are located under **Setup > Application Setup > Video Presets**. Here you'll find a list of all the encoding presets available to your company.
 
-    * Every streaming video account has dozens of presets out of the box, and if you create your own custom presets you will see them here as well.
-    * You can filter by type using the drop-down menu. The presets are divided into Computer, Mobile and Tablet.
-  ![image](assets/video-overview/video-overview-4.jpg)
+   - Every streaming video account has dozens of presets out of the box, and if you create your own custom presets you will see them here as well.
+   - You can filter by type using the drop-down menu. The presets are divided into Computer, Mobile and Tablet.
+     ![image](assets/video-overview/video-overview-4.jpg)
 
 2. The Active column allows you to choose whether you want to display all the presets on upload, or only the ones you choose. If you are in the US, you might want to uncheck the European PAL presets, and if in UK/ EMEA, uncheck the NTSCpresets.
 3. Click the **Add** button to create a custom preset. This opens the Add Video Preset panel. The process here is similar to creating an ImagePreset.
@@ -227,9 +224,9 @@ Sometimes you may find you need a special Video Preset that doesn't match the se
 7. **Playback Device** is where you choose what video file format you want (Computer, Mobile, or Tablet). Remember that Mobile and Tablet produce the same MP4 format. Dynamic Media Classic just needs to know in which category to place the preset; however, the theoretical difference is that Tablet presets are typically for a faster internet connection because all support WiFi.
 8. **Target Data Rate** is something you'll have to figure out for yourself, however you can see a suggested range on the image below. You can alternatively drag the slider to the approximate target bandwidth. For a more precise figure, use a bit rate calculator. There is a bit of trial and error involved.
 
-    ![image](assets/video-overview/video-overview-5.jpg)
+   ![image](assets/video-overview/video-overview-5.jpg)
 
-9. Set your source file's **Aspect Ratio**. This setting is directly tied to the size, below. If you choose *Custom*, you will have to manually enter both width and height.
+9. Set your source file's **Aspect Ratio**. This setting is directly tied to the size, below. If you choose _Custom_, you will have to manually enter both width and height.
 10. If you choose an aspect ratio, then set one value for **Resolution Size** , and Dynamic Media Classic will fill in the other value automatically. However for a custom aspect ratio, fill in both values. Your size should be in line with your data rate. If you set a very low data rate and a large size, you would expect the quality to be poor.
 11. Click **Save** to save your preset. Unlike every other preset, you do not need to publish at this point, because the presets are only for uploading files. Later, you'll have to publish out the encoded videos, but the presets are for internal Dynamic Media Classic usage only.
 12. To verify your video preset is on the upload list,go to **Upload**.Choose **Job Options** and expand **Video Options**. Your preset will be listed in the category for the playback device you chose(Computer,Mobile, or Tablet).
@@ -260,8 +257,8 @@ Learn how to [Publish Your Video](https://docs.adobe.com/content/help/en/dynamic
 
 Once you run a video publish, you will be able to get a URL to access your videos and any off-the-shelf Dynamic Media Classic Viewer Presets in a web browser. However if you customize or create your own Video Viewer Preset, you will still need to run a separate Image Server publish.
 
-* Learn how to [Link a URL to a Mobile Site or a Website](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#linking-a-video-url-to-a-mobile-site-or-a-website).
-* Learn how to [Embed the Video Viewer on a Web Page](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#embedding-the-video-viewer-on-a-web-page).
+- Learn how to [Link a URL to a Mobile Site or a Website](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#linking-a-video-url-to-a-mobile-site-or-a-website).
+- Learn how to [Embed the Video Viewer on a Web Page](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#embedding-the-video-viewer-on-a-web-page).
 
 You can also deploy your video using a third-party or custom built video player.
 
@@ -275,16 +272,16 @@ Learn more about [Working with Video Thumbnails](https://docs.adobe.com/content/
 
 The process for selecting and customizing a Viewer Preset is exactly the same as the process for images. You either create a new preset or modify an existing preset and save under a new name, make edits, and run an Image Serving publish. All Viewer Presets are published to the Image Server, not just presets for images, and therefore you must run an image publish in order to see your new or modified presets.
 
->[!TIP]
+> [!TIP]
 >
->Run an Image Serving publish after your Video Server publish to publish out any thumbnail images associated with your videos.
+> Run an Image Serving publish after your Video Server publish to publish out any thumbnail images associated with your videos.
 
 ## Video Search Engine Optimization
 
 Search Engine Optimization (SEO) is the process of improving the visibility of a website or a web page in search engines. While search engines excel at gathering information about text-based content, they cannot adequately acquire information about video unless this information is provided to them. Using Dynamic Media Classic Video SEO, you can use metadata to provide search engines with descriptions of your videos. The Video SEO feature lets you create Video Sitemaps and Media RSS (mRSS) feeds.
 
-* **Video Sitemap**. Informs Google exactly where and what the video content is on a site. Consequently, videos are fully searchable on Google. For example, a Video Sitemap can specify the running time and categories of videos.
-* **mRSS feed**. Used by content publishers to feed media files into Yahoo! Video Search. Google supports both the Video Sitemap and Media RSS (mRSS) feed protocol for submitting information to search engines.
+- **Video Sitemap**. Informs Google exactly where and what the video content is on a site. Consequently, videos are fully searchable on Google. For example, a Video Sitemap can specify the running time and categories of videos.
+- **mRSS feed**. Used by content publishers to feed media files into Yahoo! Video Search. Google supports both the Video Sitemap and Media RSS (mRSS) feed protocol for submitting information to search engines.
 
 When you create Video Sitemaps and mRSS feeds, you decide which metadata fields from video files to include. In this way, you describe your videos to search engines so that search engines can more accurately direct traffic to videos on your web site.
 
@@ -308,11 +305,11 @@ For more information on that topic, see [Viewing, Adding, and Exporting Metadata
 
 ![image](assets/video-overview/video-overview-7.jpg)
 
- Once the metadata has been populated, you will be able to see it on the Detail View for that video asset. Keywords may also be present, but those are located under the Keywords tab.
+Once the metadata has been populated, you will be able to see it on the Detail View for that video asset. Keywords may also be present, but those are located under the Keywords tab.
 
-* Learn more about [Adding Keywords](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/viewing-adding-exporting-metadata.html#add-or-edit-keywords).
-* Learn more about [Video SEO](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/video-seo-search-engine-optimization.html).
-* Learn about [Settings for Video SEO](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/video-seo-search-engine-optimization.html#choosing-video-seo-settings).
+- Learn more about [Adding Keywords](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/viewing-adding-exporting-metadata.html#add-or-edit-keywords).
+- Learn more about [Video SEO](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/video-seo-search-engine-optimization.html).
+- Learn about [Settings for Video SEO](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/video-seo-search-engine-optimization.html#choosing-video-seo-settings).
 
 #### Setting Up Video SEO
 

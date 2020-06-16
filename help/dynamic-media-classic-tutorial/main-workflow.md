@@ -2,13 +2,10 @@
 title: Dynamic Media Classic Main Workflow and Previewing Assets
 description: Learn about the main workflow in Dynamic Media Classic, which includes the three steps - Create (and Upload), Author (and Publish), and Deliver. Then learn how to preview assets in Dynamic Media Classic.
 sub-product: dynamic-media
-feature:
+feature: workflow
 doc-type: tutorial
-activity: develop
-audience: developer
-topics:
-doc-type:
-audience : all
+topics: development, authoring, configuring, architecture, publishing
+audience: all
 activity: use
 ---
 
@@ -32,16 +29,16 @@ See the complete list of [Supported File Types](https://docs.adobe.com/content/h
 
 You can upload source content in several different ways:
 
-* Directly from your desktop or local network. [Learn how](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-sps-desktop-application).
-* From a Dynamic Media Classic FTP server. [Learn how](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
+- Directly from your desktop or local network. [Learn how](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-sps-desktop-application).
+- From a Dynamic Media Classic FTP server. [Learn how](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
 
 The default mode is From Desktop, where you browse for files on your local network and start the upload.
 
 ![image](assets/main-workflow/upload.jpg)
 
->[!TIP]
+> [!TIP]
 >
->Do not manually add your folders. Instead, run an upload from FTP and use the **Include Subfolders** option to recreate your folder structure inside Dynamic Media Classic.
+> Do not manually add your folders. Instead, run an upload from FTP and use the **Include Subfolders** option to recreate your folder structure inside Dynamic Media Classic.
 
 The two most important upload options are enabled by default — **Mark for Publish** , which we've discussed earlier, and **Overwrite**. Overwrite means that if the file being uploaded has the same name as a file already in the system, the new file will replace the existing version. If you uncheck this option, the file might not be uploaded.
 
@@ -49,17 +46,17 @@ The two most important upload options are enabled by default — **Mark for Publ
 
 There are four variations of the Overwrite Image option that can be set for your entire company, and they are often misunderstood. In short, either you set the rules such that you want assets that have the same name to be overwritten more frequently, or you want overwrites to occur less frequently (in which case the new image will get renamed with a "-1" or "-2" extension).
 
-* **Overwrite in current folder, same base image name/extension**.
-This option is the strictest rule for replacement. It requires that you upload the replacement image to the same folder as the original, and that the replacement image has the same filename extension as the original. If these requirements are not met, a duplicate is created.
+- **Overwrite in current folder, same base image name/extension**.
+  This option is the strictest rule for replacement. It requires that you upload the replacement image to the same folder as the original, and that the replacement image has the same filename extension as the original. If these requirements are not met, a duplicate is created.
 
-* **Overwrite in current folder, same base asset name regardless of extension**.
-Requires that you upload the replacement image to the same folder as the original, however the filename extension can be different from the original. For example, chair.tif replaces chair.jpg.
+- **Overwrite in current folder, same base asset name regardless of extension**.
+  Requires that you upload the replacement image to the same folder as the original, however the filename extension can be different from the original. For example, chair.tif replaces chair.jpg.
 
-* **Overwrite in any folder, same base asset name/extension**.
-Requires that the replacement image has the same filename extension as the original image (for example, chair.jpg must replace chair.jpg, not chair.tif ). However, you can upload the replacement image to a different folder than the original. The updated image resides in the new folder; the file can no longer be found in its original location.
+- **Overwrite in any folder, same base asset name/extension**.
+  Requires that the replacement image has the same filename extension as the original image (for example, chair.jpg must replace chair.jpg, not chair.tif ). However, you can upload the replacement image to a different folder than the original. The updated image resides in the new folder; the file can no longer be found in its original location.
 
-* **Overwrite in any folder, same base asset name regardless of extension**.
-This option is the most inclusive replacement rule. You can upload a replacement image to a different folder than the original, upload a file with a different filename extension, and replace the original file. If the original file is in a different folder, the replacement image resides in the new folder to which it was uploaded.
+- **Overwrite in any folder, same base asset name regardless of extension**.
+  This option is the most inclusive replacement rule. You can upload a replacement image to a different folder than the original, upload a file with a different filename extension, and replace the original file. If the original file is in a different folder, the replacement image resides in the new folder to which it was uploaded.
 
 Learn more about the [Overwrite Images Option](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option).
 
@@ -85,8 +82,8 @@ Similarly, you can upload your master source video to Dynamic Media Classic, and
 
 **Upload images in the largest size you need.**
 
-* If you need to zoom, upload a high resolution image of a range of 1500-2500 pixels in the longest dimension. Consider how much detail you want to give, the quality of your source images, and the size of the product being shown. For example, upload a 1000-pixel image for a tiny ring, but a 3000-pixel image for an entire rooms cene.
-* If you don't need to zoom, then upload it at the exact size it will be seen. For example if you have logos or splash/banner images to place on your pages, upload them exactly at their 1:1 size, and call them exactly at that size.
+- If you need to zoom, upload a high resolution image of a range of 1500-2500 pixels in the longest dimension. Consider how much detail you want to give, the quality of your source images, and the size of the product being shown. For example, upload a 1000-pixel image for a tiny ring, but a 3000-pixel image for an entire rooms cene.
+- If you don't need to zoom, then upload it at the exact size it will be seen. For example if you have logos or splash/banner images to place on your pages, upload them exactly at their 1:1 size, and call them exactly at that size.
 
 **Never upsample, or blow up, your images before uploading to Dynamic Media Classic.** For example, don't upsample a smaller image to make it a 2000 pixel image. It won't look good. Make your images as close to perfect as possible before upload.
 
@@ -100,9 +97,9 @@ Learn more about [Uploading Files](https://docs.adobe.com/content/help/en/dynami
 
 After creating and uploading your content, you'll author new rich media assets from your uploaded assets by performing one or more sub-workflows. This includes all the different types of set collections — Image, Swatch, Spin, and Mixed Media sets, as well as Templates. It also includes video. We'll go into much greater detail about each type of image collection set and video rich media later. However in almost all cases, you start by selecting one or more assets (or have no assets selected) and choosing the type of asset you want to build. For example, you might select a main image and a few views of that image and choose to build an Image Set, a collection of alternate views of the same product.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >
->Make sure that all your assets are marked for publish. While by default all assets are automatically marked for publish on upload, any newly authored assets from your uploaded content will need to be marked for publish as well.
+> Make sure that all your assets are marked for publish. While by default all assets are automatically marked for publish on upload, any newly authored assets from your uploaded content will need to be marked for publish as well.
 
 After you've built your new asset, you will run a publish job. You can do that manually or schedule a publish job that runs automatically. Publishing copies all content from the private, Dynamic Media Classic sphere to the public, publish server sphere of the equation. The product of a Dynamic Media Publish job is a unique URL for each published asset.
 
@@ -110,9 +107,9 @@ The server you publish to depends on the type of content and workflow. For examp
 
 Publishing publishes all content marked for publish — not just your content. A single administrator typically publishes on behalf of everyone rather than individual users running a publish. The administrator can publish as needed or set up a recurring daily, weekly, or even every 10 minutes job that will publish automatically. Publish on a schedule that makes sense for your business.
 
->[!TIP]
+> [!TIP]
 >
->Automate your publish jobs and schedule a Full Publish to run every day at 12:00AM or any time late in the evening.
+> Automate your publish jobs and schedule a Full Publish to run every day at 12:00AM or any time late in the evening.
 
 ### Concept: Understanding the Dynamic Media Classic URL
 
@@ -122,11 +119,11 @@ Here is the syntax for the URL of an image with a couple of examples:
 
 ![image](assets/main-workflow/dmc-url.jpg)
 
-In the URL, everything to the left of the question mark is the virtual path to a specific image. Everything  to the right of the question mark is an Image Server modifier, an instruction for how to process the image. When you have multiple modifiers, they are separated by ampersands.
+In the URL, everything to the left of the question mark is the virtual path to a specific image. Everything to the right of the question mark is an Image Server modifier, an instruction for how to process the image. When you have multiple modifiers, they are separated by ampersands.
 
 In the first example, the virtual path to the image “Backpack_A” is `http://sample.scene7.com/is/image/s7train/BackpackA`. The Image Server modifiers resize the image to a width of 250 pixels (from wid=250) and resamples the image using the Lanczos interpolation algorithm, which sharpens as it resizes (from resMode=sharp2).
 
-The second example applies what’s known as an “image preset” to the same Backpack_A image, as indicated by $!_template300$. The $ symbols on either side of the expression indicate that an image preset, a packaged set of image modifiers, is being applied to the image.
+The second example applies what’s known as an “image preset” to the same Backpack_A image, as indicated by $!_template300$. The \$ symbols on either side of the expression indicate that an image preset, a packaged set of image modifiers, is being applied to the image.
 
 Once you understand how Dynamic Media Classic URLs are put together, then you understand how to change them programmatically and how to integrate them deeper into your site and backend systems.
 
@@ -138,12 +135,12 @@ This typically is not an issue unless a mistake occurred, and the image/asset ha
 
 Learn how to [Manually Clear the Cache for the URLs That Need to Be Updated](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
 
->[!TIP]
+> [!TIP]
 >
->To avoid issues with caching delay, always work ahead — an evening, a day, two weeks, etc. Build in time for QA/acceptance for internal parties to proof your work before releasing to the public. Even working an evening before allows you to make changes and re-publish that evening. By morning, the 10 hours has elapsed and the cache updates with the correct image.
+> To avoid issues with caching delay, always work ahead — an evening, a day, two weeks, etc. Build in time for QA/acceptance for internal parties to proof your work before releasing to the public. Even working an evening before allows you to make changes and re-publish that evening. By morning, the 10 hours has elapsed and the cache updates with the correct image.
 
-* Learn more about [Creating a Publishing Job](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
-* Learn more about [Publishing](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html).
+- Learn more about [Creating a Publishing Job](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
+- Learn more about [Publishing](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html).
 
 ## Step 3: Deliver
 
@@ -165,9 +162,9 @@ Example of a link (in red) that will open an Image Set in a viewer in a new pop-
 
 ![image](assets/main-workflow/example-url-2.png)
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >
->You need to integrate the Dynamic Media Classic URLs into your website, mobile app, email, and other digital touchpoints — Dynamic Media Classic can’t do that for you!
+> You need to integrate the Dynamic Media Classic URLs into your website, mobile app, email, and other digital touchpoints — Dynamic Media Classic can’t do that for you!
 
 ## Previewing Assets
 
