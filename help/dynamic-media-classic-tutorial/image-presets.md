@@ -17,7 +17,7 @@ If you look at the URLs of just about any Dynamic Media Classic customer, you'll
 
 Image Presets shorten the URL, so instead of writing out several Image Serving instructions per request, you can write a single Image Preset. For example, these two URLs produce the same 300 x 300 JPEG image with sharpening, but the second one uses an Image Preset:
 
-![image](assets/image-presets/image-preset.png)
+![image](assets/image-presets/image-preset-2.png)
 
 The true value of Image Presets is that any Company Administrator can update the definition of that Image Preset and affect every image using that format — without changing any web code. You will see the results of any change to an Image Preset after the cache for the URL clears.
 
