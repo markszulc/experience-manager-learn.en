@@ -14,6 +14,7 @@ team: TM
   + [Metadata schemas](configuring/metadata-schemas.md)
   + [Metadata profiles](configuring/metadata-profiles.md)
   + [Metadata folder schemas](configuring/metadata-folder-schemas.md)
+  + [Assets admin search rail](configuring/assets-admin-search-rail.md)
   + [Processing profiles](configuring/processing-profiles.md)
 
 + Authoring{#authoring}
