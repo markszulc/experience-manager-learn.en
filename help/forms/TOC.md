@@ -70,6 +70,13 @@ index: y
   + [Pre-Populating HTML5 Forms](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
   + [Form Data Model with Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
   + [Adding Items Dynamically to Choice Component](adaptive-forms/choice-group-items-adding-dynamically-article.md)
++ Prefilling adaptive form using form data model{#prefill-fdm-db}
+  + [Introduction](prefill-fdm-db/introduction.md)
+  + [Create database](prefill-fdm-db/create-database-tables.md)
+  + [Create form data model](prefill-fdm-db/create-form-data-model.md)
+  + [Create JSP](prefill-fdm-db/get-request-parameter.md)
+  + [Create adaptive form](prefill-fdm-db/create-adaptive-form.md)
+  
 + Exporting Submitted Data in CSV Format{#export-submitted-data-csv-format}
   + [Export Submitted Data](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + HTML5 Forms{#html5-forms}
