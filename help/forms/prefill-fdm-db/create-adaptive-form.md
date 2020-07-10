@@ -65,7 +65,7 @@ The next step is to display the employee's beneficiaries in tabular fashion. The
 * Set the Bind Reference to **/newhire/GetEmployeeBeneficiaries**
 * Set the Repeat Settings -  Minimum Count to 1 and Maximum Count to 5. 
 * Your Row1 configuration should look like the screen shot below
-![row-configure](assets/configure-row.png)
+![row-configure](assets/configure-row.PNG)
 * Click on the blue &#9745; to save your changes
 
 ## Bind Row cells
