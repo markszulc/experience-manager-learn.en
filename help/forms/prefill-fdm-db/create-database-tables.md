@@ -10,6 +10,7 @@ version: 6.4,6.5
 kt: 5811
 thumbnail: kt-5811.jpg
 ---
+
 # Create Database Tables
 
 Form data model can be based on RDBMS, RESTfull, SOAP or OData sources. This course's focus is on pre-filing Adaptive Form using form data model backed by RDBMS data source. For the purpose of this tutorial MYSQL database was used. We created the following two tables to demonstrate the use case

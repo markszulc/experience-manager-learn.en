@@ -10,7 +10,8 @@ version: 6.4,6.5
 kt: 5813
 thumbnail: kt-5813.jpg
 ---
-## Create Adaptive Form
+
+# Create Adaptive Form
 
 So far we have created the following
 
