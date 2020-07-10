@@ -15,11 +15,11 @@ thumbnail: kt-5813.jpg
 
 So far we have created the following
 
-* Database with 2 tables
+* Database with 2 tables - newhire and beneficiaries
 * Configured Apache Sling Connection Pooled DataSource 
 * RDBMS based Form Data Model
 
- The next step is to create and configure an Adaptive Form to use form data model.  You can [download and import](assets/fdm-demo-af.zip) sample form and associate it with the form data model.  The sample form has a section to display the employee details and another section to list employee's beneficiaries.
+ The next step is to create and configure an Adaptive Form to use form data model.  To get head start you can [download and import](assets/fdm-demo-af.zip) sample form. The sample form has a section to display the employee details and another section to list employee's beneficiaries.
  
 ## Associate form with form data model
 
