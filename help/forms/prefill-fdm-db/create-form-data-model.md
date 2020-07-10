@@ -12,7 +12,7 @@ thumbnail: kt-5812.jpg
 ---
 
 
-## Create Apache Sling Connection Pooled DataSource
+# Create Apache Sling Connection Pooled DataSource
 
 * The first step in creating RDBMS backed form data model is to configure Apache Sling Connection Pooled DataSource
 * Point your browser to [configMgr](http://localhost:4502/system/console/configMgr)

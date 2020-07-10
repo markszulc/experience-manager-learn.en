@@ -10,6 +10,7 @@ version: 6.4,6.5
 kt: 4419
 thumbnail: kt-4419.jpg
 ---
+
 # Course overview
 
 You will learn to use form data model's request attribute to fetch data to populate adaptive form.
