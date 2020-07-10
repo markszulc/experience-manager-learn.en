@@ -22,6 +22,7 @@ You will learn to use form data model's request attribute to fetch data to popul
 
 The following video gives you an overview of the course
 >[!VIDEO](https://video.tv.adobe.com/v/36387/quality=9)
+
 ## Prerequisites
 
 * Working instance of AEM Forms

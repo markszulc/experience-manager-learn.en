@@ -10,7 +10,7 @@ version: 6.4,6.5
 kt: 5813
 thumbnail: kt-5813.jpg
 ---
-# Create Adaptive Form
+## Create Adaptive Form
 
 So far we have created the following
 
@@ -20,7 +20,7 @@ So far we have created the following
 
  The next step is to create and configure an Adaptive Form to use form data model.  You can [download and import](assets/fdm-demo-af.zip) sample form and associate it with the form data model.  The sample form has a section to display the employee details and another section to list employee's beneficiaries.
  
- ## Associate form with form data model
+## Associate form with form data model
 
   The sample form provided with this course is not associated with any form data model. To configure the form to use form data model we need to do the following:
 
