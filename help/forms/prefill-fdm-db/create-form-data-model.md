@@ -14,7 +14,7 @@ thumbnail: kt-5812.jpg
 
 # Create Apache Sling Connection Pooled DataSource
 
-The first step in creating RDBMS backed form data model is to configure Apache Sling Connection Pooled DataSource. Tp configure the data source, please follow the steps listed below:
+The first step in creating RDBMS backed form data model is to configure Apache Sling Connection Pooled DataSource. To configure the data source, please follow the steps listed below:
 
 * Point your browser to [configMgr](http://localhost:4502/system/console/configMgr)
 * Search for **Apache Sling Connection Pooled DataSource**
@@ -65,7 +65,7 @@ The following steps will walk you through the process of creating the one-to-man
 * Click on the _edit_ icon under the Arguments section
 
 * Specify values as shown in this screen shot
-![association-2](assets/association-entities.png)
+* ![association-2](assets/association-entities.png)
 * **We are linking the two entities using the empID column and id column of beneficiaries and newhire entities respectively.**
 * Click on _Done_ to save your changes
 

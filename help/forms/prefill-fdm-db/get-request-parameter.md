@@ -24,13 +24,29 @@ For the purpose of this course we have created and provided the following
  
 * [Import the package](assets/template-page-component.zip) using [package manager](http://localhost:4502/crx/packmgr/index.jsp)
 * [Open fdmrequest.jsp](http://localhost:4502/crx/de/index.jsp#/apps/fdmdemo/component/page/fdmdemo/fdmrequest.jsp)
-* Uncomment the commented lines. These lines do the following:
-        * Writes the empID to log file 
-        * Create java Map object
-        * Fetch the  value of empID from request parameter
-        * Put the value of empID in map object
-        * Set slingRequest's attribute
-
+* Uncomment the commented lines.
 * Save your changes
->[!NOTE]
->The key empID has to match with the binding value of the newhire entities get service
+
+```
+if(request.getParameter("empID")!=null)
+    {
+      //System.out.println("Adobe !!!There is a empID parameter in the request "+request.getParameter("empID"));
+      //java.util.Map paraMap = new java.util.HashMap();
+      //paraMap.put("empID",request.getParameter("empID"));
+      //slingRequest.setAttribute("paramMap",paraMap);
+    }
+
+````
+These lines do the following:
+
+ * Writes the empID to log file 
+ * Create java Map object
+ * Fetch the  value of empID from request parameter
+ * Put the value of empID in map object
+ * Set slingRequest's attribute
+
+>[!NOTE]The key empID has to match with the binding value of the newhire entities get service
+
+
+
+
