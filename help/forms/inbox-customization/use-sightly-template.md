@@ -9,7 +9,6 @@ activity: implement
 version: 6.5.5
 kt: 5830
 ---
-
 # Using sightly template to display inbox data
 
 You can use sightly template to format the data that is to be displayed in inbox columns. In this example we will display coral-ui icons depending on the value of the income column. The following screenshot shows the use of icons in the income column
@@ -88,14 +87,3 @@ return val;
 * [View inbox](http://localhost:4502/aem/inbox)
 
 Submitting the form will trigger the workflow and a task is assigned to "admin" user. You should see appropriate icon under the income column
-
-
-
-
-
-
-
-
-
-
-

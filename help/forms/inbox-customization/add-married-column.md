@@ -11,7 +11,7 @@ kt: 5830
 
 ---
 
- # Add custom columns
+# Add custom columns
 
 To display workflow data in inbox, we need to define and populate variables in the workflow. The value of the variable needs to be set before a task is assigned to a user. To give you a head start we have provided sample workflow that is ready to be deployed on your AEM server.
 
@@ -21,7 +21,7 @@ To display workflow data in inbox, we need to define and populate variables in t
  [Review the workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
  This workflow has two variables defined(isMarried and income) and its values are set using the set variable component. These variables will be made available as columns to be added to AEM inbox
 
- ## Create service
+## Create service
 
  For every column that we need to display in our inbox we would need to write a service. The following service allows us to add a column to display the value of the isMarried variable
 
