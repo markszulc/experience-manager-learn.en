@@ -1,6 +1,6 @@
 ---
 title: Inbox customization
-description: Customize inbox to display additional columns based on data submitted to workflow
+description: Customize inbox by adding new columns  based on workflow data 
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -8,7 +8,7 @@ doc-type: article
 activity: implement
 version: 6.5
 kt: 5830
-thumbnail: kt-5815.jpg
+
 ---
 # AEM Inbox
 
@@ -20,6 +20,7 @@ thumbnail: kt-5815.jpg
 >[!NOTE]You have to be a member of administrators or workflow-administrators to customize the inbox columns
 
 ## Column customization
+
 [Launch AEM inbox](http://localhost:4502/aem/inbox)
 Open the Admin Control by clicking on the _List View_ icon and then selecting _Admin Control_ as shown in the screen shot below
 
@@ -32,11 +33,13 @@ In the column customization UI you can perform the following operations
 * Rename columns
 
 ## Branding Customization
+
 In the branding customization you can do the following
-Add your organization logo
-Customize header text
-Customize the help link
-Hide Navigation options
+
+* Add your organization logo
+* Customize header text
+* Customize the help link
+* Hide Navigation options
 
 ![inbox-branding](assets/branding-customization.PNG)
 
