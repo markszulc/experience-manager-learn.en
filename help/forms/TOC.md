@@ -76,6 +76,11 @@ index: y
   + [Create form data model](prefill-fdm-db/create-form-data-model.md)
   + [Create JSP](prefill-fdm-db/get-request-parameter.md)
   + [Create adaptive form](prefill-fdm-db/create-adaptive-form.md)
++ Inbox customization{#inbox-customization}
+  + [Introduction](inbox-customization/introduction.md)
+  + [Add custom column](inbox-customization/add-married-column.md)
+  + [Using sightly template](inbox-customization/use-sightly-template.md)
+
   
 + Exporting Submitted Data in CSV Format{#export-submitted-data-csv-format}
   + [Export Submitted Data](export-submitted-data-csv-format/export-submitted-data-csv.md)
