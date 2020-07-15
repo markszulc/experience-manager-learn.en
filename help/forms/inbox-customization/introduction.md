@@ -24,7 +24,7 @@ kt: 5830
 [Launch AEM inbox](http://localhost:4502/aem/inbox)
 Open the Admin Control by clicking on the _List View_ icon and then selecting _Admin Control_ as shown in the screen shot below
 
-![admin-control](assets/open-customization.PNG)
+![admin-control](assets/open-customization.png)
 
 In the column customization UI you can perform the following operations
 
