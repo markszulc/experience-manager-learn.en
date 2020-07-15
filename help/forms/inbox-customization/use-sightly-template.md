@@ -51,23 +51,23 @@ import com.adobe.cq.inbox.ui.column.provider.ColumnProvider;
 
 @Component(service = ColumnProvider.class, immediate = true)
 public class IncomeProvider implements ColumnProvider {
-    @Override
-    public Column getColumn() {
-    	System.out.println("Getting income column");
-        return new Column("income", "Income", String.class.getName(),"inbox/customization/column-templates.html", "incomeTemplate");
-    }
+@Override
+public Column getColumn() {
 
-    @Override
-    public Object getValue(InboxItem inboxItem) {
-        Object val = null;
+return new Column("income", "Income", String.class.getName(),"inbox/customization/column-templates.html", "incomeTemplate");
+}
 
-        Map workflowMetadata = inboxItem.getWorkflowMetadata();
-        System.out.println("Getting income column");
-        if (workflowMetadata != null && workflowMetadata.containsKey("income"))
-            val = workflowMetadata.get("income");
+@Override
+public Object getValue(InboxItem inboxItem) {
+Object val = null;
 
-        return val;
-    }
+Map workflowMetadata = inboxItem.getWorkflowMetadata();
+
+if (workflowMetadata != null && workflowMetadata.containsKey("income"))
+    val = workflowMetadata.get("income");
+
+return val;
+}
 }
 
 ```

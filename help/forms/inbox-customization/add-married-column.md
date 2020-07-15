@@ -43,32 +43,30 @@ import java.util.Map;
  * It is used to display the value of 'ismarried' workflow variable as a column in inbox
  */
 @Component(service = ColumnProvider.class, immediate = true)
-public class MaritalStatusProvider implements ColumnProvider {
-    @Override
-    public Column getColumn() {
-        return new Column("married", "Married", Boolean.class.getName());
-    }
-
-    // Return True or False if 'ismarried' is set. Else returns null
-    private Boolean isMarried(InboxItem inboxItem) {
-        Boolean ismarried = null;
-
-        Map metaDataMap = inboxItem.getWorkflowMetadata();
-        if (metaDataMap != null) {
-            if (metaDataMap.containsKey("isMarried")) {
-                ismarried = (Boolean) metaDataMap.get("isMarried");
-            }
-        }
-
-        return ismarried;
-    }
-
-    @Override
-    public Object getValue(InboxItem inboxItem) {
-        return isMarried(inboxItem);
-    }
+public class MaritalStatusProvider implements ColumnProvider {@Override
+public Column getColumn() {
+return new Column("married", "Married", Boolean.class.getName());
 }
 
+// Return True or False if 'ismarried' is set. Else returns null
+private Boolean isMarried(InboxItem inboxItem) {
+Boolean ismarried = null;
+
+Map metaDataMap = inboxItem.getWorkflowMetadata();
+if (metaDataMap != null) {
+if (metaDataMap.containsKey("isMarried")) {
+    ismarried = (Boolean) metaDataMap.get("isMarried");
+}
+}
+
+return ismarried;
+}
+
+@Override
+public Object getValue(InboxItem inboxItem) {
+return isMarried(inboxItem);
+}
+}
  ```
 
 >[!NOTE]You need to include AEM 6.5.5 Uber.jar in your project for the above code to work
