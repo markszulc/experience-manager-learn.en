@@ -14,7 +14,7 @@ kt: 5830
 
  To display additional workflow data in AEM inbox you have to perform the following steps
 
- ## Create variable(s)
+ # Add custom columns
 
 To display workflow data in inbox, we need to define and populate variables in the workflow. The value of the variable needs to be set before a task is assigned to a user. To give you a head start we have provided sample workflow that is ready to be deployed on your AEM server.
 
