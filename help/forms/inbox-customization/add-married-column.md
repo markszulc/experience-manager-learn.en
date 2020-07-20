@@ -15,9 +15,9 @@ kt: 5830
 
 To display workflow data in inbox, we need to define and populate variables in the workflow. The value of the variable needs to be set before a task is assigned to a user. To give you a head start we have provided sample workflow that is ready to be deployed on your AEM server.
 
- * [Login to AEM](http://localhost:4502/crx/de/index.jsp)
- * [Import the review workflow](assets/review-workflow.zip)
- * [Review the workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
+* [Login to AEM](http://localhost:4502/crx/de/index.jsp)
+* [Import the review workflow](assets/review-workflow.zip)
+* [Review the workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
 
  This workflow has two variables defined(isMarried and income) and its values are set using the set variable component. These variables will be made available as columns to be added to AEM inbox
 
