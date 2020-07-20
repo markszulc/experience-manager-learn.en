@@ -4,7 +4,7 @@ description: Learn how to use AEM's Omnisearch to quickly discover assets.
 feature: omnisearch
 topics: authoring, search
 audience: author
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: cloud-service
 kt: 4312

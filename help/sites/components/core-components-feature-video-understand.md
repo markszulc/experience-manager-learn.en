@@ -5,7 +5,7 @@ feature: core-components
 topics: authoring
 audience: all
 activity: use
-doc-type: feature-video
+doc-type: feature video
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4676
 thumbnail: 18926.jpg

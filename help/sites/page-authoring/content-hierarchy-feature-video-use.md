@@ -6,7 +6,7 @@ seo-description: The following video highlights how site pages are stored within
 feature: page-editor
 topics: authoring, publishing
 audience: author, marketer
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4243

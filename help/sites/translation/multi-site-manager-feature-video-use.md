@@ -6,7 +6,7 @@ seo-description: Live Copy Overview and Blueprint Configuration Manager are Touc
 feature: multi-site-manager
 topics: localization, authoring, content-architecture
 audience: all
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 uuid: 76f295d0-78dd-429c-9129-9182b3a706a6

@@ -8,7 +8,7 @@ discoiquuid: 9b8435e1-6271-46ad-9c46-bae233b7c5fd
 feature: smart-tags
 topics: metadata, search
 audience: all
-doc-type: feature-video
+doc-type: feature video
 activity: understand
 version: 6.3, 6.4, 6.5
 ---

@@ -4,7 +4,7 @@ description: The Connected Assets feature allows an AEM Sites author to seamless
 feature: connected-assets
 topics: authoring, operations, sharing, publishing
 audience: all
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: 6.5
 redirect-from: https://docs.adobe.com

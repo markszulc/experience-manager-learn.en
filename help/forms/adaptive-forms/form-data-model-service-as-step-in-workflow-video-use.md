@@ -8,7 +8,7 @@ uuid: ecd5d5aa-01eb-48fb-872f-66c656ae14df.
 feature: workflow
 topics: integrations
 audience: developer
-doc-type: technical-video
+doc-type: technical video
 activity: setup
 version: 6.4,6.5
 

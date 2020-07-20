@@ -7,7 +7,7 @@ uuid: daa6f20f-a4d3-402d-83b9-57d852062a89
 discoiquuid: eb2e484a-0068-458f-acff-42dd95a40aab
 topics: authoring, search, metadata, localization
 audience: all
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 ---

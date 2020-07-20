@@ -61,8 +61,9 @@ For this exercise, the following users need to be involved and to perform some t
 
 >[!VIDEO](https://video.tv.adobe.com/v/28596?quality=12&learn=on)
 
-> [!NOTE]
-> Publish the Experience Fragment before exporting it to Adobe Target.
+>[!NOTE]
+>
+>Publish the Experience Fragment before exporting it to Adobe Target.
 
 ## Marketer Activities
 

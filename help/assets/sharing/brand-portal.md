@@ -6,7 +6,7 @@ seo-description: Video walk-throughs of the AEM Author and AEM Assets Brand Port
 feature: brand-portal
 topics: authoring, sharing, collaboration, search, integrations, publishing, metadata, images, renditions, administration
 audience: all
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 team: tm

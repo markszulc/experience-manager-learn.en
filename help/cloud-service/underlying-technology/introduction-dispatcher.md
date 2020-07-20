@@ -4,7 +4,7 @@ description: An introduction to the capabilities and features of the dispatcher 
 feature: dispatcher
 topics: architecture
 audience: administrator, developer
-doc-type: technical-video
+doc-type: technical video
 activity: understand
 version: cloud-service
 kt: 4644

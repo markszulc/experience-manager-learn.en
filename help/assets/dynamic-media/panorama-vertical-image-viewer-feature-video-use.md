@@ -7,7 +7,7 @@ uuid : a9f33fe7-cc6e-41d0-943d-387d98abc27f
 sub-product: dynamic-media
 feature: video-profiles, video-profiles, vr-360
 topics: videos, renditions, authoring
-doc-type: feature-video
+doc-type: feature video
 audience : all
 activity: use
 version: 6.4, 6.5

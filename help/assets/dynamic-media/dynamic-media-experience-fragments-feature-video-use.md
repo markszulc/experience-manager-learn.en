@@ -8,7 +8,7 @@ discoiquuid: 5e411dba-5e6c-4256-87d4-84f618aa29b5
 sub-product: dynamic-media, content-services
 feature: experience-fragments
 topics: images, videos, renditions, authoring, integrations, publishing, metadata, sharing, publishing
-doc-type: feature-video
+doc-type: feature video
 audience : all
 activity: use
 version: 6.3, 6.4, 6.5

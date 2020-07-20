@@ -21,15 +21,15 @@ Image Presets shorten the URL, so instead of writing out several Image Serving i
 
 The true value of Image Presets is that any Company Administrator can update the definition of that Image Preset and affect every image using that format — without changing any web code. You will see the results of any change to an Image Preset after the cache for the URL clears.
 
-> [!IMPORTANT]
+>[!IMPORTANT]
 >
-> When resizing an image, the aspect ratio, the ratio of the width of the image to its height, should always be kept proportional so that the image is not distorted.
+>When resizing an image, the aspect ratio, the ratio of the width of the image to its height, should always be kept proportional so that the image is not distorted.
 
 An Image Preset has a dollar sign ($) on both sides of its name, and follows the question mark (?) separator.
 
-> [!TIP]
+>[!TIP]
 >
-> Create one Image Preset per unique image size on your site. For example, if you need a 350 X 350 image for the product detail page, a 120 X 120 image for the browse/search pages, and a 90 X 90 image for a cross-sell/featured item, then you need three Image Presets, whether you have 500 images or 500,000.
+>Create one Image Preset per unique image size on your site. For example, if you need a 350 X 350 image for the product detail page, a 120 X 120 image for the browse/search pages, and a 90 X 90 image for a cross-sell/featured item, then you need three Image Presets, whether you have 500 images or 500,000.
 
 - Learn more about [Image Presets](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
 - Learn how to [Create an Image Preset](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
@@ -40,11 +40,11 @@ Image Presets typically resize an image, and any time you resize an image from i
 
 We expect that the high resolution images you upload into Dynamic Media Classic do not need any sharpening when viewed at full size — when zoomed into. However at any smaller size, some sharpening is usually desirable.
 
-> [!TIP]
+>[!TIP]
 >
-> Always sharpen when resizing images! That means that you'll need to add sharpening to every Image Preset (and Viewer Preset, which we'll discuss later).
+>Always sharpen when resizing images! That means that you'll need to add sharpening to every Image Preset (and Viewer Preset, which we'll discuss later).
 >
-> If your images do not look good, chances are it is because they need sharpening or perhaps the quality was poor to begin with.
+>If your images do not look good, chances are it is because they need sharpening or perhaps the quality was poor to begin with.
 
 How much sharpening to add is entirely subjective. Some people like softer images, while others like them very sharp. It is easy to enhance an image by running a combination of sharpening filters on an image. However, it is also easy to go overboard and over-sharpen an image.
 

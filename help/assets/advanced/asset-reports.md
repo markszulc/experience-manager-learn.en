@@ -4,7 +4,7 @@ description: AEM Assets provides an enterprise level reporting framework that sc
 feature: reports
 topics: authoring, operations, performance, metadata
 audience: all
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 redirect-form: https://docs.adobe.com/content/help/en/experience-manager-learn/assets/analytics/asset-reports-feature-video-use.html

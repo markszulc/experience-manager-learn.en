@@ -88,6 +88,7 @@ team: TM
   + [Viewers](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
   + [Panoramic and Vertical Image Viewers](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
   + [Viewers with Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
+  + [Dynamic Media Classic Desktop Application](dynamic-media/dynamic-media-classic-desktop-application.md)
   + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
 
 + Translation {#translation}

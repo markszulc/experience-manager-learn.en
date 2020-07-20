@@ -59,7 +59,9 @@ The code above creates a new Test Suite.
         })
 ```
 
->[!NOTE] If your are testing this capability on AEM Forms 6.4 or above, please create a new Adaptive Form and use it to do your testing.Using the Adaptive Form provided with the package is not recommended.
+>[!NOTE]
+>
+>If your are testing this capability on AEM Forms 6.4 or above, please create a new Adaptive Form and use it to do your testing.Using the Adaptive Form provided with the package is not recommended.
 
 Test cases can be added to test suite to be executed against an adaptive form.
 

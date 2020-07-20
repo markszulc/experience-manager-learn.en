@@ -7,7 +7,7 @@ sub-product: content-services
 feature: experience-fragments
 topics: integrations, personalization
 audience: all
-doc-type: feature-video
+doc-type: feature video
 activity: setup
 version: 6.4, 6.5
 uuid: 7b91f65d-5a35-419a-8cf7-be850165dd33
@@ -37,8 +37,8 @@ Adobe Experience Manager 6.4 reimagines the personalization workflow between AEM
 
 ## AEM 6.3 Feature Packs and Dependencies {#aem-feature-packs-and-dependencies}
 
-| AEM 6.3 Feature Pack       | Dependencies                                                                                  |
-|----------------------------|-----------------------------------------------------------------------------------------------|
+| AEM 6.3 Feature Pack                                                                                                                                                                                    | Dependencies                                                                                  |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | [CQ-6.3.0-FEATUREPACK-18961](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-18961) | adobe/cq630/servicepack:aem-service-pkg:6.3.2                                                 |
 | [CQ-6.3.0-FEATUREPACK-24442](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-24442) | adobe/cq630/servicepack:aem-service-pkg:6.3.2 adobe/cq630/cumulativefixpack:aem-6.3.2-cfp:1.0 |
 | [CQ-6.3.0-FEATUREPACK-24640](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-24640) | adobe/cq630/servicepack:aem-service-pkg:6.3.2 adobe/cq630/cumulativefixpack:aem-6.3.2-cfp:2.0 |

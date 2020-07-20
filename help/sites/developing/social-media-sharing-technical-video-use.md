@@ -4,7 +4,7 @@ description: Explore setting up and using the Social Media Sharing component.
 feature: core-components
 topics: integrations
 audience: developer, implementer
-doc-type: technical-video
+doc-type: technical video
 activity: setup
 version: 6.3, 6.4, 6.5
 ---

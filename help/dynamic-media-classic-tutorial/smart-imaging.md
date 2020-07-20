@@ -35,9 +35,9 @@ You likely are concerned that you'll have to make changes to your URLs, Image Pr
 
 Smart imaging works with images delivered over HTTP, HTTPS, and HTTP/2.
 
-> [!NOTE]
+>[!NOTE]
 >
-> Moving over to Smart Imaging clears your cache at the CDN. The cache in the CDN is typically built up again within one or two days.
+>Moving over to Smart Imaging clears your cache at the CDN. The cache in the CDN is typically built up again within one or two days.
 
 Smart Imaging is included with your existing license of Dynamic Media Classic. There are no additional costs for this feature. To take advantage of it, you must meet two requirements: have an Adobe-bundled CDN and a dedicated domain. Then you must enable it for your account because it is not automatically enabled.
 

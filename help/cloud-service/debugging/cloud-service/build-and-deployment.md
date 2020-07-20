@@ -209,7 +209,7 @@ To validate this issue is the cause of the failing behavior:
    ```
    2020-01-01T01:01:02+0000 Begin deployment in aem-program-x-env-y-dev [CorrelationId: 1234]
    
-   ````
+   ```
 
    ... and ...
 

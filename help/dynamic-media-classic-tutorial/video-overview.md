@@ -23,9 +23,9 @@ By the end of this section of the tutorial you will know how to:
 - Add captions and chapter markers to video
 - Customize and publish video viewers for desktop and mobile users
 
-> [!NOTE]
+>[!NOTE]
 >
-> All URLs in this chapter are for illustrative purposes only; they are not live links.
+>All URLs in this chapter are for illustrative purposes only; they are not live links.
 
 ## Overview of Dynamic Media Classic Video
 
@@ -61,9 +61,9 @@ Viewer Presets for video are partially configurable depending on the viewer type
 
 Just like all viewers, integration is via a single Dynamic Media Classic URL per viewer or video.
 
-> [!NOTE]
+>[!NOTE]
 >
-> As a best practice, use Dynamic Media Classic HTML5 Video viewers. The presets used in HTML5 Video viewers are robust video players. By combining into a single player the ability to design the playback components using HTML5 and CSS, have embedded playback, and use adaptive and progressive streaming depending on the broswer's capability, you extend the reach of your rich media content to the desktop, tablet, and mobile users, and ensure a streamlined video experience.
+>As a best practice, use Dynamic Media Classic HTML5 Video viewers. The presets used in HTML5 Video viewers are robust video players. By combining into a single player the ability to design the playback components using HTML5 and CSS, have embedded playback, and use adaptive and progressive streaming depending on the broswer's capability, you extend the reach of your rich media content to the desktop, tablet, and mobile users, and ensure a streamlined video experience.
 
 One last note about Dynamic Media Classic video that may apply to some customers: not all companies may have automatic conversion, streaming, or Video Presets enabled for their account. If for some reason you are unable to access the URLs for streaming video, this may be the reason. You will still be able to upload and publish progressively downloaded video and have access to all the video viewers. However, to take advantage of the full Dynamic Media Classic video capabilities, you will want to contact your Account Manager or Sales Manager to get these features enabled.
 
@@ -272,9 +272,9 @@ Learn more about [Working with Video Thumbnails](https://docs.adobe.com/content/
 
 The process for selecting and customizing a Viewer Preset is exactly the same as the process for images. You either create a new preset or modify an existing preset and save under a new name, make edits, and run an Image Serving publish. All Viewer Presets are published to the Image Server, not just presets for images, and therefore you must run an image publish in order to see your new or modified presets.
 
-> [!TIP]
+>[!TIP]
 >
-> Run an Image Serving publish after your Video Server publish to publish out any thumbnail images associated with your videos.
+>Run an Image Serving publish after your Video Server publish to publish out any thumbnail images associated with your videos.
 
 ## Video Search Engine Optimization
 

@@ -4,7 +4,7 @@ description: An overview of developing components with Adobe Experience Manager 
 feature: sling-models, htl
 topics: components, development
 audience: administrator, developer
-doc-type: technical-video
+doc-type: technical video
 activity: develop
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4235

@@ -6,7 +6,7 @@ feature: authentication
 topics: authentication, security
 activity: understand
 audience: administrator, architect, developer, implementer
-doc-type: technical-video
+doc-type: technical video
 kt: 781
 ---
 

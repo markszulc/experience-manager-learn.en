@@ -5,7 +5,7 @@ sub-product: assets
 feature: adobe-asset-link
 topics: authoring, collaboration, operations, sharing, metadata, images, operations
 audience: all
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: 
 kt : 4910

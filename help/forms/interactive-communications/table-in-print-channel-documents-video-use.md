@@ -5,7 +5,7 @@ description: The following video walks through the steps required to use table c
 feature: interactive-communication
 topics: development
 audience: developer
-doc-type: technical-video
+doc-type: technical video
 activity: implement
 version: 6.4,6.5
 

@@ -8,7 +8,7 @@ uuid: 5c664b16-c089-48ad-8bf6-9766d0ddc3c4
 feature: integrations
 topics: form-data-model
 audience: developer
-doc-type: technical-video
+doc-type: technical video
 activity: setup
 version: 6.4,6.5
 discoiquuid: 4e5f947c-b49a-423e-9139-51c0c5648318

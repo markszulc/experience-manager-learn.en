@@ -6,7 +6,7 @@ seo-description: AEM Sites' page difference capabilities show provides a quick, 
 feature: page-diff
 topics: authoring
 audience: author, marketer
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 uuid: e096a08b-528d-48c7-93fb-73b10c0a9259

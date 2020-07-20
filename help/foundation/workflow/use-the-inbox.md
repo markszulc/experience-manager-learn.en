@@ -6,7 +6,7 @@ feature: inbox
 topics: collaboration, governance
 activity:  use
 audience: author, analyst
-doc-type: feature-video
+doc-type: feature video
 ---
 
 # Using the Inbox in AEM

@@ -6,7 +6,7 @@ feature: oak
 topics: search
 activity: use
 audience: architect, developer, implementer
-doc-type: technical-video
+doc-type: technical video
 ---
 
 # Use oak-run.jar to Manage Indexes

@@ -7,7 +7,7 @@ sub-product: content-services
 feature: experience-fragments
 topics: integrations
 audience: administrator, developer
-doc-type: technical-video
+doc-type: technical video
 activity: setup
 version: 6.4, 6.5
 uuid: 05fd477d-0c1a-42c0-ab92-2bca86602e2e

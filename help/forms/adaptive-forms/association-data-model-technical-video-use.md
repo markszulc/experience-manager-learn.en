@@ -8,7 +8,7 @@ discoiquuid: e01e9bd4-5b47-4356-9884-6968f385bb20
 feature: adaptive-forms, form-data-model
 topics: integrations
 audience: developer
-doc-type: technical-video
+doc-type: technical video
 activity: setup
 version: 6.3,6.4,6.5
 

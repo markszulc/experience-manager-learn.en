@@ -6,7 +6,7 @@ seo-description: The following video introduces the page properties metadata ass
 feature: page-editor
 topics: authoring, metadata
 audience: author, marketer
-doc-type: feature-video
+doc-type: feature video
 activity: understand
 version: 6.3, 6.4, 6.5
 kt: 4321

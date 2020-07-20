@@ -4,7 +4,7 @@ description: The Translation Configuration UI allows a user to manage rules for 
 feature: language-copy
 topics: localization, content-architecture
 audience: developer, administrator
-doc-type: technical-video
+doc-type: technical video
 activity: setup
 version: 6.4, 6.5
 ---

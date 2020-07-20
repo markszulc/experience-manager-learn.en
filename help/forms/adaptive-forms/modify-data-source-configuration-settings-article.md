@@ -7,7 +7,7 @@ seo-description: Modify the host name and other settings in Data Source Configur
 feature: integrations
 topics: form-data-model
 audience: developer
-doc-type: technical-video
+doc-type: technical video
 activity: setup
 version: 6.5
 uuid: 31e297c9-3d12-4a7a-b1ff-1e347e17b24c

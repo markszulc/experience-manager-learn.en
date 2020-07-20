@@ -4,7 +4,7 @@ description: The AEM Project Archetype creates a minimal, best-practices-based A
 feature: maven-archetype
 topics: development
 audience: developer
-doc-type: technical-video
+doc-type: technical video
 activity: understand
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4675

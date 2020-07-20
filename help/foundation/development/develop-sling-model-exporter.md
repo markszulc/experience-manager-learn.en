@@ -7,7 +7,7 @@ feature: sling-models, sling-model-exporter
 topics: content-delivery, development, headless
 activity: develop
 audience: developer
-doc-type: technical-video
+doc-type: technical video
 ---
 
 # Develop Sling Model Exporters

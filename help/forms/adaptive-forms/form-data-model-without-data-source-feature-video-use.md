@@ -6,7 +6,7 @@ seo-description: Starting with AEM Forms 6.4, we now have the ability to define 
 feature: form-data-model
 topics: integrations
 audience: developer
-doc-type: technical-video
+doc-type: technical video
 activity: setup
 version: 6.4,6.5
 uuid: eeb6165c-5465-4692-a3a9-8ef10780678d

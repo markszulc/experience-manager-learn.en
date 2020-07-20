@@ -590,15 +590,17 @@ Again, this is based on real-life experience. We have seen all those patterns in
 
 #### Cache killer
 
-> [!WARNING]
-> This is an anti-pattern. Do not use it. Ever.
+>[!WARNING]
+>
+>This is an anti-pattern. Do not use it. Ever.
 
 Have you ever seen query parameters like `?ck=398547283745`? They are called  cache-killer ("ck"). The idea is, that if you add any query parameter the resource will not be acched. Moreover, if you add a random number as the parameter's value (like "398547283745") the URL becomes unique and you make sure, that no other cache between the AEM system and your screen is able to cache either. Usual in-between suspects would be a "Varnish" cache in front of the Dispatcher, a CDN or even the browser cache. Again: Don't do that. You do want your resources to be cached as much and as long as possible. The cache is your friend. Don't kill friends.
 
 #### Auto Invalidation
 
-> [!WARNING]
-> This is an anti-pattern. Avoid using it for digital assets. Try to keep the Dispatcher's default configuration, which > is auto invalidation for ".html" files, only
+>[!WARNING]
+>
+>This is an anti-pattern. Avoid using it for digital assets. Try to keep the Dispatcher's default configuration, which > is auto invalidation for ".html" files, only
 
 On a short term, you can add ".jpg" and ".png" to the auto-invalidation configuration in the Dispatcher. This means, that whenever an invalidation occurs, all ".jpg", ".png" and ".html" need to be re-rendered.
 
@@ -638,8 +640,9 @@ But we didn't activate the home page, right? And why should we activate a page w
 
 #### The Lazy Admin's Tool - Decreasing Statfile Levels
 
-> [!WARNING]
-> This is an anti-pattern. Use it only on short term to buy some time and come up with a more sophisticated solution.
+>[!WARNING]
+>
+>This is an anti-pattern. Use it only on short term to buy some time and come up with a more sophisticated solution.
 
 The lazy admin usually "_sets auto-invalidation to jpgs and the statfile-level to zero - that always helps with caching issues of all kinds_." You'll find that advice in tech forums, and it helps with your invalidation issue.
 
@@ -845,8 +848,9 @@ We now have a binary file in the DAM and a component, that provides a quality pr
 
 #### Naïve Approach 1: Pass Properties as Query Parameters
 
-> [!WARNING]
-> This is an anti-pattern. Do not use it.
+>[!WARNING]
+>
+>This is an anti-pattern. Do not use it.
 
 In the last chapter our image URL rendered by the component looked like this:
 
@@ -868,8 +872,9 @@ This is a bad idea. Remember? Requests with query parameters are not cacheable.
 
 #### Naïve Approach 2: Pass Additional Information as Selector
 
-> [!WARNING]
-> This might become an anti-pattern. Use it carefully.
+>[!WARNING]
+>
+>This might become an anti-pattern. Use it carefully.
 
 ![Passing Component Properties as Selectors](assets/chapter-1/passing-component-properties.png)
 
@@ -1059,8 +1064,9 @@ We already briefly mentioned the _statfile_ before. It is related to auto-invali
 
 All cache files in the Dispatcher's filesystem that are configured to be auto-invalidated are considered invalid if their last-modified date is older than the `statfile's` last-modified date.
 
-> [!NOTE]  
-> The last-modified date we are talking of is the cached file is the date the file was requested from the client's browser and ultimately created in the filesystem. It is not the `jcr:lastModified` date of the resource.
+>[!NOTE]  
+>
+>The last-modified date we are talking of is the cached file is the date the file was requested from the client's browser and ultimately created in the filesystem. It is not the `jcr:lastModified` date of the resource.
 
 The last-modified date of the statfile (`.stat`) is the date the invalidation request from AEM was received on the Dispatcher.
 
@@ -1481,8 +1487,9 @@ And of course, you can apply your own mix of all three approaches.
 
 **Option 1**. An "SSO" Gateway might be enforced by your organization anyway. If your access scheme is very coarse grained, you may not need information from  AEM to decide whether to grant or deny access to a resource. 
 
-> [!NOTE]  
-> This pattern requires a _Gateway_ that _intercepts_ each request and performs the actual _authorization_ - granting or denying requests to the Dispatcher. If your SSO system is an _authenticator_, that only establishes the identity of a user you have to implement Option 3. If you read terms like "SAML" or "OAauth" in your SSO system's handbook - that is a strong indicator that you have to implement Option 3.   
+>[!NOTE]  
+>
+>This pattern requires a _Gateway_ that _intercepts_ each request and performs the actual _authorization_ - granting or denying requests to the Dispatcher. If your SSO system is an _authenticator_, that only establishes the identity of a user you have to implement Option 3. If you read terms like "SAML" or "OAauth" in your SSO system's handbook - that is a strong indicator that you have to implement Option 3.   
 
 
 **Option 2**. "Not caching" generally is a bad idea. If you go that way, make sure the amount of traffic and the number of sensitive resources which are excluded are small. Or make sure to have some in-memory cache in the Publish system installed, that the Publish systems can handle the resulting load - more on that in Part III of this series.
@@ -1513,8 +1520,9 @@ Let's say, your `statfile` has a modification time of today 12:00 and your `grac
 
 The reference configuration proposes a `gracePeriod` of two minutes for a good reason. You might think "Two minutes? That's almost nothing. I can easily wait 10 minutes for the content to show up…".  So you might be tempted to set a longer period – let's say 10 minutes, assuming that your content shows up at least after these 10 minutes.
 
-> [!WARNING]  
-> This is not how `gracePeriod` is working. The grace period is _not_ the time after which a document is guaranteed to be invalidated, but a time-frame no invalidation happens. Each subsequent invalidation that fall within this frame _prolongs_ the time frame - this can be indefinitely long.  
+>[!WARNING]  
+>
+>This is not how `gracePeriod` is working. The grace period is _not_ the time after which a document is guaranteed to be invalidated, but a time-frame no invalidation happens. Each subsequent invalidation that fall within this frame _prolongs_ the time frame - this can be indefinitely long.  
 
 Let us illustrate how `gracePeriod` actually is working with an example:
 
@@ -1817,8 +1825,9 @@ You can then name and group the rules accordingly and provide the reader of the 
 
 Most likely you will add a new rule to one of the groups – or maybe even create a new group. In that case, the number of items to renaming/renumbering is limited to that group.
 
-> [!WARNING]
-> More sophisticated setups split filtering rules into a number of files, that are inlcuded by the main `dispatcher.any` configuration file. A new file however does not introduce a new namespace. So if you have a rule "001" in one file and "001" in another you will get an error. Even more reason to come up with semantically strong names.
+>[!WARNING]
+>
+>More sophisticated setups split filtering rules into a number of files, that are inlcuded by the main `dispatcher.any` configuration file. A new file however does not introduce a new namespace. So if you have a rule "001" in one file and "001" in another you will get an error. Even more reason to come up with semantically strong names.
 
 **References**
 

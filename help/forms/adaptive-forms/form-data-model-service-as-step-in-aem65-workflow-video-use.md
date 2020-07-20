@@ -9,7 +9,7 @@ seo-description: AEM Forms 6.5 introduced the ability to create variables in the
 feature: workflow.
 topics: workflow.
 audience: developer.
-doc-type: technical-video.
+doc-type: technical video.
 activity: setup.
 version: 6.5.
 

@@ -7,7 +7,7 @@ sub-product: forms
 feature: workflow
 topics: integrations
 audience: developer
-doc-type: technical-video
+doc-type: technical video
 activity: setup
 version: 6.4,6.5
 ---

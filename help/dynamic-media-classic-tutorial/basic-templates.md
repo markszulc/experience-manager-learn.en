@@ -29,9 +29,9 @@ By the end of this section of the tutorial you will know how to:
 - Add text layers and make them variable through the use of parameters.
 - Construct a template URL and manipulate the image dynamically through the web browser.
 
-> [!NOTE]
+>[!NOTE]
 >
-> All URLs in this chapter are for illustrative purposes only; they are not live links.
+>All URLs in this chapter are for illustrative purposes only; they are not live links.
 
 ## Overview of Basic Templates
 
@@ -201,21 +201,21 @@ Finally, your initial set of parameters will become the default values of proper
 This is the workflow for creating parameters:
 
 1. Click the **Parameters** button next to the name of the layer for which you want to create parameters. The Parameters screen opens. It lists each property on the layer and its value.
-2. Select the **On** option beside the name of each property you want to make into a parameter. A default parameter name will appear. You can only add parameters to properties that have changed from their default state.
+1. Select the **On** option beside the name of each property you want to make into a parameter. A default parameter name will appear. You can only add parameters to properties that have changed from their default state.
 
    - For example, if you add a layer and keep it at its default xy position of 0,0, Dynamic Media Classic will not expose a **Position** property. To fix, move the layer at least one pixel. Now Dynamic Media Classic will expose **Position** as a property you can parameterize.
    - To add a parameter to the show/hide property (which turns the layer on and off ), click the **Show** or **Hide Layer** icon to toggle the layer off (you can turn it back on afterwards if you want). Dynamic Media Classic will now expose a **Hide** property that can be parameterized.
 
-3. Rename the default parameter names to something that will be easier to identify in the URL. For example, if you want to add a parameter to change the banner layer on top of an image, change the default name of "layer_2_src" to"banner."
-4. Press **Close** to exit the Parameters screen.
-5. Repeat this process for other layers by clicking the **Parameters** button and adding and renaming parameters.
-6. Save your changes when done.
+1. Rename the default parameter names to something that will be easier to identify in the URL. For example, if you want to add a parameter to change the banner layer on top of an image, change the default name of "layer_2_src" to"banner."
+1. Press **Close** to exit the Parameters screen.
+1. Repeat this process for other layers by clicking the **Parameters** button and adding and renaming parameters.
+1. Save your changes when done.
 
-> [!TIP]
+>[!TIP]
 >
-> Rename your parameters to something meaningful, and develop a naming convention to standardize those names. Be sure the naming convention is agreed upon in advance by both the design and development teams.
+>Rename your parameters to something meaningful, and develop a naming convention to standardize those names. Be sure the naming convention is agreed upon in advance by both the design and development teams.
 >
-> Can't add a parameter because you don't see the property? Just change the property of the layer from its default (by moving, resizing, hiding, etc.). You should now see that property exposed.
+>Can't add a parameter because you don't see the property? Just change the property of the layer from its default (by moving, resizing, hiding, etc.). You should now see that property exposed.
 
 Learn more about [Template Parameters](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template-parameters.html).
 
@@ -313,16 +313,16 @@ You have enough information to create your parameters, however there is a comple
 Here are the steps to add parameters to text layers.
 
 1. Click the **Parameters** button (a "P") next to the name of the text layer for which you want to create parameters. The Parameters screen opens. The **Common** tab lists each property on the layer and its value. Here you can add regular layer parameters.
-2. Click on the **Text** tab. Here you can see the RTF at the top; the parameters you add will be beneath that.
-3. To add a parameter, first highlight the value you want to change and click the **Add Parameter** button. Make sure you only select the values for commands and not the entire command itself. For example, to set a parameter for the font name in the sample RTF above, I would only highlight "Poor Richard" and add a parameter to that, but not also the "\f0." When you click **Add Parameter** , it will appear in the list below, and the parameter value will appear in red in the RTF while it is still selected. If you need to remove a parameter, click the checkbox next to **On** to turn off that parameter,and it will disappear.
-4. Click to rename your parameter to a more meaningful name.
-5. When you are done, your RTF will be highlighted in green where parameters exist, and your parameter names and values will be listed below.
-6. Click **Close** to exit the Parameters screen. Then press **Save** , to save the template. If you are finished editing, press **Close** to exit the Template Basics page.
-7. Click **Preview** to test your template in Dynamic Media Classic. To test your text parameters, type new text or new values in the preview window. To change the font, you must type the exact RTF name of the font.
+1. Click on the **Text** tab. Here you can see the RTF at the top; the parameters you add will be beneath that.
+1. To add a parameter, first highlight the value you want to change and click the **Add Parameter** button. Make sure you only select the values for commands and not the entire command itself. For example, to set a parameter for the font name in the sample RTF above, I would only highlight "Poor Richard" and add a parameter to that, but not also the "\f0." When you click **Add Parameter** , it will appear in the list below, and the parameter value will appear in red in the RTF while it is still selected. If you need to remove a parameter, click the checkbox next to **On** to turn off that parameter,and it will disappear.
+1. Click to rename your parameter to a more meaningful name.
+1. When you are done, your RTF will be highlighted in green where parameters exist, and your parameter names and values will be listed below.
+1. Click **Close** to exit the Parameters screen. Then press **Save** , to save the template. If you are finished editing, press **Close** to exit the Template Basics page.
+1. Click **Preview** to test your template in Dynamic Media Classic. To test your text parameters, type new text or new values in the preview window. To change the font, you must type the exact RTF name of the font.
 
-> [!TIP]
+>[!TIP]
 >
-> To add parameters to the text color, separately add parameters for red, green, and blue. For example, if the RTF is `\red56\green53\blue46`, you would add separate red, green, and blue parameters for the values 56, 53, and 46. In the URL, you would change the color by calling all three: `&$red=56&$green=53&$blue=46`.
+>To add parameters to the text color, separately add parameters for red, green, and blue. For example, if the RTF is `\red56\green53\blue46`, you would add separate red, green, and blue parameters for the values 56, 53, and 46. In the URL, you would change the color by calling all three: `&$red=56&$green=53&$blue=46`.
 
 Learn how to [Create Dynamic Text Parameters](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template-parameters.html#creating-dynamic-text-parameters).
 

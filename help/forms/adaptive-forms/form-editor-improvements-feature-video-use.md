@@ -7,7 +7,7 @@ seo-description: AEM 6.3 introduces several new features and enhancements in thi
 feature: adaptive-forms
 topics: authoring
 audience: developer
-doc-type: technical-video
+doc-type: technical video
 activity: setup
 version: 6.3,6.4,6.5
 uuid: 9e76a2b8-f843-47b8-abf8-596c64fbcbb6

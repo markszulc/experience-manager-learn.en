@@ -6,7 +6,7 @@ seo-description: Covers the steps to author responsive layout for different devi
 feature: template-editor, page-editor
 topics: authoring, responsive
 audience: author, marketer
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 kt: 4252

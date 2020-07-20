@@ -7,7 +7,7 @@ uuid: 190d06d7-ed2d-4029-a4bb-db90fd424ca8
 feature: smart-tags
 topics: metadata 
 audience: developer, administrator
-doc-type: technical-video
+doc-type: technical video
 activity: setup
 version: 6.3, 6.4, 6.5
 ---

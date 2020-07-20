@@ -4,7 +4,7 @@ description: In this video we'll take a look at the anatomy of the CSS (or LESS)
 feature: style-system
 topics: development, components, front-end-development
 audience: developer, implementer
-doc-type: technical-video
+doc-type: technical video
 activity: understand
 version: 6.4, 6.5
 ---

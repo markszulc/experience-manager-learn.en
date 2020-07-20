@@ -4,7 +4,7 @@ description: ContextHub is a framework for storing, manipulating, and presenting
 feature: context-hub
 topics: personalization
 audience: developer, architect
-doc-type: technical-video
+doc-type: technical video
 activity: setup
 version: 6.4, 6.5
 ---

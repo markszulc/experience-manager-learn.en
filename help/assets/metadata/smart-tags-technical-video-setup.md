@@ -8,7 +8,7 @@ discoiquuid: ccae3a2c-40a8-4441-bd36-230815a4676a
 feature: smart-tags
 topics: metadata, search
 audience: all
-doc-type: technical-video
+doc-type: technical video
 activity: setup
 version: 6.3, 6.4, 6.5
 ---

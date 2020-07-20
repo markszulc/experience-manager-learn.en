@@ -65,3 +65,12 @@ The results display below:
     + This is helpful to understand the transitive group memberships that may provide permissions via inheritance
 + __Privileges at Path__ lists all the JCR permissions the selected principal has on the evaluated path
 
+### Unsupported debugging activities
+
+The following are debugging activities that can __not__ be performed in CRXDE Lite.
+
+### Debugging OSGi configurations
+
+Deployed OSGi configurations cannot be reviewed via CRXDE Lite. OSGi configurations are maintained in the AEM Project's `ui.apps` code package at `/apps/example/config.xxx`, however upon deployment to AEM as a Cloud Service environments, the OSGi configurations resources are not persisted to the JCR, therefore not visible via CRXDE Lite.
+
+Instead, use the [Developer Console > Configurations](./developer-console.md#configurations) to review deployed OSGi configurations.

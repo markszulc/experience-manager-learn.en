@@ -6,7 +6,7 @@ seo-description: Setting up data connection to an JDBC data source
 feature: adaptive-forms,form-data-model
 topics: integrations
 audience: developer
-doc-type: technical-video
+doc-type: technical video
 activity: setup
 version: 6.4,6.5
 uuid: 267de794-4462-4421-adee-d40a469fabb3

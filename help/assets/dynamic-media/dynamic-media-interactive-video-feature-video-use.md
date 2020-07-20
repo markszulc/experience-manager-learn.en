@@ -8,7 +8,7 @@ discoiquuid: d874d5b3-5c43-4b23-b87c-243a0fa7e9c7
 sub-product: dynamic-media
 feature: video-profiles, viewer-presets, media-player
 topics: videos, renditions, authoring
-doc-type: feature-video
+doc-type: feature video
 audience : all
 activity: use
 version: 6.3, 6.4, 6.5

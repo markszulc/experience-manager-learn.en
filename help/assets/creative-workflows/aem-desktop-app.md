@@ -6,7 +6,7 @@ sub-product: assets
 feature: desktop-app
 topics: authoring, collaboration, content-velocity
 version: 6.5, 6.4, 6.3
-doc-type: feature-video
+doc-type: feature video
 activity: use
 team: TM
 audience: author, marketer

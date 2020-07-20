@@ -7,7 +7,7 @@ sub-product: sites, content-services
 feature: spa-editor
 topics: authoring, single-page-applications
 audience: all
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 uuid: 0aa5b3ae-f518-46af-8d22-535db29b68b2

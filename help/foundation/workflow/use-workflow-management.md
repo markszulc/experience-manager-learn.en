@@ -9,7 +9,7 @@ feature: workflow
 topics: governance, collaboration
 activity: use
 audience: administrator
-doc-type: feature-video
+doc-type: feature video
 ---
  
 # Use Workflow Management

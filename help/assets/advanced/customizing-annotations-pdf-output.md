@@ -5,7 +5,7 @@ description: AEM Assets format and style when output to PDF can be configued by 
 feature: asset-share
 topics: authoring, collaboration, operations, sharing
 audience: developer
-doc-type: feature-video
+doc-type: feature video
 activity: developer
 version: 6.3, 6.4, 6.5
 ---

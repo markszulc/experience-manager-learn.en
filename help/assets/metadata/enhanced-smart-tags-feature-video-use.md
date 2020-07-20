@@ -4,7 +4,7 @@ description: Smart Tags allows for training the Smart Tags Algorithm with a cust
 feature: smart-tags
 topics: metadata 
 audience: all
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: 6.4, 6.5
 ---

@@ -5,7 +5,7 @@ description: Adobe Experience Manager Sites provides a several options for publi
 seo-description: Adobe Experience Manager Sites provides a several options for publishing and un-publishing content. This video explores the various methods and their capabilities.
 topics: publishing
 audience: all
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4322

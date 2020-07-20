@@ -8,7 +8,7 @@ discoiquuid: b01cc46b-ef64-4db9-b3b4-52d3f27bddf5
 sub-product: dynamic-media
 feature: media-player, video-profiles
 topics: videos, renditions, authoring, best-practices
-doc-type: feature-video
+doc-type: feature video
 audience : all
 activity: use
 version: 6.3, 6.4, 6.5

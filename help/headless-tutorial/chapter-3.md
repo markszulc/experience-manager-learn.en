@@ -24,14 +24,14 @@ In this step, well create a new [!DNL Event] for `Punkrock Fest` in the `/conten
 1. Within **[!UICONTROL Assets] > [!UICONTROL Files] > [!DNL WKND Mobile] > [!DNL English] > [!DNL Events]** create a new Content Fragment of type **[!DNL Event]** with a title of **[!DNL Punkrock Fest]**.
 1. Author the newly created [!DNL Event] Content Fragment.
 
-    * [!DNL Event Title]: **[!DNL Punkrock Fest]**
-    * [!DNL Event Description]: **&lt;Enter a few lines of description...&gt;**
-    * [!DNL Event Date]: **&lt;Select a date in the future&gt;**
-    * [!DNL Event Type]: **Music**
-    * [!DNL Ticket Price]: **10**
-    * [!DNL Event Image]: **/content/dam/wknd-mobile/images/tom-rogerson-574325-unsplash.jpg**
-    * [!DNL Venue Name]: **The Reptile House**
-    * [!DNL Venue City]: **New York**
+    * [!DNL Event Title] : **[!DNL Punkrock Fest]**
+    * [!DNL Event Description] : **&lt;Enter a few lines of description...&gt;**
+    * [!DNL Event Date] : **&lt;Select a date in the future&gt;**
+    * [!DNL Event Type] : **Music**
+    * [!DNL Ticket Price] : **10**
+    * [!DNL Event Image] : **/content/dam/wknd-mobile/images/tom-rogerson-574325-unsplash.jpg**
+    * [!DNL Venue Name] : **The Reptile House**
+    * [!DNL Venue City] : **New York**
   
    Tap **[!UICONTROL Save]** in the top action bar to save changes.
 

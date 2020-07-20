@@ -36,9 +36,9 @@ The default mode is From Desktop, where you browse for files on your local netwo
 
 ![image](assets/main-workflow/upload.jpg)
 
-> [!TIP]
+>[!TIP]
 >
-> Do not manually add your folders. Instead, run an upload from FTP and use the **Include Subfolders** option to recreate your folder structure inside Dynamic Media Classic.
+>Do not manually add your folders. Instead, run an upload from FTP and use the **Include Subfolders** option to recreate your folder structure inside Dynamic Media Classic.
 
 The two most important upload options are enabled by default — **Mark for Publish**, which we've discussed earlier, and **Overwrite**. Overwrite means that if the file being uploaded has the same name as a file already in the system, the new file will replace the existing version. If you uncheck this option, the file might not be uploaded.
 
@@ -97,9 +97,9 @@ Learn more about [Uploading Files](https://docs.adobe.com/content/help/en/dynami
 
 After creating and uploading your content, you'll author new rich media assets from your uploaded assets by performing one or more sub-workflows. This includes all the different types of set collections — Image, Swatch, Spin, and Mixed Media sets, as well as Templates. It also includes video. We'll go into much greater detail about each type of image collection set and video rich media later. However in almost all cases, you start by selecting one or more assets (or have no assets selected) and choosing the type of asset you want to build. For example, you might select a main image and a few views of that image and choose to build an Image Set, a collection of alternate views of the same product.
 
-> [!IMPORTANT]
+>[!IMPORTANT]
 >
-> Make sure that all your assets are marked for publish. While by default all assets are automatically marked for publish on upload, any newly authored assets from your uploaded content will need to be marked for publish as well.
+>Make sure that all your assets are marked for publish. While by default all assets are automatically marked for publish on upload, any newly authored assets from your uploaded content will need to be marked for publish as well.
 
 After you've built your new asset, you will run a publish job. You can do that manually or schedule a publish job that runs automatically. Publishing copies all content from the private, Dynamic Media Classic sphere to the public, publish server sphere of the equation. The product of a Dynamic Media Publish job is a unique URL for each published asset.
 
@@ -107,9 +107,9 @@ The server you publish to depends on the type of content and workflow. For examp
 
 Publishing publishes all content marked for publish — not just your content. A single administrator typically publishes on behalf of everyone rather than individual users running a publish. The administrator can publish as needed or set up a recurring daily, weekly, or even every 10 minutes job that will publish automatically. Publish on a schedule that makes sense for your business.
 
-> [!TIP]
+>[!TIP]
 >
-> Automate your publish jobs and schedule a Full Publish to run every day at 12:00AM or any time late in the evening.
+>Automate your publish jobs and schedule a Full Publish to run every day at 12:00AM or any time late in the evening.
 
 ### Concept: Understanding the Dynamic Media Classic URL
 
@@ -135,9 +135,9 @@ This typically is not an issue unless a mistake occurred, and the image/asset ha
 
 Learn how to [Manually Clear the Cache for the URLs That Need to Be Updated](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
 
-> [!TIP]
+>[!TIP]
 >
-> To avoid issues with caching delay, always work ahead — an evening, a day, two weeks, etc. Build in time for QA/acceptance for internal parties to proof your work before releasing to the public. Even working an evening before allows you to make changes and re-publish that evening. By morning, the 10 hours has elapsed and the cache updates with the correct image.
+>To avoid issues with caching delay, always work ahead — an evening, a day, two weeks, etc. Build in time for QA/acceptance for internal parties to proof your work before releasing to the public. Even working an evening before allows you to make changes and re-publish that evening. By morning, the 10 hours has elapsed and the cache updates with the correct image.
 
 - Learn more about [Creating a Publishing Job](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
 - Learn more about [Publishing](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html).
@@ -162,9 +162,9 @@ Example of a link (in red) that will open an Image Set in a viewer in a new pop-
 
 ![image](assets/main-workflow/example-url-2.png)
 
-> [!IMPORTANT]
+>[!IMPORTANT]
 >
-> You need to integrate the Dynamic Media Classic URLs into your website, mobile app, email, and other digital touchpoints — Dynamic Media Classic can’t do that for you!
+>You need to integrate the Dynamic Media Classic URLs into your website, mobile app, email, and other digital touchpoints — Dynamic Media Classic can’t do that for you!
 
 ## Previewing Assets
 

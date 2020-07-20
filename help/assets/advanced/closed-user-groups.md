@@ -4,7 +4,7 @@ description: Closed User Groups (CUGs) is a feature used to restrict access to c
 feature: asset-share
 topics: authoring, collaboration, operations, sharing
 audience: all
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 ---
@@ -48,11 +48,11 @@ JCR description below:
 
 Both Closed User Groups (CUG) and Access Control Lists (ACL) are used to control access to content in AEM and based on AEM Security users and groups. However the application and implementation of these features is very different. The following table summarizes the distinctions between the two features.
 
-| |ACL |CUG |
-|---|---|---|
-| Intended Use |Configure and apply permissions for content on the **current** AEM instance. |Configure CUG policies for content on AEM **author** instance. Apply CUG policies for content on AEM **publish** instance(s). |
-| Permission Levels |Defines granted/denied permissions for users/groups for all levels: Read, Modify, Create, Delete, Read ACL, Edit ACL, Replicate. |Grants read access to a set of users/groups. Denies read access to all other users/groups. |
-| Replication |ACLs are not replicated with content. |CUG policies are replicated with content. |
+|                   | ACL                                                                                                                              | CUG                                                                                                                           |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Intended Use      | Configure and apply permissions for content on the **current** AEM instance.                                                     | Configure CUG policies for content on AEM **author** instance. Apply CUG policies for content on AEM **publish** instance(s). |
+| Permission Levels | Defines granted/denied permissions for users/groups for all levels: Read, Modify, Create, Delete, Read ACL, Edit ACL, Replicate. | Grants read access to a set of users/groups. Denies read access to all other users/groups.                                    |
+| Replication       | ACLs are not replicated with content.                                                                                            | CUG policies are replicated with content.                                                                                     |
 
 ## Supporting Links {#supporting-links}
 

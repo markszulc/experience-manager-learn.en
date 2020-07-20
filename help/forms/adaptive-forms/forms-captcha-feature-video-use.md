@@ -7,7 +7,7 @@ seo-description: Adding and using a CAPTCHA with AEM Adaptive Forms.
 feature: adaptive-forms
 topics: integrations
 audience: developer
-doc-type: technical-video
+doc-type: technical video
 activity: setup
 version: 6.4,6.5
 uuid: bd63e207-4f4d-4f34-9ac4-7572ed26f646

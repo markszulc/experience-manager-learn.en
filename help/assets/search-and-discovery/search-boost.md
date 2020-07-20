@@ -3,7 +3,7 @@ title: Search Boost
 description: A in-depth look at AEM Assets search boosting and how it works in the broader context of AEM.
 topics: metadata, search
 audience: all
-doc-type: feature-video
+doc-type: feature video
 activity: understand
 version: 6.3, 6.4, 6.5
 ---

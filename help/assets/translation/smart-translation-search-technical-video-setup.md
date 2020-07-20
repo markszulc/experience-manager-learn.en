@@ -7,7 +7,7 @@ uuid: b0e8dab2-6bc4-4158-91a1-4b9811359798
 discoiquuid: 4db1b4db-74f4-4646-b5de-cb891612cc90
 topics: authoring, search, metadata, localization
 audience: administrator, developer
-doc-type: technical-video
+doc-type: technical video
 activity: setup
 version: 6.3, 6.4, 6.5
 ---

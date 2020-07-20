@@ -7,7 +7,7 @@ contentOwner: selvaraj
 feature: catalogs, asset-templates
 topics: authoring, renditions, documents
 audience: all
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 ---

@@ -6,7 +6,7 @@ seo-description: AEM 6.3 Forms introduces the capability to let users create tes
 feature: adaptive-forms
 topics: development
 audience: developer
-doc-type: technical-video
+doc-type: technical video
 activity: develop
 version: 6.3,6.4,6.5
 uuid: 3cea2785-28f0-42c1-9935-3e876c28214a

@@ -6,7 +6,7 @@ seo-description: The following video highlights how to author a new page in Adob
 feature: page-editor, template-editor
 topics: authoring, publishing
 audience: author, marketer
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 kt: 4497

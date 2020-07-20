@@ -4,7 +4,7 @@ description: Adobe Cloud Manager provides a simple, yet flexible self-service CI
 sub-product: cloud-manager, foundation
 feature: pipelines, quality-gates
 topics: cicd, performance, best-practices, development, governance
-doc-type: feature-video
+doc-type: feature video
 activity: understand
 audience: all
 ---

@@ -49,20 +49,20 @@ _Dynamic Media Classic UI_
 
 **Asset Library.** Located down the left side of your screen is the Asset Library, a panel that you use to organize your assets in folders and subfolders that you create. At the top of the panel, you'll find search and filters to help you locate assets. Advanced Search allows you to search by specifying multiple options as criteria for your search, including hidden metadata fields attached to that asset. At the bottom of the panel, you can see deleted items by clicking the Trash icon. Initially, you do not start with any folders, except the top-level folder, which has the same name as your account name.
 
-> [!NOTE]
+>[!NOTE]
 >
-> Assets in the Trash will automatically be deleted permanently seven days after they were put there unless you restore them.
+>Assets in the Trash will automatically be deleted permanently seven days after they were put there unless you restore them.
 
 **Browse/Build Panel.** This is the center of the UI, where you'll either browse assets in Browse mode or, if in Build mode, you'll use it as a canvas for building assets as part of a workflow. When you first sign in, you'll see the Browse Panel. In the center of the screen are thumbnail versions of your images in a Grid view. You can change to a List view or select an asset and view details about it using the Detail view.
 
-> [!IMPORTANT]
+>[!IMPORTANT]
 >
-> Beside each Asset ID is the **Mark for Publish** switch. When the toggle is on (green), that indicates that the asset is marked for publish.
+>Beside each Asset ID is the **Mark for Publish** switch. When the toggle is on (green), that indicates that the asset is marked for publish.
 
 ![image](assets/overview/overview-mark-for-publish.png)
 
-> [!TIP]
+>[!TIP]
 >
-> Select the **Publish After Uploading** checkbox in the Upload dialog to automatically publish assets upon upload.
+>Select the **Publish After Uploading** checkbox in the Upload dialog to automatically publish assets upon upload.
 
 Learn more about [Navigating the UI of Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/getting-started/navigation-basics.html).

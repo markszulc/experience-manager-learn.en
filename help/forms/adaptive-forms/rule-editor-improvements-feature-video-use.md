@@ -7,7 +7,7 @@ uuid: 35e8cc7c-04cf-43b4-bbc7-41bfd909cfba
 feature: adaptive-forms
 topics: authoring
 audience: author
-doc-type: technical-video
+doc-type: technical video
 activity: use
 version: 6.3,6.4,6.5.
 discoiquuid: 51750b3f-1fda-43ae-b3ed-1eede83b19d5

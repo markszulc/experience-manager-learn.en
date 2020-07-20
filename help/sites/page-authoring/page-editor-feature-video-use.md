@@ -6,7 +6,7 @@ seo-description: The following video highlights several of the top features of t
 feature: page-editor
 topics: authoring
 audience: author, marketer
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4248

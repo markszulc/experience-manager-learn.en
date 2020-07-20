@@ -9,7 +9,7 @@ sub-product: dynamic-media
 feature: image-profiles, video-profiles
 topics: images, videos, renditions, authoring, integrations, publishing, metadata
 audience : developer, architect, administrator
-doc-type: technical-video
+doc-type: technical video
 audience : administrator, developer
 activity: setup
 version: 6.3, 6.4, 6.5
@@ -88,40 +88,40 @@ The following is the XML template for the Color Management configuration node. T
 
 ### List of default Adobe color profiles are listed below {#list-of-default-adobe-color-profiles-are-listed-below}
 
-| Name |Colorspace |Description |
-|---|---|---|
-| AdobeRGB | RGB |Adobe RGB (1998) |
-| AppleRGB | RGB | Apple RGB |
-| CIERGB | RGB |CIE RGB |
-| CoatedFogra27 | CMYK | Coated FOGRA27 (ISO 12647-2:2004) |
-| CoatedFogra39 | CMYK | Coated FOGRA39 (ISO 12647-2:2004) |
-| CoatedGraCol | CMYK | Coated GRACoL 2006 (ISO 12647-2:2004) |
-| ColorMatchRGB | RGB  |ColorMatch RGB |
-| EuropeISOCoated | CMYK | Europe ISO Coated FOGRA27 |
-| EuroscaleCoated | CMYK | Euroscale Coated v2 |
-| EuroscaleUncoated | CMYK | Euroscale Uncoated v2 |
-| JapanColorCoated | CMYK | Japan Color 2001 Coated |
-| JapanColorNewspaper | CMYK | Japan Color 2002 Newspaper |
-| JapanColorUncoated | CMYK | Japan Color 2001 Uncoated |
-| JapanColorWebCoated | CMYK | Japan Color 2003 Web Coated |
-| JapanWebCoated | CMYK | Japan Web Coated (Ad) |
-| NewsprintSNAP2007 | CMYK | US Newsprint (SNAP 2007) |
-| NTSC | RGB | NTSC (1953) |
-| PAL |RGB | PAL/SECAM |
-| ProPhoto | RGB | ProPhoto RGB |
-| PS4Default | CMYK | Photoshop 4 Default CMYK |
-| PS5Default | CMYK | Photoshop 5 Default CMYK |
-| SheetfedCoated | CMYK | U.S. Sheetfed Coated v2 |
-| SheetfedUncoated | CMYK | U.S. Sheetfed Uncoated v2 |
-| SMPTE | RGB | SMPTE-C |
-| sRGB | RGB sRGB |IEC61966-2.1 |
-| UncoatedFogra29 | CMYK | Uncoated FOGRA29 (ISO 12647-2:2004) |
-| WebCoated | CMYK | U.S. Web Coated (SWOP) v2  |
-| WebCoatedFogra28 | CMYK | Web Coated FOGRA28 (ISO 12647-2:2004) |
-| WebCoatedGrade3 | CMYK | Web Coated SWOP 2006 Grade 3 Paper |
-| WebCoatedGrade5 | CMYK | Web Coated SWOP 2006 Grade 5 Paper |
-| WebUncoated | CMYK | U.S. Web Uncoated v2 |
-| WideGamutRGB | RGB | Wide Gamut RGB |
+| Name                | Colorspace | Description                           |
+| ------------------- | ---------- | ------------------------------------- |
+| AdobeRGB            | RGB        | Adobe RGB (1998)                      |
+| AppleRGB            | RGB        | Apple RGB                             |
+| CIERGB              | RGB        | CIE RGB                               |
+| CoatedFogra27       | CMYK       | Coated FOGRA27 (ISO 12647-2:2004)     |
+| CoatedFogra39       | CMYK       | Coated FOGRA39 (ISO 12647-2:2004)     |
+| CoatedGraCol        | CMYK       | Coated GRACoL 2006 (ISO 12647-2:2004) |
+| ColorMatchRGB       | RGB        | ColorMatch RGB                        |
+| EuropeISOCoated     | CMYK       | Europe ISO Coated FOGRA27             |
+| EuroscaleCoated     | CMYK       | Euroscale Coated v2                   |
+| EuroscaleUncoated   | CMYK       | Euroscale Uncoated v2                 |
+| JapanColorCoated    | CMYK       | Japan Color 2001 Coated               |
+| JapanColorNewspaper | CMYK       | Japan Color 2002 Newspaper            |
+| JapanColorUncoated  | CMYK       | Japan Color 2001 Uncoated             |
+| JapanColorWebCoated | CMYK       | Japan Color 2003 Web Coated           |
+| JapanWebCoated      | CMYK       | Japan Web Coated (Ad)                 |
+| NewsprintSNAP2007   | CMYK       | US Newsprint (SNAP 2007)              |
+| NTSC                | RGB        | NTSC (1953)                           |
+| PAL                 | RGB        | PAL/SECAM                             |
+| ProPhoto            | RGB        | ProPhoto RGB                          |
+| PS4Default          | CMYK       | Photoshop 4 Default CMYK              |
+| PS5Default          | CMYK       | Photoshop 5 Default CMYK              |
+| SheetfedCoated      | CMYK       | U.S. Sheetfed Coated v2               |
+| SheetfedUncoated    | CMYK       | U.S. Sheetfed Uncoated v2             |
+| SMPTE               | RGB        | SMPTE-C                               |
+| sRGB                | RGB sRGB   | IEC61966-2.1                          |
+| UncoatedFogra29     | CMYK       | Uncoated FOGRA29 (ISO 12647-2:2004)   |
+| WebCoated           | CMYK       | U.S. Web Coated (SWOP) v2             |
+| WebCoatedFogra28    | CMYK       | Web Coated FOGRA28 (ISO 12647-2:2004) |
+| WebCoatedGrade3     | CMYK       | Web Coated SWOP 2006 Grade 3 Paper    |
+| WebCoatedGrade5     | CMYK       | Web Coated SWOP 2006 Grade 5 Paper    |
+| WebUncoated         | CMYK       | U.S. Web Uncoated v2                  |
+| WideGamutRGB        | RGB        | Wide Gamut RGB                        |
 
 ## Additional Resources{#additional-resources}
 

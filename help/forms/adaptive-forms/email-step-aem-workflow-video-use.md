@@ -7,7 +7,7 @@ uuid: d054ebfb-3b9b-4ca4-8355-0eb0ee7febcb
 feature: workflow
 topics: integrations
 audience: developer
-doc-type: technical-video
+doc-type: technical video
 activity: setup
 version: 6.4,6.5
 discoiquuid: 3a11f602-2f4c-423a-baef-28824c0325a1
@@ -48,7 +48,10 @@ To get the sample running on your system, please do the following:
 Explore the [workflow model](http://localhost:4502/editor.html/conf/global/settings/workflow/models/emaildor.html)
 
 Take a look at the process step of the workflow. The custom code associated with the process step will create metadata property names and sets its values from the submitted data.These values are then used by the send email component.
->[!NOTE] In AEM Forms 6.5 and above you do not need this custom code to create metadata properties. Please use the variables capability in AEM Workflow
+
+>[!NOTE]
+>
+>In AEM Forms 6.5 and above you do not need this custom code to create metadata properties. Please use the variables capability in AEM Workflow
 
 Make sure the Attachments tab of the Send Email component is configured as per the screen shot below
 ![Send Email Attachment Tab](assets/sendemailcomponentconfigure.jpg)The "DOR.pdf" value has to match the value specified in the Document of Record Path specified in the submission options of your adaptive form.

@@ -4,7 +4,7 @@ description: Adobe Experience Manager assets can now be used by designers and cr
 feature: adobe-asset-link
 topics: authoring, collaboration, operations, sharing, metadata, images
 audience: all
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: 6.4, 6.5
 ---
@@ -50,7 +50,7 @@ You can place an asset to your InDesign layout using one of the below options:
 
 ### For Placement Only (FPO) Resolution
 
-When large asset files are placed into InDesign Documents from AEM Assets using Adobe Asset Link, creatives users need to wait for few secs after initiating the place operation. This impacts the overall user experience. With Adobe Asset Link you can now temporarily place a low resolution image of the original asset from AEM Assets, thereby reducing the time taken to place an image. At the same time, it increases the overall user experience and productivity. The lower resolution image is placed temporarily and when the final output is required for printing or publishing, the original full-resolution asset gets replaces the lower resolution image and it all happens in the background. This new lower resolution is also called as for placement only resolution.
+When large asset files are placed into InDesign Documents from AEM Assets using Adobe Asset Link, creatives users need to wait for few seconds after initiating the place operation. This impacts the overall user experience. With Adobe Asset Link you can now temporarily place a low resolution image of the original asset from AEM Assets, thereby reducing the time taken to place an image. At the same time, it increases the overall user experience and productivity. The lower resolution image is placed temporarily and when the final output is required for printing or publishing, you need to replace the FPO renditions with the originals. If you want to replace multiple FPO images with respective original images, navigate to **_Windows > Links_** panel and then download the original assets. After the original images are downloaded, choose Replace all FPO's With Originals.
 
 >[!NOTE]
 >

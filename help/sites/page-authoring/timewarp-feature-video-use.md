@@ -6,7 +6,7 @@ seo-description: Timewarp is a feature of Adobe Experience Manager Sites that pr
 feature: timewarp
 topics: authoring
 audience: all
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 uuid: f1bcb8ae-db14-4f3d-b52e-48f589470aec

@@ -28,9 +28,9 @@ Dynamic Media Classic has a few image editing tools conveniently available in th
 - To create Adjusted Images, virtual copies of images that take no disk space. Some companies have business rules that require them to keep separate copies of the same image, but with a different name. Or maybe you want a cropped and uncropped version of the same image.
 - To make new images from a source image. For example, you may want to create color swatches or a detail of the main image. You could do this in Adobe Photoshop and upload separately or use the Crop tool in Dynamic Media Classic.
 
-> [!NOTE]
+>[!NOTE]
 >
-> All URLs in the following discussions of Cropping are for illustrative purposes only; they are not live links.
+>All URLs in the following discussions of Cropping are for illustrative purposes only; they are not live links.
 
 ### Using the Crop Tool
 
@@ -55,11 +55,11 @@ Compare these two versions of the same image.
 
 The image on the right is made much more prominent by removing the extra space around the product. Trimming can be done one image at a time, using the Crop tool, or run as a batch process as you upload. We recommend running as a batch process if you want all your images to be consistently cropped to the boundaries of the main subject. Trim crops to the bounding box — the rectangle surrounding the image.
 
-> [!NOTE]
+>[!NOTE]
 >
-> Trim does not create transparency around the image. For that, you would need to embed a clipping path on the image and use the **Create Mask from Clip Path** upload option.
+>Trim does not create transparency around the image. For that, you would need to embed a clipping path on the image and use the **Create Mask from Clip Path** upload option.
 >
-> Also, to restore an image to its original state after you've cropped it when you've used the **Save** option, display the image in the Crop Editor screen and select the **Reset** button.
+>Also, to restore an image to its original state after you've cropped it when you've used the **Save** option, display the image in the Crop Editor screen and select the **Reset** button.
 
 ### _Cropping on Upload_
 
@@ -67,9 +67,9 @@ As mentioned earlier, you can also choose to crop the images as you upload them.
 
 Dynamic Media Classic will remember this option for the next upload. While you might want it to crop images for this upload, you might not want them cropped for every upload. Another option would be to set a special scheduled FTP upload job, and put the crop options there. That way you would only run the job when you needed to crop your images.
 
-> [!IMPORTANT]
+>[!IMPORTANT]
 >
-> If you set a crop for your upload, Dynamic Media Classic will put a cookie to remember that setting for the next time. As a best practice, click the **Reset to Company Defaults** button before your next upload to clear out any crop options left over from the last upload; otherwise, you might accidentally crop the next batch of images.
+>If you set a crop for your upload, Dynamic Media Classic will put a cookie to remember that setting for the next time. As a best practice, click the **Reset to Company Defaults** button before your next upload to clear out any crop options left over from the last upload; otherwise, you might accidentally crop the next batch of images.
 
 ### Cropping by URL
 

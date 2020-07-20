@@ -7,7 +7,7 @@ feature: core-components, dispatcher
 topics: caching
 activity: develop
 audience: architect, developer
-doc-type: technical-video
+doc-type: technical video
 ---
 
 # Set up [!DNL Sling Dynamic Include]

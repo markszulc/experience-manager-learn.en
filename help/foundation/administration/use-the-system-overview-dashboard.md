@@ -6,7 +6,7 @@ feature:
 topics: administration, operations, monitoring
 activity: use
 audience: administrator, architect, developer, implementer
-doc-type: technical-video
+doc-type: technical video
 contentOwner: dgordon
 ---
 

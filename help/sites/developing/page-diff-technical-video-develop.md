@@ -4,7 +4,7 @@ description: This video shows how to provide custom styles for AEM Sites' Page D
 feature: page-diff
 topics: development
 audience: developer
-doc-type: technical-video
+doc-type: technical video
 activity: develop
 version: 6.3, 6.4, 6.5
 ---

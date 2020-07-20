@@ -9,7 +9,7 @@ contentOwner: dgonzale
 feature: asset-share, brand-portal
 topics: authoring, sharing, collaboration, search, integrations, publishing, metadata, images, renditions
 audience: developer, architect, administrator
-doc-type: technical-video
+doc-type: technical video
 activity: setup
 version: 6.3, 6.4, 6.5
 ---

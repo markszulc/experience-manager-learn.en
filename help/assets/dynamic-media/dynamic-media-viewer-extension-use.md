@@ -6,7 +6,7 @@ seo-description: The Dynamic Media Viewers extension for Adobe Launch, along wit
 sub-product: dynamic-media, analytics
 feature: asset-insights, media-player
 topics: images, videos, renditions, authoring, integrations, publishing 
-doc-type: feature-video
+doc-type: feature video
 audience : all
 activity: use
 version: 6.3, 6.4, 6.5

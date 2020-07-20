@@ -7,7 +7,7 @@ uuid: db7e57a4-b0c1-4a48-906d-802c19964313
 discoiquuid: 72dd9230-73e1-454e-a3e0-9281e621d901
 topics: metadata 
 audience: all
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 ---

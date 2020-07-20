@@ -4,7 +4,7 @@ description: AEM provides users the ability to search, preview, save and license
 feature: creative-cloud-integration
 topics: authoring, collaboration, operations, sharing, metadata, images, stock
 audience: all
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: 6.4, 6.5
 ---

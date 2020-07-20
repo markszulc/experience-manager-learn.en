@@ -6,7 +6,7 @@ seo-description: This Video series gives you an overview of how media content is
 sub-product: dynamic-media
 feature: smart-crop, video-profiles, image-profiles, viewer-presets, vr-360, sets
 topics: videos, renditions, authoring, best-practices
-doc-type: feature-video
+doc-type: feature video
 audience : all
 activity: use
 version: 6.3, 6.4, 6.5

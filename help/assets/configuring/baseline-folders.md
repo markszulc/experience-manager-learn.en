@@ -5,7 +5,7 @@ sub-product: assets
 feature: 
 topics: configuring, content-architecture
 audience: administrator, implementer
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: cloud-service
 kt: 4870

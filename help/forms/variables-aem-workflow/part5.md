@@ -6,7 +6,7 @@ seo-description: Using variables of type xml,json,arraylist,document in aem work
 feature: workflow
 topics: development
 audience: developer
-doc-type: technical-video
+doc-type: technical video
 activity: understand
 version: 6.5
 

@@ -10,8 +10,10 @@ activity: implement
 # Introduction
 
 Customers typically want to export the submitted form data in CSV format. This article will highlight the steps needed to export the form data in CSV format. This article assumes the form submissions are stored in RDBMS table. The following screenshot details the minimum table structure required to store the form submissions.
->[!NOTE] 
-This sample works only with Adaptive Forms not based on Schema or Form Data Model
+
+>[!NOTE]
+>
+>This sample works only with Adaptive Forms not based on Schema or Form Data Model
 
 ![Table Structure](assets/tablestructure.PNG)
 As you can see the name of the schema is aemformstutorial.Inside this schema is the table formsubmissions with the following columns defined

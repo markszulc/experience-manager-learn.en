@@ -4,7 +4,7 @@ description: Asset Templates allows marketers create, manage and deliver digital
 feature: catalogs, asset-templates
 topics: authoring, renditions, documents
 audience: developer, architect, administrator
-doc-type: technical-video
+doc-type: technical video
 activity: setup
 version: 6.3, 6.4, 6.5
 ---

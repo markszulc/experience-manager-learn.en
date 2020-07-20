@@ -5,7 +5,7 @@ sub-product: assets
 feature: collections
 topics: authoring
 audience: author
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: cloud-service
 kt: 4301

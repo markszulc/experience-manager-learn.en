@@ -3,7 +3,7 @@ title: Using the Components Console with AEM Sites
 description: The Components Console provides developers and admin a central location to manage all of the various components in a Sites implementation. The following video details the features of the Components Console.
 topics: components
 audience: all
-doc-type: feature-video
+doc-type: feature video
 version: 6.3, 6.4, 6.5
 activity: use
 ---

@@ -5,7 +5,7 @@ sub-product: sites, assets, content-services
 feature: content-fragments, multi-site-manager
 topics: localization, content-architecture
 audience: all
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 ---

@@ -7,7 +7,7 @@ uuid: 33d63899-1f58-49b3-a05e-6c57b01ef911
 feature: adaptive-forms, form-data-model
 topics: integrations
 audience: developer
-doc-type: feature-video
+doc-type: feature video
 activity: setup
 version: 6.3,6.4,6.5
 

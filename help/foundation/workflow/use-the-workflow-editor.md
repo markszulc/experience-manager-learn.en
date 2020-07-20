@@ -7,7 +7,7 @@ feature: workflow
 topics: governance, collaboration
 activity: use
 audience: administrator, implementer
-doc-type: feature-video
+doc-type: feature video
 ---
 
 # Use the Workflow Editor

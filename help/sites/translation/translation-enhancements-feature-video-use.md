@@ -4,7 +4,7 @@ description: AEM's robust translation framework allows AEM content to be seamles
 feature: multi-site-manager, language-copy
 topics: localization, authoring, content-architecture
 audience: author, marketer, developer
-doc-type: feature-video
+doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 ---
