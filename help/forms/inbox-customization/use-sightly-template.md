@@ -20,7 +20,7 @@ You can use sightly template to format the data that is to be displayed in inbox
 
 Following is the sightly template. The code in the template displays icon depending on the income. The icons are available as part of the [coral ui icon library](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) that comes with AEM.
 
-```java
+```java{.line-numbers}
 <template data-sly-template.incomeTemplate="${@ item}>">
     <td is="coral-table-cell" class="payload-income-cell">
          <div data-sly-test="${(item.workflowMetadata && item.workflowMetadata.income)}" data-sly-set.income ="${item.workflowMetadata.income}">

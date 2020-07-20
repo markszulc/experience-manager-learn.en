@@ -15,10 +15,10 @@ kt: 5830
 
 To display workflow data in inbox, we need to define and populate variables in the workflow. The value of the variable needs to be set before a task is assigned to a user. To give you a head start we have provided sample workflow that is ready to be deployed on your AEM server.
 
+ * [Login to AEM](http://localhost:4502/crx/de/index.jsp)
+ * [Import the review workflow](assets/review-workflow.zip)
+ * [Review the workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
 
- [Login to AEM](http://localhost:4502/crx/de/index.jsp)
- [Import the review workflow](assets/review-workflow.zip)
- [Review the workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
  This workflow has two variables defined(isMarried and income) and its values are set using the set variable component. These variables will be made available as columns to be added to AEM inbox
 
 ## Create service
@@ -75,7 +75,7 @@ return isMarried(inboxItem);
 * [Login to AEM web console](http://localhost:4502/system/console/bundles)
 * [Deploy and start inbox customization bundle](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
 * [Open your inbox](http://localhost:4502/aem/inbox)
-* Open Admin Control by clicking _List View_ icon next to the _Create_ button
+* Open Admin Control by clicking _List View_ icon next to _Create_ button
 * Add Married column to Inbox and save your changes
 * [Go to FormsAndDocuments UI](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * [Import the sample form](assets/snap-form.zip) by selecting _File Upload_ from _Create_ menu
@@ -84,4 +84,5 @@ return isMarried(inboxItem);
 [view inbox](http://localhost:4502/aem/inbox)
 
 Submitting the form will trigger the workflow and a task is assigned to "admin" user. You should see a value under the Married column as shown in this screen shot
+
 ![married-column](assets/married-column.PNG)
