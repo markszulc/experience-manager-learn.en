@@ -14,7 +14,7 @@ discoiquuid: 1c9fb7b6-98dd-4725-b787-ac9e71906500
 
 # Creating Adaptive Form {#creating-adaptive-form}  
 
-In Part1 we will create Adaptive Form, add and configure toolbar with appropriate buttons.
+In Part1 we will create Adaptive Form based on the template created in the earlier lesson, and configure toolbar with appropriate buttons.
 
 **Create your first Adaptive Form**
 
