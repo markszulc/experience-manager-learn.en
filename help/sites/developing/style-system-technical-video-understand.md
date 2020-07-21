@@ -31,7 +31,7 @@ The provided AEM Package (**technical-review.sites.style-system-1.0.0.zip**) ins
 
 The following is the [!DNL LESS] definition for the example style found at:
 
-* `/apps/enablement/sites/style-system/clientlib-example/components/titles/styles/example.less`
+* `/apps/demo/sites/style-system/clientlib-example/components/titles/styles/example.less`
 
 For those that prefer CSS, below this code snippet is the CSS this [!DNL LESS] compiles into.
 
@@ -98,7 +98,7 @@ The use of jQuery is optional, as well as the naming conventions used.
 
 The following is the [!DNL LESS] definition for the example style found at:
 
-* `/apps/enablement/sites/style-system/clientlib-example/components/titles/styles/js/title.js`
+* `/apps/demo/sites/style-system/clientlib-example/components/titles/styles/js/title.js`
 
 ```js
 
