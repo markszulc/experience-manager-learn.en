@@ -41,7 +41,7 @@ There are several options to create a Maven Multi-module project for AEM. This t
 >
 >It is a best practice to use the **latest** version of the [archetype](https://github.com/adobe/aem-project-archetype) to generate a new project for a real-world implementation. AEM projects should target a single version of AEM using the `aemVersion` property of the archetype.
 
-1. Download the starting point for this tutorial via git:
+1. Download the starting point for this tutorial via Git:
 
     ```shell
     $ git clone git@github.com:adobe/aem-guides-wknd-spa.git

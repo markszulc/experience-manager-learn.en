@@ -35,7 +35,7 @@ Review the required tooling and instructions for setting up a [local development
 
 ### Get the code
 
-1. Download the starting point for this tutorial via git:
+1. Download the starting point for this tutorial via Git:
 
     ```shell
     $ git clone git@github.com:adobe/aem-guides-wknd-spa.git
@@ -76,7 +76,7 @@ Let's see how the component works.
 1. Before jumping into the SPA code, it is important to understand the JSON model that AEM provides. Navigate to the [Core Component Library](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/text.html) and view the page for the Text component. The Core Component Library provides examples of all the AEM Core Components.
 2. Select the **JSON** tab for one of the examples:
 
-    ![Text JSON Model](./assets/map-components/text-json.png)
+    ![Text JSON model](./assets/map-components/text-json.png)
 
     You should see three properties: `text`, `richText`, and `:type`.
 
@@ -128,7 +128,7 @@ Let's see how the component works.
     }
     ```
 
-    `Text` is a standard React component. The component uses `this.props.richText` to determine whether the content to render is going to be rich text or plain text. The actual "content" used comes from `this.props.text`. To avoid a potential XSS attack, the rich text is escaped via `DOMPurify` before using [dangerouslySetInnerHTML](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml) to render the content. Recall the `richText` and `text` properties from the JSON Model earlier in the exercise.
+    `Text` is a standard React component. The component uses `this.props.richText` to determine whether the content to render is going to be rich text or plain text. The actual "content" used comes from `this.props.text`. To avoid a potential XSS attack, the rich text is escaped via `DOMPurify` before using [dangerouslySetInnerHTML](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml) to render the content. Recall the `richText` and `text` properties from the JSON model earlier in the exercise.
 
 5. Next take a look at the `TextEditConfig` at ~line 29:
 
@@ -150,7 +150,7 @@ Let's see how the component works.
     export default MapTo('wknd-spa-react/components/text')(Text, TextEditConfig);
     ```
 
-    `MapTo` is provided by the AEM SPA Editor JS SDK (`@adobe/cq-react-editable-components`). The path `wknd-spa-react/components/text` represents the `sling:resourceType` of the AEM component. This path gets matched with the `:type` exposed by the JSON model observed earlier. `MapTo` takes care of parsing the JSON Model response and passing the correct values as `props` to the SPA component.
+    `MapTo` is provided by the AEM SPA Editor JS SDK (`@adobe/cq-react-editable-components`). The path `wknd-spa-react/components/text` represents the `sling:resourceType` of the AEM component. This path gets matched with the `:type` exposed by the JSON model observed earlier. `MapTo` takes care of parsing the JSON model response and passing the correct values as `props` to the SPA component.
 
     You can find the AEM `Text` component definition at `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/text`.
 
@@ -394,7 +394,7 @@ Let's inspect the Layout Container further.
 
 1. In a browser navigate to [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json)
 
-    ![JSON Model API - Responsive Grid](./assets/map-components/responsive-grid-modeljson.png)
+    ![JSON model API - Responsive Grid](./assets/map-components/responsive-grid-modeljson.png)
 
     The **Layout Container** component has a `sling:resourceType` of `wcm/foundation/components/responsivegrid` and is recognized by the SPA Editor using the `:type` property, just like the `Text` and `Image` components.
 
@@ -404,7 +404,7 @@ Let's inspect the Layout Container further.
 
     ![Re-size image using Layout mode](./assets/map-components/responsive-grid-layout-change.gif)
 
-3. Re-open the JSON Model [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json) and observe the `columnClassNames` as part of the JSON:
+3. Re-open the JSON model [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json) and observe the `columnClassNames` as part of the JSON:
 
     ![Cloumn Class names](./assets/map-components/responsive-grid-classnames.png)
 

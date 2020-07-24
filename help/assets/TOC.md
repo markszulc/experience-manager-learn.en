@@ -16,6 +16,7 @@ team: TM
   + [Metadata folder schemas](configuring/metadata-folder-schemas.md)
   + [Assets admin search rail](configuring/assets-admin-search-rail.md)
   + [Processing profiles](configuring/processing-profiles.md)
+  + [Auto-start Workflows](configuring/auto-start-workflows.md)
 
 + Authoring{#authoring}
   + [Navigation](./authoring/navigation.md)

@@ -10,8 +10,8 @@ kt: 4643
 thumbnail: 32030.jpg
 ---
 
-# Introduction to the [!DNL Java Content Repository] ([!DNL JCR]) {#introduction-jcr}
+# Introduction to the Java Content Repository (JCR) {#introduction-jcr}
 
-An introduction to the [[!DNL Java Content Repository] ([!DNL JCR]) used by Adobe Experience Manager. The [!DNL JCR] is the base level of the AEM technology stack and is responsible for underlying content persistence, storage, search, access control and much more!
+An introduction to the Java Content Repository (JCR) used by Adobe Experience Manager. The JCR is the base level of the AEM technology stack and is responsible for underlying content persistence, storage, search, access control and much more!
 
 >[!VIDEO](https://video.tv.adobe.com/v/32030/?quality=12&learn=on)

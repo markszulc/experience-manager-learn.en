@@ -33,7 +33,7 @@ Review the required tooling and instructions for setting up a [local development
 
 ### Get the code
 
-1. Download the starting point for this tutorial via git:
+1. Download the starting point for this tutorial via Git:
 
     ```shell
     $ git clone git@github.com:adobe/aem-guides-wknd-spa.git
@@ -206,7 +206,7 @@ Next, create additional pages in AEM that will serve as the different views in t
 
     Click **Done** to save the changes to the policy.
 
-9. Re-open the JSON Model [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json).
+9. Re-open the JSON model [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json).
 
     ```json
     {
@@ -447,7 +447,7 @@ Now that the navigation has been implemented, inspect the routing in AEM.
     });
     ```
 
-    Notice that the `App` is wrapped in the `Router` component from [React Router](https://reacttraining.com/react-router/). The `ModelManager`, provided by the AEM SPA Editor JS SDK, adds the dynamic routes to AEM Pages based on the JSON Model API.
+    Notice that the `App` is wrapped in the `Router` component from [React Router](https://reacttraining.com/react-router/). The `ModelManager`, provided by the AEM SPA Editor JS SDK, adds the dynamic routes to AEM Pages based on the JSON model API.
 
 2. Open a terminal, navigate to the root of the project, and deploy the project to AEM using your Maven skills:
 

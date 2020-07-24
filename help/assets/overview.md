@@ -12,6 +12,14 @@ Adobe Experience Manager Assets is a digital asset management tool on AEM Platfo
 
 ## What's New
 
+* **[Auto-start workflows (Video)](./configuring/auto-start-workflows.md)** 
+    <br>
+     *Explore how to automatically invoke AEM workflow on uploaded or re-processed assets*
+
+* **[Processing profiles (Video)](./configuring/processing-profiles.md)** 
+    <br>
+     *Explore how to invoke Assets microservices to rendition assets*
+
 * **[Using Assets Collections (Video)](./search-and-discovery/collections.md)** 
     <br>
      *Explore how Collections in AEM Assets provide new ways to organize and discover assets*
@@ -23,14 +31,6 @@ Adobe Experience Manager Assets is a digital asset management tool on AEM Platfo
 * **[Using Brand Portal Asset Sourcing (Video)](./sharing/brand-portal.md#asset-sourcing)**
     <br>
     *Learn about how 3rd parties can upload assets to Brand Portal and sync them back to Experience Manager Author*
-
-* **[Using Adobe Asset Link (Video)](./creative-workflows/adobe-asset-link.md)**
-    <br>
-    *Learn about how designers and creative users can collaborate using their favorite Adobe Creative Cloud desktop applications*
-
-* **[Using Dynamic Media Smart Crop (Video)](./dynamic-media/smart-crop-feature-video-use.md)**
-    <br>
-     *Smart Crop uses Adobe Sensei to eliminate the time-consuming and costly tasks of cropping content for responsive design*
 
 ## Staff Picks
 

@@ -2,8 +2,9 @@
 title: Integrate a SPA | Getting Started with the AEM SPA Editor and Angular
 description: Understand how the source code for a Single Page Application (SPA) written in Angular can be integrated with an Adobe Experience Manager (AEM) Project. Learn to use modern front-end tools, like the Angular's CLI tool, to rapidly develop the SPA against the AEM JSON model API.
 sub-product: sites
-feature: maven-archetype, SPA Editor
+feature: SPA Editor
 topics: development
+doc-type: tutorial
 version: cloud-service
 activity: develop
 audience: developer
@@ -19,7 +20,7 @@ Understand how the source code for a Single Page Application (SPA) written in An
 
 1. Understand how the SPA project is integrated with AEM with client-side libraries.
 2. Learn how to use a local development server for dedicated front-end development.
-3. Explore the use of a **proxy** and static **mock** file for developing against the AEM JSON Model API
+3. Explore the use of a **proxy** and static **mock** file for developing against the AEM JSON model API
 
 ## What you will build
 
@@ -35,7 +36,7 @@ Review the required tooling and instructions for setting up a [local development
 
 ### Get the code
 
-1. Download the starting point for this tutorial via git:
+1. Download the starting point for this tutorial via Git:
 
     ```shell
     $ git clone git@github.com:adobe/aem-guides-wknd-spa.git
@@ -641,7 +642,7 @@ The changes made to the **Header** are currently only visible through the **webp
 
 ## Congratulations! {#congratulations}
 
-Congratulations, you have updated the SPA and explored the integration with AEM! You now know two different approaches for developing the SPA against the AEM JSON Model API using a **webpack dev server**.
+Congratulations, you have updated the SPA and explored the integration with AEM! You now know two different approaches for developing the SPA against the AEM JSON model API using a **webpack dev server**.
 
 You can always view the finished code on [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/integrate-spa-solution) or check the code out locally by switching to the branch `Angular/integrate-spa-solution`.
 

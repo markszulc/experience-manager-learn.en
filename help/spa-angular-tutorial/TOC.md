@@ -15,3 +15,5 @@ user-guide-title: Getting Started with the AEM SPA Editor and Angular
 + [Integrate the SPA](integrate-spa.md)
 + [Map SPA components](map-components.md)
 + [Navigation and routing](navigation-routing.md)
++ [Custom component](custom-component.md)
++ [Extend component](extend-component.md)

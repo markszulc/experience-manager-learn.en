@@ -1,6 +1,6 @@
 ---
 title: Getting Started with the AEM SPA Editor and React
-description: Create your first React Single Page Application (SPA) that is editable in Adobe Experience Manager (AEM). Learn how to create a SPA using the React JS framework with AEM's SPA Editor. This multi-part tutorial walks through the implementation of a React application for a fictitious lifestyle brand, the WKND. The tutorial covers the end to end creation of the SPA and the integration with AEM.
+description: Create your first React Single Page Application (SPA) that is editable in Adobe Experience Manager AEM with the WKND SPA. Learn how to create a SPA using the React JS framework with AEM's SPA Editor. This multi-part tutorial walks through the implementation of a React application for a fictitious lifestyle brand, the WKND. The tutorial covers the end to end creation of the SPA and the integration with AEM.
 sub-product: sites
 topics: development
 version: cloud-service

@@ -12,12 +12,14 @@ index: y
 + [Set up OKTA authentication with AEM Author](adaptive-forms/single-sign-on-with-okta.md)
 + Creating Your First Adaptive Form {#creating-your-first-adaptive-form}
   + [Introduction and Setup](creating-your-first-adaptive-form/adaptive-forms-getting-started-tutorial-use.md)
-  + [Part 1- Create Adaptive Form](creating-your-first-adaptive-form/part1.md)
-  + [Part 2 - Configuring root panel and adding child panel](creating-your-first-adaptive-form/part2.md)
-  + [Part 3 - Adding components to People panel](creating-your-first-adaptive-form/part3.md)
-  + [Part 4 - Adding table to income panel](creating-your-first-adaptive-form/part4.md)
-  + [Part 5 - Configuring assets panel- Accordion Layout](creating-your-first-adaptive-form/part5.md)
-  + [Part 6 - Using custom functions and code editor](creating-your-first-adaptive-form/part6.md)
+  + [Create Adaptive Form template](creating-your-first-adaptive-form/create-af-template.md)
+  + [Create form fragment](creating-your-first-adaptive-form/create-form-fragment.md)
+  + [Create Adaptive Form](creating-your-first-adaptive-form/part1.md)
+  + [Configuring root panel and adding child panel](creating-your-first-adaptive-form/part2.md)
+  + [Adding components to People panel](creating-your-first-adaptive-form/part3.md)
+  + [Adding table to income panel](creating-your-first-adaptive-form/part4.md)
+  + [Configuring assets panel- Accordion Layout](creating-your-first-adaptive-form/part5.md)
+  + [Using custom functions and code editor](creating-your-first-adaptive-form/part6.md)
 + Handling Form Submissions {#handling-af-form-submissions}
   + [Creating a Review Workflow](handling-form-submissions/create-workflow-to-review.md)
   + [Configuring Adaptive form to trigger workflow](handling-form-submissions/trigger-workflow-on-form-submission.md)
@@ -76,6 +78,11 @@ index: y
   + [Create form data model](prefill-fdm-db/create-form-data-model.md)
   + [Create JSP](prefill-fdm-db/get-request-parameter.md)
   + [Create adaptive form](prefill-fdm-db/create-adaptive-form.md)
++ Inbox customization{#inbox-customization}
+  + [Introduction](inbox-customization/introduction.md)
+  + [Add custom column](inbox-customization/add-married-column.md)
+  + [Using sightly template](inbox-customization/use-sightly-template.md)
+
   
 + Exporting Submitted Data in CSV Format{#export-submitted-data-csv-format}
   + [Export Submitted Data](export-submitted-data-csv-format/export-submitted-data-csv.md)

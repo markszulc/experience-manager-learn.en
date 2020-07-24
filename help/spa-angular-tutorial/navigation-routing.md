@@ -2,12 +2,14 @@
 title: Add navigation and routing | Getting Started with the AEM SPA Editor and Angular
 description: Learn how multiple views in the SPA are supported using AEM Pages and the SPA Editor SDK. Dynamic navigation is implemented using Angular routes and added to an existing Header component.
 sub-product: sites
-feature: maven-archetype, SPA Editor
+feature: SPA Editor
 topics: development
+doc-type: tutorial
 version: cloud-service
 activity: develop
 audience: developer
 kt: 5312
+thumbnail: 5312-spa-angular.jpg
 ---
 
 # Add navigation and routing {#navigation-routing}
@@ -32,7 +34,7 @@ Review the required tooling and instructions for setting up a [local development
 
 ### Get the code
 
-1. Download the starting point for this tutorial via git:
+1. Download the starting point for this tutorial via Git:
 
     ```shell
     $ git clone git@github.com:adobe/aem-guides-wknd-spa.git
@@ -220,7 +222,7 @@ Next, create additional pages in AEM that will serve as the different views in t
 
     Click **[!UICONTROL Done]** to save the changes to the policy.
 
-9. Re-open the JSON Model [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json).
+9. Re-open the JSON model [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json).
 
     ```json
     {
@@ -356,7 +358,7 @@ Next, implement the navigation menu with a new `NavigationComponent`. We could a
 
     This is a simple class to represent an individual navigation link. In the class constructor we expect `data` to be the JSON object passed in from AEM. This class will be used within both the `NavigationComponent` and `HeaderComponent` to easily populate the navigation structure.
 
-    No data transformation is performed, this class is primarily created to strongly type the JSON Model. Notice that `this.children` is typed as `NavigationLink[]` and that the constructor recursively creates new `NavigationLink` objects for each of the items in the `children` array. Recall that JSON model for the `Header` is hierarchical.
+    No data transformation is performed, this class is primarily created to strongly type the JSON model. Notice that `this.children` is typed as `NavigationLink[]` and that the constructor recursively creates new `NavigationLink` objects for each of the items in the `children` array. Recall that JSON model for the `Header` is hierarchical.
 
 6. Open the file `navigation-link.spec.ts`. This is the test file for the `NavigationLink` class. Update it with the following:
 
@@ -380,7 +382,7 @@ Next, implement the navigation menu with a new `NavigationComponent`. We could a
     });
     ```
 
-    Notice that `const data` follows the same JSON Model inspected earlier for a single link. This is far from a robust unit test, however it should suffice to test the costructor of `NavigationLink`.
+    Notice that `const data` follows the same JSON model inspected earlier for a single link. This is far from a robust unit test, however it should suffice to test the costructor of `NavigationLink`.
 
 7. Open the file `navigation.component.ts`. Update it with the following:
 
@@ -416,7 +418,7 @@ Next, implement the navigation menu with a new `NavigationComponent`. We could a
 
     ```
 
-    `NavigationComponent` expects an `object[]` named `items` that is the JSON Model from AEM. This class exposes a single method `get navigationLinks()` which returns an array of `NavigationLink` objects.
+    `NavigationComponent` expects an `object[]` named `items` that is the JSON model from AEM. This class exposes a single method `get navigationLinks()` which returns an array of `NavigationLink` objects.
 
 8. Open the file `navigation.component.html` and update it with the following:
 
@@ -631,7 +633,7 @@ Now that the navigation has been implemented, inspect the routing in AEM.
 
     `AemPageDataResolver`, provided by the AEM SPA Editor JS SDK, is a custom [Angular Router Resolver](https://angular.io/api/router/Resolve) used to transform the route URL, which is the path in AEM including the.html extension, to the resource path in AEM, which is the page path less the extension.
 
-    For example, the `AemPageDataResolver` transforms a route's URL of `content/wknd-spa-angular/us/en/home.html` into a path of `/content/wknd-spa-angular/us/en/home`. This is used to resolve page's content based on the path in the JSON Model API.
+    For example, the `AemPageDataResolver` transforms a route's URL of `content/wknd-spa-angular/us/en/home.html` into a path of `/content/wknd-spa-angular/us/en/home`. This is used to resolve page's content based on the path in the JSON model API.
 
     `AemPageRouteReuseStrategy`, provided by the AEM SPA Editor JS SDK, is a custom [RouteReuseStrategy](https://angular.io/api/router/RouteReuseStrategy) that prevents reuse of the `PageComponent` across routes. Otherwise content from page "A" might show up when navigating to page "B".
 
@@ -679,7 +681,7 @@ Now that the navigation has been implemented, inspect the routing in AEM.
 
     `aem-page` includes the [AEMPageComponent](https://www.npmjs.com/package/@adobe/cq-angular-editable-components#aempagecomponent.md). The variables `path`, `items`, and `itemsOrder` are passed to the `AEMPageComponent`. The `AemPageComponent`, provided via the SPA Editor JavaScript SDK's will then iterate over this data and dynamically instantiate Angular components based on the JSON data as seen in the [Map Components tutorial](./map-components.md).
 
-    The `PageComponent` is really just a proxy for the `AEMPageComponent` and it is the `AEMPageComponent` that does the majority of the heavy lifting to correctly map the JSON Model to the Angular components.
+    The `PageComponent` is really just a proxy for the `AEMPageComponent` and it is the `AEMPageComponent` that does the majority of the heavy lifting to correctly map the JSON model to the Angular components.
 
 ## Inspect the SPA routing in AEM
 
@@ -721,3 +723,7 @@ Now that the navigation has been implemented, inspect the routing in AEM.
 Congratulations, you learned how multiple views in the SPA can be supported by mapping to AEM Pages with the SPA Editor SDK. Dynamic navigation has been implemented using Angular routing and added to the `Header` component.
 
 You can always view the finished code on [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/navigation-routing-solution) or check the code out locally by switching to the branch `Angular/navigation-routing-solution`.
+
+### Next Steps {#next-steps}
+
+[Create a Custom Component](custom-component.md) - Learn how to create a custom component to be used with the AEM SPA Editor. Learn how to develop author dialogs and Sling Models to extend the JSON model to populate a custom component.

@@ -26,20 +26,22 @@ This tutorial does not use any form model in creating Adaptive Form.
 
 You will need the following:
 
-A working instance of AEM with Form Add-on package installed. [The instructions to install and configure AEM with Forms Add-on are available here](/help/forms/adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
+* A working instance of AEM with Form Add-on package installed. [The instructions to install and configure AEM with Forms Add-on are available here](/help/forms/adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
 
-**It is assumed that you are running AEM Forms version 6.4 or above on localhost:4502.**
+* **It is assumed that you are running AEM Forms version 6.4 or above on localhost:4502.**
 
-[Download the helpx.zip file](assets/helpx.zip) and extract the contents to your hard drive.
+* [Download the client-libs-and-logo](assets/client-libs-and-logo.zip) to your hard drive.
 
-Import the SummitSessionTemplate.zip and SummitLabTheme.zip and SummitFragments into AEM using [crx ](http://localhost:4502/crx/packmgr/index.jsp)manager.
+* Import the zip file into AEM using [package manager ](http://localhost:4502/crx/packmgr/index.jsp)
 
 ## Tutorial
 
-* [Part 1- Create Adaptive Form](part1.md)
-* [Part 2 - Configuring root panel and adding child panel](part2.md)
-* [Part 3 - Adding components to People panel](part3.md)
-* [Part 4 - Adding table to income panel](part4.md)
-* [Part 5 - Configuring assets panel- Accordion Layout](part5.md)
-* [Part 6 - Using custom functions and code editor](part6.md)
+* [Create Adaptive Form Template](create-af-template.md)
+* [Create form fragment](create-form-fragment.md)
+* [Create Adaptive Form](part1.md)
+* [Configuring root panel and adding child panel](part2.md)
+* [Adding components to People panel](part3.md)
+* [Adding table to income panel](part4.md)
+* [Configuring assets panel- Accordion Layout](part5.md)
+* [Using custom functions and code editor](part6.md)
 
