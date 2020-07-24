@@ -9,6 +9,7 @@ doc-type: feature video
 activity: use
 version: cloud-service
 kt: 4983
+thumbnail: 34071.jpg
 ---
 
 # Metadata folder schemas
