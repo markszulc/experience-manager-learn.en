@@ -9,6 +9,7 @@ doc-type: feature video
 activity: use
 version: cloud-service
 kt: 4871
+thumbnail: 34073.jpg
 ---
 
 # Tagging

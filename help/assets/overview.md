@@ -12,6 +12,10 @@ Adobe Experience Manager Assets is a digital asset management tool on AEM Platfo
 
 ## What's New
 
+* **[Baseline permissions (Video)](./configuring/baseline-permissions.md)**
+    <br>
+    *Learn how, and why it's important, to configure AEM Assets with baseline permissions*
+
 * **[Auto-start workflows (Video)](./configuring/auto-start-workflows.md)** 
     <br>
      *Explore how to automatically invoke AEM workflow on uploaded or re-processed assets*
@@ -28,9 +32,6 @@ Adobe Experience Manager Assets is a digital asset management tool on AEM Platfo
     <br>
      *Use the Review Task workflow to quickly and easily approve (or reject) assets*
 
-* **[Using Brand Portal Asset Sourcing (Video)](./sharing/brand-portal.md#asset-sourcing)**
-    <br>
-    *Learn about how 3rd parties can upload assets to Brand Portal and sync them back to Experience Manager Author*
 
 ## Staff Picks
 

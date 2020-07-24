@@ -10,7 +10,11 @@ activity: use
 version: 6.3, 6.4, 6.5
 ---
 
-# Developing with the AEM SPA Editor - Hello World Tutorial{#developing-with-the-aem-spa-editor-hello-world-tutorial}
+# Developing with the AEM SPA Editor - Hello World Tutorial {#developing-with-the-aem-spa-editor-hello-world-tutorial}
+
+>[!WARNING]
+>
+> This tutorial is **deprecated**. It is recommended to follow either: [Getting Started with the AEM SPA Editor and Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html) or [Getting Started with the AEM SPA Editor and React](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
 
 AEM's SPA Editor provides support for in-context editing of a Single Page Application or SPA. This tutorial is an introduction to SPA development to be used with AEM's SPA Editor JS SDK. The tutorial will extend the We.Retail Journal app by adding a custom Hello World component. Users can complete the tutorial using React or Angular frameworks.
 
@@ -26,7 +30,6 @@ This tutorial is intended to highlight the steps needed to map a SPA component t
 
 The following resources are recommended to be reviewed before starting this tutorial:
 
-* [SPA Walkthrough](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/spa-walkthrough.html) - Overview of single page applications.
 * [SPA Editor Feature Video](spa-editor-framework-feature-video-use.md) - A video overview of the SPA Editor and We.Retail Journal app.
 * [React.js Tutorial](https://reactjs.org/tutorial/tutorial.html) - An introduction to developing with the React framework.
 * [Angular Tutorial](https://angular.io/tutorial) - An introduction to developing with Angular

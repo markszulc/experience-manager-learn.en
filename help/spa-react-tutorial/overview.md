@@ -7,8 +7,8 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-KT: 4836
-thumbnail: 4836-spa-react.jpg
+kt: 5912
+thumbnail: 5912-spa-react.jpg
 ---
 
 # Create your first React SPA in AEM {#overview}

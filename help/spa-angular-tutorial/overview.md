@@ -7,8 +7,8 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-KT: 5308
-thumbnail: 5308-spa-angular.jpg
+kt: 5913
+thumbnail: 5913-spa-angular.jpg
 ---
 
 # Create your first Angular SPA in AEM {#introduction}

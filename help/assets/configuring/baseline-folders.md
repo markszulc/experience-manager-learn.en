@@ -9,6 +9,7 @@ doc-type: feature video
 activity: use
 version: cloud-service
 kt: 4870
+thumbnail: 33496.jpg
 ---
 
 # Baseline folders
