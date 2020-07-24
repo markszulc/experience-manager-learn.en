@@ -25,6 +25,7 @@ team: TM
     + [Logs](./debugging/aem-sdk-local-quickstart/logs.md)
     + [Remote Debugging](./debugging/aem-sdk-local-quickstart/remote-debugging.md)
     + [OSGi web console](./debugging/aem-sdk-local-quickstart/osgi-web-consoles.md)
+    + [Dispatcher Tools](./debugging/aem-sdk-local-quickstart/dispatcher-tools.md)
     + [Other tools](./debugging/aem-sdk-local-quickstart/other-tools.md)
   + Debugging AEM as a Cloud Service{#debugging-aem-as-a-cloud-service}
     + [Overview](./debugging/cloud-service/overview.md)
