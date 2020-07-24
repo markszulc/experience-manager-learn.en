@@ -10,6 +10,7 @@ team: TM
 
 + Configuring{#configuring}
   + [Baseline folders](configuring/baseline-folders.md)
+  + [Baseline permissions](configuring/baseline-permissions.md)
   + [Tagging](configuring/tagging.md)
   + [Metadata schemas](configuring/metadata-schemas.md)
   + [Metadata profiles](configuring/metadata-profiles.md)
