@@ -30,9 +30,9 @@ You will need the following:
 
 * **It is assumed that you are running AEM Forms version 6.4 or above on localhost:4502.**
 
-* [Download the client-libs-and-logo](assets/client-libs-and-logo.zip) to your hard drive.
+* [Download the client-libs-and-logo](assets/client-libs-and-logo.zip) and [getting-started-fragment](assets/getting-started-fragment.zip) to your hard drive.
 
-* Import the zip file into AEM using [package manager ](http://localhost:4502/crx/packmgr/index.jsp)
+* Import the zip files into AEM using [package manager ](http://localhost:4502/crx/packmgr/index.jsp)
 
 ## Tutorial
 

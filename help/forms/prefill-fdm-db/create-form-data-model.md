@@ -67,7 +67,7 @@ The following steps will walk you through the process of creating the one-to-man
 
 * Specify values as shown in this screen shot
 * ![association-2](assets/association-entities.png)
-* **We are linking the two entities using the empID column and id column of beneficiaries and newhire entities respectively.**
+* **We are linking the two entities using the empID column of beneficiaries and newhire entities.**
 * Click on _Done_ to save your changes
 
 ## Test your Form Data Model

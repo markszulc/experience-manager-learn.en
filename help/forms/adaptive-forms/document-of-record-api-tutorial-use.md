@@ -38,15 +38,11 @@ com.adobe.aemds.guide.addon.dor.DoROptions dorOptions =  new com.adobe.aemds.gui
 
 To try this on your local system, please follow the following steps
 
-1. [Download and install the article assets using package manager](assets/dorapi.zip)
-1. [Create Service user as mentioned in this article](service-user-tutorial-develop.md) 
+1. [Download and install the article assets using package manager](assets/dor-with-api.zip)
 1. Make sure you have installed and started the DevelopingWithServiceUser bundle provided as part of [Create Service User article](service-user-tutorial-develop.md)
-1. Point your browser to [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
-1. Search for user ' data '
-1. Double click the ' data ' user 
-1. Open the permissions tab
-1. Give Read, Modify and Create permissions on `/content/usergenerated/content/aemformsenablement` node
-1. Save your changes
+1. [Login to configMgr](http://localhost:4502/system/console/configMgr)
+1. Search for Apache Sling Service User Mapper Service
+1. Make sure you the following entry _DevelopingWithServiceUser.core:getformsresourceresolver=fd-service_ in the Service Mappings section
 1. [Open the form](http://localhost:4502/content/dam/formsanddocuments/sandbox/1201-borrower-payments/jcr:content?wcmmode=disabled)
 1. Fill out the form and click on ' View PDF '
 1. You should see DOR in new tab in your browser

@@ -6,6 +6,7 @@ topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
+thumbnail: 37325.jpg
 ---
 
 # Creating Adaptive Form Fragment

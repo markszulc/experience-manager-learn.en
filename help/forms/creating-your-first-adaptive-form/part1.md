@@ -10,6 +10,7 @@ audience: developer
 doc-type: tutorial
 activity: understand
 discoiquuid: 1c9fb7b6-98dd-4725-b787-ac9e71906500
+thumbnail: 22173.jpg
 ---
 
 # Creating Adaptive Form {#creating-adaptive-form}  
@@ -19,6 +20,8 @@ In Part1 we will create Adaptive Form based on the template created in the earli
 **Create your first Adaptive Form**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22173/quality=9)
+
+
 
 
 
