@@ -1,5 +1,5 @@
 ---
-title: Creating Adaptive Form fragment
+title: Creating Form fragment
 description: AEM forms provides a convenient mechanism to create form segment like a panel or a group of fields only once and reuse them across adaptive forms.
 feature: adaptive-forms
 topics: authoring
@@ -9,7 +9,7 @@ activity: understand
 thumbnail: 37325.jpg
 ---
 
-# Creating Adaptive Form Fragment
+# Creating Form Fragment
 
 A fragment is a reusable part of a form. For example, a fragment can include an address block or legal text. Using fragments simplifies and speeds up the creation and maintenance of large numbers of forms.
 
