@@ -25,7 +25,23 @@ To access and use the Developer Console the following permissions must be given 
 1. The developer must be a member of the Cloud Manager Product's __Developer - Cloud Service__ Product Profile.
     + If this membership does not exist, the developer will not be able to log in to Developer Console.
 1. The developer must be a member of the AEM Author and Publish service's __AEM Administrators__ Product Profile.
-    + If this membership does not exist, the [status](#status) dumps will timeout with a 401 Unauthorized error.   
+    + If this membership does not exist, the [status](#status) dumps will timeout with a 401 Unauthorized error.
+
+### Troubleshooting Developer Console access
+
+#### 401 Unauthorized error when dumping status
+
+![Developer Console - 401 Unauthorized](./assets/developer-console/troubleshooting__401-unauthorized.png)
+
+If dumping any status a 401 Unauthorized error is reported, it means your user does not yet exist with the necessary permissions in AEM as a Cloud Service or the login tokens use are invalid or have expired.
+
+To resolve the 401 Unauthorized issue:
+
+1. Ensure your user is a member of the appropriate Adobe IMS Product Profile (AEM Administrators or AEM Users) for the Developer Console's associated AEM as a Cloud Service Product instance. 
+    + Remember that Developer Console access 2 Adobe IMS Product Instances; the AEM as a Cloud Service Author and Publish product instances, so ensure the correct Product Profiles are used depending on which service tier requires access via Developer Console.
+1. Log in to the AEM as a Cloud Service (Author or Publish) and ensure your user and groups have properly synced into AEM. 
+    + Developer Console requires your user record to be created in the corresponding AEM service tier for it to authenticate to that service tier.
+1. Clear your browsers cookies as well as application state (local storage) and re-log into Developer Console, ensuring the access token Developer Console is using is correct and unexpired.
 
 ## Pod
  
