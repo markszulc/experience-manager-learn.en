@@ -34,14 +34,4 @@ You will need the following:
 
 * Import the zip files into AEM using [package manager ](http://localhost:4502/crx/packmgr/index.jsp)
 
-## Tutorial
-
-* [Create Adaptive Form Template](create-af-template.md)
-* [Create form fragment](create-form-fragment.md)
-* [Create Adaptive Form](part1.md)
-* [Configuring root panel and adding child panel](part2.md)
-* [Adding components to People panel](part3.md)
-* [Adding table to income panel](part4.md)
-* [Configuring assets panel- Accordion Layout](part5.md)
-* [Using custom functions and code editor](part6.md)
 
