@@ -10,12 +10,14 @@ version: 6.4,6.5
 kt: 5815
 thumbnail: kt-5815.jpg
 ---
-# Access empID request parameter
+# Get request parameter
+
+## Get empID parameter
 
 The next step is to access the empID parameter from the url. The value of empID request parameter is then passed to the **_get_** service operation of the form data model.
 For the purpose of this course we have created and provided the following
 
-* Adatpive form Template called **_FDMDemo_**
+* Adaptive form Template called **_FDMDemo_**
 * Page Component called **_fdmdemo_**
 * Included our custom jsp with the page component
 * Associated the adaptive form template with the page component

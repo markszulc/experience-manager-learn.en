@@ -74,9 +74,9 @@ index: y
   + [Adding Items Dynamically to Choice Component](adaptive-forms/choice-group-items-adding-dynamically-article.md)
 + Prefilling adaptive form using form data model{#prefill-fdm-db}
   + [Introduction](prefill-fdm-db/introduction.md)
-  + [Create database](prefill-fdm-db/create-database-tables.md)
-  + [Create form data model](prefill-fdm-db/create-form-data-model.md)
-  + [Create JSP](prefill-fdm-db/get-request-parameter.md)
+  + [Create database tables](prefill-fdm-db/create-database-tables.md)
+  + [Configuring form data model](prefill-fdm-db/configuring-form-data-model.md)
+  + [Get request parameter](prefill-fdm-db/get-request-parameter.md)
   + [Create adaptive form](prefill-fdm-db/create-adaptive-form.md)
 + Inbox customization{#inbox-customization}
   + [Introduction](inbox-customization/introduction.md)
