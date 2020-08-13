@@ -82,7 +82,7 @@ sub-product: sites
   + [Translation Enhancements](translation/translation-enhancements-feature-video-use.md)
 + Integrations {#integrations}
   + Experience Platform Launch {#experience-platform-launch}
-    + [Overview]
+    + [Overview](integration/experience-platform-launch/overview.md)
     + [Create a Launch Property](integration/experience-platform-launch/create-launch-property.md)
     + [Connect AEM with Launch using Adobe I/O](integration/experience-platform-launch/connect-aem-launch-adobe-io.md)
     + [Create a Launch Cloud Service](integration/experience-platform-launch/create-launch-cloud-service.md)
