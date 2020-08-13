@@ -87,8 +87,15 @@ index: y
 + Exporting Submitted Data in CSV Format{#export-submitted-data-csv-format}
   + [Export Submitted Data](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + HTML5 Forms{#html5-forms}
-  + [Create your first HTML5 Form](html5-forms/creating-mobile-form.md)
-  + [Handle HTML5 Form Submission](html5-forms/handle-mobile-form-submission.md)
+  + [Create HTML5 Form](html5-forms/create-html5-form.md)
+  + [Handle HTML5 Form Submission](html5-forms/handle-html5-form-submission.md)
++ AEM Forms and Adobe Sign{#forms-and-sign}
+  + [Introduction](aem-forms-and-adobe-sign/introduction.md)
+  + [Set SSL](aem-forms-and-adobe-sign/set-up-ssl.md)
+  + [Create Adobe Sign API Application](aem-forms-and-adobe-sign/create-adobe-sign-api-application.md)
+  + [Create Adobe Sign Cloud Configuration](aem-forms-and-adobe-sign/create-adobe-sign-cloud-configuration.md)
+  + [Create Workflow to send document for signing](aem-forms-and-adobe-sign/create-workflow-to-send-document-for-signing.md)
+  + [Create and Configure Adaptive Form](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
 + Variables in AEM Workflow{#variables-aem-workflow}
   + [Introduction - Variables in Workflow](variables-aem-workflow/introduction.md)
   + [XML Variables](variables-aem-workflow/part1.md)

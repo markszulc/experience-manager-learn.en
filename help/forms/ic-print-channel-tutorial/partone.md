@@ -10,6 +10,8 @@ audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
+kt:5932
+thumbnail
 
 discoiquuid: 5f68be3d-aa35-4a3f-aaea-b8ee213c87ae
 

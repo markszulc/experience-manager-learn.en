@@ -13,6 +13,8 @@ activity: implement
 version: 6.4,6.5
 discoiquuid: 5fa663ce-c9ab-40b5-9f5a-9912ff7dd3d9
 targetaudience: target-audience ongoing
+thumbnail: 27765.jpg
+kt:5954
 
 ---
 
@@ -20,6 +22,6 @@ targetaudience: target-audience ongoing
 
 In this part, we will create a REST backed data source.  The following video walks thru the steps to create the data source.
 
->[!VIDEO](https://video.tv.adobe.com/v/22344/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27765/?quality=9&learn=on)
 
 Please use the swagger file provided to you as part of the assets related to this tutorial. The assets are available in [introduction](introduction.md) of this tutorial.

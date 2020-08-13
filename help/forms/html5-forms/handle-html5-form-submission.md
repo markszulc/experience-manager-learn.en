@@ -11,7 +11,7 @@ kt: 5269
 thumbnail: kt-5269.jpg
 ---
 
-# Submit Handler
+# Handle HTML5 Form Submission
 
 HTML5 forms can be submitted to servlet hosted in AEM. The submitted data can be accessed in the servlet as an input stream. To submit your HTML5 form you need to add "HTTP Submit Button" on your form template using AEM Forms Designer
 
