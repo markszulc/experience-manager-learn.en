@@ -12,7 +12,7 @@ kt: 4997
 thumbnail: 39149.jpg 
 ---
 
-## Adobe IMS users
+# Adobe IMS users
 
 Users requiring access to AEM Author service are managed as [Adobe IMS users](https://helpx.adobe.com/enterprise/using/set-up-identity.html) in [Adobe's Admin Console](https://adminconsole.adobe.com). Learn about what Adobe IMS users are, and how they are accessed and managed in Admin Console.
 

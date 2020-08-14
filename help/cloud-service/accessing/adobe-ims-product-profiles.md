@@ -12,7 +12,7 @@ kt: 5000
 thumbnail: 39156.jpg
 ---
 
-## Adobe IMS product profiles
+# Adobe IMS product profiles
 
 Adobe IMS product profiles entitle users to log into an AEM Author service, and provide a baseline of access, depending on the which product profile they are are member of.
 

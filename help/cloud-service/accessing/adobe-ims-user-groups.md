@@ -12,7 +12,7 @@ kt: 4999
 thumbnail: 39150.jpg
 ---
 
-## Adobe IMS user groups
+# Adobe IMS user groups
 
  Adobe IMS user groups establish logical sets of users that are exposed to AEM, where they can be leveraged to define fine-tune permissions to AEM users.
 
