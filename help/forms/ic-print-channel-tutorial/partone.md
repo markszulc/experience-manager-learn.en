@@ -10,8 +10,8 @@ audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
-kt:5932
-thumbnail
+kt: 5932
+thumbnail: 37815.jpg
 
 discoiquuid: 5f68be3d-aa35-4a3f-aaea-b8ee213c87ae
 
@@ -21,6 +21,8 @@ discoiquuid: 5f68be3d-aa35-4a3f-aaea-b8ee213c87ae
 # Install and Configure Tomcat {#install-and-configure-tomcat}
 
 In this part, we will install TOMCAT and deploy the sampleRest.war file in TOMCAT. The REST endpoint exposed by this WAR file will be the basis for our Data Source and Form Data Model.
+
+>[!VIDEO](https://video.tv.adobe.com/v/37815/quality=9)
 
 To set up tomcat, please follow the following instructions:
 

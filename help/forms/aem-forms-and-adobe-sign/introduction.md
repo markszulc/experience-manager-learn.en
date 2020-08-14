@@ -1,6 +1,5 @@
 ---
 title: Using AEM Forms with Adobe Sign
-seo-title: Creating your first interactive communication for the print channel
 description: Adobe Sign and AEM Forms lets automate complex transactions and include legal e-signatures as part of a seamless digital experience.
 
 feature: adaptive-forms

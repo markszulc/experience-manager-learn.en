@@ -1,6 +1,5 @@
 ---
-title: Creating Document Fragments to hold the recipient name and address
-seo-title: Creating Document Fragments to hold the recipient name and address
+title: Creating Document Fragment
 description: This is part 5 of a multi-step tutorial for creating your first interactive communications document. In this part, we will create document fragment to hold the recipient name and address. 
 seo-description: This is part 5 of a multi-step tutorial for creating your first interactive communications document. In this part, we will create document fragment to hold the recipient name and address. 
 uuid: 7fd8a0f2-a921-4e70-91c9-908dae9aeab2

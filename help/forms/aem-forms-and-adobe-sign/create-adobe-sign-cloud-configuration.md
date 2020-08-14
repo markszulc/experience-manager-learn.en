@@ -1,13 +1,12 @@
 ---
-
 title: Create Adobe Sign Cloud Configuration
 feature: adaptive-forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
-thumbnail:38179.jpg
-kt:6033
+thumbnail: 38179.jpg
+kt: 6033
 ---
 # Create Adobe Sign Cloud Configuration
 

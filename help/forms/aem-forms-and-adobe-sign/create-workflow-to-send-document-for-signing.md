@@ -6,7 +6,7 @@ audience: developer
 doc-type: article
 activity: implement
 thumbnail: 38182.jpg
-kt:6035
+kt: 6035
 ---
 # Send documents for signature using workflow
 
