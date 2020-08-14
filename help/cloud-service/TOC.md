@@ -38,8 +38,8 @@ team: TM
     + [Adobe IMS users](./accessing/adobe-ims-users.md)
     + [Adobe IMS user groups](./accessing/adobe-ims-user-groups.md)
     + [Adobe IMS product profiles](./accessing/adobe-ims-product-profiles.md)
-    + [AEM users, groups, and permissions](./accessing/aem-user-groups-and-permissions.md)
-    + [Managing access to AEM walk-through](./accessing/walk-through.md)
+    + [AEM users, groups, and permissions](./accessing/aem-users-groups-and-permissions.md)
+    + [Configuring access to AEM walk-through](./accessing/walk-through.md)
 + Migration {#migration}
   + [Content Transfer Tool](./migration/content-transfer-tool.md)
 + [Getting Started Developing AEM Sites - WKND Tutorial](./develop-wknd-tutorial.md)

@@ -41,7 +41,7 @@ Users accessing AEM Author service should be organized into logical groups using
 
 Adobe Experience Manager builds on Adobe IMS users, user groups, and product profiles in order to provide users customizable access to AEM. Learn how to construct AEM groups and permissions and how they work in concert with Adobe IMS abstractions to provide seamless and customizable access to AEM.
 
-[Learn about AEM groups and permissions](./aem-groups-and-permissions.md)
+[Learn about AEM user, groups, and permissions](./aem-users-groups-and-permissions.md)
 
 ## Access and permissions walk-through
 
