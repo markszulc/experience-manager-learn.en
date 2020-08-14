@@ -17,7 +17,9 @@ kt: 5830
  You can customize an Experience Manager Inbox to change the default title of a column, reorder the position of a column, and display additional columns based on the data of a workflow
 
 
->[!NOTE]You have to be a member of administrators or workflow-administrators to customize the inbox columns
+>[!NOTE]
+>
+>You have to be a member of administrators or workflow-administrators to customize the inbox columns
 
 ## Column customization
 
@@ -42,8 +44,3 @@ In the branding customization you can do the following
 * Hide Navigation options
 
 ![inbox-branding](assets/branding-customization.PNG)
-
-
-
-
-

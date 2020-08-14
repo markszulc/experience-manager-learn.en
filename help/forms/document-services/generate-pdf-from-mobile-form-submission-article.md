@@ -30,7 +30,7 @@ Write a servlet to handle the HTML5 form submission
 
 The following is the servlet code which extracts the submitted data from the request. It then calls the custom  documentServices .mobileFormToPDF method to get the pdf.
 
-```java {.line-numbers}
+```java
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
   StringBuffer stringBuffer = new StringBuffer();
   String line = null;
@@ -71,7 +71,7 @@ To add  image  to mobile form and display that image in the pdf we have used the
 
 XDP Template - In the  xdp  template we added an image field and button called btnAddImage. The following code handles the click event of the btnAddImage in our  custom  profile. As you can see we trigger the file1 click event. No coding is needed in the  xdp  to accomplish this use case
 
-``` javascript
+```javascript
 
 $(".btnAddImage").click(function(){
 

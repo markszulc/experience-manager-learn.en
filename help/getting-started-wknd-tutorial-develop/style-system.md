@@ -137,23 +137,23 @@ Next we will implement the Underline style using the **ui.frontend** module of o
 1. In Eclipse or the IDE of your choice open the file `index.html` located at: `ui.frontend/src/main/webpack/static/index.html`. This is the static markup used by the webpack development server.
 1. In `index.html` find an instance of the Title Component to add the underline style to by searching the document for *cmp-title*. Choose the Title component with the text *"Vans off the Wall Skatepark"* (line 218). Add the class `cmp-title--underline` to the surrounding div:
 
-    ```html
+   ```html
     <!-- before -->
     <div class="title aem-GridColumn aem-GridColumn--default--8">
         <div class="cmp-title">
             <h2 class="cmp-title__text">Vans off the Wall Skatepark</h2>
         </div>
     </div>
-    ```
+   ```
 
-     ```html
+   ```html
     <!-- After -->
     <div class="cmp-title--underline title aem-GridColumn aem-GridColumn--default--8">
         <div class="cmp-title">
             <h2 class="cmp-title__text">Vans off the Wall Skatepark</h2>
         </div>
     </div>
-    ```
+   ```
 
 1. Return to the browser and verify that the extra class is reflected in the markup.
 1. Return to the **ui.frontend** module and update the file `title.scss` located at: `ui.frontend/src/main/webpack/components/content/title/scss/title.scss`:
@@ -304,7 +304,7 @@ Next we will implement the Quote Block style using the **ui.frontend** module of
 1. In Eclipse or the IDE of your choice open the file `index.html` located at: `ui.frontend/src/main/webpack/static/index.html`. This is the static markup used by the webpack development server.
 1. In `index.html` find an instance of the Text Component by searching for the text *"Jacob Wester"* (line 210). Add the class `cmp-text--quote` to the surrounding div:
 
-    ```html
+   ```html
     <!-- before -->
     <div class="text aem-GridColumn aem-GridColumn--default--8">
         <div class="cmp-text">
@@ -312,9 +312,9 @@ Next we will implement the Quote Block style using the **ui.frontend** module of
             <p>Jacob Wester - Pro Skater</p>
         </div>
     </div>
-    ```
+   ```
 
-     ```html
+   ```html
     <!-- After -->
     <div class="cmp-text--quote text aem-GridColumn aem-GridColumn--default--8">
         <div class="cmp-text">
@@ -322,7 +322,7 @@ Next we will implement the Quote Block style using the **ui.frontend** module of
             <p>Jacob Wester - Pro Skater</p>
         </div>
     </div>
-    ```
+   ```
 
 1. Return to the browser and verify that the extra class is reflected in the markup.
 1. Return to the **ui.frontend** module and update the file `text.scss` located at: `ui.frontend/src/main/webpack/components/content/text/scss/text.scss`:
@@ -478,7 +478,7 @@ We will start implementing the Fixed Width style in the **ui.frontend** module o
 
 1. Update the file `_elements.scss` located at: `ui.frontend/src/main/webpack/base/sass/_elements.scss` and change the `.root` rule to have a new max width set to the variable `$max-body-width`.
 
-     ```css
+   ```css
     /* Before */
     body {
         ...
@@ -489,9 +489,9 @@ We will start implementing the Fixed Width style in the **ui.frontend** module o
             padding-top: 12px;
         }
     }
-    ```
+   ```
 
-    ```css
+   ```css
     /* After */
     body {
         ...
@@ -502,11 +502,11 @@ We will start implementing the Fixed Width style in the **ui.frontend** module o
             padding-top: 12px;
         }
     }
-    ```
+   ```
 
-    >[!NOTE]
-    >
-    > The full list of variables and values can be found at: `ui.frontend/src/main/webpack/base/sass/_variables.scss`.
+   >[!NOTE]
+   >
+   > The full list of variables and values can be found at: `ui.frontend/src/main/webpack/base/sass/_variables.scss`.
 
 1. Returning to the browser you should see that the main content of the page appears the same but the Header and Footer stretch much wider. This is expected.
 

@@ -54,7 +54,7 @@ This article walks through the creation of a system user and configuring the use
 
 
 
-   ```java {.line-numbers}
+   ```java
    com.mergeandfuse.getserviceuserresolver.GetResolver aemDemoListings = sling.getService(com.mergeandfuse.getserviceuserresolver.GetResolver.class);
    
    resourceResolver = aemDemoListings.getServiceResolver();
@@ -66,7 +66,7 @@ This article walks through the creation of a system user and configuring the use
 
    If you want to access /content/dam/data.json file in your bundle, you will use the following code. This code assusmes you have given read permissions to the "data" user on the /content/dam/ node
 
-   ```java {.line-numbers}
+   ```java
    @Reference
    GetResolver getResolver;
    .

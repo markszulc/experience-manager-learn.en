@@ -36,7 +36,7 @@ When you select a form to perform your query a GET call is made to **/bin/getdat
 
 The following code snippet makes a call to the getRequiredColumnsFromSchema method of JSONSchemaOperations service. We pass the properties and required elements of the schema to this method call. The array that is returned by this function call is then used to populate the query builder drop-down list
 
-```java {.line-numbers}
+```java
 public JSONArray getData(String formName) throws SQLException, IOException {
 
   org.json.JSONArray arrayOfDataKeys = new org.json.JSONArray();

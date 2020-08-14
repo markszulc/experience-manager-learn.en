@@ -48,7 +48,7 @@ Dispatcher logs are output to stdout when `bin/docker_run` is invoked, however l
 
 Dispatcher logs can be directly accessing in the Docker container at `/etc/httpd/logs`.
 
-```{shell}
+```shell
 $ docker ps
 
 # locate the CONTAINER ID associated with "adobe/aem-ethos/dispatcher-publisher" IMAGE
@@ -70,7 +70,7 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 
 Dispatcher logs can be copied out of the Docker container at `/etc/httpd/logs` to the local file system for inspection using your favorite log analysis tool. Note that this is a point-in-time copy, and does not provide real time updates to the logs.
 
-```{shell}
+```shell
 $ docker ps
 
 # locate the CONTAINER ID associated with "adobe/aem-ethos/dispatcher-publisher" IMAGE

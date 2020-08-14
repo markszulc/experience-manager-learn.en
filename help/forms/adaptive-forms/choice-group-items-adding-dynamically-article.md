@@ -30,7 +30,7 @@ In the screenshot below, we are setting the options of Loan Period(years) to the
 **Using the code editor**: When you want to set the items in the choice group dynamically based on the values entered in the form. For example, the following code snippet sets the items of the checkbox to the values entered in the applicant name and spouse fields of the Adaptive Form.
  In the code snippet, we are setting the items of WorkingMembers which is a checkbox component. The array for the items is being built dynamically by fetching the values of the applicantName and spouse text fields of the adaptive forms
 
- ``` javascript {.line-numbers}
+ ```javascript
  
  if(MaritalStatus.value=="Married")
   {
@@ -45,7 +45,7 @@ else
 
 The submitted data is as follows
 
- ``` xml {.line-numbers}
+ ```xml
 
 <afUnboundData>
 

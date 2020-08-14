@@ -39,7 +39,7 @@ The second step assigns the task to the submitter's manager. We get the submitte
 
 ![Assign Task](assets/assigntask.gif) 
 
-```java {.line-numbers}
+```java
 public String getParticipant(WorkItem workItem, WorkflowSession wfSession, MetaDataMap arg2) throws WorkflowException{
 resourceResolver = wfSession.adaptTo(ResourceResolver.class);
 UserManager userManager = resourceResolver.adaptTo(UserManager.class);

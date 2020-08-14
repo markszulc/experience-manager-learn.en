@@ -23,7 +23,7 @@ To accomplish this use case we need to do the following:
 
 * Create a custom OSGi service that will apply usage rights to the documents. The code to accomplish this is listed below
 
-``` java {.line-numbers}
+```java
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
@@ -69,7 +69,7 @@ The next step is to create a servlet with a POST method to return the reader ext
 Following is the code for the servlet. The servlet will be invoked from **customsubmit** action of Adaptive Form.
 Servlet creates UsageRights object and sets it properties based on the values entered by the user in the Adaptive Form. The servlet then calls the **applyUsageRights** method of the service created for this purpose.
 
-```java {.line-numbers}
+```java
 package com.aemforms.ares.core.servlets;
 
 import java.io.File;

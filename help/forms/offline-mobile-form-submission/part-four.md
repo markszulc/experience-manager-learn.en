@@ -13,7 +13,9 @@ version: 6.4,6.5
 
 # Getting this use case to work on your system
 
->[!NOTE]For the sample assets to work on your system, it is assumed that you have AEM Author and Publish instance running on port 4502 and 4503 respectively. It is also assumed the AEM Author is accessible via `admin`/`admin`. If the port numbers or the admin password has been changed then these sample assets will not work. You will have to create your own assets using the provided sample code.
+>[!NOTE]
+>
+>For the sample assets to work on your system, it is assumed that you have AEM Author and Publish instance running on port 4502 and 4503 respectively. It is also assumed the AEM Author is accessible via `admin`/`admin`. If the port numbers or the admin password has been changed then these sample assets will not work. You will have to create your own assets using the provided sample code.
 
 To get this use case working on your local system, following these steps:
 
@@ -34,5 +36,7 @@ To get this use case working on your local system, following these steps:
 * [Check the AEM Inbox](http://localhost:4502/aem/inbox)
 * You should have workitem to review the submitted PDF
 
->[!NOTE]Instead of submitting the PDF to servlet running on publish instance, some customers have deployed the servlet in servlet container such as Tomcat. It all depends on the topology the customer is comfortable with.for the purpose of this tutorial we are going to use the servlet deployed on publish instance for handling the pdf submissions. 
+>[!NOTE]
+>
+>Instead of submitting the PDF to servlet running on publish instance, some customers have deployed the servlet in servlet container such as Tomcat. It all depends on the topology the customer is comfortable with.for the purpose of this tutorial we are going to use the servlet deployed on publish instance for handling the pdf submissions. 
 

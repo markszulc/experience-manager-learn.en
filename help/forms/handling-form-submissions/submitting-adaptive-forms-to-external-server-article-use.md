@@ -29,7 +29,7 @@ For the purpose of this article, I have written a simple war file that can be de
 
 when you configure your Adaptive Form to submit to this endpoint, the form data and the attachments if any can be extracted in the servlet by the following code
 
-```java {.line-numbers}
+```java
 System.out.println("form was submitted");
 Part attachment = request.getPart("attachments");
 if(attachment!=null)

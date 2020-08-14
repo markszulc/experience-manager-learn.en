@@ -24,7 +24,7 @@ The official javadoc for AEM Forms API is listed [here](https://helpx.adobe.com/
 
 The following code snippet renders interactive pdf using the renderPDFForm operation of the FormsService. The schengen.xdp is template that is being used to merge the xml data.
 
-```java {.line-numbers}
+```java
 String uri = "crx:///content/dam/formsanddocuments";
 PDFFormRenderOptions renderOptions = new PDFFormRenderOptions();
 renderOptions.setAcrobatVersion(AcrobatVersion.Acrobat_11);

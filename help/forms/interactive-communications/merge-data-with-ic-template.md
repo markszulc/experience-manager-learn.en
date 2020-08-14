@@ -19,7 +19,7 @@ version: 6.4,6.5
 
 The service name "ccm-print-test" will be used to access this service . Once this pre-fill service is defined, you can access this service either in your servlet or workflow process step implementation to generate the print channel document.
 
-```java {.line-numbers}
+```java
 import java.io.InputStream;
 import org.osgi.service.component.annotations.Component;
 
@@ -71,7 +71,7 @@ Line 128 - The Data Options service name is set. Note the service name. It has t
 Line 135 - Document is generated using the render method of the PrintChannel object
 
 
-```java {.line-numbers}
+```java
 String params = arg2.get("PROCESS_ARGS","string").toString();
     String payloadPath = workItem.getWorkflowData().getPayload().toString();
     String dataFile = params.split(",")[0];

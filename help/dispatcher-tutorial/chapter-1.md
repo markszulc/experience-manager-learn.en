@@ -1064,7 +1064,7 @@ We already briefly mentioned the _statfile_ before. It is related to auto-invali
 
 All cache files in the Dispatcher's filesystem that are configured to be auto-invalidated are considered invalid if their last-modified date is older than the `statfile's` last-modified date.
 
->[!NOTE]  
+>[!NOTE]
 >
 >The last-modified date we are talking of is the cached file is the date the file was requested from the client's browser and ultimately created in the filesystem. It is not the `jcr:lastModified` date of the resource.
 
@@ -1487,7 +1487,7 @@ And of course, you can apply your own mix of all three approaches.
 
 **Option 1**. An "SSO" Gateway might be enforced by your organization anyway. If your access scheme is very coarse grained, you may not need information from  AEM to decide whether to grant or deny access to a resource. 
 
->[!NOTE]  
+>[!NOTE]
 >
 >This pattern requires a _Gateway_ that _intercepts_ each request and performs the actual _authorization_ - granting or denying requests to the Dispatcher. If your SSO system is an _authenticator_, that only establishes the identity of a user you have to implement Option 3. If you read terms like "SAML" or "OAauth" in your SSO system's handbook - that is a strong indicator that you have to implement Option 3.   
 
@@ -1520,7 +1520,7 @@ Let's say, your `statfile` has a modification time of today 12:00 and your `grac
 
 The reference configuration proposes a `gracePeriod` of two minutes for a good reason. You might think "Two minutes? That's almost nothing. I can easily wait 10 minutes for the content to show up…".  So you might be tempted to set a longer period – let's say 10 minutes, assuming that your content shows up at least after these 10 minutes.
 
->[!WARNING]  
+>[!WARNING]
 >
 >This is not how `gracePeriod` is working. The grace period is _not_ the time after which a document is guaranteed to be invalidated, but a time-frame no invalidation happens. Each subsequent invalidation that fall within this frame _prolongs_ the time frame - this can be indefinitely long.  
 

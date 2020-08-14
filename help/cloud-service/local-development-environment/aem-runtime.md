@@ -68,7 +68,7 @@ The local AEM Author Service provides developers with a local experience digital
 
 Windows:
 
-  ```{shell}
+  ```shell
   $ mkdir -p c:\Users\<My User>\aem-sdk\author
   $ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\author\aem-author-p4502.jar
   $ copy ../license.properties c:\Users\<My User>\aem-sdk\author
@@ -78,7 +78,7 @@ Windows:
 
 macOS / Linux:
 
-  ```{shell}
+  ```shell
   $ mkdir -p ~/aem-sdk/author
   $ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/author/aem-author-p4502.jar
   $ cp ../license.properties ~/aem-sdk/author
@@ -102,7 +102,7 @@ The local AEM Publish Service provides developers with the local experience end-
 
 Windows:
 
-  ```{shell}
+  ```shell
   $ mkdir -p c:\Users\<My User>\aem-sdk\publish
   $ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\publish\aem-publish-p4503.jar
   $ copy ../license.properties c:\Users\<My User>\aem-sdk\publish
@@ -112,7 +112,7 @@ Windows:
 
 macOS / Linux:
 
-  ```{shell}
+  ```shell
   $ mkdir -p ~/aem-sdk/publish
   $ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
   $ cp ../license.properties ~/aem-sdk/publish
@@ -196,7 +196,7 @@ or, to start AEM Publish service, `cd` into the directory containing the Quickst
 
 When starting the Quickstart Jar from the command line, the process immediately aborts and the AEM service does not start, with the following error:
 
-```{shell}
+```shell
 ➜  ~/aem-sdk/author: java -jar aem-author-p4502.jar
 Loading quickstart properties: default
 Loading quickstart properties: instance

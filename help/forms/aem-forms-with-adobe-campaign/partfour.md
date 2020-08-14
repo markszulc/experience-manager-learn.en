@@ -38,7 +38,7 @@ The method getAuthDetails needs to be implemented. This method will return  Auth
 
 The following is the code that was used in creating custom authentication. The method getAuthDetails does all the work. We create AuthenticationDetails object. Then we add the appropriate HttpHeaders to this object and return this object.
 
-```java {.line-numbers}
+```java
 package aemfd.campaign.core;
 
 import java.io.IOException;

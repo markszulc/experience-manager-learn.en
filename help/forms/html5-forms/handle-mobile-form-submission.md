@@ -21,7 +21,7 @@ A simple servlet can be created to handle the HTML5 form submission. The submitt
 
 The code from line 9 can be used to invoke J2EE process. Please make sure you have configured [Adobe LiveCycle Client SDK Configuration](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) if you intend to use the code to invoke J2EE process.
 
-```java{.line-numbers}
+```java
 StringBuffer stringBuffer = new StringBuffer();
 String line = null;
 java.io.InputStreamReader isReader = new java.io.InputStreamReader(request.getInputStream(), "UTF-8");

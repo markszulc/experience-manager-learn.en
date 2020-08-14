@@ -23,7 +23,7 @@ When an Adaptive Form is submitted, we check to see if the associated JSON schem
 
 ![jsonschema](assets/jsonschemas.gif) 
 
-```java {.line-numbers}
+```java
 public String getJSONSchema(String afPath) {
   // TODO Auto-generated method stub
   afPath = afPath.replaceAll("/content/dam/formsanddocuments/", "/content/forms/af/");
@@ -106,7 +106,7 @@ public String getJSONSchema(String afPath) {
 
 The fetched schema is stored in the database using the standard JDBC operations. The following code inserts the schema in the database
 
-```java {.line-numbers}
+```java
 public void insertJsonSchema(JSONObject jsonSchema, String afForm) {
   log.debug("$$$$ in insert Schema" + afForm);
   log.debug("$$$$$ The jsonSchema is  " + jsonSchema);

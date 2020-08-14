@@ -27,7 +27,7 @@ The official javadoc for AEM Forms API is listed [here](https://helpx.adobe.com/
 
 The following code snippet exports data from PDF file
 
-```java {.line-numbers}
+```java
 javax.servlet.http.Part pdfPart = request.getPart("pdffile");
 String filePath = request.getParameter("saveLocation");
 java.io.InputStream pdfIS = pdfPart.getInputStream();

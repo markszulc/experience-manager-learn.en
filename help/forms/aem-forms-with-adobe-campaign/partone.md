@@ -31,7 +31,7 @@ The following code fetches the details about the Adobe Campaign Server from the 
 
 Once we have the private key we create JSON Web Token.
 
-```java {.line-numbers}
+```java
 package aemformwithcampaign.core.services.impl;
 import static io.jsonwebtoken.SignatureAlgorithm.RS256;
 import java.io.BufferedInputStream;

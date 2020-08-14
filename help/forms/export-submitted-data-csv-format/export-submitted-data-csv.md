@@ -39,7 +39,7 @@ The following OSGI service was created to export the submitted data in CSV forma
 >[!NOTE]
 The code assumes you have defined connection pooled DataSource called "aemformstutorial" in Felix Web Console.The code also assumes that you have a schema in the database called aemformstutorial
 
-``` java{.line-numbers}
+```java
 package com.aemforms.storeandexport.core;
 
 import java.io.IOException;
@@ -232,7 +232,7 @@ public class StoreAndExportImpl implements StoreAndExport {
 
 We have exposed the following three properties as OSGI configuration properties. The SQL query is constructed by reading these values at run time.
 
-```java{.line-numbers}
+```java
 package com.aemforms.storeandexport.core;
 
 import org.osgi.service.metatype.annotations.AttributeDefinition;
@@ -255,7 +255,7 @@ public @interface StoreAndExportConfiguration {
 
 The following is the servlet code which invokes the `getCSVFile(..)` method of the service. The service returns StringBuffer object which is then streamed back to the calling application
 
-```java{.line-numbers}
+```java
 package com.aemforms.storeandexport.core.servlets;
 
 import java.io.IOException;

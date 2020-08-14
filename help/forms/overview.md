@@ -29,11 +29,11 @@ Adobe Experience Manager (AEM) provides an easy-to-use solution to create, manag
 <table>
 <tr>
   <td>
-    <a href="./creating-your-first-adaptive-form/adaptive-forms-getting-started-tutorial-use.md">
+    <a href="./creating-your-first-adaptive-form/introduction-and-setup.md">
       <img alt="400 x 225px" src="./assets/afhero.png" />
     </a>
     <div>
-      <a href="./creating-your-first-adaptive-form/adaptive-forms-getting-started-tutorial-use.md">
+      <a href="./creating-your-first-adaptive-form/introduction-and-setup.md">
     <strong>Create your first Adaptive Form</strong>
     </a>
     </div>

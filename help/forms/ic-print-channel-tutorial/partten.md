@@ -30,7 +30,7 @@ The input file that is dropped into the watched folder has the following structu
 
 For more details on the ECMA script for generating documents, [refer to this article](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
 
-```xml {.line-numbers}
+```xml
 <accountnumbers>
  <accountnumber>509840</accountnumber>
  <accountnumber>948576</accountnumber>
@@ -56,7 +56,7 @@ To generate print channel document using the watched folder mechanism, please fo
 
  * Create accountnumbers.xml  file with the following content
 
-``` xml {.line-numbers}
+```xml
 <accountnumbers>
 <accountnumber>1</accountnumber>
 <accountnumber>100</accountnumber>

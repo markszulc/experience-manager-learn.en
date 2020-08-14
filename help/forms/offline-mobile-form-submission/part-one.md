@@ -17,13 +17,13 @@ In this part we will create a [custom profile.](https://helpx.adobe.com/livecycl
 
 Get the form data using the `formBridge` JavaScript API. We make use of the `getDataXML()` method:
 
-```javascript{.line-numbers}
+```javascript
 window.formBridge.getDataXML({success:suc,error:err});
 ```
 
 In the success handler method we make a call to custom servlet running in AEM. This servlet will render and return interactive pdf with the data from the mobile form
 
-```javascript{.line-numbers}
+```javascript
 var suc = function(obj) {
     let xhr = new XMLHttpRequest();
     var data = obj.data;
@@ -56,7 +56,7 @@ var suc = function(obj) {
 
 The following is the servlet code that is responsible for rendering interactive pdf and returning the pdf to the calling application. The servlet invokes `mobileFormToInteractivePdf` method of the custom DocumentServices OSGi service.
 
-```java{.line-numbers}
+```java
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -118,7 +118,7 @@ public class GenerateInteractivePDF extends SlingAllMethodsServlet {
 
 The following code makes use of the [Forms Service API](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) to render interactive PDF with the data from the mobile form.
 
-```java{.line-numbers}
+```java
 public Document mobileFormToInteractivePdf(Document xmlData,String path) {
     // In mobile form to interactive pdf
     

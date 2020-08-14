@@ -45,7 +45,7 @@ To accomplish this use case, the following java class was written
 
 Let's take a look at this code
 
-``` {.line-numbers}
+```
 
 @Component(property = { Constants.SERVICE_DESCRIPTION + "=Write Adaptive Form Attachments to File System",
         Constants.SERVICE_VENDOR + "=Adobe Systems",

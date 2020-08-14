@@ -55,7 +55,7 @@ public JSONObject extractBarCode(Document pdfDocument) {
 
 The following is the servlet code. This servlet is called when the user adds an attachment to the Adaptive Form. The servlet returns the JSON object back to the calling application. The calling application then populates the Adaptive form with the values extracted from the JSON object.
 
-```java {.line-numbers}
+```java
 @Component(service = Servlet.class, property = {
 
   "sling.servlet.methods=get",

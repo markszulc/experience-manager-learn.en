@@ -28,7 +28,7 @@ To learn more about custom submit pleas read this [article](https://helpx.adobe.
 
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/storeafsubmission",null,null);
 
-```java {.line-numbers}
+```java
 package com.aemforms.json.core.servlets;
 
 import java.sql.Connection;

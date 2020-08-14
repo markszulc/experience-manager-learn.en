@@ -36,7 +36,7 @@ In this tutorial, you will create the following:
 The sample scripts in the package demonstrate all the above actions.
 Let's explore the code of `mortgageForm.js`
 
-``` javascript
+```javascript
 
 var mortgageFormTS = new hobs.TestSuite("Mortgage Form Test", {
         path: '/etc/clientlibs/testingAFUsingCalvinSDK/mortgageForm.js',
@@ -50,7 +50,7 @@ The code above creates a new Test Suite.
 * Provided is the absolute path in AEM to the js file which contains the test suite.
 * The register parameter when set to ' `true` ', makes the Test Suite available in the testing UI.
 
-``` javascript
+```javascript
 .addTestCase(new hobs.TestCase("Calculate amount to borrow")
         // navigate to the mortgage form  which is to be tested
         .navigateTo("/content/forms/af/cal/mortgageform.html?wcmmode=disabled")
@@ -82,7 +82,7 @@ Test cases can be added to test suite to be executed against an adaptive form.
 
 As part of the sample package there are three additional test suites. You can try them by including the appropriate files in the js.txt file of the clientlibrary as shown below:
 
-``` javascript
+```javascript
 #base=.
 
 scriptingTest.js

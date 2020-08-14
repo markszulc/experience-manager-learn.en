@@ -28,7 +28,7 @@ This tutorial will walk through the steps of creating Campaign profile on adapti
 
 Create AEM Service to create an Adobe Campaign Profile. This AEM service will fetch the Adobe Campaign credentials from the OSGI configuration. Once the campaign credentials are obtained access token is generated and using the access token HTTP Post call is made to create the profile in Adobe Campaign. The following is the code for creating  profile .
 
-```java {.line-numbers}
+```java
 package aemformwithcampaign.core.services.impl;
 
 import static io.jsonwebtoken.SignatureAlgorithm.RS256;
@@ -249,7 +249,7 @@ To learn more about custom submit handler in AEM Forms, please follow this [link
 
 The following is the code in the custom submit
 
-```java {.line-numbers}
+```java
 aemforms.campaign.core.CampaignService addNewProfile = sling.getService(aemforms.campaign.core.CampaignService.class);
 com.google.gson.JsonObject profile = new com.google.gson.JsonObject();
 profile.addProperty("email",request.getParameter("email"));

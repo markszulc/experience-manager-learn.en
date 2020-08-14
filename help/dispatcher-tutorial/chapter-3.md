@@ -226,7 +226,7 @@ You are not sharing that same menu-structure between all pages but also with all
 
 If any – that's the most important piece of advice, we can give you:
 
->[!WARNING]  
+>[!WARNING]
 >
 >Only cache objects that are yours, that are immutable, that you built yourself, that are shallow and have no outgoing reference.
 

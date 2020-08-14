@@ -19,7 +19,7 @@ A common use case is to display the uploaded image as an inline image in Adaptiv
 
 The first step is to prepend a placeholder div to the file attachment component. In the code below the file attachment component is identified by its CSS class name of photo-upload. The JavaScript function is part of client library that is associated with the adaptive forms. This function is called in initialize event of the file attachment component.
 
-```javascript{.line-numbers}
+```javascript
 
 /**
 * Add Placeholder Image
@@ -36,7 +36,7 @@ function addTempImage(){
 
 After the user has uploaded the image, the function listed below is invoked in commit event of the file attachment component. The function receives the uploaded file object as an argument.
 
-```javascript{.line-numbers}
+```javascript
 /**
 * Consume Image
 * @return {string} 
