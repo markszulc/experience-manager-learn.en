@@ -10,6 +10,8 @@ audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.4,6.5
+kt: 4210
+thumbail: 28385.jpg
 
 discoiquuid: 520c8633-925f-4d3f-b800-ea34710f68d7
 ---
