@@ -66,7 +66,9 @@ return isMarried(inboxItem);
 }
  ```
 
->[!NOTE]You need to include AEM 6.5.5 Uber.jar in your project for the above code to work
+>[!NOTE]
+>
+>You need to include AEM 6.5.5 Uber.jar in your project for the above code to work
 
 ![uber-jar](assets/uber-jar.PNG)
 

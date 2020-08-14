@@ -19,8 +19,9 @@ thumbnail: 22282.jpg
 
 In this part, we will use custom functions and the code editor to author business rules.
 
-[ClientLib with custom function](assets/helpxclientlibs.zip).
-Import and install the package into  crx  using the package manager. The package contains client library. Typically a client library consists of CSS and Javascript file. This client library contains javascript file which exposes a function to populate drop-down list values.
+you have already installed the [ClientLib with custom function](assets/client-libs-and-logo.zip) earlier in this tutorial.
+
+Typically a client library consists of CSS and Javascript file. This client library contains javascript file which exposes a function to populate drop-down list values.
 
 
 ## Function to Populate Drop Down List {#function-to-populate-drop-down-list}
@@ -37,7 +38,7 @@ Import and install the package into  crx  using the package manager. The package
 
 The following is the code used to validate panel fields
 
-``` javascript {.line-numbers}
+```javascript
 //debugger;
 var errors =[];
 var fields ="";

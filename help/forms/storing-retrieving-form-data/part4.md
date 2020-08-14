@@ -11,9 +11,12 @@ version: 6.3,6.4,6.5
 # Create client library
 
 AEM Client Library manages all your client side JavaScript code. For this article, I have created a simple JavaScript to fetch the Adaptive Form data using the guide bridge API. Once the Adaptive Form data is fetched, the POST call is made to the servlet to either insert or update the adaptive form data in the database. The function getALLUrlParams returns the parameters in the URL. If the guid parameter is present in the URL, then we need to perform the update operation, if not it is an insert operation.The rest of the functionality is handled in the code associated with the click event of .savebutton class.
->[!NOTE]The client library is provided as part of this tutorial assets
 
-``` javascript{.line-numbers}
+>[!NOTE]
+>
+>The client library is provided as part of this tutorial assets
+
+```javascript
 function getAllUrlParams(url) {
 
     // get query string from url (optional) or window

@@ -30,7 +30,7 @@ To satisfy this use case a custom process step was written. In this step we fetc
 
 The following code snippet show you how to find the tag and apply the tag to the document.
 
-```java {.line-numbers}
+```java
 Tag tagFound = tagManager.resolveByTitle(tagTitle+xmlElement.getTextContent());
 //tagTitle is "Peak:EmploymentStatus/" and the xmlElement.getTextContent() will return the value Single. So the tag title becomes Peak:EmploymentStatus/Single. Once the tag is found we put the tag in array and apply the tags to the resource as shown below
 tagArray[i] = tagFound;

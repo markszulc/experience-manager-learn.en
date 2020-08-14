@@ -37,7 +37,7 @@ To install the demo assets, please perform the following steps
 
 The following code snippet shows the usage of PDFG service to convert files to PDF
 
-```java {.line-numbers}
+```java
 com.adobe.pdfg.service.api.GeneratePDFService pdfService = sling.getService(com.adobe.pdfg.service.api.GeneratePDFService.class);
 System.out.println("Got PDF Service");
 java.util.Map map = pdfService.createPDF(uploadedDocument,fileName,"","Standard","No Security", null, null);

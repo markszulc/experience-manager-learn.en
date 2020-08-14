@@ -30,18 +30,8 @@ You will need the following:
 
 * **It is assumed that you are running AEM Forms version 6.4 or above on localhost:4502.**
 
-* [Download the client-libs-and-logo](assets/client-libs-and-logo.zip) to your hard drive.
+* [Download the client-libs-and-logo](assets/client-libs-and-logo.zip) and [getting-started-fragment](assets/getting-started-fragment.zip) to your hard drive.
 
-* Import the zip file into AEM using [package manager ](http://localhost:4502/crx/packmgr/index.jsp)
+* Import the zip files into AEM using [package manager ](http://localhost:4502/crx/packmgr/index.jsp)
 
-## Tutorial
-
-* [Create Adaptive Form Template](create-af-template.md)
-* [Create form fragment](create-form-fragment.md)
-* [Create Adaptive Form](part1.md)
-* [Configuring root panel and adding child panel](part2.md)
-* [Adding components to People panel](part3.md)
-* [Adding table to income panel](part4.md)
-* [Configuring assets panel- Accordion Layout](part5.md)
-* [Using custom functions and code editor](part6.md)
 

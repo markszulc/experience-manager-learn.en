@@ -10,7 +10,6 @@ audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
-kt: 5932
 thumbnail: 37815.jpg
 
 discoiquuid: 5f68be3d-aa35-4a3f-aaea-b8ee213c87ae
@@ -40,3 +39,6 @@ To set up tomcat, please follow the following instructions:
 12. You should get sample data as the result of this call.
 
 Congratulations !!!. You have setup tomcat and deployed the SampleRest.war file.
+
+The following video explains the deployment of sample application in Tomcat
+>[!VIDEO](https://video.tv.adobe.com/v/37815)

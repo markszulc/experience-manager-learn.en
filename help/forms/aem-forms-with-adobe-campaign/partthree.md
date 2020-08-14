@@ -37,7 +37,7 @@ The following is the code for fetching and returning profile information from AC
 
 In line 68 we fetch the email id of the AEM user. The profile details are fetched by making a REST call to Adobe Campaign Standard. From the fetched profile details, XML document is constructed in a manner that is understood by AEM Forms. The input stream of this document is returned for consumption by AEM Forms.
 
-```java {.line-numbers}
+```java
 package aemforms.campaign.core;
 
 import java.io.ByteArrayInputStream;

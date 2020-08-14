@@ -1,5 +1,5 @@
 ---
-title: Create database
+title: Create database tables
 description: Create database to be used by form data model
 feature: adaptive-forms
 topics: development

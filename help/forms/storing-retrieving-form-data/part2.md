@@ -12,7 +12,7 @@ version: 6.3,6.4,6.5
 
 Next step is to create a servlet that will either insert or update form data. The Apache Sling Connection Pooled DataSource configured in the previous step is referenced in line 26. Rest of the code is fairly straightforward. The code either inserts a new row in the database or updates an existing row. Stored Adaptive Form data is associated with a GUID. The same GUID is then used to update the form data.
 
-``` java{.line-numbers}
+```java
 package com.techmarketing.core.servlets;
 
 import com.google.gson.JsonObject;

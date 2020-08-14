@@ -30,7 +30,7 @@ The following steps were followed to use the Geolocation API in Adaptive Forms.
 
 1. The JSON data returned by the API call was parsed and the Adaptive Form fields values were set accordingly.
 
-``` javascript {.line-numbers}
+```javascript
 navigator.geolocation.getCurrentPosition(showPosition);
 function showPosition(position) 
 {

@@ -20,8 +20,7 @@ The following is the code of the servlet which handles the PDF submission. In th
 
 ## AEM Publish servlet
 
-```java{.line-numbers}
-
+```java
 package com.aemforms.handlepdfsubmission.core.servlets;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -99,7 +98,7 @@ public class HandlePDFSubmission extends SlingAllMethodsServlet {
 
 The next step is to store the submitted data in the AEM Author's repository. The servlet mounted on `/bin/startworkflow` saves the submitted data.
 
-```java{.line-numbers}
+```java
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;

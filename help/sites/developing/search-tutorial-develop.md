@@ -110,26 +110,22 @@ Corrections and clarifications from the lab discussions and answers to follow-up
 
 4. **How to search for Pages and Assets in the same query?**
 
-    New in AEM 6.3 is the ability to query for mutiple node-types in the same provided query. The following QueryBuilder query. Note that each "sub-query" can resolve to its own index, so in this example, the `cq:Page` sub-query resolves to `/oak:index/cqPageLucene` and the `dam:Asset` sub-query resolves to `/oak:index/damAssetLucene`.
+   New in AEM 6.3 is the ability to query for mutiple node-types in the same provided query. The following QueryBuilder query. Note that each "sub-query" can resolve to its own index, so in this example, the `cq:Page` sub-query resolves to `/oak:index/cqPageLucene` and the `dam:Asset` sub-query resolves to `/oak:index/damAssetLucene`.
 
-    ```plain
-
-    group.p.or=true
-    group.1_group.type=cq:Page
-    # add all page restrictions to this group
-    group.2_group.type=dam:Asset
-    # add all asset restrictions to this group
-
+   ```plain
+   group.p.or=true
+   group.1_group.type=cq:Page
+   # add all page restrictions to this group
+   group.2_group.type=dam:Asset
+   # add all asset restrictions to this group
    ```
 
    results in the following query and query plan:
 
    ```plain
-
    QUERY:(//element(*, cq:Page) | //element(*, dam:Asset))
 
    PLAN: [cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* */ union [dam:Asset] as [a] /* lucene:damAssetLucene(/oak:index/damAssetLucene) *:* */
-
    ```
 
    Explore the query and results via [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) and [AEM Chrome Plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).

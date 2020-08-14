@@ -31,7 +31,7 @@ For the purpose of this article, we will be creating a custom template to displa
 
 The following code lists the various types of assets using the search and lister component. We create separate html elements for each type of asset as shown by data-type = "videos" tag. For asset type of "videos" we use the &lt;video&gt; element to play the video inline. For asset type of "worddocuments" we use different html mark up.
 
-``` html {.line-numbers}
+```html
 <div class="__FP_boxes-container __FP_single-color">
    <div  data-repeatable="true">
      <div class = "__FP_boxes-thumbnail" style="float:left;margin-right:20px;" data-type = "videos">

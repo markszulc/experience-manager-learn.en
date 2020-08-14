@@ -29,14 +29,18 @@ The first step is to configure your app on OKTA portal. Once your app is approve
 Since SAML assertions are encrypted, we need to add the IdP (OKTA) certificate to the AEM trust store, to allow secure communication between OKTA and AEM.
 [Initialize trust store](http://localhost:4502/libs/granite/security/content/truststore.html), if not initialized already.
 Remember the trust store password. We will need to use this password later in this process.
+
 * Navigate to [Global Trust Store](http://localhost:4502/libs/granite/security/content/truststore.html).
 * Click on "Add Certificate from CER file". Add the IdP certificate provided by OKTA and click submit.
-* >[!NOTE]
-Please do not map the certificate to any user
 
- On adding the certificate to trust store you should get certificate alias as shown in the screen shot below. The alias name could be different in your case.
+  >[!NOTE]
+  >
+  >Please do not map the certificate to any user
+
+On adding the certificate to trust store you should get certificate alias as shown in the screen shot below. The alias name could be different in your case.
 
 ![Certificate-alias](assets/cert-alias.PNG)
+
 **Make a note of the certificate alias. You will need this in the later steps.**
 
 ### Configure SAML authentication handler

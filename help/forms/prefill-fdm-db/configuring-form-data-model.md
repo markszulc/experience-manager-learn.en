@@ -1,5 +1,5 @@
 ---
-title: Create form data model
+title: Configuring form data model
 description: Create form data model based on RDBMS data source
 feature: adaptive-forms
 topics: development
@@ -12,7 +12,9 @@ thumbnail: kt-5812.jpg
 ---
 
 
-# Create Apache Sling Connection Pooled DataSource
+# Configuring form data model
+
+## Apache Sling Connection Pooled DataSource
 
 The first step in creating RDBMS backed form data model is to configure Apache Sling Connection Pooled DataSource. To configure the data source, please follow the steps listed below:
 
@@ -67,7 +69,7 @@ The following steps will walk you through the process of creating the one-to-man
 
 * Specify values as shown in this screen shot
 * ![association-2](assets/association-entities.png)
-* **We are linking the two entities using the empID column and id column of beneficiaries and newhire entities respectively.**
+* **We are linking the two entities using the empID column of beneficiaries and newhire entities.**
 * Click on _Done_ to save your changes
 
 ## Test your Form Data Model

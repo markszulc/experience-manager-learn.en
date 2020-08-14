@@ -40,7 +40,7 @@ This article will walk you through the steps involved in saving and retrieving A
 
 The following is the code of the servlet that inserts/updates Adaptive Form data in the database. The Apache Sling Connection Pooled DataSource is configured using the AEM ConfigMgr and the same is referenced in line 26. The rest of the code is fairly straightforward. The code either inserts a new row in the database or updates an existing row. The stored Adaptive Form data is associated with a GUID. The same GUID is then used to update the form data.
 
-```java {.line-numbers}
+```java
 package com.techmarketing.core.servlets;
 import java.io.IOException;
 import java.sql.Connection;
@@ -210,7 +210,7 @@ public class StoreDataInDB extends SlingAllMethodsServlet {
 
 The following code was written to fetch the stored Adaptive Form data. A simple query is used to fetch the Adaptive Form data associated with a given GUID. The fetched data is then returned to the calling application. The same data source created in the first step referenced in this code.
 
-``` java {.line-numbers}
+```java
 package com.techmarketing.core.impl;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -275,7 +275,7 @@ public class AemformWithDB implements AemFormsAndDB {
 
 AEM Client Library manages all your client side javascript code. For this article, I have created a simple javascript to fetch the Adaptive Form data using the guide bridge API. Once the Adaptive Form data is fetched, the POST call is made to the servlet to either insert or update the adaptive form data in the database. The function getALLUrlParams returns the parameters in the URL. This is used when you want to update the data. The rest of the functionality is handled in the code associated with the click event of .savebutton class. If the guid parameter is present in the URL, then we need to perform the update operation, if not it is an insert operation.
 
-``` javascript {.line-numbers}
+```javascript
 
 function getAllUrlParams(url) {
  

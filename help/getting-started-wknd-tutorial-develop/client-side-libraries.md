@@ -341,7 +341,7 @@ Now we will add some base styles for the WKND brand by adding some Sass files (`
 
     >[!NOTE]
     >
-    > `npm install` only needs to be run once, following a new clone or generation of the project.
+    >`npm install` only needs to be run once, following a new clone or generation of the project.
 
 1. In the same terminal, build and deploy the **ui.frontend** module by using the `npm run dev` command:
 
@@ -359,7 +359,7 @@ Now we will add some base styles for the WKND brand by adding some Sass files (`
 
     >[!NOTE]
     >
-    > There is also a `npm run prod` profile which will minify the JS and CSS. This is the standard compilation whenever the webpack build is triggered via Maven. More details about the [ui.frontend module can be found here](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html).
+    >There is also a `npm run prod` profile which will minify the JS and CSS. This is the standard compilation whenever the webpack build is triggered via Maven. More details about the [ui.frontend module can be found here](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html).
 
 1. Inspect the file `site.css` beneath `ui.frontend/dist/clientlib-site/css/site.css`. Notice that the CSS is mostly made up of contents of the `_elements.scss` file created earlier but the variables have been replaced with actual values.
 
@@ -534,20 +534,20 @@ Below are the high level steps shown in the video:
 
 1. Preview the new styles using the webpack dev server:
 
-     ```shell
+   ```shell
     $ cd ~/code/aem-guides-wknd/ui.frontend/
     $ npm start
 
     > aem-maven-archetype@1.0.0 start code/aem-guides-wknd/ui.frontend
     > webpack-dev-server --open --config ./webpack.dev.js
-    ```
+   ```
 
 1. Deploy the code base to a local AEM instance to see the new styles applied to the LA skate park article:
 
-    ```shell
+   ```shell
     $ cd ~/code/aem-guides-wknd
     $ mvn -PautoInstallSinglePackage clean install
-    ```
+   ```
 
 ## Congratulations! {#congratulations}
 

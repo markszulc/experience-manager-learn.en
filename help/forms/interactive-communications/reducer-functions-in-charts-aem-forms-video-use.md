@@ -18,9 +18,9 @@ version: 6.4,6.5
 Reducer functions are used to aggregate or group values that are displayed in the chart.
 
 
- For example, we can use the reducer functions to display the number of transactions per category, or display the highest expense per category from the sample data shown below
+For example, we can use the reducer functions to display the number of transactions per category, or display the highest expense per category from the sample data shown below
 
-``` json {.line-numbers}
+```json
 [{
 "category": "Groceries",
 "amount": 10
@@ -49,10 +49,8 @@ Reducer functions are used to aggregate or group values that are displayed in th
 "category": "Travel",
 "amount": 200
 }
- ]
- 
-
- ```
+]
+```
 
 The following video walks through the steps involved in using reducer functions.
 

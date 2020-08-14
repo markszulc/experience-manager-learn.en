@@ -24,7 +24,7 @@ We then associate the accountNumber  value with a key called  accountnumber  in 
 
 Line 7: We are sending the received request to another servlet, based on the resource type identified by the Interactive Communication Document url. The response returned by this second servlet is included in the first servlet's response.
 
-```java {.line-numbers}
+```java
 org.apache.jackrabbit.api.security.user.UserManager um = ((org.apache.jackrabbit.api.JackrabbitSession) session).getUserManager();
 org.apache.jackrabbit.api.security.user.Authorizable loggedinUser = um.getAuthorizable(session.getUserID());
 String accountNumber = loggedinUser.getProperty("profile/accountNumber")[0].getString();

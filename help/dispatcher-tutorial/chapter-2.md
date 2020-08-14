@@ -75,7 +75,7 @@ The load-balancer usually "pings", a particular page to see if the server is up 
 
 "Worldwide Distribution" is a "Scale out"  setup where you have multiple Dispatchers in front of each Publish system - now distributed all over the world to be closer to the customer and provide a better performance. Of course, in that scenario you don't have a central load balancer but a DNS and geo-IP based load balancing scheme.
 
->[!NOTE]  
+>[!NOTE]
 >
 >Actually, you are building kind of a Content Distribution Network (CDN) with that approach – so you should consider buying an off-the-shelf CDN solution innstead of building one yourself. Building and maintaining a custom CDN is no trivial task.
 

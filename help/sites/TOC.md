@@ -61,14 +61,13 @@ sub-product: sites
   + [Getting Started with AEM SPA Editor and React](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
   + [Getting Started with AEM SPA Editor and Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
 + Multi Site Management {#multi-site-management}
-  + [Overview](./multi-site-management/language-copy-overview.md)
+  + [Introduction to Language Copy](./multi-site-management/language-copy-overview.md)
   + [Live Copy and Blueprint](./multi-site-management/live-copy-and-blueprint.md)
   + [Create a Live Copy](./multi-site-management/create-live-copy.md)
   + [Manage Live Copy inheritance on a component](./multi-site-management/manage-component-inheritance-live-copy.md)
   + [Manage Live Copy inheritance on a page](./multi-site-management/manage-page-inheritance-live-copy.md)
   + [Live Copy overview console](./multi-site-management/live-copy-overview-console.md)
-  + [Introduction to Language Copy](./multi-site-management/language-copy-overview.md)
-  + [Create a Language Copy](./multi-site-management/create-launguage-copy.md)
+  + [Create a Language Copy](./multi-site-management/create-language-copy.md)
   + [Translation Projects](./multi-site-management/manage-translation-projects.md)
   + [Create a multi-lingual Translation Project](./multi-site-management/create-multinational-translational-project.md)
   + [Translation Jobs](./multi-site-management/create-translation-job.md)
@@ -82,4 +81,9 @@ sub-product: sites
   + [Setup Translation Rules](translation/translation-rules-editor-technical-video-setup.md)
   + [Translation Enhancements](translation/translation-enhancements-feature-video-use.md)
 + Integrations {#integrations}
-  + [Integrate Launch by Adobe](integration/adobe-launch-integration-tutorial-understand.md)
+  + Experience Platform Launch {#experience-platform-launch}
+    + [Overview](integrations/experience-platform-launch/overview.md)
+    + [Create a Launch Property](integrations/experience-platform-launch/create-launch-property.md)
+    + [Connect AEM with Launch using Adobe I/O](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
+    + [Create a Launch Cloud Service](integrations/experience-platform-launch/create-launch-cloud-service.md)
+    + [Debugging a Launch implementation](integrations/experience-platform-launch/debug-launch-implementation.md)

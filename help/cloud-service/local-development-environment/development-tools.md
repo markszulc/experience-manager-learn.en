@@ -115,7 +115,7 @@ If the __settings.xml__ is missing, download the provided [settings.xml](./asset
 
 It is recommended that the profile be active by default, otherwise, this profile must be explicitly activated using the `-P` flag, `mvn -Padobe-public ...`.
 
-```{xml}
+```xml
 <activation>
     <activeByDefault>true</activeByDefault>
 </activation>

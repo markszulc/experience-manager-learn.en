@@ -36,7 +36,7 @@ In this use case we are going to provide a simple web interface to upload the te
 
 The following is the code snippet from the servlet. Code extracts the template(xdp) and the data file(xml) from the request. Template file is saved to the file system. Two maps are created- templateMap and dataFileMap which contain the template and the xml(data) files respectively. A call is then made to generateMultipleRecords method of the DocumentServices service.
 
-```java{.line-numbers}
+```java
 for (final java.util.Map.Entry < String, org.apache.sling.api.request.RequestParameter[] > pairs: params
 .entrySet()) {
 final String key = pairs.getKey();
@@ -71,7 +71,7 @@ Document zippedDocument = documentServices.generateMultiplePdfs(templateMap, dat
 
 The following code generates multiple pdf's using the OutputService's generatePDFOutputBatch and returns a zip file containing the pdf files to the calling servlet
 
-```java{.line-numbers}
+```java
 public Document generateMultiplePdfs(HashMap < String, String > templateMap, HashMap < String, Document > dataFileMap, String saveLocation) {
     log.debug("will save generated documents to " + saveLocation);
     com.adobe.fd.output.api.PDFOutputOptions pdfOptions = new com.adobe.fd.output.api.PDFOutputOptions();

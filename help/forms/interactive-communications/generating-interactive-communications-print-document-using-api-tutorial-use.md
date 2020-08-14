@@ -56,7 +56,7 @@ The REST endpoint of the Form Data Model expects an id as an input parameter. th
 
 ![requestattribute](assets/requestattributeprintchannel.gif) 
 
-```java {.line-numbers}
+```java
 var interactiveCommunicationsDocument = "/content/forms/af/retirementstatementprint/channels/print/";
 var saveLocation =  new Packages.java.io.File("c:\\scrap\\loadtesting");
 
@@ -126,7 +126,7 @@ Make sure this system user has read permissions on the following node. To give t
 
 * Create accountnumbers.xml file with the following content
 
-``` xml {.line-numbers}
+```xml
 
 <accountnumbers>
 <accountnumber>1</accountnumber>

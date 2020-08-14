@@ -30,7 +30,7 @@ This article will walk you through the steps needed to create a custom submit ac
 * Save the changes
 * Create a new file called post.POST.jsp under the CustomSubmitHelpx node.When an adaptive form is submitted, this JSP is called. You can write the JSP code as per your requirement in this file. The following code forwards the request to the servlet.
 
-```java {.line-numbers}
+```java
 <%
 %><%@include file="/libs/foundation/global.jsp"%>
 <%@taglib prefix="cq" uri="http://www.day.com/taglibs/cq/1.0"%>
@@ -48,7 +48,7 @@ This article will walk you through the steps needed to create a custom submit ac
 * Create file called  addfields .jsp under the CustomSubmitHelpx node. This file will enable you to access the signed document.
 * Add the following code to this file
 
-```java {.line-numbers}
+```java
 
     <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
 

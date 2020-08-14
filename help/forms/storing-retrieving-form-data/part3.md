@@ -14,7 +14,7 @@ version: 6.3,6.4,6.5
 The following code was written to fetch the stored Adaptive Form data. A simple query is used to fetch the Adaptive Form data associated with a given GUID. The fetched data is then returned to the calling application. The same data source created in the first step is referenced in this code.
 
 
-``` java{.line-numbers}
+```java
 package com.techmarketing.core.impl;
 
 import com.techmarketing.core.AemFormsAndDB;
@@ -76,7 +76,7 @@ public class AemformWithDB implements AemFormsAndDB {
 
 The following is the interface declaration that was used
 
-```java{.line-numbers}
+```java
 package com.techmarketing.core;
 
 public interface AemFormsAndDB {

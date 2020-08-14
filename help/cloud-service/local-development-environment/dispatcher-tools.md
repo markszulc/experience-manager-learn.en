@@ -122,14 +122,14 @@ To run Dispatcher Tools against an Experience Manager project's Dispatcher confi
 
 + Windows:
 
-    ```{shell}
+    ```shell
     $ del -/Q out && bin\validator full -d out <User Directory>/code/my-project/dispatcher/src
     $ bin\docker_run out host.docker.internal:4503 8080
     ```
 
 + macOS / Linux:
 
-    ```{shell}
+    ```shell
     $ rm -rf ./out && ./bin/validator full -d ./out ~/code/my-project/dispatcher/src
     $ ./bin/docker_run.sh ./out host.docker.internal:4503 8080
     ```
@@ -157,14 +157,14 @@ One or many parameters, can be passed to `docker_run`
 
 + Windows:
 
-  ```{shell}
+  ```shell
   $ bin\validator full -d out <User Directory>/code/my-project/dispatcher/src
   $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug bin\docker_run out host.docker.internal:4503 8080
   ```
 
 + macOS / Linux:
 
-  ```{shell}
+  ```shell
   $ ./bin/validator full -d out ~/code/my-project/dispatcher/src
   $ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug ./bin/docker_run.sh out host.docker.internal:4503 8080
   ```
@@ -207,7 +207,7 @@ If, when `bin/docker_run out host.docker.internal:4503 8080` results in the mess
 
 #### Example error
 
-```{shell}
+```shell
 $ docker_run out host.docker.internal:4503 8080
 
 Running script /docker_entrypoint.d/10-check-environment.sh
@@ -224,7 +224,7 @@ For example, Windows user folders often are `<First name> <Last name>`, with a s
 
 #### Example error
 
-```{shell}
+```shell
 $ \Users\My User\aem-sdk\dispatcher>bin\docker_run.cmd out host.internal.docker:4503 8080
 
 'User\aem-sdk\dispatcher\out\*' is not recognized as an internal or external command,
@@ -238,7 +238,7 @@ Running `docker_run` on Windows can result in the following error, preventing Di
 
 #### Example error
 
-```{shell}
+```shell
 $ \Users\MyUser\aem-sdk\dispatcher>bin\docker_run out host.docker.internal:4503 8080
 
 Running script /docker_entrypoint.d/10-check-environment.sh

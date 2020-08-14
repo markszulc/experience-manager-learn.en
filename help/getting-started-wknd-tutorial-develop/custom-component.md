@@ -1053,21 +1053,21 @@ Add default styles for the Byline component. In the **ui.frontend** project unde
 
 1. Build and compile the `ui.frontend` module using NPM:
 
-     ```shell
+   ```shell
     $ cd ~/code/aem-guides-wknd/ui.frontend
     $ npm run dev
-    ```
+   ```
 
 1. Build and deploy the `ui.apps` project, which will transitively include the `ui.frontend` project, to a local AEM instance using Maven:
 
-    ```shell
+   ```shell
     $ cd ~/code/aem-guides-wknd/ui.apps
     $ mvn clean install -PautoInstallPackage
-    ```
+   ```
 
-    >[!TIP]
-    >
-    >You may need to clear the browser cache to ensure stale CSS is not being served, and refresh the page with the Byline component to get the full styled.
+   >[!TIP]
+   >
+   >You may need to clear the browser cache to ensure stale CSS is not being served, and refresh the page with the Byline component to get the full styled.
 
 ## Putting It Together {#putting-it-together}
 

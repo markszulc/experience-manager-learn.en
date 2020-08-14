@@ -38,7 +38,7 @@ To accomplish this use case we need to do the following.
 
 * Line 24: DocumentAssuranceService's  secureDocument  method is used to apply the usage rights
 
-```java {.line-numbers}
+```java
  public Document renderAndExtendXdp(String xdpPath) {
   // TODO Auto-generated method stub
   log.debug("In renderAndExtend xdp the alias is " + docConfig.ReaderExtensionAlias());
@@ -85,7 +85,7 @@ The following screenshot shows you the configuraiton properties exposed. Most of
 
 The following code shows you the code that is used to build the OSGi configuration settings
 
-```java {.line-numbers}
+```java
 package com.aemformssamples.configuration;
 
 import org.osgi.service.metatype.annotations.AttributeDefinition;
@@ -129,7 +129,7 @@ We then call the renderAndExtendXdp method of com.aemformssamples.documentservic
 
 The reader extended PDF is then streamed to the calling application
 
-```java {.line-numbers}
+```java
 package com.aemformssamples.documentservices.core.servlets;
 
 import java.io.IOException;

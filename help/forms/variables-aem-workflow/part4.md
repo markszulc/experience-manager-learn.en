@@ -22,7 +22,7 @@ In order to use ArrayList variable in an AEM Workflow, you need to create an Ada
 
 Following is the data from the adaptive form submission. The adaptive form was based on JSON schema the data bound to the schema is stored under the data element of the afBoundData element. The managerchain is an array and we need to populate the ArrayList with the name element of the object inside the managerchain array.
 
-``` json {.line-numbers}
+```json
 {
     "afData": {
         "afUnboundData": {

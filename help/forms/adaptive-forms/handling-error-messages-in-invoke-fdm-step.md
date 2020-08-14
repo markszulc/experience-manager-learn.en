@@ -25,7 +25,7 @@ Starting with AEM Forms 6.5.1,we now have the option to capture error messages a
 
 With these changes, Invoke Form Data Model Service step will make sure the input values adhere to the data constraints provided in the swagger file. For example the following error message will be thrown when the accountId and balance values are not compliant to the data constraints specified in the swagger file.
 
-``` json{.line-numbers}
+```json
 {
 
 "errorCode": "AEM-FDM-001-049"
