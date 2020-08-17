@@ -33,7 +33,13 @@ team: TM
     + [Build and Deployment](./debugging/cloud-service/build-and-deployment.md)
     + [Developer Console](./debugging/cloud-service/developer-console.md)
     + [CRXDE Lite](./debugging/cloud-service/crxde-lite.md)
++ Accessing AEM{#accessing}    
+    + [Overview](./accessing/overview.md)
+    + [Adobe IMS users](./accessing/adobe-ims-users.md)
+    + [Adobe IMS user groups](./accessing/adobe-ims-user-groups.md)
+    + [Adobe IMS product profiles](./accessing/adobe-ims-product-profiles.md)
+    + [AEM users, groups, and permissions](./accessing/aem-users-groups-and-permissions.md)
+    + [Configuring access to AEM walk-through](./accessing/walk-through.md)
 + Migration {#migration}
   + [Content Transfer Tool](./migration/content-transfer-tool.md)
-
 + [Getting Started Developing AEM Sites - WKND Tutorial](./develop-wknd-tutorial.md)

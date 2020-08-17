@@ -17,7 +17,7 @@ thumbnail: 32147.jpg
 
 Learn how to perform basic page management operations for a Adobe Experience Manager Sites page.
 
->[!VIDEO](https://video.tv.adobe.com/v/32192?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32147?quality=12&learn=on)
 
 
 ## Additional Resources {#additional-resources}

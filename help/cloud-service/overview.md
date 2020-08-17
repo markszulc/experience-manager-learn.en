@@ -13,9 +13,14 @@ Adobe Experience Manager (AEM) is now available as a Cloud Service. AEM as a Clo
 
 ## What's New
 
+* **[Configuring access to AEM as a Cloud Service (Tutorial)](./accessing/overview.md)**
+    <br>
+    *Learn how to configure IMS users in Adobe Admin Console so they can access AEM*
+
 * **[Debugging AEM as a Cloud Service (Tutorial)](./debugging/cloud-service/overview.md)**
     <br>
     *Explore how to debug AEM as a Cloud Service*
+
 * **[Debugging AEM SDK (Tutorial)](./debugging/aem-sdk-local-quickstart/overview.md)**
     <br>
     *Explore the various tools used to debug your application on the AEM as a Cloud Service SDK's local quickstart*
@@ -23,14 +28,6 @@ Adobe Experience Manager (AEM) is now available as a Cloud Service. AEM as a Clo
 * **[Local Development Environment Set Up (Tutorial)](./local-development-environment/overview.md)**
     <br>
     *Learn how to set up your local development machine for AEM as a Cloud Service development*
-
-* **[Deploying WKND to AEM as a Cloud Service (Video)](./develop-wknd-tutorial.md#deploying-wknd-to-aem-as-a-cloud-service)**
-    <br>
-    *A quick overview of deploying an AEM Project to AEM as a Cloud Service*
-
-* **[Integrating Git with Adobe Cloud Manager (Video)](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)**
-    <br>
-    *Learn how to work with Git to easily deploy your project to AEM as a Cloud Service using Adobe Cloud Manager*
 
 * **[Understand Processing Profiles and Assets microservices (Video)](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#get-started)**
    <br>
@@ -45,6 +42,19 @@ Adobe Experience Manager (AEM) is now available as a Cloud Service. AEM as a Clo
 
 <table>
    <td>
+      <a href="./accessing/overview.md">
+      <img alt="Configuring access to AEM as a Cloud Service" src="./assets/overview/staff-pick__accessing.png"/>
+      </a>
+      <div>
+         <a href="./accessing/overview.md">
+         <strong>Configuring access to AEM Tutorial</strong>
+         </a>
+      </div>
+      <p>
+         <em>Configure IMS users in Adobe Admin Console to access AEM.</em>
+      <p>
+   </td>   
+   <td>
       <a href="./local-development-environment/overview.md">
       <img alt="Local Development Environment Set up Tutorial" src="./assets/overview/staff-pick__local-development-environment-set-up.png"/>
       </a>
@@ -54,22 +64,9 @@ Adobe Experience Manager (AEM) is now available as a Cloud Service. AEM as a Clo
          </a>
       </div>
       <p>
-         <em>Get your local machine ready for AEM as a Cloud Service development!</em>
+         <em>Get your local dev machine ready for AEM as a Cloud Service development!</em>
       <p>
-   </td>
-   <td>
-      <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
-      <img alt="Getting started with AEM Sites development for AEM as a Cloud Service" src="./assets/overview/staff_pick__aem-sites-development-tutorial.png"/>
-      </a>
-      <div>
-         <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
-         <strong>Get started developing for AEM Sites</strong>
-         </a>
-      </div>
-      <p>
-         <em>An end-to-end tutorial on how to develop a Web site in AEM.</em>
-      <p>
-   </td>
+   </td>   
    <td>
       <a href="./debugging/aem-sdk-local-quickstart/overview.md">
       <img alt="Debugging AEM SDK’s local quickstart" src="./assets/overview/staff-pick__debugging.png"/>
