@@ -91,11 +91,12 @@ index: y
   + [Handle HTML5 Form Submission](html5-forms/handle-html5-form-submission.md)
 + AEM Forms and Adobe Sign{#forms-and-sign}
   + [Introduction](aem-forms-and-adobe-sign/introduction.md)
-  + [Set SSL](aem-forms-and-adobe-sign/set-up-ssl.md)
+  + [Set up SSL](aem-forms-and-adobe-sign/set-up-ssl.md)
   + [Create Adobe Sign API Application](aem-forms-and-adobe-sign/create-adobe-sign-api-application.md)
   + [Create Adobe Sign Cloud Configuration](aem-forms-and-adobe-sign/create-adobe-sign-cloud-configuration.md)
   + [Create Workflow to send document for signing](aem-forms-and-adobe-sign/create-workflow-to-send-document-for-signing.md)
   + [Create and Configure Adaptive Form](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
+  + [Configure form with two signers](aem-forms-and-adobe-sign/configure-form-for-two-signers.md)
 + Variables in AEM Workflow{#variables-aem-workflow}
   + [Introduction - Variables in Workflow](variables-aem-workflow/introduction.md)
   + [XML Variables](variables-aem-workflow/part1.md)
