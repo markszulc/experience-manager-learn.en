@@ -15,4 +15,4 @@ You must create an API application on your Adobe Sign to integrate with your Ado
 
 The following video explains the steps needed in creating an Adobe Sign API application
 
->[!VIDEO](https://video.tv.adobe.com/v/38178/quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/38178/?quality=9&learn=on)

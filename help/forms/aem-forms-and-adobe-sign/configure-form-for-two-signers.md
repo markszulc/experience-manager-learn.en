@@ -13,4 +13,4 @@ kt: 6071
 
 The video explains the various steps needed to configure an adaptive form with signers.
 
->[!VIDEO](https://video.tv.adobe.com/v/39294/quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/39294/?quality=9&learn=on)

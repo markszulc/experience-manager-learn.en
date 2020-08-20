@@ -14,7 +14,6 @@ version: 6.4,6.5
 kt: 5952
 thumbnail: 27763.jpg
 
-discoiquuid: b6c9a22d-a0ea-4133-8287-d63d08b02251
 
 ---
 

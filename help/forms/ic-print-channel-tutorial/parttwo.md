@@ -11,11 +11,9 @@ audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
-discoiquuid: 5fa663ce-c9ab-40b5-9f5a-9912ff7dd3d9
 targetaudience: target-audience ongoing
 thumbnail: 27765.jpg
 kt: 5954
-
 ---
 
 # Creating DataSource Configuration in AEM Forms{#creating-datasource-configuration-in-aem-forms}
