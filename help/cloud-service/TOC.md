@@ -41,5 +41,24 @@ team: TM
     + [AEM users, groups, and permissions](./accessing/aem-users-groups-and-permissions.md)
     + [Configuring access to AEM walk-through](./accessing/walk-through.md)
 + Migration {#migration}
-  + [Content Transfer Tool](./migration/content-transfer-tool.md)
+    + [Content Transfer Tool](./migration/content-transfer-tool.md)
++ [Developing for Adobe Asset Compute](./develop/asset-compute/)
+    + [Overview](./develop/asset-compute/overview.md)
+    + Set up{#asset-compute-set-up}
+        + [Set up development environment](./develop/asset-compute/set-up-local-dev.md)
+        + [Set up accounts](./develop/asset-compute/set-up-accounts.md)
+    + Develop an Asset Compute application{#asset-compute-develop}
+        + [Create a new application](./develop/asset-compute/develop/create-a-new-application.md)
+        + [Configure the application](./develop/asset-compute/develop/configure-the-application.md)
+        + [Use the Asset Compute Dev Tool](./develop/asset-compute/develop/dev-tool.md)
+        + [Develop a new worker](./develop/asset-compute/develop/develop-a-new-worker.md)
+    + Test & Debug{#asset-compute-test-and-debug}
+        + [Writing tests]()
+        + [Debugging]()
+    + Deploy
+        + [Deploying]
+        + [Integrating]
+    
+
+
 + [Getting Started Developing AEM Sites - WKND Tutorial](./develop-wknd-tutorial.md)

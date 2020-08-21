@@ -123,19 +123,30 @@ It is recommended that the profile be active by default, otherwise, this profile
 
 _† Adobe Cloud Manager can access other public or locally embedded artifact repositories by including those repository registration in the AEM Project's pom.xml. Using external repositories is discouraged as it introduces a point of failure in the build process that Adobe cannot guarantee._
 
-## Set up Adobe I/O CLI with Cloud Manager plugin{#aio-cli}
+## Set up Adobe I/O CLI{#aio-cli}
 
-The [Adobe I/O CLI](https://github.com/adobe/aio-cli), or `aio`, provides command line access to a variety of Adobe services, [including Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager). The Adobe I/O CLI plays an integral role in development on AEM as a Cloud Service as it provides developers the ability to:
+The [Adobe I/O CLI](https://github.com/adobe/aio-cli), or `aio`, provides command line access to a variety of Adobe services, including [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) and [Asset Compute](https://github.com/adobe/aio-cli-plugin-asset-compute). The Adobe I/O CLI plays an integral role in development on AEM as a Cloud Service as it provides developers the ability to:
     
 + Tail logs from AEM as a Cloud Services services
 + Manage Cloud Manager pipelines form the CLI
 
-### Install the Adobe I/O CLI with Cloud Manager plugin
+### Install the Adobe I/O CLI
 
 1. Ensure [Node.js is installed](#node-js) as the Adobe I/O CLI is an npm module
     + Run `node --version` to confirm
 1. Execute `npm install -g @adobe/aio-cli` to install the `aio` npm module globally
-1. Execute `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` to install the aio Cloud Manager plug-in
+
+### Set up the Adobe I/O CLI Cloud Manager plugin{#aio-cloud-manager}
+
+The Adobe I/O Cloud Manager plugin allows the aio CLI to interact with Adobe Cloud Manager via the `aio cloudmanager` command.
+
+1. Execute `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` to install the [aio Cloud Manager plug-in](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+
+### Set up the Adobe I/O CLI Asset Compute plugin{#aio-asset-compute}
+
+The Adobe I/O Cloud Manager plugin allows the aio CLI to generate and run Asset Compute workers via the `aio asset-compute` command.
+
+1. Execute `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` to install the [aio Asset Compute plug-in](https://github.com/adobe/aio-cli-plugin-asset-compute).
 
 ### Set up the Adobe I/O CLI authentication
 
