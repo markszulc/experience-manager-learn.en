@@ -15,6 +15,6 @@ The video explains the various steps needed to configure an adaptive form with s
 
 >[!VIDEO](https://video.tv.adobe.com/v/39475/?quality=9&learn=on)
 
-Assets related with this video can be downloaded from the following link
+Assets related to this video can be downloaded from the following link
 
 * [Change Of Beneficiary Form ](assets/change-of-beneficiary-form.zip)
