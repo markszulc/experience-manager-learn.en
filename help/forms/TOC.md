@@ -96,7 +96,8 @@ index: y
   + [Create Adobe Sign Cloud Configuration](aem-forms-and-adobe-sign/create-adobe-sign-cloud-configuration.md)
   + [Create Workflow to send document for signing](aem-forms-and-adobe-sign/create-workflow-to-send-document-for-signing.md)
   + [Create and Configure Adaptive Form](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
-  + [Configure form with two signers](aem-forms-and-adobe-sign/configure-form-for-two-signers.md)
+  + [Configure form for single signer](aem-forms-and-adobe-sign/configure-form-for-single-signer.md)
+  + [Configure form for two signers](aem-forms-and-adobe-sign/configure-form-for-two-signers.md)
 + Variables in AEM Workflow{#variables-aem-workflow}
   + [Introduction - Variables in Workflow](variables-aem-workflow/introduction.md)
   + [XML Variables](variables-aem-workflow/part1.md)
