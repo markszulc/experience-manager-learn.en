@@ -98,6 +98,8 @@ index: y
   + [Create and Configure Adaptive Form](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
   + [Configure form for single signer](aem-forms-and-adobe-sign/configure-form-for-single-signer.md)
   + [Configure form for two signers](aem-forms-and-adobe-sign/configure-form-for-two-signers.md)
+  + [Configure Automated Forms Conversion Service](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
+  + [Convert PDF Form into Adaptive Form](aem-forms-and-adobe-sign/convert-pdf-form-into-af.md)
 + Variables in AEM Workflow{#variables-aem-workflow}
   + [Introduction - Variables in Workflow](variables-aem-workflow/introduction.md)
   + [XML Variables](variables-aem-workflow/part1.md)
