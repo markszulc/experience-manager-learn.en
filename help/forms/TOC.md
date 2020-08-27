@@ -101,6 +101,7 @@ index: y
   + [Configure Automated Forms Conversion Service](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
   + [Convert PDF Form into Adaptive Form](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
   + [Configure converted Adaptive Form](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
+  + [Using XDP templates with Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
 + Variables in AEM Workflow{#variables-aem-workflow}
   + [Introduction - Variables in Workflow](variables-aem-workflow/introduction.md)
   + [XML Variables](variables-aem-workflow/part1.md)
