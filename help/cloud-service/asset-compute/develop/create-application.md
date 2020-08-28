@@ -24,7 +24,7 @@ Use the [Adobe I/O CLI Asset Compute plugin](../set-up/development-environment.m
     + Use the arrows keys to select and space to unselect/select, and Enter to confirm selection.
 1. __How would you like to name this action?__
     + Use the default name `worker`. 
-    + If your project will contain multiple workers that perform different asset computations, name your first worker according to the job it will do, for example: `auto-straighten` or `auto-tone`.
+    + If your project will contain multiple workers that perform different asset computations, name them semantically. 
 
 ## Review the anatomy of the project
 
@@ -34,6 +34,7 @@ The generated Asset Compute application project is a Node.js project for a speci
     + `/actions/worker/index.js` defines the JavaScript code to be executed to perform the work of this worker. 
         + The folder name `worker` is a default, and can be anything, as long as it is registered in the `manifest.yml`.
         + More than one worker folder can be defined under `/actions` as needed, however they must be registered in the `manifest.yml`.
+        + In this tutorial we will create a `wknd-asset-compute` folder and build out worker underneath that.
 + `/dist` is the compiled output directory.
 + `/node_modules` contains all the dependencies required by the application (as defined in `package.json`)
 + `/test/asset-compute` contains the test suites for each worker. Similar to the `/actions` folder, `/test/asset-compute` can contain multiple sub-folders, each corresponding to the worker it will test.
@@ -42,7 +43,7 @@ The generated Asset Compute application project is a Node.js project for a speci
 + `/.env` defines environment variables in a `key=value` syntax and often contains secrets that should not be shared. To protect these secrets, this file should NOT be checked into Git and is ignored via the project's default `.gitignore` file. 
 + `/.gitignore` standard Git ignore file, enumerating the files and folders not to include in source control.
 + `/console.json` contains the credentials set up through your Project Firefly project on Adobe I/O.
-+ `/manifest.yml` defines what Asset Compute workers, or Adobe I/O Runtime actions, that this project exposes. Each worker implementation that should be available for use must be enumerated in this file.
++ `/manifest.yml` defines what Asset Compute workers, or Adobe I/O Runtime actions, that this project exposes. Each worker implementation that should be deployed must be enumerated in this file.
 + `/package.json` the traditional [npm package.json](https://nodejs.org/en/knowledge/getting-started/npm/what-is-the-file-package-json/) file representing the project.
 + `/package-lock.json` the [npm package-log.json](https://docs.npmjs.com/files/package-lock.json) file for the project.
 

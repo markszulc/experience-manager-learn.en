@@ -30,7 +30,6 @@ $ aio plugins:install @adobe/aio-cli-plugin-asset-compute
 
 Download and install the latest, stable [Docker Desktop](https://www.docker.com/products/docker-desktop), as this is required to debug Asset Compute workers.
 
-
 ## Install Visual Studio Code
 
 [Microsoft Visual Studio Code](https://code.visualstudio.com/download) is recommended for developing Asset Compute applications, however any [JavaScript-compatible IDE](/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) can be used.

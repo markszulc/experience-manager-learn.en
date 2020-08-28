@@ -14,27 +14,32 @@ thumbnail: KT-5802.jpg
 
 # Set up accounts
 
-Developing Asset Compute applications introduces several dependencies on 
+This tutorial requires the following services to be provisioning and accessible. All Adobe services must be accessible through the same Adobe Org, using your Adobe ID.
 
-+ AEM as a Cloud Service
-+ Adobe I/O Asset Compute project
++ [AEM as a Cloud Service](https://my.cloudmanager.adobe.com/)
++ Adobe I/O Asset Compute project (based on [Adobe Project FireFly](https://www.adobe.io/apis/experienceplatform/project-firefly.html))
 + Cloud storage
-    + Azure Blob Storage
-    + or Amazon S3
+    + [Azure Blob Storage](https://azure.microsoft.com/en-us/services/storage/blobs/)
+    + or [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&trk=ft_card)
 + Asset processing Web service
-    + In this tutorial we will use //TODO
+    + This tutorial uses [Adobe Photoshop APIs](https://www.adobe.io/apis/creativecloud/photo-imaging-api.html).
+    + __[Sign-up for free](https://photoshop.adobelanding.com/api-signup/)__. Make sure you request access using the e-mail address associated with your AEM as a Cloud Service program/environment.
 
-Ensure you have access to all to all of these services, prior to continuing through this tutorial.
+Ensure you have access to all of the aforementioned services, prior to continuing through this tutorial.
 
-## AEM as a Cloud Service 
+## AEM as a Cloud Service{#aem-as-a-cloud-service}
 
-Access to an AEM as a Cloud Service environment is required in order to configure AEM Assets Processing Profiles to invoke the custom Asset Compute application. Ideally a sandbox program or a non-sandbox Development environment is available for use.
+Access to an AEM as a Cloud Service environment is required in order to configure AEM Assets Processing Profiles to invoke the custom Asset Compute application. 
 
-### Adobe I/O Asset Compute project
+Ideally a sandbox program or a non-sandbox Development environment is available for use.
 
-The [Adobe Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly.html) framework is used for building and deploying custom applications to Adobe I/O Runtime, Adobe's serveless platform. AEM Asset Compute workers are specially built Firefly applications that integrate with AEM Assets via Processing Profiles, and provide the ability to process asset binaries.
+Note that a local AEM SDK is insufficient to full complete this tutorial, as the local AEM SDK cannot communicate with Asset Compute microservices, instead a true AEM as a Cloud Service environment is required.
 
-Create and set up an Adobe I/O Firefly Project:
+## Adobe Project Firefly{#asset-compute-project}
+
+The [Adobe Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly.html) framework is used for building and deploying custom applications to Adobe I/O Runtime, Adobe's serverless platform. AEM Asset Compute workers are specially built Firefly applications that integrate with AEM Assets via Processing Profiles, and provide the ability to process asset binaries.
+
+Create and set up an Adobe Project Firefly Adobe I/O project:
 
 2. As a System Administrator or Developer Role access, log into the [Adobe Developer Console](https://console.adobe.io). Ensure the Adobe Experience Cloud Organization that is part of the AEM as a Cloud Service integration is selected in the Organization switcher. 
 
@@ -51,17 +56,22 @@ _If either __Create new project__ or the __Project Firefly__ type is not availab
 In the Firefly Project, select a workspace and subscribe to the services needed for Asset Compute. Click Add to Project > API and add Asset Compute, IO Events, and IO Events Management services. When adding the first API, it prompts to create a private key. Save this information on your machine as you need this key to test your custom application with the developer tool.
 
 
-
-
-
-
-
-### Cloud storage
+## Cloud storage
 
 ### Microsoft Azure Blob Storage{#azure-blob-storage}
 
-If you do not already gave access to Microsoft Azure Blob Storage, sign up for a [free 12 month account](https://azure.microsoft.com/en-us/free/).
+If you do not already have access to Microsoft Azure Blob Storage, sign up for a [free 12 month account](https://azure.microsoft.com/en-us/free/).
 
-https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal
+This tutorial will use Azure Blob Storage, however [Amazon S3](#amazon-s3) can be used as well only minor variation to the tutorial.
 
-### Amazon AWS S3 
+### Amazon S3{#amazon-s3} 
+
+Using [Azure Blob Storage](#azure-blob-storage) is recommended when following along with this tutorial, however  [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&trk=ft_card) can also be used. 
+
+If you need to provision cloud storage specially for this tutorial, we recommend using [Azure Blob Storage](#azure-blob-storage).
+
+### Adobe Photoshop APIs
+
+This tutorial uses Adobe Photoshop APIs to create custom renditions of assets. 
+
+Ensure you sign-up for (free access to the Adobe Photoshop APIs)(https://photoshop.adobelanding.com/api-signup/) using the e-mail address associated with the Adobe ID used to access [AEM as a Cloud Service](#aem-as-a-cloud-service) and [Adobe Project Firefly](#adobe-project-firefly).

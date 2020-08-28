@@ -16,45 +16,38 @@ thumbnail: KT-5802.jpg
 
 AEM as Cloud Service's Asset Compute microservices support the development and deployment of custom workers that can be used to read, and manipulate binary data of assets stored in AEM. 
 
-## Pre-requisites
-
-In order the develop and deploy custom Asset Compute workers, the following pre-requisites must be met:
-
-Access to an Experience Cloud Organization provisioned with the following products and services:
-
-+ AEM as a Cloud Service 
-+ Project Firefly
-
-Access to a cloud storage container:
-
-+ Microsoft Azure Blob Storage
-+ Amazon AWS S3
-
-Access to install the following on your local development machine:
-
-+ VS Code
-+ Node.JS
-+ AIO CLI
-+ Docker desktop
-
-## Account provisioning and set up
 
 
-[Account provisioning and set up](./2-accounts-and-provisioning.md)
 
-## Local development environment
+## Set up
 
-[Local development environment](./3-local-development-environment.md)
+### Account provisioning 
 
-## Creating a worker/project?
+### Local development environment
 
-## Testing  a worker
+## Develop 
 
-## Debugging a worker
+### Create a new application
 
-## Deploying a worker
+### Configure environment variables
 
-## Integating works with AEM
+### Configure the manifest.yml
+
+### Develop a worker
+
+### Run the worker via Dev Tools
+
+## Debug and Test
+
+### Debug a worker
+
+### Test a worker
+
+## Deploy
+
+
+
+
 
 
 
