@@ -34,7 +34,6 @@ index: y
   + [Prefill Service in Adaptive Forms](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
   + [Custom Submit in Adaptive Forms](adaptive-forms/custom-submit-aem-forms-article.md)
   + [Captcha in Adaptive Forms](adaptive-forms/forms-captcha-feature-video-use.md)
-  + [Adobe Sign Integration](adaptive-forms/adobe-sign-integration-feature-video.md)
   + [Using Set Value in XML  in OSGI Workflow](adaptive-forms/setvalue-aem-forms-workflow-tutorial-use.md)
   + [Using Set Value in JSON in OSGI Workflow](adaptive-forms/setvalue-json-data-in-aem-forms-workflow-article-use.md)
   + [Send Email Component in AEM Forms Workflow](adaptive-forms/email-step-aem-workflow-video-use.md)
