@@ -1,3 +1,5 @@
+
+
 # Configure the manifest.yml
 
 The `manifest.yml`, located in the root of the Asset Compute application project, describes all the workers in this project that are available when deployed.
@@ -71,7 +73,7 @@ packages:
         runtime: 'nodejs:10'
         limits: # Allows for the tuning of the worker's performance
           timeout: 180000 # timeout in millseconds 
-          memorySize: 64 # memory allocated in MB; if the worker offloads heavy computational work to other Web services this number can be reduced
+          memorySize: 200 # memory allocated in MB; if the worker offloads heavy computational work to other Web services this number can be reduced
           concurrency: 10 # adjust based on expected concurrent processing and timeout 
         annotations:
           require-adobe-auth: true
@@ -97,7 +99,7 @@ packages:
         runtime: 'nodejs:10'
         limits:
           timeout: 180000 # in ms
-          memorySize: 64 # in MB
+          memorySize: 200 # in MB
           concurrency: 10 
         annotations:
           require-adobe-auth: true
@@ -131,3 +133,11 @@ To stop the Asset Compute Local Dev Tool, tap `Ctrl-C` in the terminal window th
 + __Error message:__ TODO (via standard out from `aio app run` command)
 + __Cause:__ Yaml files are white-spaced sensitive, it likely that your intedentation is incorrect.
 + __Resolution:__ Review your `manifest.yml` and ensure all indentation is correct.
+
+
+
+### memorySize limit is set too low
+
++ __Error message:__  Local Dev Server OpenWhiskError: PUT https://adobeioruntime.net/api/v1/namespaces/81368-wkndaemassetcompute-development/actions/wkndAemAssetCompute-0.0.1/__secured_workeroverwrite=true Returned HTTP 400 (Bad Request) --> "The request content was malformed:requirement failed: memory 64 MB below allowed threshold of 134217728 B"
++ __Cause:__ A `memorySize` limit in the manfest was set beflow the minimum allowed threshold as reported by the error message in bytes.
++ __Resolution:__  Review the `memorySize` limits in the `manifest.yml` and ensure they are all large than the minimum allowed threshold.

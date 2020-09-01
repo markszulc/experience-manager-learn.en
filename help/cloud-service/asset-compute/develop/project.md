@@ -1,17 +1,29 @@
+---
+title: Create an Asset Compute project
+description: 
+feature: 
+topics: 
+version: cloud-service
+doc-type: tutorial
+activity: 
+audience: developer
+kt: 
+thumbnail: 
+---
 
+# Create an Asset Compute project
 
-# Creating an Asset Compute application project
-
-Custom Asset Compute applications are build as part of Node.js projects that adhere to a certain stucture. A single project can contain one or more Asset Compute workers.
+Asset Compute applications are Node.js projects that adhere to a certain stucture that allow them to be deployed to Adone I/O Runtime. A single project can contain one or more Asset Compute workers, with each worker having a discrete end-point that can be referenced from an AEM as a Cloud Service Processing Profile.
 
 ## Generate a project
 
 Use the [Adobe I/O CLI Asset Compute plugin](../set-up/development-environment.md#aio-cli) to generate a new, empty Asset Compute project:
 
-1. `$ aio app init` to begin the interactive project generation CLI.
-    + This may open a browser prompting you to authenticate to Adobe I/O. Provide your Adobe credentials. If you are unable to log in, please follow these instructions on how to generate a project 
+1. Open your terminal, and navigate to the folder which will contain your project.
+1. From the command line, execute `aio app init` to begin the interactive project generation CLI.
+    + This may open a Web browser prompting for authentication to Adobe I/O. Provide your Adobe credentials associated with the [required Adobe services and products](../set-up/accounts-and-service.md). If you are unable to log in, please follow these instructions on how to generate a project 
 1. __Select Org__
-    + Select the //TODO Adobe Org that has AEM as a Cloud Service and Firefly registered.
+    + Select the Adobe Org that has AEM as a Cloud Service, Project Firefly, and Adobe Photoshop APIs are registered to.
 1. __Select Project__
     + Locate and select the Project. This is the [Project title](todo.md) created from the Firefly project template.
 1. __Select Workspace__
@@ -34,7 +46,6 @@ The generated Asset Compute application project is a Node.js project for a speci
     + `/actions/worker/index.js` defines the JavaScript code to be executed to perform the work of this worker. 
         + The folder name `worker` is a default, and can be anything, as long as it is registered in the `manifest.yml`.
         + More than one worker folder can be defined under `/actions` as needed, however they must be registered in the `manifest.yml`.
-        + In this tutorial we will create a `wknd-asset-compute` folder and build out worker underneath that.
 + `/dist` is the compiled output directory.
 + `/node_modules` contains all the dependencies required by the application (as defined in `package.json`)
 + `/test/asset-compute` contains the test suites for each worker. Similar to the `/actions` folder, `/test/asset-compute` can contain multiple sub-folders, each corresponding to the worker it will test.

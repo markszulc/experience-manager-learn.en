@@ -1,5 +1,17 @@
 
-
+---
+title: Dev Tool
+description: 
+feature: 
+topics: 
+version: cloud-service
+doc-type: tutorial
+activity: 
+audience: developer
+doc-type: article
+kt: 
+thumbnail: 
+---
 
 ## Asset Compute Local Dev Tool
 
@@ -15,7 +27,7 @@ $ aio app run
 
 This will start the Asset Compute Dev Tool at localhost port 9000, and automatically load it in a browser window. For the Asset Compute Dev Tool to run, [a valid, auto-generated devToolToken must be provided via a query parameter](#troubleshooting__devtooltoken).
 
-### Understand the Asset Compute Dev Tools interface
+### Understand the Asset Compute Dev Tools interface{#interface}
 
 ![Asset Compute Dev Tool]()
 
@@ -39,7 +51,7 @@ This will start the Asset Compute Dev Tool at localhost port 9000, and automatic
 1. The __Renditions section__ will populate with a rendition place holder.
 1. Once the worker completes, the rendition placeholder will display the generated rendition.
 
-
+Making code changes to the worker while Dev Tool is running will "hot deploy" the changes. The "hot deploy" takes several seconds so do not 
 
 ## Troubleshooting
 

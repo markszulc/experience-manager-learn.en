@@ -1,11 +1,24 @@
+---
+title: Configure the environment variables
+description: 
+feature: 
+topics: 
+version: cloud-service
+doc-type: tutorial
+activity: 
+audience: developer
+doc-type: article
+kt: 
+thumbnail: 
+---
 
-## Configure the environment variables
+# Configure the environment variables
 
-Before beginning development of the Asset Compute workers, first ensure the project is configured with the account information provided by Adobe I/O and your Cloud Storage provider in order for the application to deploy to and execute within the Adobe I/O Runtime environment.
+Before beginning development of Asset Compute workers, ensure the project is configured with Adobe I/O and cloud strorage information. This information is stored in the project's `.env`  which is used only for local development and not saved to Git.
 
-Once a project has been created, it must be configured with Adobe I/O and cloud storage credentials. These values are set in the generated `.env` file in the root of the project as key/value pairs.
+Other custom parameters and secrets can be stored in the `.env` file as well, such as credentials for 3rd party web services.
 
-Note that other custom parameters and secrets can be stored in the `.env` file as well, such as credentials to 3rd party web services the Asset Compute application connects to.
+The `.env` file provides a convenient way to expose key/values pairs to the local Asset Compute local devlopment environment. When [deploying](../deploy/deploy.md) Asset Compute workers to Adobe I/O Runtime, the `.env` file is not used, but rather a subset of values are passed in via environment variables.
 
 ![\.env file](assets/asset-compute-project/env-file.png)
 
@@ -59,7 +72,7 @@ For example, this might look like (values for illustration only):
 ```
 ...
 S3_BUCKET=
-AWS_ACCESS_KEY_ID=
+AWS_ACCESS_KEY_ID=AKIAZLXYMLXJLV35PLO6
 AWS_SECRET_ACCESS_KEY=
 AWS_REGION=
 ...
