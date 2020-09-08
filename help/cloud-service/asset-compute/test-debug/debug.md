@@ -49,10 +49,11 @@ The [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm module, pr
 1. Add the following JSON object configuration to the `configurations` array:
 ```json
 {
-    "type": "node",
+    "type": "pwa-node", // Important, this may deviate from the generated file
     "request": "launch",
-    "name": "wskdebug worker", // Optionally provide a more meaningful name
-    "runtimeExecutable": "wskdebug",
+    "name": "wskdebug",
+    "attachSimplePort": 0, // instead of "port", makes it auto-select a free debug port
+    "runtimeExecutable": "wskdebug", // TODO 
     "args": [
         "wkndAemAssetCompute-0.0.1/__secured_worker",  // Version must match your Asset Compute application's version
         "${workspaceFolder}/actions/worker/index.js",  // Points to your worker

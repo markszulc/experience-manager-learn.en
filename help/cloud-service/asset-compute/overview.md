@@ -17,17 +17,34 @@ AEM as Cloud Service's Asset Compute microservices support the development and d
 
 ## Set up
 
+In order to begin developing custom Asset Compute applications, accounts and services must be provisioend and configured, and software installed on the local development machines.
+
 ### Account and service provisioning 
 
-+ [Provision accounts and services](./set-up/accounts-and-services.md) needed to complete this tutorial.
+The following accounts and services require provisioning and access to in order to complete the tutorial:
+
++ AEM as a Cloud Service Dev environment or Sandbox program
++ Access to Adobe Project Firefly
++ Access to Microsoft Azure Blob Storage
+
+
+[Provision accounts and services](./set-up/accounts-and-services.md)
 
 ### Local development environment
 
-+ [Set up local development environment](./set-up/development-environment.md) needed to complete this tutorial.
+Local development of Asset Compute applications requires a discrete developer tool box for traditional AEM development, including:
+
++ Microsoft Visual Studio Code
++ Docker Desktop
++ Node.js and supporting npm modules
+
+[Set up local development environment](./set-up/development-environment.md)
 
 ### Set up the Adobe I/O Project Firefly project
 
-+ [Set up the Adobe I/O Project Firefly project](./set-up/firefly.md);
+Asset Compute applications are specially defined Adobe Project Firefly applications, and as such, require access to Adobe Project Firefly in the Adobe Developer Console in order to set up and deploy them.
+
+[Set up the Adobe Project Firefly project](./set-up/firefly.md)
 
 ## Develop 
 

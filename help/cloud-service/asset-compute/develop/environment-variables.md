@@ -14,15 +14,17 @@ thumbnail:
 
 # Configure the environment variables
 
-Before beginning development of Asset Compute workers, ensure the project is configured with Adobe I/O and cloud strorage information. This information is stored in the project's `.env`  which is used only for local development and not saved to Git.
+![dot env file](assets/environment-variables/dot-env-file.png)
 
-Other custom parameters and secrets can be stored in the `.env` file as well, such as credentials for 3rd party web services.
+Before beginning development of Asset Compute applications, ensure the project is configured with Adobe I/O and cloud strorage information. This information is stored in the project's `.env`  which is used only for local development and not saved to Git.
+
+Other custom parameters and secrets can be stored in the `.env` file as well, such as development credentials for 3rd party web services.
 
 The `.env` file provides a convenient way to expose key/values pairs to the local Asset Compute local devlopment environment. When [deploying](../deploy/deploy.md) Asset Compute workers to Adobe I/O Runtime, the `.env` file is not used, but rather a subset of values are passed in via environment variables.
 
-![\.env file](assets/asset-compute-project/env-file.png)
-
 ## Reference the `private.key`
+
+![private key](assets/environment-variables/private-key.png)
 
 Open the `.env` file, uncomment the following key, and provide the absolute path on your filesystem the `private.key` that pairs with the public certificate added to your Adobe I/O FireFly project.
 
@@ -49,15 +51,17 @@ In this tutorial we will use Azure Blob Storage as our cloud storage provide, ho
 
 ### Using Azure Blob Storage cloud storage
 
-If you are using [Microsoft Azure Blov Storage] uncomment and populate the following keys in the `.env` file. 
-If you are NOT using Microsoft Azure Blov Storage, leave these commented out (by prefixing with `#`).
+![Cloud storage credentials](assets/environment-variables/cloud-storage-credentials.png)
+
+If you are using [Microsoft Azure Blob Storage] uncomment and populate the following keys in the `.env` file. 
+If you are NOT using Microsoft Azure Blob Storage, remove or leave these commented out (by prefixing with `#`).
 
 For example, this might look like (values for illustration only):
 
 ```
 ...
 AZURE_STORAGE_ACCOUNT=aemguideswkndassetcomput
-AZURE_STORAGE_KEY=Ba9CnisgabdsNJEJBqCYyNbYppbGbZ2VbhcUIcQEw+xxRUDxOUNY/eExll0vwoLsPt/OvbM+B7pkUdpEe7zJhg==
+AZURE_STORAGE_KEY=Ba898CnisgabdsNJEJBqCYyVrYttbGbZ2VbhcKIcQEw+xxRUDxOiNY/eExll0vwoLsPt/OvbM+B7pkUdpEe7zJhg==
 AZURE_STORAGE_CONTAINER_NAME=asset-compute
 ...
 ```
@@ -65,13 +69,13 @@ AZURE_STORAGE_CONTAINER_NAME=asset-compute
 ### Using Amazon S3 cloud storage
 
 If you are using [Amazon S3 cloud storage] uncomment and populate the following keys in the `.env` file. 
-If you are NOT using Amazon S3, leave these commented out (by prefixing with `#`).
+If you are NOT using Amazon S3, remove or leave these commented out (by prefixing with `#`).
 
 For example, this might look like (values for illustration only):
 
 ```
 ...
-S3_BUCKET=
+S3_BUCKET=aemguideswkndassetcompute
 AWS_ACCESS_KEY_ID=AKIAZLXYMLXJLV35PLO6
 AWS_SECRET_ACCESS_KEY=
 AWS_REGION=
@@ -82,7 +86,9 @@ AWS_REGION=
 
 Once the generated Asset Compute project has been configured, validate the configuration prior to making code changes to ensure the supporting services are provisioned, in the `.env` files.
 
-Open a shell terminal in the project root, and start up the Asset Conmpute Dev Tool to by executing the command:
+![aio app run](assets/environment-variables/aio-app-run.png)
+
+Open a command line in the project root (in VS Code this can be opened directly in the IDE  via Terminal > New Terminal), and start up the Asset Conmpute Dev Tool to by executing the command:
 
 ```
 $ aio app run
@@ -90,10 +96,9 @@ $ aio app run
 
 This starts the local Asset Compute Local Dev Tool at http://localhost:9000 which opens in a new Web browser.
 
-Watch the terminal output as the Asset Compute Dev Tool intializes and the Web browser window for error messages.
+Watch the command line output as the Asset Compute Dev Tool intializes and the Web browser window for error messages.
 
-To stop the Asset Compute Local Dev Tool, tap `Ctrl-C` in the terminal window that executed `aio app run` to terminate the process.
-
+To stop the Asset Compute Local Dev Tool, tap `Ctrl-C` in the window that executed `aio app run` to terminate the process.
 
 ## Troubleshooting
 

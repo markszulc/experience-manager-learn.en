@@ -13,27 +13,29 @@ thumbnail:
 
 # Create an Asset Compute project
 
-Asset Compute applications are Node.js projects that adhere to a certain stucture that allow them to be deployed to Adone I/O Runtime. A single project can contain one or more Asset Compute workers, with each worker having a discrete end-point that can be referenced from an AEM as a Cloud Service Processing Profile.
+Asset Compute applications are Node.js projects that adhere to a certain stucture that allow them to be deployed to Adone I/O Runtime. A single Asset Compute application can contain one or more Asset Compute workers, with each worker having a discrete HTTP end-point that can be referenced from an AEM as a Cloud Service Processing Profile.
 
 ## Generate a project
 
-Use the [Adobe I/O CLI Asset Compute plugin](../set-up/development-environment.md#aio-cli) to generate a new, empty Asset Compute project:
+>[!VIDEO](https://video.tv.adobe.com/v/40197?quality=12&learn=on)
 
-1. Open your terminal, and navigate to the folder which will contain your project.
+Use the [Adobe I/O CLI Asset Compute plugin](../set-up/development-environment.md#aio-cli) to generate a new, empty Asset Compute project.
+
+1. From the command line navigate to the folder which will contain the project.
 1. From the command line, execute `aio app init` to begin the interactive project generation CLI.
-    + This may open a Web browser prompting for authentication to Adobe I/O. Provide your Adobe credentials associated with the [required Adobe services and products](../set-up/accounts-and-service.md). If you are unable to log in, please follow these instructions on how to generate a project 
+    + This may spawn a Web browser prompting for authentication to Adobe I/O. If it does, provide your Adobe credentials associated with the [required Adobe services and products](../set-up/accounts-and-service.md). If you are unable to log in, please follow these instructions on how to generate a project. 
 1. __Select Org__
-    + Select the Adobe Org that has AEM as a Cloud Service, Project Firefly, and Adobe Photoshop APIs are registered to.
+    + Select the Adobe Org that has AEM as a Cloud Service, Project Firefly are registered to.
 1. __Select Project__
-    + Locate and select the Project. This is the [Project title](todo.md) created from the Firefly project template.
+    + Locate and select the Project. This is the [Project title](../set-up/firefly.md) created from the Firefly project template, in this case `WKND AEM Asset Compute`.
 1. __Select Workspace__
-    +  Select the `Development` workspace. // TODO
+    +  Select the `Development` workspace.
 1. __Which Adobe I/O App features do you want to enable for this project? Select components to include__
     + Select `Actions: Deploy runtime actions`
     + Use the arrows keys to select and space to unselect/select, and Enter to confirm selection.
 1. __Select type of actions to generate__
     + Select `Adobe Asset Compute Worker`
-    + Use the arrows keys to select and space to unselect/select, and Enter to confirm selection.
+    + Use the arrows keys to select, space to unselect/select, and Enter to confirm selection.
 1. __How would you like to name this action?__
     + Use the default name `worker`. 
     + If your project will contain multiple workers that perform different asset computations, name them semantically. 
@@ -52,6 +54,7 @@ The generated Asset Compute application project is a Node.js project for a speci
     + `/test/asset-compute/worker`, representing a test suite for a specific worker, contains sub-folders representing a specific test-case, along with the test input, parameters, and expected output.
 + `/.aio` contains configurations used by the aio CLI tool. This file can be configured via the `aio config` command.
 + `/.env` defines environment variables in a `key=value` syntax and often contains secrets that should not be shared. To protect these secrets, this file should NOT be checked into Git and is ignored via the project's default `.gitignore` file. 
+    + Variables defined in this file can be overridden by exporting variables on the command line.
 + `/.gitignore` standard Git ignore file, enumerating the files and folders not to include in source control.
 + `/console.json` contains the credentials set up through your Project Firefly project on Adobe I/O.
 + `/manifest.yml` defines what Asset Compute workers, or Adobe I/O Runtime actions, that this project exposes. Each worker implementation that should be deployed must be enumerated in this file.

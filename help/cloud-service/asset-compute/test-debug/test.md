@@ -6,7 +6,6 @@ The general pattern
 
 ## Anatomy of a worker test
 
-
 ## Writing a test
 
 1. Ensure [Docker Desktop](../set-up/development-environment.md#docker) is running.
