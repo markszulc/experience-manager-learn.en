@@ -32,17 +32,3 @@ On completing this tutorial, you will have learned the following:
 * Configure Tables and Charts
 * Use Watched Folders to generate documents in batch mode
 
-## Tutorial
-
-* [Set up Tomcat](partone.md)
-* [Create Data Source](parttwo.md)
-* [Create Form Data Model](partthree.md)
-* [Create XDP Layout using Forms Designer](partfour.md)
-* [Create Document Fragment](partfive.md)
-* [Create Print Channel Document](partsix.md)
-* [Adding Content to Target Areas](partseven.md)
-* [Configuring Line Chart](parteight.md)
-* [Adding Table to Print Channel](partnine.md)
-* [Using Watched Folder to Generate Print Documents](partten.md)
-* [Opening Agent UI on Form Submission](parteleven.md)
-

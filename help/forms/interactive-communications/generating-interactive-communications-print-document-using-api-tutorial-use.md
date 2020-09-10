@@ -107,7 +107,7 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 
 **To test this on your local system please follow the following instructions:**
 
-* Setup Tomcat as described in this [article.](/help/forms/ic-print-channel-tutorial/partone.md) Tomcat has the war file which generates the sample data.
+* Setup Tomcat as described in this [article.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat has the war file which generates the sample data.
 * Set up service aka system user as described in this [article](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
 Make sure this system user has read permissions on the following node. To give the permissions login to [user admin](https://localhost:4502/useradmin) and search for the system user "data" and give the read permissions on the following node by tabbing to the permissions tab
     * /content/dam/formsanddocuments

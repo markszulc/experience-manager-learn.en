@@ -23,7 +23,7 @@ Row1 is configured to be grow depending on the data returned by the service call
 
 ## Deploy this on your server
 
-[Install Tomcat as specified here](/help/forms/ic-print-channel-tutorial/partone.md)
+[Install Tomcat as specified here](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)
 [Deploy the SampleRest.war file](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)
 [Install the assets ](assets/amortizationschedule.zip) using AEM package manager
 [Open the Amortization Schedule Form](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
