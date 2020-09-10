@@ -14,7 +14,7 @@ thumbnail: 40242.jpg
 
 # Creating workflow to review submitted data
 
-Workflows are typically used to route submitted data for review and approval. Workflows are created using the workflow editor in AEM. The Workflows can be triggered on Adaptive Form submission. The following steps will walk you through the process of creating your first workflow.
+Workflows are typically used to route submitted data for review and approval. Workflows are created using the workflow editor in AEM. The Workflows can be triggered on Adaptive Form submission. 
 
 ## Prerequisite
 
