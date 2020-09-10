@@ -24,7 +24,7 @@ The following video explains the creation of Review and Approval workflow using 
 >[!VIDEO](https://video.tv.adobe.com/v/40242/?quality=9&learn=on)
 
 
-If for some reason you are not able to build the workflow, you can download the completed workflow from [here](assets/review-submitted-data-workflow.zip) and import the same using [package manager](http://localhost:4502/crx/packmgr/index.jsp) in to your AEM instance
+If for some reason you are not able to build the workflow, you can download the completed workflow from [here](assets/review-submitted-data-workflow.zip) and import the same using [package manager](http://localhost:4502/crx/packmgr/index.jsp) in to your AEM instance.
 
 
 
