@@ -18,4 +18,4 @@ Leveraging existing XDP templates with AEM Forms and Sign integration.
 Assets related to this video can be downloaded from the following links
 
 * [NDA Template](assets/nda-agreement-xdp-template.zip)
-*** [Adaptive Form](assets/nda-agreement-af-with-xdp-template.zip)**
+*** [Adaptive Form](assets/nda-agreement-af-with-xdp-template.zip)*

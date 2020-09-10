@@ -11,6 +11,8 @@ doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 5682f024-a2f3-46a0-8274-3bdefe4a3905
+kt: 6168
+thumbnail: 40122
 
 ---
 
@@ -19,6 +21,10 @@ discoiquuid: 5682f024-a2f3-46a0-8274-3bdefe4a3905
 In this part, we will launch the agent ui interface for creating ad-hoc correspondence on form submission.
 
 This article will walk you through the steps involved in opening agent ui interface on submitting a form. Typical use case is for customer service agent to fill in a form with some input parameters and on form submission agent ui is opened with data prepopulated from form data model prefill service.The input parameters to the form data model prefill service are extracted from the form submission.
+
+The following video shows use case
+
+>[!VIDEO](https://video.tv.adobe.com/v/40122/?quality=9&learn=on)
 
 ```java
 String accountNumber = request.getParameter("accountnumber"))
