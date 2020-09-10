@@ -94,11 +94,9 @@ Open a command line in the project root (in VS Code this can be opened directly 
 $ aio app run
 ```
 
-This starts the local Asset Compute Local Dev Tool at http://localhost:9000 which opens in a new Web browser.
-
-Watch the command line output as the Asset Compute Dev Tool intializes and the Web browser window for error messages.
-
-To stop the Asset Compute Local Dev Tool, tap `Ctrl-C` in the window that executed `aio app run` to terminate the process.
+1. This command starts the local Asset Compute Local Dev Tool at http://localhost:9000 which opens in a new Web browser.
+1. Watch the command line output as the Asset Compute Dev Tool intializes and the Web browser window for error messages.
+1. To stop the Asset Compute Local Dev Tool, tap `Ctrl-C` in the window that executed `aio app run` to terminate the process.
 
 ## Troubleshooting
 

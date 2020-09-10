@@ -2,15 +2,15 @@
 
 # Configure the manifest.yml
 
-The `manifest.yml`, located in the root of the Asset Compute application project, describes all the workers in this project that are available when deployed.
+The `manifest.yml`, located in the root of the Asset Compute application project, describes all the workers in this application to be deployed.
 
 ![manifest.yml](assets/manifest/manifest.png)
 
 ## Default worker definition
 
-Workers are defined as Adobe I/O Runtime Action entries under `actions`.
+Workers are defined as Adobe I/O Runtime Action entries under `actions`, and are comprised of a set of configurations. 
 
-Workers accessing other Adobe I/O integrations must set the `annotations -> require-adobe-auth` property to `true` as this [exposes the worker's Adobe I/O credentials](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) via the `params.auth` object. This is  typically required when the worker calls out to Adobe I/O APIs such as the Photoshop, Lightroom or Sensei APIs, and can be toggled per worker.
+Workers accessing other Adobe I/O integrations must set the `annotations -> require-adobe-auth` property to `true` as this [exposes the worker's Adobe I/O credentials](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) via the `params.auth` object. This is  typically required when the worker calls out to Adobe I/O APIs such as the Adobe Photoshop, Lightroom or Sensei APIs, and can be toggled per worker.
 
 1. Open and review the auto-generated worker `manifest.yml`. Projects that contains multiple Asset Compute workers, must define an entry for each worker under the `actions` array.
 
@@ -26,12 +26,12 @@ packages:
         limits:
           concurrency: 10
         annotations:
-          require-adobe-auth: true # set to true, to pass through Adobe I/O access token/client id via params.auth in the worker, typically required when the worker calls out to Adobe I/O APIs such as the Photoshop, Lightroom or Sensei APIs.
+          require-adobe-auth: true # set to true, to pass through Adobe I/O access token/client id via params.auth in the worker, typically required when the worker calls out to Adobe I/O APIs such as the Adobe Photoshop, Lightroom or Sensei APIs.
 ```          
 
 ## Define limits
 
-Each worker can be discretely configure the [limits](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) for its execution context in Adobe I/O runtime. These values should be tuned to provide optimal sizing for the worker, based on the volume and rate of assets it will compute, and the type of work it performs.
+Each worker can configure the [limits](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) for its execution context in Adobe I/O runtime. These values should be tuned to provide optimal sizing for the worker, based on the volume and rate of assets it will compute, and the type of work it performs.
 
 Ensure you review [Adobe sizing guidance](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#sizing-workers) before setting limits. Asset Compute workers can run out of memory when processing assets, and the result is the Adobe I/O Runtime execution is killed, so ensure the worker is sized appropriately to handle all candidates assets.
 
@@ -79,17 +79,15 @@ packages:
 
 Once the generated Asset Compute `manifest.yml` is updated, run the application local and ensure it starts the Dev Tool successfully.
 
-Open a shell terminal in the project root, and start up the Asset Compute Dev Tool to by executing the command:
+1. Open a command line in the project root, and start up the Asset Compute Dev Tool to by executing the command:
 
-```
-$ aio app run
-```
+    ```
+    $ aio app run
+    ```
 
-This starts the local Asset Compute Local Dev Tool at http://localhost:9000 which opens in a new Web browser.
-
-Watch the terminal output as the Asset Compute Dev Tool intializes and the Web browser window for error messages.
-
-To stop the Asset Compute Local Dev Tool, tap `Ctrl-C` in the terminal window that executed `aio app run` to terminate the process.
+1. This starts the local Asset Compute Local Dev Tool at http://localhost:9000 which opens in a new Web browser.
+1. Watch the command line output as the Asset Compute Dev Tool intializes and the Web browser window for error messages.
+1. To stop the Asset Compute Local Dev Tool, tap `Ctrl-C` in the terminal window that executed `aio app run` to terminate the process.
 
 ## Troubleshooting
 

@@ -13,39 +13,40 @@ thumbnail:
 
 # Develop an Asset Compute worker
 
-Asset Compute workers are the core of an Asset Compute application as they are what provide the custom functionality that performs or orchestrates the work performed on an asset to create a new rendition.
+Asset Compute workers are the core of an Asset Compute application as provide custom functionality that performs, or orchestrates, the work performed on an asset to create a new rendition.
 
-The Asset Compute project auto-generates a simple worker that simply copies the asset's original binary into a named rendition, without any transformations. We could modify this worker implementation with our custom logic, but instead, we'll create a brand new worker so it's clear how brand new workers can be defined and registered for use within a single project.
+The Asset Compute project auto-generates a simple worker that copies the asset's original binary into a named rendition, without any transformations. In this tutorial we'll modify this worker to make a more interesting rendition, to illustrate the power of Asset Compute workers.
 
+We will create am Asset Compute worker that generates a new horizontal image rendition, that covers empty space to the left and right of the asset rendition with a blurred version of the asset. The width, height and blur of the final rendition will be parameterized.
 
-## Understanding how an Asset Compute worker orchestrates work
+## Understanding the execution of an Asset Compute worker 
 
-Asset Compute workers often rely on external Web services to perform that actual renditioning of an assets, and merely act as an orchestrator of the work to be done.
+Asset Compute workers implement the Asset Compute SDK worker API contract which is simply:
 
-![TODO]()
++ __Input:__ An AEM asset's original asset binary and parameters
++ __Output:__ One or more renditions to be added to the AEM asset
 
-1. When an Asset Compute worker is invoked from AEM Author service, it is against an AEM asset via a Processing Profile. The asset's original binary is passed to the worker via rendition callback function's `source` parameter, and any parameters defined in the Processing Profile, via the optional `params` parameter.
-1. The Asset Compute worker creates presigned PUT and GET URLs in the configured cloud storage (Azure Blob Storage or Amazon S3). This is a protected, but internet-available end-point both the Asset Compute worker and any asset processing web service can access and will be used as a location the asset processing web service can write the transformed rendition binary back to.
-1. The worker makes a HTTP call to the Web service, providing the presigned GET url to the assets original binary, available via `source.url` , and the presigned PUT (meaining it can be written to) URL generated in Step 2.
-1. Upon invoking the Web service's API, the original rendition's binary is retrieved by the Web service via the presigned `source.url` and the Web service performs the requested computations and transformations on it, generating the rendition.
-1. The Web service saves the rendition to the presigned PUT URL in cloud storage, so the worker can retrieve it.
-1. Upon completion, the worker is notified of completion (usually by polling the Web service since it doesnt have a public HTTP end-point), and then, the worker copies the rendition stored at the in the Cloud storage, into the rendition in AEM Author service.
+![Asset Compute worker execution flow](./assets/worker/execution-flow.png)
 
+1. When an Asset Compute worker is invoked from AEM Author service, it is against an AEM asset via a Processing Profile. The asset's __(1a)__ original binary is passed to the worker via rendition callback function's `source` parameter, and __(1b)__ any parameters defined in the Processing Profile via `rendition.instructions` parameter set.
+1. The Asset Compute worker code transforms the source binary provides in __(1a)__ based on any parameters provided by __(1b)__ to generate a rendition of the source binary.
+    + In this tutorial the rendition is created "in process", meaning the worker composes the rendition, however the source binary can be sent to other Web service APIs for rendition genereation as well.
+1. The Asset Comopute worker saves the rendition's binary representation to `rendition.path` which makes it available to be saved into the AEM Author service.
+1. Upon completion, the binary data written to `rendition.path` is exposed via the AEM Authoer Service as a rention for the AEM asset the Asset Compute worker was invoked upon.
 
 ## Anatomy of a worker
 
-Workers follow the same basic structure and input/output contract.
+All Asset Compute workers follow the same basic structure and input/output contract.
 
 ```javascript
 'use strict';
 
 // Any npm module imports used by the worker
-const { worker, SourceCorruptError, GenericError } = require('@adobe/asset-compute-sdk');
-const { GenericError } = require('@adobe/asset-compute-commons');
+const { worker, SourceCorruptError } = require('@adobe/asset-compute-sdk');
 const fs = require('fs').promises;
 
 /**
-Exports the worker defined by a custom rendition callback function, which parameterizes the input/output contract for the worker.
+Exports the worker implemented by a custom rendition callback function, which parameterizes the input/output contract for the worker.
  + `source` represents the asset's original binary used as the input for the worker.
  + `rendition` represents the worker's output, which is the creation of a new asset rendition.
  + `params` are optional parameters, which map to additional key/value pairs, including a sub `auth` object that contians Adobe I/O access credentials.
@@ -54,6 +55,7 @@ exports.main = worker(async (source, rendition, params) => {
     // Perform any necessary source (input) checks
     const stats = await fs.stat(source.path);
     if (stats.size === 0) {
+        // Throw appropriate errors whenever an erring condition is met
         throw new SourceCorruptError('source file is empty');
     }
 
@@ -78,23 +80,42 @@ exports.main = worker(async (source, rendition, params) => {
 });
 
 /**
-Optionally create helper functions the worker's rendition callback function invokes to help organize code.
+Optionally create helper classes or functions the worker's rendition callback function invokes to help organize code.
+
+Code shared across workers, or to complex to be managed in a single file, can be broken out across supporting JavaScript files in the project and imported normally into the worker. 
 **/
 function customHelperFunctions() { ... }
 ```
 
-## Create a new worker
+## Opening the worker index.js
 
-Ensure the Asset Compute project is open in VS Code.
+![Auto-generated index.js](./assets/worker/autogenerated-index-js.png)
 
-1. Navigate to the `/actions` folder.
-1. Create a new folder under `/actions` named `auto-straighten`. This folder will contain the new worker, so name it semantically based on what the worker does.
-1. In the newly created `/actions/auto-straighten` folder, create a file named `index.js`. 
-1. Copy the following code into `/actions/auto-straighten/index.js`. This code is a minor derivation of the autogenerated code in `/actions/worker/index.js`, removing some of the implementation details we won't need.
+1. Ensure the Asset Compute project is open in VS Code
+1. Navigate to the `/actions/worker` folder
+1. Open the `index.js` file
+
+This is the worker JavaScript file we will modify in this tutorial.
+
+## Install and import supporting npm modules
+
+As Node.js applications, Asset Compute applications benefit from the robust [npm module ecosystem](https://npmjs.com). To leverage npm modules we must first install them into our Asset Compute application project.
+
+In this worker, we leverage the [jimp](https://www.npmjs.com/package/jimp) to create and manipulate the rendition image directly in the Node.js code.
+
+1. Open the command line in the root of your Asset Compute project (this can be done in VS Code via __Terminal > New Terminal__) and execute the command:
+
+    ```
+    $ npm install jimp
+    ```
+
+1. Import the `jimp` module into the worker code so it can be used via the `Jimp` JavaScript object. 
+Update the `require` directives at the top of the worker's `index.js` to import the `Jimp` object from the `jimp` module:
 
     ```javascript
     'use strict';
 
+    const { Jimp } = require('jimp');
     const { worker, SourceCorruptError } = require('@adobe/asset-compute-sdk');
     const fs = require('fs').promises;
 
@@ -109,49 +130,20 @@ Ensure the Asset Compute project is open in VS Code.
     });
     ```
 
-## Install and import supporting npm modules
-
-As a Node.JS application, Asset Compuet workers benefit from the robust [npm module ecosystem](https://npmjs.com). To leverage npm modules we must first install them into our Asset Compute application project.
-
-In this worker, we will leverage the [image-js](https://www.npmjs.com/package/image-js) to create a rendition from the original image asset directly in Node.js code.
-
-1. Open terminal in the root of your Asset Compute application project and execute the command:
-
-```
-$ npm install image-js
-```
-
-1. Next, import the `image-js` module into the worker code so it can be used via the `Image` JavaScript object. 
-Update the `require` directives at the top of the worker's `index.js` to import the following:
-
- ```javascript
-'use strict';
-
-const { Image } = require('image-js');
-const { worker, SourceCorruptError } = require('@adobe/asset-compute-sdk');
-const fs = require('fs').promises;
-
-exports.main = worker(async (source, rendition, params) => {
-    // Check handle a corrupt input source
-    const stats = await fs.stat(source.path);
-    if (stats.size === 0) {
-        throw new SourceCorruptError('source file is empty');
-    }
-
-    // Do work here
-});
-```
-
 ## Read parameters
 
-Asset Compute workers can read in parameters that can be passed in via Processing Profiles defined in AEM as a Cloud Service. The parameters are passed into the worker via the `rendition.instructions` object.
+Asset Compute workers can read in parameters that can be passed in via Processing Profiles defined in AEM as a Cloud Service Author service. The parameters are passed into the worker via the `rendition.instructions` object.
 
-These can be read by simply accessing `rendition.instructions.<parameter name>` in the worker code.
+These can be read by accessing `rendition.instructions.<parameterName>` in the worker code.
+
+Here we'll read in the renditions target `SIZE`, `BRIGHTNESS` and `CONTRAST`, providing default values if none have been provided via the Processing Profile.
+
+We will also compute the target rendition `FORMAT` by reading the rendition's target filename extension to ensure the target format supports transparency.
 
 ```javascript
 'use strict';
 
-const { Image } = require('image-js'); 
+    const { Jimp } = require('jimp');
 const { worker, SourceCorruptError } = require('@adobe/asset-compute-sdk');
 const fs = require('fs').promises;
 
@@ -162,31 +154,36 @@ exports.main = worker(async (source, rendition, params) => {
     }
 
     // Read in parameters and set defaults if parameters are provided
-    const HEIGHT = rendition.instructions.height || 600;
-    const WIDTH = rendition.instructions.width || 1280;
-    const BLUR = rendition.instructions.blur || 30;
+    const SIZE = rendition.instructions.size || 1200; 
+    const CONTRAST = rendition.instructions.contrast || 0;
+    const BRIGHTNESS = rendition.instructions.brightness || 0;
 
-    // The rendition.instructions.name is the name the rendition will be saved as to AEM
-    // and as typically a file name, such as `rendition.jpg`.
-    // Parse the format from the rendition's extension.
+    // Parse the format from the rendition's extension
     const FORMAT = rendition.instructions.name.substring(rendition.instructions.name.lastIndexOf('.') + 1);
 
     // Do work here
 }
 ```
 
-## Throwing errors
+## Throwing errors{#errors}
 
-Asset Compute workers may encounter situations that result in errors. The Adobe Asset Compute SDK provides [a suite of predefined errors](https://github.com/adobe/asset-compute-commons#asset-compute-errors) that can be thrown when such situations are encountered. If no specific error type applies, the `GenericError` can be used.
+Asset Compute workers may encounter situations that result in errors. The Adobe Asset Compute SDK provides [a suite of predefined errors](https://github.com/adobe/asset-compute-commons#asset-compute-errors) that can be thrown when such situations are encountered. If no specific error type applies, the `GenericError` can be used, or specific custom `ClientErrors` can be defined.
 
-Here we check to ensure the requested rendition format, derived previously from the rendition's name, is supported by the image processing npm module (`image-js`) used to creat the renditions.
+Before starting to process the rendition, check to ensure all the parameters are valid and supported in the context of this worker:
+
++ Ensure the rendition format is supported by this worker. In this case we will support `jpg`, `png` and `gif`.
+    + We can derive the rendition formation from the `rendition.name`'s extension. If an unsupported extension is detected, throw a `RenditionFormatUnsupportedError` error.
++ Ensure the rendition intruction parameters for `size`, `contrast`, and `brightness` are valid. If not, throw a custom error `RenditionInstructionsError`.
+    + We can define this custom class, that extends `ClientError`, at the bottom of this file. The use of a specific, custom error will be useful when [writing tests](../test-debug/test.md) for our worker.
+
+Note these provided error types must also be imported in order to be used.
 
 ```javascript
 'use strict';
 
 const { Image } = require('image-js'); 
-// Import the `RenditionFormatUnsupportedError` type as this is thrown in the check below
-const { worker, SourceCorruptError, RenditionFormatUnsupportedError } = require('@adobe/asset-compute-sdk');
+// Import the Asset Compute SDK provided `RenditionFormatUnsupportedError` and `ClientError` 
+const { worker, SourceCorruptError, RenditionFormatUnsupportedError, ClientError } = require('@adobe/asset-compute-sdk');
 const fs = require('fs').promises;
 
 exports.main = worker(async (source, rendition, params) => {
@@ -195,43 +192,72 @@ exports.main = worker(async (source, rendition, params) => {
         throw new SourceCorruptError('source file is empty');
     }
 
-    const HEIGHT = rendition.instructions.height || 600;
-    const WIDTH = rendition.instructions.width || 1280;
-    const BLUR = rendition.instructions.blur || 30;
+ // Read in parameters and set defaults if parameters are provided
+    const SIZE = rendition.instructions.size || 1200; 
+    const CONTRAST = rendition.instructions.contrast || 0;
+    const BRIGHTNESS = rendition.instructions.brightness || 0;
+
+    // Parse the format from the rendition's extension
     const FORMAT = rendition.instructions.name.substring(rendition.instructions.name.lastIndexOf('.') + 1);
 
-    // Ensure the target format is supported by the image transformation library (image-js)
-    // and throw an error if the format is not supported.
-    if (['jpg', 'png', 'bmp'].indexOf(FORMAT) === -1) {
-        // Notice the `RenditionFormatUnsupportedError` is now imported above via the `@adobe/asset-compute-sdk` 
-        // which proxies the errors in from '@adobe/asset-compute-commons`
+    if (['jpg', 'png', 'gif'].indexOf(FORMAT) === -1) {
+        // Ensure rendition format is supported
+
+        // Notice the `RenditionFormatUnsupportedError` is now imported above via the `@adobe/asset-compute-sdk` which proxies the errors in from '@adobe/asset-compute-commons`
         throw new RenditionFormatUnsupportedError(`Rendition format '${FORMAT}' is not supported`);
+    } else if (SIZE <= 10 || SIZE >= 10000) {
+        // Ensure size is within allowable bounds
+        throw new RenditionInstructionsError("'size' must be between 10 and 1,0000");
+    } else if (CONTRAST <= -1 || CONTRAST >= 1) {
+        // Ensure contrast is valid value
+        throw new RenditionInstructionsError("'contrast' must between -1 and 1");
+    } else if (BRIGHTNESS <= -1 || BRIGHTNESS >= 1) {
+        // Ensure contrast is valid value
+        throw new RenditionInstructionsError("'brightness' must between -1 and 1");
     }
 
     // Do work here
+}
+
+// Create a new ClientError to handle invalid rendition.instruction values
+class RenditionInstructionsError extends ClientError {
+    constructor(message) {
+        // Provide a:
+        // + message: describing the nature of this erring condition
+        // + name: the name of the error; usually same as class name
+        // + reason: a short, searchable, unique error token that idenfies this error
+        super(message, "RenditionInstructionsError", "rendition_instructions_error");
+
+        // Capture the strack trace
+        Error.captureStackTrace(this, RenditionInstructionsError);
+    }
 }
 ```
 
 ## Creating a rendition
 
-With the workers parameters read, sanitized and validated, code can be written to generate the rendition. The pseudo code for the rendition generation is as follows:
+With the parameters read, sanitized and validated, code is written to generate the rendition. The pseudo code for the rendition generation is as follows:
 
-1. Create a new "final" image canvas in the dimenstions specified via the `height` and `width` parameters.
-1. Create a "main" image object from the source image and resize it to fit vertically into the "final" image.
-1. Create a "background" image object from the source image and resize it so it covers the "final" image horizontally, and apply a blur effect specified via the `blur` parameter.
-1. Insert and center the "background" image into the "final" image.
-1. Insert and center the "main" image into the "final" image on top of the "background" image.
-1. Write the composed, "final" image to `rendition.path` so it can saved back into AEM as an asset rendition.
+1. Create a new `renditionImage` canvas in square dimensions specified via the `size` parameter.
+1. Create a `image` object from the source asset's binary
+1. Use the __Jimp__ library to transform the image:
+    + Scale to fit within the dimensions defined by the `SIZE` parameter value
+    + Adjust contrast based on the `CONTRAST` parameter value
+    + Adjust brightness based on the `BRIGHTNESS` parameter value
+    + Cut a circle from the center of the image
+1. Place the transformed `image` into the center of the `renditionImage`
+1. Write the composed, `renditionImage` to `rendition.path` so it can saved back into AEM as an asset rendition.
 
-## Finished worker index.js
+This code is largely working with the [Jimp APIs](https://github.com/oliver-moran/jimp#jimp).
 
 The finished worker `index.js` should look like:
 
 ```javascript
+
 'use strict';
 
-const { Image } = require('image-js'); 
-const { worker, SourceCorruptError, RenditionFormatUnsupportedError } = require('@adobe/asset-compute-sdk');
+const Jimp = require('jimp');
+const { worker, SourceCorruptError, RenditionFormatUnsupportedError, ClientError } = require('@adobe/asset-compute-sdk');
 const fs = require('fs').promises;
 
 exports.main = worker(async (source, rendition, params) => {
@@ -240,79 +266,139 @@ exports.main = worker(async (source, rendition, params) => {
         throw new SourceCorruptError('source file is empty');
     }
 
-    // Read in parameters and set defaults if parameters are provided
-    const HEIGHT = rendition.instructions.height || 600;
-    const WIDTH = rendition.instructions.width || 1280;
-    const BLUR = rendition.instructions.blur || 30;
-
-    // Parse the format from the rendition's extension
+    // Read/parse and valid parameters
+    const SIZE = rendition.instructions.size || 1200; 
+    const CONTRAST = rendition.instructions.contrast || 0;
+    const BRIGHTNESS = rendition.instructions.brightness || 0;
     const FORMAT = rendition.instructions.name.substring(rendition.instructions.name.lastIndexOf('.') + 1);
 
-    // Ensure the target format is supported by the image transformation library
-    if (['jpg', 'png', 'bmp'].indexOf(FORMAT) === -1) {
+    if (['jpg', 'png', 'gif'].indexOf(FORMAT) === -1) {
         throw new RenditionFormatUnsupportedError(`Rendition format '${FORMAT}' is not supported`);
+    } else if (SIZE <= 10 || SIZE >= 10000) {
+        throw new RenditionInstructionsError("'size' must be between 10 and 1,0000");
+    } else if (CONTRAST <= -1 || CONTRAST >= 1) {
+        throw new RenditionInstructionsError("'contrast' must between -1 and 1");
+    } else if (BRIGHTNESS <= -1 || BRIGHTNESS >= 1) {
+        throw new RenditionInstructionsError("'brightness' must between -1 and 1");
     }
 
-    // Create a new image object that will be sent back as the rendition
-    const final = new Image(WIDTH, HEIGHT);
+    // Create target rendition image 
+    let renditionImage =  new Jimp(SIZE, SIZE, getBackgroundColor(FORMAT));
 
-    // Read the source asset into an Image object and resize it
-    let main = (await Image.load(source.path)).resize({ height: HEIGHT });
+    // Read and perform transformations on the source binary image
+    let image = await Jimp.read(source.path);
+    image.scaleToFit(SIZE, SIZE);
+    image.contrast(CONTRAST);
+    image.brightness(BRIGHTNESS);
+    image.circle();
 
-    // Read the source asset into an Image object and resize it, and apply a blur 
-    let background = (await Image.load(source.path)).resize({ width: WIDTH }).gaussianFilter({ radius: BLUR });
-    
-    // Insert the background image into the final image
-    final.insert(background, { x: 0, y: getBackgroundYCoordinate(background, final), inPlace: true });
-    
-    // Insert the main image into the final image
-    final.insert(main, { x: getMainXCoordinate(main, final), y: 0, inPlace: true});
+    // Place the transformed image onto the transparent renditionImage in the center
 
-    // Save the final image (composed of the blurred background image, and centered main image) to the rendition
-    await final.save(rendition.path, { format: FORMAT });
+    let center = {
+        x: (renditionImage.bitmap.width - image.bitmap.width) / 2,
+        y: (renditionImage.bitmap.height - image.bitmap.height) / 2
+    };
+    renditionImage.composite(image, center.x, center.y);
+
+    // Write the final transformed image to the asset's rendition
+    await renditionImage.writeAsync(rendition.path)
 });
 
-function getBackgroundYCoordinate(background, final) {
-    if (background.height > final.height) {
-        // The background image is taller than the final image 
-        // So, shift the background image Y insertion coordinate up image up so it is centered in the final image
-        return -1 * ((background.height -  final.height) / 2);
+// Determine the background color based on transparency support for rendition format
+function getBackgroundColor(format) {
+    if (['png', 'gif'].indexOf(format) !== -1) {
+        // Transparent background
+        return 0x0;
     } else {
-        return 0;
+        // Black background
+        return '#000000';
     }
 }
 
-function getMainXCoordinate(main, final) {
-    // Compute the X insertion coordinate so it is centered horizontally in the final image
-    return (final.width / 2) - (main.width / 2);
+// Custome error used for renditions.instructions parameter checking
+class RenditionInstructionsError extends ClientError {
+    constructor(message) {
+        super(message, "RenditionInstructionsError", "rendition_instructions_error");
+        Error.captureStackTrace(this, RenditionInstructionsError);
+    }
 }
 ```
 
 ## Running the worker
 
-Now that the worker code is complete, and it is registered and configured in the [manifest.yml](todo), it can be executed using the local Asset Compute Dev Tool to see the results.
+!
 
-1. In a new terminal window, navigate to the root of your Asset Compute project
+Now that the worker code is complete, and was previously registered and configured in the [manifest.yml](./manfest.md), it can be executed using the local Asset Compute Dev Tool to see the results.
+
+1. From the root of the Asset Compute project
 1. Execute `app aio run`
 1. Wait for Asset Compute Dev Tool to open in a new window
-1. 
+1. In the __Select a file...__ drop down, select a sample image to process
+    + Select a sample image file to use as the source asset binary. 
+    + If none exist yet, tap the __(+)__ to the left, and upload a [sample image](./assets/worker/sample-file.jpg) file, and refresh the Dev Tools browser window.
+1. Tap __Run__
+1. The __Renditions__ rendition previews the generated rendition. Tap the rendition preview to download the full rendition.
+
+    ![Default JPEG rendition](./assets/worker/default-jpg-rendition.jpg)
+
+1. Update `"name": "rendition.png"` requesting the worker to generate a transparent PNG.
+
+    ```
+    {
+        "renditions": [
+            {
+                "worker": "...",
+                "name": "rendition.png"
+            }
+        ]
+    }
+    ```
+
+1. Tap __Run__
+1. The __Renditions__ rendition previews the generated rendition. Tap the rendition preview to download the full rendition.
+
+    ![Default PNG rendition](./assets/worker/default-png-rendition.png) 
+
+### Run the worker with parameters
+
+Parameters, passed in via Processing Profile configurations, can be simulated in Asset Compute Dev Tools by providing them as key/value pairs on the rendition parameter object.
+
+Our code accepts parameters for:
+
++ `size` defines the size of the rendition (height and width)
++ `contrast` defines the contrast adjust, must be between -1 and 1
++ `brightness`  defines the bright adjust, must be between -1 and 1
+
+These are read in the worker `index.js` via:
+
++ `rendition.instructions.size`
++ `rendition.instructions.contrast`
++ `rendition.instructions.brightness`
+
+1. Update the rendition parameters to customize the size, contrast and brightness.
+
+    ```
+    {
+        "renditions": [
+            {
+                "worker": "...",
+                "name": "rendition.png",
+                "size": 800,
+                "contrast": 0.30,
+                "brightness": 0.15
+            }
+        ]
+    }
+    ```
+    
+1. Tap __Run__ again
+1. Tap to download and review the generated rendition. 
+
+    ![Parameterized PNG rendition](./assets/worker/parameterized-rendition.png) 
+
+1. Upload other images as Source images, and try running the worker against them with different parameters!
 
 
 
 
 
-
-
-
-## Asset Compute 
-+ [Asset Compute Development Tool](https://github.com/adobe/asset-compute-devtool)
-+ [Asset Compute Client](https://github.com/adobe/asset-compute-client)
-+ [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk)
-+ [Asset Compute Commons](https://github.com/adobe/asset-compute-commons)
-+ [Cloud Blobstore Wrapper Library](https://github.com/adobe/node-cloud-blobstore-wrapper)
-+ [Adobe I/O Events API](https://www.adobe.io/apis/experienceplatform/events/ioeventsapi.html#!adobedocs/adobeio-events/master/events-api-reference.yaml)
-
-
-https://www.adobe.io/apis/creativecloud/photo-imaging-api.html
-https://github.com/AdobeDocs/photoshop-api-docs
-https://adobedocs.github.io/photoshop-api-docs/#api-Photoshop-document_operations

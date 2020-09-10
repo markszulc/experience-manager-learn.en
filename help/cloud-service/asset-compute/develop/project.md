@@ -42,7 +42,7 @@ Use the [Adobe I/O CLI Asset Compute plugin](../set-up/development-environment.m
 
 ## Review the anatomy of the project
 
-The generated Asset Compute application project is a Node.js project for a specialized Adobe Firefly application, that adheres to the following structure:
+The generated Asset Compute application project is a Node.js project for a specialized Adobe Project Firefly application, that adheres to the following structure:
 
 + `/actions` contains sub-folders, and each sub-folder defines an Asset Compute worker. 
     + `/actions/worker/index.js` defines the JavaScript code to be executed to perform the work of this worker. 
