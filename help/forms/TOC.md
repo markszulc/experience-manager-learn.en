@@ -26,8 +26,7 @@ index: y
   + [Displaying Thank You Page](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
   + [Submitting to External End point](handling-form-submissions/submitting-adaptive-forms-to-external-server-article-use.md)
   + [Sending Email](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
-  + [Configuring Adaptive Form to trigger AEM Workflow - video](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
-  + [PTO AEM Workflow](handling-form-submissions/invoking-aem-workflow-on-form-submission-article-use.md)
+  + [Paid Time Off Request Workflow](handling-form-submissions/paid-time-off-request-workflow.md)
 
 + Adaptive Forms {#adaptive-forms}
   + [Installing AEM Forms on Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)

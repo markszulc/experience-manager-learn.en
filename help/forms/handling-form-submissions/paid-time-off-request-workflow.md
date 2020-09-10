@@ -1,8 +1,8 @@
 ---
-title: Submitting Adaptive Form to AEM Workflow
-seo-title: Submitting Adaptive Form to AEM Workflow
+title: Simple Paid Time Off Request Workflow
+
 description: Hide and Show Adaptive Form Panels in AEM Workflow
-seo-description: Hide and Show Adaptive Form Panels in AEM Workflow.
+
 uuid: 28ceb72b-24d9-488e-92af-7e85775dc682
 feature: integrations
 topics: workflow
@@ -13,7 +13,7 @@ version: 6.4,6.5
 discoiquuid: 1c4822e6-76ce-446b-98cb-408900d68b24
 ---
 
-# Submitting Adaptive Form to AEM Workflow
+# Simple Paid Time Off Request Workflow
 
 In this article, we will look at a simple workflow used for requesting Paid Time Off. The business requirements are as follows:
 
