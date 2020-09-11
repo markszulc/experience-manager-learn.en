@@ -42,21 +42,21 @@ team: TM
     + [Configuring access to AEM walk-through](./accessing/walk-through.md)
 + Migration {#migration}
     + [Content Transfer Tool](./migration/content-transfer-tool.md)
-+ [Extending Asset Compute]{#asset-compute}
-    + [Overview](./develop/asset-compute/overview.md)
++ [Developing for Asset Compute]{#asset-compute}
+    + [Overview](./asset-compute/overview.md)
     + Set up{#asset-compute-set-up}
         + [Account and service provisioning ](./asset-compute/set-up/accounts-and-services.md)
         + [Local development environment](./asset-compute/set-up/development-environment.md)
         + [Adobe I/O Project Firefly project](./asset-compute/set-up/firefly.md)
     + Develop{#asset-compute-develop}
-        + [Asset Compute project](.asset-compute/develop/project.md)
+        + [Asset Compute project](./asset-compute/develop/project.md)
         + [Environment variables](./asset-compute/develop/environment-variables.md)
-        + [manifest.yml](./develop/asset-compute/develop/manifest.md)
+        + [manifest.yml](./asset-compute/develop/manifest.md)
         + [Asset Compute worker](./asset-compute/develop/worker.md)
         + [Asset Compute Dev Tool](./asset-compute/develop/dev-tool.md)
     + Test & Debug{#asset-compute-test-debug}
         + [Testing](./asset-compute/test-debug/test.md)
-        + [Debugging](./asset-compute/test-debug/test.md)
+        + [Debugging](./asset-compute/test-debug/debug.md)
     + Deploy{#asset-compute-deploy}
         + [Deploying to Adobe I/O Runtime](./asset-compute/deploy/runtime.md)
         + [AEM Processing Profiles](./asset-compute/deploy/processing-profiles.md)
