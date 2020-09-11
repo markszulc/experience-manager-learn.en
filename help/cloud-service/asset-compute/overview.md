@@ -17,9 +17,6 @@ AEM as Cloud Service's Asset Compute microservices support the development and d
 
 In this tutorial we'll create a simple Asset Compute worker that crops an image to a cirlce, and applied contrast and brightness, and use the process to explore the facets of Asset Compute worker set up, development and deployment.
 
-
-
-
 ## Set up
 
 In order to begin developing custom Asset Compute applications, accounts and services must be provisioend and configured, and software installed on the local development machines.
@@ -36,7 +33,7 @@ Local development of Asset Compute applications requires a discrete developer to
  
 + [Set up local development environment](./set-up/development-environment.md)
 
-### Set up the Adobe I/O Project Firefly project
+### Adobe I/O Project Firefly project
 
 Asset Compute applications are specially defined Adobe Project Firefly applications, and as such, require access to Adobe Project Firefly in the Adobe Developer Console in order to set up and deploy them.
 
@@ -94,7 +91,7 @@ Asset Compute applications provide various levels of debuggin from simply `conso
 
 To deploy and integrate vustom Asset Compute workers with AEM as a Cloud Service, they are deployed to Adobe I/O Runtime and then invoked from AEM as a Cloud Service Author via Assets Processing Profiles.
 
-## Deploying workers to Adobe I/O Runtime
+## Deploying to Adobe I/O Runtime
 
 Asset Compute workers must be deployed to Adobe I/O Runtime to be used with AEM as a Cloud Service.
 

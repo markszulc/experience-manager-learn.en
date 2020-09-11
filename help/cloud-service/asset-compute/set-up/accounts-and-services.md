@@ -17,6 +17,7 @@ This tutorial requires the following services to be provisioning and accessible 
 
 + [AEM as a Cloud Service](#aem-as-a-cloud-service)
 + [Adobe Project FireFly](#adobe-project-firefly) 
+    + Provisioning can take between 2 - 10 days
 + Cloud storage
     + [Azure Blob Storage](https://azure.microsoft.com/en-us/services/storage/blobs/)
     + or [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&trk=ft_card)
@@ -38,8 +39,9 @@ The [Adobe Project Firefly](https://www.adobe.io/apis/experienceplatform/project
 To gain access to Project Firefly, sign-up for the preview.
 
 1. [Sign up for Project Firefly preview](https://adobeio.typeform.com/to/obqgRm). 
-1. Wait until you have been provisioned before continuing with the tutorial.
+1. Wait 2 - 10 days until you have been provisioned before continuing with the tutorial.
     + If you are unsure if you've been provisioned, continue with the next steps and if you are unable to create a __Project Firefly__ project in [Adobe Developer Console](https://console.adobe.io) you still have not been provisioned.
+
 
 ## Cloud storage
 

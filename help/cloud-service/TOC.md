@@ -42,23 +42,22 @@ team: TM
     + [Configuring access to AEM walk-through](./accessing/walk-through.md)
 + Migration {#migration}
     + [Content Transfer Tool](./migration/content-transfer-tool.md)
-+ [Developing for Adobe Asset Compute](./develop/asset-compute/)
++ [Extending Asset Compute]{#asset-compute}
     + [Overview](./develop/asset-compute/overview.md)
     + Set up{#asset-compute-set-up}
-        + [Set up development environment](./develop/asset-compute/set-up-local-dev.md)
-        + [Set up accounts](./develop/asset-compute/set-up-accounts.md)
-    + Develop an Asset Compute application{#asset-compute-develop}
-        + [Create a new application](./develop/asset-compute/develop/create-a-new-application.md)
-        + [Configure the application](./develop/asset-compute/develop/configure-the-application.md)
-        + [Use the Asset Compute Dev Tool](./develop/asset-compute/develop/dev-tool.md)
-        + [Develop a new worker](./develop/asset-compute/develop/develop-a-new-worker.md)
+        + [Account and service provisioning ](./asset-compute/set-up/accounts-and-services.md)
+        + [Local development environment](./asset-compute/set-up/development-environment.md)
+        + [Adobe I/O Project Firefly project](./asset-compute/set-up/firefly.md)
+    + Develop{#asset-compute-develop}
+        + [Asset Compute project](.asset-compute/develop/project.md)
+        + [Environment variables](./asset-compute/develop/environment-variables.md)
+        + [manifest.yml](./develop/asset-compute/develop/manifest.md)
+        + [Asset Compute worker](./asset-compute/develop/worker.md)
+        + [Asset Compute Dev Tool](./asset-compute/develop/dev-tool.md)
     + Test & Debug{#asset-compute-test-and-debug}
-        + [Writing tests]()
-        + [Debugging]()
-    + Deploy
-        + [Deploying]
-        + [Integrating]
-    
-
-
+        + [Testing](./asset-compute/test-debug/test.md)
+        + [Debugging](./asset-compute/test-debug/test.md)
+    + Deploy{#asset-compute-deploy}
+        + [Deploying to Adobe I/O Runtime](./asset-compute/deploy/runtime.md)
+        + [AEM Processing Profiles](./asset-compute/deploy/processing-profiles.md)
 + [Getting Started Developing AEM Sites - WKND Tutorial](./develop-wknd-tutorial.md)
