@@ -95,7 +95,7 @@ An initial Card Component has been provided by the chapter starter code. Inspect
         componentGroup="WKND SPA Angular - Content"/>
     ```
 
-    Notice that the `sling:resourceSuperType` points to `core/wcm/components/image/v2/image`. This indicates that the WKND SPA Image component inherits all of the funcionality from the Core Component Image.
+    Notice that the `sling:resourceSuperType` points to `core/wcm/components/image/v2/image`. This indicates that the WKND SPA Image component inherits all of the functionality from the Core Component Image.
 
     Also known as the [Proxy pattern](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html#proxy-component-pattern) Sling resource inheritance is a powerful design pattern for allowing child components to inherit functionality and extend/override behavior when desired. Sling inheritance supports multiple levels of inheritance, so ultimately the new `Card` component inherits functionality of the Core Component Image. 
 

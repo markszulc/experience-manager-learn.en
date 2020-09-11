@@ -76,7 +76,7 @@ The following steps will walk you through the process of creating the one-to-man
 
 Our form data model now has **_get_** service which accepts empID and returns the details of the newhire and its beneficiaries. To test the get service, please follow the steps listed below.
 
-* Select newhire entitiy
+* Select newhire entity
 * Click on _Test Model Object_
 * Provide valid empID and click on _Test_
 * You should get results as shown in the screen shot below

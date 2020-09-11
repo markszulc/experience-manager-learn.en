@@ -95,7 +95,7 @@ As part of the generated project, the archetype embedded **Core Component Exampl
     </div>
     ```
 
-    The BEM notation of the Title Compponent:
+    The BEM notation of the Title Component:
 
     ```plain
     BLOCK cmp-title

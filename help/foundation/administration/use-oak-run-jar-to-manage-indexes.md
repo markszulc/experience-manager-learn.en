@@ -17,12 +17,12 @@ doc-type: technical video
 >
 >Within this article and videos the terms indexing and re-indexing are used interchangeably and considered the same operation.
 
-## ![DNL oak-run.jar] index Command Basics
+## [!DNL oak-run.jar] index Command Basics
 
 >[!VIDEO](https://video.tv.adobe.com/v/21475/?quality=9&learn=on)
 
 * The version of [[!DNL oak-run.jar]](https://repository.apache.org/service/local/artifact/maven/redirect?r=releases&g=org.apache.jackrabbit&a=oak-run&v=1.8.0) used must match the version of Oak used on the AEM instance.
-* Managing indexes using ![DNL oak-run.jar] leverages the **[!DNL index]** command with various flags to support different operations.
+* Managing indexes using [!DNL oak-run.jar] leverages the **[!DNL index]** command with various flags to support different operations.
 
     * `java -jar oak-run*.jar index ...`
 

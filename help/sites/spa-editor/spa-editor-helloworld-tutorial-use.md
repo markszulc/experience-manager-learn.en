@@ -214,7 +214,7 @@ Using [!DNL Eclipse], or other [!DNL IDE], import the We.Retail Journal Maven pr
 
     >[!NOTE]
     >
-    > To illustrate the Editable Templates feature we have purposely set the `componentGroup="Custom Components"`. In a real-world project, it is best to minimize the number of component groups, so a better group would be "[DNL We.Retail Journal]" to match the other content components.
+    > To illustrate the Editable Templates feature we have purposely set the `componentGroup="Custom Components"`. In a real-world project, it is best to minimize the number of component groups, so a better group would be "[!DNL We.Retail Journal]" to match the other content components.
     >
     > Only AEM 6.5 and AEM 6.4 + **Service Pack 5** support Editable templates.
 

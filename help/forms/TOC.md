@@ -8,7 +8,7 @@ index: y
 # AEM Forms Videos and Tutorials {#forms}
 
 + [Overview](overview.md)
-+ [Best Practices to follow](adaptive-forms/best-practices-adaptive-forms.md)
++ [Best practices to follow](adaptive-forms/best-practices-adaptive-forms.md)
 + [Set up OKTA authentication with AEM Author](adaptive-forms/single-sign-on-with-okta.md)
 + Creating Your First Adaptive Form {#creating-your-first-adaptive-form}
   + [Introduction and Setup](creating-your-first-adaptive-form/introduction-and-setup.md)
@@ -34,7 +34,6 @@ index: y
   + [Prefill Service in Adaptive Forms](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
   + [Custom Submit in Adaptive Forms](adaptive-forms/custom-submit-aem-forms-article.md)
   + [Captcha in Adaptive Forms](adaptive-forms/forms-captcha-feature-video-use.md)
-  + [Adobe Sign Integration](adaptive-forms/adobe-sign-integration-feature-video.md)
   + [Using Set Value in XML  in OSGI Workflow](adaptive-forms/setvalue-aem-forms-workflow-tutorial-use.md)
   + [Using Set Value in JSON in OSGI Workflow](adaptive-forms/setvalue-json-data-in-aem-forms-workflow-article-use.md)
   + [Send Email Component in AEM Forms Workflow](adaptive-forms/email-step-aem-workflow-video-use.md)
@@ -87,8 +86,21 @@ index: y
 + Exporting Submitted Data in CSV Format{#export-submitted-data-csv-format}
   + [Export Submitted Data](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + HTML5 Forms{#html5-forms}
-  + [Create your first HTML5 Form](html5-forms/creating-mobile-form.md)
-  + [Handle HTML5 Form Submission](html5-forms/handle-mobile-form-submission.md)
+  + [Create HTML5 Form](html5-forms/create-html5-form.md)
+  + [Handle HTML5 Form Submission](html5-forms/handle-html5-form-submission.md)
++ AEM Forms and Adobe Sign{#forms-and-sign}
+  + [Introduction](aem-forms-and-adobe-sign/introduction.md)
+  + [Set up SSL](aem-forms-and-adobe-sign/set-up-ssl.md)
+  + [Create Adobe Sign API Application](aem-forms-and-adobe-sign/create-adobe-sign-api-application.md)
+  + [Create Adobe Sign Cloud Configuration](aem-forms-and-adobe-sign/create-adobe-sign-cloud-configuration.md)
+  + [Create Workflow to send document for signing](aem-forms-and-adobe-sign/create-workflow-to-send-document-for-signing.md)
+  + [Create and Configure Adaptive Form](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
+  + [Configure Adaptive Form for single signer](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
+  + [Configure Adaptive Form for two signers](aem-forms-and-adobe-sign/configure-adaptive-form-for-two-signers.md)
+  + [Configure Automated Forms Conversion Service](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
+  + [Convert PDF Form into Adaptive Form](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
+  + [Configure converted Adaptive Form](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
+  + [Using XDP templates with Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
 + Variables in AEM Workflow{#variables-aem-workflow}
   + [Introduction - Variables in Workflow](variables-aem-workflow/introduction.md)
   + [XML Variables](variables-aem-workflow/part1.md)

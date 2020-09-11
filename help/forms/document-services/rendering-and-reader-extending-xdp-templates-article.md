@@ -79,7 +79,7 @@ To accomplish this use case we need to do the following.
 
 ```
 
-The following screenshot shows you the configuraiton properties exposed. Most of the common usage rights are exposed through this configuration.
+The following screenshot shows you the configuration properties exposed. Most of the common usage rights are exposed through this configuration.
 
 ![](assets/configurationproperties.gif)
 

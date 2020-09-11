@@ -12,6 +12,7 @@ activity: understand
 version: 6.4,6.5
 discoiquuid: e748b7c3-99c9-4caa-98b1-4433046c24b8
 thumbnail: 28536.jpg
+kt: 4209
 ---
 
 # Adding Child Panels to Root Panel {#adding-child-panels-to-root-panel}

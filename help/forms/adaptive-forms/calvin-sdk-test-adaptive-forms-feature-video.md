@@ -24,8 +24,9 @@ AEM 6.3 Forms introduces the capability to let users create test cases within AE
 >
 >Adaptive Forms automated testing capability is available with AEM 6.3 onwards
 
->[!Useful Links]
+>[!NOTE]
 >
-
+>**Useful Links**
+>
 >* [Calvin SDK Namespace](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
 >* [Hobbes.js documentation](https://docs.adobe.com/docs/en/aem/6-3/develop/ref/test-api/index.html)

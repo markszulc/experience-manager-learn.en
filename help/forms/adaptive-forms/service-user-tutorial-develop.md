@@ -64,7 +64,7 @@ This article walks through the creation of a system user and configuring the use
    Resource contentResource = resourceResolver.getResource("/content/forms/af/sandbox/abc.pdf");
    ```
 
-   If you want to access /content/dam/data.json file in your bundle, you will use the following code. This code assusmes you have given read permissions to the "data" user on the /content/dam/ node
+   If you want to access /content/dam/data.json file in your bundle, you will use the following code. This code assumes you have given read permissions to the "data" user on the /content/dam/ node
 
    ```java
    @Reference

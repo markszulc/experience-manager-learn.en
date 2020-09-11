@@ -36,7 +36,7 @@ com.adobe.fd.forms.api.FormsService formsservice = sling.getService(com.adobe.fd
 com.adobe.aemfd.docmanager.Document xmlDocument = formsservice.exportData(pdfDocument,com.adobe.fd.forms.api.DataFormat.Auto);
 ```
 
-Line 1 extracts  pdfifle  from the request
+Line 1 extracts  pdffile  from the request
 
 Line2 extracts the saveLocation from the request
 

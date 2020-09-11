@@ -11,6 +11,7 @@ doc-type: tutorial
 activity: understand
 version: 6.4,6.5
 discoiquuid: f480ef3e-7e38-4a6b-a223-c102787aea7f
+kt: 4270
 thumbnail: 22282.jpg
 ---
 

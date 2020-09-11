@@ -26,7 +26,7 @@ This tutorial does not use any form model in creating Adaptive Form.
 
 You will need the following:
 
-* A working instance of AEM with Form Add-on package installed. [The instructions to install and configure AEM with Forms Add-on are available here](/help/forms/adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
+* A working instance of AEM with Form Add-on package installed
 
 * **It is assumed that you are running AEM Forms version 6.4 or above on localhost:4502.**
 

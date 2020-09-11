@@ -7,7 +7,7 @@ seo-description: A collection of videos and tutorials for Adobe Experience Manag
 
 # Overview {#overview}
 
-Adobe Experience Manager provides a common set of capabilities available to users of AEM Sites, ![DNL Assets] and ![DNL Forms].
+Adobe Experience Manager provides a common set of capabilities available to users of AEM Sites, [!DNL Assets] and [!DNL Forms].
 
 ## What's New
 

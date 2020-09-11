@@ -46,7 +46,7 @@ This set of content packages creates content and configuration described in the 
 
 ## Source Code
 
-The source code for both the AEM project and the [!DNL Android Mobile App] are available on the [[!DNL AEM Guides - WKND Mobile GitHub Project](https://github.com/adobe/aem-guides-wknd-mobile). The source code does not need to be built or modified for this tutorial, it is provided to allow for fully transparency in how all aspects of tutorial are built.
+The source code for both the AEM project and the [!DNL Android Mobile App] are available on the [[!DNL AEM Guides - WKND Mobile GitHub Project]](https://github.com/adobe/aem-guides-wknd-mobile). The source code does not need to be built or modified for this tutorial, it is provided to allow for fully transparency in how all aspects of tutorial are built.
 
 If you find an issue with the tutorial or the code, please leave a [GitHub issue](https://github.com/adobe/aem-guides-wknd-mobile/issues).
 

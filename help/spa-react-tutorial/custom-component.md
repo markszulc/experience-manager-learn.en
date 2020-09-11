@@ -251,7 +251,7 @@ The React code for the Custom Component has already been created. Next, make a f
 3. Import the `MapTo` object from the AEM SPA Editor JS SDK and use it to map to the AEM component:
 
     ```diff
-    + import {MapTo} from '@adobe/cq-react-editable-components';
+    + import {MapTo} from '@adobe/aem-react-editable-components';
 
      ...
      export default class Custom extends Component {

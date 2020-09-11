@@ -21,6 +21,8 @@ discoiquuid: 5f68be3d-aa35-4a3f-aaea-b8ee213c87ae
 
 In this part, we will install TOMCAT and deploy the sampleRest.war file in TOMCAT. The REST endpoint exposed by this WAR file will be the basis for our Data Source and Form Data Model.
 
+>[!VIDEO](https://video.tv.adobe.com/v/37815/?quality=9&learn=on)
+
 To set up tomcat, please follow the following instructions:
 
 1. Download and install JDK1.8.

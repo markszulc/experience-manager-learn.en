@@ -77,7 +77,7 @@ The load-balancer usually "pings", a particular page to see if the server is up 
 
 >[!NOTE]
 >
->Actually, you are building kind of a Content Distribution Network (CDN) with that approach – so you should consider buying an off-the-shelf CDN solution innstead of building one yourself. Building and maintaining a custom CDN is no trivial task.
+>Actually, you are building kind of a Content Distribution Network (CDN) with that approach – so you should consider buying an off-the-shelf CDN solution instead of building one yourself. Building and maintaining a custom CDN is no trivial task.
 
 #### Horizontal Scaling
 
@@ -97,7 +97,7 @@ If you have two Dispatchers, the second visitor has a 50% chance that the page i
 
 #### Mitigating Over-Scaling Issues
 
-You might consider using a central shared storage for all Dispatchers or synching the file systems of the Apache servers to mitigate the issues. We can provide only limited first-hand experience but be prepared that this adds up to the complexity of the system and can introduce a whole new class of errors.
+You might consider using a central shared storage for all Dispatchers or syncing the file systems of the Apache servers to mitigate the issues. We can provide only limited first-hand experience but be prepared that this adds up to the complexity of the system and can introduce a whole new class of errors.
 
 We have had some experiments with NFS – but NFS introduces huge performance issues due to content locking. This actually decreased the overall performance.
 

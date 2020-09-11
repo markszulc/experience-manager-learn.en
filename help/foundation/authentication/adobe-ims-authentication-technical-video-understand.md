@@ -35,7 +35,7 @@ In Admin Console users should be granted access via User Groups at the Product C
 
 >[!NOTE]
 >
-> If using AEM as a Cloud Service, assign Admin Console users directly to Product Profiles. Transitive permissions between Admin Console users to Poroduct Profules via Admin Console user groups is not supported for AEM as a Cloud Service.
+> If using AEM as a Cloud Service, assign Admin Console users directly to Product Profiles. Transitive permissions between Admin Console users to Product Profiles via Admin Console user groups is not supported for AEM as a Cloud Service.
 
 ### Applying permissions in Adobe Experience Manager
 

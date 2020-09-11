@@ -68,7 +68,7 @@ The output of this command is a `keystore.p12` file.
 
 ## Verify the keystore contents {#verify-the-keystore-contents}
 
-The Java [[!DNL keytool] command line tool](https://docs.oracle.com/middleware/1213/wls/SECMG/keytool-summary-appx.htm#SECMG818) provides visibility into a keystore to ensure the keys are successfully loaded in the keystore file ([[!DNL keystore.p12]).
+The Java [[!DNL keytool] command line tool](https://docs.oracle.com/middleware/1213/wls/SECMG/keytool-summary-appx.htm#SECMG818) provides visibility into a keystore to ensure the keys are successfully loaded in the keystore file ([!DNL keystore.p12]).
 
 ```shell
 $ keytool -keystore keystore.p12 -list
@@ -102,7 +102,7 @@ If prompted to create a keystore, do so. This keystore will exist only in AEM an
 ### Install the private key via the keystore {#install-the-private-key-via-the-keystore}
 
 ![Add Private Key in AEM](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/aem--add-private-key.png)
-*[!UICCNOTROL User] > [!UICONTROL Keystore] > [!UICONTROL Add private key from keystore]*
+*[!UICONTROL User] > [!UICONTROL Keystore] > [!UICONTROL Add private key from keystore]*
 
 In the user's keystore console, click **[!UICONTROL Add Private Key form KeyStore file]** and add the following information:
 
