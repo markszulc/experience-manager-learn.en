@@ -85,12 +85,12 @@ The [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm module, pr
 
 + __Error__: When running the Asset Compute worker from the debuggable Dev Tool, VS Code does not pause at breakpoints.
 
-    #### VS Code debugger is not attached 
+#### VS Code debugger is not attached 
 
-    + __Cause:__ The VS Code debugger was stopped/disconnected.
-    + __Resolution:__ Restart the VS Code debugger, and verify it attaches by watching the VS Code Debug Output console (View > Debug Console)
++ __Cause:__ The VS Code debugger was stopped/disconnected.
++ __Resolution:__ Restart the VS Code debugger, and verify it attaches by watching the VS Code Debug Output console (View > Debug Console)
 
-    #### VS Code debugger attached after worker execution
+#### VS Code debugger attached after worker execution
 
-    + __Cause:__ The VS Code debugger did not attach prior to tapping __Run__ in Dev Tool.
-    + __Resolution:__ Ensure the debugger has attached by reviewing VS Code's Debug Console (View > Debug Console), and then re-run the Asset Compute worker from Dev Tool.
++ __Cause:__ The VS Code debugger did not attach prior to tapping __Run__ in Dev Tool.
++ __Resolution:__ Ensure the debugger has attached by reviewing VS Code's Debug Console (View > Debug Console), and then re-run the Asset Compute worker from Dev Tool.
