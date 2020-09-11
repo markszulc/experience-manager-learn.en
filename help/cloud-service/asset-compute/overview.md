@@ -1,5 +1,5 @@
 ---
-title: 
+title: Developing for AEM as a Cloud Service Asset Compute microservices 
 description: 
 feature: 
 topics: 
@@ -16,6 +16,8 @@ thumbnail: KT-5802.jpg
 AEM as Cloud Service's Asset Compute microservices support the development and deployment of custom workers that can be used to read, and manipulate binary data of assets stored in AEM. 
 
 In this tutorial we'll create a simple Asset Compute worker that crops an image to a cirlce, and applied contrast and brightness, and use the process to explore the facets of Asset Compute worker set up, development and deployment.
+
+![Asset Compute tutorial example](./assets/overview/before-and-after.png)
 
 ## Set up
 
