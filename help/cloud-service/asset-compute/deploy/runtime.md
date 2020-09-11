@@ -1,3 +1,17 @@
+---
+title: Invoking Asset Compute workers via AEM Processing Profiles
+description: 
+feature: 
+topics: 
+version: cloud-service
+doc-type: tutorial
+activity: 
+audience: developer
+doc-type: tutorial
+kt: 
+thumbnail:
+---
+
 # Deploy to Adobe I/O Runtime
 
 Asset Compute applications, and the workers they contain, must be deployed to Adobe I/O Runtime in order for them to be used by AEM as a Cloud Services. 

@@ -75,7 +75,8 @@ The [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm module, pr
 
 ## Troubleshooting
 
-### Debugger does not attach
+### Debugger does not attachtemperfi
+
 
 + __Error__: Error processing launch: Error: Could not connect ot debug target at... 
 + __Cause__: Docker Desktop is not running on the local system. Verify this by reviewing the VS Code Debug Console (View > Debug Console), confirming this error is reported.
