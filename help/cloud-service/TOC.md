@@ -54,7 +54,7 @@ team: TM
         + [manifest.yml](./develop/asset-compute/develop/manifest.md)
         + [Asset Compute worker](./asset-compute/develop/worker.md)
         + [Asset Compute Dev Tool](./asset-compute/develop/dev-tool.md)
-    + Test & Debug{#asset-compute-test-and-debug}
+    + Test & Debug{#asset-compute-test-debug}
         + [Testing](./asset-compute/test-debug/test.md)
         + [Debugging](./asset-compute/test-debug/test.md)
     + Deploy{#asset-compute-deploy}

@@ -1,3 +1,16 @@
+---
+title: Configure the manifest.yml of an Asset Compute application
+description: 
+feature: 
+topics: 
+version: cloud-service
+doc-type: tutorial
+activity: 
+audience: developer
+doc-type: tutorial
+kt: 
+thumbnail:
+---
 
 
 # Configure the manifest.yml
@@ -74,7 +87,8 @@ packages:
           concurrency: 10 
         annotations:
           require-adobe-auth: true
-```    
+```
+
 ## Validating the manifest.yml
 
 Once the generated Asset Compute `manifest.yml` is updated, run the application local and ensure it starts the Dev Tool successfully.

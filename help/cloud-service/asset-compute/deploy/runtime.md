@@ -1,4 +1,4 @@
-## Deploy to Adobe I/O Runtime
+# Deploy to Adobe I/O Runtime
 
 Asset Compute applications, and the workers they contain, must be deployed to Adobe I/O Runtime in order for them to be used by AEM as a Cloud Services. 
 
@@ -53,7 +53,6 @@ The values of these keys can be set by issuing export commands from the command 
     + `aio app get-url`.
 
 If the Asset Compute application version changes (in the `package.json`) the URL to the worker will also change to reflect the new version, and the URL will need to be updated in the Processing Profile.
-
 
 ## Workspace API provisioning{#workspace-api-provisioning}
 

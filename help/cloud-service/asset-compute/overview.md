@@ -45,7 +45,7 @@ Asset Compute applications are specially defined Adobe Project Firefly applicati
 
 Asset Compute application projects, which contain one or more Asset Compute workers, are generated using the the inteactive Adobe I/O CLI. Asset Compute applications are specially structured Adobe Project Firefly applications, which are in turn Node.js applications. 
 
- + [Create a new Asset Compute project](./develop/project.md)
++ [Create a new Asset Compute project](./develop/project.md)
 
 ### Configure environment variables
 
@@ -97,12 +97,11 @@ Asset Compute workers must be deployed to Adobe I/O Runtime to be used with AEM 
 
 + [Using Processing Profiles](./deploy/runtime.md)
 
-## Invoking workers via AEM Processing Profiles
+## Invoke workers via AEM Processing Profiles
 
 Once deployed to Adobe I/O Runtime, Asset Compute workers can be registered in AEM as a Cloud Service via [Assets Processing Profiles](../../assets/configuring/processing-profiles.md). Processing Profiles are in turn applied to Assets folders, and assets there in 
 
-+ [Using Processing Profiles](./deploy/processing-profiles.md)
-
++ [Using AEM Processing Profiles](./deploy/processing-profiles.md)
 
 ## Additional resources
 

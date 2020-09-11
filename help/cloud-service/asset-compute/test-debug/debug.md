@@ -31,7 +31,7 @@ These log statements are available for review differently based on how the Asset
 
 The [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm module, provides attaching a debugger to Asset Compute workers, including the ability to set breakpoints in VS Code and step through the code.
 
->[!VIDEO]()
+<!-- TODO VIDEO -->
 
 1. Ensure [wskdebug](../set-up/development-environment.md#wskdebug) and [ngrok](../set-up/development-environment.md#ngork) npm modules are installed. 
 1. Ensure [Docker Desktop and the supporting Docker images](../set-up/development-environment.md#docker) are installed  and running.
@@ -65,6 +65,7 @@ The [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm module, pr
         "timeout": 30000
     }
     ```
+
 1. Select the new __wskdebug__ from the dropdown
 1. Tap the green __Run__ button to the left of __wskdebug__ dropdown
 1. Open `/actions/worker/index.js` and tap to the left of the line numbers to add break points 1. Navigate to the Asset Compute Dev Tool Web browser window opened in step 6

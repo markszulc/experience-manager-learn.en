@@ -1,8 +1,22 @@
-## Deployment to AEM as a Cloud Service
+---
+title: Invoking Asset Compute workers via AEM Processing Profiles
+description: 
+feature: 
+topics: 
+version: cloud-service
+doc-type: tutorial
+activity: 
+audience: developer
+doc-type: tutorial
+kt: 
+thumbnail:
+---
+
+# Invoking workers via AEM Processing Profiles
 
 To use the custom Asset Compute workers to generate customer renditions for assets in AEM, they must be registered in AEM as a Cloud Service Author service via a Processing Profile. All assets subject to that Processing Profile will have the worker invoked upon upload or re-processing, and have the custom rendition generated and made available via the asset's renditions.
 
-### Define the Processing Profile
+## Define a Processing Profile
 
 First create a new Processing Profile that will invoke the worker with the configurable parameters.
 
@@ -39,7 +53,7 @@ First create a new Processing Profile that will invoke the worker with the confi
             + Never process assets with these MIME Types using this service configuration. In this case, we only use an allow list.
 1. Tap __Save__ in the top right
 
-### Define the Processing Profile
+## Apply and invoke a Processing Profile
 
 1. Select the newly created Processing Profile, `WKND Asset Renditions`
 1. Tap __Apply Profile to Folder(s)__ in the top action bar
