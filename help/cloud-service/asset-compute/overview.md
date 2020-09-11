@@ -72,7 +72,7 @@ Developing an Asset Compute worker is the core of extending Asset Compute micros
 
 The Asset Compute Dev Tool provides a local Web harness for deploying, executing and previewing worker-generated renditions, supporting rapid and iterative Asset Compute worker development.
 
-+ [Use Asset Compute Dev Tool](./develop/dev-tool.md)
++ [Use the Asset Compute Dev Tool](./develop/dev-tool.md)
 
 ## Test and Debug
 

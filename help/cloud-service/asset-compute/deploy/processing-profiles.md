@@ -74,6 +74,10 @@ First create a new Processing Profile that will invoke the worker with the confi
 + __Cause:__ An error occurred in the execution of the custom worker
 + __Resolution:__ Ensure the matching [workspace is set](./runtime.md#workspace) via `AIO_runtime_namespace` and `AIO_runtime_auth` and execute `aio app logs` from the command line to see the logs for the last invocation of the worker, which often includes error messaging as to why the execution failed.
 
+  If you are debugging against an active system with many Asset Compute invocations occuring, set the `--limit` flag to collect more activation logs and locate the activation of interest via the asset's path.
+
+    + `$ aio app logs --limit=10`
+
     ![aio app logs](./assets/processing-profiles/troubleshooting__aio-app-logs.png)
 
 
