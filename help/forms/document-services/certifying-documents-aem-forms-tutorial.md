@@ -30,7 +30,7 @@ Please follow the steps mentioned below to add the certificate to keystore in AE
 * [Search for fd-service](http://localhost:4502/security/users.html) user
 * **You will have to scroll the results page to load all the users to find the fd-service user**
 * Double click the fd-service user to open the user settings window
-* Click on "Add Prviate Key from the keystore file".Specify the alias and password specific to your certificate
+* Click on "Add Private Key from the keystore file".Specify the alias and password specific to your certificate
 ![add-certificate](assets/adding-certificate-keystore.PNG)
 * Save your changes
 

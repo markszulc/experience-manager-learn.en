@@ -6,6 +6,8 @@ topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
+kt: 5859
+thumbnail: 37324
 ---
 
 # Creating Adaptive Form Template

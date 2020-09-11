@@ -375,7 +375,7 @@ Now we will add some base styles for the WKND brand by adding some Sass files (`
     >
     > Since **clientlib-site** is actually compiled during build time, using either **npm** or **maven**, it can actually be ignored from source control in the **ui.apps** module. Inspect the `.gitignore` file beneath **ui.apps**.
 
->[!Caution]
+>[!CAUTION]
 >
 > The use of the **ui.frontend** module may not be necessary for all projects. The **ui.frontend** module adds additional complexity and if there is not a need/desire to use some of these advanced front-end tools (Sass, webpack, npm...) it may be overkill. For this reason it is considered an optional part of the AEM Project Archetype and the use of standard client-side libraries and vanilla CSS and JavaScript continues to be fully supported.
 

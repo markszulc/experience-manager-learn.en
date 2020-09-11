@@ -28,9 +28,10 @@ In the screenshot below, we are setting the options of Loan Period(years) to the
 ![Rule Editor](assets/ruleeditor.png)
 
 **Using the code editor**: When you want to set the items in the choice group dynamically based on the values entered in the form. For example, the following code snippet sets the items of the checkbox to the values entered in the applicant name and spouse fields of the Adaptive Form.
- In the code snippet, we are setting the items of WorkingMembers which is a checkbox component. The array for the items is being built dynamically by fetching the values of the applicantName and spouse text fields of the adaptive forms
 
- ```javascript
+In the code snippet, we are setting the items of WorkingMembers which is a checkbox component. The array for the items is being built dynamically by fetching the values of the applicantName and spouse text fields of the adaptive forms
+
+```javascript
  
  if(MaritalStatus.value=="Married")
   {
@@ -40,13 +41,11 @@ else
   {
     WorkingMembers.items =["applicant="+applicantName.value];
   }
-
- ```
+```
 
 The submitted data is as follows
 
- ```xml
-
+```xml
 <afUnboundData>
 
 <data>
@@ -62,19 +61,19 @@ The submitted data is as follows
 </data>
 
 </afUnboundData>
-
- ```
+```
 
 **Adding items using the rule editor**
- >[!VIDEO](https://video.tv.adobe.com/v/26847?quality=12&learn=on)
+
+>[!VIDEO](https://video.tv.adobe.com/v/26847?quality=12&learn=on)
 
 **Adding items using the code editor**
 
- >[!VIDEO](https://video.tv.adobe.com/v/26848?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26848?quality=12&learn=on)
  
- To try this on your system:
+To try this on your system:
 
- **Using the code editor to add items**
+**Using the code editor to add items**
 
 * [Download the assets](assets/usingthecodeeditor.zip)
 * [Open Forms And Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
@@ -100,4 +99,3 @@ The submitted data is as follows
 
 >[!NOTE]
 > It is assumed that tomcat is running on port 8080 and AEM on port 4502 
-

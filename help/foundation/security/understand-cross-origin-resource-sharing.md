@@ -79,7 +79,7 @@ If no policy is configured at all, [!DNL CORS] requests will also not be answere
 
 ### Example configurations
 
-Site 1 is a basic, anonymously accessible, read-only scenario where content is consumed via [!DNL GET requests:
+Site 1 is a basic, anonymously accessible, read-only scenario where content is consumed via [!DNL GET] requests:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

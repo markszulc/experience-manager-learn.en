@@ -11,6 +11,7 @@ mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/experience-manager-learn.en
 product: experience-manager
 index: y
+type: Tutorial
 ---
 
 # Metadata for internal use

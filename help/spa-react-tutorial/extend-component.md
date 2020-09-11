@@ -95,13 +95,13 @@ An initial Card Component has been provided by the chapter starter code. Inspect
         componentGroup="WKND SPA React - Content"/>
     ```
 
-    Notice that the `sling:resourceSuperType` points to `core/wcm/components/image/v2/image`. This indicates that the WKND SPA Image component inherits all of the funcionality from the Core Component Image.
+    Notice that the `sling:resourceSuperType` points to `core/wcm/components/image/v2/image`. This indicates that the WKND SPA Image component inherits all of the functionality from the Core Component Image.
 
-    Also known as the [Proxy pattern](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html#proxy-component-pattern) Sling resource inheritance is a powerful design pattern for allowing child components to inherit functionality and extend/override behavior when desired. Sling inheritance supports multiple levels of inheritance, so ultimately the new `Card` component inherits functionality of the Core Component Image. 
+    Also known as the [Proxy pattern](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html#proxy-component-pattern) Sling resource inheritance is a powerful design pattern for allowing child components to inherit functionality and extend/override behavior when desired. Sling inheritance supports multiple levels of inheritance, so ultimately the new `Card` component inherits functionality of the Core Component Image.
 
     Many development teams strive to be D.R.Y. (don't repeat yourself). Sling inheritance makes this possible with AEM.
 
-4. Beneath the `card` folder, open the file `_cq_dialog/.content.xml`. 
+4. Beneath the `card` folder, open the file `_cq_dialog/.content.xml`.
 
     This file is the Component Dialog definition for the `Card` component. If using Sling inheritance, its possible to use features of the [Sling Resource Merger](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/sling-resource-merger.html) to override or extend portions of the dialog. In this sample a new tab has been added to the dialog to capture additional data from an author to populate the Card Component.
 
@@ -210,7 +210,7 @@ To ultimately expose the values from the component dialog to the React component
 
 Return to the IDE of your choice and open the `core` module.
 
-1. Open the file `Card.java` at `core/src/main/java/com/adobe/aem/guides/wknd/spa/react/core/models/Card.java`. 
+1. Open the file `Card.java` at `core/src/main/java/com/adobe/aem/guides/wknd/spa/react/core/models/Card.java`.
 
     Observe that the `Card` interface currently extends `com.adobe.cq.wcm.core.components.models.Image` and therefore inherits all of the methods of the `Image` interface. The `Image` interface already extends the `ComponentExporter` interface which allows the Sling Model to be exported as JSON and mapped by the SPA editor. Therefore we do not need to explicitly extend `ComponentExporter` interface like we did in the [Custom Component chapter](custom-component.md).
 
@@ -266,7 +266,7 @@ Return to the IDE of your choice and open the `core` module.
     private Image image;
     ```
 
-    The above annotation will instantiate an Image object named `image` based on the `sling:resourceSuperType` inheritance of the `Card` component. 
+    The above annotation will instantiate an Image object named `image` based on the `sling:resourceSuperType` inheritance of the `Card` component.
 
     ```java
     @Override
@@ -385,7 +385,7 @@ Now that the JSON model is populated with new properties for `ctaLinkURL`, `ctaT
     $ npm start
     ```
 
-2. Open `Card.js` at `ui.frontend/src/components/Card/Card.js`. 
+2. Open `Card.js` at `ui.frontend/src/components/Card/Card.js`.
 3. Add the method `get ctaButton()` to render the call to action:
 
     ```js
@@ -451,7 +451,7 @@ Now that the JSON model is populated with new properties for `ctaLinkURL`, `ctaT
 6. Sass rules have already been added at `Card.scss` to style the title, call to action and last modified date. Include these styles by adding the following line to `Card.js` at the top of the file:
 
     ```diff
-      import {MapTo} from '@adobe/cq-react-editable-components';
+      import {MapTo} from '@adobe/aem-react-editable-components';
 
     + require('./Card.scss');
 

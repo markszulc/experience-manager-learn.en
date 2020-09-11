@@ -142,7 +142,7 @@ In previous chapters, the `Header` component was added as a pure React component
 
 ## Create Child Pages
 
-Next, create additional pages in AEM that will serve as the different views in the SPA. We will also inspect the hierarchal structure of the JSON model provided by AEM.
+Next, create additional pages in AEM that will serve as the different views in the SPA. We will also inspect the hierarchical structure of the JSON model provided by AEM.
 
 1. Navigate to the **Sites** console: [http://localhost:4502/sites.html/content/wknd-spa-react/us/en/home](http://localhost:4502/sites.html/content/wknd-spa-react/us/en/home). Select the **WKND SPA React Home Page** and click **Create** &gt; **Page**:
 
@@ -288,7 +288,7 @@ Next, implement the navigation menu as part of the `Header`. We could add the co
     ":type": "wknd-spa-react/components/header"
     ```
 
-    The hierarchal nature of the AEM pages are modeled in the JSON that can be used to populate a navigation menu. Recall that the `Header` component inherits all of the functionality of the [Navigation Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html) and the content exposed through the JSON will be automatically mapped to React props.
+    The hierarchical nature of the AEM pages are modeled in the JSON that can be used to populate a navigation menu. Recall that the `Header` component inherits all of the functionality of the [Navigation Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html) and the content exposed through the JSON will be automatically mapped to React props.
 
 2. Open a new terminal window and navigate to the `ui.frontend` folder of the SPA project. Start the **webpack-dev-server** with the command `npm start`.
 
@@ -389,7 +389,7 @@ Next, implement the navigation menu as part of the `Header`. We could add the co
     ...
     ```
 
-    This method renders a list item, with CSS classes based on properties `level` and `active`. The method then calls `renderLink` to create the anchor tag. Since the `Navigation` content is hierarchal, a recursive strategy is used to call the `renderGroupNav` for the children of the current item.
+    This method renders a list item, with CSS classes based on properties `level` and `active`. The method then calls `renderLink` to create the anchor tag. Since the `Navigation` content is hierarchical, a recursive strategy is used to call the `renderGroupNav` for the children of the current item.
 
 11. Implement the `renderLink` method:
 

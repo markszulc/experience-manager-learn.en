@@ -40,19 +40,19 @@ As the number of possible style combinations available to AEM authors increases,
 
 Style names, or the options presented to AEM authors, and the implementing CSS class names are decoupled in AEM.
 
-This allows Style options to be labeled in a vocabulary clear and understood by the AEM a  uthors,  but lets CSS developers name the CSS classes in a future-proof, semantic manner. For example:
+This allows Style options to be labeled in a vocabulary clear and understood by the AEM authors,  but lets CSS developers name the CSS classes in a future-proof, semantic manner. For example:
 
 A component must have the options to be colored with the brand's **primary** and **secondary** colors, however, the AEM authors know the colors as **green** and **yellow**, rather than the the design language of primary and secondary.
 
 The AEM Style System can expose these coloring Display styles using author-friendly labels **Green** and **Yellow**, while allowing the CSS developers to use semantic naming of `.cmp-component--primary-color` and `.cmp-component--secondary-color` to define the actual style implementation in CSS.
 
-The Style name of **Green** is mapped to `.cmp-component--primary-color`, and **Yelow** to `.cmp-component--secondary-color`.
+The Style name of **Green** is mapped to `.cmp-component--primary-color`, and **Yellow** to `.cmp-component--secondary-color`.
 
 If the company's brand color change in the future, all that needs to be changed is the single implementations of `.cmp-component--primary-color` and `.cmp-component--secondary-color`, and the Style names.
 
 ## The Teaser component as an example use case {#the-teaser-component-as-an-example-use-case}
 
-The following is an example use case of styling a Teaser component to have serveral different Layout an Display styles.
+The following is an example use case of styling a Teaser component to have several different Layout an Display styles.
 
 This will explore how Style names (exposed to authors) and how the backing CSS classes are organized.
 

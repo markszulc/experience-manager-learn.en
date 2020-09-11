@@ -21,7 +21,7 @@ The first step is to configure your app on OKTA portal. Once your app is approve
 * **Attributes**: These are the attributes you get about the user in the SAML response. Specify them as per your needs.
 
 
-![okta-application](assets/okta-app-settings.PNG)
+![okta-application](assets/okta-app-settings-blurred.PNG)
 
 
 ## Add the OKTA (IdP) Certificate to the AEM Trust Store
@@ -64,7 +64,7 @@ The following are the key properties that need to be specified:
 * **NamedIDPolicy**: Specifies constraints on the name identifier to be used to represent the requested subject. Copy and paste the following highlighted string **urn:oasis:names:tc:SAML:2.0:nameidformat:emailAddress**
 * **Synchronized Attributes** - These are the attributes that are being stored from SAML assertion in AEM profile
 
-![saml-authentication-handler](assets/saml-authentication-settings.PNG)
+![saml-authentication-handler](assets/saml-authentication-settings-blurred.PNG)
 
 ### Configure Apache Sling Referrer Filter
 

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="Designer_V6.4.0.20180228.1.932123" APIVersion="3.6.18045.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2020-08-27T20:53:59Z" uuid="3afc0009-37a9-47e1-8fa0-561954c13106">
+<template xmlns="http://www.xfa.org/schema/xfa-template/3.6/">
+   <?formServer defaultPDFRenderFormat acrobat11.0dynamic?>
+   <subform name="form1" layout="tb" locale="en_US" restoreState="auto">
+      <pageSet>
+         <pageArea name="Page1" id="Page1">
+            <contentArea x="6.35mm" y="15.875mm" w="203.2mm" h="257.175mm"/>
+            <medium stock="letter" short="8.5in" long="11in"/>
+            <?templateDesigner expand 1?>
+            <draw name="Text4" y="6.35mm" x="57.878mm" w="100.144mm" h="7.35mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>NON DISCLOSURE AGREEMENT</text>
+               </value>
+               <font size="18pt" typeface="Arial" baselineShift="0pt"/>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+               <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+               <?renderCache.bounds 281039 18001 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 24 NON DISCLOSURE AGREEMENT 0 1417 15629 0 0 0 "Arial" 0 0 18000 ISO-8859-1?></draw>
+         </pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform w="8in" h="10.125in">
+         <?templateDesigner expand 1?>
+         <draw name="Text2" w="7.875in" h="161.161mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="font-weight:bold;text-decoration:none;letter-spacing:0in">Article I: Scope of Agreement</p><p style="font-weight:bold;text-decoration:none;letter-spacing:0in"><br/></p><p style="text-decoration:none;letter-spacing:0in">This Agreement acknowledges that certain confidential information, trade secrets, and proprietary data (hereinafter defined and referred to as “Confidential Information”) of or regarding the Company may be discussed between Employee and the Company (hereinafter known collectively as the “Parties”). The provisions outlined in this Agreement define the circumstances in which the Employee can and cannot disclose Confidential Information, and include the remedies, penalties and lawful action the Company may take should such information be used or disclosed by Employee. Both Parties agree that it is in their best interests to protect the Company’s Confidential Information and that the terms of this Agreement create a bond of trust and confidentiality between them. In consideration of Employee’s commencement of employment, or continued employment with the Company, the Parties agree as follows</p><p style="text-decoration:none;letter-spacing:0in"><br/></p><p style="font-weight:bold;text-decoration:none;letter-spacing:0in">Article II: Confidential Information</p><p style="font-weight:bold;text-decoration:none;letter-spacing:0in"><br/></p><p style="text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span>A.<span style="xfa-spacerun:yes"> </span><span style="font-weight:bold">Definitions</span>. Confidential Information is any material, knowledge, information, and data (verbal, electronic, written or any other form) concerning the Company or its businesses not generally known to the public consisting of, but not limited to, inventions, discoveries, plans, concepts, designs, blueprints, drawings, models, devices, equipment, apparatus, products, prototypes, formulae, algorithms, techniques, research projects, computer programs, software, firmware, hardware, business, development and marketing plans, merchandising systems, financial and pricing data, information concerning investors, customers, suppliers, consultants and employees, and any other concepts, ideas or information involving or related to the business which, if misused or disclosed, could adversely affect the Company’s business.<span style="xfa-spacerun:yes"> </span></p><p style="text-decoration:none;letter-spacing:0in"><br/></p><p style="text-decoration:none;letter-spacing:0in">B.<span style="xfa-spacerun:yes"> </span><span style="font-weight:bold">Exclusions</span>. For the purposes of this Agreement, the information shall not be deemed Confidential Information and the Employee shall have no obligation to keep it confidential if:<span style="xfa-spacerun:yes"> </span></p><ol style="text-decoration:none;letter-spacing:0in"><li style="margin-top:0pt;margin-bottom:0pt;font-family:'Times New Roman';font-size:10pt;text-decoration:none"> The information was publicly known;</li><li style="margin-top:0pt;margin-bottom:0pt;font-family:'Times New Roman';font-size:10pt;text-decoration:none">. The information was received from a third party not subject to the restrictions of this Agreement and becomes available to <span style="xfa-tab-count:1">         </span><span style="xfa-spacerun:yes">  </span>Employee through no wrongful act or breach of Agreement on their part or</li><li style="margin-top:0pt;margin-bottom:0pt;font-family:'Times New Roman';font-size:10pt;text-decoration:none">.The information was approved for release by the Employer through written authorization.<span style="xfa-spacerun:yes"> </span></li></ol><p style="text-decoration:none;letter-spacing:0in"><br/></p><p style="text-decoration:none;letter-spacing:0in">C.<span style="xfa-spacerun:yes"> </span><span style="font-weight:bold">Limitations</span>. Employee shall limit access to Confidential Information to individuals on a strictly need-to-know basis, involving only those who are carrying out duties related to the Company and its business. Individuals under the Employee’s command (affiliates, agents, consultants, representatives, and other employees) are bound by and shall comply with the terms of this Agreement.</p><p style="text-decoration:none;letter-spacing:0in"><br/></p><p style="text-decoration:none;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span>D.<span style="xfa-spacerun:yes"> </span><span style="font-weight:bold">Ownership</span>. All repositories of information containing or in any way relating to Confidential Information is considered the property of the Employer. The removal of Confidential Information from the Company’s premises is prohibited unless prior written consent is provided by the Company. All such items made, compiled, or used by the Employee shall be delivered to the Employer by Employee upon the termination of employment or at any other time as per the Employer’s request.<span style="xfa-spacerun:yes"> </span></p><p style="text-decoration:none;letter-spacing:0in"><br/></p><p style="text-decoration:none;letter-spacing:0in"><br/></p></body>
+               </exData>
+            </value>
+            <font typeface="Times New Roman" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+         </draw>
+         <draw name="Signer1" y="180.975mm" w="66.675mm" h="12.7mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>{{Sig_es_:signer1:signature}}</text>
+            </value>
+            <font typeface="Myriad Pro" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 186166 33166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 29 {{Sig_es_:signer1:signature}} 0 1417 20500 0 0 0 "Myriad Pro" 0 0 10000 ISO-8859-1?></draw>
+         <draw name="Signer1Date" y="196.85mm" w="66.675mm" h="15.875mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>{{Dte_es_:signer1:date}}</text>
+            </value>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para vAlign="middle"/>
+            <?renderCache.bounds 186166 42166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 24 {{Dte_es_:signer1:date}} 0 1417 25000 0 0 0 "Myriad Pro" 0 0 10000 ISO-8859-1?></draw>
+         <field name="DisclosingParty" y="161.925mm" w="66.675mm" h="16mm">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="0.275583in" placement="top">
+               <para vAlign="middle"/>
+               <value>
+                  <text>Disclosing Party</text>
+               </value>
+            </caption>
+         </field>
+         <field name="ReceivingParty" y="161.925mm" w="66.675mm" h="16mm" x="120.65mm">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="0.275583in" placement="top">
+               <para vAlign="middle"/>
+               <value>
+                  <text>Receiving Party</text>
+               </value>
+            </caption>
+         </field>
+         <draw name="Signer2" y="196.85mm" w="66.675mm" h="15.875mm" x="120.65mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>{{Dte_es_:signer2:date}}</text>
+            </value>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para vAlign="middle"/>
+            <?renderCache.bounds 186166 42166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 24 {{Dte_es_:signer2:date}} 0 1417 25000 0 0 0 "Myriad Pro" 0 0 10000 ISO-8859-1?></draw>
+         <draw name="Sginer2Date" y="180.975mm" w="66.675mm" h="12.7mm" x="120.65mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>{{Sig_es_:signer2:signature}}</text>
+            </value>
+            <font typeface="Myriad Pro" baselineShift="0pt"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <para vAlign="middle" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" marginLeft="0pt" marginRight="0pt"/>
+            <?renderCache.bounds 186166 33166 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 29 {{Sig_es_:signer2:signature}} 0 1417 20500 0 0 0 "Myriad Pro" 0 0 10000 ISO-8859-1?></draw>
+      </subform>
+      <proto/>
+      <desc>
+         <text name="version">6.4.0.20180228.1.932123.929382</text>
+      </desc>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 60 15 00030024002600270028002A002C002F0030003100320035003600370038 ACDEGILMNORSTU?>
+      <?renderCache.subset "Myriad Pro" 0 0 ISO-8859-1 4 104 26 000100120013001B0025003100330034004000420044004500460048004A004D004F005000530054005500560057005A005C005E 12:DPRS_acdegilnorstuvy{}?>
+      <?renderCache.subset "Times New Roman" 0 0 ISO-8859-1 4 192 54 0003000B000C000F00100011001400150016001D001E002400250026002700280029002C00330037004400450046004700480049004A004B004C004D004E004F0050005100520053005400550056005700580059005A005C005D00B300B400B6 (),-.123:;ABCDEFIPTabcdefghijklmnopqrstuvwyz“”’?>
+      <?renderCache.subset "Times New Roman" 1 0 ISO-8859-1 4 116 29 0003001D0024002600270028002C002F0032003600440046004700480049004A004B004C004F00500051005200530055005600570058005A005B :ACDEILOSacdefghilmnoprstuwx?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner Grid show:1, snap:1, units:0, color:ff8080, origin:(0,0), interval:(125000,125000)?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner DefaultCaptionFontSettings face:Myriad Pro;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Myriad Pro;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner SaveTaggedPDF 0?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 0?>
+   <?templateDesigner SavePDFWithLog 0?>
+   <?templateDesigner FormTargetVersion 36?>
+   <?templateDesigner Zoom 121?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo>
+            <embed>0</embed>
+         </fontInfo>
+         <tagged>0</tagged>
+         <version>1.7</version>
+         <adobeExtensionLevel>11</adobeExtensionLevel>
+      </pdf>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale name="en_US" desc="English (United States)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.4-c005 78.150055, 2013/08/07-22:58:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdfuaid="http://www.aiim.org/pdfua/ns/id/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2020-08-27T20:53:59Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Designer 6.4</xmp:CreatorTool>
+         <pdfuaid:part>1</pdfuaid:part>
+         <pdf:Producer>Designer 6.4</pdf:Producer>
+         <xmpMM:DocumentID>uuid:3afc0009-37a9-47e1-8fa0-561954c13106</xmpMM:DocumentID>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>6.4.0.20180228.1.932123.929382</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

@@ -10,7 +10,7 @@ audience: developer
 
 # Set up a Local AEM Development Environment 
 
-Guide to setting up a local development for Adobe Experience Manager, AEM. Covers important topics of local installation, Apache Maven, integrated development environments and debugging/troubleshooting. Development with **[!DML Eclipse IDE], [!DNL CRXDE Lite], [!DNL Visual Studio Code] and [!DNL IntelliJ]** are discussed.
+Guide to setting up a local development for Adobe Experience Manager, AEM. Covers important topics of local installation, Apache Maven, integrated development environments and debugging/troubleshooting. Development with **[!DNL Eclipse IDE], [!DNL CRXDE Lite], [!DNL Visual Studio Code] and [!DNL IntelliJ]** are discussed.
 
 ## Overview
 
@@ -43,7 +43,7 @@ It is also *critical* test code against a local ***Publish*** instance. The ***P
        /publish
    ```
 
-4. Rename the [!DNK QuickStart] JAR to ***aem-author-p4502.jar*** and place it beneath the `/author` directory. Add the ***[!DNL license.properties]*** file beneath the `/author` directory.
+4. Rename the [!DNL QuickStart] JAR to ***aem-author-p4502.jar*** and place it beneath the `/author` directory. Add the ***[!DNL license.properties]*** file beneath the `/author` directory.
 5. Make a copy of the [!DNL QuickStart] JAR, rename it to ***aem-publish-p4503.jar*** and place it beneath the `/publish` directory. Add a copy of the ***[!DNL license.properties]*** file beneath the `/publish` directory.
 
    ```plain
@@ -222,7 +222,7 @@ The **[IntelliJ IDEA](https://www.jetbrains.com/idea/)** is a powerful IDE for p
 
 **[Visual Studio Code](https://code.visualstudio.com/)** has quickly become a favorite tool for ***front-end developers*** with enhanced JavaScript support, [!DNL Intellisense], and browser debugging support. **[!DNL Visual Studio Code]** is open source, free, with many powerful extensions. [!DNL Visual Studio Code] can be set up to integrate with AEM with the help of an Adobe tool, **[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code).** There are also several community-supported extensions that can be installed to integrate with AEM.
 
-[!DNL Visual Studio Code] is a great choice for front-end developers who will primarily be writing CSS/LESS and JavaScript code to create AEM client libraries. This tool may not be the best choice for new AEM developers since node definitions (dialogs, components) will all need to edited in raw XML. There are several Java extensions available for ![DNL Visual Studio Code], however if primarily doing Java development [!DNL Eclipse IDE] or [!DNL IntelliJ] may be preferred.
+[!DNL Visual Studio Code] is a great choice for front-end developers who will primarily be writing CSS/LESS and JavaScript code to create AEM client libraries. This tool may not be the best choice for new AEM developers since node definitions (dialogs, components) will all need to edited in raw XML. There are several Java extensions available for [!DNL Visual Studio Code], however if primarily doing Java development [!DNL Eclipse IDE] or [!DNL IntelliJ] may be preferred.
 
 #### Important links
 

@@ -158,7 +158,7 @@ In previous chapters, the `HeaderComponent` component was added as a pure Angula
 
 ## Create child pages
 
-Next, create additional pages in AEM that will serve as the different views in the SPA. We will also inspect the hierarchal structure of the JSON model provided by AEM.
+Next, create additional pages in AEM that will serve as the different views in the SPA. We will also inspect the hierarchical structure of the JSON model provided by AEM.
 
 1. Navigate to the **Sites** console: [http://localhost:4502/sites.html/content/wknd-spa-angular/us/en/home](http://localhost:4502/sites.html/content/wknd-spa-angular/us/en/home). Select the **WKND SPA Angular Home Page** and click **[!UICONTROL Create]** &gt; **[!UICONTROL Page]**:
 
@@ -304,7 +304,7 @@ Next, implement the navigation menu with a new `NavigationComponent`. We could a
     ":type": "wknd-spa-angular/components/header"
     ```
 
-    The hierarchal nature of the AEM pages are modeled in the JSON that can be used to populate a navigation menu. Recall that the `Header` component inherits all of the functionality of the [Navigation Core Component](https://www.aemcomponents.dev/content/core-components-examples/library/templating/navigation.html) and the content exposed through the JSON will be automatically mapped to the Angular `@Input` annotation.
+    The hierarchical nature of the AEM pages are modeled in the JSON that can be used to populate a navigation menu. Recall that the `Header` component inherits all of the functionality of the [Navigation Core Component](https://www.aemcomponents.dev/content/core-components-examples/library/templating/navigation.html) and the content exposed through the JSON will be automatically mapped to the Angular `@Input` annotation.
 
 2. Open a new terminal window and navigate to the `ui.frontend` folder of the SPA project. Create a new `NavigationComponent` using the Angular CLI tool:
 
@@ -382,7 +382,7 @@ Next, implement the navigation menu with a new `NavigationComponent`. We could a
     });
     ```
 
-    Notice that `const data` follows the same JSON model inspected earlier for a single link. This is far from a robust unit test, however it should suffice to test the costructor of `NavigationLink`.
+    Notice that `const data` follows the same JSON model inspected earlier for a single link. This is far from a robust unit test, however it should suffice to test the constructor of `NavigationLink`.
 
 7. Open the file `navigation.component.ts`. Update it with the following:
 
@@ -434,7 +434,7 @@ Next, implement the navigation menu with a new `NavigationComponent`. We could a
 
     ```html
     <ng-template #recursiveListTmpl let-links="links">
-        <li *ngFor="let link of links" class="{{'navigation__item naviation__item--' + link.level}}">
+        <li *ngFor="let link of links" class="{{'navigation__item navigation__item--' + link.level}}">
             <a [routerLink]="link.url" class="navigation__item-link" [title]="link.title" [attr.aria-current]="link.active">
                 {{link.title}}
             </a>

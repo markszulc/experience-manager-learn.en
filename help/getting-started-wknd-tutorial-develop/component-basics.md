@@ -48,7 +48,7 @@ Open a new command line terminal and perform the following actions.
 
     >[!NOTE]
     >
-    > Optionally, you can download the [`component-basics/start`]( https://github.com/adobe/aem-guides-wknd/archive/component-basics/start.zip) branch directly.
+    > Optionally, you can download the [`component-basics/start`](https://github.com/adobe/aem-guides-wknd/archive/component-basics/start.zip) branch directly.
 
 1. Navigate into the `aem-guides-wknd` directory:
 

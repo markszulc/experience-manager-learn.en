@@ -150,7 +150,7 @@ Let's see how the component works.
     export default MapTo('wknd-spa-react/components/text')(Text, TextEditConfig);
     ```
 
-    `MapTo` is provided by the AEM SPA Editor JS SDK (`@adobe/cq-react-editable-components`). The path `wknd-spa-react/components/text` represents the `sling:resourceType` of the AEM component. This path gets matched with the `:type` exposed by the JSON model observed earlier. `MapTo` takes care of parsing the JSON model response and passing the correct values as `props` to the SPA component.
+    `MapTo` is provided by the AEM SPA Editor JS SDK (`@adobe/aem-react-editable-components`). The path `wknd-spa-react/components/text` represents the `sling:resourceType` of the AEM component. This path gets matched with the `:type` exposed by the JSON model observed earlier. `MapTo` takes care of parsing the JSON model response and passing the correct values as `props` to the SPA component.
 
     You can find the AEM `Text` component definition at `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/text`.
 
@@ -234,7 +234,7 @@ Before jumping into the SPA code, inspect the JSON model provided by AEM.
 
     ```js
     import React, {Component} from 'react';
-    import {MapTo} from '@adobe/cq-react-editable-components';
+    import {MapTo} from '@adobe/aem-react-editable-components';
     ```
 
 4. Then add the `ImageEditConfig` to determine when to show the placeholder in AEM:
@@ -302,7 +302,7 @@ Before jumping into the SPA code, inspect the JSON model provided by AEM.
 
     ```js
     import React, {Component} from 'react';
-    import {MapTo} from '@adobe/cq-react-editable-components';
+    import {MapTo} from '@adobe/aem-react-editable-components';
 
     require('./Image.scss');
     ```

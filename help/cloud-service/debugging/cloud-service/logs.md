@@ -93,7 +93,7 @@ Environment Id Service    Name
 
 ### Tailing logs{#aio-cli-tail-logs}
 
-Adobe I/O CLI provides the ability to [ail logs in real-time from AEM as a Cloud Service using the [tail-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagertail-log-environmentid-service-name)) command. Tailing is useful to watching real-time log activity as actions are performed on the AEM as a Cloud Service environment.
+Adobe I/O CLI provides the ability to tail logs in real-time from AEM as a Cloud Service using the [tail-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagertail-log-environmentid-service-name) command. Tailing is useful to watching real-time log activity as actions are performed on the AEM as a Cloud Service environment.
 
 ```
 $ aio config:set cloudmanager_programid <PROGRAM ID>

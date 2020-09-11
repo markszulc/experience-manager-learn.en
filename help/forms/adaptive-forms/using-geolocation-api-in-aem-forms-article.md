@@ -35,7 +35,7 @@ navigator.geolocation.getCurrentPosition(showPosition);
 function showPosition(position) 
 {
 console.log(" I am inside the showPosition in fragment");
-console.log("Latitude: " + position.coords.latitude + "Longitiude " + position.coords.longitude);
+console.log("Latitude: " + position.coords.latitude + "Longitude " + position.coords.longitude);
 var url = "https://maps.googleapis.com/maps/api/geocode/json?latlng="+position.coords.latitude+","+position.coords.longitude+"&key=<your_api_key>";
   console.log(url);
   

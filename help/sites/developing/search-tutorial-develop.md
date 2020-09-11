@@ -110,7 +110,7 @@ Corrections and clarifications from the lab discussions and answers to follow-up
 
 4. **How to search for Pages and Assets in the same query?**
 
-   New in AEM 6.3 is the ability to query for mutiple node-types in the same provided query. The following QueryBuilder query. Note that each "sub-query" can resolve to its own index, so in this example, the `cq:Page` sub-query resolves to `/oak:index/cqPageLucene` and the `dam:Asset` sub-query resolves to `/oak:index/damAssetLucene`.
+   New in AEM 6.3 is the ability to query for multiple node-types in the same provided query. The following QueryBuilder query. Note that each "sub-query" can resolve to its own index, so in this example, the `cq:Page` sub-query resolves to `/oak:index/cqPageLucene` and the `dam:Asset` sub-query resolves to `/oak:index/damAssetLucene`.
 
    ```plain
    group.p.or=true

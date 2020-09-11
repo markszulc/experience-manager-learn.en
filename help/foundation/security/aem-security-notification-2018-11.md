@@ -38,7 +38,7 @@ This article addresses a few recent and old vulnerabilities that were recently r
 | CRX Explorer Access on production instances | Managing CRX Explorer access is already covered in the Security Checklist, CRX Explorer should be removed from production author and publish and the security health check reports it if not removed. | See [AEM Security Checklist](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/security-checklist.html). |
 | BGServlets is exposed | This has been resolved since AEM 6.2. | See [AEM 6.2 Release Notes](https://helpx.adobe.com/experience-manager/6-2/release-notes.html) |
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [AEM Dispatcher User Guide](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)
 >* [AEM Dispatcher Release Notes](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html)

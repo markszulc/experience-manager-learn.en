@@ -36,7 +36,7 @@ AEM Sites introduces a number of features designed to accelerate the creation an
 
 AEM continues to embrace Fluid Experiences with new and improved tooling that facilitates the use of content outside of AEM.
 
-+ **Content Fragments** suppport Version Comparison/Diff and Annotations.
++ **Content Fragments** support Version Comparison/Diff and Annotations.
 + **AEM's Assets HTTP API** supports exposing **Content Fragments** directly in the DAM as **JSON**.
 **Experience Fragments** support **Fulltext Search** and **AEM Dispatcher Cache Invalidation** for referencing **Pages**.
 
@@ -1052,7 +1052,7 @@ Below is a matrix of key AEM Forms Add-on features offered by AEM. Some of these
             <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#EnhancedintegrationwithAdobeSign" target="_blank">Adobe Sign Integration</a>:</strong>
             Allow deployment of Adobe Sign integrated forms based signing scenarios.</td>
             <td>&nbsp;</td>
-            <td><&nbsp;</td>
+            <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>✔</td>
             <td>✔<sup>+</sup></td>

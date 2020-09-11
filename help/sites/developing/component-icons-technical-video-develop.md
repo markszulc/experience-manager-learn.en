@@ -17,9 +17,9 @@ Component Icons allow authors to quickly identify a component with icons or mean
 The Component browser now displays in a consistent grey theme, displaying the:
 
 * **[!UICONTROL Component Group]**
-* **[!UICONTROLComponent Title]**
-* **[!UICONTROLComponent Description]**
-* **[!UICONTROLComponent Icon]**
+* **[!UICONTROL Component Title]**
+* **[!UICONTROL Component Description]**
+* **[!UICONTROL Component Icon]**
   * The first two letters of the Component Title *(default)*
   * Custom PNG image *(configured by a developer)*
   * Custom SVG image *(configured by a developer)*
