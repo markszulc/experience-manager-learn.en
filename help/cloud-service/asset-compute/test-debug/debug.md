@@ -1,3 +1,15 @@
+---
+title: Debug Asset Compute worker
+description: 
+feature: 
+topics: 
+version: cloud-service
+doc-type: tutorial
+activity: 
+audience: developer
+kt: 
+thumbnail: 40257.jpg
+---
 # Debug Asset Compute worker
 
 ## Logging
@@ -10,13 +22,12 @@ These log statements are available for review differently based on how the Asset
     ![aio app run console.log(...)](./assets/debug/console-log__aio-app-run.png)
 + From `aio app test`, logs print to `/build/test-results/test-worker/test.log`.
     ![aio app test console.log(...)](./assets/debug/console-log__aio-app-test.png)
-+ Using [wskdebug] console.log(...) statements print to the VS Code Debug Console (View > Debug Console), standard out.
++ Using [wskdebug] logs statements print to the VS Code Debug Console (View > Debug Console), standard out.
     ![wskdebug console.log(...)](./assets/debug/console-log__wskdebug.png)
-
 
 ## wskdebug
 
->[!WARN] Use Microsoft Visual Studio Code 1.48.0 or greater to compatability with wskdebug
+>[!WARN] Use Microsoft Visual Studio Code 1.48.0 or greater for compatability with wskdebug
 
 The [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm module, provides attaching a debugger to Asset Compute workers, including the ability to set breakpoints in VS Code and step through the code.
 

@@ -138,8 +138,6 @@ These can be read by accessing `rendition.instructions.<parameterName>` in the w
 
 Here we'll read in the renditions target `SIZE`, `BRIGHTNESS` and `CONTRAST`, providing default values if none have been provided via the Processing Profile.
 
-We will also compute the target rendition `FORMAT` by reading the rendition's target filename extension to ensure the target format supports transparency.
-
 ```javascript
 'use strict';
 
@@ -154,12 +152,9 @@ exports.main = worker(async (source, rendition, params) => {
     }
 
     // Read in parameters and set defaults if parameters are provided
-    const SIZE = rendition.instructions.size || 1200; 
+    const SIZE = rendition.instructions.size || 800; 
     const CONTRAST = rendition.instructions.contrast || 0;
     const BRIGHTNESS = rendition.instructions.brightness || 0;
-
-    // Parse the format from the rendition's extension
-    const FORMAT = rendition.instructions.name.substring(rendition.instructions.name.lastIndexOf('.') + 1);
 
     // Do work here
 }
@@ -171,8 +166,6 @@ Asset Compute workers may encounter situations that result in errors. The Adobe 
 
 Before starting to process the rendition, check to ensure all the parameters are valid and supported in the context of this worker:
 
-+ Ensure the rendition format is supported by this worker. In this case we will support `jpg`, `png` and `gif`.
-    + We can derive the rendition formation from the `rendition.name`'s extension. If an unsupported extension is detected, throw a `RenditionFormatUnsupportedError` error.
 + Ensure the rendition intruction parameters for `size`, `contrast`, and `brightness` are valid. If not, throw a custom error `RenditionInstructionsError`.
     + We can define this custom class, that extends `ClientError`, at the bottom of this file. The use of a specific, custom error will be useful when [writing tests](../test-debug/test.md) for our worker.
 
@@ -182,8 +175,8 @@ Note these provided error types must also be imported in order to be used.
 'use strict';
 
 const { Image } = require('image-js'); 
-// Import the Asset Compute SDK provided `RenditionFormatUnsupportedError` and `ClientError` 
-const { worker, SourceCorruptError, RenditionFormatUnsupportedError, ClientError } = require('@adobe/asset-compute-sdk');
+// Import the Asset Compute SDK providedd `ClientError` 
+const { worker, SourceCorruptError, ClientError } = require('@adobe/asset-compute-sdk');
 const fs = require('fs').promises;
 
 exports.main = worker(async (source, rendition, params) => {
@@ -192,20 +185,13 @@ exports.main = worker(async (source, rendition, params) => {
         throw new SourceCorruptError('source file is empty');
     }
 
- // Read in parameters and set defaults if parameters are provided
-    const SIZE = rendition.instructions.size || 1200; 
-    const CONTRAST = rendition.instructions.contrast || 0;
-    const BRIGHTNESS = rendition.instructions.brightness || 0;
+    // Read in parameters and set defaults if parameters are provided
+    // Processing Profiles pass in instructions as Strings, so make sure to parse to correct data types
+    const SIZE = parseInt(rendition.instructions.size) || 800; 
+    const CONTRAST = parseFloat(rendition.instructions.contrast) || 0;
+    const BRIGHTNESS = parseFloat(rendition.instructions.brightness) || 0;
 
-    // Parse the format from the rendition's extension
-    const FORMAT = rendition.instructions.name.substring(rendition.instructions.name.lastIndexOf('.') + 1);
-
-    if (['jpg', 'png', 'gif'].indexOf(FORMAT) === -1) {
-        // Ensure rendition format is supported
-
-        // Notice the `RenditionFormatUnsupportedError` is now imported above via the `@adobe/asset-compute-sdk` which proxies the errors in from '@adobe/asset-compute-commons`
-        throw new RenditionFormatUnsupportedError(`Rendition format '${FORMAT}' is not supported`);
-    } else if (SIZE <= 10 || SIZE >= 10000) {
+    if (SIZE <= 10 || SIZE >= 10000) {
         // Ensure size is within allowable bounds
         throw new RenditionInstructionsError("'size' must be between 10 and 1,0000");
     } else if (CONTRAST <= -1 || CONTRAST >= 1) {
@@ -219,7 +205,7 @@ exports.main = worker(async (source, rendition, params) => {
     // Do work here
 }
 
-// Create a new ClientError to handle invalid rendition.instruction values
+// Create a new ClientError to handle invalid rendition.instructions values
 class RenditionInstructionsError extends ClientError {
     constructor(message) {
         // Provide a:
@@ -241,23 +227,23 @@ With the parameters read, sanitized and validated, code is written to generate t
 1. Create a new `renditionImage` canvas in square dimensions specified via the `size` parameter.
 1. Create a `image` object from the source asset's binary
 1. Use the __Jimp__ library to transform the image:
+    + Crop the original image to a centered square
+    + Cut a circle from the center of the "squared" image
     + Scale to fit within the dimensions defined by the `SIZE` parameter value
     + Adjust contrast based on the `CONTRAST` parameter value
     + Adjust brightness based on the `BRIGHTNESS` parameter value
-    + Cut a circle from the center of the image
-1. Place the transformed `image` into the center of the `renditionImage`
+1. Place the transformed `image` into the center of the `renditionImage` which has a transparent background
 1. Write the composed, `renditionImage` to `rendition.path` so it can saved back into AEM as an asset rendition.
 
-This code is largely working with the [Jimp APIs](https://github.com/oliver-moran/jimp#jimp).
+This code employs the [Jimp APIs](https://github.com/oliver-moran/jimp#jimp) to perform these image transformations.
 
 The finished worker `index.js` should look like:
 
 ```javascript
-
 'use strict';
 
 const Jimp = require('jimp');
-const { worker, SourceCorruptError, RenditionFormatUnsupportedError, ClientError } = require('@adobe/asset-compute-sdk');
+const { worker, SourceCorruptError, ClientError } = require('@adobe/asset-compute-sdk');
 const fs = require('fs').promises;
 
 exports.main = worker(async (source, rendition, params) => {
@@ -266,54 +252,42 @@ exports.main = worker(async (source, rendition, params) => {
         throw new SourceCorruptError('source file is empty');
     }
 
-    // Read/parse and valid parameters
-    const SIZE = rendition.instructions.size || 1200; 
-    const CONTRAST = rendition.instructions.contrast || 0;
-    const BRIGHTNESS = rendition.instructions.brightness || 0;
-    const FORMAT = rendition.instructions.name.substring(rendition.instructions.name.lastIndexOf('.') + 1);
+    const SIZE = parseInt(rendition.instructions.size) || 800; 
+    const CONTRAST = parseFloat(rendition.instructions.contrast) || 0;
+    const BRIGHTNESS = parseFloat(rendition.instructions.brightness) || 0;
 
-    if (['jpg', 'png', 'gif'].indexOf(FORMAT) === -1) {
-        throw new RenditionFormatUnsupportedError(`Rendition format '${FORMAT}' is not supported`);
-    } else if (SIZE <= 10 || SIZE >= 10000) {
-        throw new RenditionInstructionsError("'size' must be between 10 and 1,0000");
+    if (SIZE <= 10 || SIZE >= 10000) {
+        throw new RenditionInstructionsError("'size' must be between 10 and 10,000");
     } else if (CONTRAST <= -1 || CONTRAST >= 1) {
         throw new RenditionInstructionsError("'contrast' must between -1 and 1");
     } else if (BRIGHTNESS <= -1 || BRIGHTNESS >= 1) {
         throw new RenditionInstructionsError("'brightness' must between -1 and 1");
     }
 
-    // Create target rendition image 
-    let renditionImage =  new Jimp(SIZE, SIZE, getBackgroundColor(FORMAT));
+    // Create target rendition image of the target size with a transparent background (0x0)
+    let renditionImage =  new Jimp(SIZE, SIZE, 0x0);
 
     // Read and perform transformations on the source binary image
     let image = await Jimp.read(source.path);
-    image.scaleToFit(SIZE, SIZE);
-    image.contrast(CONTRAST);
-    image.brightness(BRIGHTNESS);
-    image.circle();
 
-    // Place the transformed image onto the transparent renditionImage in the center
+    // Crop a circle from the source asset, and then apply contrast and brightness using Jimp
+    image.crop(
+            image.bitmap.width < image.bitmap.height ? 0 : (image.bitmap.width - image.bitmap.height) / 2,
+            image.bitmap.width < image.bitmap.height ? (image.bitmap.height - image.bitmap.width) / 2 : 0,
+            image.bitmap.width < image.bitmap.height ? image.bitmap.width : image.bitmap.height,
+            image.bitmap.width < image.bitmap.height ? image.bitmap.width : image.bitmap.height
+        )   
+        .circle()
+        .scaleToFit(SIZE, SIZE)
+        .contrast(CONTRAST)
+        .brightness(BRIGHTNESS);
 
-    let center = {
-        x: (renditionImage.bitmap.width - image.bitmap.width) / 2,
-        y: (renditionImage.bitmap.height - image.bitmap.height) / 2
-    };
-    renditionImage.composite(image, center.x, center.y);
+    // Place the transformed image onto the transparent renditionImage to save as PNG
+    renditionImage.composite(image, 0, 0)
 
     // Write the final transformed image to the asset's rendition
-    await renditionImage.writeAsync(rendition.path)
+    renditionImage.write(rendition.path);
 });
-
-// Determine the background color based on transparency support for rendition format
-function getBackgroundColor(format) {
-    if (['png', 'gif'].indexOf(format) !== -1) {
-        // Transparent background
-        return 0x0;
-    } else {
-        // Black background
-        return '#000000';
-    }
-}
 
 // Custome error used for renditions.instructions parameter checking
 class RenditionInstructionsError extends ClientError {
@@ -326,8 +300,6 @@ class RenditionInstructionsError extends ClientError {
 
 ## Running the worker
 
-!
-
 Now that the worker code is complete, and was previously registered and configured in the [manifest.yml](./manfest.md), it can be executed using the local Asset Compute Dev Tool to see the results.
 
 1. From the root of the Asset Compute project
@@ -336,14 +308,9 @@ Now that the worker code is complete, and was previously registered and configur
 1. In the __Select a file...__ drop down, select a sample image to process
     + Select a sample image file to use as the source asset binary. 
     + If none exist yet, tap the __(+)__ to the left, and upload a [sample image](./assets/worker/sample-file.jpg) file, and refresh the Dev Tools browser window.
-1. Tap __Run__
-1. The __Renditions__ rendition previews the generated rendition. Tap the rendition preview to download the full rendition.
+1. Update `"name": "rendition.png"` as this worker to generates a transparent PNG. This "name" parameter is only used for the Dev Tool, and should not relied on.
 
-    ![Default JPEG rendition](./assets/worker/default-jpg-rendition.jpg)
-
-1. Update `"name": "rendition.png"` requesting the worker to generate a transparent PNG.
-
-    ```
+    ```json
     {
         "renditions": [
             {
@@ -353,46 +320,48 @@ Now that the worker code is complete, and was previously registered and configur
         ]
     }
     ```
+1. Tap __Run__ and wait for the rendition to generate
+1. The __Renditions__ section previews the generated rendition. Tap the rendition preview to download the full rendition.
 
-1. Tap __Run__
-1. The __Renditions__ rendition previews the generated rendition. Tap the rendition preview to download the full rendition.
-
-    ![Default PNG rendition](./assets/worker/default-png-rendition.png) 
+    ![Default PNG rendition](./assets/worker/default-rendition.png) 
 
 ### Run the worker with parameters
 
 Parameters, passed in via Processing Profile configurations, can be simulated in Asset Compute Dev Tools by providing them as key/value pairs on the rendition parameter object.
 
+During local development, values can be passed in using various data types, when passed in from AEM as Cloud Service Processing Profiles as strings, so make sure the correct data types are parsed if needed. 
+For example, Jimp's `crop(width, height)` function requires its parameters to be `ints`. If `parseInt(rendition.instructions.size)` is not parsed to an int, then the call to `jimp.crop(SIZE, SIZE)` will fail as the parameters will be incompatible string types.
+
 Our code accepts parameters for:
 
-+ `size` defines the size of the rendition (height and width)
-+ `contrast` defines the contrast adjust, must be between -1 and 1
-+ `brightness`  defines the bright adjust, must be between -1 and 1
++ `size` defines the size of the rendition (height and width as ints)
++ `contrast` defines the contrast adjust, must be between -1 and 1, as floats
++ `brightness`  defines the bright adjust, must be between -1 and 1, as floats
 
 These are read in the worker `index.js` via:
 
-+ `rendition.instructions.size`
-+ `rendition.instructions.contrast`
-+ `rendition.instructions.brightness`
++ `parseInt(rendition.instructions.size)`
++ `parseFloat(rendition.instructions.contrast)`
++ `parseFloat(rendition.instructions.brightness)`
 
 1. Update the rendition parameters to customize the size, contrast and brightness.
 
-    ```
+    ```json
     {
         "renditions": [
             {
                 "worker": "...",
                 "name": "rendition.png",
-                "size": 800,
-                "contrast": 0.30,
-                "brightness": 0.15
+                "size": "450",
+                "contrast": "0.30",
+                "brightness": "0.15"
             }
         ]
     }
     ```
     
 1. Tap __Run__ again
-1. Tap to download and review the generated rendition. 
+1. Tap to download and review the generated rendition. Note its' dimensions and how the contrast and brightness have been increased in comparison to the defaul rendition.
 
     ![Parameterized PNG rendition](./assets/worker/parameterized-rendition.png) 
 

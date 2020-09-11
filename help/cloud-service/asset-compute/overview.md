@@ -71,25 +71,37 @@ The Asset Compute Dev Tool provides a local Web harness for deploying, executing
 
 ## Test and Debug
 
+Testing and debugging Asset Compute applications and workers is crucial in ensuring workers are functioning properly.  
+
 ### Test a worker
+
+Asset Compute provides a test framework for creating test suites for workers, making defining tests that ensure proper behavior is easy.
+
++ [Test a worker](./test-debug/test.md)
 
 ### Debug a worker
 
+Asset Compute applications provide various levels of debuggin from simply `console.log(..)` statement output, to integrations with __VS Code__ and  __wskdebug__, allowing developers step through worker code as it executes in real time.
+
++ [Debug a worker](./test-debug/debug.md)
+
 ## Deploy
 
-### Configure Adobe I/O workspaces
+For Asset Compute workers to be used with AEM as a Cloud Service, they much be deployed to Adobe I/O Runtime, and referenced via the Adobe I/O workspace-based worker URLs.
 
 ### Deploy
+
+
 
 ### Running workers via AEM Processing Profiles
 
 
 
-
-
-
-
-
 ## Additional resources
 
-+ [Asset compute example worker Github repository](https://github.com/adobe/asset-compute-example-workers)
++ [Asset Compute example workers](https://github.com/adobe/asset-compute-example-workers)
++ [Asset Compute Development Tool](https://github.com/adobe/asset-compute-devtool)
++ [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk)
+    + [Asset Compute Commons](https://github.com/adobe/asset-compute-commons)
++ [Adobe Cloud Blobstore Wrapper library](https://github.com/adobe/node-cloud-blobstore-wrapper)
++ [Adobe Node Fetch Retry library](https://github.com/adobe/node-fetch-retry)

@@ -52,15 +52,15 @@ This will start the Asset Compute Dev Tool at localhost port 9000, and automatic
     + Other key/values can be provied in this JSON object, and will be availabe in the worker under the `rendition.instructions` object.
         + Optionally add values for `size`, `contrast` and `brightness`:
 
-            ```
+            ```json
             {
                 "renditions": [
                     {
                         "worker": "...",
-                        "name": "rendition.jpg",
-                        "size": 1000,
-                        "contrast": 0.40,
-                        "brightness": -0.10
+                        "name": "rendition.png",
+                        "size":"800",
+                        "contrast": "0.30",
+                        "brightness": "-0.15"
                     }
                 ]
             }

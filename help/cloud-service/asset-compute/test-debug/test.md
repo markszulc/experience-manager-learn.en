@@ -4,8 +4,9 @@ The Asset Compute project defines a pattern for quickly and easily creating and 
 
 ## Anatomy of a worker test
 
-Asset Compute Worker tests are broken into 
+Asset Compute Worker tests are broken into test suites for each worker in the project, and within each test suite, one or more test cases asserting some condition for the the worker the test suite represents.
 
+The stucture of tests in an Asset Compute project are as follows:
 
 ```
 actions/<worker-name>/index.js
@@ -33,29 +34,27 @@ Each test cast can have the following files:
 
 ## Writing a test case
 
-This test case will test the a parameterized input of a JPG successfully generates the expected JPG rendition.
+This test case asserts the parameterized input (`file.jpg`) successfully generates the expected PNG rendition (`rendition.png`).
 
-1. First delete the auto-generated `simple-worker` tests case at `/test/asset-compute/simple-worker` as this is now an invalid, as our worker no longer simply copies the source to the rendition.
-1. Create a new test-case folder at `/test/asset-compute/worker/success-jpg` to test a successful execution of the worker that generates a JPG rendition.
-1. Add the test [input file](./assets/test/success-jpg/file.jpg) for this test case and name it `file.jpg`. This file represents the `source` input file that will be processed by the worker.
-1. Add a new file named `params.json` that defines the input parameters of the worker with the contents:
+1. First delete the auto-generated `simple-worker` tests case at `/test/asset-compute/simple-worker` as this is invalid, as our worker no longer simply copies the source to the rendition.
+1. Create a new test-case folder at `/test/asset-compute/worker/success-parameterized` to test a successful execution of the worker that generates a PNG rendition.
+1. Add the test [input file](./assets/test/success-parameterized/file.jpg) for this test case and name it `file.jpg`. This file represents the source input file processed by the worker.
+1. Add a new file named `params.json` that defines the input parameters of the worker:
  
     ```json
     { 
-        "name": "rendition.jpg",
-        "size": 400,
-        "contrast": 0.25,
-        "brightness": -0.50
+        "size": "400",
+        "contrast": "0.25",
+        "brightness": "-0.50"
     }
     ```
-    This passed into the [Dev Tool's Asset Compute profile definition](../develop/dev-tool.md) when running this worker, less the `worker` key.
-1. Add the expected [rendition file](assets/test/success-jpg/rendition.jpg) to this test case and name it `rendition.jpg`. This file represents the `rendition` file is output by the worker for the input `file.jpg`. 
+    These are the same key/values passed into the [Dev Tool's Asset Compute profile definition](../develop/dev-tool.md), less the `worker` key.
+1. Add the expected [rendition file](assets/test/success-parameterized/rendition.jpg) to this test case and name it `rendition.png`. This file represents the expected output of the worker for the given input `file.jpg`. 
 1. Run the test suites from the root of the project by executing the command `aio app test`
     + Ensure [Docker Desktop](../set-up/development-environment.md#docker) and supporting Docker images are installed and started
     + Terminate any running Dev Tool instances
 
-![Test - Success JPG](./assets/test/success-jpg/result.png)
-
+![Test - Success ](./assets/test/success-parameterized/result.png)
 
 ## Writing an error checking test case
 
@@ -67,8 +66,7 @@ This test case tests to ensure the worker throws the appropriate error when the 
  
     ```json
     {
-        "name": "rendition.jpg",
-        "contrast": 10,
+        "contrast": "10",
         "errorReason": "rendition_instructions_error"
     }
     ```

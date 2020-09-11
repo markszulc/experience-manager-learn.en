@@ -57,7 +57,7 @@ $ docker pull adobeapiplatform/adobe-action-nodejs-v10:3.0.21
 
 Developers on Windows machines should make sure that they are using Linux containers for the images above. The steps to switch to Linux containers are described in the [Docker for Windows documentation](https://docs.docker.com/docker-for-windows/).
 
-## Install Node.js (and npm)
+## Install Node.js (and npm){#node-js}
 
 Asset Compute workers are [Node.js](https://nodejs.org/) applications, and thus require Node.js 10+ (and npm) to develop and build.
 
@@ -67,7 +67,7 @@ Asset Compute workers are [Node.js](https://nodejs.org/) applications, and thus 
 $ npm install -g @adobe/aio-cli
 ```
 
-## Install Adobe I/O CLI
+## Install Adobe I/O CLI{#aio}
 
 [Install the Adobe I/O CLI](/../../local-development-environment/development-tools.md#aio-cli), or __aio__ is an command-line (CLI) npm module that facilitates use and interaction with Adobe I/O technologies, and is used for both generate and locally develop custom Asset Compute workers. 
 
@@ -75,7 +75,7 @@ $ npm install -g @adobe/aio-cli
 $ npm install -g @adobe/aio-cli
 ```
 
-### Install the Adobe I/O CLI Asset Compute plugin
+### Install the Adobe I/O CLI Asset Compute plugin{#aio-asset-compute}
 
 The [Adobe I/O CLI Asset Compute plugin](https://github.com/adobe/aio-cli-plugin-asset-compute)
 
