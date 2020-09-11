@@ -1,8 +1,10 @@
 ## Deployment to AEM as a Cloud Service
 
-To use the custom Asset Compute workers, they must be referenced in AEM as a Cloud Service Author service via a Processing Profile.
+To use the custom Asset Compute workers to generate customer renditions for assets in AEM, they must be registered in AEM as a Cloud Service Author service via a Processing Profile. All assets subject to that Processing Profile will have the worker invoked upon upload or re-processing, and have the custom rendition generated and made available via the asset's renditions.
 
 ### Define the Processing Profile
+
+First create a new Processing Profile that will invoke the worker with the configurable parameters.
 
 ![Processing profile](./assets/processing-profiles/new-processing-profile.png)
 
@@ -70,7 +72,7 @@ To use the custom Asset Compute workers, they must be referenced in AEM as a Clo
 
 + __Error message:__ Asset Processing Failed badge displayed on asset
 + __Cause:__ An error occurred in the execution of the custom worker
-+ __Resolution:__ Ensure the matching [workspace is set](./runtime.md#workspace) via ``AIO_runtime_namespace` and `AIO_runtime_auth` and execute `aio app logs` from the command line to see the logs for the last invocation of the worker, which often includes error messaging as to why the execution failed.
++ __Resolution:__ Ensure the matching [workspace is set](./runtime.md#workspace) via `AIO_runtime_namespace` and `AIO_runtime_auth` and execute `aio app logs` from the command line to see the logs for the last invocation of the worker, which often includes error messaging as to why the execution failed.
 
     ![aio app logs](./assets/processing-profiles/troubleshooting__aio-app-logs.png)
 

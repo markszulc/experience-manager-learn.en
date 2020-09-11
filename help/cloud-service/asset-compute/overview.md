@@ -15,6 +15,11 @@ thumbnail: KT-5802.jpg
 
 AEM as Cloud Service's Asset Compute microservices support the development and deployment of custom workers that can be used to read, and manipulate binary data of assets stored in AEM. 
 
+In this tutorial we'll create a simple Asset Compute worker that crops an image to a cirlce, and applied contrast and brightness, and use the process to explore the facets of Asset Compute worker set up, development and deployment.
+
+
+
+
 ## Set up
 
 In order to begin developing custom Asset Compute applications, accounts and services must be provisioend and configured, and software installed on the local development machines.
@@ -87,14 +92,19 @@ Asset Compute applications provide various levels of debuggin from simply `conso
 
 ## Deploy
 
-For Asset Compute workers to be used with AEM as a Cloud Service, they much be deployed to Adobe I/O Runtime, and referenced via the Adobe I/O workspace-based worker URLs.
+To deploy and integrate vustom Asset Compute workers with AEM as a Cloud Service, they are deployed to Adobe I/O Runtime and then invoked from AEM as a Cloud Service Author via Assets Processing Profiles.
 
-### Deploy
+## Deploying workers to Adobe I/O Runtime
 
+Asset Compute workers must be deployed to Adobe I/O Runtime to be used with AEM as a Cloud Service.
 
++ [Using Processing Profiles](./deploy/runtime.md)
 
-### Running workers via AEM Processing Profiles
+## Invoking workers via AEM Processing Profiles
 
+Once deployed to Adobe I/O Runtime, Asset Compute workers can be registered in AEM as a Cloud Service via [Assets Processing Profiles](../../assets/configuring/processing-profiles.md). Processing Profiles are in turn applied to Assets folders, and assets there in 
+
++ [Using Processing Profiles](./deploy/processing-profiles.md)
 
 
 ## Additional resources
