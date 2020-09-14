@@ -23,7 +23,7 @@ Use the [Adobe I/O CLI Asset Compute plugin](../set-up/development-environment.m
 
 1. From the command line navigate to the folder which will contain the project.
 1. From the command line, execute `aio app init` to begin the interactive project generation CLI.
-    + This may spawn a Web browser prompting for authentication to Adobe I/O. If it does, provide your Adobe credentials associated with the [required Adobe services and products](../set-up/accounts-and-service.md). If you are unable to log in, please follow these instructions on how to generate a project. 
+    + This may spawn a Web browser prompting for authentication to Adobe I/O. If it does, provide your Adobe credentials associated with the [required Adobe services and products](../set-up/accounts-and-services.md). If you are unable to log in, please follow these instructions on how to generate a project. 
 1. __Select Org__
     + Select the Adobe Org that has AEM as a Cloud Service, Project Firefly are registered to.
 1. __Select Project__

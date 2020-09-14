@@ -302,14 +302,14 @@ class RenditionInstructionsError extends ClientError {
 
 ## Running the worker
 
-Now that the worker code is complete, and was previously registered and configured in the [manifest.yml](./manfest.md), it can be executed using the local Asset Compute Dev Tool to see the results.
+Now that the worker code is complete, and was previously registered and configured in the [manifest.yml](./manifest.md), it can be executed using the local Asset Compute Dev Tool to see the results.
 
 1. From the root of the Asset Compute project
 1. Execute `app aio run`
 1. Wait for Asset Compute Dev Tool to open in a new window
 1. In the __Select a file...__ drop down, select a sample image to process
     + Select a sample image file to use as the source asset binary. 
-    + If none exist yet, tap the __(+)__ to the left, and upload a [sample image](./assets/worker/sample-file.jpg) file, and refresh the Dev Tools browser window.
+    + If none exist yet, tap the __(+)__ to the left, and upload a [sample image](../assets/samples/sample-file.jpg) file, and refresh the Dev Tools browser window.
 1. Update `"name": "rendition.png"` as this worker to generates a transparent PNG. This "name" parameter is only used for the Dev Tool, and should not relied on.
 
     ```json

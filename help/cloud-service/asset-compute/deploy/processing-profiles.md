@@ -59,7 +59,7 @@ First create a new Processing Profile that will invoke the worker with the confi
 1. Tap __Apply Profile to Folder(s)__ in the top action bar
 1. Select an a folder to apply the Processing Profile to, such as `WKND` and tap __Apply__
 1. Navigate to the folder the Processing Profile was not applied to via __AEM > Assets > Files__ and tap into `WKND`.
-1. Upload a [new asset](./assets/processing-profiles/new-asset.jpeg) to the folder that has the new Processing Profile applied, and wait for the uploaded asset to be processed.
+1. Upload a [new asset](../assets/samples/sample-file.jpg) to the folder that has the new Processing Profile applied, and wait for the uploaded asset to be processed.
 1. Tap the asset to open it's details
 1. Open the __Renditions__ view from the left sidebar
 1. Tap on the asset named `Circle.png` and review the generated rendition

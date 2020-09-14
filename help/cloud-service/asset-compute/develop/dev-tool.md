@@ -44,7 +44,7 @@ This will start the Asset Compute Dev Tool at localhost port 9000, and automatic
 >[!VIDEO](https://video.tv.adobe.com/v/40241?quality=12&learn=on)
 
 1. Ensure Asset Compute Dev Tool is started from your project root using the `aio app run` command.
-1. In the Asset Compute Dev Tool, upload or select a [sample image file](./assets/worker/sample-file.jpg). Ensure it is selected in the __Source file__ dropdown.
+1. In the Asset Compute Dev Tool, upload or select a [sample image file](../assets/samples/sample-file.jpg). Ensure it is selected in the __Source file__ dropdown.
 1. Review the __Asset Compute profile definition__ text area.
     + The `worker` key defines the URL to the deployed Asset Compute worker.
     + The `name` key defines the name of the rendition to generate.

@@ -97,7 +97,7 @@ The [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm module, pr
 
 ### Worker times out while debugging
 
-+ __Error__: Debug Console reports "Action will timeout in -XXX milliseconds" or [Asset Compute Dev Tool's](./dev-tool.md) rendition preview spins indefinitely or
++ __Error__: Debug Console reports "Action will timeout in -XXX milliseconds" or [Asset Compute Dev Tool's](../develop/dev-tool.md) rendition preview spins indefinitely or
 + __Cause__: The worker timeout as defined in the [manifest.yml](../develop/manifest.md) is exceeded during debugging.
 + __Resolution__: Temporarily increase the worker's timeout in the [manifest.yml](../develop/manifest.md) or accelerate debugging activites.
 

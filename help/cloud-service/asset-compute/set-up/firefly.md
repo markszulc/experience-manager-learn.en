@@ -4,7 +4,7 @@
 
 >[!VIDEO](https://video.tv.adobe.com/v/40183/?quality=12&learn=on)
 
-1. Log in to [Adobe Developer Console](https://console.adobe.io) using the Adobe ID associated with the [accounts and services](./accounts-and-service.md) provisioned for this tutorial.
+1. Log in to [Adobe Developer Console](https://console.adobe.io) using the Adobe ID associated with the [accounts and services](./accounts-and-services.md) provisioned for this tutorial.
 1. Ensure you are a __System Administrator__ or in the __Developer Role__ for the correct Adobe Org.
 1. Create a Firefly project by tapping __Create new project > Project from template > Project Firefly__. 
 

@@ -21,8 +21,6 @@ To develop custom Asset Compute applications, the following tools must be instal
 
 The following is an abridge set up instructions. Details around the various development tools are described in their sections below.
 
-![Abridged install](./assets/development-environment/abridged-install.png--TODO)
-
 1. [Install Docker Desktop](https://www.docker.com/products/docker-desktop) for local test execution
     ```
     $ docker pull openwhisk/action-nodejs-v10:latest
@@ -38,7 +36,7 @@ The following is an abridge set up instructions. Details around the various deve
 
 ## Install Visual Studio Code{#vscode}
 
-[Microsoft Visual Studio Code](https://code.visualstudio.com/download) is used for developing and debugging Asset Compute applications. While other [JavaScript-compatible IDE](/../../local-development-environment/development-tools.md#set-up-the-development-ide) can be used to develop the application. only Visual Studio Code can be integrated to [debug](../test-debug/debug.md) Asset Compute applications.
+[Microsoft Visual Studio Code](https://code.visualstudio.com/download) is used for developing and debugging Asset Compute applications. While other [JavaScript-compatible IDE](../../local-development-environment/development-tools.md#set-up-the-development-ide) can be used to develop the application. only Visual Studio Code can be integrated to [debug](../test-debug/debug.md) Asset Compute applications.
 
 _Visual Studio Code 1.48.x+ is required for [#wskdebug](#wskdebug) to work._
 
@@ -69,7 +67,7 @@ $ npm install -g @adobe/aio-cli
 
 ## Install Adobe I/O CLI{#aio}
 
-[Install the Adobe I/O CLI](/../../local-development-environment/development-tools.md#aio-cli), or __aio__ is an command-line (CLI) npm module that facilitates use and interaction with Adobe I/O technologies, and is used for both generate and locally develop custom Asset Compute workers. 
+[Install the Adobe I/O CLI](../../local-development-environment/development-tools.md#aio-cli), or __aio__ is an command-line (CLI) npm module that facilitates use and interaction with Adobe I/O technologies, and is used for both generate and locally develop custom Asset Compute workers. 
 
 ```
 $ npm install -g @adobe/aio-cli
