@@ -237,6 +237,8 @@ With the parameters read, sanitized and validated, code is written to generate t
 
 This code employs the [Jimp APIs](https://github.com/oliver-moran/jimp#jimp) to perform these image transformations.
 
+Asset Compute workers must finish their work synchronously, and the `rendition.path` must be fully written back to before the worker's `renditionCallback` completes. This requires that asynchronous functions calls are made synchronous using the `await` operator. If you are not familiar with JavaScript asynchronous functions and how to have them execute in a synchronous manner, familiarize yourself with [JavaScript's await operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await).
+
 The finished worker `index.js` should look like:
 
 ```javascript
@@ -367,7 +369,13 @@ These are read in the worker `index.js` via:
 
 1. Upload other images as Source images, and try running the worker against them with different parameters!
 
+## Troubleshooting
 
+### Rendition is returned partially drawn
 
++ __Error__: Rendition renders incompletely, when total rendition file size is large
 
+  ![Troubleshooting - Rendition is returned partially drawn](./assets/worker/troubleshooting__await.png)
 
++ __Cause__: The worker's `renditionCallback` function is exiting before the rendition can be completely written to `rendition.path`.
++ __Resolution__: Review the custom worker code and ensure all asynchronous calls are made synchronous.

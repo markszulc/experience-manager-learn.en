@@ -4,7 +4,6 @@
 
 >[!VIDEO](https://video.tv.adobe.com/v/40183/?quality=12&learn=on)
 
-
 1. Log in to [Adobe Developer Console](https://console.adobe.io) using the Adobe ID associated with the [accounts and services](./accounts-and-service.md) provisioned for this tutorial.
 1. Ensure you are a __System Administrator__ or in the __Developer Role__ for the correct Adobe Org.
 1. Create a Firefly project by tapping __Create new project > Project from template > Project Firefly__. 
@@ -13,7 +12,7 @@
     
     + Create a __Project title__, such as `WKND AEM Asset Compute`.
     + The __App name__ must be unique across all Firefly applications and is not modifiable later. Prefixing the your company or organization's name, and postfixing with a meaningful suffix is a good approach, such as `wkndAemAssetCompute`.
-        + App names must be unique across and Adobe Org, so for self-enablement it is often best to postfix your name to the App name, such as `wkndAemAssetComputeJaneDoe` to avoid collisions with colleagues.
+        + For self-enablement it is often best to postfix your name to the __App nam__, such as `wkndAemAssetComputeJaneDoe` to avoid collisions with other Project Firefly applications.
     + Under __Workspaces__ add a new environment named `Development`.
     + Under __Adobe I/O Runtime__ ensure __Include Runtime with each workspace__ is selected.
     + Tap __Save__ to save the project.
@@ -31,12 +30,12 @@
 
 When setting up the [Asset Compute API integration](#set-up) a new keypair was generated and a `config.zip` file was automatically downloaded. This `config.zip` contains the generated public certificate and match `private.key` file. 
 
-1. Unzip `config.zip` to a safe place on your file system as the `private.key` will be [used later](../develop/environment-variables.md).
+1. Unzip `config.zip` to a safe place on your file system as the `private.key` is [used later](../develop/environment-variables.md).
     + Note that secrets and private keys should never be added to Git as a matter of security
 
 ## Review the Service Account (JWT) Credentials
 
-This Adobe I/O project's credentials will be used to interacts with the Asset Compute Adobe I/O Runtime, and will need to be incorporated into the Asset Compute application project. Familiarize yourself with the Service Account (JWT) credentials.
+This Adobe I/O project's credentials are used by the local [Asset Compute Dev Tool](../develop/dev-tool.md) to interact with Adobe I/O Runtime, and will need to be incorporated into the Asset Compute application project. Familiarize yourself with the Service Account (JWT) credentials.
 
 ![Adobe Developer Service Account credentials](./assets/firefly/service-account.png)
 

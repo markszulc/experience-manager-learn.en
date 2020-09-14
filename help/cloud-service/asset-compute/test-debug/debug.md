@@ -75,8 +75,7 @@ The [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm module, pr
 
 ## Troubleshooting
 
-### Debugger does not attachtemperfi
-
+### Debugger does not attach
 
 + __Error__: Error processing launch: Error: Could not connect ot debug target at... 
 + __Cause__: Docker Desktop is not running on the local system. Verify this by reviewing the VS Code Debug Console (View > Debug Console), confirming this error is reported.
@@ -91,7 +90,24 @@ The [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm module, pr
 + __Cause:__ The VS Code debugger was stopped/disconnected.
 + __Resolution:__ Restart the VS Code debugger, and verify it attaches by watching the VS Code Debug Output console (View > Debug Console)
 
-#### VS Code debugger attached after worker execution
+#### VS Code debugger attached after worker execution began
 
 + __Cause:__ The VS Code debugger did not attach prior to tapping __Run__ in Dev Tool.
 + __Resolution:__ Ensure the debugger has attached by reviewing VS Code's Debug Console (View > Debug Console), and then re-run the Asset Compute worker from Dev Tool.
+
+### Worker times out while debugging
+
++ __Error__: Debug Console reports "Action will timeout in -XXX milliseconds" or [Asset Compute Dev Tool's](./dev-tool.md) rendition preview spins indefinitely or
++ __Cause__: The worker timeout as defined in the [manifest.yml](../develop/manifest.md) is exceeded during debugging.
++ __Resolution__: Temporarily increase the worker's timeout in the [manifest.yml](../develop/manifest.md) or accelerate debugging activites.
+
+### Cannot terminate debugger process
+
++ __Error__: `Ctrl-C` on the command line does not terminate the debugger process (`npx adobe-asset-compute devtool`).
++ __Cause__: A bug results in `Ctrl-C` not being recognized as a terminating command.
++ __Resolution__: Manually kill the Node `adobe-asset-compute devtool` process.
+    + __macOS/Linux:__ From a new terminal window, execute the command:
+     ```
+     $ pkill -f 'node /usr/local/bin/npx adobe-asset-compute devtool'
+     ```
+    + __Windows:__ In Task Manager, locate and kill the `node` process with parameters `... adobe-asset-compute devtool`

@@ -8,7 +8,7 @@ doc-type: tutorial
 activity: 
 audience: developer
 kt: 
-thumbnail: 
+thumbnail: 40377.jpg
 ---
 
 # Set up accounts
@@ -55,9 +55,25 @@ If you do not already have access to Microsoft Azure Blob Storage, sign up for a
 
 This tutorial will use Azure Blob Storage, however [Amazon S3](#amazon-s3) can be used as well only minor variation to the tutorial.
 
+>[!VIDEO](https://video.tv.adobe.com/v/40377/?quality=12&learn=on)
+
+1. Log in to your [Microsoft Azure account](https://azure.microsoft.com/en-us/account/).
+1. Navigate to the __Storage Accounts__ Azure services section
+1. Tap __+ Add__ to create a new Blob Storage account
+1. Create a new __Resource group__ as needed, for example: `aem-as-a-cloud-service`
+1. Provide a __Storage account name__, for example: `aemguideswkndassetcomput`
+    + The __Storage account name__ will be used for [configuring cloud storage](./develop/environment-variables.md) for the local Asset Compute Dev Tool
+    + The __Access keys__ associated with the storage account are also required when [configuring cloud storage](./develop/environment-variables.md).
+1. Select the location closest to you
+1. Leave everything else as default, and tap the __Review + create__ button
+1. Review the provisioning request for correctness, and tap __Create__ button if satified
+
+
 ### Amazon S3{#amazon-s3} 
 
-Using [Azure Blob Storage](#azure-blob-storage) is recommended when following along with this tutorial, however [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&trk=ft_card) can also be used. 
+Using [Azure Blob Storage](#azure-blob-storage) is recommended when following along with this tutorial, however [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&trk=ft_card) can also be used.
+
+If using Amazon S3 storage, specifiy the Amazon S3 cloud storage credentials when [configuring the project's environment variables](./develop/environment-variables.md#amazon-s3).
 
 If you need to provision cloud storage specially for this tutorial, we recommend using [Azure Blob Storage](#azure-blob-storage).
 

@@ -47,28 +47,34 @@ ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=/Users/example-user/credentials/aem-guides-w
 
 The credentials used by the Asset Compute application to interact with your Cloud Storage provider are provided in the `.env` file. Provide either the Azure Blob Storage credentials. The values can be obtained from either the Azure Portal or Amazon S3 console.
 
-In this tutorial we will use Azure Blob Storage as our cloud storage provide, however Amazon S3 can be used instead.
+In this tutorial we will use Azure Blob Storage as our cloud storage provide, however Amazon S3 and it's corresponding keys in the `.env` file can be used instead of Azure Blob Storage.
 
 ### Using Azure Blob Storage cloud storage
 
-![Cloud storage credentials](assets/environment-variables/cloud-storage-credentials.png)
-
-If you are using [Microsoft Azure Blob Storage] uncomment and populate the following keys in the `.env` file. 
+If you are using Microsoft Azure Blob Storage uncomment and populate the following keys in the `.env` file. 
 If you are NOT using Microsoft Azure Blob Storage, remove or leave these commented out (by prefixing with `#`).
+
+![Azure Blob Storage](./assets/environment-variables/azure-portal-credentials.png)
+
+1. Value for the `AZURE_STORAGE_CONTAINER_NAME` key
+1. Value for the `AZURE_STORAGE_ACCOUNT` key
+1. Value for the `AZURE_STORAGE_KEY` key
 
 For example, this might look like (values for illustration only):
 
 ```
 ...
 AZURE_STORAGE_ACCOUNT=aemguideswkndassetcomput
-AZURE_STORAGE_KEY=Ba898CnisgabdsNJEJBqCYyVrYttbGbZ2VbhcKIcQEw+xxRUDxOiNY/eExll0vwoLsPt/OvbM+B7pkUdpEe7zJhg==
+AZURE_STORAGE_KEY=Ba898CnisgabdsNJEJBqCYyVrYttbGbZ2...OiNY/eExll0vwoLsPt/OvbM+B7pkUdpEe7zJhg==
 AZURE_STORAGE_CONTAINER_NAME=asset-compute
 ...
 ```
 
-### Using Amazon S3 cloud storage
+![Azure Blob Storage credentials](assets/environment-variables/cloud-storage-credentials.png)
 
-If you are using [Amazon S3 cloud storage] uncomment and populate the following keys in the `.env` file. 
+### Using Amazon S3 cloud storage{#amazon-s3}
+
+If you are using Amazon S3 cloud storage uncomment and populate the following keys in the `.env` file. 
 If you are NOT using Amazon S3, remove or leave these commented out (by prefixing with `#`).
 
 For example, this might look like (values for illustration only):
@@ -77,8 +83,8 @@ For example, this might look like (values for illustration only):
 ...
 S3_BUCKET=aemguideswkndassetcompute
 AWS_ACCESS_KEY_ID=AKIAZLXYMLXJLV35PLO6
-AWS_SECRET_ACCESS_KEY=
-AWS_REGION=
+AWS_SECRET_ACCESS_KEY=Ba898CnisgabdsNJEJBqCYyVrYttbGbZ2...OiNY/eExll0vwoLsPt/Ov
+AWS_REGION=us-east-1
 ...
 ```
 
