@@ -7,7 +7,6 @@ version: cloud-service
 doc-type: tutorial
 activity: 
 audience: developer
-doc-type: article
 kt: 
 thumbnail: 40241.jpg
 ---

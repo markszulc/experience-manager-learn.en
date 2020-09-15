@@ -1,19 +1,19 @@
 ---
-title: Create an Asset Compute project
-description: 
+title: Create an Asset Compute project for Asset Compute extensibility
+description: Asset Compute applications are Node.js projects, generated using the Adobe I/O CLI, that adhere to a certain structure allowing them to be deployed to Adobe I/O Runtime and integrated with AEM as a Cloud Service.
 feature: 
 topics: 
 version: cloud-service
 doc-type: tutorial
 activity: 
 audience: developer
-kt: 
+kt: 6269
 thumbnail: 
 ---
 
 # Create an Asset Compute project
 
-Asset Compute applications are Node.js projects that adhere to a certain stucture that allow them to be deployed to Adone I/O Runtime. A single Asset Compute application can contain one or more Asset Compute workers, with each worker having a discrete HTTP end-point that can be referenced from an AEM as a Cloud Service Processing Profile.
+Asset Compute applications are Node.js projects, generated using the Adobe I/O CLI, that adhere to a certain stucture that allow them to be deployed to Adone I/O Runtime and integrated with AEM as a Cloud Service. A single Asset Compute project can contain one or more Asset Compute workers, with each worker having a discrete HTTP end-point that can be referenced from an AEM as a Cloud Service Processing Profile.
 
 ## Generate a project
 
@@ -42,24 +42,19 @@ Use the [Adobe I/O CLI Asset Compute plugin](../set-up/development-environment.m
 
 ## Review the anatomy of the project
 
-The generated Asset Compute application project is a Node.js project for a specialized Adobe Project Firefly application, that adheres to the following structure:
+The generated Asset Compute project is a Node.js project for a specialized Adobe Project Firefly application, the following are idiosyncratic to Asset Compute project:
 
 + `/actions` contains sub-folders, and each sub-folder defines an Asset Compute worker. 
     + `/actions/worker/index.js` defines the JavaScript code to be executed to perform the work of this worker. 
         + The folder name `worker` is a default, and can be anything, as long as it is registered in the `manifest.yml`.
         + More than one worker folder can be defined under `/actions` as needed, however they must be registered in the `manifest.yml`.
-+ `/dist` is the compiled output directory.
-+ `/node_modules` contains all the dependencies required by the application (as defined in `package.json`)
 + `/test/asset-compute` contains the test suites for each worker. Similar to the `/actions` folder, `/test/asset-compute` can contain multiple sub-folders, each corresponding to the worker it will test.
     + `/test/asset-compute/worker`, representing a test suite for a specific worker, contains sub-folders representing a specific test-case, along with the test input, parameters, and expected output.
++ `/build` contains the output, logs and artifacts of Asset Compute test executions.
 + `/.aio` contains configurations used by the aio CLI tool. This file can be configured via the `aio config` command.
 + `/.env` defines environment variables in a `key=value` syntax and often contains secrets that should not be shared. To protect these secrets, this file should NOT be checked into Git and is ignored via the project's default `.gitignore` file. 
     + Variables defined in this file can be overridden by exporting variables on the command line.
-+ `/.gitignore` standard Git ignore file, enumerating the files and folders not to include in source control.
-+ `/console.json` contains the credentials set up through your Project Firefly project on Adobe I/O.
 + `/manifest.yml` defines what Asset Compute workers, or Adobe I/O Runtime actions, that this project exposes. Each worker implementation that should be deployed must be enumerated in this file.
-+ `/package.json` the traditional [npm package.json](https://nodejs.org/en/knowledge/getting-started/npm/what-is-the-file-package-json/) file representing the project.
-+ `/package-lock.json` the [npm package-log.json](https://docs.npmjs.com/files/package-lock.json) file for the project.
 
 For more details on project structure review, review the [Anatomy of a Adobe Project Firefly application](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application).
 

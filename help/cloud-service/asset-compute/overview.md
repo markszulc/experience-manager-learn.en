@@ -11,7 +11,7 @@ kt: 5802
 thumbnail: KT-5802.jpg
 ---
 
-# Developing for Asset Compute microservices
+# Asset Compute microservices extensibility
 
 AEM as Cloud Service's Asset Compute microservices support the development and deployment of custom workers that can be used to read, and manipulate binary data of assets stored in AEM. 
 

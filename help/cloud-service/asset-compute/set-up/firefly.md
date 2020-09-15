@@ -1,4 +1,19 @@
-# Set up the Adobe I/O Project Firefly project
+---
+title: Set up Adobe I/O Project Firefly for Asset Compute extensibility
+description: Asset Compute applications are specially defined Adobe Project Firefly applications, and as such, require access to Adobe Project Firefly in the Adobe Developer Console in order to set up and deploy them.
+feature: 
+topics: 
+version: cloud-service
+doc-type: tutorial
+activity: 
+audience: developer
+kt: 6268
+thumbnail: 40183.jpg
+---
+
+# Set up Adobe I/O Project Firefly
+
+Asset Compute applications are specially defined Adobe Project Firefly applications, and as such, require access to Adobe Project Firefly in the Adobe Developer Console in order to set up and deploy them.
 
 ## Create and set up an Adobe Project Firefly Adobe I/O project{#set-up}
 
@@ -10,14 +25,14 @@
 
     _If either __Create new project__ button or the __Project Firefly__ type is not available, this means your Adobe Org is not [provisioned with Project Firefly](#request-adobe-project-firefly)._
     
-    + Create a __Project title__, such as `WKND AEM Asset Compute`.
-    + The __App name__ must be unique across all Firefly applications and is not modifiable later. Prefixing the your company or organization's name, and postfixing with a meaningful suffix is a good approach, such as `wkndAemAssetCompute`.
+    + Create a __Project title__, such as: `WKND AEM Asset Compute`.
+    + The __App name__ must be unique across all Firefly applications and is not modifiable later. Prefixing the your company or organization's name, and postfixing with a meaningful suffix is a good approach, such as: `wkndAemAssetCompute`.
         + For self-enablement it is often best to postfix your name to the __App nam__, such as `wkndAemAssetComputeJaneDoe` to avoid collisions with other Project Firefly applications.
     + Under __Workspaces__ add a new environment named `Development`.
     + Under __Adobe I/O Runtime__ ensure __Include Runtime with each workspace__ is selected.
     + Tap __Save__ to save the project.
-1. In the Firefly Project, select the `Development` workspace in the workspace selector on the left.
-1. Tap __+ Add Service > API__ to open the __Add an API__ wizard, use this approach to add the following APIs.
+1. In the Firefly project, select the `Development` workspace in the workspace selector on the left.
+1. Tap __+ Add Service > API__ to open the __Add an API__ wizard, use this approach to add the following APIs:
 
     + __Experience Cloud > Asset Compute__
         + Select __Generate a key pair__ and tap the __Generate keypair__ button, save the automatically downloaded `config.zip` to a safe location for [later use](#private-key).

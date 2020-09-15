@@ -1,19 +1,21 @@
 ---
-title: Set up accounts
-description: 
+title: Set up accounts and services for Asset Compute extensibility
+description: Developing Asset Compute workers require access to accounts and services including AEM as a Cloud Service, Adobe Project Firefly, and cloud storage provided by Microsoft or Amazon.
 feature: 
 topics: 
 version: cloud-service
 doc-type: tutorial
 activity: 
 audience: developer
-kt: 
+kt: 6264
 thumbnail: 40377.jpg
 ---
 
-# Set up accounts
+# Set up accounts and services
 
-This tutorial requires the following services to be provisioning and accessible via the learner's Adobe ID. All Adobe services must be accessible through the same Adobe Org, using your Adobe ID.
+This tutorial requires the following services to be provisioning and accessible via the learner's Adobe ID.
+
+All Adobe services must be accessible through the same Adobe Org, using your Adobe ID.
 
 + [AEM as a Cloud Service](#aem-as-a-cloud-service)
 + [Adobe Project FireFly](#adobe-project-firefly) 
@@ -22,7 +24,9 @@ This tutorial requires the following services to be provisioning and accessible 
     + [Azure Blob Storage](https://azure.microsoft.com/en-us/services/storage/blobs/)
     + or [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&trk=ft_card)
 
-_Ensure you have access to all of the aforementioned services, prior to continuing through this tutorial._
+>[!WARN] Ensure you have access to all of the aforementioned services, prior to continuing through this tutorial.
+> 
+> Review sections below on how to set and provision the required services.
 
 ## AEM as a Cloud Service{#aem-as-a-cloud-service}
 
@@ -64,14 +68,14 @@ This tutorial will use Azure Blob Storage, however [Amazon S3](#amazon-s3) can b
 1. Provide a __Storage account name__, for example: `aemguideswkndassetcomput`
     + The __Storage account name__ will be used for [configuring cloud storage](../develop/environment-variables.md) for the local Asset Compute Dev Tool
     + The __Access keys__ associated with the storage account are also required when [configuring cloud storage](../develop/environment-variables.md).
-1. Select the location closest to you
 1. Leave everything else as default, and tap the __Review + create__ button
+    + Optionally, select the __location__ close to you.
 1. Review the provisioning request for correctness, and tap __Create__ button if satified
 
 
 ### Amazon S3{#amazon-s3} 
 
-Using [Azure Blob Storage](#azure-blob-storage) is recommended when following along with this tutorial, however [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&trk=ft_card) can also be used.
+Using [Microsoft Azure Blob Storage](#azure-blob-storage) is recommended for completeing this tutorial, however [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&trk=ft_card) can also be used.
 
 If using Amazon S3 storage, specifiy the Amazon S3 cloud storage credentials when [configuring the project's environment variables](../develop/environment-variables.md#amazon-s3).
 
