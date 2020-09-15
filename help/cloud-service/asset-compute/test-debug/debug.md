@@ -89,7 +89,6 @@ The [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm module, su
    
    ![aio app logs](./assets/debug/aio-app-logs.png)
 
-
 ## Troubleshooting
 
 ### Debugger does not attach
