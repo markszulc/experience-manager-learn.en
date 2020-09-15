@@ -103,6 +103,8 @@ As Node.js applications, Asset Compute applications benefit from the robust [npm
 
 In this worker, we leverage the [jimp](https://www.npmjs.com/package/jimp) to create and manipulate the rendition image directly in the Node.js code.
 
+>[!WARN] Not all npm modules for asset manipulation are supported by Asset Compute. npm modules that rely on the existing of other applications such as ImageMagick or OS-dependent libraries. It is best to limit to the use of JavaScript-only npm modules.
+
 1. Open the command line in the root of your Asset Compute project (this can be done in VS Code via __Terminal > New Terminal__) and execute the command:
 
     ```
@@ -136,12 +138,12 @@ Asset Compute workers can read in parameters that can be passed in via Processin
 
 These can be read by accessing `rendition.instructions.<parameterName>` in the worker code.
 
-Here we'll read in the renditions target `SIZE`, `BRIGHTNESS` and `CONTRAST`, providing default values if none have been provided via the Processing Profile.
+Here we'll read in the configurable rendition's `SIZE`, `BRIGHTNESS` and `CONTRAST`, providing default values if none have been provided via the Processing Profile. Note that `renditions.instructions` are passed in as strings when invoked from AEM as a Cloud Service Processing Profiles, so ensure they are transformed into the correct data types in the worker code.
 
 ```javascript
 'use strict';
 
-    const { Jimp } = require('jimp');
+const { Jimp } = require('jimp');
 const { worker, SourceCorruptError } = require('@adobe/asset-compute-sdk');
 const fs = require('fs').promises;
 
@@ -152,9 +154,10 @@ exports.main = worker(async (source, rendition, params) => {
     }
 
     // Read in parameters and set defaults if parameters are provided
-    const SIZE = rendition.instructions.size || 800; 
-    const CONTRAST = rendition.instructions.contrast || 0;
-    const BRIGHTNESS = rendition.instructions.brightness || 0;
+    // Processing Profiles pass in instructions as Strings, so make sure to parse to correct data types
+    const SIZE = parseInt(rendition.instructions.size) || 800; 
+    const CONTRAST = parseFloat(rendition.instructions.contrast) || 0;
+    const BRIGHTNESS = parseFloat(rendition.instructions.brightness) || 0;
 
     // Do work here
 }
@@ -166,15 +169,13 @@ Asset Compute workers may encounter situations that result in errors. The Adobe 
 
 Before starting to process the rendition, check to ensure all the parameters are valid and supported in the context of this worker:
 
-+ Ensure the rendition instruction parameters for `size`, `contrast`, and `brightness` are valid. If not, throw a custom error `RenditionInstructionsError`.
-    + We can define this custom class, that extends `ClientError`, at the bottom of this file. The use of a specific, custom error will be useful when [writing tests](../test-debug/test.md) for our worker.
-
-Note these provided error types must also be imported in order to be used.
++ Ensure the rendition instruction parameters for `SIZE`, `CONTRAST`, and `BRIGHTNESS` are valid. If not, throw a custom error `RenditionInstructionsError`.
+    + A custom `RenditionInstructionsError` class that extends `ClientError` is defined at the bottom of this file. The use of a specific, custom error is useful when [writing tests](../test-debug/test.md) for the worker.
 
 ```javascript
 'use strict';
 
-const { Image } = require('image-js'); 
+const { Jimp } = require('jimp');
 // Import the Asset Compute SDK provided `ClientError` 
 const { worker, SourceCorruptError, ClientError } = require('@adobe/asset-compute-sdk');
 const fs = require('fs').promises;
@@ -186,7 +187,6 @@ exports.main = worker(async (source, rendition, params) => {
     }
 
     // Read in parameters and set defaults if parameters are provided
-    // Processing Profiles pass in instructions as Strings, so make sure to parse to correct data types
     const SIZE = parseInt(rendition.instructions.size) || 800; 
     const CONTRAST = parseFloat(rendition.instructions.contrast) || 0;
     const BRIGHTNESS = parseFloat(rendition.instructions.brightness) || 0;
@@ -220,7 +220,7 @@ class RenditionInstructionsError extends ClientError {
 }
 ```
 
-## Creating a rendition
+## Creating the rendition
 
 With the parameters read, sanitized and validated, code is written to generate the rendition. The pseudo code for the rendition generation is as follows:
 
@@ -308,9 +308,10 @@ Now that the worker code is complete, and was previously registered and configur
 1. Execute `app aio run`
 1. Wait for Asset Compute Dev Tool to open in a new window
 1. In the __Select a file...__ drop down, select a sample image to process
-    + Select a sample image file to use as the source asset binary. 
-    + If none exist yet, tap the __(+)__ to the left, and upload a [sample image](../assets/samples/sample-file.jpg) file, and refresh the Dev Tools browser window.
-1. Update `"name": "rendition.png"` as this worker to generates a transparent PNG. This "name" parameter is only used for the Dev Tool, and should not relied on.
+    + Select a sample image file to use as the source asset binary
+    + If none exist yet, tap the __(+)__ to the left, and upload a [sample image](../assets/samples/sample-file.jpg) file, and refresh the Dev Tools browser window
+1. Update `"name": "rendition.png"` as this worker to generates a transparent PNG. 
+    + Note this "name" parameter is only used for the Dev Tool, and should not relied on.
 
     ```json
     {
@@ -323,16 +324,16 @@ Now that the worker code is complete, and was previously registered and configur
     }
     ```
 1. Tap __Run__ and wait for the rendition to generate
-1. The __Renditions__ section previews the generated rendition. Tap the rendition preview to download the full rendition.
+1. The __Renditions__ section previews the generated rendition. Tap the rendition preview to download the full rendition
 
     ![Default PNG rendition](./assets/worker/default-rendition.png) 
 
 ### Run the worker with parameters
 
-Parameters, passed in via Processing Profile configurations, can be simulated in Asset Compute Dev Tools by providing them as key/value pairs on the rendition parameter object.
+Parameters, passed in via Processing Profile configurations, can be simulated in Asset Compute Dev Tools by providing them as key/value pairs on the rendition parameter JSON.
 
-During local development, values can be passed in using various data types, when passed in from AEM as Cloud Service Processing Profiles as strings, so make sure the correct data types are parsed if needed. 
-For example, Jimp's `crop(width, height)` function requires its parameters to be `int`'s. If `parseInt(rendition.instructions.size)` is not parsed to an int, then the call to `jimp.crop(SIZE, SIZE)` will fail as the parameters will be incompatible string types.
+>[!WARN] During local development, values can be passed in using various data types, when passed in from AEM as Cloud Service Processing Profiles as strings, so make sure the correct data types are parsed if needed. 
+> For example, Jimp's `crop(width, height)` function requires its parameters to be `int`'s. If `parseInt(rendition.instructions.size)` is not parsed to an int, then the call to `jimp.crop(SIZE, SIZE)` will fail as the parameters will be incompatible 'String' type.
 
 Our code accepts parameters for:
 
@@ -342,9 +343,9 @@ Our code accepts parameters for:
 
 These are read in the worker `index.js` via:
 
-+ `parseInt(rendition.instructions.size)`
-+ `parseFloat(rendition.instructions.contrast)`
-+ `parseFloat(rendition.instructions.brightness)`
++ `const SIZE = parseInt(rendition.instructions.size) || 800`
++ `const CONTRAST = parseFloat(rendition.instructions.contrast) || 0`
++ `const BRIGHTNESS = parseFloat(rendition.instructions.brightness) || 0`
 
 1. Update the rendition parameters to customize the size, contrast and brightness.
 
@@ -363,11 +364,11 @@ These are read in the worker `index.js` via:
     ```
     
 1. Tap __Run__ again
-1. Tap to download and review the generated rendition. Note its' dimensions and how the contrast and brightness have been increased in comparison to the default rendition.
+1. Tap the rendition preview to download and review the generated rendition. Note its dimensions and how the contrast and brightness have been changed in comparison to the default rendition.
 
     ![Parameterized PNG rendition](./assets/worker/parameterized-rendition.png) 
 
-1. Upload other images as Source images, and try running the worker against them with different parameters!
+1. Upload other images to the __Source file__ dropdown, and try running the worker against them with different parameters!
 
 ## Troubleshooting
 

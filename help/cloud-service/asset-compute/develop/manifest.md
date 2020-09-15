@@ -35,7 +35,7 @@ packages:
       worker: # the auto-generated worker definition
         function: actions/worker/index.js # the entry point to the worker 
         web: 'yes'  # as our worker is invoked over HTTP from AEM Author service
-        runtime: 'nodejs:12' # the target nodejs runtime
+        runtime: 'nodejs:12' # the target nodejs runtime (only 10 and 12 are supported)
         limits:
           concurrency: 10
         annotations:
@@ -60,7 +60,7 @@ packages:
         web: 'yes' 
         runtime: 'nodejs:12'
         limits: # Allows for the tuning of the worker's performance
-          timeout: 60000 # timeout in millseconds (1 minute)
+          timeout: 60000 # timeout in milliseconds (1 minute)
           memorySize: 512 # memory allocated in MB; if the worker offloads heavy computational work to other Web services this number can be reduced
           concurrency: 10 # adjust based on expected concurrent processing and timeout 
         annotations:
@@ -70,7 +70,7 @@ packages:
 
 ## The finished manifest.yml
 
-The resultant `manifest.yml` looks like:
+The final `manifest.yml` looks like:
 
 ```yml
 packages:
@@ -113,11 +113,11 @@ To start Asset Compute Dev Tool for the Asset Compute project:
 ### Incorrect YAML indentation
 
 + __Error:__ YAMLException: bad indentation of a mapping entry at line X, column Y:(via standard out from `aio app run` command)
-+ __Cause:__ Yaml files are white-spaced sensitive, it likely that your intedentation is incorrect.
++ __Cause:__ Yaml files are white-spaced sensitive, it likely that your indentation is incorrect.
 + __Resolution:__ Review your `manifest.yml` and ensure all indentation is correct.
 
 ### memorySize limit is set too low
 
 + __Error:__  Local Dev Server OpenWhiskError: PUT https://adobeioruntime.net/api/v1/namespaces/xxx-xxx-xxx/actions/xxx-0.0.1/__secured_workeroverwrite=true Returned HTTP 400 (Bad Request) --> "The request content was malformed:requirement failed: memory 64 MB below allowed threshold of 134217728 B"
-+ __Cause:__ A `memorySize` limit in the manfest was set beflow the minimum allowed threshold as reported by the error message in bytes.
++ __Cause:__ A `memorySize` limit in the manifest was set below the minimum allowed threshold as reported by the error message in bytes.
 + __Resolution:__  Review the `memorySize` limits in the `manifest.yml` and ensure they are all large than the minimum allowed threshold.

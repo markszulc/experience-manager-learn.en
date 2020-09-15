@@ -13,17 +13,17 @@ thumbnail: 40241.jpg
 
 # Asset Compute Dev Tool
 
-The Asset Compute Local Dev Tool is a web-harness that allows developers to configure and execute Asset Computer workers locally, outside the context of the AEM SDK against the Asset Compute resources in Adobe Runtime.
+The Asset Compute Dev Tool is a local web harness allowing developers to configure and execute Asset Computer workers locally, outside the context of the AEM SDK against the Asset Compute resources in Adobe I/O Runtime.
 
 ## Run the Asset Compute Dev Tool
 
-The Asset Compute Local Dev tool can be run from the root of the Asset Compute application project via the terminal command:
+The Asset Compute Dev Tool can be run from the root of the Asset Compute application project via the terminal command:
 
 ```
 $ aio app run
 ```
 
-This will start the Asset Compute Dev Tool at __http://localhost:9000__, and automatically load it in a browser window. For the Asset Compute Dev Tool to run, [a valid, auto-generated devToolToken must be provided via a query parameter](#troubleshooting__devtooltoken).
+This will start the Dev Tool at __http://localhost:9000__, and automatically open it in a browser window. For the Dev Tool to run, [a valid, auto-generated devToolToken must be provided via a query parameter](#troubleshooting__devtooltoken).
 
 ## Understand the Asset Compute Dev Tools interface{#interface}
 
