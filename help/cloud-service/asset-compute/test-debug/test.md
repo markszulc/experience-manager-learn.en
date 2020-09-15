@@ -6,7 +6,7 @@ The Asset Compute project defines a pattern for quickly and easily creating and 
 
 Asset Compute Worker tests are broken into test suites for each worker in the project, and within each test suite, one or more test cases asserting some condition for the the worker the test suite represents.
 
-The stucture of tests in an Asset Compute project are as follows:
+The structure of tests in an Asset Compute project are as follows:
 
 ```
 actions/<worker-name>/index.js

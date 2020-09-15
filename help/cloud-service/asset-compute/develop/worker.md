@@ -30,9 +30,9 @@ Asset Compute workers implement the Asset Compute SDK worker API contract which 
 
 1. When an Asset Compute worker is invoked from AEM Author service, it is against an AEM asset via a Processing Profile. The asset's __(1a)__ original binary is passed to the worker via rendition callback function's `source` parameter, and __(1b)__ any parameters defined in the Processing Profile via `rendition.instructions` parameter set.
 1. The Asset Compute worker code transforms the source binary provides in __(1a)__ based on any parameters provided by __(1b)__ to generate a rendition of the source binary.
-    + In this tutorial the rendition is created "in process", meaning the worker composes the rendition, however the source binary can be sent to other Web service APIs for rendition genereation as well.
-1. The Asset Comopute worker saves the rendition's binary representation to `rendition.path` which makes it available to be saved into the AEM Author service.
-1. Upon completion, the binary data written to `rendition.path` is exposed via the AEM Authoer Service as a rention for the AEM asset the Asset Compute worker was invoked upon.
+    + In this tutorial the rendition is created "in process", meaning the worker composes the rendition, however the source binary can be sent to other Web service APIs for rendition generation as well.
+1. The Asset Compute worker saves the rendition's binary representation to `rendition.path` which makes it available to be saved into the AEM Author service.
+1. Upon completion, the binary data written to `rendition.path` is exposed via the AEM Author Service as a rendition for the AEM asset the Asset Compute worker was invoked upon.
 
 ## Anatomy of a worker
 
@@ -46,10 +46,10 @@ const { worker, SourceCorruptError } = require('@adobe/asset-compute-sdk');
 const fs = require('fs').promises;
 
 /**
-Exports the worker implemented by a custom rendition callback function, which parameterizes the input/output contract for the worker.
+Exports the worker implemented by a custom rendition callback function, which parametrizes the input/output contract for the worker.
  + `source` represents the asset's original binary used as the input for the worker.
  + `rendition` represents the worker's output, which is the creation of a new asset rendition.
- + `params` are optional parameters, which map to additional key/value pairs, including a sub `auth` object that contians Adobe I/O access credentials.
+ + `params` are optional parameters, which map to additional key/value pairs, including a sub `auth` object that contains Adobe I/O access credentials.
 **/
 exports.main = worker(async (source, rendition, params) => {
     // Perform any necessary source (input) checks
@@ -166,7 +166,7 @@ Asset Compute workers may encounter situations that result in errors. The Adobe 
 
 Before starting to process the rendition, check to ensure all the parameters are valid and supported in the context of this worker:
 
-+ Ensure the rendition intruction parameters for `size`, `contrast`, and `brightness` are valid. If not, throw a custom error `RenditionInstructionsError`.
++ Ensure the rendition instruction parameters for `size`, `contrast`, and `brightness` are valid. If not, throw a custom error `RenditionInstructionsError`.
     + We can define this custom class, that extends `ClientError`, at the bottom of this file. The use of a specific, custom error will be useful when [writing tests](../test-debug/test.md) for our worker.
 
 Note these provided error types must also be imported in order to be used.
@@ -175,7 +175,7 @@ Note these provided error types must also be imported in order to be used.
 'use strict';
 
 const { Image } = require('image-js'); 
-// Import the Asset Compute SDK providedd `ClientError` 
+// Import the Asset Compute SDK provided `ClientError` 
 const { worker, SourceCorruptError, ClientError } = require('@adobe/asset-compute-sdk');
 const fs = require('fs').promises;
 
@@ -211,7 +211,7 @@ class RenditionInstructionsError extends ClientError {
         // Provide a:
         // + message: describing the nature of this erring condition
         // + name: the name of the error; usually same as class name
-        // + reason: a short, searchable, unique error token that idenfies this error
+        // + reason: a short, searchable, unique error token that identifies this error
         super(message, "RenditionInstructionsError", "rendition_instructions_error");
 
         // Capture the strack trace
@@ -291,7 +291,7 @@ exports.main = worker(async (source, rendition, params) => {
     renditionImage.write(rendition.path);
 });
 
-// Custome error used for renditions.instructions parameter checking
+// Custom error used for renditions.instructions parameter checking
 class RenditionInstructionsError extends ClientError {
     constructor(message) {
         super(message, "RenditionInstructionsError", "rendition_instructions_error");
@@ -332,11 +332,11 @@ Now that the worker code is complete, and was previously registered and configur
 Parameters, passed in via Processing Profile configurations, can be simulated in Asset Compute Dev Tools by providing them as key/value pairs on the rendition parameter object.
 
 During local development, values can be passed in using various data types, when passed in from AEM as Cloud Service Processing Profiles as strings, so make sure the correct data types are parsed if needed. 
-For example, Jimp's `crop(width, height)` function requires its parameters to be `ints`. If `parseInt(rendition.instructions.size)` is not parsed to an int, then the call to `jimp.crop(SIZE, SIZE)` will fail as the parameters will be incompatible string types.
+For example, Jimp's `crop(width, height)` function requires its parameters to be `int`'s. If `parseInt(rendition.instructions.size)` is not parsed to an int, then the call to `jimp.crop(SIZE, SIZE)` will fail as the parameters will be incompatible string types.
 
 Our code accepts parameters for:
 
-+ `size` defines the size of the rendition (height and width as ints)
++ `size` defines the size of the rendition (height and width as integers)
 + `contrast` defines the contrast adjust, must be between -1 and 1, as floats
 + `brightness`  defines the bright adjust, must be between -1 and 1, as floats
 
@@ -363,7 +363,7 @@ These are read in the worker `index.js` via:
     ```
     
 1. Tap __Run__ again
-1. Tap to download and review the generated rendition. Note its' dimensions and how the contrast and brightness have been increased in comparison to the defaul rendition.
+1. Tap to download and review the generated rendition. Note its' dimensions and how the contrast and brightness have been increased in comparison to the default rendition.
 
     ![Parameterized PNG rendition](./assets/worker/parameterized-rendition.png) 
 

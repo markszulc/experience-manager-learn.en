@@ -46,7 +46,6 @@ To gain access to Project Firefly, sign-up for the preview.
 1. Wait 2 - 10 days until you have been provisioned before continuing with the tutorial.
     + If you are unsure if you've been provisioned, continue with the next steps and if you are unable to create a __Project Firefly__ project in [Adobe Developer Console](https://console.adobe.io) you still have not been provisioned.
 
-
 ## Cloud storage
 
 Cloud storage is required for local development of Asset Compute applications. 
@@ -72,12 +71,10 @@ This tutorial will use Azure Blob Storage, however [Amazon S3](#amazon-s3) can b
     + Optionally, select the __location__ close to you.
 1. Review the provisioning request for correctness, and tap __Create__ button if satified
 
-
 ### Amazon S3{#amazon-s3} 
 
-Using [Microsoft Azure Blob Storage](#azure-blob-storage) is recommended for completeing this tutorial, however [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&trk=ft_card) can also be used.
+Using [Microsoft Azure Blob Storage](#azure-blob-storage) is recommended for completing this tutorial, however [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&trk=ft_card) can also be used.
 
-If using Amazon S3 storage, specifiy the Amazon S3 cloud storage credentials when [configuring the project's environment variables](../develop/environment-variables.md#amazon-s3).
+If using Amazon S3 storage, specify the Amazon S3 cloud storage credentials when [configuring the project's environment variables](../develop/environment-variables.md#amazon-s3).
 
 If you need to provision cloud storage specially for this tutorial, we recommend using [Azure Blob Storage](#azure-blob-storage).
-

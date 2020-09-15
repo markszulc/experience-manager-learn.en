@@ -13,15 +13,15 @@ thumbnail: KT-5802.jpg
 
 # Asset Compute microservices extensibility
 
-AEM as Cloud Service's Asset Compute microservices support the development and deployment of custom workers that can be used to read, and manipulate binary data of assets stored in AEM. 
+AEM as Cloud Service's Asset Compute microservices support the development and deployment of custom workers that are used to read, and manipulate binary data of assets stored in AEM, most commonly used to create custom asset renditions.
 
-In this tutorial we'll create a simple Asset Compute worker that crops an image to a cirlce, and applied contrast and brightness, and use the process to explore the facets of Asset Compute worker set up, development and deployment.
+This tutorial walks through the creation of a simple Asset Compute worker that crops an image to a circle,  applies configurable contrast and brightness. While the worker itself is basic, this tutorial will use it as an exploration of creating, developing, and deploying a custom Asset Compute worker.
 
 ![Asset Compute tutorial example](./assets/overview/before-and-after.png)
 
 ## Set up
 
-In order to begin developing custom Asset Compute applications, accounts and services must be provisioend and configured, and software installed on the local development machines.
+Prior to developing custom Asset Compute workers, accounts and services must be provisioned and configured, and software installed on the local development machines.
 
 ### Account and service provisioning 
 
@@ -31,21 +31,21 @@ The following accounts and services require provisioning and access to in order 
 
 ### Local development environment
 
-Local development of Asset Compute applications requires a discrete developer tool box for traditional AEM development, including, Microsoft Visual Studio Code, Docker Desktop, Node.js and supporting npm modules.
+Local development of Asset Compute applications requires a specific developer tool set, different from traditional AEM development, including: Microsoft Visual Studio Code, Docker Desktop, Node.js and supporting npm modules.
  
 + [Set up local development environment](./set-up/development-environment.md)
 
-### Adobe I/O Project Firefly project
+### Adobe Project Firefly
 
-Asset Compute applications are specially defined Adobe Project Firefly applications, and as such, require access to Adobe Project Firefly in the Adobe Developer Console in order to set up and deploy them.
+Asset Compute projects are specially defined Adobe Project Firefly applications, and as such, require access to Adobe Project Firefly in the Adobe Developer Console in order to set up and deploy them.
 
-+ [Set up the Adobe Project Firefly project](./set-up/firefly.md)
++ [Set up Adobe Project Firefly](./set-up/firefly.md)
 
 ## Develop 
 
 ### Create a new Asset Compute project
 
-Asset Compute application projects, which contain one or more Asset Compute workers, are generated using the the inteactive Adobe I/O CLI. Asset Compute applications are specially structured Adobe Project Firefly applications, which are in turn Node.js applications. 
+Asset Compute application projects, which contain one or more Asset Compute workers, are generated using the the interactive Adobe I/O CLI. Asset Compute applications are specially structured Adobe Project Firefly applications, which are in turn Node.js applications. 
 
 + [Create a new Asset Compute project](./develop/project.md)
 
@@ -63,7 +63,7 @@ Asset Compute applications contain manifests which define all the Asset Compute 
 
 ### Develop a worker
 
-Developing an Asset Compute worker is the core of extending Asset Compute microservices, as the worker contains the custom code that generates, or orchcestrates the generation of, the asset rendition.
+Developing an Asset Compute worker is the core of extending Asset Compute microservices, as the worker contains the custom code that generates, or orchestrates, the generation of the resultant asset rendition.
 
 + [Develop an Asset Compute worker](./develop/worker.md)
 
@@ -75,7 +75,7 @@ The Asset Compute Dev Tool provides a local Web harness for deploying, executing
 
 ## Test and Debug
 
-Testing and debugging Asset Compute applications and workers is crucial in ensuring workers are functioning properly.  
+Testing and debugging Asset Compute applications and workers is crucial in ensuring workers function properly.  
 
 ### Test a worker
 
@@ -85,23 +85,23 @@ Asset Compute provides a test framework for creating test suites for workers, ma
 
 ### Debug a worker
 
-Asset Compute applications provide various levels of debuggin from simply `console.log(..)` statement output, to integrations with __VS Code__ and  __wskdebug__, allowing developers step through worker code as it executes in real time.
+Asset Compute applications provide various levels of debugging from traditional `console.log(..)` output, to integrations with __VS Code__ and  __wskdebug__, allowing developers step through worker code as it executes in real time.
 
 + [Debug a worker](./test-debug/debug.md)
 
 ## Deploy
 
-To deploy and integrate vustom Asset Compute workers with AEM as a Cloud Service, they are deployed to Adobe I/O Runtime and then invoked from AEM as a Cloud Service Author via Assets Processing Profiles.
+To integrate custom Asset Compute workers with AEM as a Cloud Service, they are first deployed to Adobe I/O Runtime and then invoked from AEM as a Cloud Service Author via Assets Processing Profiles.
 
-## Deploying to Adobe I/O Runtime
+### Deploy to Adobe I/O Runtime
 
 Asset Compute workers must be deployed to Adobe I/O Runtime to be used with AEM as a Cloud Service.
 
 + [Using Processing Profiles](./deploy/runtime.md)
 
-## Invoke workers via AEM Processing Profiles
+### Invoke workers via AEM Processing Profiles
 
-Once deployed to Adobe I/O Runtime, Asset Compute workers can be registered in AEM as a Cloud Service via [Assets Processing Profiles](../../assets/configuring/processing-profiles.md). Processing Profiles are in turn applied to Assets folders, and assets there in 
+Once deployed to Adobe I/O Runtime, Asset Compute workers can be registered in AEM as a Cloud Service via [Assets Processing Profiles](../../assets/configuring/processing-profiles.md). Processing Profiles are, in turn, applied to Assets folders applying to the assets therein.
 
 + [Using AEM Processing Profiles](./deploy/processing-profiles.md)
 

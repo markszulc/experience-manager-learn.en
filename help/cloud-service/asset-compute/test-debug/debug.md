@@ -104,10 +104,11 @@ The [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm module, pr
 ### Cannot terminate debugger process
 
 + __Error__: `Ctrl-C` on the command line does not terminate the debugger process (`npx adobe-asset-compute devtool`).
-+ __Cause__: A bug results in `Ctrl-C` not being recognized as a terminating command.
-+ __Resolution__: Manually kill the Node `adobe-asset-compute devtool` process.
-    + __macOS/Linux:__ From a new terminal window, execute the command:
-     ```
-     $ pkill -f 'node /usr/local/bin/npx adobe-asset-compute devtool'
-     ```
-    + __Windows:__ In Task Manager, locate and kill the `node` process with parameters `... adobe-asset-compute devtool`
++ __Cause__: A bug  in `@adobe/aio-cli-plugin-asset-compute` 1.3.x, results in `Ctrl-C` not being recognized as a terminating command.
++ __Resolution__: Update `@adobe/aio-cli-plugin-asset-compute` to version 1.4.0+
+
+    ```
+    $ aio update
+    ```
+
+    ![Troubleshooting - aio update](./assets/debug/troubleshooting__terminate.png)

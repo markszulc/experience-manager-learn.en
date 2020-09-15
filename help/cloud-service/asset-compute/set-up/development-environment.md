@@ -13,7 +13,7 @@ thumbnail:
 
 # Set up local development environment
 
-Adobe Asset Compute applications cannot be integrated with the local AEM runtime provided by the AEM SDK and are developed using their own toolchain, seperate from that required by AEM applications based on the AEM Maven project archetype.
+Adobe Asset Compute applications cannot be integrated with the local AEM runtime provided by the AEM SDK and are developed using their own tool chain, separate from that required by AEM applications based on the AEM Maven project archetype.
 
 To extend Asset Compute microservices, the following tools must be installed on the local developer machine.
 
