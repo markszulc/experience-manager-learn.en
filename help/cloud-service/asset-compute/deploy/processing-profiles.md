@@ -85,4 +85,4 @@ First create a new Processing Profile that will invoke the worker with the confi
 
 + __Error:__ Asset Processing Failed badge displayed on asset
 + __Cause:__ An error occurred in the execution of the custom worker
-+ __Resolution:__ Follow the instructions on [debugging Adobe I/O Runtime activations](../debug/debug.md#aio-app-logs) using `aio app logs`.
++ __Resolution:__ Follow the instructions on [debugging Adobe I/O Runtime activations](../test-debug/debug.md#aio-app-logs) using `aio app logs`.
