@@ -1,3 +1,16 @@
+---
+title: Test an Asset Compute worker
+description: The Asset Compute project defines a pattern for easily creating and executing tests of Asset Compute workers.
+feature: asset-compute
+topics: renditions, development
+version: cloud-service
+activity: develop
+audience: developer
+doc-type: tutorial
+kt: 
+thumbnail:
+---
+
 # Test an Asset Compute worker
 
 The Asset Compute project defines a pattern for easily creating and executing [tests of Asset Compute workers](https://docs.adobe.com/content/help/en/asset-compute/using/extend/test-custom-application.html).

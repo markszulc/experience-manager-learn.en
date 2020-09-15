@@ -45,19 +45,19 @@ team: TM
 + Asset Compute Extensibility{#asset-compute}
     + [Overview](./asset-compute/overview.md)
     + Set up{#asset-compute-set-up}
-        + [Account and service provisioning ](./asset-compute/set-up/accounts-and-services.md)
+        + [Account and service provisioning](./asset-compute/set-up/accounts-and-services.md)
         + [Local development environment](./asset-compute/set-up/development-environment.md)
-        + [Adobe I/O Project Firefly project](./asset-compute/set-up/firefly.md)
+        + [Adobe Project Firefly](./asset-compute/set-up/firefly.md)
     + Develop{#asset-compute-develop}
-        + [Asset Compute project](./asset-compute/develop/project.md)
-        + [Environment variables](./asset-compute/develop/environment-variables.md)
-        + [manifest.yml](./asset-compute/develop/manifest.md)
-        + [Asset Compute worker](./asset-compute/develop/worker.md)
-        + [Asset Compute Dev Tool](./asset-compute/develop/dev-tool.md)
+        + [Create an Asset Compute project](./asset-compute/develop/project.md)
+        + [Configure environment variables](./asset-compute/develop/environment-variables.md)
+        + [Configure the manifest.yml](./asset-compute/develop/manifest.md)
+        + [Develop a worker](./asset-compute/develop/worker.md)
+        + [Use the Dev Tool](./asset-compute/develop/dev-tool.md)
     + Test and Debug{#asset-compute-test-debug}
-        + [Testing](./asset-compute/test-debug/test.md)
-        + [Debugging](./asset-compute/test-debug/debug.md)
+        + [Test a worker](./asset-compute/test-debug/test.md)
+        + [Debug a worker](./asset-compute/test-debug/debug.md)
     + Deploy{#asset-compute-deploy}
-        + [Deploying to Adobe I/O Runtime](./asset-compute/deploy/runtime.md)
+        + [Deploy to Adobe I/O Runtime](./asset-compute/deploy/runtime.md)
         + [AEM Processing Profiles](./asset-compute/deploy/processing-profiles.md)
 + [Getting Started Developing AEM Sites - WKND Tutorial](./develop-wknd-tutorial.md)

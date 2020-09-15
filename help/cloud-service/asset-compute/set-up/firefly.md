@@ -1,12 +1,12 @@
 ---
 title: Set up Adobe Project Firefly for Asset Compute extensibility
 description: Asset Compute applications are specially defined Adobe Project Firefly applications, and as such, require access to Adobe Project Firefly in the Adobe Developer Console in order to set up and deploy them.
-feature: 
-topics: 
+feature: asset-compute
+topics: renditions, development
 version: cloud-service
-doc-type: tutorial
-activity: 
+activity: develop
 audience: developer
+doc-type: tutorial
 kt: 6268
 thumbnail: 40183.jpg
 ---

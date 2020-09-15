@@ -1,20 +1,20 @@
 ---
-title: Deploy Asset Compute workers for use with AEM as a Cloud Service
-description: 
-feature: 
-topics: 
+title: Deploy Asset Compute workers to Adobe I/O Runtime for use with AEM as a Cloud Service
+description: Asset Compute projects, and the workers they contain, must be deployed to Adobe I/O Runtime to be used by AEM as a Cloud Service. 
+feature: asset-compute
+topics: renditions, development
 version: cloud-service
-doc-type: tutorial
-activity: 
+activity: develop
 audience: developer
 doc-type: tutorial
+
 kt: 
 thumbnail:
 ---
 
 # Deploy to Adobe I/O Runtime
 
-Asset Compute projects, and the workers they contain, must be deployed to Adobe I/O Runtime to be used by AEM as a Cloud Service. 
+Asset Compute projects, and the workers they contain, must be deployed to Adobe I/O Runtime via the Adobe I/O CLI to be used by AEM as a Cloud Service. 
 
 When deploying to Adobe I/O Runtime for use by AEM as a Cloud Service Author services only two environment variables are required:
 

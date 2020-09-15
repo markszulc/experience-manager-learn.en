@@ -1,10 +1,10 @@
 ---
 title: Configure the environment variables for Asset Compute extensibility
 description: Environment variables are maintained in the .env file for local development, and are used to provide Adobe I/O credentials and cloud storage credentials required for local development.
-feature: 
-topics: 
+feature: asset-compute
+topics: renditions, development
 version: cloud-service
-activity: 
+activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6270

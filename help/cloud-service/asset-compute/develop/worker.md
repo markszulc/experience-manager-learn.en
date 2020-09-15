@@ -1,12 +1,12 @@
 ---
-title: Asset compute worker
-description: 
-feature: 
-topics: 
+title: Develop an Asset Compute worker
+description: Asset Compute workers are the core of an Asset Compute application as provide custom functionality that performs, or orchestrates, the work performed on an asset to create a new rendition.
+feature: asset-compute
+topics: renditions, development
 version: cloud-service
-doc-type: tutorial
-activity: 
+activity: develop
 audience: developer
+doc-type: tutorial
 kt: 
 thumbnail: 
 ---

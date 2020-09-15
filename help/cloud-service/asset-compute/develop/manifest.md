@@ -1,21 +1,19 @@
 ---
-title: Configure the manifest.yml of an Asset Compute application
-description: 
-feature: 
-topics: 
+title: Configure the manifest.yml of an Asset Compute project
+description: The Asset Compute project's manifest.yml, describes all the workers in this application to be deployed.
+feature: asset-compute
+topics: renditions, development
 version: cloud-service
-doc-type: tutorial
-activity: 
+activity: develop
 audience: developer
 doc-type: tutorial
 kt: 
 thumbnail:
 ---
 
-
 # Configure the manifest.yml
 
-The `manifest.yml`, located in the root of the Asset Compute application project, describes all the workers in this application to be deployed.
+The `manifest.yml`, located in the root of the Asset Compute project, describes all the workers in this project to be deployed.
 
 ![manifest.yml](./assets/manifest/manifest.png)
 
