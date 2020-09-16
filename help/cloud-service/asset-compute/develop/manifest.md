@@ -7,8 +7,8 @@ version: cloud-service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 
-thumbnail:
+kt: 6281
+thumbnail: KT-6281.jpg
 ---
 
 # Configure the manifest.yml

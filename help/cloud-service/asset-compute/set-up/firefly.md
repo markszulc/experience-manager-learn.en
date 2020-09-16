@@ -15,7 +15,7 @@ thumbnail: 40183.jpg
 
 Asset Compute applications are specially defined Adobe Project Firefly applications, and as such, require access to Adobe Project Firefly in the Adobe Developer Console in order to set up and deploy them.
 
-## Create and set up an Adobe Project Firefly Adobe I/O project{#set-up}
+## Create and set up Adobe Project Firefly in Adobe Developer Console{#set-up}
 
 >[!VIDEO](https://video.tv.adobe.com/v/40183/?quality=12&learn=on)
 

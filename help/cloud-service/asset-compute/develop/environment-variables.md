@@ -8,7 +8,7 @@ activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6270
-thumbnail: 
+thumbnail: KT-6270.jpg
 ---
 
 # Configure the environment variables

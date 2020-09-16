@@ -1,8 +1,8 @@
 ---
-title: Developing for AEM as a Cloud Service Asset Compute microservices 
+title: Asset Compute microservices extensibility for AEM as a Cloud Service
 description: 
-feature: 
-topics: 
+feature: asset-compute
+topics: renditions, development
 version: cloud-service
 doc-type: tutorial
 activity: git cl
@@ -53,13 +53,13 @@ Asset Compute application projects, which contain one or more Asset Compute work
 
 Environment variables are maintained in the `.env` file for local development, and are used to provide Adobe I/O credentials and cloud storage credentials required for local development.
 
-+ [Configure the Asset Compute project's environment variables](./develop/environment-variables.md)
++ [Configure the environment variables](./develop/environment-variables.md)
 
 ### Configure the manifest.yml
 
 Asset Compute applications contain manifests which define all the Asset Compute workers contained within the project, as well as what resources they have available when deployed to Adobe I/O Runtime for execution.
 
-+ [Configure the Asset Compute project's manifest.yml](./develop/manifest.md)
++ [Configure the manifest.yml](./develop/manifest.md)
 
 ### Develop a worker
 
@@ -99,11 +99,11 @@ Asset Compute workers must be deployed to Adobe I/O Runtime to be used with AEM 
 
 + [Using Processing Profiles](./deploy/runtime.md)
 
-### Invoke workers via AEM Processing Profiles
+### Integrate workers via AEM Processing Profiles
 
 Once deployed to Adobe I/O Runtime, Asset Compute workers can be registered in AEM as a Cloud Service via [Assets Processing Profiles](../../assets/configuring/processing-profiles.md). Processing Profiles are, in turn, applied to Assets folders applying to the assets therein.
 
-+ [Using AEM Processing Profiles](./deploy/processing-profiles.md)
++ [Integrate with AEM Processing Profiles](./deploy/processing-profiles.md)
 
 ## Additional resources
 

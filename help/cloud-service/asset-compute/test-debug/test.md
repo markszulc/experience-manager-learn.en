@@ -7,8 +7,8 @@ version: cloud-service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 
-thumbnail:
+kt: 6284
+thumbnail: KT-6284.jpg
 ---
 
 # Test an Asset Compute worker

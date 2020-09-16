@@ -21,10 +21,10 @@ To extend Asset Compute microservices, the following tools must be installed on 
 
 The following is an abridge set up instructions. Details on these development tools are described in discrete sections below.
 
-1. [Install Docker Desktop](https://www.docker.com/products/docker-desktop) and local the (2) required Docker images:
+1. [Install Docker Desktop](https://www.docker.com/products/docker-desktop) and pull the required Docker images:
     ```
     $ docker pull openwhisk/action-nodejs-v10:latest
-    $ docker pull adobeapiplatform/adobe-action-nodejs-v10:3.0.21
+    $ docker pull adobeapiplatform/adobe-action-nodejs-v12:3.0.22
     ```
 1. [Install Visual Studio Code](https://code.visualstudio.com/download)
 1. [Install Node.js 10+](../../local-development-environment/development-tools.md#node-js)
@@ -50,7 +50,7 @@ After installing Docker Desktop, start it and install the following Docker image
 
 ```
 $ docker pull openwhisk/action-nodejs-v10:latest
-$ docker pull adobeapiplatform/adobe-action-nodejs-v10:3.0.21
+$ docker pull adobeapiplatform/adobe-action-nodejs-v12:3.0.22
 ```
 
 Developers on Windows machines should make sure that they are using Linux containers for the images above. The steps to switch to Linux containers are described in the [Docker for Windows documentation](https://docs.docker.com/docker-for-windows/).

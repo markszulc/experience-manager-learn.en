@@ -7,9 +7,8 @@ version: cloud-service
 activity: develop
 audience: developer
 doc-type: tutorial
-
-kt: 
-thumbnail:
+kt: 6286
+thumbnail: KT-6286.jpg
 ---
 
 # Deploy to Adobe I/O Runtime
@@ -56,10 +55,12 @@ The general approach, typically automated by a CI/CD system, for deploying to St
 
 The values of these keys can be set by issuing export commands from the command line:
 
-    + `$ export AIO_runtime_namespace=81368-wkndaemassetcompute-stage`
-    + `$ export AIO_runtime_auth=27100f9f-2676-4cce-b73d-b3fb6bac47d1:0tDu307W6MboQf5VWB1BAK0RHp8xWqSy1CQc3lKe7f63o3aNtAu0Y3nAmN56502W`
+```
+$ export AIO_runtime_namespace=81368-wkndaemassetcompute-stage
+$ export AIO_runtime_auth=27100f9f-2676-4cce-b73d-b3fb6bac47d1:0tDu307W6MboQf5VWB1BAK0RHp8xWqSy1CQc3lKe7f63o3aNtAu0Y3nAmN56502W
+```
    
-    If your Asset Compute workers require any other variables, such at cloud storage, these should be exported as environment variables as well.
+If your Asset Compute workers require any other variables, such at cloud storage, these should be exported as environment variables as well.
 
 1. Once all the environment variables are set for the target workspace to deploy to, execute the deploy command:
     + `aio app deploy`

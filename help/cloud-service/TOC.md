@@ -59,5 +59,5 @@ team: TM
         + [Debug a worker](./asset-compute/test-debug/debug.md)
     + Deploy{#asset-compute-deploy}
         + [Deploy to Adobe I/O Runtime](./asset-compute/deploy/runtime.md)
-        + [AEM Processing Profiles](./asset-compute/deploy/processing-profiles.md)
+        + [Integrate with AEM](./asset-compute/deploy/processing-profiles.md)
 + [Getting Started Developing AEM Sites - WKND Tutorial](./develop-wknd-tutorial.md)
