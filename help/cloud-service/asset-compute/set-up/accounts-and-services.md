@@ -59,6 +59,8 @@ If you do not already have access to Microsoft Azure Blob Storage, sign up for a
 This tutorial will use Azure Blob Storage, however [Amazon S3](#amazon-s3) can be used as well only minor variation to the tutorial.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40377/?quality=12&learn=on)
+_Click-through of provisioning Azure Blob Storage (No audio)_
+
 
 1. Log in to your [Microsoft Azure account](https://azure.microsoft.com/en-us/account/).
 1. Navigate to the __Storage Accounts__ Azure services section

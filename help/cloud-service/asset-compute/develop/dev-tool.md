@@ -43,6 +43,7 @@ This will start the Dev Tool at __http://localhost:9000__, and automatically ope
 ### Run a custom worker
 
 >[!VIDEO](https://video.tv.adobe.com/v/40241?quality=12&learn=on)
+_Click-through of running an Asset Compute work in Dev Tool (No audio)_
 
 1. Ensure Asset Compute Dev Tool is started from your project root using the `aio app run` command.
 1. In the Asset Compute Dev Tool, upload or select a [sample image file](../assets/samples/sample-file.jpg)

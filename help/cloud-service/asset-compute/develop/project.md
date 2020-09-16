@@ -18,6 +18,8 @@ Asset Compute applications are Node.js projects, generated using the Adobe I/O C
 ## Generate a project
 
 >[!VIDEO](https://video.tv.adobe.com/v/40197/?quality=12&learn=on)
+_Click-through of generating an Asset Compute project (No audio)_
+
 
 Use the [Adobe I/O CLI Asset Compute plugin](../set-up/development-environment.md#aio-cli) to generate a new, empty Asset Compute project.
 

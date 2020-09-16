@@ -18,6 +18,7 @@ Asset Compute applications are specially defined Adobe Project Firefly applicati
 ## Create and set up Adobe Project Firefly in Adobe Developer Console{#set-up}
 
 >[!VIDEO](https://video.tv.adobe.com/v/40183/?quality=12&learn=on)
+_Click-through of setting up Adobe Project Firefly (No audio)_
 
 1. Log in to [Adobe Developer Console](https://console.adobe.io) using the Adobe ID associated with the provisioned [accounts and services](./accounts-and-services.md). Ensure you are a __System Administrator__ or in the __Developer Role__ for the correct Adobe Org.
 1. Create a Firefly project by tapping __Create new project > Project from template > Project Firefly__
