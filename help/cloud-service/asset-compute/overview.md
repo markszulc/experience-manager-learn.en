@@ -5,7 +5,7 @@ feature: asset-compute
 topics: renditions, development
 version: cloud-service
 doc-type: tutorial
-activity: git cl
+activity: develop
 audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
@@ -15,9 +15,21 @@ thumbnail: KT-5802.jpg
 
 AEM as Cloud Service's Asset Compute microservices support the development and deployment of custom workers that are used to read, and manipulate binary data of assets stored in AEM, most commonly used to create custom asset renditions.
 
-This tutorial walks through the creation of a simple Asset Compute worker that crops an image to a circle,  applies configurable contrast and brightness. While the worker itself is basic, this tutorial will use it as an exploration of creating, developing, and deploying a custom Asset Compute worker.
+Whereas in AEM 6.x custom AEM Workflow processes were used to read, transform, and write back Asset renditions, in AEM as a Cloud Service Asset Compute workers satisfy this need.
+
+## What you will build
 
 ![Asset Compute tutorial example](./assets/overview/before-and-after.png)
+
+This tutorial walks through the creation of a simple Asset Compute worker that crops an image to a circle,  applies configurable contrast and brightness. While the worker itself is basic, this tutorial will use it as an exploration of creating, developing, and deploying a custom Asset Compute worker.
+
+### Objectives {#objective}
+
+1. Provision and set up the necessary accounts and services to build and deploy an Asset Compute worker
+1. Create and configure an Asset Compute project
+1. Develop am Asset Compute worker that generates a custom rendition 
+1. Write tests for, and learn how to debug the custom Asset Compute worker
+1. Deploy the Asset Compute worker, and integrate it AEM as a Cloud Service Author service via Processing Profiles
 
 ## Set up
 
