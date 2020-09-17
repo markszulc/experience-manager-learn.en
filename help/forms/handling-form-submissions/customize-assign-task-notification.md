@@ -105,6 +105,7 @@ return customMetadataMap;
 ```
 
 ## Use the custom metadata properties in task notification email template
+
 In the email template you can include the metadata property by using the following syntax where amountRequested is the metadata property
 ${amountRequested}
 
