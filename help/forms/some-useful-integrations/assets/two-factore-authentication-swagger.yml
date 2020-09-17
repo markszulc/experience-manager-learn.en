@@ -1,0 +1,91 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: Simple API
+  description: Learning Swagger
+host: api.nexmo.com
+basePath: /verify
+schemes:
+  - https
+paths:
+  /check/json:
+    post:
+      summary: Verify OTP Code
+      
+      
+      produces:
+        - application/json
+      consumes:
+        - application/x-www-form-urlencoded
+      operationId: Verify OTP code
+      parameters:
+        - in: formData
+          name: api_key
+          type: string
+          description: API Key
+        - in: formData
+          name: api_secret
+          type: string
+          description: API Secret Key
+        - in: formData
+          name: request_id
+          type: string
+          description: Vonage
+        - in: formData
+          name: code
+          type: string
+          description: OTP Code
+          
+      responses:
+        '200':
+          description: Successfull Response
+          schema:
+            $ref: '#/definitions/returnvalue'
+  /json:
+    post:
+      summary: Send SMS with code
+      
+      
+      produces:
+        - application/json
+      consumes:
+        - application/x-www-form-urlencoded
+      operationId: Send SMS with OTP Code
+      parameters:
+        - in: formData
+          name: api_key
+          type: string
+          description: API Key
+        - in: formData
+          name: api_secret
+          type: string
+          description: API Secret Key
+        - in: formData
+          name: number
+          type: string
+          description: Number to send SMS
+        - in: formData
+          name: brand
+          type: string
+          description: Vonage
+        - in: formData
+          name: code_length
+          type: string
+          description: Verification code length
+          
+      responses:
+        '200':
+          description: Successfull Response
+          schema:
+            $ref: '#/definitions/returnvalue'
+
+        
+definitions:
+      
+  returnvalue:
+    type: object
+    properties:
+      request_id:
+        type: string
+      status:
+        type: string

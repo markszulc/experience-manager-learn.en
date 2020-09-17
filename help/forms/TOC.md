@@ -29,6 +29,7 @@ index: y
   + [Sending Email](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
   + [Configuring Adaptive Form to trigger AEM Workflow - video](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
   + [PTO AEM Workflow](handling-form-submissions/invoking-aem-workflow-on-form-submission-article-use.md)
+  + [Customize Assign Task Notification](handling-form-submissions/customize-assign-task-notification.md)
 
 + Adaptive Forms {#adaptive-forms}
   + [Installing AEM Forms on Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)

@@ -17,8 +17,8 @@ This tutorial is intended for AEM Forms customers needing to implement custom pr
 
 The main reason for implementing custom process step is to extend the AEM Workflow. For example, if you are using AEM Forms components in your workflow model, you may want to perform the following operations
 
-    * Save the Adaptive Form attachment(s) to the file system
-    * Manipulate the submitted data
+* Save the Adaptive Form attachment(s) to the file system
+* Manipulate the submitted data
 
 To accomplish the above use case, you will typically write an OSGi service that gets executed by the process step.
 
@@ -29,7 +29,7 @@ The first step is to create an maven project using the appropriate Adobe Maven A
 
 ### Create class that implements WorkflowProcess
 
-Open the maven project in your eclipse IDE.Expand&ltprojectname&gt.core folder. Expand the src/main/java folder. You should see a package that ends with "core". Create Java class that implements WorkflowProcess in this package. You will need to override execute method. The signature of execute method is as follows
+Open the maven project in your eclipse IDE.Expandltprojectname&gt.core folder. Expand the src/main/java folder. You should see a package that ends with "core". Create Java class that implements WorkflowProcess in this package. You will need to override execute method. The signature of execute method is as follows
 public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)throws WorkflowException 
 The execute method gives access to the following 3 variables
 
@@ -104,9 +104,9 @@ Line 1 - defines the properties for our component. The process.label property is
 
 Lines 13-15 - The process arguments passed to this OSGi component are split using the "," separator. The values for attachmentPath and saveToLocation are then extracted from the string array.
 
-    attachmentPath - This is the same location that you have specified in the Adaptive Form when you configured the submit action of Adaptive Form to invoke AEM Workflow. This is a name of the folder that you want the attachments to be saved in AEM relative to the payload of the workflow.
+* attachmentPath - This is the same location that you have specified in the Adaptive Form when you configured the submit action of Adaptive Form to invoke AEM Workflow. This is a name of the folder that you want the attachments to be saved in AEM relative to the payload of the workflow.
 
-    saveToLocation - This is the location that you want the attachments to be saved on your AEM server's file system.
+* saveToLocation - This is the location that you want the attachments to be saved on your AEM server's file system.
 
 These two values are passed as process arguments as shown in the screenshot below.
 
