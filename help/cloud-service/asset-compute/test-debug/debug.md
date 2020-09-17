@@ -122,7 +122,7 @@ _Click-through of debugging an Asset Compute worker using wskdebug (No audio)_
 
 + __Error__: `Ctrl-C` on the command line does not terminate the debugger process (`npx adobe-asset-compute devtool`).
 + __Cause__: A bug  in `@adobe/aio-cli-plugin-asset-compute` 1.3.x, results in `Ctrl-C` not being recognized as a terminating command.
-+ __Resolution__: Update `@adobe/aio-cli-plugin-asset-compute` to version 1.4.0+
++ __Resolution__: Update `@adobe/aio-cli-plugin-asset-compute` to version 1.4.1+
 
     ```
     $ aio update
