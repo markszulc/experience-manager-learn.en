@@ -21,7 +21,7 @@ Whereas in AEM 6.x custom AEM Workflow processes were used to read, transform, a
 
 ![Asset Compute tutorial example](./assets/overview/before-and-after.png)
 
-This tutorial walks through the creation of a simple Asset Compute worker that crops an image to a circle,  applies configurable contrast and brightness. While the worker itself is basic, this tutorial will use it as an exploration of creating, developing, and deploying a custom Asset Compute worker.
+This tutorial walks through the creation of a simple Asset Compute worker that crops an image to a circle, applies configurable contrast and brightness. While the worker itself is basic, this tutorial uses it to explore creating, developing, and deploying a custom Asset Compute worker for use with AEM as a Cloud Service.
 
 ### Objectives {#objective}
 
