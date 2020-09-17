@@ -51,7 +51,7 @@ When setting up the [Asset Compute API integration](#set-up) a new key pair was 
 
 ## Review the Service Account (JWT) Credentials
 
-This Adobe I/O project's credentials are used by the local [Asset Compute Dev Tool](../develop/dev-tool.md) to interact with Adobe I/O Runtime, and will need to be incorporated into the Asset Compute application project. Familiarize yourself with the Service Account (JWT) credentials.
+This Adobe I/O project's credentials are used by the local [Asset Compute Development Tool](../develop/development-tool.md) to interact with Adobe I/O Runtime, and will need to be incorporated into the Asset Compute application project. Familiarize yourself with the Service Account (JWT) credentials.
 
 ![Adobe Developer Service Account credentials](./assets/firefly/service-account.png)
 

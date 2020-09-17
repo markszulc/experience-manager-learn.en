@@ -53,7 +53,7 @@ team: TM
         + [Configure environment variables](./asset-compute/develop/environment-variables.md)
         + [Configure the manifest.yml](./asset-compute/develop/manifest.md)
         + [Develop a worker](./asset-compute/develop/worker.md)
-        + [Use the Dev Tool](./asset-compute/develop/dev-tool.md)
+        + [Use the Development Tool](./asset-compute/develop/dev-tool.md)
     + Test and Debug{#test-debug}
         + [Test a worker](./asset-compute/test-debug/test.md)
         + [Debug a worker](./asset-compute/test-debug/debug.md)

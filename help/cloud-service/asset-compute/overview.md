@@ -79,11 +79,11 @@ Developing an Asset Compute worker is the core of extending Asset Compute micros
 
 + [Develop an Asset Compute worker](./develop/worker.md)
 
-### Use the Asset Compute Dev Tool
+### Use the Asset Compute Development Tool
 
-The Asset Compute Dev Tool provides a local Web harness for deploying, executing and previewing worker-generated renditions, supporting rapid and iterative Asset Compute worker development.
+The Asset Compute Development Tool provides a local Web harness for deploying, executing and previewing worker-generated renditions, supporting rapid and iterative Asset Compute worker development.
 
-+ [Use the Asset Compute Dev Tool](./develop/dev-tool.md)
++ [Use the Asset Compute Development Tool](./develop/development-tool.md)
 
 ## Test and Debug
 
@@ -119,8 +119,19 @@ Once deployed to Adobe I/O Runtime, Asset Compute workers can be registered in A
 
 ## Additional resources
 
+The following are various Adobe resources that provide further information and useful API's and SDK's for developing Asset Compute workers.
+
+### Documentation
+
++ [Asset Compute Service documentation](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)
++ [Asset Compute Development Tool readme](https://github.com/adobe/asset-compute-devtool)
+
+## Other code samples
+
 + [Asset Compute example workers](https://github.com/adobe/asset-compute-example-workers)
-+ [Asset Compute Development Tool](https://github.com/adobe/asset-compute-devtool)
+
+## APIs and SDKs
+
 + [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk)
     + [Asset Compute Commons](https://github.com/adobe/asset-compute-commons)
 + [Adobe Cloud Blobstore Wrapper library](https://github.com/adobe/node-cloud-blobstore-wrapper)

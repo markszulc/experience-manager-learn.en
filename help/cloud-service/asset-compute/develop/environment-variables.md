@@ -89,7 +89,7 @@ AWS_REGION=us-east-1
 
 Once the generated Asset Compute project has been configured, validate the configuration prior to making code changes to ensure the supporting services are provisioned, in the `.env` files.
 
-To start Asset Compute Dev Tool for the Asset Compute project:
+To start Asset Compute Development Tool for the Asset Compute project:
 
 1. Open a command line in the Asset Compute project root (in VS Code this can be opened directly in the IDE  via Terminal > New Terminal), and execute the command:
 
@@ -97,16 +97,16 @@ To start Asset Compute Dev Tool for the Asset Compute project:
     $ aio app run
     ```
 
-1. The local Asset Compute Dev Tool will open in your default Web browser at __http://localhost:9000__.
+1. The local Asset Compute Development Tool will open in your default Web browser at __http://localhost:9000__.
 
     ![aio app run](assets/environment-variables/aio-app-run.png)
 
-1. Watch the command line output and Web browser for error messages as Dev Tool initializes.
-1. To stop the Asset Compute Dev Tool, tap `Ctrl-C` in the window that executed `aio app run` to terminate the process.
+1. Watch the command line output and Web browser for error messages as Development Tool initializes.
+1. To stop the Asset Compute Development Tool, tap `Ctrl-C` in the window that executed `aio app run` to terminate the process.
 
 ## Troubleshooting
 
-### Asset Compute Local Dev tools cannot start due to missing private.key
+### Asset Compute Local Development Tools cannot start due to missing private.key
 
 + __Error:__ Local Dev ServerError: Missing required files at validatePrivateKeyFile.... (via standard out from `aio app run` command)
 + __Cause:__ The `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` value in `.env` file, does not point to `private.key` or `private.key` is not read-able by the current user.

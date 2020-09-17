@@ -89,9 +89,9 @@ packages:
 
 ## Validating the manifest.yml
 
-Once the generated Asset Compute `manifest.yml` is updated, run the local Dev Tool and ensure starts successfully with the updated `manifest.yml` settings.
+Once the generated Asset Compute `manifest.yml` is updated, run the local Development Tool and ensure starts successfully with the updated `manifest.yml` settings.
 
-To start Asset Compute Dev Tool for the Asset Compute project:
+To start Asset Compute Development Tool for the Asset Compute project:
 
 1. Open a command line in the Asset Compute project root (in VS Code this can be opened directly in the IDE  via Terminal > New Terminal), and execute the command:
 
@@ -99,12 +99,12 @@ To start Asset Compute Dev Tool for the Asset Compute project:
     $ aio app run
     ```
 
-1. The local Asset Compute Dev Tool will open in your default Web browser at __http://localhost:9000__.
+1. The local Asset Compute Development Tool will open in your default Web browser at __http://localhost:9000__.
 
     ![aio app run](assets/environment-variables/aio-app-run.png)
 
-1. Watch the command line output and Web browser for error messages as Dev Tool initializes.
-1. To stop the Asset Compute Dev Tool, tap `Ctrl-C` in the window that executed `aio app run` to terminate the process.
+1. Watch the command line output and Web browser for error messages as Development Tool initializes.
+1. To stop the Asset Compute Development Tool, tap `Ctrl-C` in the window that executed `aio app run` to terminate the process.
 
 ## Troubleshooting
 

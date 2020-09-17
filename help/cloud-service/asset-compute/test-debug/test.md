@@ -70,11 +70,11 @@ This test case asserts the parameterized input (`params.json`) for the input fil
         "brightness": "-0.50"
     }
     ```
-    These are the same key/values passed into the [Dev Tool's Asset Compute profile definition](../develop/dev-tool.md), less the `worker` key.
+    These are the same key/values passed into the [Development Tool's Asset Compute profile definition](../develop/development-tool.md), less the `worker` key.
 1. Add the expected [rendition file](./assets/test/success-parameterized/rendition.png) to this test case and name it `rendition.png`. This file represents the expected output of the worker for the given input `file.jpg`. 
 1. From the command line, run the tests the project root by executing `aio app test`
     + Ensure [Docker Desktop](../set-up/development-environment.md#docker) and supporting Docker images are installed and started
-    + Terminate any running Dev Tool instances
+    + Terminate any running Development Tool instances
 
 ![Test - Success ](./assets/test/success-parameterized/result.png)
 
@@ -99,7 +99,7 @@ This test case tests to ensure the worker throws the appropriate error when the 
 1. Since no rendition should be generated during an erring execution, no `rendition.<extension>` file is necessary.
 1. Run the test suite from the root of the project by executing the command `aio app test`
     + Ensure [Docker Desktop](../set-up/development-environment.md#docker) and supporting Docker images are installed and started
-    + Terminate any running Dev Tool instances
+    + Terminate any running Development Tool instances
 
 ![Test - Error contrast](./assets/test/error-contrast/result.png)
 
@@ -121,5 +121,5 @@ Test case fails generating an incorrect rendition.
 
 + __Error:__ Failure: Rendition 'rendition.xxx' not as expected.
 + __Cause:__ The worker output a rendition that was not the same as the `rendition.<extension>` provided in the test case. 
-    + If the expected `rendition.<extension>` file is not created in the exact same manner as the locally generated rendition in the test case, the test may fail as there may be some difference in the bits. If the expected rendition in the test case is saved from Dev Tool, meaning generated within Adobe I/O Runtime, the bits may technically be different, causing the test to fail, even if from a human perspective the expected and actual rendition files are identical.
+    + If the expected `rendition.<extension>` file is not created in the exact same manner as the locally generated rendition in the test case, the test may fail as there may be some difference in the bits. If the expected rendition in the test case is saved from Development Tool, meaning generated within Adobe I/O Runtime, the bits may technically be different, causing the test to fail, even if from a human perspective the expected and actual rendition files are identical.
 + __Resolution:__ Review rendition output from the test by navigating to `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`, and compare it to the expected rendition file in the test case.

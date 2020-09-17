@@ -67,7 +67,7 @@ _Click-through of provisioning Azure Blob Storage (No audio)_
 1. Tap __+ Add__ to create a new Blob Storage account
 1. Create a new __Resource group__ as needed, for example: `aem-as-a-cloud-service`
 1. Provide a __Storage account name__, for example: `aemguideswkndassetcomput`
-    + The __Storage account name__ will be used for [configuring cloud storage](../develop/environment-variables.md) for the local Asset Compute Dev Tool
+    + The __Storage account name__ will be used for [configuring cloud storage](../develop/environment-variables.md) for the local Asset Compute Development Tool
     + The __Access keys__ associated with the storage account are also required when [configuring cloud storage](../develop/environment-variables.md).
 1. Leave everything else as default, and tap the __Review + create__ button
     + Optionally, select the __location__ close to you.
