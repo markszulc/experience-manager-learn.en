@@ -106,14 +106,13 @@ return customMetadataMap;
 
 ## Use the custom metadata properties in task notification email template
 
-In the email template you can include the metadata property by using the following syntax where amountRequested is the metadata property
-${amountRequested}
+In the email template you can include the metadata property by using the following syntax where amountRequested is the metadata property `${amountRequested}`
 
 ## Configure Assign Task to use custom metadata property
 
-After the OSGi component is built and deployed into AEM server, configure the Assign Task component to use custom metadata properties.
+After the OSGi component is built and deployed into AEM server, configure the Assign Task component as shown below to use custom metadata properties.
 
-Enable E-mail notifications on task assignment
+
 
 ![Task Notification](assets/task-notification.PNG)
 
@@ -136,5 +135,5 @@ On form submission task assignment notification is sent e-mail id associated wit
 
 >[!NOTE]
 The email template for the assign task notification needs to be in the following format.
-subject=Task Assigned - ${workitem_title}
-message=String representing your email template with out any new line characters
+subject=Task Assigned - `${workitem_title}`
+message=String representing your email template without any new line characters
