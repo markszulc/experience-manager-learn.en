@@ -135,6 +135,8 @@ On form submission task assignment notification is sent to the e-mail id associa
 ![Notification](assets/task-nitification-email.png)
 
 >[!NOTE]
-The email template for the assign task notification needs to be in the following format.  
-subject=Task Assigned - `${workitem_title}`  
-message=String representing your email template without any new line characters
+>The email template for the assign task notification needs to be in the following format.
+>
+> subject=Task Assigned - `${workitem_title}`
+>
+> message=String representing your email template without any new line characters
