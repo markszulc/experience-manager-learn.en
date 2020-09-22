@@ -139,4 +139,4 @@ On form submission task assignment notification is sent to the e-mail id associa
 >
 > subject=Task Assigned - `${workitem_title}`
 >
-> message=String representing your email template without any new line characters
+> message=String representing your email template without any new line characters.
