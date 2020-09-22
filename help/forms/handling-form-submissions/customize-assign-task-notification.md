@@ -24,7 +24,7 @@ To include values from the submitted form data in the e-mail notification, we ne
 
 The recommended approach is to create a OSGI component that implements the getUserMetadata method of the [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
 
-The following code creates 4 metadata properties(_firstName_,_lastName_,_reason_ and _amountRequested_) and sets its value from the submitted data. For example the metadata property _firstName_'s value is set to the value of the element called firstName from the submitted data.
+The following code creates 4 metadata properties(_firstName_,_lastName_,_reason_ and _amountRequested_) and sets its value from the submitted data. For example the metadata property _firstName_'s value is set to the value of the element called firstName from the submitted data. The following code assumes the adaptive form's submitted data is in xml format. Adaptive Forms based on JSON schema or Form Data Model generate data in JSON format.
 
 
 ``` java
@@ -43,7 +43,8 @@ import org.osgi.framework.Constants;
 import org.osgi.service.component.annotations.Component;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.w3c.dom.Document;
+import org.w3c.dom.*;
+
 
 import com.adobe.fd.workspace.service.external.WorkitemUserMetadataService;
 import com.adobe.granite.workflow.WorkflowSession;
@@ -76,15 +77,15 @@ try
     factory = DocumentBuilderFactory.newInstance();
     builder = factory.newDocumentBuilder();
     xmlDocument = builder.parse(xmlDataStream);
-    org.w3c.dom.Node firstNameNode = (org.w3c.dom.Node) xPath.compile("afData/afUnboundData/data/firstName")
+    Node firstNameNode = (org.w3c.dom.Node) xPath.compile("afData/afUnboundData/data/firstName")
             .evaluate(xmlDocument, javax.xml.xpath.XPathConstants.NODE);
     log.debug("The value of first name element  is " + firstNameNode.getTextContent());
-    org.w3c.dom.Node lastNameNode = (org.w3c.dom.Node) xPath.compile("afData/afUnboundData/data/lastName")
+    Node lastNameNode = (org.w3c.dom.Node) xPath.compile("afData/afUnboundData/data/lastName")
             .evaluate(xmlDocument, javax.xml.xpath.XPathConstants.NODE);
-    org.w3c.dom.Node amountRequested = (org.w3c.dom.Node) xPath
+    Node amountRequested = (org.w3c.dom.Node) xPath
             .compile("afData/afUnboundData/data/amountRequested")
             .evaluate(xmlDocument, javax.xml.xpath.XPathConstants.NODE);
-    org.w3c.dom.Node reason = (org.w3c.dom.Node) xPath.compile("afData/afUnboundData/data/reason")
+    Node reason = (org.w3c.dom.Node) xPath.compile("afData/afUnboundData/data/reason")
             .evaluate(xmlDocument, javax.xml.xpath.XPathConstants.NODE);
     customMetadataMap.put("firstName", firstNameNode.getTextContent());
     customMetadataMap.put("lastName", lastNameNode.getTextContent());
@@ -116,24 +117,24 @@ After the OSGi component is built and deployed into AEM server, configure the As
 
 ![Task Notification](assets/task-notification.PNG)
 
-Enable the use of custom metadata properties and select the appropriate OSGi component to use
+## Enable the use of custom metadata properties
 
 ![Custom Meta Data properties](assets/custom-meta-data-properties.PNG)
 
-To try this on your server
+## To try this on your server
 
-* Configure Day CQ Mail Service
+* [Configure Day CQ Mail Service](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
 * Associate a valid e-mail id with [admin user](http://localhost:4502/security/users.html)
 * Download and install the [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) using [package manager](http://localhost:4502/crx/packmgr/index.jsp)
 * Download [Adaptive Form](assets/request-travel-authorization.zip) and import into AEM from the [forms and documents ui](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 * Deploy and start the [Custom Bundle](assets/work-items-user-service-bundle.jar) using the [web console](http://localhost:4502/system/console/bundles)
 * [Preview and submit the form](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
 
-On form submission task assignment notification is sent e-mail id associated with the admin user
+On form submission task assignment notification is sent to the e-mail id associated with the admin user. The following screenshot shows you sample task assignment notification
 
 ![Notification](assets/task-nitification-email.png)
 
 >[!NOTE]
-The email template for the assign task notification needs to be in the following format.
-subject=Task Assigned - `${workitem_title}`
+The email template for the assign task notification needs to be in the following format.  
+subject=Task Assigned - `${workitem_title}`  
 message=String representing your email template without any new line characters
