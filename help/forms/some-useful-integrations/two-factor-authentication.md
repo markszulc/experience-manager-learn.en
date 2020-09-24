@@ -11,6 +11,7 @@ kt: 6317
 
 ---
 
+
 # Verify users using their mobile phone numbers
 
 SMS Two Factor Authentication (Dual Factor Authentication) is a security verification procedure, which is triggered through a user logging into a website, software or application. In the log-in process, the user is automatically sent an SMS to their mobile number containing a unique numeric code.
@@ -44,7 +45,7 @@ To integrate AEM/AEM Forms with third party applications, we need to [create dat
 
 ## Create Form Data Model
 
-AEM Forms data integration provides an intuitive user interface to create and work with [form data models]((https://docs.adobe.com/content/help/en/experience-manager-65/forms/form-data-model/create-form-data-models.html)). A form data model relies on data sources for exchange of data.
+AEM Forms data integration provides an intuitive user interface to create and work with [form data models](https://docs.adobe.com/content/help/en/experience-manager-65/forms/form-data-model/create-form-data-models.html). A form data model relies on data sources for exchange of data.
 The completed form data model can be [downloaded from here](assets/sms-2fa-fdm.zip)
 
 ![fdm](assets/2FA-fdm.PNG)
