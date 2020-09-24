@@ -17,7 +17,8 @@ kt: 6317
 SMS Two Factor Authentication (Dual Factor Authentication) is a security verification procedure, which is triggered through a user logging into a website, software or application. In the log-in process, the user is automatically sent an SMS to their mobile number containing a unique numeric code.
 
 There are a number of organizations providing this service and as long as they have well documented REST API's you can easily integrate AEM Forms using the data integration capabilities of AEM Forms. For the purpose of this tutorial, I have used [Nexmo](https://developer.nexmo.com/verify/overview) to demonstrate the SMS 2FA use case.
-The following steps were followed to SMS 2FA with AEM Forms using Nexmo Verify service.
+
+The following steps were followed to implement the SMS 2FA with AEM Forms using Nexmo Verify service.
 
 ## Create developer account
 
@@ -34,8 +35,9 @@ Authentication methods
 * API specifications can be written in YAML or JSON. The format is easy to learn and readable to both humans and machines. 
 
 To create your first swagger/OpenAPI file, please follow the [OpenAPI documentation](https://swagger.io/docs/specification/2-0/basic-structure/)
+
 >[!NOTE] 
-> AEM Forms support OpenAPI Specification ver2 (fka Swagger).
+> AEM Forms supports OpenAPI Specification version 2.0 (fka Swagger).
 
 Use the [swagger editor](https://editor.swagger.io/) to create your swagger file to describe the operations that send and verify OTP code sent using SMS. The swagger file can be created in JSON or YAML format. The completed swagger file can be downloaded from [here](assets/two-factore-authentication-swagger.zip)
 
@@ -54,7 +56,7 @@ The completed form data model can be [downloaded from here](assets/sms-2fa-fdm.z
 
 Integrate the POST invocations of the Form Data Model with your adaptive form to verify the mobile phone number entered by the user in the form. You are free to create your own adaptive form and use the form data model's POST invocation to send and verify OTP code as per your requirements. 
 
-If you want to use the sample assets with your API keys please follow the following steps
+If you want to use the sample assets with your API keys please follow the following steps:
 
 * [Download the form data model](assets/sms-2fa-fdm.zip) and import into AEM using [package manager](http://localhost:4502/crx/packmgr/index.jsp)
 * Download the sample adaptive form can be [downloaded from here](assets/sms-2fa-verification-af.zip). This sample form uses the service invocations of the form data model that is provided as part of this article.
