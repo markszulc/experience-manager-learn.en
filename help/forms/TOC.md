@@ -31,7 +31,8 @@ index: y
   + [Configuring Adaptive Form to trigger AEM Workflow - video](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
   + [PTO AEM Workflow](handling-form-submissions/invoking-aem-workflow-on-form-submission-article-use.md)
   + [Customize Assign Task Notification](handling-form-submissions/customize-assign-task-notification.md)
-
++ Useful Integrations{#some-useful-integrations}
+  + [Two Factor Authentication](some-useful-integrations/two-factor-authentication.md)
 + Adaptive Forms {#adaptive-forms}
   + [Installing AEM Forms on Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
   + [Prefill Service in Adaptive Forms](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
