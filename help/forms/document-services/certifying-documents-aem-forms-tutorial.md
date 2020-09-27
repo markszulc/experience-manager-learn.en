@@ -53,7 +53,7 @@ The sample bundle uses alias called "ares" to certify the documents. So please m
 **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** as shown in the screenshot below
 ![User-Mapper](assets/user-mapper-service.PNG)
 * [Import Sample Adaptive Form](assets/certify-pdf-af.zip)
-* [Import Client Lib and Custom Submit](assets/certify-document-assets.zip)
+* [Import and install the Custom Submit](assets/custom-submit-certify.zip)
 * [Open the Adaptive Form](http://localhost:4502/content/dam/formsanddocuments/certifypdf/jcr:content?wcmmode=disabled)
 * Upload PDF document that needs to be certified
 **optional** - Specify the signature field that you want to use in certifying the document
