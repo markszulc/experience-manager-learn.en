@@ -112,6 +112,7 @@ index: y
   + [JSON Variables](variables-aem-workflow/part2.md)
   + [Document Variables](variables-aem-workflow/part3.md)
   + [ArrayList Variable](variables-aem-workflow/part4.md)
+  + [Form Data Model Variable](variables-aem-workflow/form-data-model.md)
   + [Rule Editor in AEM Workflow](variables-aem-workflow/part5.md)
 + Storing and Retrieving Form Data in MySQL DB{#storing-and-retrieving-form-data}
    + [Introduction](storing-retrieving-form-data/introduction.md)
