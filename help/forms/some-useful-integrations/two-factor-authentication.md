@@ -62,7 +62,9 @@ If you want to use the sample assets with your API keys please follow the follow
 * Download the sample adaptive form can be [downloaded from here](assets/sms-2fa-verification-af.zip). This sample form uses the service invocations of the form data model that is provided as part of this article.
 * Import the form into AEM from the [Forms and Document UI](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Open the form in edit mode. Open the rule editor for the following field
+
 ![sms-send](assets/check-sms.PNG)
+
 * Edit the rule associated with the field. Provide your appropriate API keys
 * Save the form
 * [Preview the form](http://localhost:4502/content/dam/formsanddocuments/sms-2fa-verification/jcr:content?wcmmode=disabled) and test the functionality
