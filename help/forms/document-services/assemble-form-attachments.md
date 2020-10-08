@@ -1,6 +1,6 @@
 ---
 title: Assemble form attachments
-seo-title: Using Assembler Service in AEM Forms
+
 description: Assemble form attachments in the specified order
 
 uuid: 7895b1a3-6f9d-4413-bb7f-692ea0380fcd
@@ -15,15 +15,15 @@ discoiquuid: a12f52af-7039-4452-a58d-9ad2c0096347
 
 # Assemble form attachments
 
-This article provides assets to assemble adaptive form attachments in a specified order. The form attachments need to be in pdf format for this sample code to work. The following is the use case
-User filling out an adaptive form attaches one or more pdf documents to the form
+This article provides assets to assemble adaptive form attachments in a specified order. The form attachments need to be in pdf format for this sample code to work. The following is the use case.
+User filling out an adaptive form attaches one or more pdf documents to the form.
 On form submission assemble the form attachments to generate one pdf. You can specify the order in which the attachments are assembled to generate the final pdf. 
 
-## Create OSGi component that implements com.adobe.granite.workflow.exec.WorkflowProcess interface
+## Create OSGi component that implements WorkflowProcess interface
 
-Create a OSGi component that implements the com.adobe.granite.workflow.exec.WorkflowProcess interface. The code in this component can be associated with the process step component in the AEM workflow. The execute method of the interface com.adobe.granite.workflow.exec.WorkflowProcess is implemented in this component.
+Create a OSGi component that implements the [com.adobe.granite.workflow.exec.WorkflowProcess interface](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html). The code in this component can be associated with the process step component in the AEM workflow. The execute method of the interface com.adobe.granite.workflow.exec.WorkflowProcess is implemented in this component.
 
-When an adaptive form is submitted to trigger an AEM workflow the submitted data is stored in the file specified under the payload folder. For example this is the submitted data file. We need to assemble the attachments specified under the idcard and bankstatements tag.
+When an adaptive form is submitted to trigger an AEM workflow the submitted data is stored in the specified file under the payload folder. For example this is the submitted data file. We need to assemble the attachments specified under the idcard and bankstatements tag.
 ![submitted-data](assets/submitted-data.JPG).
 
 ### Get the tag names
@@ -92,7 +92,7 @@ After the DDX and the document map is created, the next step is the use the Asse
 The following code assembles and returns the assembled pdf.
 
 ```java
-public com.adobe.aemfd.docmanager.Document assembleDocuments(Map<String, Object> mapOfDocuments, com.adobe.aemfd.docmanager.Document ddxDocument)
+private com.adobe.aemfd.docmanager.Document assembleDocuments(Map<String, Object> mapOfDocuments, com.adobe.aemfd.docmanager.Document ddxDocument)
 {
     AssemblerOptionSpec aoSpec = new AssemblerOptionSpec();
     aoSpec.setFailOnError(true);
@@ -100,12 +100,14 @@ public com.adobe.aemfd.docmanager.Document assembleDocuments(Map<String, Object>
     try
     {
         ar = assemblerService.invoke(ddxDocument, mapOfDocuments, aoSpec);
+        return (com.adobe.aemfd.docmanager.Document) ar.getDocuments().get("GeneratedDocument.pdf");
     }
     catch (OperationException e)
     {
         log.debug(e.getMessage());
     }
-    return (com.adobe.aemfd.docmanager.Document) ar.getDocuments().get("GeneratedDocument.pdf");
+    return null;
+    
 }
 
 ```
@@ -128,21 +130,24 @@ log.debug("Saved !!!!!!");
 session.save();
 
 ```
-
+The following is the payload folder structure after the form attachments are assembled and stored.
 
 ![payload-structure](assets/payload-structure.JPG)
 
-To get this capability working on your AEM Server
+### To get this capability working on your AEM Server
 
 * Download the [Assemble Form Attachments Form](assets/assemble-form-attachments-af.zip) to your local system.
-* Import the form from  [Forms And Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) page.
+* Import the form from the[Forms And Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) page.
 * Download [workflow](assets/assemble-form-attachments.zip) and import into AEM using package manager.
-
+* Download the custom bundle(assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
+* Deploy and start the bundle using the [web console](http://localhost:4502/system/console/bundles)
 * Point your browser to [AssembleAttachments Form](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)
 * Add a attachment in the ID Document and a couple of pdf documents to the bank statements section
 * Submit the form to trigger the workflow
 * Check the workflow's [payload folder in the crx](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload) for the assembled pdf
 
+>[!NOTE]
+> If you have enabled logger for the custom bundle the DDX and the assembled file is written to the folder of your AEM installation.
 
 
 
