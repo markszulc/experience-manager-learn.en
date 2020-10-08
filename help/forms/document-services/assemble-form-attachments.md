@@ -134,7 +134,7 @@ session.save();
 
 To get this capability working on your AEM Server
 
-* Download the [Assemble Form Attachments Form](assets/assemble-form-attachments-af) to your local system.
+* Download the [Assemble Form Attachments Form](assets/assemble-form-attachments-af.zip) to your local system.
 * Import the form from  [Forms And Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) page.
 * Download [workflow](assets/assemble-form-attachments.zip) and import into AEM using package manager.
 
