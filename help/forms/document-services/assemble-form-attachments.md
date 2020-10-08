@@ -109,7 +109,9 @@ public com.adobe.aemfd.docmanager.Document assembleDocuments(Map<String, Object>
 }
 
 ```
+
 ### Save the assembled pdf under the payload folder
+
 
 The final step is to save the assembled pdf under the payload folder. This pdf can then be accessed in the subsequent steps of the workflow for further processing.
 The following code snippet was used to save the file under the payload folder
