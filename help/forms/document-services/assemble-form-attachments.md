@@ -130,6 +130,7 @@ log.debug("Saved !!!!!!");
 session.save();
 
 ```
+
 The following is the payload folder structure after the form attachments are assembled and stored.
 
 ![payload-structure](assets/payload-structure.JPG)
