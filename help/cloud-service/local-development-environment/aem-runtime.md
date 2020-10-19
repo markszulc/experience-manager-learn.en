@@ -17,12 +17,6 @@ Adobe Experience Manager (AEM) can be run locally using the AEM as a Cloud Servi
 
  Note that `~` is used as shorthand for the User's Directory. In Windows, this is the equivalent of `%HOMEPATH%`.
 
->[!VIDEO](https://video.tv.adobe.com/v/32551/?quality=12&learn=on)
-
->[!NOTE]
->
-> This video shows  how to install and run a local instance of Adobe Experience Manager in just a few minutes with the AEM SDK's local quickstart. This video shows starting the AEM SDK's local quickstart by double-clicking on the quickstart Jar file, however this will not work in Java 8 is installed on the computer. Alternatively, the AEM SDK's local quickstart can be started from the command line using the `java -jar ...` command as [described on this page](#set-up-local-aem-author-service).
-
 ## Install Java
 
 Experience Manager is a Java application, and thus requires the Java SDK to support the development tooling.
@@ -48,9 +42,6 @@ The AEM as a Cloud Service SDK, or AEM SDK, contains the Quickstart Jar used to 
 ## Extract the Quickstart Jar from the AEM SDK zip
 
 1. Unzip the downloaded `aem-sdk-XXX.zip` file
-1. Ensure your Experience Manager developer __license.properties__ file is available
-
-Note the same Quickstart Jar and license.properties files are used to start _both_ AEM Author and Publish Services.
 
 ## Set up local AEM Author service{#set-up-local-aem-author-service}
 
@@ -58,7 +49,6 @@ The local AEM Author Service provides developers with a local experience digital
 
 1. Create the folder `~/aem-sdk/author`
 1. Copy the __Quickstart JAR__ file to  `~/aem-sdk/author` and rename it to `aem-author-p4502.jar`
-1. Copy the __license.properties__ file to  `~/aem-sdk/author`
 1. Start the local AEM Author Service by executing the following from the command line:
    + `java -jar aem-author-p4502.jar`
      + Provide the admin password as `admin`. Any admin password is acceptable, however its recommend to use the default for local development to reduce the need to re-configure.
@@ -71,7 +61,6 @@ Windows:
   ```shell
   $ mkdir -p c:\Users\<My User>\aem-sdk\author
   $ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\author\aem-author-p4502.jar
-  $ copy ../license.properties c:\Users\<My User>\aem-sdk\author
   $ cd c:\Users\<My User>\aem-sdk\author
   $ java -jar aem-author-p4502.jar
   ```
@@ -81,7 +70,6 @@ macOS / Linux:
   ```shell
   $ mkdir -p ~/aem-sdk/author
   $ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/author/aem-author-p4502.jar
-  $ cp ../license.properties ~/aem-sdk/author
   $ cd ~/aem-sdk/author
   $ java -jar aem-author-p4502.jar
   ```
@@ -92,7 +80,6 @@ The local AEM Publish Service provides developers with the local experience end-
 
 1. Create the folder `~/aem-sdk/publish`
 1. Copy the __Quickstart JAR__ file to  `~/aem-sdk/publish` and rename it to `aem-publish-p4503.jar`
-1. Copy the __license.properties__ file to  `~/aem-sdk/publish`
 1. Start the local AEM Publish Service by executing the following from the command line:
    + `java -jar aem-publish-p4503.jar`
       + Provide the admin password as `admin`. Any admin password is acceptable, however its recommend to use the default for local development to reduce the need to re-configure.
@@ -105,7 +92,6 @@ Windows:
   ```shell
   $ mkdir -p c:\Users\<My User>\aem-sdk\publish
   $ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\publish\aem-publish-p4503.jar
-  $ copy ../license.properties c:\Users\<My User>\aem-sdk\publish
   $ cd c:\Users\<My User>\aem-sdk\publish
   $ java -jar aem-publish-p4503.jar
   ```
@@ -115,7 +101,6 @@ macOS / Linux:
   ```shell
   $ mkdir -p ~/aem-sdk/publish
   $ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
-  $ cp ../license.properties ~/aem-sdk/publish
   $ cd ~/aem-sdk/publish
   $ java -jar aem-publish-p4503.jar
   ```
