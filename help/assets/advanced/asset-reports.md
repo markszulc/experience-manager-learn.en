@@ -1,5 +1,5 @@
 ---
-title: Using Reports in AEM Assets
+title: Assets Reports in AEM Assets
 description: AEM Assets provides an enterprise level reporting framework that scales for large repositories through an intuitive user experience. 
 feature: reports
 topics: authoring, operations, performance, metadata
@@ -10,7 +10,7 @@ version: 6.3, 6.4, 6.5
 kt: 648
 ---
 
-# Using Reports in AEM Assets{#using-reports-in-aem-assets}
+# Assets Reports{#using-reports-in-aem-assets}
 
 AEM Assets provides an enterprise level reporting framework that scales for large repositories through an intuitive user experience.
 

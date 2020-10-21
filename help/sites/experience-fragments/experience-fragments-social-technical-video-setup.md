@@ -15,6 +15,7 @@ version: 6.3, 6.4, 6.5
 Experience Fragments allow marketers to post experiences created in AEM to social media platforms. The video below details the setup and configuration necessary to publish Experience Fragments to Facebook and Pinterest.
 
 >[!VIDEO](https://video.tv.adobe.com/v/20592/?quality=9&learn=on)
+
 *[Experience Fragments] - Setup and configuration to social post to Facebook and Pinterest*
 
 ## Checklist for configuring Experience Fragments to post to Facebook and Pinterest

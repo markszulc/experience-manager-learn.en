@@ -1,7 +1,7 @@
 ---
 user-guide-title: Getting Started with AEM and Adobe Target 
 user-guide-description: An end-to-end tutorial showing how to deliver personalized experiences using Experience Manager and Target.
-product: experience-manager, target
+product: experience manager
 version: 6.5
 sub-product: sites
 audience: author, marketer, administrator, architect, developer

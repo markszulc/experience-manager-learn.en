@@ -15,6 +15,10 @@ thumbnail: 6352-personalization-using-vec.jpg
 
 Learn how to create an A/B Test Target Activity using Visual Experience Composer (VEC).
 
+Before creating an Activity in Target, you need to do setup:
+
+1. [Integrate Experience Platform Launch and AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
+2. [Integrate Adobe Experience Manager with Adobe Target using Cloud Services](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/target/setup-aem-target-cloud-service.html)
 
 ## Scenario Overview
 

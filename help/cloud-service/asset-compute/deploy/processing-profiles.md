@@ -70,6 +70,14 @@ First create a new Processing Profile that will invoke the worker with the confi
 
 Congratulations! You have finished the [tutorial](../overview.md) on how to extend AEM as a Cloud Service Asset Compute microservices! You should now have the ability to set up, develop, test, debug and deploy custom Asset Compute workers for use by your AEM as a Cloud Service Author service.
 
+### Review the full project source code on Github
+
+The final Asset Compute project is available on Github at:
+
++ [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
+
+_Github contains is the final state of the project, fully populated with the worker and test cases, but does not contain any credentials, ie. `.env`, `.config.json` or `.aio`._
+
 ## Troubleshooting
 
 ### Custom rendition missing from asset

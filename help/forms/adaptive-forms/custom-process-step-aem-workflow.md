@@ -126,7 +126,8 @@ Lines 24-26 - Get ResourceResolver and then the resource pointing to the attachm
 The rest of the code creates Document objects by iterating through the child object of the resource pointing to attachmentFilePath using the API. This document object is specific to AEM Forms. We then use the copyToFile method of the document object to save the document object.
 
 >[!NOTE]
-Since we are using Document object which is specific to AEM Forms, it is required that you include the aemfd-client-sdk dependency in your maven project. The group Id is com.adobe.aemfd and artefact id is aemfd-client-sdk.
+>
+>Since we are using Document object which is specific to AEM Forms, it is required that you include the aemfd-client-sdk dependency in your maven project. The group Id is com.adobe.aemfd and artefact id is aemfd-client-sdk.
 
 #### Build and Deploy
 

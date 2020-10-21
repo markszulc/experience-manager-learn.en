@@ -1,6 +1,6 @@
 ---
 title: Develop an Asset Compute worker
-description: Asset Compute workers are the core of an Asset Compute application as provide custom functionality that performs, or orchestrates, the work performed on an asset to create a new rendition.
+description: Asset Compute workers are the core of an Asset Compute projects as provide custom functionality that performs, or orchestrates, the work performed on an asset to create a new rendition.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -13,26 +13,28 @@ thumbnail: KT-6282.jpg
 
 # Develop an Asset Compute worker
 
-Asset Compute workers are the core of an Asset Compute application as provide custom functionality that performs, or orchestrates, the work performed on an asset to create a new rendition.
+Asset Compute workers are the core of an Asset Compute project as provide custom functionality that performs, or orchestrates, the work performed on an asset to create a new rendition.
 
 The Asset Compute project auto-generates a simple worker that copies the asset's original binary into a named rendition, without any transformations. In this tutorial we'll modify this worker to make a more interesting rendition, to illustrate the power of Asset Compute workers.
 
-We will create am Asset Compute worker that generates a new horizontal image rendition, that covers empty space to the left and right of the asset rendition with a blurred version of the asset. The width, height and blur of the final rendition will be parameterized.
+ We will create an Asset Compute worker that generates a new horizontal image rendition, that covers empty space to the left and right of the asset rendition with a blurred version of the asset. The width, height and blur of the final rendition will be parameterized.
 
-## Understanding the execution of an Asset Compute worker 
+## Logical flow of an Asset Compute worker invocation
 
-Asset Compute workers implement the Asset Compute SDK worker API contract which is simply:
+Asset Compute workers implement the Asset Compute SDK worker API contract, in the `renditionCallback(...)` function, which is conceptually:
 
 + __Input:__ An AEM asset's original asset binary and parameters
 + __Output:__ One or more renditions to be added to the AEM asset
 
-![Asset Compute worker execution flow](./assets/worker/execution-flow.png)
+![Asset Compute worker logical flow](./assets/worker/logical-flow.png)
 
 1. When an Asset Compute worker is invoked from AEM Author service, it is against an AEM asset via a Processing Profile. The asset's __(1a)__ original binary is passed to the worker via rendition callback function's `source` parameter, and __(1b)__ any parameters defined in the Processing Profile via `rendition.instructions` parameter set.
-1. The Asset Compute worker code transforms the source binary provides in __(1a)__ based on any parameters provided by __(1b)__ to generate a rendition of the source binary.
+1. The Asset Compute SDK layer accepts the request from the processing profile, and orchestrates the execution of the custom Asset Compute worker's `renditionCallback(...)` function, transforming the source binary provided in __(1a)__ based on any parameters provided by __(1b)__ to generate a rendition of the source binary.
     + In this tutorial the rendition is created "in process", meaning the worker composes the rendition, however the source binary can be sent to other Web service APIs for rendition generation as well.
 1. The Asset Compute worker saves the rendition's binary representation to `rendition.path` which makes it available to be saved into the AEM Author service.
-1. Upon completion, the binary data written to `rendition.path` is exposed via the AEM Author Service as a rendition for the AEM asset the Asset Compute worker was invoked upon.
+1. Upon completion, the binary data written to `rendition.path` is transported via the Asset Compute SDK and exposed via the AEM Author Service as a rendition available in the AEM UI.
+
+The above diagram articulates the Asset Compute developer-facing concerns and logical flow ot Asset Compute worker invocation. For the curious, the [internal details of Asset Compute execution](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) are available, however only the public Asset Compute SDK API contracts should be depended upon.
 
 ## Anatomy of a worker
 
@@ -99,7 +101,7 @@ This is the worker JavaScript file we will modify in this tutorial.
 
 ## Install and import supporting npm modules
 
-As Node.js applications, Asset Compute applications benefit from the robust [npm module ecosystem](https://npmjs.com). To leverage npm modules we must first install them into our Asset Compute application project.
+Being Node.js based, Asset Compute projects benefit from the robust [npm module ecosystem](https://npmjs.com). To leverage npm modules we must first install them into our Asset Compute project.
 
 In this worker, we leverage the [jimp](https://www.npmjs.com/package/jimp) to create and manipulate the rendition image directly in the Node.js code.
 
@@ -373,6 +375,12 @@ These are read in the worker `index.js` via:
     ![Parameterized PNG rendition](./assets/worker/parameterized-rendition.png) 
 
 1. Upload other images to the __Source file__ dropdown, and try running the worker against them with different parameters!
+
+## Worker index.js on Github
+
+The final `index.js` is available on Github at:
+
++ [aem-guides-wknd-asset-compute/actions/worker/index.js](https://github.com/adobe/aem-guides-wknd-asset-compute/blob/master/actions/worker/index.js)
 
 ## Troubleshooting
 

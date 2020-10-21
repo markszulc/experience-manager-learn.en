@@ -17,6 +17,10 @@ Learn how to export AEM Experience Fragment as Adobe Target Offers.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41245?quality=12&learn=on)
 
+## Next Steps
+
+1. [Create a Target Activity using Experience Fragment Offers](./create-target-activity.md)
+
 ## Supporting Links
 
 * [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) 

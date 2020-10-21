@@ -65,6 +65,7 @@ The version of Dispatcher Tools is different from that of the AEM SDK. Ensure th
 Note that all commands issued below assume the current working directory contains the expanding Dispatcher Tools contents.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30601/?quality=12&learn=on)
+
 *This video uses macOS for illustrative purposes. The equivalent Windows/Linux commands can be used to achieve similar results*
 
 ## Understand the Dispatcher configuration files
@@ -77,6 +78,7 @@ The Dispatcher Tools provides a set of Apache HTTP Web server and Dispatcher con
 These files are intended to be copied into an Experience Manager Maven project to the `dispatcher/src` folder, if they do not already exist in the Experience Manager Maven project.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30602/?quality=12&learn=on)
+
 *This video uses macOS for illustrative purposes. The equivalent Windows/Linux commands can be used to achieve similar results*
 
 A complete description of the configuration files is available in the unpacked Dispatcher Tools as `dispatcher-sdk-x.x.x/docs/Config.html`.
@@ -138,6 +140,7 @@ To run Dispatcher Tools against an Experience Manager project's Dispatcher confi
     ```
 
 >[!VIDEO](https://video.tv.adobe.com/v/30603/?quality=12&learn=on)
+
 *This video uses macOS for illustrative purposes. The equivalent Windows/Linux commands can be used to achieve similar results*
 
 ## Dispatcher Tools logs
@@ -173,6 +176,7 @@ One or many parameters, can be passed to `docker_run`
   ```
 
 >[!VIDEO](https://video.tv.adobe.com/v/30604/?quality=12&learn=on)
+
 *This video uses macOS for illustrative purposes. The equivalent Windows/Linux commands can be used to achieve similar results*
 
 ## When to update Dispatcher Tools{#dispatcher-tools-version}

@@ -17,6 +17,9 @@ Learn how to add Adobe Target extension to your Launch Property
 
 >[!VIDEO](https://video.tv.adobe.com/v/41247?quality=12&learn=on)
 
+## Next Steps
+
+1. [Load and fire a Target call](./load-and-fire-target.md)
 
 ## Supporting Links
 

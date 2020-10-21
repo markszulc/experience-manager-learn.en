@@ -103,6 +103,12 @@ This test case tests to ensure the worker throws the appropriate error when the 
 
 ![Test - Error contrast](./assets/test/error-contrast/result.png)
 
+## Test cases on Github
+
+The final test cases are available on Github at:
+
++ [aem-guides-wknd-asset-compute/test/asset-compute/worker](https://github.com/adobe/aem-guides-wknd-asset-compute/tree/master/test/asset-compute/worker)
+
 ## Troubleshooting
 
 ### No rendition generated

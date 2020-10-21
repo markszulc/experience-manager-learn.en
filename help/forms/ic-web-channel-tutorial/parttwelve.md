@@ -61,5 +61,7 @@ Login to AEM Forms.
 * [Open getad.html](http://localhost:4502/content/getad.html)
 
 * The code associated with this URL will get the accountnumber of the logged in user. This accountnumber is then passed as requestattribute to the FDM. The FDM will then fetch the data associated with this  accountnumber and populate the web channel document.
+
 >[!NOTE]
-Please take a look at the **/apps/AEMForms/fetchad/GET.jsp** file in crx. Please make sure the String variable webChannelDocument is pointing to a valid communication document path.
+>
+>Please take a look at the **/apps/AEMForms/fetchad/GET.jsp** file in crx. Please make sure the String variable webChannelDocument is pointing to a valid communication document path.

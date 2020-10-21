@@ -35,7 +35,7 @@ This tutorial walks through the creation of a simple Asset Compute worker that c
 
  Learn how to properly prepare for extending Asset Compute workers, and understand what services and accounts must be provisioned and configured, and software installed locally for development.
 
-### Account and service provisioning 
+### Account and service provisioning{#accounts-and-services}
 
 The following accounts and services require provisioning and access to in order to complete the tutorial, AEM as a Cloud Service Dev environment or Sandbox program, access to Adobe Project Firefly and  Microsoft Azure Blob Storage.
 
@@ -43,13 +43,13 @@ The following accounts and services require provisioning and access to in order 
 
 ### Local development environment
 
-Local development of Asset Compute applications requires a specific developer tool set, different from traditional AEM development, including: Microsoft Visual Studio Code, Docker Desktop, Node.js and supporting npm modules.
+Local development of Asset Compute projects requires a specific developer tool set, different from traditional AEM development, including: Microsoft Visual Studio Code, Docker Desktop, Node.js and supporting npm modules.
  
 + [Set up local development environment](./set-up/development-environment.md)
 
 ### Adobe Project Firefly
 
-Asset Compute projects are specially defined Adobe Project Firefly applications, and as such, require access to Adobe Project Firefly in the Adobe Developer Console in order to set up and deploy them.
+Asset Compute projects are specially defined Adobe Project Firefly projects, and as such, require access to Adobe Project Firefly in the Adobe Developer Console in order to set up and deploy them.
 
 + [Set up Adobe Project Firefly](./set-up/firefly.md)
 
@@ -59,7 +59,7 @@ Learn how to create and configure an Asset Compute project and then develop a cu
 
 ### Create a new Asset Compute project
 
-Asset Compute application projects, which contain one or more Asset Compute workers, are generated using the the interactive Adobe I/O CLI. Asset Compute applications are specially structured Adobe Project Firefly applications, which are in turn Node.js applications. 
+Asset Compute projects, which contain one or more Asset Compute workers, are generated using the the interactive Adobe I/O CLI. Asset Compute projects are specially structured Adobe Project Firefly projects, which are in turn Node.js projects. 
 
 + [Create a new Asset Compute project](./develop/project.md)
 
@@ -71,7 +71,7 @@ Environment variables are maintained in the `.env` file for local development, a
 
 ### Configure the manifest.yml
 
-Asset Compute applications contain manifests which define all the Asset Compute workers contained within the project, as well as what resources they have available when deployed to Adobe I/O Runtime for execution.
+Asset Compute projects contain manifests which define all the Asset Compute workers contained within the project, as well as what resources they have available when deployed to Adobe I/O Runtime for execution.
 
 + [Configure the manifest.yml](./develop/manifest.md)
 
@@ -99,7 +99,7 @@ Asset Compute provides a test framework for creating test suites for workers, ma
 
 ### Debug a worker
 
-Asset Compute applications provide various levels of debugging from traditional `console.log(..)` output, to integrations with __VS Code__ and  __wskdebug__, allowing developers step through worker code as it executes in real time.
+Asset Compute workers provide various levels of debugging from traditional `console.log(..)` output, to integrations with __VS Code__ and  __wskdebug__, allowing developers step through worker code as it executes in real time.
 
 + [Debug a worker](./test-debug/debug.md)
 
@@ -118,6 +118,14 @@ Asset Compute workers must be deployed to Adobe I/O Runtime to be used with AEM 
 Once deployed to Adobe I/O Runtime, Asset Compute workers can be registered in AEM as a Cloud Service via [Assets Processing Profiles](../../assets/configuring/processing-profiles.md). Processing Profiles are, in turn, applied to Assets folders applying to the assets therein.
 
 + [Integrate with AEM Processing Profiles](./deploy/processing-profiles.md)
+
+## Tutorial codebase on Github
+
+The tutorial codebase is available on Github at:
+
++ [adobe/aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute) @ master branch
+
+The source code does not contain the required `.env` or `config.json` files. These must be added and configured using your [accounts and services](#accounts-and-services) information.
 
 ## Additional resources
 

@@ -54,7 +54,8 @@ The next step is the bind Adaptive Form's text fields to Form Data Model element
 | LastName   | /newhire/lastName  |
 
 >[!NOTE]
-Feel free to add additional text fields and bind them to appropriate form data model elements
+>
+>Feel free to add additional text fields and bind them to appropriate form data model elements
 
 ## Configure Beneficiaries Table
 

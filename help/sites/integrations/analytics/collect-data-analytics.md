@@ -264,6 +264,10 @@ Next add the Analytics extension to your Launch property. We need to send this d
     >
     >We recommend using the *Manage the library for me option* as the Library Management setting as it makes it much easier to keep the `AppMeasurement.js` library up-to-date.
 
+1. Check the box to enable **Use Activity Map**.
+
+   ![Enable Use Activity Map](assets/track-clicked-component/analytic-track-click.png)
+
 1. Under **General** > **Tracking Server**, enter your tracking server, e.g. `tmd.sc.omtrdc.net`. Enter your SSL Tracking Server if your site supports `https://`
 
     ![Enter the tracking servers](assets/collect-data-analytics/analytics-config-trackingServer.png)

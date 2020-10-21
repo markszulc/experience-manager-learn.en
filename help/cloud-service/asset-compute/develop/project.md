@@ -1,6 +1,6 @@
 ---
 title: Create an Asset Compute project for Asset Compute extensibility
-description: Asset Compute applications are Node.js projects, generated using the Adobe I/O CLI, that adhere to a certain structure allowing them to be deployed to Adobe I/O Runtime and integrated with AEM as a Cloud Service.
+description: Asset Compute projects are Node.js projects, generated using the Adobe I/O CLI, that adhere to a certain structure allowing them to be deployed to Adobe I/O Runtime and integrated with AEM as a Cloud Service.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -13,11 +13,12 @@ thumbnail: 40197.jpg
 
 # Create an Asset Compute project
 
-Asset Compute applications are Node.js projects, generated using the Adobe I/O CLI, that adhere to a certain structure that allow them to be deployed to Adobe I/O Runtime and integrated with AEM as a Cloud Service. A single Asset Compute project can contain one or more Asset Compute workers, with each having a discrete HTTP end-point referenceable from an AEM as a Cloud Service Processing Profile.
+Asset Compute projects are Node.js projects, generated using the Adobe I/O CLI, that adhere to a certain structure that allow them to be deployed to Adobe I/O Runtime and integrated with AEM as a Cloud Service. A single Asset Compute project can contain one or more Asset Compute workers, with each having a discrete HTTP end-point referenceable from an AEM as a Cloud Service Processing Profile.
 
 ## Generate a project
 
 >[!VIDEO](https://video.tv.adobe.com/v/40197/?quality=12&learn=on)
+
 _Click-through of generating an Asset Compute project (No audio)_
 
 
@@ -44,7 +45,7 @@ Use the [Adobe I/O CLI Asset Compute plugin](../set-up/development-environment.m
 
 ## Review the anatomy of the project
 
-The generated Asset Compute project is a Node.js project for a specialized Adobe Project Firefly application, the following are idiosyncratic to Asset Compute project:
+The generated Asset Compute project is a Node.js project for a specialized Adobe Project Firefly projects, the following are idiosyncratic to Asset Compute project:
 
 + `/actions` contains sub-folders, and each sub-folder defines an Asset Compute worker. 
     + `/actions/<worker-name>/index.js` defines the JavaScript executed to perform the work of this worker. 
@@ -58,6 +59,14 @@ The generated Asset Compute project is a Node.js project for a specialized Adobe
 + `/.env` defines environment variables in a `key=value` syntax and contains secrets that should not be shared. To protect these secrets, this file should NOT be checked into Git and is ignored via the project's default `.gitignore` file. 
     + Variables defined in this file can be overridden by [exporting variables](../deploy/runtime.md) on the command line.
 
-For more details on project structure review, review the [Anatomy of a Adobe Project Firefly application](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application).
+For more details on project structure review, review the [Anatomy of a Adobe Project Firefly project](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application).
 
 The bulk of the development takes place in the `/actions` folder developing worker implementations, and in `/test/asset-compute` writing tests for the custom Asset Compute workers.
+
+## Asset Compute project on Github
+
+The final Asset Compute project is available on Github at:
+
++ [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
+
+_Github contains is the final state of the project, fully populated with the worker and test cases, but does not contain any credentials, ie. `.env`, `.config.json` oor `.aio`._

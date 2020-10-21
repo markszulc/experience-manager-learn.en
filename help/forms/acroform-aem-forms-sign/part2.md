@@ -25,4 +25,5 @@ The next step is to create a schema from the Acroform created in the earlier ste
 For this demo to work on your system, you will need to create a folder called `acroforms` in AEM Assets. Upload the Acroform into this `acroforms` folder.
 
 >[!NOTE]
-The sample code looks for the acroform in this folder. The acroform is needed to merge the adaptive form's submitted data.
+>
+>The sample code looks for the acroform in this folder. The acroform is needed to merge the adaptive form's submitted data.

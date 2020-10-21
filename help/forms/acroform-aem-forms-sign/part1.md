@@ -31,8 +31,11 @@ Acroforms are forms created using Acrobat. You can create a new form from scratc
 [Adobe Sign Text Tags Document](https://helpx.adobe.com/sign/using/text-tag.html)
 
 >[!NOTE]
-Make sure the acroform filename does not have any spaces in it. The current sample code does not handle spaces.
-The form field names can only contain the following
-* single space 
-* single underscore
-* alphanumeric characters
+>
+>Make sure the acroform filename does not have any spaces in it. The current sample code does not handle spaces.
+>
+>The form field names can only contain the following:
+>
+>* single space 
+>* single underscore
+>* alphanumeric characters

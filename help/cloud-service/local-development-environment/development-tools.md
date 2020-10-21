@@ -81,8 +81,10 @@ If you are using Homebrew, follow the __Install using Homebrew__ instructions in
 ![Node.js and npm](./assets/development-tools/nodejs-and-npm.png)
 
 >[!TIP]
-> [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)-based AEM Projects install an isolated version of Node.js at build time. It is good to keep the local development system's version in sync (or close to) the Node.js and npm versions specified in your AEM Maven project's Reactor pom.xml.
-See this example [AEM Project Reactor pom.xml](https://github.com/adobe/aem-guides-wknd/blob/9ac94f3f40c978a53ec88fae79fbc17dd2db72f2/pom.xml#L117-L118) for where to locate the Node.js and npm build versions.
+>
+>[AEM Project Archetype](https://github.com/adobe/aem-project-archetype)-based AEM Projects install an isolated version of Node.js at build time. It is good to keep the local development system's version in sync (or close to) the Node.js and npm versions specified in your AEM Maven project's Reactor pom.xml.
+>
+>See this example [AEM Project Reactor pom.xml](https://github.com/adobe/aem-guides-wknd/blob/9ac94f3f40c978a53ec88fae79fbc17dd2db72f2/pom.xml#L117-L118) for where to locate the Node.js and npm build versions.
 
 ## Install Maven
 

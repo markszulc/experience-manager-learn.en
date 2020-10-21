@@ -38,6 +38,7 @@ These log statements are available for review differently based on how the Asset
 The [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm module, supports attaching a debugger to Asset Compute workers, including the ability to set breakpoints in VS Code and step through the code.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40383/?quality=12&learn=on)
+
 _Click-through of debugging an Asset Compute worker using wskdebug (No audio)_
 
 1. Ensure [wskdebug](../set-up/development-environment.md#wskdebug) and [ngrok](../set-up/development-environment.md#ngork) npm modules are installed
@@ -61,7 +62,7 @@ _Click-through of debugging an Asset Compute worker using wskdebug (No audio)_
         "attachSimplePort": 0,
         "runtimeExecutable": "wskdebug",
         "args": [
-            "wkndAemAssetCompute-0.0.1/__secured_worker",  // Version must match your Asset Compute application's version
+            "wkndAemAssetCompute-0.0.1/__secured_worker",  // Version must match your Asset Compute worker's version
             "${workspaceFolder}/actions/worker/index.js",  // Points to your worker
             "-l",
             "--ngrok"

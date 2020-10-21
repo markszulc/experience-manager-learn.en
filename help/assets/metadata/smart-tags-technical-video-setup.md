@@ -23,8 +23,7 @@ Provides step by step instructions to integrate Adobe Experience Manager (AEM) w
 
 >[!NOTE]
 >
-> To setup Smart Content Service, you need to have
-An Adobe ID account with administrator privileges for the organization with Smart Content Service enabled.
+>To setup Smart Content Service, you need to have an Adobe ID account with administrator privileges for the organization with Smart Content Service enabled.
 
 The video details out the following key tasks that are required to configure the Smart Content Service.
 

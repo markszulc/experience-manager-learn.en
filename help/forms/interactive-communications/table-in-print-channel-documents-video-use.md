@@ -8,8 +8,6 @@ audience: developer
 doc-type: technical video
 activity: implement
 version: 6.4,6.5
-
-
 ---
 
 # Using Table Component in AEM Forms Print Channel Document {#using-table-component-in-aem-forms-print-channel-document}
@@ -21,7 +19,8 @@ The following video walks through the steps required to use table component in I
 Tables are used to display data in tabular manner. The rows in the table need to grow or shrink depending on the data returned by the data source. To use a table in print channel document, we need to create layout file(xdp file) using AEM Forms Designer. In this layout file, we add the table with the required number of columns. Make sure the column field object type is either TextField or Numeric Field depending on your requirements. For each of the column, fields make sure the data binding is set to Use Name.
 
 >[!NOTE]
-To make table dynamic, make sure you have marked the Row as repeating.
+>
+>To make table dynamic, make sure you have marked the Row as repeating.
 
 **Try it on your own server**
 

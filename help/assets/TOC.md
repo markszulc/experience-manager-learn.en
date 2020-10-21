@@ -40,10 +40,11 @@ team: TM
   + [Search Boost](./search-and-discovery/search-boost.md)
 
 + Advanced Capabilities{#advanced}
-  + [Permissions (CUGs)](./advanced/closed-user-groups.md)
-  + [Assets Reports](./advanced/asset-reports.md)
-  + [Asset Insights](./advanced/asset-insights-launch-tutorial.md)
   + [Annotations PDF Output](./advanced/customizing-annotations-pdf-output.md)
+  + [Asset Insights](./advanced/asset-insights-launch-tutorial.md)
+  + [Assets Reports](./advanced/asset-reports.md)
+  + [Permissions (CUGs)](./advanced/closed-user-groups.md)
+  + [Watermarks](./advanced/watermarks.md)
 
 + Advanced Metadata Management{#metadata}
   + [Cascading Metadata](metadata/cascade-metadata-feature-video-use.md)

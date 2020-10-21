@@ -13,7 +13,7 @@ thumbnail: KT-6266.jpg
 
 # Set up local development environment
 
-Adobe Asset Compute applications cannot be integrated with the local AEM runtime provided by the AEM SDK and are developed using their own tool chain, separate from that required by AEM applications based on the AEM Maven project archetype.
+Adobe Asset Compute projects cannot be integrated with the local AEM runtime provided by the AEM SDK and are developed using their own tool chain, separate from that required by AEM applications based on the AEM Maven project archetype.
 
 To extend Asset Compute microservices, the following tools must be installed on the local developer machine.
 
@@ -39,7 +39,7 @@ The following is an abridge set up instructions. Details on these development to
 
 ## Install Visual Studio Code{#vscode}
 
-[Microsoft Visual Studio Code](https://code.visualstudio.com/download) is used for developing and debugging Asset Compute applications. While other [JavaScript-compatible IDE](../../local-development-environment/development-tools.md#set-up-the-development-ide) can be used to develop the application, only Visual Studio Code can be integrated to [debug](../test-debug/debug.md) Asset Compute applications.
+[Microsoft Visual Studio Code](https://code.visualstudio.com/download) is used for developing and debugging Asset Compute workers. While other [JavaScript-compatible IDE](../../local-development-environment/development-tools.md#set-up-the-development-ide) can be used to develop the worker, only Visual Studio Code can be integrated to [debug](../test-debug/debug.md) Asset Compute worker.
 
 _Visual Studio Code 1.48.x+ is required for [wskdebug](#wskdebug) to work._
 
@@ -60,7 +60,7 @@ Developers on Windows machines should make sure that they are using Linux contai
 
 ## Install Node.js (and npm){#node-js}
 
-Asset Compute workers are [Node.js](https://nodejs.org/) applications, and thus require Node.js 10+ (and npm) to develop and build.
+Asset Compute workers are [Node.js](https://nodejs.org/)-based, and thus require Node.js 10+ (and npm) to develop and build.
 
 + [Install Node.js (and npm)](../../local-development-environment/development-tools.md#node-js) in the same manner as for traditional AEM development.
 
@@ -82,7 +82,7 @@ $ aio plugins:install @adobe/aio-cli-plugin-asset-compute
 
 ## Install wskdebug{#wskdebug}
 
-Download and install the [Apache OpenWhisk debug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm module to facilitate local debugging of Asset Compute applications.
+Download and install the [Apache OpenWhisk debug](https://www.npmjs.com/package/@openwhisk/wskdebug) npm module to facilitate local debugging of Asset Compute workers.
 
 _Visual Studio Code 1.48.x+ is required for [wskdebug](#wskdebug) to work._
 
@@ -92,7 +92,7 @@ $ npm install -g @openwhisk/wskdebug
 
 ## Install ngrok{#ngrok}
 
-Download and install the [ngrok](https://www.npmjs.com/package/ngrok) npm module, which provides public access to your local development machine, to facilitate local debugging of Asset Compute applications.
+Download and install the [ngrok](https://www.npmjs.com/package/ngrok) npm module, which provides public access to your local development machine, to facilitate local debugging of Asset Compute workers.
 
 ```
 $ npm install -g ngrok --unsafe-perm=true

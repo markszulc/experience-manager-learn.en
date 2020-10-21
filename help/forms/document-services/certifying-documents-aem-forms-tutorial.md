@@ -41,9 +41,11 @@ You can write your own OSGi bundle and use the AEM Forms Client SDK to implement
 * [Creating your first OSGi bundle](https://helpx.adobe.com/experience-manager/using/maven_arch13.html)
 * [Use Document Service API](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
 
-Or you can use the sample bundle included as part of this tutorial assets. 
+Or you can use the sample bundle included as part of this tutorial assets.
+
 >[!NOTE]
-The sample bundle uses alias called "ares" to certify the documents. So please make sure your alias is called "ares" when using this bundle
+>
+>The sample bundle uses alias called "ares" to certify the documents. So please make sure your alias is called "ares" when using this bundle
 
 ## Testing the sample on your local system
 

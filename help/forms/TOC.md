@@ -162,7 +162,9 @@ index: y
   + [Apply Usage Rights to PDF on XDP Rendition](document-services/rendering-and-reader-extending-xdp-templates-article.md)
   + [Apply Usage Rights to Uploaded PDF](document-services/apply-reader-extension-rights-to-pdf.md)
   + [Certify Documents](document-services/certifying-documents-aem-forms-tutorial.md)
-+ Interactive Communications for Print Channel {#ic-print-channel-tutorial}
+  + [Assemble Form Attachments](document-services/assemble-form-attachments.md)
++ Interactive Communications for Print Channel 
+{#ic-print-channel-tutorial}
   + [Introduction](ic-print-channel-tutorial/introduction.md)
   + [Set up Tomcat](ic-print-channel-tutorial/set-up-tomcat.md)
   + [Create Data Source](ic-print-channel-tutorial/create-data-source.md)

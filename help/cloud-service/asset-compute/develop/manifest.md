@@ -1,6 +1,6 @@
 ---
 title: Configure the manifest.yml of an Asset Compute project
-description: The Asset Compute project's manifest.yml, describes all the workers in this application to be deployed.
+description: The Asset Compute project's manifest.yml, describes all the workers in this project to be deployed.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -86,6 +86,13 @@ packages:
         annotations:
           require-adobe-auth: true
 ```
+
+## manifest.yml on Github
+
+The final `.manifest.yml` is available on Github at:
+
++ [aem-guides-wknd-asset-compute/manifest.yml](https://github.com/adobe/aem-guides-wknd-asset-compute/blob/master/manifest.yml)
+
 
 ## Validating the manifest.yml
 

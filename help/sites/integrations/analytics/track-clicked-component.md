@@ -248,9 +248,13 @@ Currently the **CTA Clicked** rule simply outputs a console statement. Next, use
 
     * `evar8` - `%Component ID%`
     * `prop8` - `%Component ID%`
-    * `event8` - `CTA Clicked`
+    * `event8`
 
     ![Set eVar Prop and events](assets/track-clicked-component/set-evar-prop-event.png)
+
+    >[!NOTE]
+    >
+    > Here `%Component ID%` is used since it will gaurantee a unique identifier for the CTA that was clicked. A potential downside of using `%Component ID%` is that the Analytics report will contain values like `button-2e6d32893a`. Using `%Component Title%` would give a more human friendly name but the value might not be unique.
 
 1. Next, add an additional Action to the right of the **Adobe Analytics - Set Variables** by tapping the **plus** icon:
 
@@ -258,9 +262,11 @@ Currently the **CTA Clicked** rule simply outputs a console statement. Next, use
 
 1. Set the **Extension** type to **Adobe Analytics** and set the **Action Type** to  **Send Beacon**.
 1. Under **Tracking** set the radio button to **`s.tl()`**.
-1. For **Link Type** choose **Custom Link** and for **Link Name** set the value to the data element **Component Title**:
+1. For **Link Type** choose **Custom Link** and for **Link Name** set the value to: **`%Component Title%: CTA Clicked`**:
 
     ![Configuraiton for Send Link beacon](assets/track-clicked-component/analytics-send-beacon-link-track.png)
+
+    This will combine the dynamic variable from the data element **Component Title** and the static string **CTA Clicked**.
 
 1. Save the changes. The **CTA Clicked** rule should now have the following configuration:
 

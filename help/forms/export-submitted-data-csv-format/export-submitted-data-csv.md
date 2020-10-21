@@ -37,7 +37,8 @@ The following OSGI service was created to export the submitted data in CSV forma
 * Line 89: This is the entry point to the service.The method `getCSVFile(..)` takes in formName as input parameter and fetches the submitted data pertaining to the given form name.
 
 >[!NOTE]
-The code assumes you have defined connection pooled DataSource called "aemformstutorial" in Felix Web Console.The code also assumes that you have a schema in the database called aemformstutorial
+>
+>The code assumes you have defined connection pooled DataSource called "aemformstutorial" in Felix Web Console.The code also assumes that you have a schema in the database called aemformstutorial
 
 ```java
 package com.aemforms.storeandexport.core;

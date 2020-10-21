@@ -30,7 +30,7 @@ Because this project was generated using `aio app init` using the `Development` 
 
 To deploy to the workspace define in the projects `.env` file:
 
-1. Open the command line in the root of the Asset Compute application project
+1. Open the command line in the root of the Asset Compute project
 1. Execute the command `aio app deploy`
 1. Execute the command `aio app get-url` to obtain the worker URL for use in the AEM as a Cloud Service Processing Profile to reference this custom Asset Compute worker. If the project contains multiple workers, discrete URLs for each worker are listed.
 
@@ -47,7 +47,7 @@ Setting true environment variables overrides values for the same-named variables
 The general approach, typically automated by a CI/CD system, for deploying to Stage and Production environments is:
 
 1. Ensure the [Adobe I/O CLI npm module and Asset Compute plug-in](../set-up/development-environment.md#aio) are installed
-1. Check out the Asset Compute application to deploy from Git
+1. Check out the Asset Compute project to deploy from Git
 1. Set the environment variables with the values that correspond to the target workspace (Stage or Production)
     + The two required variables are `AIO_runtime_namespace` and `AIO_runtime_auth` and are obtained per workspace in Adobe I/O Developer Console via the Workspace's __Download All__ feature.
 
@@ -68,7 +68,7 @@ If your Asset Compute workers require any other variables, such at cloud storage
 1. The worker URL(s) referenced by the AEM as a Cloud Service Processing Profile is also available via:
     + `aio app get-url`.
 
-If the Asset Compute application version changes the worker URL(s) also change to reflect the new version, and the URL will need to be updated in the Processing Profiles.
+If the Asset Compute project version changes the worker URL(s) also change to reflect the new version, and the URL will need to be updated in the Processing Profiles.
 
 ## Workspace API provisioning{#workspace-api-provisioning}
 

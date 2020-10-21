@@ -12,9 +12,11 @@ version: 6.3,6.4,6.5
 # Deploy this on your server
 
 >[!NOTE]
-The following are required to get this running on your system
-AEM Forms(version 6.3 or above)
-MYSQL Database
+>
+>The following are required to get this running on your system
+>
+>* AEM Forms(version 6.3 or above)
+>* MYSQL Database
 
 To test this capability on your AEM Forms instance, please follow the following steps
 

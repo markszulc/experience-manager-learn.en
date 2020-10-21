@@ -105,6 +105,10 @@ window.targetGlobalSettings = {
 };
 ```
 
+## Next Steps
+
+1. [Export Experience Fragment to Adobe Target](./export-experience-fragment-target.md)
+   
 ## Supporting Links
 
 * [Adobe Client Data Layer Documentation](https://github.com/adobe/adobe-client-data-layer/wiki)

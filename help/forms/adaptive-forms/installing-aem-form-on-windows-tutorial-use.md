@@ -4,30 +4,33 @@ seo-title: Simplified Steps for Installing AEM Forms on Windows
 description: Quick and easy steps to install AEM Forms on windows
 seo-description: Quick and easy steps to install AEM Forms on windows
 uuid: a148b8f0-83db-47f6-89d3-c8a9961be289
-
 feature: adaptive-forms
 topics: administration
 audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
-
 discoiquuid: 1182ef4d-5838-433b-991d-e24ab805ae0e
 ---
+
 # Simplified Steps for Installing AEM Forms on Windows
 
 >[!NOTE]
+>
 >Never double click the AEM Quick Start jar, if you intend to use AEM Forms.
+>
 >Also, make sure there are no spaces in the AEM Forms Installation folder path.
+>
 >For Example do not install AEM Forms in c:\jack and jill\AEM Forms folder
 
 >[!NOTE]
-If you are installing AEM Forms 6.5, Please make sure you have installed the following 32 bit Microsoft Visual C++ redistributables.
-
-* Microsoft Visual C++ 2008 redistributable
-* Microsoft Visual C++ 2010 redistributable
-* Microsoft Visual C++ 2012 redistributable
-* Microsoft Visual C++ 2013 redistributable (as of 6.5)
+>
+>If you are installing AEM Forms 6.5, Please make sure you have installed the following 32 bit Microsoft Visual C++ redistributables.
+>
+>* Microsoft Visual C++ 2008 redistributable
+>* Microsoft Visual C++ 2010 redistributable
+>* Microsoft Visual C++ 2012 redistributable
+>* Microsoft Visual C++ 2013 redistributable (as of 6.5)
 
 Although we recommend following the [official documentation](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) for installing AEM Forms. The following steps can be followed to install and configure AEM Forms on Windows environment:
 
