@@ -19,7 +19,8 @@ Adobe Experience Manager (AEM)'s Dispatcher is a Apache HTTP Web server module t
 The AEM as a Cloud Service SDK includes the recommended Dispatcher Tools version, that facilitates configuring, validating and simulating Dispatcher locally. Dispatcher Tools is comprised of:
 
 + a baseline set of Apache HTTP Web server and Dispatcher configuration files, located in `.../dispatcher-sdk-x.x.x/src`
-+ a configuration validator CLI tool, located at `.../dispatcher-sdk-x.x.x/bin/validator`
++ a configuration validator CLI tool, located at `.../dispatcher-sdk-x.x.x/bin/validate` (Dispatcher SDK 2.0.29+)
++ a configuration generation CLI tool, located at `.../dispatcher-sdk-x.x.x/bin/validator`
 + a configuration deployment CLI tool, located at `.../dispatcher-sdk-x.x.x/bin/docker_run`
 + a Docker image that runs Apache HTTP Web server with the Dispatcher module
 
@@ -32,7 +33,7 @@ Note that `~` is used as shorthand for the User's Directory. In Windows, this is
 ## Prerequisites
 
 1. Windows users must use Windows 10 Professional
-1. Install [Experience Manager Publish QuickStart](./aem-runtime.md) on the local develop machine.
+1. Install [Experience Manager Publish Quickstart Jar](./aem-runtime.md) on the local develop machine.
    + Optionally, install the  latest [AEM reference web site](https://github.com/adobe/aem-guides-wknd/releases) on the local AEM Publish service. This web site is used in this tutorial to visualize a working Dispatcher.
 1. Install and start the latest version of [Docker](https://www.docker.com/) (Docker Desktop 2.2.0.5+ / Docker Engine v19.03.9+) on the local development machine.
 
@@ -42,13 +43,10 @@ The AEM as a Cloud Service SDK, or AEM SDK, contains the Dispatcher Tools used t
 
 If the AEM as a Cloud Service SDK has already been downloaded to [setup the local AEM runtime](./aem-runtime.md), it does not need to be re-downloaded.
 
-1. Log in to [experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads) with your Adobe ID
-      + Note that your Adobe Organization __must__ be provisioned for AEM as a Cloud Service to download the AEM as a Cloud Service SDK.
-1. Navigate to the __AEM as a Cloud Service__ tab
-1. Sort by __Published Date__ in __Descending__ order
-1. Click on the latest __AEM SDK__ result row
-1. Review and accept the EULA, and tap the __Download__ button
-1. Ensure AEM SDK's Dispatcher Tools v2.0.21+ is used
+1. Log in to [experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=1) with your Adobe ID
+    + Your Adobe Organization __must__ be provisioned for AEM as a Cloud Service to download the AEM as a Cloud Service SDK
+1. Click on the latest __AEM SDK__ result row to download
+    + Ensure AEM SDK's Dispatcher Tools v2.0.29+ is noted in the download description
 
 ## Extract the Dispatcher Tools from the AEM SDK zip
 
@@ -83,20 +81,25 @@ These files are intended to be copied into an Experience Manager Maven project t
 
 A complete description of the configuration files is available in the unpacked Dispatcher Tools as `dispatcher-sdk-x.x.x/docs/Config.html`.
 
+## Validate configurations
+
+Optionally, the Dispatcher and Apache Web server configurations (via `httpd -t`) can be validated using the `validate` script (not to be confused with the `validator` executable).
+
++ Usage:
+  + Windows: `bin\validate src`
+  + macOS / Linux: `./bin/validate ./src`
+
 ## Run Dispatcher locally
 
-To run the Dispatcher locally, the Dispatcher configuration files to be used to configure it, must be validated using the Dispatcher Tools's `validator` CLI tool.
+To run the Dispatcher locally, the Dispatcher configuration files must be generated using the Dispatcher Tools's `validator` CLI tool.
 
 + Usage:
   + Windows: `bin\validator full -d out src`
   + macOS / Linux: `./bin/validator full -d ./out ./src`
 
-The validation is dual purpose:
+This command transpiles the configurations into a file-set compatible with the Docker container's Apache HTTP Web Server.
 
-+ Validates the Apache HTTP Web server and Dispatcher configuration files for correctness
-+ Transpiles the configurations into a file-set compatible with the Docker container's Apache HTTP Web Server.
-
-Once validated, the transpiled configurations are used run Dispatcher locally in the Docker container. It is important to ensure the latest configurations have been validated __and__ output using the validator's `-d` option.
+Once generated, the transpiled configurations are used run Dispatcher locally in the Docker container. It is important to ensure the latest configurations have been validated using `validate` __and__ output using the validator's `-d` option.
 
 + Usage:
   + Windows: `bin\docker_run <deployment-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
