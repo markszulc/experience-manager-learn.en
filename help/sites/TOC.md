@@ -94,6 +94,7 @@ sub-product: sites
   + Analytics {#analytics}
     + [Collect page data with Adobe Analytics](integrations/analytics/collect-data-analytics.md)
     + [Track clicked component with Adobe Analytics](integrations/analytics/track-clicked-component.md)
+    + [Analyze data with Analysis Workspace](integrations/analytics/create-analytics-workspace.md)
   + Adobe Target {#target}
     + [Overview](integrations/adobe-target/overview.md)
     + [Add Target extension to Launch Property](integrations/adobe-target/add-target-launch-extension.md)
