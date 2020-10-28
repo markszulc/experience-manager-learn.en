@@ -11,6 +11,7 @@ thumbnail:
 kt: 6541
 thumbnail: 6541.jpg
 ---
+
 # Configure Data Source
 
 There are many ways with which AEM enables integration with external database. One of the most common & standard practice of database integration is by using Apache Sling Connection Pooled DataSource configuration properties through the [configMgr](http://localhost:4502/system/console/configMgr).
