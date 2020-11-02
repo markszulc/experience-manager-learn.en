@@ -93,6 +93,7 @@ index: y
   + [Store Form Attachments](store-and-retrieve-af-with-2fa/store-form-attachments.md)
   + [Store Form Data](store-and-retrieve-af-with-2fa/store-form-data.md)
   + [Create Servlet](store-and-retrieve-af-with-2fa/create-servlet.md)
+  + [Render form with saved data](store-and-retrieve-af-with-2fa/retrieve-saved-form.md)
   + [Create Client Lib](store-and-retrieve-af-with-2fa/create-client-lib.md)
   + [Create Adaptive Forms](store-and-retrieve-af-with-2fa/create-adaptive-forms.md)
 + Exporting Submitted Data in CSV Format{#export-submitted-data-csv-format}

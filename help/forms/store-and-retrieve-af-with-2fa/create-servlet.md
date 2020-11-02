@@ -12,7 +12,7 @@ thumbnail: 6539.pg
 ---
 # Create servlet to store form data
 
-Next step is to create a servlet that will call the appropriate methods of our custom OSGi service. The servlet has access to the adaptive form data, file attachments info.The servlet return the unique application id that is used to retrieve the partially completed adaptive form.
+Next step is to create a servlet that will call the appropriate methods of our custom OSGi service. The servlet has access to the adaptive form data, file attachments info. The servlet will return a unique application id that can be used to retrieve the partially completed adaptive form.
 
 ```java
 package com.techmarketing.core.servlets;
