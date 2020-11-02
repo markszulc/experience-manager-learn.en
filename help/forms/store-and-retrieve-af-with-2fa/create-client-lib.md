@@ -55,7 +55,9 @@ $(document).ready(function () {
     });
   });
 });
+
 ```
+
 >[!NOTE]
 > We have used [bootbox javascript library](http://bootboxjs.com/examples.html) to display dialog box
 
