@@ -92,7 +92,7 @@ Asset Compute Development Tool may enter a state where it pulls stale data, and 
 
 + __Error__: Error processing launch: Error: Could not connect ot debug target at... 
 + __Cause__: Docker Desktop is not running on the local system. Verify this by reviewing the VS Code Debug Console (View > Debug Console), confirming this error is reported.
-+ __Resolution__: Start [Docker Desktop and confirm the requisite Docker images are installed](../set-up/development-environment.md#docker).
++ __Resolution__: Start [Docker Desktop and confirm the requisite Docker images are installed](./set-up/development-environment.md#docker).
 
 ### Breakpoints not pausing{#breakpoints-no-pausing}
 
@@ -110,9 +110,9 @@ Asset Compute Development Tool may enter a state where it pulls stale data, and 
 
 ### Worker times out while debugging{#worker-times-out-while-debugging}
 
-+ __Error__: Debug Console reports "Action will timeout in -XXX milliseconds" or [Asset Compute Development Tool's](../develop/development-tool.md) rendition preview spins indefinitely or
-+ __Cause__: The worker timeout as defined in the [manifest.yml](../develop/manifest.md) is exceeded during debugging.
-+ __Resolution__: Temporarily increase the worker's timeout in the [manifest.yml](../develop/manifest.md) or accelerate debugging activities.
++ __Error__: Debug Console reports "Action will timeout in -XXX milliseconds" or [Asset Compute Development Tool's](./develop/development-tool.md) rendition preview spins indefinitely or
++ __Cause__: The worker timeout as defined in the [manifest.yml](./develop/manifest.md) is exceeded during debugging.
++ __Resolution__: Temporarily increase the worker's timeout in the [manifest.yml](./develop/manifest.md) or accelerate debugging activities.
 
 ### Cannot terminate debugger process{#cannot-terminate-debugger-process}
 
@@ -146,6 +146,6 @@ Asset Compute Development Tool may enter a state where it pulls stale data, and 
 
 + __Error:__ Asset Processing Failed badge displayed on asset
 + __Cause:__ An error occurred in the execution of the custom worker
-+ __Resolution:__ Follow the instructions on [debugging Adobe I/O Runtime activations](../test-debug/debug.md#aio-app-logs) using `aio app logs`.
++ __Resolution:__ Follow the instructions on [debugging Adobe I/O Runtime activations](./test-debug/debug.md#aio-app-logs) using `aio app logs`.
 
 

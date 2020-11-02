@@ -63,7 +63,7 @@ team: TM
         + [Deploy to Adobe I/O Runtime](./asset-compute/deploy/runtime.md)
         + [Integrate with AEM](./asset-compute/deploy/processing-profiles.md)
     + Advanced{#advanced}
-        + [Metadata workers](./asset-compute/extra/metadata.md)
+        + [Metadata workers](./asset-compute/advanced/metadata.md)
     + [Troubleshooting](./asset-compute/troubleshooting.md)
 
 + [Getting Started Developing AEM Sites - WKND Tutorial](./develop-wknd-tutorial.md)
