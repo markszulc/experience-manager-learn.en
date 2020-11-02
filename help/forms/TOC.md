@@ -87,12 +87,14 @@ index: y
   + [Add custom column](inbox-customization/add-married-column.md)
   + [Using sightly template](inbox-customization/use-sightly-template.md)
 
-+ Store and Retrieve Adaptive Form{#store-and-retrive-af-with-2fa}
-  + [Introduction](store-and-retrive-af-with-2fa/introduction.md)
-  + [Configure Data Source](store-and-retrive-af-with-2fa/configure-data-source.md)
-  + [Store Form Attachments](store-and-retrive-af-with-2fa/store-form-attachments.md)
-  + [Store Form Data](store-and-retrive-af-with-2fa/store-form-data.md)
-  + [Create Servlet](store-and-retrive-af-with-2fa/create-servlet.md)
++ Store and Retrieve Adaptive Form{#store-and-retrieve-af-with-2fa}
+  + [Introduction](store-and-retrieve-af-with-2fa/introduction.md)
+  + [Configure Data Source](store-and-retrieve-af-with-2fa/configure-data-source.md)
+  + [Store Form Attachments](store-and-retrieve-af-with-2fa/store-form-attachments.md)
+  + [Store Form Data](store-and-retrieve-af-with-2fa/store-form-data.md)
+  + [Create Servlet](store-and-retrieve-af-with-2fa/create-servlet.md)
+  + [Create Client Lib](store-and-retrieve-af-with-2fa/create-client-lib.md)
+  + [Create Adaptive Forms](store-and-retrieve-af-with-2fa/create-adaptive-forms.md)
 + Exporting Submitted Data in CSV Format{#export-submitted-data-csv-format}
   + [Export Submitted Data](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + HTML5 Forms{#html5-forms}

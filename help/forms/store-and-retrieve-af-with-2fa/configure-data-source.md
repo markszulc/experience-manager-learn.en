@@ -19,6 +19,13 @@ The first step is to download and deploy the appropriate [My SQL drivers](https:
 Then set the Sling Connection Pooled DataSource properties. These properties are specific to your database. The following screenshot shows the settings used for this tutorial. The database schema is provided to you as part of this tutorial assets.
 ![data-source](assets/data-source.JPG)
 
+JDBC Driver Class: com.mysql.cj.jdbc.Driver
+JDBC Connection URI:jdbc:mysql://localhost:3306/aemformstutorial
+
+>[!NOTE]
+>Please make sure you name your datasource aemformstutorial as this is the name used in the OSGi service
+
+
 ## Create database
 
 
