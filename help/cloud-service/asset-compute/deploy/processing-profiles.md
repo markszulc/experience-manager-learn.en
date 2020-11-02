@@ -32,7 +32,7 @@ First create a new Processing Profile that will invoke the worker with the confi
     + __Extension:__ `png`
         + The extension of the rendition that will be generated. Set to `png` as this is the supported output format the worker's web service supports, and results in transparent background behind the circle cut out.
     + __Endpoint:__ `https://...adobeioruntime.net/api/v1/web/wkndAemAssetCompute-0.0.1/worker`
-        + This is th URL to the worker obtained via `aio app get-url`. Ensure the URL points at the correct workspace based on the AEM as a Cloud Service environment the Processing Profile is being configured in. Note that this sub-domain matches the `development` workspace.
+        + This is th URL to the worker obtained via `aio app get-url`. Ensure the URL points at the correct workspace based on the AEM as a Cloud Service environment.
         + Make sure the worker URL points to the correct workspace. AEM as a Cloud Service Stage should use the Stage workspace URL, and AEM as a Cloud Service Production should use the Production workspace URL.
     + __Service Parameters__
         + Tap __Add Parameter__
@@ -47,7 +47,7 @@ First create a new Processing Profile that will invoke the worker with the confi
         + These key/value pairs that are passed into the Asset Compute worker and available via `rendition.instructions` JavaScript object.
     + __Mime Types__
         + __Includes:__ `image/jpeg`, `image/png`, `image/gif`, `image/bmp`, `image/tiff`
-            + These MIME types are the only ones the worker's web service supports, this limits which assets can be processed by the custom worker.
+            + These MIME types are the only ones the worker's npm modules. This list limits which assets will be processed by the custom worker.
         + __Excludes:__ `Leave blank`
             + Never process assets with these MIME Types using this service configuration. In this case, we only use an allow list.
 1. Tap __Save__ in the top right
@@ -80,22 +80,5 @@ _Github contains is the final state of the project, fully populated with the wor
 
 ## Troubleshooting
 
-### Custom rendition missing from asset
-
-+ __Error:__ New and re-processed assets process successfully, but are missing the custom rendition
-
-#### Processing profile not applied to ancestor folder
-
-+ __Cause:__ The asset does not exist under a folder with the Processing Profile that uses the custom worker
-+ __Resolution:__ Apply the Processing Profile to an ancestor folder of the asset
-
-#### Processing profile superseded by lower Processing Profile
-
-+ __Cause:__ The asset exists beneath a folder with the custom worker Processing Profile applied, however a different Processing Profile that does not use the customer worker has been applied between that folder and the asset.
-+ __Resolution:__ Combine, or otherwise reconcile, the two Processing Profiles and remove the intermediate Processing Profile
-
-### Asset Processing Failed
-
-+ __Error:__ Asset Processing Failed badge displayed on asset
-+ __Cause:__ An error occurred in the execution of the custom worker
-+ __Resolution:__ Follow the instructions on [debugging Adobe I/O Runtime activations](../test-debug/debug.md#aio-app-logs) using `aio app logs`.
++ [Custom rendition missing from asset in AEM](../troubleshooting.md#custom-rendition-missing-from-asset)
++ [Asset processing fails in AEM](../troubleshooting.md#asset-processing-fails)

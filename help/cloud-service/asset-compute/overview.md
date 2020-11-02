@@ -119,6 +119,12 @@ Once deployed to Adobe I/O Runtime, Asset Compute workers can be registered in A
 
 + [Integrate with AEM Processing Profiles](./deploy/processing-profiles.md)
 
+## Advanced
+
+These a bridged chapters tackle more advanced use cases building upon foundational learnings established in the prior chapters.
+
++ [Develop a Asset Compute metadata worker](./advanced/metadata.md)
+
 ## Tutorial codebase on Github
 
 The tutorial codebase is available on Github at:
@@ -145,4 +151,5 @@ The following are various Adobe resources that provide further information and u
 + [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk)
     + [Asset Compute Commons](https://github.com/adobe/asset-compute-commons)
 + [Adobe Cloud Blobstore Wrapper library](https://github.com/adobe/node-cloud-blobstore-wrapper)
++ []
 + [Adobe Node Fetch Retry library](https://github.com/adobe/node-fetch-retry)

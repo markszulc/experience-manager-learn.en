@@ -106,8 +106,4 @@ To start Asset Compute Development Tool for the Asset Compute project:
 
 ## Troubleshooting
 
-### Asset Compute Local Development Tools cannot start due to missing private.key
-
-+ __Error:__ Local Dev ServerError: Missing required files at validatePrivateKeyFile.... (via standard out from `aio app run` command)
-+ __Cause:__ The `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` value in `.env` file, does not point to `private.key` or `private.key` is not read-able by the current user.
-+ __Resolution:__ Review the `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` value in `.env` file, and ensure it contains the full, absolute path to the `private.key` on your file system.
++ [Development Tool cannot start due to missing private.key](../troubleshooting.md#missing-private-key)

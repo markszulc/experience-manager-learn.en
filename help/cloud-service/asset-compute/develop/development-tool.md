@@ -32,7 +32,7 @@ This will start the Development Tool at __http://localhost:9000__, and automatic
 1. __Source file:__ The source file selection is used to:
     +  Selected the asset binary that will be the `source` binary passed to the Asset Compute worker
     +  Upload source files
-1. __Asset Compute profile definition:__ Defines the Asset Compute worker to run including parameters: including the worker's URL end-point, the resultant rendition name, and any parameters
+1. __Asset Compute profile(s) definition:__ Defines the Asset Compute worker to run including parameters: including the worker's URL end-point, the resultant rendition name, and any parameters
 1. __Run:__ The Run button executes the Asset Compute profile as defined in the Asset Compute configuration profile editor
 1. __Abort:__ The Abort button cancels an execution initiated from tapping the Run button
 1. __Request/Response:__ Provides the HTTP request and response to/from the Asset Compute worker running in Adobe I/O Runtime. This can be helpful for debugging
@@ -77,24 +77,10 @@ Making code changes to the worker code while Development Tool is running will "h
 
 ## Troubleshooting
 
-### Source files dropdown incorrect{#troubleshooting__dev-tool-application-cache}
-
-Asset Compute Development Tool may enter a state where it pulls stale data, and is most noticeable in the __Source file__ dropdown displaying incorrect items.
-
-+ __Error:__ Source file dropdown displays incorrect items.
-+ __Cause:__ Stale cached browser state causes the 
-+ __Resolution:__ In your browser completely clear the browser tab's "application state", the browser cache, local storage and service worker.
-
-### Missing or invalid devToolToken query parameter{#troubleshooting__devtooltoken}
-
-+ __Error:__ "Unauthorized" notification in Asset Compute Development Tool
-+ __Cause:__ `devToolToken` is missing or invalid
-+ __Resolution:__ Close the Asset Compute Development Tool browser window, terminate any running Development Tool processes initiated via the `aio app run` command, and re-start Development Tool (using `aio app run`).
-
-### Unable to remove source files{#troubleshooting__remove-source-files}
-
-+ __Error:__ There is no way to remove added source files from the Development Tools UI
-+ __Cause:__ This functionality has not been implemented
-+ __Resolution:__ Log into your cloud storage provider using the credentials defined in `.env`. Locate the container used by the Development Tools (also specified in `.env`), navigate into the __source__ folder, and delete any source images. YOu may need to perform the steps outlined in [Source files dropdown incorrect](#troubleshooting__dev-tool-application-cache) if the deleted source files continue to display in the dropdown as they may be cached locally in the Development Tools "application state".
-
-    ![Microsoft Azure Blob Storage](./assets/development-tool/troubleshooting__remove-source-files.png)
++ [Incorrect YAML indentation](../troubleshooting.md#incorrect-yaml-indentation)
++ [memorySize limit is set too low](../troubleshooting.md#memorysize-limit-is-set-too-low)
++ [Development Tool cannot start due to missing private.key](../troubleshooting.md#missing-private-key)
++ [Source files dropdown incorrect](../troubleshooting.md#source-files-dropdown-incorrect)
++ [Missing or invalid devToolToken query parameter](../troubleshooting.md#missing-or-invalid-devtooltoken-query-parameter)
++ [Unable to remove source files](../troubleshooting.md#unable-to-remove-source-files)
++ [Rendition returned partially drawn/corrupt](../troubleshooting.md#rendition-returned-partially-drawn-or-corrupt)

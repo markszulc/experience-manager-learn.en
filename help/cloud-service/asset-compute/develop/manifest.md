@@ -115,14 +115,5 @@ To start Asset Compute Development Tool for the Asset Compute project:
 
 ## Troubleshooting
 
-### Incorrect YAML indentation
-
-+ __Error:__ YAMLException: bad indentation of a mapping entry at line X, column Y:(via standard out from `aio app run` command)
-+ __Cause:__ Yaml files are white-spaced sensitive, it likely that your indentation is incorrect.
-+ __Resolution:__ Review your `manifest.yml` and ensure all indentation is correct.
-
-### memorySize limit is set too low
-
-+ __Error:__  Local Dev Server OpenWhiskError: PUT https://adobeioruntime.net/api/v1/namespaces/xxx-xxx-xxx/actions/xxx-0.0.1/__secured_workeroverwrite=true Returned HTTP 400 (Bad Request) --> "The request content was malformed:requirement failed: memory 64 MB below allowed threshold of 134217728 B"
-+ __Cause:__ A `memorySize` limit in the manifest was set below the minimum allowed threshold as reported by the error message in bytes.
-+ __Resolution:__  Review the `memorySize` limits in the `manifest.yml` and ensure they are all large than the minimum allowed threshold.
++ [Incorrect YAML indentation](../troubleshooting.md#incorrect-yaml-indentation)
++ [memorySize limit is set too low](../troubleshooting.md#memorysize-limit-is-set-too-low)
