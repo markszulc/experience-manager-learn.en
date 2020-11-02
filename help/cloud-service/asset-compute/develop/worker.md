@@ -30,7 +30,9 @@ Asset Compute workers implement the Asset Compute SDK worker API contract, in th
 
 1. AEM Author service invokes the Asset Compute worker, providing the asset's __(1a)__ original binary (`source` parameter), and __(1b)__ any parameters defined in the Processing Profile (`rendition.instructions` parameter).
 1. The Asset Compute SDK orchestrates the execution of the custom Asset Compute metadata worker's `renditionCallback(...)` function, generating a new binary rendition, based on the asset's original binary __(1a)__ and any parameters __(1b)__.
-  + In this tutorial the rendition is created "in process", meaning the worker composes the rendition, however the source binary can be sent to other Web service APIs for rendition generation as well.
+    
+    + In this tutorial the rendition is created "in process", meaning the worker composes the rendition, however the source binary can be sent to other Web service APIs for rendition generation as well.
+    
 1. The Asset Compute worker saves the new rendition's binary data to `rendition.path`.
 1. The binary data  written to `rendition.path` is transported via the Asset Compute SDK to AEM Author Service and exposed as __(4a)__ a text rendition and __(4b)__ persisted to the asset's metadata node.
 
