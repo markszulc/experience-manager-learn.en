@@ -14,6 +14,8 @@ thumbnail: 6539.pg
 
 Next step is to create a servlet that will call the appropriate methods of our custom OSGi service. The servlet has access to the adaptive form data, file attachments info. The servlet will return a unique application id that can be used to retrieve the partially completed adaptive form.
 
+This servlet will be invoked when the user clicks the Save and Exit button on the adaptive form
+
 ```java
 package com.techmarketing.core.servlets;
 

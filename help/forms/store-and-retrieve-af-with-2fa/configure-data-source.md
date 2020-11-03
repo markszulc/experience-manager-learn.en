@@ -20,6 +20,7 @@ Then set the Sling Connection Pooled DataSource properties. These properties are
 ![data-source](assets/data-source.JPG)
 
 JDBC Driver Class: com.mysql.cj.jdbc.Driver
+
 JDBC Connection URI:jdbc:mysql://localhost:3306/aemformstutorial
 
 >[!NOTE]
@@ -29,8 +30,11 @@ JDBC Connection URI:jdbc:mysql://localhost:3306/aemformstutorial
 ## Create database
 
 
-Database has one table called formdatawithattachments with the 4 columns as shown in the screen-shot below
+The following database was used for the purpose of this use case. The database has one table called formdatawithattachments with the 4 columns as shown in the screen-shot below.
 ![data-base](assets/table-schema.JPG) 
 
-* The column afdata will hold the adaptive form data
-* The column attachmentsInfo will hold the information about the form attachments
+* The column **afdata** will hold the adaptive form data.
+* The column **attachmentsInfo** will hold the information about the form attachments.
+* The columns **telephoneNumber** will hold the mobile number of the person filling out the form.
+
+The [schema for this database can be downloaded from here](assets/data-base-schema.sql)
