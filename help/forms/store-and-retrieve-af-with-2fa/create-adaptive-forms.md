@@ -15,9 +15,18 @@ thumbnail: 6552.pg
 ## Create the main adaptive form
 
 This adaptive form is the main entry point to the use case. In this form the user will be asked to enter mobile number and will be able to add some attachments. When the Save and Exit button is clicked a unique application id will be generated that will be used to retrieve the saved form after the mobile number is confirmed.
+This form is associated with workflow that gets triggered on form submission
 
 ## Create form to retrieve saved application
 
 This form is used to retrieve the partially completed adaptive form after the user has verified the application id and their mobile number associated with the adaptive form
+This form is associated with custom submit action that forwards the form submission to the servlet mounted on **/bin/renderaf**
+
+``` java
+com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/renderaf",null,null);
+
+```
 
 The 2 sample forms(MyAccountForm and StoreAFWithAttachments) are provided and can be [downloaded from here](assets/sample-forms.zip)
+
+The [Custom submit and sample worklow](assets/custom-submit-and-workflow.zip) need to be imported into your AEM instance for the forms to work.
