@@ -32,7 +32,7 @@ In this tutorial we'll create an Asset Compute metadata worker that derives the 
 
 ## Logical flow of a metadata Asset Compute worker invocation
 
-The invocation of Asset Compute metadata workers is nearly identical to that of [binary rendition generating workers](./develop/worker.md), with the primary different being the return type is an XMP (XML) rendition whose values are also written to the asset's metadata.
+The invocation of Asset Compute metadata workers is nearly identical to that of [binary rendition generating workers](../develop/worker.md), with the primary different being the return type is an XMP (XML) rendition whose values are also written to the asset's metadata.
  
 Asset Compute workers implement the Asset Compute SDK worker API contract, in the `renditionCallback(...)` function, which is conceptually:
 
@@ -184,7 +184,7 @@ Because our Asset Compute project contains two workers (the previous [circle ren
 
 1. From the root of the Asset Compute project
 1. Execute `aio app run` to start the Asset Compute Development Tool
-1. In the __Select a file...__ drop down, pick a [sample image]((../assets/samples/sample-file.jpg)) to process
+1. In the __Select a file...__ drop down, pick a [sample image](../assets/samples/sample-file.jpg) to process
 1. In the second profile definition configuration, which points to the `metadata-colors` worker, update `"name": "rendition.xml"` as this worker generates an XMP (XML) rendition. Optionally, add a `colorsFamily` parameter (supported values `basic`, `hex`, `html`, `ntc`, `pantone`, `roygbiv`).
 
     ```json
@@ -204,7 +204,7 @@ Because our Asset Compute project contains two workers (the previous [circle ren
 
 ## Test the worker{#test}
 
-Metadata workers can be tested using the [same Asset Compute testing framework as binary renditions](../develop/test-debug/test.md). The only difference is the `rendition.xxx` file in the test case must  be the expected XMP (XML) rendition.
+Metadata workers can be tested using the [same Asset Compute testing framework as binary renditions](../test-debug/test.md). The only difference is the `rendition.xxx` file in the test case must  be the expected XMP (XML) rendition.
 
 1. Create the following structure in the Asset Compute project:
 
