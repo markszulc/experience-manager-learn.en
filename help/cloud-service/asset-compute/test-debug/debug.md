@@ -95,40 +95,9 @@ _Click-through of debugging an Asset Compute worker using wskdebug (No audio)_
 
 ## Troubleshooting
 
-### Debugger does not attach
-
-+ __Error__: Error processing launch: Error: Could not connect ot debug target at... 
-+ __Cause__: Docker Desktop is not running on the local system. Verify this by reviewing the VS Code Debug Console (View > Debug Console), confirming this error is reported.
-+ __Resolution__: Start [Docker Desktop and confirm the requisite Docker images are installed](../set-up/development-environment.md#docker).
-
-### Breakpoints not pausing
-
-+ __Error__: When running the Asset Compute worker from the debug-able Development Tool, VS Code does not pause at breakpoints.
-
-#### VS Code debugger is not attached 
-
-+ __Cause:__ The VS Code debugger was stopped/disconnected.
-+ __Resolution:__ Restart the VS Code debugger, and verify it attaches by watching the VS Code Debug Output console (View > Debug Console)
-
-#### VS Code debugger attached after worker execution began
-
-+ __Cause:__ The VS Code debugger did not attach prior to tapping __Run__ in Development Tool.
-+ __Resolution:__ Ensure the debugger has attached by reviewing VS Code's Debug Console (View > Debug Console), and then re-run the Asset Compute worker from Development Tool.
-
-### Worker times out while debugging
-
-+ __Error__: Debug Console reports "Action will timeout in -XXX milliseconds" or [Asset Compute Development Tool's](../develop/development-tool.md) rendition preview spins indefinitely or
-+ __Cause__: The worker timeout as defined in the [manifest.yml](../develop/manifest.md) is exceeded during debugging.
-+ __Resolution__: Temporarily increase the worker's timeout in the [manifest.yml](../develop/manifest.md) or accelerate debugging activities.
-
-### Cannot terminate debugger process
-
-+ __Error__: `Ctrl-C` on the command line does not terminate the debugger process (`npx adobe-asset-compute devtool`).
-+ __Cause__: A bug  in `@adobe/aio-cli-plugin-asset-compute` 1.3.x, results in `Ctrl-C` not being recognized as a terminating command.
-+ __Resolution__: Update `@adobe/aio-cli-plugin-asset-compute` to version 1.4.1+
-
-    ```
-    $ aio update
-    ```
-
-    ![Troubleshooting - aio update](./assets/debug/troubleshooting__terminate.png)
++ [Debugger does not attach](../troubleshooting.md#debugger-does-not-attach)
++ [Breakpoints not pausing](../troubleshooting.md#breakpoints-no-pausing)
++ [VS Code debugger not attached](../troubleshooting.md#vs-code-debugger-not-attached)
++ [VS Code debugger attached after worker execution began](../troubleshooting.md#vs-code-debugger-attached-after-worker-execution-began)
++ [Worker times out while debugging](../troubleshooting.md#worker-times-out-while-debugging)
++ [Cannot terminate debugger process](../troubleshooting.md#cannot-terminate-debugger-process)

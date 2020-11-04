@@ -15,7 +15,7 @@ thumbnail: KT-5802.jpg
 
 AEM as Cloud Service's Asset Compute microservices support the development and deployment of custom workers that are used to read, and manipulate binary data of assets stored in AEM, most commonly, to create custom asset renditions.
 
-Whereas in AEM 6.x custom AEM Workflow processes were used to read, transform, and write back Asset renditions, in AEM as a Cloud Service Asset Compute workers satisfy this need.
+Whereas in AEM 6.x custom AEM Workflow processes were used to read, transform, and write back asset renditions, in AEM as a Cloud Service Asset Compute workers satisfy this need.
 
 ## What you will do
 
@@ -105,7 +105,7 @@ Asset Compute workers provide various levels of debugging from traditional `cons
 
 ## Deploy
 
-Learn how to integrate custom Asset Compute workers with AEM as a Cloud Service, by first deploying them to Adobe I/O Runtime and then invoking from AEM as a Cloud Service Author via AEM Assets Processing Profiles.
+Learn how to integrate custom Asset Compute workers with AEM as a Cloud Service, by first deploying them to Adobe I/O Runtime and then invoking from AEM as a Cloud Service Author via AEM Assets' Processing Profiles.
 
 ### Deploy to Adobe I/O Runtime
 
@@ -115,13 +115,19 @@ Asset Compute workers must be deployed to Adobe I/O Runtime to be used with AEM 
 
 ### Integrate workers via AEM Processing Profiles
 
-Once deployed to Adobe I/O Runtime, Asset Compute workers can be registered in AEM as a Cloud Service via [Assets Processing Profiles](../../assets/configuring/processing-profiles.md). Processing Profiles are, in turn, applied to Assets folders applying to the assets therein.
+Once deployed to Adobe I/O Runtime, Asset Compute workers can be registered in AEM as a Cloud Service via [Assets Processing Profiles](../../assets/configuring/processing-profiles.md). Processing Profiles are, in turn, applied to asset folders applying to the assets therein.
 
 + [Integrate with AEM Processing Profiles](./deploy/processing-profiles.md)
 
-## Tutorial codebase on Github
+## Advanced
 
-The tutorial codebase is available on Github at:
+These abridged tutorials tackle more advanced use cases building upon foundational learnings established in the prior chapters.
+
++ [Develop a Asset Compute metadata worker](./advanced/metadata.md) that can write metadata back to the 
+
+## Codebase on Github
+
+The tutorial's codebase is available on Github at:
 
 + [adobe/aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute) @ master branch
 
@@ -135,14 +141,13 @@ The following are various Adobe resources that provide further information and u
 
 + [Asset Compute Service documentation](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)
 + [Asset Compute Development Tool readme](https://github.com/adobe/asset-compute-devtool)
-
-### Other code samples
-
 + [Asset Compute example workers](https://github.com/adobe/asset-compute-example-workers)
 
 ### APIs and SDKs
 
 + [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk)
     + [Asset Compute Commons](https://github.com/adobe/asset-compute-commons)
+    + [Asset Compute XMP](https://github.com/adobe/asset-compute-xmp#readme)
 + [Adobe Cloud Blobstore Wrapper library](https://github.com/adobe/node-cloud-blobstore-wrapper)
 + [Adobe Node Fetch Retry library](https://github.com/adobe/node-fetch-retry)
++ [Asset Compute example workers](https://github.com/adobe/asset-compute-example-workers)

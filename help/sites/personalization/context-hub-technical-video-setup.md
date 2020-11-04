@@ -33,7 +33,7 @@ To enable the ContextHub features and to link to the ContextHub JavaScript libra
 
 ## Site Configuration and ContextHub Segments {#site-configuration-and-contexthub-segments}
 
-ContextHub includes a segmentation engine that manages segments and determines which segments are resolved for the current context. Several segments are defined. You can use the Javascript API to [determine resolved segments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments). Enable the ContextHub segments for your site under [!UICONTROL Configuration Browser].
+ContextHub includes a segmentation engine that manages segments and determines which segments are resolved for the current context. Several segments are defined. You can use the Javascript API to [determine resolved segments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments). Enable the ContextHub segments for your site under [[!UICONTROL Configuration Browser]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html).
 
 ## Create Segments {#create-segments}
 

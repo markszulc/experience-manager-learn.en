@@ -48,10 +48,9 @@ team: TM
 
 + Advanced Metadata Management{#metadata}
   + [Cascading Metadata](metadata/cascade-metadata-feature-video-use.md)
-  + [Smart Tags Overview](metadata/smart-tags-feature-video-use.md)
-  + [Configure Smart Tags](metadata/smart-tags-technical-video-setup.md)
-  + [Enhanced Smart Tags](metadata/enhanced-smart-tags-feature-video-use.md)
-  + [Configure Enhanced Smart Tags](metadata/enhanced-smart-tags-technical-video-setup.md)
+  + [Smart Tags for Images](metadata/image-smart-tags.md)
+  + [Custom Smart Tags for Images](metadata/custom-smart-tags.md)
+  + [Smart Tags for Videos](metadata/video-smart-tags.md)
   + [Import and Export Metadata](metadata/metadata-import-feature-video-use.md)
 
 + Sharing and Distribution{#sharing}

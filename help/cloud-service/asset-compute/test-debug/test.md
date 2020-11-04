@@ -26,7 +26,7 @@ The structure of tests in an Asset Compute project are as follows:
 ...
 /test/
   asset-compute/
-    <worker-name>/           <--- Test suite for the worker
+    <worker-name>/           <--- Test suite for the worker, must match the yaml key for this worker in manifest.yml
         <test-case-1>/       <--- Specific test case 
             file.jpg         <--- Input file (ie. `source.path` or `source.url`)
             params.json      <--- Parameters (ie. `rendition.instructions`)
@@ -111,21 +111,5 @@ The final test cases are available on Github at:
 
 ## Troubleshooting
 
-### No rendition generated
-
-Test case fails without generating a rendition.
-
-+ __Error:__ Failure: No rendition generated.
-+ __Cause:__ The worker failed to generate a rendition due to an unexpected error such as a JavaScript syntax error.
-+ __Resolution:__ Review the test execution's `test.log` at `/build/test-results/test-worker/test.log`. Locate the section in this file corresponding to the failing test case, and review for errors.
-
-   ![Troubleshooting - No rendition generated](./assets/test/troubleshooting__no-rendition-generated.png)
-
-### Test generates incorrect rendition
-
-Test case fails generating an incorrect rendition.
-
-+ __Error:__ Failure: Rendition 'rendition.xxx' not as expected.
-+ __Cause:__ The worker output a rendition that was not the same as the `rendition.<extension>` provided in the test case. 
-    + If the expected `rendition.<extension>` file is not created in the exact same manner as the locally generated rendition in the test case, the test may fail as there may be some difference in the bits. If the expected rendition in the test case is saved from Development Tool, meaning generated within Adobe I/O Runtime, the bits may technically be different, causing the test to fail, even if from a human perspective the expected and actual rendition files are identical.
-+ __Resolution:__ Review rendition output from the test by navigating to `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`, and compare it to the expected rendition file in the test case.
++ [No rendition generated during test execution](../troubleshooting.md#test-no-rendition-generated)
++ [Test generates incorrect rendition](../troubleshooting.md#tests-generates-incorrect-rendition)

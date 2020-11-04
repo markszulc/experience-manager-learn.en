@@ -32,7 +32,7 @@ This video series covers the authoring life-cycle of Content Fragments in AEM. D
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
-AEM Content Fragments Models, the data schemas of Content Fragments, must be enabled via AEM's [!UICONTROL Configuration Browser], which allows Content Fragment Models to be defined on a per configuration basis.
+AEM Content Fragments Models, the data schemas of Content Fragments, must be enabled via AEM's [[!UICONTROL Configuration Browser]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html), which allows Content Fragment Models to be defined on a per configuration basis.
 
 ## Creating Content Fragments {#creating-content-fragments}
 

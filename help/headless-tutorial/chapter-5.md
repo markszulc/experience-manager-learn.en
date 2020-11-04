@@ -37,7 +37,7 @@ Chapter 5 of the AEM Headless tutorial covers creating the Page from the Templat
 1. Add **tag line** to display above the events.
     1. Edit the **Text** component
     1. Enter the text:
-        1. `The WKND is here.`
+        * `The WKND is here.`
 
 1. Select the **events** to display:
     1. Set the following configuration on the **Properties** tab:

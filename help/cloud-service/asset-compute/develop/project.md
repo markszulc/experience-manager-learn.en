@@ -26,7 +26,7 @@ Use the [Adobe I/O CLI Asset Compute plugin](../set-up/development-environment.m
 
 1. From the command line navigate to the folder to contain the project.
 1. From the command line, execute `aio app init` to begin the interactive project generation CLI.
-    + This may spawn a Web browser prompting for authentication to Adobe I/O. If it does, provide your Adobe credentials associated with the [required Adobe services and products](../set-up/accounts-and-services.md). If you are unable to log in, please follow these instructions on how to generate a project. 
+    + This may spawn a Web browser prompting for authentication to Adobe I/O. If it does, provide your Adobe credentials associated with the [required Adobe services and products](../set-up/accounts-and-services.md). If you are unable to log in, please follow [these instructions on how to generate a project](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user). 
 1. __Select Org__
     + Select the Adobe Org that has AEM as a Cloud Service, Project Firefly are registered to
 1. __Select Project__
@@ -43,6 +43,16 @@ Use the [Adobe I/O CLI Asset Compute plugin](../set-up/development-environment.m
     + Use the default name `worker`. 
     + If your project contains multiple workers that perform different asset computations, name them semantically
 
+## Generate console.json
+
+From the root of the newly created Asset Compute project, run the following command to generate a `console.json`.
+
+```
+$ aio app use
+```
+
+Verify the current workspace details are correct, and pretty `Y` or enter to generate a `console.json`. If `.env` and `.aio` are detected as already existing, tap `x` to skip their creation.
+
 ## Review the anatomy of the project
 
 The generated Asset Compute project is a Node.js project for a specialized Adobe Project Firefly projects, the following are idiosyncratic to Asset Compute project:
@@ -55,8 +65,12 @@ The generated Asset Compute project is a Node.js project for a specialized Adobe
     + `/test/asset-compute/worker`, representing a test suite for a specific worker, contains sub-folders representing a specific test-case, along with the test input, parameters, and expected output.
 + `/build` contains the output, logs, and artifacts of Asset Compute test case executions.
 + `/manifest.yml` defines what Asset Compute workers the project provides. Each worker implementation must be enumerated in this file to make them available to AEM as a Cloud Service.
-+ `/.aio` contains configurations used by the aio CLI tool. This file can be configured via the `aio config` command.
-+ `/.env` defines environment variables in a `key=value` syntax and contains secrets that should not be shared. To protect these secrets, this file should NOT be checked into Git and is ignored via the project's default `.gitignore` file. 
++ `/console.json` defines Adobe I/O configurations
+    + This file can be generated/updated using the `aio app use` command.
++ `/.aio` contains configurations used by the aio CLI tool. 
+    + This file can be generated/updated using the `aio app use` command.
++ `/.env` defines environment variables in a `key=value` syntax and contains secrets that should not be shared. This can be generated or To protect these secrets, this file should NOT be checked into Git and is ignored via the project's default `.gitignore` file. 
+    + This file can be generated/updated using the `aio app use` command.
     + Variables defined in this file can be overridden by [exporting variables](../deploy/runtime.md) on the command line.
 
 For more details on project structure review, review the [Anatomy of a Adobe Project Firefly project](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application).
@@ -69,4 +83,5 @@ The final Asset Compute project is available on Github at:
 
 + [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
 
-_Github contains is the final state of the project, fully populated with the worker and test cases, but does not contain any credentials, ie. `.env`, `.config.json` oor `.aio`._
+_Github contains is the final state of the project, fully populated with the worker and test cases, but does not contain any credentials, ie. `.env`, `console.json` oor `.aio`._
+

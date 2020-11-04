@@ -23,18 +23,20 @@ The Asset Compute project auto-generates a simple worker that copies the asset's
 
 Asset Compute workers implement the Asset Compute SDK worker API contract, in the `renditionCallback(...)` function, which is conceptually:
 
-+ __Input:__ An AEM asset's original asset binary and parameters
++ __Input:__ An AEM asset's original binary and Processing Profile parameters
 + __Output:__ One or more renditions to be added to the AEM asset
 
 ![Asset Compute worker logical flow](./assets/worker/logical-flow.png)
 
-1. When an Asset Compute worker is invoked from AEM Author service, it is against an AEM asset via a Processing Profile. The asset's __(1a)__ original binary is passed to the worker via rendition callback function's `source` parameter, and __(1b)__ any parameters defined in the Processing Profile via `rendition.instructions` parameter set.
-1. The Asset Compute SDK layer accepts the request from the processing profile, and orchestrates the execution of the custom Asset Compute worker's `renditionCallback(...)` function, transforming the source binary provided in __(1a)__ based on any parameters provided by __(1b)__ to generate a rendition of the source binary.
+1. AEM Author service invokes the Asset Compute worker, providing the asset's __(1a)__ original binary (`source` parameter), and __(1b)__ any parameters defined in the Processing Profile (`rendition.instructions` parameter).
+1. The Asset Compute SDK orchestrates the execution of the custom Asset Compute metadata worker's `renditionCallback(...)` function, generating a new binary rendition, based on the asset's original binary __(1a)__ and any parameters __(1b)__.
+    
     + In this tutorial the rendition is created "in process", meaning the worker composes the rendition, however the source binary can be sent to other Web service APIs for rendition generation as well.
-1. The Asset Compute worker saves the rendition's binary representation to `rendition.path` which makes it available to be saved into the AEM Author service.
-1. Upon completion, the binary data written to `rendition.path` is transported via the Asset Compute SDK and exposed via the AEM Author Service as a rendition available in the AEM UI.
+    
+1. The Asset Compute worker saves the new rendition's binary data to `rendition.path`.
+1. The binary data  written to `rendition.path` is transported via the Asset Compute SDK to AEM Author Service and exposed as __(4a)__ a text rendition and __(4b)__ persisted to the asset's metadata node.
 
-The above diagram articulates the Asset Compute developer-facing concerns and logical flow ot Asset Compute worker invocation. For the curious, the [internal details of Asset Compute execution](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) are available, however only the public Asset Compute SDK API contracts should be depended upon.
+The above diagram articulates the Asset Compute developer-facing concerns and logical flow ot Asset Compute worker invocation. For the curious, the [internal details of Asset Compute execution](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) are available, however only the public Asset Compute SDK API contracts can be depended upon.
 
 ## Anatomy of a worker
 
@@ -309,7 +311,7 @@ class RenditionInstructionsError extends ClientError {
 Now that the worker code is complete, and was previously registered and configured in the [manifest.yml](./manifest.md), it can be executed using the local Asset Compute Development Tool to see the results.
 
 1. From the root of the Asset Compute project
-1. Execute `app aio run`
+1. Execute `aio app run`
 1. Wait for Asset Compute Development Tool to open in a new window
 1. In the __Select a file...__ drop down, select a sample image to process
     + Select a sample image file to use as the source asset binary
@@ -384,11 +386,4 @@ The final `index.js` is available on Github at:
 
 ## Troubleshooting
 
-### Rendition is returned partially drawn
-
-+ __Error__: Rendition renders incompletely, when total rendition file size is large
-
-  ![Troubleshooting - Rendition is returned partially drawn](./assets/worker/troubleshooting__await.png)
-
-+ __Cause__: The worker's `renditionCallback` function is exiting before the rendition can be completely written to `rendition.path`.
-+ __Resolution__: Review the custom worker code and ensure all asynchronous calls are made synchronous.
++ [Rendition returned partially drawn/corrupt](../troubleshooting.md#rendition-returned-partially-drawn-or-corrupt)

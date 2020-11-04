@@ -24,8 +24,8 @@ The following is an abridge set up instructions. Details on these development to
 1. [Install Docker Desktop](https://www.docker.com/products/docker-desktop) and pull the required Docker images:
 
     ```
-    $ docker pull openwhisk/action-nodejs-v10:latest
-    $ docker pull adobeapiplatform/adobe-action-nodejs-v12:3.0.22
+    $ docker pull openwhisk/action-nodejs-v12:latest
+    $ docker pull adobeapiplatform/adobe-action-nodejs-v12:latest
     ```
 
 1. [Install Visual Studio Code](https://code.visualstudio.com/download)
@@ -36,6 +36,8 @@ The following is an abridge set up instructions. Details on these development to
     $ npm i -g @adobe/aio-cli @openwhisk/wskdebug ngrok --unsafe-perm=true \
     && aio plugins:install @adobe/aio-cli-plugin-asset-compute
     ```
+
+For more information on the abridged install instructions, read the sections below.
 
 ## Install Visual Studio Code{#vscode}
 
@@ -52,7 +54,7 @@ Download and install the latest, stable [Docker Desktop](https://www.docker.com/
 After installing Docker Desktop, start it and install the following Docker images from the command line:
 
 ```
-$ docker pull openwhisk/action-nodejs-v10:latest
+$ docker pull openwhisk/action-nodejs-v12:latest
 $ docker pull adobeapiplatform/adobe-action-nodejs-v12:3.0.22
 ```
 
