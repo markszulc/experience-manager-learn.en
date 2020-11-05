@@ -1,18 +1,19 @@
 ---
 title: SMS Two Factor Authentication
-description: Add an extra layer of security to help confirm a user's identity when they want to perform certain activities
+description: Verify the mobile number associated with the application number using OTP
 feature: integrations
 topics: adaptive forms
 audience: developer
 doc-type: article
 activity: use
 version: 6.4,6.5
-kt: 6317
+kt: 6584
+thumbnail: 6584.jpg
 
 ---
 
 
-# Verify users with OTP
+# Verify users using their mobile phone numbers
 
 SMS Two Factor Authentication (Dual Factor Authentication) is a security verification procedure, which is triggered through a user logging into a website, software or application. In the log-in process, the user is automatically sent an SMS to their mobile number containing a unique numeric code.
 
@@ -52,9 +53,6 @@ The completed form data model can be [downloaded from here](assets/sms-2fa-fdm.z
 
 ![fdm](assets/2FA-fdm.PNG)
 
-## Create Adaptive Form 
 
-Integrate the POST invocations of the Form Data Model with your adaptive form to verify the mobile phone number entered by the user in the form. 
-The form associated with this demo can be [downloaded from here](assets/verify-account-form.zip).
-You will need to provide the your api key and secret key in the fields for this form to work
+
 

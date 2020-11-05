@@ -12,7 +12,9 @@ thumbnail: 6537.jpg
 ---
 # Store form attachments
 
-Next step is to create a service that will store the form attachments in a new location in the crx repository. A new file map is created with the new location of the attachments in the crx and returned to the calling application.
+When you add attachments to an adaptive form, the attachments are stored in a temporary location in the crx repository. For our use case to work we need to store the form attachments in a new location in the crx repositoy.
+
+OSGi service is created to store the form attachments in a new location in the crx repository. A new file map is created with the new location of the attachments in the crx and returned to the calling application.
 The following is the FileMap that is sent to the servlet. The key is the adaptive form field and the value is the temporary location of the attachment. In our servlet we will extract the attachment and store it in new location in the AEM repository and update the FileMap with the new location
 
 ```java

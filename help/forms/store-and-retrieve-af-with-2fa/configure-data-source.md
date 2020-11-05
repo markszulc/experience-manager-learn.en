@@ -38,3 +38,15 @@ The following database was used for the purpose of this use case. The database h
 * The columns **telephoneNumber** will hold the mobile number of the person filling out the form.
 
 The [schema for this database can be downloaded from here](assets/data-base-schema.sql)
+
+## Create Form Data Model
+
+Create form data model and base it on the datasource created in the previous step.
+Configure the get service of this form data model as shown in the screen shot below.
+Make sure you are not returning array in the get service
+
+This get service is used to fetch the telephone number associated with the application id.
+
+![get-service](assets/get-service.JPG)
+
+This form data model will then be used in the **myaccountform** to fetch the telephone number associated with the application id.

@@ -95,6 +95,7 @@ index: y
   + [Create Servlet](store-and-retrieve-af-with-2fa/create-servlet.md)
   + [Render form with saved data](store-and-retrieve-af-with-2fa/retrieve-saved-form.md)
   + [Create Client Lib](store-and-retrieve-af-with-2fa/create-client-lib.md)
+  + [Integrate with OTP Service](store-and-retrieve-af-with-2fa/verify-users-with-otp.md)
   + [Create Adaptive Forms](store-and-retrieve-af-with-2fa/create-adaptive-forms.md)
 + Exporting Submitted Data in CSV Format{#export-submitted-data-csv-format}
   + [Export Submitted Data](export-submitted-data-csv-format/export-submitted-data-csv.md)
