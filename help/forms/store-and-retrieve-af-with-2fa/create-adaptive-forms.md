@@ -35,6 +35,7 @@ This form is associated with custom submit action that forwards the form submiss
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/renderaf",null,null);
 
 ```
+
 The code in the servlet mounted on **/bin/renderaf** forwards the request to render the storeafwithattachments adaptive form prepopulated with the saved data.
 
 The 2 sample forms(MyAccountForm and StoreAFWithAttachments) are provided and can be [downloaded from here](assets/sample-forms.zip)
