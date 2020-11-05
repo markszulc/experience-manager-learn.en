@@ -15,10 +15,14 @@ This tutorial will walk you through the steps involved in saving and retrieving 
 
 * Use the GuideBridge API get access to the Adaptive Form data
 
-* Make a POST call to a servlet. This servlet stores the data in the database. The stored data is associated with a GUID.
+* Make a POST call to a servlet. This servlet stores the data in the database and the form attachments in the crx repository. The stored data in the database is associated with a GUID.
 
 * When you want to populate the Adaptive Form with the stored data, you retrieve the data associated with the GUID and populate the Adaptive Form using the **request.setAttribute** method.
 
 ## Demonstration of the use case
 
 >[!VIDEO](https://video.tv.adobe.com/v/327122?quality=9&learn=on)
+
+## Prerequisites
+
+Some level of experience in creating Adaptive Form,Form Data Model,Client Libraries is assumed.
