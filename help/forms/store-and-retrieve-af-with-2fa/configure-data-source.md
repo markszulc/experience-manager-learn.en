@@ -24,7 +24,7 @@ JDBC Driver Class: com.mysql.cj.jdbc.Driver
 JDBC Connection URI:jdbc:mysql://localhost:3306/aemformstutorial
 
 >[!NOTE]
->Please make sure you name your datasource aemformstutorial as this is the name used in the OSGi service
+>Please make sure you name your datasource StoreAndRetrieveAfData as this is the name used in the OSGi service
 
 
 ## Create database

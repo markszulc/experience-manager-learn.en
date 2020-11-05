@@ -97,6 +97,7 @@ index: y
   + [Create Client Lib](store-and-retrieve-af-with-2fa/create-client-lib.md)
   + [Integrate with OTP Service](store-and-retrieve-af-with-2fa/verify-users-with-otp.md)
   + [Create Adaptive Forms](store-and-retrieve-af-with-2fa/create-adaptive-forms.md)
+  + [Deploy the sample](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
 + Exporting Submitted Data in CSV Format{#export-submitted-data-csv-format}
   + [Export Submitted Data](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + HTML5 Forms{#html5-forms}
