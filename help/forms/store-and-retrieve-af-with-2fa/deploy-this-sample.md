@@ -1,6 +1,6 @@
 ---
-title: Storing and Retrieving Form Data from MySQL Database
-description: Deploy the sample assets on your server
+title: Deploy the sample
+description: Get use case running on your local AEM Forms instance
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -8,6 +8,9 @@ doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
 ---
+
+>[!NOTE]
+It is assumed that you are running AEM Forms on port 4502
 
 # Deploy the sample
 
@@ -27,7 +30,7 @@ Form Data Model needs to be created based on this datasource. This form data mod
 
 ## Create developer account with nexmo
 
-Create a developer account with Nexmo for sending and verifying OTP codes.Make a note of the API Key and API Secret Key. The data source and form data model have already been created for you against this service.
+Create a developer account with Nexmo for sending and verifying OTP codes.Make a note of the API Key and API Secret Key. The data source and form data model have already been created for you against this service and are included with the assets mentioned in the previous step.
 
 ## Deploy the following OSGi bundles
 
