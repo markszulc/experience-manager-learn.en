@@ -13,7 +13,7 @@ thumbnail: 6553.jpg
 # Retrieve saved form
 
 Next step is to create a servlet that will render the adaptive form with the saved data and its attachments.
-The following servlet code is executed after the OTP code has been verified. The adaptive form data and its attachments associated with the unique application id are fetched from the database. The request object is populated with the saved adaptive form data and the file attachments map. The request is then forwarded to render the "storeafwithattachments" form pre-populated with the original data and its attachments.
+The following servlet code is executed after the OTP code has been verified. The adaptive form data and its file attachments map associated with the unique application id are fetched from the database. The request object is populated with the saved adaptive form data and the file attachments map. The request is then forwarded to render the "storeafwithattachments" form pre-populated with the original data and its attachments.
 
 ```java
 package com.techmarketing.core.servlets;

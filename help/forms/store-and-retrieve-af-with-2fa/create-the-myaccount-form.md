@@ -28,6 +28,7 @@ This form makes use of the POST invocation of the Form Data Model to verify the 
 ![trigger-submit](assets/trigger-submit.JPG)
 
 
+
 This form is associated with custom submit action that forwards the form submission to the servlet mounted on **/bin/renderaf**
 
 ``` java
@@ -38,7 +39,8 @@ com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/r
 The code in the servlet mounted on **/bin/renderaf** forwards the request to render the storeafwithattachments adaptive form prepopulated with the saved data.
 
 
-The MyAccountForm can be [downloaded from here](assets/my-account-form.zip)
+* The MyAccountForm can be [downloaded from here](assets/my-account-form.zip)
 
-The sample forms are based on [custom adaptive form template](assets/custom-template-with-page-component.zip) that needs to be imported into AEM for the sample forms to render correctly.
-The [Custom submit handler](assets/custom-submit-my-account-form.zip) need to be imported into your AEM instance for the form to work.
+* Sample forms are based on [custom adaptive form template](assets/custom-template-with-page-component.zip) that needs to be imported into AEM for the sample forms to render correctly.
+
+* [Custom submit handler](assets/custom-submit-my-account-form.zip) associated with the MyAccountForm submission needs to be imported into AEM.

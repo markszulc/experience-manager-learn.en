@@ -6,16 +6,18 @@ topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
+version: 6.4,6.5
+kt: 6602
+thumbnail: 6602.jpg
 ---
 
 
 # Deploy the sample
 
-To get this use case working on your system, please follow the following instructions
+To get this use case working on your system, please follow the following instructions:
 
 >[!NOTE]
-It is assumed that you are running AEM Forms on port 4502
+It is assumed that you are running AEM Forms on port 4502.
 
 
 ## Create database
@@ -24,15 +26,15 @@ This sample uses MySql database to store the adaptive form data. You will need t
 
 ## Create datasource
 
-You need to create a datasource called StoreAndRetrieveAfData. This is the name that the code in the OSGi bundle uses
+You need to create a datasource called **StoreAndRetrieveAfData**. The code in the OSGi bundle use this datasource name
 
 ## Create Form Data Model
 
-Form Data Model needs to be created based on this datasource. This form data model is used to fetch the mobile phone number associated with the application id. The form data model can be [downloaded from here](assets/2-Factor-Authentication-DataSource-and-FDM.zip)
+Form Data Model needs to be created based on this datasource called **StoreAndRetrieveAfData**. This form data model is used to fetch the mobile phone number associated with the application id. The form data model can be [downloaded from here.](assets/2-Factor-Authentication-DataSource-and-FDM.zip)
 
 ## Create developer account with nexmo
 
-Create a developer account with Nexmo for sending and verifying OTP codes.Make a note of the API Key and API Secret Key. The data source and form data model have already been created for you against this service and are included with the assets mentioned in the previous step.
+Create a developer account with [Nexmo](https://dashboard.nexmo.com/) for sending and verifying OTP codes. Make a note of the API Key and API Secret Key. The data source and form data model have already been created for you against this service and are included with the assets mentioned in the previous step.
 
 ## Deploy the following OSGi bundles
 
@@ -51,7 +53,7 @@ The sample forms used in this demo are based on a custom template. Import the [c
 
 The 2 forms that make up this sample need to be imported into AEM. The sample forms can be [downloaded from here](assets/sample-forms.zip)
 
-Open the [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) in edit mode. Specify the API Key and API Secret values in the appropriate fields in the adaptive form
+Open the [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) in edit mode. Specify the API Key and API Secret values in the appropriate fields in the adaptive form.
 
 ## Test the solution
 

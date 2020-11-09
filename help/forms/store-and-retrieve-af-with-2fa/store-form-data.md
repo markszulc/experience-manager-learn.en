@@ -15,7 +15,9 @@ thumbnail: 6538.jpg
 Next step is to create a service to insert a new row in the database to store the adaptive form data and the associated attachmentsinfo.
 The following screen shot shows a row in the database.
 
+
 ![sample row](assets/sample-row.JPG)
+
 
 The following code inserts a new row in the database with the appropriate data
 

@@ -44,7 +44,7 @@ Use the [swagger editor](https://editor.swagger.io/) to create your swagger file
 
 ## Create Data Source
 
-To integrate AEM/AEM Forms with third party applications, we need to [create data source](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) in the cloud services configuration.
+To integrate AEM/AEM Forms with third party applications, we need to [REST based data source using the swagger file](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) in the cloud services configuration. The completed data source is provided to you as part of this course assets.
 
 ## Create Form Data Model
 
