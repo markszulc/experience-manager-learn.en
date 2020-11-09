@@ -19,7 +19,7 @@ The form **storeafwithattachments** is the main adaptive form. This adaptive for
 This form is associated with **bootboxjs540,storeAFWithAttachments** client libraries created earlier in the course and an AEM workflow which gets triggered on form submission.
 
 The sample forms are based on [custom adaptive form template](assets/custom-template-with-page-component.zip) that needs to be imported into AEM for the sample forms to render correctly.
-The completed [StoreAfWithAttachments Form](assets/store-af-with-attachments-form/zip) can be downloaded and imported into your AEM instance.
+The completed [StoreAfWithAttachments Form](assets/store-af-with-attachments-form.zip) can be downloaded and imported into your AEM instance.
 The [AEM workflow associated with this form](assets/workflow-model-store-af-with-attachments.zip) need to be imported into your AEM instance for the form to work.
 
 

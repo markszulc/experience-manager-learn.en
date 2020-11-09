@@ -41,7 +41,7 @@ Deploy the [DevelopingWithServiceUser Bundle](https://docs.adobe.com/content/hel
 
 ## Deploy the client library
 
-The sample uses 2 client libraries. Import these [client libraries](assets/assets/client-libraries.zip) into AEM.
+The sample uses 2 client libraries. Import these [client libraries](assets/client-libraries.zip) into AEM.
 
 ## Import the custom adaptive form template
 
