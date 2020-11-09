@@ -7,8 +7,8 @@ audience: developer
 doc-type: article
 activity: use
 version: 6.4,6.5
-kt: 6584
-thumbnail: 6584.jpg
+kt: 6594
+thumbnail: 6594.jpg
 
 ---
 

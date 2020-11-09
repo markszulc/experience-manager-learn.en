@@ -7,8 +7,8 @@ audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
-kt: 6539
-thumbnail: 6539.pg
+kt: 6597
+thumbnail: 6597.pg
 ---
 # Create client lib
 
