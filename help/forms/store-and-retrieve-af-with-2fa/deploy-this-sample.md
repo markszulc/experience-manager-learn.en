@@ -9,12 +9,14 @@ activity: implement
 version: 6.3,6.4,6.5
 ---
 
->[!NOTE]
-It is assumed that you are running AEM Forms on port 4502
 
 # Deploy the sample
 
 To get this use case working on your system, please follow the following instructions
+
+>[!NOTE]
+It is assumed that you are running AEM Forms on port 4502
+
 
 ## Create database
 
