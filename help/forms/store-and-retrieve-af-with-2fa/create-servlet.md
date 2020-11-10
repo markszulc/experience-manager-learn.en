@@ -6,7 +6,7 @@ topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 kt: 6539
 thumbnail: 6539.pg
 ---
@@ -31,9 +31,8 @@ import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import com.google.gson.JsonObject;
-import com.techmarketing.core.AemFormsAndDB;
+import store.and.fetch.core.*;
 
 @Component(service = {
     Servlet.class

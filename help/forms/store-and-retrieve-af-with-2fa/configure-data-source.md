@@ -16,8 +16,10 @@ thumbnail: 6541.jpg
 
 There are many ways with which AEM enables integration with external database. One of the most common & standard practice of database integration is by using Apache Sling Connection Pooled DataSource configuration properties through the [configMgr](http://localhost:4502/system/console/configMgr).
 The first step is to download and deploy the appropriate [My SQL drivers](https://mvnrepository.com/artifact/mysql/mysql-connector-java) in AEM.
-Then set the Sling Connection Pooled DataSource properties. These properties are specific to your database. The following screenshot shows the settings used for this tutorial. The database schema is provided to you as part of this tutorial assets.
+Then set the Sling Connection Pooled DataSource properties specific to your database. The following screenshot shows the settings used for this tutorial. The database schema is provided to you as part of this tutorial assets.
+
 ![data-source](assets/data-source.JPG)
+
 
 JDBC Driver Class: com.mysql.cj.jdbc.Driver
 
@@ -37,16 +39,17 @@ The following database was used for the purpose of this use case. The database h
 * The column **attachmentsInfo** will hold the information about the form attachments.
 * The columns **telephoneNumber** will hold the mobile number of the person filling out the form.
 
-The [schema for this database can be downloaded from here](assets/data-base-schema.sql)
+Please create the database by importing the [database schema](assets/data-base-schema.sql)
+using MySql workbench.
 
 ## Create Form Data Model
 
 Create form data model and base it on the datasource created in the previous step.
 Configure the get service of this form data model as shown in the screen shot below.
-Make sure you are not returning array in the get service
+Make sure you are not returning array in the get service.
 
 This get service is used to fetch the telephone number associated with the application id.
 
 ![get-service](assets/get-service.JPG)
 
-This form data model will then be used in the **myaccountform** to fetch the telephone number associated with the application id.
+This form data model will then be used in the **MyAccountForm** to fetch the telephone number associated with the application id.

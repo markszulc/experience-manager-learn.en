@@ -16,7 +16,7 @@ Next step is to create a servlet that will render the adaptive form with the sav
 The following servlet code is executed after the OTP code has been verified. The adaptive form data and its file attachments map associated with the unique application id are fetched from the database. The request object is populated with the saved adaptive form data and the file attachments map. The request is then forwarded to render the "storeafwithattachments" form pre-populated with the original data and its attachments.
 
 ```java
-package com.techmarketing.core.servlets;
+package store.and.fetch.core.servlets;
 
 import java.io.IOException;
 import java.io.StringReader;
@@ -41,10 +41,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
-
 import com.day.cq.wcm.api.WCMMode;
-
-import com.techmarketing.core.AemFormsAndDB;
+import store.and.fetch.core.*;
 @Component(service = {
     Servlet.class
 }, property = {

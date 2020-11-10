@@ -1,12 +1,12 @@
 ---
-title: Storing and Retrieving Form Data from MySQL Database
-description: Multi-Part tutorial to walk you through the steps involved in storing and retrieving form data
+title: Storing and Retrieving Form Data with attachments from MySQL Database
+description: Multi-Part tutorial to walk you through the steps involved in storing and retrieving form data with attachments
 feature: adaptive-forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 ---
 
 # Storing and Retrieving Adaptive Form Data with 2FA
@@ -15,7 +15,7 @@ This tutorial will walk you through the steps involved in saving and retrieving 
 
 * Use the GuideBridge API get access to the Adaptive Form data
 
-* Make a POST call to a servlet. This servlet stores the data in the database and the form attachments in the crx repository. The stored data in the database is associated with a GUID.
+* Make a POST call to a servlet. This servlet stores the data in the database and the form attachments in the CRX repository. The stored data in the database is associated with a GUID.
 
 * When you want to populate the Adaptive Form with the stored data, you retrieve the data associated with the GUID and populate the Adaptive Form using the **request.setAttribute** method.
 
@@ -25,4 +25,9 @@ This tutorial will walk you through the steps involved in saving and retrieving 
 
 ## Prerequisites
 
-Some level of experience in creating Adaptive Form,Form Data Model,Client Libraries is assumed.
+The audience of this content is expected to have some experience in the following areas:
+
+* Adaptive Form
+* Form Data Model
+* OSGi services/components
+* AEM Client Libraries
