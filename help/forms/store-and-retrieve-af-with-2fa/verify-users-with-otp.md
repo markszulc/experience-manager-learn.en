@@ -1,6 +1,6 @@
 ---
-title: SMS Two Factor Authentication
-description: Verify the mobile number associated with the application number using OTP
+title: Verify users with OTP
+description: Verify the mobile number associated with the application number using OTP.
 feature: integrations
 topics: adaptive forms
 audience: developer
@@ -13,7 +13,7 @@ thumbnail: 6594.jpg
 ---
 
 
-# Verify users using their mobile phone numbers
+# Verify users with OTP
 
 SMS Two Factor Authentication (Dual Factor Authentication) is a security verification procedure, which is triggered through a user logging into a website, software or application. In the log-in process, the user is automatically sent an SMS to their mobile number containing a unique numeric code.
 

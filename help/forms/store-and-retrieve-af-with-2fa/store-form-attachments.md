@@ -1,20 +1,20 @@
 ---
-title: Storing and Retrieving Form Data from MySQL Database
-description: Store form attachments in crx
+title: Store form attachments
+description: Extract the form attachments and store in a new location in the CRX repository.
 feature: adaptive-forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 kt: 6537
 thumbnail: 6537.jpg
 ---
 # Store form attachments
 
-When you add attachments to an adaptive form, the attachments are stored in a temporary location in the crx repository. For our use case to work we need to store the form attachments in a new location in the crx repositoy.
+When you add attachments to an adaptive form, the attachments are stored in a temporary location in the CRX repository. For our use case to work we need to store the form attachments in a new location in the CRX repository.
 
-OSGi service is created to store the form attachments in a new location in the crx repository. A new file map is created with the new location of the attachments in the crx and returned to the calling application.
+OSGi service is created to store the form attachments in a new location in the CRX repository. A new file map is created with the new location of the attachments in the CRX and returned to the calling application.
 The following is the FileMap that is sent to the servlet. The key is the adaptive form field and the value is the temporary location of the attachment. In our servlet we will extract the attachment and store it in new location in the AEM repository and update the FileMap with the new location
 
 ```java

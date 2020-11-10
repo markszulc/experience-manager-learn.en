@@ -1,18 +1,18 @@
 ---
-title: Create the myaccount adaptive form
-description: Create the myaccount form to retrieve the partially completed form on succesfull verification of application id and telephone number
+title: Create the MyAccountForm
+description: Create the myaccount form to retrieve the partially completed form on succesful verification of application id and telephone number.
 feature: adaptive-forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 kt: 6599
 thumbnail: 6599.jpg
 ---
 
 
-# Create MyAccountForm form
+# Create the MyAccountForm
 
 The form **MyAccountForm** is used to retrieve the partially completed adaptive form after the user has verified the application id and the mobile number associated with the application id.
 

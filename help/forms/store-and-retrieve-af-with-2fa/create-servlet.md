@@ -1,6 +1,6 @@
 ---
-title: Storing and Retrieving Form Data from MySQL Database
-description: Multi-Part tutorial to walk you through the steps involved in storing and retrieving form data
+title: Create servlet
+description: Create servlet to handle the POST requests to save the form data
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -10,7 +10,7 @@ version: 6.4,6.5
 kt: 6539
 thumbnail: 6539.pg
 ---
-# Create servlet to store form data
+# Create servlet
 
 Next step is to create a servlet that will call the appropriate methods of our custom OSGi service. The servlet has access to the adaptive form data, file attachments info. The servlet will return a unique application id that can be used to retrieve the partially completed adaptive form.
 

@@ -1,12 +1,12 @@
 ---
 title: Retrieve saved adaptive form
-description: Servlet to render the saved adaptive form
+description: Servlet to render the adaptive form with saved data
 feature: adaptive-forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 kt: 6553
 thumbnail: 6553.jpg
 ---

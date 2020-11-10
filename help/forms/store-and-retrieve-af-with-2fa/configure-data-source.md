@@ -1,13 +1,12 @@
 ---
 title: Configure Data Source
-description: Create DataSource instance for interacting with the database.
+description: Create DataSource pointing to the MySql database
 feature: adaptive-forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
-thumbnail:
+version: 6.4,6.5
 kt: 6541
 thumbnail: 6541.jpg
 ---
@@ -26,7 +25,7 @@ JDBC Driver Class: com.mysql.cj.jdbc.Driver
 JDBC Connection URI:jdbc:mysql://localhost:3306/aemformstutorial
 
 >[!NOTE]
->Please make sure you name your datasource StoreAndRetrieveAfData as this is the name used in the OSGi service
+>Please make sure you name your datasource StoreAndRetrieveAfData as this is the name used in the OSGi service.
 
 
 ## Create database

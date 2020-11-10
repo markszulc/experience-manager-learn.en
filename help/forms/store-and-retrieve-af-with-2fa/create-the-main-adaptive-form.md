@@ -6,7 +6,7 @@ topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 kt: 6552
 thumbnail: 6552.jpg
 ---
