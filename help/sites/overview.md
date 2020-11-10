@@ -13,27 +13,21 @@ Adobe Experience Manager (AEM) Sites is a leading experience management platform
 ## What's New
 
 * **[Getting Started with AEM SPA Editor and React](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html) (Tutorial)**
-  <br>
   *A getting started guide for developers to integrate a single page applications (SPA) with AEM using React*
 
 * **[Getting Started with AEM SPA Editor and Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html) (Tutorial)**
-  <br>
   *A getting started guide for developers to integrate a single page applications (SPA) with AEM using Angular*
 
 * **[Getting Started with AEM Headless (Tutorial)](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)**
-    <br>
     *How to expose content from AEM to be consumed by a native mobile app, in a headless CMS scenario.*
 
 * **[Using Experience Fragments (Video Series)](./experience-fragments/experience-fragments-feature-video-use.md)**
-    <br>
     *Learn about AEM Experience Fragments for promoting content cross-channels.*
 
 * **[Using Content Fragments (Video Series)](./content-fragments/content-fragments-feature-video-use.md)**
-    <br>
     *Content Fragments are channel agnostic pieces of content able to be re-used.*
 
 * **[Using the SPA Editor (Video)](./spa-editor/spa-editor-framework-feature-video-use.md)**
-    <br>
     *Learn about AEM's editing capabilities for single page applications (SPA).*
 
 ## Staff Picks

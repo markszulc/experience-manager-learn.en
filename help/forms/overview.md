@@ -13,16 +13,13 @@ Adobe Experience Manager (AEM) provides an easy-to-use solution to create, manag
 ## What's New
 
 * **[Handling Error Messages in Invoke Form Data Model Service Step](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
-    <br>
     *A variable in a workflow model is a way to store a value based on its data type*
 
 * **[Multi-Series Charts in Interactive Communication Documents(Video)](./interactive-communications/multiseriescharts.md)**
-    <br>
     *Plot more than one series in the same chart.The multiple series charts are typically used in association with Line,Bar,Column chart type.*
 
 * **[Creating re-usable workflow models](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
-    <br>
-    _Create workflow models not tied to a specific form_
+    *Create workflow models not tied to a specific form*
      
 ## Staff Picks
 

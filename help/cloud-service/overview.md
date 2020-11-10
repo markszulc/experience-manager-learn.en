@@ -14,23 +14,18 @@ Adobe Experience Manager (AEM) is now available as a Cloud Service. AEM as a Clo
 ## What's New
 
 * **[Asset Compute microservices extensibility (Tutorial)](./asset-compute/overview.md)**
-    <br>
     *Learn how to develop  Asset Compute workers to generate custom asset renditions*
 
 * **[Configuring access to AEM as a Cloud Service (Tutorial)](./accessing/overview.md)**
-    <br>
     *Learn how to configure IMS users in Adobe Admin Console so they can access AEM*
 
 * **[Debugging AEM as a Cloud Service (Tutorial)](./debugging/cloud-service/overview.md)**
-    <br>
     *Explore how to debug AEM as a Cloud Service*
 
 * **[Debugging AEM SDK (Tutorial)](./debugging/aem-sdk-local-quickstart/overview.md)**
-    <br>
     *Explore the various tools used to debug your application on the AEM as a Cloud Service SDK's local quickstart*
 
 * **[Local Development Environment Set Up (Tutorial)](./local-development-environment/overview.md)**
-    <br>
     *Learn how to set up your local development machine for AEM as a Cloud Service development*
 
 ## Staff Picks

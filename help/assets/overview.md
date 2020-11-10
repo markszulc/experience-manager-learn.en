@@ -1,8 +1,6 @@
 ---
 title: AEM Assets Videos and Tutorials
-seo-title: AEM Assets Videos and Tutorials
 description: A collection of videos and tutorials for Adobe Experience Manager Assets
-seo-description: A collection of videos and tutorials for Adobe Experience Manager Assets
 sub-product: assets, dynamic-media
 ---
 
@@ -13,24 +11,19 @@ Adobe Experience Manager Assets is a digital asset management tool on AEM Platfo
 ## What's New
 
 * **[Watermarks (Video)](./advanced/watermarks.md)**
-    <br>
     *Learn how how to watermark asset renditions in AEM as a Cloud Service*
 
 * **[Baseline permissions (Video)](./configuring/baseline-permissions.md)**
-    <br>
     *Learn how, and why it's important, to configure AEM Assets with baseline permissions*
 
 * **[Auto-start workflows (Video)](./configuring/auto-start-workflows.md)** 
-    <br>
-     *Explore how to automatically invoke AEM workflow on uploaded or re-processed assets*
+    *Explore how to automatically invoke AEM workflow on uploaded or re-processed assets*
 
 * **[Processing profiles (Video)](./configuring/processing-profiles.md)** 
-    <br>
-     *Explore how to invoke Assets microservices to rendition assets*
+    *Explore how to invoke Assets microservices to rendition assets*
 
 * **[Using Assets Collections (Video)](./search-and-discovery/collections.md)** 
-    <br>
-     *Explore how Collections in AEM Assets provide new ways to organize and discover assets*
+    *Explore how Collections in AEM Assets provide new ways to organize and discover assets*
 
 ## Staff Picks
 
