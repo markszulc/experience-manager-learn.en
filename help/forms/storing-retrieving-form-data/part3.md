@@ -153,10 +153,10 @@ The following is the interface declaration that was used
 ```java
 package com.aemforms.saveandcontinue.core;
 
-public interface FetchStoredFormData {
-	public String getData(String guid);
-	public String storeFormData(String formData);
-	public String updateData(String guid,String afData);
+public interface FetchStoredFormData 
+{public String getData(String guid);
+public String storeFormData(String formData);
+public String updateData(String guid,String afData);
 
 }
 
