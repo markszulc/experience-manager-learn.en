@@ -16,15 +16,20 @@ version: 6.3,6.4,6.5
 >The following are required to get this running on your system
 >
 >* AEM Forms(version 6.3 or above)
->* MYSQL Database
+>* MySql Database
 
 To test this capability on your AEM Forms instance, please follow the following steps
 
-* Download and unzip the [tutorial assets](assets/store-retrieve-form-data.zip) on to your local system
-* Deploy and start the techmarketingdemos.jar and mysqldriver.jar bundles using [Felix web console](http://localhost:4502/system/console/configMgr)
-* Import the aemformstutorial.sql using MYSQL Workbench. This will create the necessary schema and tables in your database for this tutorial to work.
-* Import StoreAndRetrieve.zip using [AEM package manager.](http://localhost:4502/crx/packmgr/index.jsp) This package contains the Adaptive Form template, page component client lib, and sample adaptive form and data source configuration. 
-* Login to [configMgr.](http://localhost:4502/system/console/configMgr) Search for "Apache Sling Connection Pooled DataSource. Open the data source entry associated with aemformstutorial and enter the username and password specific to your database instance.
+* Download and deploy the [MySql Driver Jar](assets/mysqldriver.jar) files using the [felix web console](http://localhost:4502/system/console/bundles)
+* Download and deploy the [OSGi bundle](assets/SaveAndContinue.SaveAndContinue.core-1.0-SNAPSHOT.jar) using the [felix web console](http://localhost:4502/system/console/bundles)
+* Download and install the [package containing client lib, adaptive form template, and the custom page component](assets/store-and-fetch-af-with-data.zip) using the [package manager](http://localhost:4502/crx/packmgr/index.jsp)
+* Import the [sample Adaptive form](assets/sample-adaptive-form.zip) using the [FormsAndDocuments interface](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+
+* Import the [form-data-db.sql](assets/form-data-db.sql) using MySql Workbench. This will create the necessary schema and tables in your database for this tutorial to work.
+* Login to [configMgr.](http://localhost:4502/system/console/configMgr) Search for "Apache Sling Connection Pooled DataSource. Create a new Apache Sling Connection Pooled Datasource entry called **SaveAndContinue** using the following properties:
+**Datasource Name: SaveAndContinue
+JDBC driver class: com.mysql.cj.jdbc.Driver
+JDBC connection uri:dbc:mysql://localhost:3306/aemformstutorial?autoReconnect=true&useSSL=false&characterEncoding=utf8&useUnicode=true**
 * Open the [Adaptive Form](http://localhost:4502/content/dam/formsanddocuments/demostoreandretrieveformdata/jcr:content?wcmmode=disabled)
 * Fill in some details and click on the "Save And Continue Later" button
 * You should get back a URL with a GUID in it.
