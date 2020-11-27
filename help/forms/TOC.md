@@ -118,7 +118,7 @@ index: y
   + [Introduction](storing-retrieving-form-data/introduction.md)
   + [Configure Data Source](storing-retrieving-form-data/part1.md)
   + [Service to store data](storing-retrieving-form-data/part3.md)
-  + [Servlet to fetch data](storing-retrieving-form-data/part2.md)
+  + [Create Servlet](storing-retrieving-form-data/part2.md)
   + [Client Library](storing-retrieving-form-data/part4.md)
   + [Adaptive Form Template](storing-retrieving-form-data/part5.md)
   + [Deploy sample assets](storing-retrieving-form-data/part6.md)

@@ -9,11 +9,7 @@ activity: implement
 version: 6.3,6.4,6.5
 ---
 
-# Server Side Code
-
-An OSGi service was created to insert/update adaptive form data and fetch the saved data from the database. The OSGi bundle with the server side code has been provided to you as part of this tutorial assets. 
-
-## Create servlet to store form data
+# Servlet to store form data
 
 Next step is to create a servlet that will either insert or update form data. The servlet calls the appropriate methods of the OSGi service to either insert or update the database. Stored Adaptive Form data is associated with a GUID. The same GUID is then used to update the form data. This servlet will be called when the "SaveAndContinueLater" button is clicked.
 
