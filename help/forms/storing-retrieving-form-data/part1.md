@@ -14,7 +14,7 @@ There are many ways with which AEM enables integration with external database. O
 The first step is to download and deploy the appropriate [MySql drivers](https://mvnrepository.com/artifact/mysql/mysql-connector-java) in AEM.
 Create Apache Sling Connection Pooled DataSource and provide the properties as specified in the screen shot below. The database schema is provided to you as part of this tutorial assets.
 
-![data-source](assets/data-source.PNG)
+![data-source](assets/save-continue.PNG)
 
 Database has one table called formdata with the 3 columns as shown in the screen-shot below.
 
