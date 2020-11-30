@@ -22,10 +22,14 @@ Database has one table called formdata with the 3 columns as shown in the screen
 
 The sql file to create the schema can be [downloaded from here](assets/form-data-db.sql). You will need to import this file using MySql workbench to create the schema and the table.
 
->![NOTE]
+>[!NOTE]
 
 >Please make sure you name your datasource **SaveAndContinue**. The sample code uses the name to connect to the database.
 
-JDBC Driver Class: com.mysql.cj.jdbc.Driver
+Property Name| Value
+------------------------|---------------------------------------
+Datasource Name| SaveAndContinue
+JDBC Driver Class| com.mysql.cj.jdbc.Driver
+JDBC connection uri| jdbc:mysql://localhost:3306/aemformstutorial
 
-JDBC Connection URL: jdbc:mysql://localhost:3306/aemformstutorial?autoReconnect=true&useSSL=false&characterEncoding=utf8&useUnicode=true
+
