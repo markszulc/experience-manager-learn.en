@@ -27,11 +27,16 @@ To test this capability on your AEM Forms instance, please follow the following 
 
 * Import the [form-data-db.sql](assets/form-data-db.sql) using MySql Workbench. This will create the necessary schema and tables in your database for this tutorial to work.
 * Login to [configMgr.](http://localhost:4502/system/console/configMgr) Search for "Apache Sling Connection Pooled DataSource. Create a new Apache Sling Connection Pooled Datasource entry called **SaveAndContinue** using the following properties:
-**Datasource Name: SaveAndContinue
-JDBC driver class: com.mysql.cj.jdbc.Driver
-JDBC connection uri:dbc:mysql://localhost:3306/aemformstutorial?autoReconnect=true&useSSL=false&characterEncoding=utf8&useUnicode=true**
+
+Property Name| Value
+------------------------|---------------------------------------
+Datasource Name| SaveAndContinue
+JDBC Driver Class| com.mysql.cj.jdbc.Driver
+JDBC connection uri| jdbc:mysql://localhost:3306/aemformstutorial
+
+
 * Open the [Adaptive Form](http://localhost:4502/content/dam/formsanddocuments/demostoreandretrieveformdata/jcr:content?wcmmode=disabled)
-* Fill in some details and click on the "Save And Continue Later" button
+* Fill in some details and click on the "Save And Continue Later" button.
 * You should get back a URL with a GUID in it.
-* Copy the URL and paste it in a new browser tab. **Make sure there are no empty space at the end of the URL**
-* Adaptive Form should get populated with the data from the previous step
+* Copy the URL and paste it in a new browser tab. **Make sure there are no empty space at the end of the URL.**
+* Adaptive Form should get populated with the data from the previous step.
