@@ -52,6 +52,7 @@ AEM Forms data integration provides an intuitive user interface to create and wo
 ![fdm](assets/test-dl-fdm.PNG)
 
 ## Create Client Lib
+
 We would need to get base64 encoded string of the uploaded document. This base64 encoded string is then passed as one of the parameters of our REST invocation.
 The client library can be downloaded [from here.](assets/drivers-license-client-lib.zip)
 
