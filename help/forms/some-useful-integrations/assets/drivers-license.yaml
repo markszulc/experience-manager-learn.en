@@ -1,0 +1,63 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: Simple API
+  description: Learning Swagger
+host: api.idanalyzer.com
+
+schemes:
+  - https
+paths:
+  /:
+    post:
+      summary: Decode Drivers License
+      produces:
+        - application/json
+      consumes:
+        - application/x-www-form-urlencoded
+      operationId: Decode Drivers License
+      parameters:
+        - in: formData
+          name: file_base64
+          type: string
+          description: Base 64 image of the drivers license
+        - in: formData
+          name: apikey
+          type: string
+          description: API Secret Key
+        
+          
+      responses:
+        '200':
+          description: Successfull Response
+          schema:
+            $ref: '#/definitions/returnvalue'
+
+        
+definitions:
+  result:
+    type: object
+    properties:
+      firstName:
+        type: string
+      documentNumber:
+        type: string
+      lastName:
+        type: string
+      middleName:
+        type: string
+      dob_day:
+        type: number
+      dob_month:
+        type: number
+      dob_year:
+        type: number
+      
+      
+      
+  returnvalue:
+    type: object
+    properties:
+      result:
+        type: object
+        $ref: '#/definitions/result'
