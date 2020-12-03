@@ -40,9 +40,9 @@ String  []attachmentNames  = arg2.get("PROCESS_ARGS","string").toString().split(
 
 ### Create DDX from the attachment names
 
-We then need to create [Document Description XML (DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) document which is used by the Assembler service to assemble documents. The following is the DDX that was created from the process arguments. Notice the PDF source elements are in the right order as specified in the process arguments.
+We then need to create [Document Description XML (DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) document which is used by the Assembler service to assemble documents. The following is the DDX that was created from the process arguments. The NoForms element allows you to flatten XFA based documents before they are assembled. Notice the PDF source elements are in the right order as specified in the process arguments.
 
-![ddx-xml](assets/ddx-xml.JPG)
+![ddx-xml](assets/ddx.PNG)
 
 ### Create map of documents
 
