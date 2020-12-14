@@ -94,7 +94,7 @@ public class StoreFormsToSignWorkflowStep implements WorkflowProcess {
       String formData = writer.toString();
       signMultipleForms.insertData(formNamesToSign, formData, serverURL, workItem, workflowSession);
 
-    }
+  }
     catch(Exception e) {
       log.debug(e.getMessage());
     }

@@ -19,16 +19,14 @@ The following is the interface declaration that was used
 
 ```java
 package com.aem.forms.signmultipleforms;
-
 import com.adobe.granite.workflow.WorkflowSession;
 import com.adobe.granite.workflow.exec.WorkItem;
-
-public interface SignMultipleForms {
-	public void insertData(String []formNames,String formData,String serverURL,WorkItem workItem,WorkflowSession workflowSession);
-	public String getNextFormToSign(int customerID);
-	public void updateSignatureStatus(String formData,String guid);
-	public String getFormData(String guid);
-
+public interface SignMultipleForms
+{
+    public void insertData(String []formNames,String formData,String serverURL,WorkItem workItem, WorkflowSession workflowSession);
+    public String getNextFormToSign(int customerID);
+    public void updateSignatureStatus(String formData,String guid);
+    public String getFormData(String guid);
 }
 
 ```
@@ -86,7 +84,6 @@ log.debug(e.getMessage());
       try {
         con.close();
       } catch(SQLException e) {
-
         log.debug(e.getMessage());
       }
     }
@@ -108,10 +105,8 @@ public String getFormData(String guid) {
   Connection con = getConnection();
   try {
     Statement st = con.createStatement();
-
     String query = "SELECT formData FROM aemformstutorial.signingforms where guid = '" + guid + "'" + "";
     log.debug(" The query being consrtucted " + query);
-
     ResultSet rs = st.executeQuery(query);
     while (rs.next()) {
       return rs.getString("formData");
@@ -142,7 +137,6 @@ public void updateSignatureStatus(String formData, String guid) {
     updatePS.setString(3, guid);
     log.debug("Updated the signature status " + String.valueOf(updatePS.execute()));
   } catch(SQLException e) {
-
     e.printStackTrace();
   }
   finally {
@@ -197,5 +191,4 @@ public String getNextFormToSign(int customerID) {
 
 }
 ```
-
 
