@@ -8,7 +8,7 @@ doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
 ---
-## Create Client Lib
+# Create Client Lib
 
 The following code was used in the client lib. This client lib is associated with the custom summary component that we had created in the earlier step.
 
