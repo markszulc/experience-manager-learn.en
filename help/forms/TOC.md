@@ -121,7 +121,7 @@ index: y
 + Sign Multiple Form{#sign-multiple-documents}
   + [Introduction](sign-multiple-documents/introduction.md)
   + [Configure Data Source](sign-multiple-documents/configure-data-source.md)
-  + [Create OSGi Service](sign-multiple-documents/create-osgi-service/md)
+  + [Create OSGi Service](sign-multiple-documents/create-osgi-service.md)
   + [Create Main Workflow](sign-multiple-documents/create-main-workflow.md)
   + [Update Signature Status](sign-multiple-documents/update-signature-status.md)
   + [Customize Summary Component](sign-multiple-documents/customize-summary-component.md)
