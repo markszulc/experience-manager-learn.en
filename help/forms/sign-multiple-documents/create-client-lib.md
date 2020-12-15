@@ -14,45 +14,51 @@ The following code was used in the client lib. This client lib is associated wit
 
 
 ```java
-function getUrlVars() {
+function getUrlVars()
+{
     var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value)
+    {
         vars[key] = value;
     });
     return vars;
 }
 
-function navigateToNextForm() {
+function navigateToNextForm()
+{
     console.log("Clicked added");
     console.log("The id is " + guidelib.runtime.adobeSign.submitData.agreementId);
     var guid = getUrlVars()["guid"];
     var customerID = getUrlVars()["customerID"];
     console.log("The customer Id is " + customerID);
-    $.ajax({
+    $.ajax(
+    {
         type: 'GET',
         url: '/bin/getnextformtosign?guid=' + guid + '&customerID=' + customerID,
         contentType: false,
         processData: false,
         cache: false,
-        success: function(response) {
+        success: function(response)
+        {
             console.log(response);
             var jsonResponse = JSON.parse(JSON.stringify(response));
             console.log(jsonResponse.nextFormToSign);
             var nextFormToSign = jsonResponse.nextFormToSign;
-            if (nextFormToSign != "AllDone") {
+            if (nextFormToSign != "AllDone")
+            {
                 window.open(nextFormToSign, '_self');
-            } else {
-            window.open("http://localhost:4502/content/forms/af/formsandsigndemo/alldone.html", '_self');
+            }
+            else
+            {
+                window.open("http://localhost:4502/content/forms/af/formsandsigndemo/alldone.html", '_self');
+            }
 
 }
-
+    });
 }
-});
-}
-$(document).ready(function() {
+$(document).ready(function()
+{
     $(document).on("click", ".nextform", navigateToNextForm);
-
-
-
 });
+
 ```
