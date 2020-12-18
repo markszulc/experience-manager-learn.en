@@ -175,6 +175,7 @@ index: y
   + [Apply Usage Rights to Uploaded PDF](document-services/apply-reader-extension-rights-to-pdf.md)
   + [Certify Documents](document-services/certifying-documents-aem-forms-tutorial.md)
   + [Assemble Form Attachments](document-services/assemble-form-attachments.md)
+  + [Useful Utility Services](document-services/useful-utility-services.md)
 + Interactive Communications for Print Channel 
 {#ic-print-channel-tutorial}
   + [Introduction](ic-print-channel-tutorial/introduction.md)
