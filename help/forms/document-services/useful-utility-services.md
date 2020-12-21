@@ -18,7 +18,7 @@ This sample bundle provides useful utility services that can be used by an AEM F
 package aemformsutilityfunctions.core;
 import java.util.Map;
 import com.adobe.aemfd.docmanager.Document;
-public interface AemformsUtilities
+public interface AemFormsUtilities
 {
 public abstract com.adobe.aemfd.docmanager.Document createDDXFromMapOfDocuments(Map<String, com.adobe.aemfd.docmanager.Document> paramMap);
 public abstract org.w3c.dom.Document w3cDocumentFromStrng(String xmlString);
@@ -33,12 +33,12 @@ The sample bundle can be [downloaded from here](assets/aemformsutilityfunctions.
 
 ## Sample Code to use the utility service(s)
 
-The following is the code that was used in jsp page to create org.w3c.dom.document from string and convert the document and store it in the CRX repository as shown in the following code snippet.
+The following is the code that was used in JSP page to create org.w3c.dom.Document from string and convert the document and store it in the CRX repository as shown in the following code snippet.
 
 ```java
- aemformsutilityfunctions.core.AemformsUtilities aemFormsUtilities = sling.getService(aemformsutilityfunctions.core.AemformsUtilities.class);
+ aemformsutilityfunctions.core.AemFormsUtilities aemFormsUtilities = sling.getService(aemformsutilityfunctions.core.AemFormsUtilities.class);
 com.adobe.aemfd.docmanager.Document xmlStringDoc = aemFormsUtilities.orgw3cDocumentToAEMFDDocument(aemFormsUtilities.w3cDocumentFromStrng("<data><fname>Girish</fname></data>"));
-aemFormsUtilities.saveDocumentInCrx("/content/ocrfiles",".xml",xmlStringDoc);
+aemFormsUtilities.saveDocumentInCrx("/content/xmlfiles",".xml",xmlStringDoc);
 ```
 
 ## Prerequisites
@@ -47,6 +47,6 @@ aemFormsUtilities.saveDocumentInCrx("/content/ocrfiles",".xml",xmlStringDoc);
 You will need to deploy [DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar?lang=en) and start the bundle.
 
 
-If you are going to save documents in the CRX repository using these utility service, please create a [service user and provide the necessary permissions to the service user as mentioned in the document](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms)
+If you are going to save documents in the CRX repository using these utility service, please follow the [developing with service user article](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms). Make sure you provide the [required permissions](http://localhost:4502/useradmin) on the appropriate CRX folders to the fd-service user.
 
 
