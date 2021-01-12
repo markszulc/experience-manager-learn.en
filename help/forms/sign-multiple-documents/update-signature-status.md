@@ -12,6 +12,7 @@ version: 6.3,6.4,6.5
 # Update-Signature-Status
 
 The UpdateSignatureStatus workflow gets triggered when the user has completed the signing ceremony. The following is the flow of the workflow
+
 ![main-workflow](assets/update-signature.PNG)
 
 Update Signature Status is custom process step.

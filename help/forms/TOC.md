@@ -126,6 +126,9 @@ index: y
   + [Update Signature Status](sign-multiple-documents/update-signature-status.md)
   + [Customize Summary Component](sign-multiple-documents/customize-summary-component.md)
   + [Create Client Lib](sign-multiple-documents/create-client-lib.md)
+  + [Create Form Template](sign-multiple-documents/create-af-template.md)
+  + [Create Initial Form](sign-multiple-documents/create-initial-form.md)
+  + [Create Forms for Signing](sign-multiple-documents/create-forms-for-signing.md)
 + Variables in AEM Workflow{#variables-aem-workflow}
   + [Introduction - Variables in Workflow](variables-aem-workflow/introduction.md)
   + [XML Variables](variables-aem-workflow/part1.md)

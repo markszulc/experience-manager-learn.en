@@ -31,7 +31,7 @@ public interface SignMultipleForms
 
 ```
 
-## Interface Implementations
+
 
 ### Insert Data
 
@@ -96,7 +96,7 @@ log.debug(e.getMessage());
 ```
 
 
-## Get Form Data
+### Get Form Data
 
 The following code is used to fetch adaptive form data associated with the given GUID. The form data is then used to pre-populate the adaptive form.
 
@@ -123,7 +123,7 @@ public String getFormData(String guid) {
 }
 ```
 
-## Update Signature Status
+### Update Signature Status
 
 Successful completion of the signing ceremony triggers an AEM workflow associated with the form. The first step in the workflow is a process step which updates the  status in the database for the row identified by the guid and customer id. We also set the value of the signed element in the formdata to Y to indicate that the form has been filled and signed. The adaptive form will be populated with this data and the value of the signed data element in the xml data will be used to display the appropriate message. The updateSignatureStatus code is invoked from the custom process step.
 
