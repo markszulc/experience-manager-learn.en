@@ -10,7 +10,7 @@ version: 6.3,6.4,6.5
 ---
 # Create Client Lib
 
-The following code was used in the client lib. This client lib is associated with the custom summary component that we had created in the earlier step.
+The following code was used in the client lib. This client lib is associated with the custom summary component that we had created in the earlier step. In this a GET call is made to servlet mounted on /bin/getnextformtosign by passing the customer id and guid extracted from the browsers URL. The GET call returns the URL of the next form to be signed or if there is no form to be filled and signed a string "AllDone" is returned.
 
 
 ```java
@@ -26,7 +26,7 @@ function getUrlVars()
 
 function navigateToNextForm()
 {
-    console.log("Clicked added");
+    
     console.log("The id is " + guidelib.runtime.adobeSign.submitData.agreementId);
     var guid = getUrlVars()["guid"];
     var customerID = getUrlVars()["customerID"];

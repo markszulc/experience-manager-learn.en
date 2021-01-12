@@ -35,6 +35,8 @@ public interface SignMultipleForms
 
 ### Insert Data
 
+The insert data method inserts a row in the database identified by the datasource. Each row in the database corresponds to a form and is uniquely identified by a GUID and customer id. The form data and the form URL are also stored in this row. The status column is to indicate if the form has been filled and signed. Value of 0 indicates the form is yet to be signed.
+
 ```java
 @Override
 public void insertData(String[] formNames, String formData, String serverURL, WorkItem workItem, WorkflowSession workflowSession) {
@@ -123,7 +125,8 @@ public String getFormData(String guid) {
 
 ## Update Signature Status
 
-Successful completion of the signing ceremony triggers an AEM workflow associated with the form. The first step in the workflow is a process step which updates the signature status in the database for the row identified by the guid and customer id. The updateSignatureStatus code is invoked from the custom process step.
+Successful completion of the signing ceremony triggers an AEM workflow associated with the form. The first step in the workflow is a process step which updates the  status in the database for the row identified by the guid and customer id. We also set the value of the signed element in the formdata to Y to indicate that the form has been filled and signed. The adaptive form will be populated with this data and the value of the signed data element in the xml data will be used to display the appropriate message. The updateSignatureStatus code is invoked from the custom process step.
+
 
 ```java
 public void updateSignatureStatus(String formData, String guid) {
@@ -137,7 +140,7 @@ public void updateSignatureStatus(String formData, String guid) {
     updatePS.setString(3, guid);
     log.debug("Updated the signature status " + String.valueOf(updatePS.execute()));
   } catch(SQLException e) {
-    e.printStackTrace();
+    log.debug(e.getMessage());
   }
   finally {
     try {
@@ -145,8 +148,8 @@ public void updateSignatureStatus(String formData, String guid) {
       updatePS.close();
       con.close();
     } catch(SQLException e) {
-      // TODO Auto-generated catch block
-      e.printStackTrace();
+      
+      log.debug(e.getMessage());
     }
 
   }
@@ -156,7 +159,7 @@ public void updateSignatureStatus(String formData, String guid) {
 
 ### Get Next Form To sign
 
-The following code was used to get the next form for signing for a given customerID
+The following code was used to get the next form for signing for a given customerID with a status of 0. If the sql query does not return any rows we return the string **"AllDone"** which indicates that there are no more forms for signing for the given customer id.
 
 ```java
 @Override
@@ -169,7 +172,7 @@ public String getNextFormToSign(int customerID) {
     Statement st = con.createStatement();
     ResultSet rs = st.executeQuery(selectStatement);
     while (rs.next()) {
-      System.out.println("Got result set object");
+      log.debug("Got result set object");
       return rs.getString("formName");
     }
     if (!rs.next()) {
@@ -192,3 +195,5 @@ public String getNextFormToSign(int customerID) {
 }
 ```
 
+
+The OSGi bundle can be [downloaded from here](assets/sign-multiple-forms.jar)
