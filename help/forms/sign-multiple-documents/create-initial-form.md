@@ -13,7 +13,7 @@ thumbnail: 6892.jpg
 
 # Create Initial Form
 
-The initial form(Refinance Form) is used to trigger the process of signing multiple forms by triggering the Sign Multiple Forms AEM workflow. You may author the form the way you want, but please remember to add the following fields to the form.
+The initial form(Refinance Form) is used to trigger the process of signing multiple forms by triggering the **Sign Multiple Forms** AEM workflow. You may author the form the way you want, but please remember to add the following fields to the form.
 
 
 
@@ -33,7 +33,7 @@ The initial form needs to be configure to trigger an AEM workflow called **signm
 
 ## Assets
 
-The initial form (Refinance Form) can be downloaded from here(assets/refinance-form.zip)
+The initial form (Refinance Form) can be [downloaded from here](assets/refinance-form.zip)
 
 
 

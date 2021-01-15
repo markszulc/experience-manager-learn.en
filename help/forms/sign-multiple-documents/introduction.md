@@ -16,7 +16,7 @@ The following video walks you through the use case of signing multiple forms.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330165?quality=9&learn=on)
 
-## prerequisites
+## Prerequisites
 
 This course assumes the following:
 

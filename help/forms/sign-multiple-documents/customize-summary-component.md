@@ -42,6 +42,6 @@ The summary.jsp has the following code. It has reference to the client library i
 
 ## Assets
 
-The custom summary component can be downloaded from here(assets/custom-summary-step.zip)
+The custom summary component can be [downloaded from here](assets/custom-summary-step.zip)
 
 

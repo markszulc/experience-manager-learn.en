@@ -112,7 +112,7 @@ public class StoreFormsToSignWorkflowStep implements WorkflowProcess {
 
 ## Assets
 
-The Sign Multiple Forms workflow used in this article can be downloaded from here(assets/sign-multiple-forms-workflows.zip)
+The Sign Multiple Forms workflow used in this article can be [downloaded from here](assets/sign-multiple-forms-workflows.zip)
 
 >[!NOTE]
 > Please make sure to configure Day CQ Mail Service in order to send e-mail notification. The e-mail template is also provided in the above package.
