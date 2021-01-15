@@ -7,6 +7,8 @@ audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
+kt: 6894
+thumbnail: 6894.jpg
 ---
 
 # Customize Summary Step
@@ -38,5 +40,8 @@ The summary.jsp has the following code. It has reference to the client library i
 
 ```
 
+## Assets
+
+The custom summary component can be downloaded from here(assets/custom-summary-step.zip)
 
 

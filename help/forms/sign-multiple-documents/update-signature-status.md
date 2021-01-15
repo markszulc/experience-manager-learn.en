@@ -6,7 +6,9 @@ topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
+version: 6.4,6.5
+kt: 6888
+thumbnail: 6888.jpg
 ---
 
 # Update-Signature-Status
@@ -61,4 +63,7 @@ public class UpdateSignatureStatusWorkflowStep implements WorkflowProcess {
 }
 ```
 
+## Assets
+
+The update signature status workflow can be [downloaded from here](assets/update-signature-status-workflow.zip)
 

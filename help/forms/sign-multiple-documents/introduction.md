@@ -15,3 +15,14 @@ Whether you are applying for a mortgage or opening a new bank account you will b
 The following video walks you through the use case of signing multiple forms.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330165?quality=9&learn=on)
+
+## prerequisites
+
+This course assumes the following:
+
+* You have access to AEM 6.4 or 6.5 server with Forms Add on package installed and configured
+* AEM configured with Adobe Sign
+* Access to SMTP server
+* Some experience with AEM/AEM Forms
+
+By following this tutorial and installing the assets provided you will have a working solution to sign multiple forms. 

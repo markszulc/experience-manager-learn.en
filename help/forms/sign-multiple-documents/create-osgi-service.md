@@ -7,6 +7,8 @@ audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
+thumbnail: 6886.jpg
+kt: 6886
 ---
 
 # Create OSGi Service
@@ -33,7 +35,7 @@ public interface SignMultipleForms
 
 
 
-### Insert Data
+## Insert Data
 
 The insert data method inserts a row in the database identified by the datasource. Each row in the database corresponds to a form and is uniquely identified by a GUID and customer id. The form data and the form URL are also stored in this row. The status column is to indicate if the form has been filled and signed. Value of 0 indicates the form is yet to be signed.
 
@@ -96,7 +98,7 @@ log.debug(e.getMessage());
 ```
 
 
-### Get Form Data
+## Get Form Data
 
 The following code is used to fetch adaptive form data associated with the given GUID. The form data is then used to pre-populate the adaptive form.
 
@@ -123,7 +125,7 @@ public String getFormData(String guid) {
 }
 ```
 
-### Update Signature Status
+## Update Signature Status
 
 Successful completion of the signing ceremony triggers an AEM workflow associated with the form. The first step in the workflow is a process step which updates the  status in the database for the row identified by the guid and customer id. We also set the value of the signed element in the formdata to Y to indicate that the form has been filled and signed. The adaptive form will be populated with this data and the value of the signed data element in the xml data will be used to display the appropriate message. The updateSignatureStatus code is invoked from the custom process step.
 
@@ -157,7 +159,7 @@ public void updateSignatureStatus(String formData, String guid) {
 }
 ```
 
-### Get Next Form To sign
+## Get next form to sign
 
 The following code was used to get the next form for signing for a given customerID with a status of 0. If the sql query does not return any rows we return the string **"AllDone"** which indicates that there are no more forms for signing for the given customer id.
 
@@ -196,4 +198,7 @@ public String getNextFormToSign(int customerID) {
 ```
 
 
-The OSGi bundle can be [downloaded from here](assets/sign-multiple-forms.jar)
+
+## Assets
+
+The OSGi bundle with the above mentioned services can be [downloaded from here](assets/sign-multiple-forms.jar)

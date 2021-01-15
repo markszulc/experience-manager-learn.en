@@ -1,20 +1,23 @@
 ---
-title: Create Process Step
-description: Implement process step to extract the form names and insert rows into the database
+title: Create main workflow
+description: Create workflow to store the forms for signature in the database
 feature: adaptive-forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
+thumbnail: 6887.jpg
+kt: 6887
 ---
 
 # create-main-workflow
 
-The main workflow gets triggered when the user submits the **RefinanceForm**. The following is the flow of the workflow
+The main workflow gets triggered when the user submits the initial form (**RefinanceForm**). The following is the flow of the workflow
 ![main-workflow](assets/main-workflow.PNG)
 
 Store Forms To Sign is custom process step.
+
 The main reason for implementing custom process step is to extend an AEM Workflow. The following code was used to implement our custom process step. The code extracts the names of the forms to sign and passes the submitted form data to the insertData method the SignMultipleForms service. The insertData method then inserts the rows in the database identified by the data source **aemformstutorial**.
 
 Code in this custom process step references the SignMultipleForms service.
@@ -103,5 +106,15 @@ public class StoreFormsToSignWorkflowStep implements WorkflowProcess {
 }
 
 ```
+
+
+
+
+## Assets
+
+The Sign Multiple Forms workflow used in this article can be downloaded from here(assets/sign-multiple-forms-workflows.zip)
+
+>[!NOTE]
+> Please make sure to configure Day CQ Mail Service in order to send e-mail notification. The e-mail template is also provided in the above package.
 
 

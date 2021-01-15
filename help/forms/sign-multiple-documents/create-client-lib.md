@@ -6,11 +6,15 @@ topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
+version: 6.4,6.5
+kt: 6907
+thumbnail: 6907.jpg
 ---
 # Create Client Lib
 
-The following code was used in the client lib. This client lib is associated with the custom summary component that we had created in the earlier step. In this a GET call is made to servlet mounted on /bin/getnextformtosign by passing the customer id and guid extracted from the browsers URL. The GET call returns the URL of the next form to be signed or if there is no form to be filled and signed a string "AllDone" is returned.
+Create a custom client lib to extract the url parameters pass those parameters in the GET call. The GET call is made to a servlet mounted on /bin/getnextformtosign which returns the url of the next form to sign in the package.
+
+The following is the code used in the client lib javascript function
 
 
 ```java
@@ -62,3 +66,6 @@ $(document).ready(function()
 });
 
 ```
+
+## Assets
+[The client-lib can be downloaded from here](assets/get-next-form-client-lib.zip)

@@ -6,20 +6,36 @@ topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
+version: 6.4,6.5
+kt: 6892
+thumbnail: 6892.jpg
 ---
 
 # Create Initial Form
 
-Create the adaptive form to initiate the process of signing multiple forms. This initial form has 2 hidden fields - signed and guid.
+The initial form(Refinance Form) is used to trigger the process of signing multiple forms by triggering the Sign Multiple Forms AEM workflow. You may author the form the way you want, but please remember to add the following fields to the form.
 
-* **signed** - This field has a value of Y or N. The individual forms in the package display the appropriate panels based on this value. Initial value of this field is set to N.
-* **guid** - The guid is unique identifier which identifies the form in the package of forms.
 
-The forms to include in the package are identified by the items property of the formsToSign checkbox field. Please include all the forms that need to be included in the package are residing in the folder **formsandsigndemo**. 
-All the forms that need to be included in the package need to be based on the same adaptive forms template **SignMultipleForms**.
 
-When this form is filled and submitted AEM workflow **signmultipleforms** is triggered. 
+
+Field Type|Name | Purpose| Hidden| Default Value
+------------------------|---------------------------------------|--------------------|--------|-----------------
+TextField| signed| To indicate the signing status |Y|N
+TextField| guid| To uniquely identify form|Y| 3889
+TextField| customerName| To capture customers name|N|
+TextField| customerEmail| Customer email to send notification|N| 
+CheckBox| formsToSign| The items identify the forms in the package|N| 
+
+
+
+
+The initial form needs to be configure to trigger an AEM workflow called **signmultipleforms**
+
+## Assets
+
+The initial form (Refinance Form) can be downloaded from here(assets/refinance-form.zip)
+
+
 
 
 
