@@ -33,6 +33,7 @@ JDBC Driver Class| com.mysql.cj.jdbc.Driver
 JDBC connection uri| jdbc:mysql://localhost:3306/aemformstutorial
 
 ## Assets
+
 The sql file to create the schema can be [downloaded from here](assets/sign-multiple-forms.sql). You will need to import this file using MySql workbench to create the schema and the table.
 
 
