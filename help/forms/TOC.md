@@ -129,6 +129,7 @@ index: y
   + [Create Form Template](sign-multiple-documents/create-af-template.md)
   + [Create Initial Form](sign-multiple-documents/create-initial-form.md)
   + [Create Forms for Signing](sign-multiple-documents/create-forms-for-signing.md)
+  + [Trouble Shooting](sign-multiple-documents/trouble-shooting.md)
 + Variables in AEM Workflow{#variables-aem-workflow}
   + [Introduction - Variables in Workflow](variables-aem-workflow/introduction.md)
   + [XML Variables](variables-aem-workflow/part1.md)

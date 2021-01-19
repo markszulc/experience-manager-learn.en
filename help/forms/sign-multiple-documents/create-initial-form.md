@@ -30,6 +30,7 @@ CheckBox| formsToSign| The items identify the forms in the package|N|
 
 
 The initial form needs to be configure to trigger an AEM workflow called **signmultipleforms**
+Make sure the Data File Path is set to **Data.xml**. This is very important as the sample code looks for a file called Data.xml in the payload the process the form submission.
 
 ## Assets
 
