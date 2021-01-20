@@ -11,7 +11,7 @@ kt: 6888
 thumbnail: 6888.jpg
 ---
 
-# Update-Signature-Status
+# Update Signature Status
 
 The UpdateSignatureStatus workflow gets triggered when the user has completed the signing ceremony. The following is the flow of the workflow
 

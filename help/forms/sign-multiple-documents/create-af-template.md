@@ -23,7 +23,7 @@ We will create a new Adaptive Form template for the purpose of this tutorial. A 
 
 ## Assets
 
-The template and the page component used in this tutorial can be [downloaded from here](assets/sign-multiple-forms.zip)
+The template and the page component used in this tutorial can be [downloaded from here](assets/sign-multiple-forms-template.zip)
 
 
 

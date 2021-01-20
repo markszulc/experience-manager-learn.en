@@ -11,9 +11,10 @@ thumbnail: 6887.jpg
 kt: 6887
 ---
 
-# create-main-workflow
+# Create main workflow
 
 The main workflow gets triggered when the user submits the initial form (**RefinanceForm**). The following is the flow of the workflow
+
 ![main-workflow](assets/main-workflow.PNG)
 
 Store Forms To Sign is custom process step.
