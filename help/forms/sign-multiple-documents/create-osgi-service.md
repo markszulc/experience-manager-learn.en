@@ -11,7 +11,7 @@ thumbnail: 6886.jpg
 kt: 6886
 ---
 
-# Create OSGi Service
+# Create OSGi service
 
 The following code was written to store the forms that need to be signed. Each form to sign is associated with a unique guid and a customer id. So one or more forms can be associated with the same customer ID, but will have a unique GUID assigned to the form.
 

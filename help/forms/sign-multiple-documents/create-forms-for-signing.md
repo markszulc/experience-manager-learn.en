@@ -1,6 +1,6 @@
 ---
-title: Create forms for signing
-description: Create forms for signing
+title: Create Forms for Signing
+description: Create forms that need to be included in the signing package.
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -11,7 +11,7 @@ kt: 6893
 thumbnail: 6893.jpg
 ---
 
-# Create Forms For Signing
+# Create forms for signing
 
 The next step is to create the adaptive forms you want to be included in the package. Please remember to adhere to the following points when creating forms for signing:
 

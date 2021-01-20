@@ -1,6 +1,6 @@
 ---
-title: Customize summary step
-description: Extend the summary step component
+title: Customize Summary Component
+description: Extend the summary step component to include the capability to navigate to the next form in the package.
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -11,7 +11,7 @@ kt: 6894
 thumbnail: 6894.jpg
 ---
 
-# Customize Summary Step
+# Customize summary step
 
 Summary step component is used to display the summary of your form submission with a link to download the signed form. Summary step is typically placed in the last panel of your form. 
 For the purpose of this use case we have created a new component based on the out of the box Summary component and extended the capability to include custom clientlib.

@@ -1,5 +1,5 @@
 ---
-title: Trouble shooting the solution
+title: Troubleshoot Signing Multiple Documents Solution
 description: Test and trouble shoot the solution
 feature: adaptive-forms
 topics: development
@@ -11,7 +11,7 @@ kt: 6960
 thumbnail: 6960.jpg
 ---
 
-# Testing and Trouble Shooting
+# Test and troubleshoot
 
 
 ## Preview the refinance form
@@ -24,7 +24,7 @@ The Sign Multiple Forms workflow gets triggers on this form submission and the c
 
 The customer is presented to fill and sign the first form in the package. On successful signing of the form, the customer can navigate to the next form in the package. Once all the forms are filled and signed the customer is presented with the "**AllDone**" form.
 
-## Trouble Shooting
+## Troubleshoot
 
 ### E-mail notification is not being generated
 

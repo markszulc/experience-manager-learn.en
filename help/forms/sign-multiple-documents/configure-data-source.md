@@ -1,5 +1,5 @@
 ---
-title: Configure Data Source
+title: Configure AEM Data Source
 description: Configure MySQL backed data source to store and retrieve form data
 feature: adaptive-forms
 topics: development
@@ -10,7 +10,7 @@ version: 6.4,6.5
 kt: 6899
 thumbnail: 6899.jpg
 ---
-# Configure Data Source
+# Configure data source
 
 There are many ways with which AEM enables integration with external database. One of the most common & standard practice of database integration is by using Apache Sling Connection Pooled DataSource configuration properties through the [configMgr](http://localhost:4502/system/console/configMgr).
 The first step is to download and deploy the appropriate [MySql drivers](https://mvnrepository.com/artifact/mysql/mysql-connector-java) in AEM.

@@ -11,7 +11,7 @@ kt: 6891
 thumbnail: 6891.jpg
 ---
 
-# Create AF Template
+# Create AF template
 
 We will create a new Adaptive Form template for the purpose of this tutorial. A new page component was also created and associated with this template. The JSP in the page component fetches data from the MySql database which is used to pre-populate the adaptive form.
 

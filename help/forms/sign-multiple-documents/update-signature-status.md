@@ -1,6 +1,6 @@
 ---
-title: Create Process Step
-description: Implement process step to extract the form names and insert rows into the database
+title: Update the Signature Status of the Form in the Database
+description: Update the signature status of the signed form in the database using the AEM workflow
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -11,7 +11,7 @@ kt: 6888
 thumbnail: 6888.jpg
 ---
 
-# Update Signature Status
+# Update signature status
 
 The UpdateSignatureStatus workflow gets triggered when the user has completed the signing ceremony. The following is the flow of the workflow
 
