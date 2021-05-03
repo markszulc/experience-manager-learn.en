@@ -28,7 +28,7 @@ The tutorial is designed to work with **AEM as a Cloud Service** and is composed
 
 ## Latest code
 
-+ This tutorial's code can be found on [GitHub](https://github.com/adobe/aem-guides-wknd-graphq) on the `feature/spa-editor` branch. 
++ This tutorial's code can be found on [GitHub](https://github.com/adobe/aem-guides-wknd-graphql) on the `feature/spa-editor` branch. 
 
 ## Prerequisites
 
